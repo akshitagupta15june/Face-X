@@ -7,7 +7,7 @@ I have recorded 300 faces of mine in part 1 and trained the model using part 2 t
 
 I have added a LBPHFaceRecognizer for recognizing faces.
 
-This can be used for automatic face detection attendance system.
+This can be used for automatic face detection attendance system in recent technology.
 
 
 
