@@ -11,5 +11,7 @@ This can be used for automatic face detection attendance system in recent techno
 
 Despite a variety of open-source face recognition frameworks available, there was no ready-made solution to implement. The available algorithms processed only high-resolution static shots and performed insufficiently.
 
+facial_recognition part 3 is the actual one for recognition.
+
 
 
