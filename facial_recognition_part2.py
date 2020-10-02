@@ -1,8 +1,12 @@
 import cv2
 import numpy as np
-from os import listdir
+from os import listdir, getenv
 from os.path import isfile, join
-data_path='/home/akshita/Desktop/Face_reco/'
+import dotenv
+
+dotenv.load_dotenv()
+data_path=getenv("DATA_PATH")
+
 onlyfiles=[f for f in listdir(data_path) if isfile(join(data_path,f))]
 
 Training_data,Labels=[],[]
