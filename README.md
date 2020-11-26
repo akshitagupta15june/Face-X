@@ -1,4 +1,7 @@
 # FACE-X
+
+## Join official discord channel for discussion https://discord.gg/f9jFtkCw
+
 Recognition of faces by model training using OPENCV
 
 We will first train the model by our faces and then use recognition system.
