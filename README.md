@@ -16,5 +16,21 @@ Despite a variety of open-source face recognition frameworks available, there wa
 
 facial_recognition part 3 is the actual one for recognition.
 
+### Requirements
+- Python3.6+
+- virtualenv (`pip install virtualenv`)
+
+### Installation
+- `virtualenvv env`
+- `source venv/bin/activate` (Linux)
+- `venv\Scripts\activate` (Windows)
+- `pip install -r requirements.txt`
+- Create an .env file, copy the content from .env.sample and add your data path. Example: `DATA_PATH = "./foto_reco/"`
+
+### Execution
+- `python facial_recognition_part1.py` (face images collection)
+- `python facial_recognition_part2.py` (training)
+- `python facial_recognition_part3.py` (final recognition)
+
 
 
