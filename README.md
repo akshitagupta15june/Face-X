@@ -1,6 +1,6 @@
 # FACE-X
 
-## Join official discord channel for discussion https://discord.gg/f9jFtkCw
+## Join official discord channel for discussion https://discord.gg/d5GfFfy8
 
 Recognition of faces by model training using OPENCV
 
