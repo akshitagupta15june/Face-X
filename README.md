@@ -33,4 +33,7 @@ facial_recognition part 3 is the actual one for recognition.
 - `python facial_recognition_part3.py` (final recognition)
 
 
+Another part of this project is Recognition using CNN.
+
+
 
