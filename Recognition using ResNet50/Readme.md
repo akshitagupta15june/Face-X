@@ -7,7 +7,7 @@ Program is trained for 5 epochs, You can increase the number of epochs and the n
 
 ## ScreenShots
 
-<img src="Screenshot from 2020-12-11 21-34-18.png" height="250px">
+<img src="Screenshot from 2020-12-11 21-40-08.png" height="250px">
 <img src="Screenshot from 2020-12-11 17-59-00.png" height="250px">
 
 ### Dependencies:
