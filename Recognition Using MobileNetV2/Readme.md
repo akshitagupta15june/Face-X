@@ -15,6 +15,11 @@ Program is trained for 5 epochs, You can increase the number of epochs and the n
 
 Download haarcascades file from here=> https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml
 
+## ScreenShots
+
+<img src="Screenshot from  2020-12-15 21-17-56.png" height="250px">
+<img src="Screenshot from 2020-12-11 21-18-31.png" height="250px">
+
 
 ## Quick Start
 
