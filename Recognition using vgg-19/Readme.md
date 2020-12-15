@@ -24,7 +24,7 @@ Download haarcascades file from here=> https://github.com/opencv/opencv/blob/mas
 
 - Fork and Clone the repository using-
 ```
-git clone https://github.com/Halix267/Face-X.git
+git clone https://github.com/akshitagupta15june/Face-X.git
 ```
 - Create virtual environment-
 ```
