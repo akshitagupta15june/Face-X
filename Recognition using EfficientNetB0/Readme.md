@@ -17,8 +17,8 @@ Download haarcascades file from here=> https://github.com/opencv/opencv/blob/mas
 
 ## ScreenShots
 
-<img src="Screenshot from 2020-12-15 21-17-56.png" height="250px">
-<img src="Screenshot from 2020-12-15 21-18-31.png" height="250px">
+<img src="Screenshot from 2020-12-11 21-34-18.png" height="250px">
+<img src="Screenshot from 2020-12-11 17-59-00.png" height="250px">
 
 
 ## Quick Start
