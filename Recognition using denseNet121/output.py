@@ -8,7 +8,7 @@ from keras.models import load_model
 import numpy as np
 
 from keras.preprocessing import image
-model = load_model('final_file.h6')
+model = load_model('final_file.h5')
 
 # Loading the cascades
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
