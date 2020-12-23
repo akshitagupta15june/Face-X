@@ -37,7 +37,7 @@ git clone https://github.com/akshitagupta15june/Face-X.git
 
 - Headover to Project Directory- 
 ```
-cd Recognition using MobileNetV2
+cd Recognition using EfficientNetB0
 ```
 - Create dataset using -
 ```
