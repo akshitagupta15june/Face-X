@@ -79,4 +79,4 @@ r = model.fit_generator(
 import tensorflow as tf
 
 from keras.models import load_model
-model.save('final_file.h6')  # saving the model
+model.save('final_file.h5')  # saving the model
