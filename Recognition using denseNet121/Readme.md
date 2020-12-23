@@ -37,7 +37,7 @@ git clone https://github.com/akshitagupta15june/Face-X.git
 
 - Headover to Project Directory- 
 ```
-cd Recognition using DenseNet121
+cd Recognition using denseNet121
 ```
 - Create dataset using -
 ```
@@ -47,7 +47,7 @@ Note: Do split the dataset into Train and Test folders.
 
 - Train the model -
 ```
-- Run train_model.py
+- Run train-model.py
 ```
 Note: Make sure all dependencies are installed properly.
 
