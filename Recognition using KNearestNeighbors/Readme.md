@@ -18,6 +18,9 @@
   Then press `C` to capture images, and `Q` to exit screen.
   The data will be saved in `face_data.npy` file in same directory.
   
+  ![Capture](./images/Capture2.jpg)
+
+
 
 - For pre-processed data.
       
@@ -30,3 +33,5 @@
       python image_recogniser.py
       
  # Screenshot
+![Capture](./images/Capture1.jpg)
+[
