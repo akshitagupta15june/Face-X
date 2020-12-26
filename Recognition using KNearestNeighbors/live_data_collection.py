@@ -33,6 +33,7 @@ while True:
     key = cv2.waitKey(1)
 
     if key == ord("q"):
+        print("Data Collected")
         break
     if key == ord("c"):
         # cv2.imwrite(name + ".jpg", frame)
