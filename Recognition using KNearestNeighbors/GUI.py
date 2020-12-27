@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 from sklearn.neighbors import KNeighborsClassifier
-from tkinter import Tk , Label , Frame ,StringVar , Entry , Button
+from tkinter import Tk , Label , Frame 
 
 
 
