@@ -8,7 +8,7 @@ If it is disabled it will want image path.
 
 
 ## Original Image
-<img src="wp2030093.jpg" height="300px" >
+<img src="dicaprio.jpg" height="300px" >
 
 ## Cartoonified
 <img src="Cartoonified_image.jpg" height="300px" >
@@ -29,7 +29,7 @@ git clone https://github.com/akshitagupta15june/Face-X.git
 - Install dependencies
 - Go to project directory
 ```
-- cd Cartoonify_Image
+- cd Cartoonify Image
 ```
 - Open Terminal
 ```
