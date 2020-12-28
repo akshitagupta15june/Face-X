@@ -35,16 +35,16 @@ Open terminal and write:
 * `pip install opencv-python`
 
 
-## Quick Start
+## Quick Start📘
 You can directly [download](https://www.wikihow.com/Download-a-GitHub-Folder) the entire [Face-X](https://github.com/akshitagupta15june/Face-X) and select the folder you want to work with.
 
 
-## Connections:
+## Connections🔗:
 
 ![ ](https://github.com/smriti1313/Face-X/blob/master/Tracking%20using%20python%20and%20arduino/connection%201.png)
 ![ ](https://github.com/smriti1313/Face-X/blob/master/Tracking%20using%20python%20and%20arduino/connection%202.png)
 
-## Testing
+## Testing🧰:
 
 - After everything is done last thing to do is test if it works.   
 - To test first make sure that servos are properly connected to arduino and sketch is uploaded.
