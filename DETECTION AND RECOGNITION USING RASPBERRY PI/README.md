@@ -6,13 +6,17 @@ This project uses python and OpenCV to recognize multiple faces and show the nam
 
 ## List TO-DO📄:
 
-- [x] Get the [hardware.](https://github.com/smriti1313/Face-X/blob/master/Tracking%20using%20python%20and%20arduino/README.md#requirements)
+- [x] Get the [hardware.](https://github.com/smriti1313/Face-X/tree/master/DETECTION%20AND%20RECOGNITION%20USING%20RASPBERRY%20PI#requirements)
 - [x] Install [Python](https://www.howtogeek.com/197947/how-to-install-python-on-windows/)
-- [x] Install [Dependencies.](https://github.com/smriti1313/Face-X/blob/master/Tracking%20using%20python%20and%20arduino/README.md#dependencies)
-- [x] Make a folder and name it anything(or you can see [quick start](https://github.com/smriti1313/Face-X/blob/master/Tracking%20using%20python%20and%20arduino/README.md#quick-start))
+- [x] Install [Dependencies.](https://github.com/smriti1313/Face-X/tree/master/DETECTION%20AND%20RECOGNITION%20USING%20RASPBERRY%20PI#dependencies)
+- [x] Make a folder and name it anything(or you can see [quick start](https://github.com/smriti1313/Face-X/tree/master/DETECTION%20AND%20RECOGNITION%20USING%20RASPBERRY%20PI#quick-start))
     - [x] Download [Haarcascade](https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml) and paste it here
-    - [x] Open notepad,write [this](https://github.com/smriti1313/Face-X/blob/master/Tracking%20using%20python%20and%20arduino/face.py) script and save it as 'face.py'.
-    - [x] Paste [arduino code](https://github.com/smriti1313/Face-X/blob/master/Tracking%20using%20python%20and%20arduino/servo.ino) in [Arduino IDE](https://www.arduino.cc/en/guide/windows) and save it as 'servo.ino'.
+    - [x] Open notepad,write [this](https://github.com/smriti1313/Face-X/blob/master/DETECTION%20AND%20RECOGNITION%20USING%20RASPBERRY%20PI/face.py) script and save it as 'face.py'.
+    - [x] Paste [this](https://github.com/smriti1313/Face-X/blob/master/DETECTION%20AND%20RECOGNITION%20USING%20RASPBERRY%20PI/train.py) in notepad and save it as 'train.py'.
+    - [x] Copy and paste [this] in notepad and save it as 'https://github.com/smriti1313/Face-X/blob/master/DETECTION%20AND%20RECOGNITION%20USING%20RASPBERRY%20PI/face_to_system.py'.
+    - [x] Create a [sample file](https://github.com/smriti1313/Face-X/blob/master/DETECTION%20AND%20RECOGNITION%20USING%20RASPBERRY%20PI/samplePiCamOpenCV.py) and save it as '
+samplePiCamOpenCV.py '.
+- [x] [Initialize](https://github.com/smriti1313/Face-X/tree/master/DETECTION%20AND%20RECOGNITION%20USING%20RASPBERRY%20PI#initialize-the-camera-and-grab-a-reference-to-the-raw-camera-capture),[warmup](https://github.com/smriti1313/Face-X/tree/master/DETECTION%20AND%20RECOGNITION%20USING%20RASPBERRY%20PI#allow-the-camera-to-warmup) and [capture](https://github.com/smriti1313/Face-X/tree/master/DETECTION%20AND%20RECOGNITION%20USING%20RASPBERRY%20PI#capture-frames-from-the-camera) frames from the camera.
 - [x] [Test](https://github.com/smriti1313/Face-X/blob/master/Tracking%20using%20python%20and%20arduino/README.md#testing) the code.
 - [x] Run the final project.
 
@@ -21,8 +25,7 @@ This project uses python and OpenCV to recognize multiple faces and show the nam
 |Hardware|Software|
 |----|-----|
 |[Raspberry PiCam](https://www.raspberrypi.org/products/camera-module-v2/) or Web cam|[Python 2.7 or newer](https://www.howtogeek.com/197947/how-to-install-python-on-windows/)|
-|Web Cam or phone camera|[Haarcascade](https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml)|
-
+||[Haarcascade](https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml)|
 
 
 ### Dependencies🔧🛠:
@@ -33,7 +36,7 @@ Open terminal and write:
 
 
 ## Quick Start📘
-You can directly [download](https://www.wikihow.com/Download-a-GitHub-Folder) the entire [Face-X](https://github.com/akshitagupta15june/Face-X) and select the folder you want. All you have to do is now assemble hardware part.
+You can directly [download](https://www.wikihow.com/Download-a-GitHub-Folder) the entire [Face-X](https://github.com/akshitagupta15june/Face-X) and select the folder you want. 
 
 ## Initialize the camera and grab a reference to the raw camera capture
 
@@ -47,7 +50,7 @@ rawCapture = PiRGBArray(camera, size=(640, 480))
 
 time.sleep(0.1)
 
-## capture frames from the camera
+## Capture frames from the camera
 ```py
 for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=True): 
     # grab the raw NumPy array representing the image, then initialize the timestamp and occupied/unoccupied text image = frame.array
