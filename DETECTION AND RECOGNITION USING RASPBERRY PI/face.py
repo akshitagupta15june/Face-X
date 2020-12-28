@@ -159,3 +159,5 @@ GPIO.add_event_detect(4, GPIO.RISING)
 while True:
     if GPIO.event_detected(4):
         facial_recognition()
+
+        
