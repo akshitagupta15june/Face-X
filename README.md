@@ -23,5 +23,7 @@ Despite a variety of open-source face recognition frameworks available, there wa
 - `pip install -r requirements.txt`
 - Create an .env file, copy the content from .env.sample and add your data path. Example: `DATA_PATH = "./foto_reco/"`
 
+## Get Started with Open Source now
+
 [Start Open Source](https://anush-venkatakrishna.medium.com/part-1-winter-or-summer-take-your-baby-steps-into-opensource-now-7d661235d7ff)
 an article by [Anush Krishna](https://github.com/anushkrishnav)
