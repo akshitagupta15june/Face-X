@@ -48,10 +48,7 @@ You can directly [download](https://www.wikihow.com/Download-a-GitHub-Folder) th
 
 - After everything is done last thing to do is test if it works.   
 - To test first make sure that servos are properly connected to arduino and sketch is uploaded.
-
 - After sketch is uploaded make sure to close the IDE so the port is free to connect to python.
-- Now open 'face.py' with Python IDLE and press 'F5' to run the code. It will take a few seconds to connect to arduino and then you should be able to see a window streaming the web cam. 
-- Now the code will detect your face and the servos will track it track it.
-- The servo should move as you move the object. Now just attach the camera to the servos so it will move along with servos.
-
+- Now open 'face.py' with Python IDLE and press 'F5' to run the code. It will take a few seconds to connect to arduino and then you should be able to see it working.
+- The camera will move in the direction where it will find a face.
 >For better understanding watch [this](https://www.youtube.com/watch?v=O3_C-R7Jrvo)
