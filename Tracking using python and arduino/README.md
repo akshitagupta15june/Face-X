@@ -2,7 +2,7 @@
 ## About:🤔💭
 Face tracking using python and arduino. An Arduino UNO is programmed using python language which makes the camera moves in the direction of face present.
 
-### List TO-DO:
+### List TO-DO📄:
 
 - [x] Get the [hardware.](https://github.com/smriti1313/Face-X/blob/master/Tracking%20using%20python%20and%20arduino/README.md#requirements)
 - [x] Install [Python](https://www.howtogeek.com/197947/how-to-install-python-on-windows/)
