@@ -1,20 +1,21 @@
+
 ## About:🤔💭
 Face tracking using python and arduino. An Arduino UNO is programmed using python language which makes the camera moves in the direction of face present.
 
 ### List TO-DO:
 
-- [x] Get the hardware.
+- [x] Get the [hardware.](https://github.com/smriti1313/Face-X/blob/master/Tracking%20using%20python%20and%20arduino/README.md#requirements)
 - [x] Install [Python](https://www.howtogeek.com/197947/how-to-install-python-on-windows/)
-- [x] Install Dependencies
-- [x] Make a folder and name it anything.
+- [x] Install [Dependencies.](https://github.com/smriti1313/Face-X/blob/master/Tracking%20using%20python%20and%20arduino/README.md#dependencies)
+- [x] Make a folder and name it anything(or you can see [quick start](https://github.com/smriti1313/Face-X/blob/master/Tracking%20using%20python%20and%20arduino/README.md#quick-start))
     - [x] Download [Haarcascade](https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml) and paste it here
     - [x] Open notepad,write [this](https://github.com/smriti1313/Face-X/blob/master/Tracking%20using%20python%20and%20arduino/face.py) script and save it as 'face.py'.
     - [x] Paste [arduino code](https://github.com/smriti1313/Face-X/blob/master/Tracking%20using%20python%20and%20arduino/servo.ino) in [Arduino IDE](https://www.arduino.cc/en/guide/windows) and save it as 'servo.ino'.
 - [x] Assemble [rotation platform](https://www.learnrobotics.org/blog/how-to-assemble-pan-tilt-for-arduino-servos/)
-- [x] Make connections.
-- [x] Test the code.
+- [x] Make [connections.](https://github.com/smriti1313/Face-X/blob/master/Tracking%20using%20python%20and%20arduino/README.md#connections)
+- [x] [Test](https://github.com/smriti1313/Face-X/blob/master/Tracking%20using%20python%20and%20arduino/README.md#testing) the code.
 - [x] Fit the camera on rotation platform.
-- [x] Run it.
+- [x] Run the final project.
 
 ### Requirements:🧱🧱
 
