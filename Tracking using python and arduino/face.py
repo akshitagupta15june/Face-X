@@ -1,11 +1,10 @@
-
 #import all the required modules
 
 import numpy as np
 import serial
 import time
 import sys
-import cv2
+from cv2 import cv2
 
 #Setup Communication path for arduino (In place of 'COM5' put the port to which your arduino is connected)
 arduino = serial.Serial('COM5', 9600) 
