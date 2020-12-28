@@ -13,7 +13,7 @@ This project uses python and OpenCV to recognize multiple faces and show the nam
     - [x] Download [Haarcascade](https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml) and paste it here
     - [x] Open notepad,write [this](https://github.com/smriti1313/Face-X/blob/master/DETECTION%20AND%20RECOGNITION%20USING%20RASPBERRY%20PI/face.py) script and save it as 'face.py'.
     - [x] Paste [this](https://github.com/smriti1313/Face-X/blob/master/DETECTION%20AND%20RECOGNITION%20USING%20RASPBERRY%20PI/train.py) in notepad and save it as 'train.py'.
-    - [x] Copy and paste [this] in notepad and save it as 'https://github.com/smriti1313/Face-X/blob/master/DETECTION%20AND%20RECOGNITION%20USING%20RASPBERRY%20PI/face_to_system.py'.
+    - [x] Copy and paste [this](https://github.com/smriti1313/Face-X/blob/master/DETECTION%20AND%20RECOGNITION%20USING%20RASPBERRY%20PI/face_to_system.py) in notepad and save it as 'face_to_system.py'.
     - [x] Create a [sample file](https://github.com/smriti1313/Face-X/blob/master/DETECTION%20AND%20RECOGNITION%20USING%20RASPBERRY%20PI/samplePiCamOpenCV.py) and save it as '
 samplePiCamOpenCV.py '.
 - [x] [Initialize](https://github.com/smriti1313/Face-X/tree/master/DETECTION%20AND%20RECOGNITION%20USING%20RASPBERRY%20PI#initialize-the-camera-and-grab-a-reference-to-the-raw-camera-capture),[warmup](https://github.com/smriti1313/Face-X/tree/master/DETECTION%20AND%20RECOGNITION%20USING%20RASPBERRY%20PI#allow-the-camera-to-warmup) and [capture](https://github.com/smriti1313/Face-X/tree/master/DETECTION%20AND%20RECOGNITION%20USING%20RASPBERRY%20PI#capture-frames-from-the-camera) frames from the camera.
