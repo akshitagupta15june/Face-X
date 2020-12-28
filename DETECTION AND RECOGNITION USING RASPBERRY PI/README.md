@@ -17,7 +17,7 @@ This project uses python and OpenCV to recognize multiple faces and show the nam
     - [x] Create a [sample file](https://github.com/smriti1313/Face-X/blob/master/DETECTION%20AND%20RECOGNITION%20USING%20RASPBERRY%20PI/samplePiCamOpenCV.py) and save it as '
 samplePiCamOpenCV.py '.
 - [x] [Initialize](https://github.com/smriti1313/Face-X/tree/master/DETECTION%20AND%20RECOGNITION%20USING%20RASPBERRY%20PI#initialize-the-camera-and-grab-a-reference-to-the-raw-camera-capture),[warmup](https://github.com/smriti1313/Face-X/tree/master/DETECTION%20AND%20RECOGNITION%20USING%20RASPBERRY%20PI#allow-the-camera-to-warmup) and [capture](https://github.com/smriti1313/Face-X/tree/master/DETECTION%20AND%20RECOGNITION%20USING%20RASPBERRY%20PI#capture-frames-from-the-camera) frames from the camera.
-- [x] [Test](https://github.com/smriti1313/Face-X/blob/master/Tracking%20using%20python%20and%20arduino/README.md#testing) the code.
+- [x] Test the code.
 - [x] Run the final project.
 
 ### Requirements:🧱🧱
