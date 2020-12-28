@@ -39,16 +39,16 @@ Open terminal and write:
 You can directly [download](https://www.wikihow.com/Download-a-GitHub-Folder) the entire [Face-X](https://github.com/akshitagupta15june/Face-X) and select the folder you want. 
 
 ## Initialize the camera and grab a reference to the raw camera capture
-
+```py
 camera = PiCamera() camera.resolution = (640, 480) 
-
 camera.framerate = 32 
-
 rawCapture = PiRGBArray(camera, size=(640, 480))
+```
 
 ## Allow the camera to warmup
-
+```py
 time.sleep(0.1)
+```
 
 ## Capture frames from the camera
 ```py
