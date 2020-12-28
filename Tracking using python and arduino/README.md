@@ -36,7 +36,7 @@ Open terminal and write:
 
 
 ## Quick Start📘
-You can directly [download](https://www.wikihow.com/Download-a-GitHub-Folder) the entire [Face-X](https://github.com/akshitagupta15june/Face-X) and select the folder you want to work with.
+You can directly [download](https://www.wikihow.com/Download-a-GitHub-Folder) the entire [Face-X](https://github.com/akshitagupta15june/Face-X) and select the folder you want. All you have to do is now assemble hardware part.
 
 
 ## Connections🔗:
