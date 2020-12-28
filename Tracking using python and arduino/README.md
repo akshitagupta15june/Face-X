@@ -50,5 +50,5 @@ You can directly [download](https://www.wikihow.com/Download-a-GitHub-Folder) th
 - To test first make sure that servos are properly connected to arduino and sketch is uploaded.
 - After sketch is uploaded make sure to close the IDE so the port is free to connect to python.
 - Now open 'face.py' with Python IDLE and press 'F5' to run the code. It will take a few seconds to connect to arduino and then you should be able to see it working.
-- The camera will move in the direction where it will find a face.
+- The camera will move in the same direction as of the face since the code is trying to detect a face in the environment.
 >For better understanding watch [this](https://www.youtube.com/watch?v=O3_C-R7Jrvo)
