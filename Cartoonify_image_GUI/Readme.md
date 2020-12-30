@@ -26,5 +26,20 @@ git clone https://github.com/akshitagupta15june/Face-X.git
 ```  
 - Open Terminal
 ```
-python cartoonify_without_GUI.py --image IMAGE_PATH
+python cartoonify_GUI.py
 ```
+
+### Video recording of the process
+
+[![YouTube link](mq2.jpg)](https://youtu.be/VDqEv6_FDt4 "Cartoonify GUI")
+
+
+### Screenshots: 
+<img src="mq2.jpg" height="300px">
+
+### Cartoonified Image 
+<img src="cartoonified.jpg" height="600px">
+
+### Original Image
+
+<img src="wp2030093.jpg" height="600px">
