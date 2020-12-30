@@ -45,6 +45,6 @@ python cartoonify_GUI.py
 
 ### Original Image
 
-<img src="wp2030093.jpg" height="600px
+<img src="wp2030093.jpg" height="600px>
 
 
