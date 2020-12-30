@@ -37,9 +37,14 @@ python cartoonify_GUI.py
 ### Screenshots: 
 <img src="mq2.jpg" height="300px">
 
+### GUI Interface
+<img src="GUI.png" height="750px">
+
 ### Cartoonified Image 
 <img src="cartoonified.jpg" height="600px">
 
 ### Original Image
 
-<img src="wp2030093.jpg" height="600px">
+<img src="wp2030093.jpg" height="600px
+
+
