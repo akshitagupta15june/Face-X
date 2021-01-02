@@ -448,7 +448,7 @@ def subjectchoose():
                 root.mainloop()
                 print(attendance)
 
-    ###windo is frame for subject chooser
+    ###window is frame for subject chooser
     windo = tk.Tk()
     windo.iconbitmap('AMS.ico')
     windo.title("Enter subject name...")

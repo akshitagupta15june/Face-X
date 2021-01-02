@@ -45,7 +45,8 @@ Open terminal and write:
 
 ## Testing🧰:
 
-- After running, you need to give your face data to system so `enter your ID` and `name` in box and then click on `Take Images` button.
+- After running, you need to give your face data to system so `enter your ID` and `name` in box. 
+- Then click on `Take Images` button.
 - It will collect 200 images of your faces and will save it in `TrainingImage folder`.
 - After that we need to train a model (to train a model click on `Train Image` button.)
 - It will take 5-10 minutes for training(for 10 person data).
