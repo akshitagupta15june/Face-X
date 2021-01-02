@@ -8,4 +8,4 @@
 
 # Screenshots
 ![Capture](img/ouput.jpg)
-![Capture1](img/ouput2.jpg)
+![Capture1](img/ouput1.jpg)
