@@ -5,7 +5,9 @@
 `cd Recognition_using_mtcnn`
 - Run File.
 `python mtcnn.py`
-
+## Dependencies
+- `pip install tensorflow`
+- `pip install mtcnn`
 # Screenshots
 ![Capture](img/ouput.jpg)
 ![Capture1](img/ouput1.jpg)
