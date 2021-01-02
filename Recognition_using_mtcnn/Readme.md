@@ -8,6 +8,7 @@
 ## Dependencies
 - `pip install tensorflow`
 - `pip install mtcnn`
+- `pip install matplotlib`
 # Screenshots
 ![Capture](img/ouput.jpg)
 ![Capture1](img/ouput1.jpg)
