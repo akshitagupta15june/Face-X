@@ -8,24 +8,19 @@
   - Enter the subject name.
   - Click on 'Fill attendance' and wait for camera window to open.
   - It will recognise the face and display enrollment number and name.
-  - Click on 'Fill attendace'.
+  - Click on 'Fill attendence'.
 
 ----
 
 ### List TO-DO📄:
 
 - [x] Check whether your system has a web cam or not. If not, then get one camera for face recognisation.
-- [x] Install [Python](https://www.howtogeek.com/197947/how-to-install-python-on-windows/)
-- [x] Install [Dependencies.](https://github.com/smriti1313/Face-X/blob/master/Tracking%20using%20python%20and%20arduino/README.md#dependencies)
-- [x] Make a folder and name it anything(or you can see [quick start](https://github.com/smriti1313/Face-X/blob/master/Tracking%20using%20python%20and%20arduino/README.md#quick-start))
-    - [x] Download [Haarcascade](https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml) and paste it here
-    - [x] Open notepad,write [this](https://github.com/smriti1313/Face-X/blob/master/Tracking%20using%20python%20and%20arduino/face.py) script and save it as 'face.py'.
-    - [x] Paste [arduino code](https://github.com/smriti1313/Face-X/blob/master/Tracking%20using%20python%20and%20arduino/servo.ino) in [Arduino IDE](https://www.arduino.cc/en/guide/windows) and save it as 'servo.ino'.
-- [x] Assemble [rotation platform](https://www.learnrobotics.org/blog/how-to-assemble-pan-tilt-for-arduino-servos/)
-- [x] Make [connections.](https://github.com/smriti1313/Face-X/blob/master/Tracking%20using%20python%20and%20arduino/README.md#connections)
-- [x] [Test](https://github.com/smriti1313/Face-X/blob/master/Tracking%20using%20python%20and%20arduino/README.md#testing) the code.
-- [x] Fit the camera on rotation platform.
-- [x] Run the final project.
+- [x] Install [Python.](https://www.howtogeek.com/197947/how-to-install-python-on-windows/)
+- [x] Install [Dependencies.](https://github.com/smriti1313/Face-X/blob/master/Facial%20Recognition%20Attendance%20Management%20System/README.md#dependencies)
+- [x] [Download](https://www.wikihow.com/Download-a-GitHub-Folder) [Face-X](https://github.com/akshitagupta15june/Face-X) and open `Facial Recognition Attendance Management System folder`.
+- [x] Create a **TrainingImage** folder in this folder.
+- [x] Open a **run.py** and change the all paths with your system path.
+- [x]  Run run.py.
 
 ----
 
@@ -43,22 +38,19 @@ Open terminal and write:
 * `pip install Pillow`
 * `pip install opencv-python`
 * `pip install pandas`
+* Tkinter already comes with python when python is downloaded.
 
-
-## Quick Start📘
-You can directly [download](https://www.wikihow.com/Download-a-GitHub-Folder) the entire [Face-X](https://github.com/akshitagupta15june/Face-X) and select the folder you want. All you have to do is now assemble hardware part.
-
-
-## Connections🔗:
-
-![ ](https://github.com/smriti1313/Face-X/blob/master/Tracking%20using%20python%20and%20arduino/connection%201.png)
-![ ](https://github.com/smriti1313/Face-X/blob/master/Tracking%20using%20python%20and%20arduino/connection%202.png)
+----
 
 ## Testing🧰:
 
-- After everything is done last thing to do is test if it works.   
-- To test first make sure that servos are properly connected to arduino and sketch is uploaded.
-- After sketch is uploaded make sure to close the IDE so the port is free to connect to python.
-- Now open 'face.py' with Python IDLE and press 'F5' to run the code. It will take a few seconds to connect to arduino and then you should be able to see it working.
-- The camera will move in the same direction as of the face since the code is trying to detect a face in the environment.
->For better understanding watch [this](https://www.youtube.com/watch?v=O3_C-R7Jrvo)
+- After running, you need to give your face data to system so `enter your ID` and `name` in box and then click on `Take Images` button.
+- It will collect 200 images of your faces and will save it in `TrainingImage folder`.
+- After that we need to train a model (to train a model click on `Train Image` button.)
+- It will take 5-10 minutes for training(for 10 person data).
+- After training click on `Automatic Attendance` ,it can fill attendace by your face using our trained model (model will save in `TrainingImageLabel`). It will create .csv file of attendance according to time & subject.
+- You can store data in database (install wampserver),change the DB name according to your in `run.py`.
+- `Manually Fill Attendace Button` in UI is for fill a manually attendance (without face recognition),it's also create a .csv and store in a database.
+
+
+>For better understanding watch [this.](https://www.youtube.com/watch?v=dXViSRRydRs)
