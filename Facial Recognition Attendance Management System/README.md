@@ -38,6 +38,7 @@ Open terminal and write:
 * `pip install Pillow`
 * `pip install opencv-python`
 * `pip install pandas`
+* `pip install pymysql`
 * Tkinter already comes with python when python is downloaded.
 
 ----
