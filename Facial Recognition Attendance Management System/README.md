@@ -39,6 +39,7 @@ Open terminal and write:
 * `pip install opencv-python`
 * `pip install pandas`
 * `pip install pymysql`
+* `pip install opencv-contrib-python`
 * Tkinter already comes with python when python is downloaded.
 
 ----
