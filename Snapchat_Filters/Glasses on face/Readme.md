@@ -1,13 +1,13 @@
-# Want to contribute your own Snapchat Filter?
-#### Here is how to contribute
+# Cool Glass Filter
+## Quick Start
 - Clone this repository
 ` git clone https://github.com/akshitagupta15june/Face-X.git`
 - Change Directory
-` cd Snapchat_Filters`
-- Make a folder and add your code file and a readme file with screenshots.
-- Commit message
-` git commit -m "Enter message"`
-- Push your code
-` git push`
-- Make Pull request
-- Wait for reviewers to review your PR
+` cd Snapchat_Filters` ,then, `cd Glasses on face`
+- Run code file.
+` python Face_glasses.py`
+
+# Screenshots
+![Capture](img/Capture123.PNG)
+
+![Capture1](img/Capture124.PNG)
