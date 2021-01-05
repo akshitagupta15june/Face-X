@@ -135,7 +135,7 @@ def cvloop(run_event, read_camera=0, virtual_camera=0):
 
     # Facial landmarks
     # print("[INFO] loading facial landmark predictor...")
-    model = "filters/shape_predictor_68_face_landmarks.dat"
+    model = "shape_predictor_68_face_landmarks.dat"
     predictor = dlib.shape_predictor(
         model
     )  
