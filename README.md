@@ -1,10 +1,8 @@
 # FACE-X
 
-## Join official discord channel for discussion https://discord.gg/d5GfFfy8
 
-### Facial recognition’s algorithms
 <div align="center">
-<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/facex.jpeg" width="390px" height="300px" align='center'>
+<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/facex.jpeg" width="390px" height="350px" align='center'>
 </div>
 
 ### Demonstration of different algorithms and operations on faces . 
@@ -27,6 +25,9 @@ Recognition of faces by different algorithms and frameworks. Despite a variety o
 - `venv\Scripts\activate` (Windows)
 - `pip install -r requirements.txt`
 - Create an .env file, copy the content from .env.sample and add your data path. Example: `DATA_PATH = "./foto_reco/"`
+
+
+## Join official discord channel for discussion https://discord.gg/d5GfFfy8
 
 ## Get Started with Open Source now
 
