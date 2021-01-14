@@ -4,6 +4,9 @@
 
 ### Facial recognition’s algorithms
 
+<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/facex.jpeg" width="390px" height="360px" align='center'>
+
+
 ### Demonstration of different algorithms and operations on faces . 
 
 There are several approaches for recognizing a face. The algorithm can use statistics, try to find a pattern which represents a specific person or use a convolutional neural network. 
