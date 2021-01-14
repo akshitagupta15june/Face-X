@@ -3,9 +3,9 @@
 ## Join official discord channel for discussion https://discord.gg/d5GfFfy8
 
 ### Facial recognition’s algorithms
-
-<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/facex.jpeg" width="390px" height="360px" align='center'>
-
+<div align="center">
+<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/facex.jpeg" width="390px" height="300px" align='center'>
+</div>
 
 ### Demonstration of different algorithms and operations on faces . 
 
