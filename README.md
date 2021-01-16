@@ -42,21 +42,14 @@ Join official discord channel for discussion by clicking [here](https://discord.
 
 ## Open-source Programs ❄
 <div align="left">
-<div style="display: flex; flex-wrap: wrap;">
-<div style="width:30%; display: flex; align-items:center; justify-content: center; flex-direction: column;">
 <img src="https://njackwinterofcode.github.io/images/nwoc-logo.png" width="20%"><br>
 </div>
-  </div>
+ 
 <div align="center">
-<div style="width:30%; display: flex; align-items:center; justify-content: center; flex-direction: column;">
 <img src="https://devscript.tech/woc/img/WOC-logo.png" width="20%"><br>
 </div>
-  </div>
 <div align="right">
-<div style="width:30%; display: flex; align-items:center; justify-content: center; flex-direction: column;">
 <img src="https://media-exp1.licdn.com/dms/image/C560BAQGh8hr-FgbrHw/company-logo_200_200/0/1602422883512?e=2159024400&v=beta&t=s8IX2pN1J2v5SRRbgzVNzxnQ2rWeeMq2Xb__BYW60qE" width="20%"><br>
-</div>
-  </div>
 </div>
 
 We have participated in various open-source programs mentioned below:
