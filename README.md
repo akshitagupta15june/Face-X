@@ -2,21 +2,26 @@
 
 
 <div align="center">
-<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/facex.jpeg" width="75%px" height="350px" align='center'>
+<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/facex.jpeg" width="350px" height="350px" align='center'>
 </div>
 
 ### Demonstration of different algorithms and operations on faces
 
-<img src="https://media.giphy.com/media/AXorq76Tg3Vte/giphy.gif" width="50%"><br>
 There are several approaches for recognizing a face. The algorithm can use statistics, try to find a pattern which represents a specific person or use a convolutional neural network. 
+<div align="center">
+<img src="https://media.giphy.com/media/AXorq76Tg3Vte/giphy.gif" width="20%"><br>
+</div>
 
 The algorithms used for the tests are Eigenfaces, Fisherfacesand local binary patterns histograms which all come from the library OpenCV. Eigenfaces and Fisher faces are used with a Euclidean distance to predict the person. The algorithm which is using a deep convolutional neural network is the project called OpenFace.
 
 This can be used for automatic face detection attendance system in recent technology.
 
 
+
 `
-Recognition of faces by different algorithms and frameworks. Despite a variety of open-source face recognition frameworks available, there was no ready-made solution to implement. So In this project all kind of algorithms are implemented and even with various operations that can be implemented in a frontal face. The available algorithms processed only high-resolution static shots and performed insufficiently.
+Recognition of faces by different algorithms and frameworks. Despite a variety of open-source face recognition frameworks available, there was 
+no ready-made solution to implement. So In this project all kind of algorithms are implemented and even with various operations that can be implemented
+in a frontal face. The available algorithms processed only high-resolution static shots and performed insufficiently.
 `
 
 
@@ -42,19 +47,15 @@ Join official discord channel for discussion by clicking [here](https://discord.
 
 ## Open-source Programs ❄
 
-<div style="display: flex; flex-wrap: wrap;">
-<div style="width:30%; display: flex; align-items:center; justify-content: center; flex-direction: column;">
-<img src="https://njackwinterofcode.github.io/images/nwoc-logo.png" width="100%"><br>
-</div>
+<p align="center">
+  <a>
+   <img  width="140" height="140" src="https://njackwinterofcode.github.io/images/nwoc-logo.png">
+   <img align="center" src="https://devscript.tech/woc/img/WOC-logo.png" width="140" height="140"/>
+   <img  width="140" height="140" src="https://media-exp1.licdn.com/dms/image/C560BAQGh8hr-FgbrHw/company-logo_200_200/0/1602422883512?e=2159024400&v=beta&t=s8IX2pN1J2v5SRRbgzVNzxnQ2rWeeMq2Xb__BYW60qE">
+</p>
+ 
+</br>
 
-<div style="width:30%; display: flex; align-items:center; justify-content: center; flex-direction: column;">
-<img src="https://devscript.tech/woc/img/WOC-logo.png" width="70%"><br>
-</div>
-
-<div style="width:30%; display: flex; align-items:center; justify-content: center; flex-direction: column;">
-<img src="https://media-exp1.licdn.com/dms/image/C560BAQGh8hr-FgbrHw/company-logo_200_200/0/1602422883512?e=2159024400&v=beta&t=s8IX2pN1J2v5SRRbgzVNzxnQ2rWeeMq2Xb__BYW60qE" width="90%"><br>
-</div>
-</div>
 
 We have participated in various open-source programs mentioned below:
 ```

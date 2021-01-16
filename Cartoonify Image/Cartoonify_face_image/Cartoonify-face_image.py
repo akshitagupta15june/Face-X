@@ -23,3 +23,4 @@ color = cv2.bilateralFilter(img, 9, 250, 250)
 cartoon = cv2.bitwise_and(color, color, mask=edges)
 
 io.imshow(cartoon)
+

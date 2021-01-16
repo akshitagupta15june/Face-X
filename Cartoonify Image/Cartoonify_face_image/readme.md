@@ -9,4 +9,3 @@
 - Detecting edges in the image
 - Converting into grayscale & applying the medium blur
 - Cartoonifying the image 
-
