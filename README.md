@@ -44,9 +44,9 @@ Join official discord channel for discussion by clicking [here](https://discord.
 
 <p align="center">
   <a>
-   <img  width="30%" src="https://njackwinterofcode.github.io/images/nwoc-logo.png">
-   <img align="center" src="https://devscript.tech/woc/img/WOC-logo.png" width="30%"/>
-   <img  width="30%" src="https://media-exp1.licdn.com/dms/image/C560BAQGh8hr-FgbrHw/company-logo_200_200/0/1602422883512?e=2159024400&v=beta&t=s8IX2pN1J2v5SRRbgzVNzxnQ2rWeeMq2Xb__BYW60qE">
+   <img  width="120" height="120" src="https://njackwinterofcode.github.io/images/nwoc-logo.png">
+   <img align="center" src="https://devscript.tech/woc/img/WOC-logo.png" width="120" height="120"/>
+   <img  width="120" height="120" src="https://media-exp1.licdn.com/dms/image/C560BAQGh8hr-FgbrHw/company-logo_200_200/0/1602422883512?e=2159024400&v=beta&t=s8IX2pN1J2v5SRRbgzVNzxnQ2rWeeMq2Xb__BYW60qE">
 </p>
  
 </br>
