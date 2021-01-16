@@ -5,7 +5,7 @@
 <img src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/facex.jpeg" width="350px" height="350px" align='center'>
 </div>
 
-### Demonstration of different algorithms and operations on faces . 
+### Demonstration of different algorithms and operations on faces
 
 There are several approaches for recognizing a face. The algorithm can use statistics, try to find a pattern which represents a specific person or use a convolutional neural network. 
 <div align="center">
@@ -17,11 +17,12 @@ The algorithms used for the tests are Eigenfaces, Fisherfacesand local binary pa
 This can be used for automatic face detection attendance system in recent technology.
 
 
-#### Recognition of faces by different algorithms and frameworks. 
 
-Despite a variety of open-source face recognition frameworks available, there was no ready-made solution to implement. So In this project all kind of algorithms are implemented and even with various operations that can be implemented in a frontal face. 
-
-The available algorithms processed only high-resolution static shots and performed insufficiently.
+`
+Recognition of faces by different algorithms and frameworks. Despite a variety of open-source face recognition frameworks available, there was 
+no ready-made solution to implement. So In this project all kind of algorithms are implemented and even with various operations that can be implemented
+in a frontal face. The available algorithms processed only high-resolution static shots and performed insufficiently.
+`
 
 
 ### Requirements 👇
