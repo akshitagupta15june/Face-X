@@ -44,15 +44,15 @@ Join official discord channel for discussion by clicking [here](https://discord.
 
 <div style="display: flex; flex-wrap: wrap;">
 <div style="width:30%; display: flex; align-items:center; justify-content: center; flex-direction: column;">
-<img src="https://njackwinterofcode.github.io/images/nwoc-logo.png" width="100%"><br>
+<img src="https://njackwinterofcode.github.io/images/nwoc-logo.png" width="50%"><br>
 </div>
 
 <div style="width:30%; display: flex; align-items:center; justify-content: center; flex-direction: column;">
-<img src="https://devscript.tech/woc/img/WOC-logo.png" width="70%"><br>
+<img src="https://devscript.tech/woc/img/WOC-logo.png" width="50%"><br>
 </div>
 
 <div style="width:30%; display: flex; align-items:center; justify-content: center; flex-direction: column;">
-<img src="https://media-exp1.licdn.com/dms/image/C560BAQGh8hr-FgbrHw/company-logo_200_200/0/1602422883512?e=2159024400&v=beta&t=s8IX2pN1J2v5SRRbgzVNzxnQ2rWeeMq2Xb__BYW60qE" width="90%"><br>
+<img src="https://media-exp1.licdn.com/dms/image/C560BAQGh8hr-FgbrHw/company-logo_200_200/0/1602422883512?e=2159024400&v=beta&t=s8IX2pN1J2v5SRRbgzVNzxnQ2rWeeMq2Xb__BYW60qE" width="50%"><br>
 </div>
 </div>
 
