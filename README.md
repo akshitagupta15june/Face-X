@@ -2,12 +2,13 @@
 
 
 <div align="center">
-<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/facex.jpeg" width="75%px" height="350px" align='center'>
+<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/facex.jpeg" width="350px" height="350px" align='center'>
 </div>
 
 ### Demonstration of different algorithms and operations on faces . 
-
-<img src="https://media.giphy.com/media/AXorq76Tg3Vte/giphy.gif" width="50%"><br>
+<div align="center">
+<img src="https://media.giphy.com/media/AXorq76Tg3Vte/giphy.gif" width="20%"><br>
+</div>
 There are several approaches for recognizing a face. The algorithm can use statistics, try to find a pattern which represents a specific person or use a convolutional neural network. 
 
 The algorithms used for the tests are Eigenfaces, Fisherfacesand local binary patterns histograms which all come from the library OpenCV. Eigenfaces and Fisher faces are used with a Euclidean distance to predict the person. The algorithm which is using a deep convolutional neural network is the project called OpenFace.
