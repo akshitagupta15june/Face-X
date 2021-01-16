@@ -44,12 +44,12 @@ Join official discord channel for discussion by clicking [here](https://discord.
 
 <p align="center">
   <a>
-   <img height="180" width="160" src="https://njackwinterofcode.github.io/images/nwoc-logo.png">
-   <img align="center" src="https://devscript.tech/woc/img/WOC-logo.png">
-   <img height="180" width="160" src="https://media-exp1.licdn.com/dms/image/C560BAQGh8hr-FgbrHw/company-logo_200_200/0/1602422883512?e=2159024400&v=beta&t=s8IX2pN1J2v5SRRbgzVNzxnQ2rWeeMq2Xb__BYW60qE">
+   <img height="180" width="20%" src="https://njackwinterofcode.github.io/images/nwoc-logo.png">
+   <img align="center" src="https://devscript.tech/woc/img/WOC-logo.png" width="20%>
+   <img height="180" " src="https://media-exp1.licdn.com/dms/image/C560BAQGh8hr-FgbrHw/company-logo_200_200/0/1602422883512?e=2159024400&v=beta&t=s8IX2pN1J2v5SRRbgzVNzxnQ2rWeeMq2Xb__BYW60qE">
 </p>
  
- 
+
 
 
 We have participated in various open-source programs mentioned below:
