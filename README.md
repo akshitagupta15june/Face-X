@@ -85,7 +85,7 @@ Thanks goes to these wonderful people ✨✨:
 				<img src="https://avatars0.githubusercontent.com/u/57909583?v=4" width="100px" alt="" />
 				<br /> <sub><b>akshitagupta15june</b></sub>
 			</a>
-			<br /> <a href="https://github.com/Jayshah6699/datascience-mashup/commits?author=akshitagupta15june"> 
+			<br /> <a href="https://github.com/akshitagupta15june"> 
                 👑 Author
             </a>
 		</td>
