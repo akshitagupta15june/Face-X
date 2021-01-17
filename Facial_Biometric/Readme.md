@@ -4,6 +4,7 @@
 - Change Directory
 
   `cd Facial_Biometric`
+- Download shape predictor 68 face landmarks.dat file in same folder.
 - Run file-
 `python library.py`
 
