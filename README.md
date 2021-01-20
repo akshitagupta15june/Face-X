@@ -5,7 +5,9 @@
 <img src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/facex.jpeg" width="350px" height="350px" align='center'>
 </div>
 
-### Demonstration of different algorithms and operations on faces
+### Demonstration of different algorithms and operations on faces 
+
+#### [Recognition-Algorithms](https://github.com/akshitagupta15june/Face-X/tree/master/Recognition-Algorithms)
 
 There are several approaches for recognizing a face. The algorithm can use statistics, try to find a pattern which represents a specific person or use a convolutional neural network. 
 <div align="center">
