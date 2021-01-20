@@ -18,7 +18,7 @@
   Then press `C` to capture images, and `Q` to exit screen.
   The data will be saved in `face_data.npy` file in same directory.
   
-  ![Capture](./images/Capture2.jpg)
+  ![Capture](https://github.com/akshitagupta15june/Face-X/blob/master/Recognition-Algorithms/Recognition%20using%20KNearestNeighbors/images/Capture2.png)
 
 
 
@@ -33,5 +33,5 @@
       python image_recogniser.py
       
  # Screenshot
-![Capture](./images/Capture1.jpg)
-![Capture](./images/Result.jpg)
+![Capture](https://github.com/akshitagupta15june/Face-X/blob/master/Recognition-Algorithms/Recognition%20using%20KNearestNeighbors/images/Capture1.png)
+![Capture](https://github.com/akshitagupta15june/Face-X/blob/master/Recognition-Algorithms/Recognition%20using%20KNearestNeighbors/images/Result.png)
