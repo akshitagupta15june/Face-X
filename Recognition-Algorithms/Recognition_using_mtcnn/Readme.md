@@ -10,5 +10,5 @@
 - `pip install mtcnn`
 - `pip install matplotlib`
 # Screenshots
-![Capture](img/ouput.jpg)
-![Capture1](img/ouput1.jpg)
+![Capture](https://github.com/akshitagupta15june/Face-X/blob/master/Recognition-Algorithms/Recognition_using_mtcnn/img/ouput.png)
+![Capture1](https://github.com/akshitagupta15june/Face-X/blob/master/Recognition-Algorithms/Recognition_using_mtcnn/img/ouput1.png)
