@@ -22,15 +22,45 @@ The LBPH algorithm is a part of opencv.
     pip install skimage
 # Images
 
-<p><img src="https://miro.medium.com/max/667/1*J16_DKuSrnAH3WDdqwKeNA.png"><br>
+<p align="center"><img src="https://github.com/Vinamrata1086/Face-X/blob/master/Recognition-Algorithms/Facial%20Recognition%20using%20LBPH/images/pic1.png"><br>
 Divide face images into R( for example R = 3 x 3 = 9 Regions) local regions to extract LBP histograms.</p>
 
 
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Lbp_neighbors.svg/330px-Lbp_neighbors.svg.png" ><br>
+<p align="center"><img src="https://github.com/Vinamrata1086/Face-X/blob/master/Recognition-Algorithms/Facial%20Recognition%20using%20LBPH/images/pic2.png" ><br>
 Three neighborhood examples used to define a texture and calculate a local binary pattern (LBP).</p>
 
-<p>
-    <img src="https://camo.githubusercontent.com/74ab8b1f5eceb3b6e417f9393005319fb0f17c458c94fa8c0f7e550dad1ee22e/687474703a2f2f692e696d6775722e636f6d2f3342476b3133302e706e67"><br>
+<p align="center">
+    <img src="https://github.com/Vinamrata1086/Face-X/blob/master/Recognition-Algorithms/Facial%20Recognition%20using%20LBPH/images/pic3.png"><br>
     After applying the LBP operation we extract the histograms of each image based on the number of grids (X and Y) passed by parameter. After extracting the histogram of each region, we concatenate all histograms and create a new one which will be used to represent the image.
 </p>
     
+# Quick-Start
+
+- Fork the repository
+>click on the uppermost button <img src="https://github.com/Vinamrata1086/Face-X/blob/master/Recognition-Algorithms/Facial%20Recognition%20using%20LBPH/images/fork.png" width=50>
+
+- Clone the repository using-
+```
+git clone https://github.com/akshitagupta15june/Face-X.git
+```
+- Create virtual environment-
+```
+- `python -m venv env`
+- `source env/bin/activate` (Linux)
+- `env\Scripts\activate` (Windows)
+```
+- Install dependencies-
+
+- Headover to Project Directory- 
+```
+cd Facial Recognition using LBPH
+
+```
+- Execute -
+```
+python facial_recognition_part1.py (face images collection)
+python facial_recognition_part2.py (training)
+python facial_recognition_part3.py (final recognition)
+```
+
+Note: Make sure you have haarcascade_frontalface_default.xml file 
