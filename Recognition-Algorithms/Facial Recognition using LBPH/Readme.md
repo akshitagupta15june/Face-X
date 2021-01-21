@@ -30,6 +30,7 @@ Divide face images into R( for example R = 3 x 3 = 9 Regions) local regions to e
 Three neighborhood examples used to define a texture and calculate a local binary pattern (LBP).</p>
 
 <p>
-    <img src="https://camo.githubusercontent.com/74ab8b1f5eceb3b6e417f9393005319fb0f17c458c94fa8c0f7e550dad1ee22e/687474703a2f2f692e696d6775722e636f6d2f3342476b3133302e706e67">
+    <img src="https://camo.githubusercontent.com/74ab8b1f5eceb3b6e417f9393005319fb0f17c458c94fa8c0f7e550dad1ee22e/687474703a2f2f692e696d6775722e636f6d2f3342476b3133302e706e67"><br>
+    After applying the LBP operation we extract the histograms of each image based on the number of grids (X and Y) passed by parameter. After extracting the histogram of each region, we concatenate all histograms and create a new one which will be used to represent the image.
 </p>
     
