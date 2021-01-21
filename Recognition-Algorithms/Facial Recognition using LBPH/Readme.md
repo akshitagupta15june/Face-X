@@ -28,4 +28,8 @@ Divide face images into R( for example R = 3 x 3 = 9 Regions) local regions to e
 
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Lbp_neighbors.svg/330px-Lbp_neighbors.svg.png" ><br>
 Three neighborhood examples used to define a texture and calculate a local binary pattern (LBP).</p>
+
+<p>
+    <img src="https://camo.githubusercontent.com/74ab8b1f5eceb3b6e417f9393005319fb0f17c458c94fa8c0f7e550dad1ee22e/687474703a2f2f692e696d6775722e636f6d2f3342476b3133302e706e67">
+</p>
     
