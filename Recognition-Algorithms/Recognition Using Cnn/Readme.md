@@ -17,8 +17,8 @@ CNN models to train and test, each input image will pass it through a series of 
 
 # Images
 
-<p align="center"><img src="Images/Screenshot from 2020-12-11 21-34-18.png">
-<img src="Images/Screenshot from 2020-12-11 17-59-00.png">
+<p align="center"><img src="Images/Screenshot from 2020-12-11 21-34-18.png" height="250px">
+<img src="Images/Screenshot from 2020-12-11 17-59-00.png" height="250px">
 </p>
 
 # Quick-Start
