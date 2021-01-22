@@ -45,19 +45,19 @@ cd Recognition using Cnn
 ```
 - Create dataset using -
 ```
-- Run dataset.py on respective idle(VS Code, PyCharm, Jupiter Notebook, Colab)
+- Run Creating dataset.py on respective idle(VS Code, PyCharm, Jupiter Notebook, Colab)
 ```
 Note: Do split the dataset into Train and Test folders.
 
 - Train the model -
 ```
-- Run train_model.py
+- Run Training_model.py
 ```
 Note: Make sure all dependencies are installed properly.
 
 - Final-output -
 ```
-- Run output.py
+- Run Displaying_results.py
 ```
 
 Note: Make sure you have haarcascade_frontalface_default.xml file 
