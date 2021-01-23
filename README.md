@@ -30,6 +30,11 @@ in a frontal face. The available algorithms processed only high-resolution stati
 ### Requirements 👇
 - Python3.6+
 - virtualenv (`pip install virtualenv`)
+- numpy==1.19.2
+- opencv-contrib-python==4.4.0.44
+- opencv-python==4.4.0.44
+- python-dotenv==0.14.0
+- sklearn==0.23.2
 
 ### Installation 🖥
 - `virtualenvv env`
