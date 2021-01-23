@@ -2,7 +2,7 @@
 
 
 <div align="center">
-<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/facex.jpeg" width="350px" height="350px" align='center'>
+<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/Cartoonify_face_image/Images/recof.gif" width="390px" height="350px" align='center'>
 </div>
 
 ### Demonstration of different algorithms and operations on faces 
