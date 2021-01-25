@@ -1,4 +1,17 @@
-# FACE-X
+<div align="center">
+
+<h1>FACE-X</h1>
+
+![Issues](https://img.shields.io/github/issues/akshitagupta15june/Face-X)
+![Pull Requests](https://img.shields.io/github/issues-pr/akshitagupta15june/Face-X)
+![Forks](https://img.shields.io/github/forks/akshitagupta15june/Face-X)
+![Stars](https://img.shields.io/github/stars/akshitagupta15june/Face-X)
+[![License](https://img.shields.io/github/license/akshitagupta15june/Face-X)](https://github.com/akshitagupta15june/lane_detection_opencv/blob/master/LICENSE)
+
+<h3>Join official <a href="https://discord.gg/d5GfFfy">Discord Channel</a> for discussion.</h3>
+
+[![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com)
+</div>
 
 
 <div align="center">
