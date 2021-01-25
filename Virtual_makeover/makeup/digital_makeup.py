@@ -2,7 +2,7 @@ from PIL import Image,ImageDraw
 import face_recognition
 
 # load the jpg file into a numpy array
-image = face_recognition.load_image_file("people.jpg")
+image = face_recognition.load_image_file("Emma-watson_main_character_pic.jpg")
 
 # find all facial features in all the faces in the image
 face_landmarks_list = face_recognition.face_landmarks(image)
