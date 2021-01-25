@@ -51,8 +51,8 @@ in a frontal face. The available algorithms processed only high-resolution stati
 - `pip install -r requirements.txt`
 - Create an .env file, copy the content from .env.sample and add your data path. Example: `DATA_PATH = "./foto_reco/"`
 
-## Channels 📞
-Join official discord channel for discussion by clicking [here](discord.gg/jmc97prqjb)
+
+
 
 
 ## Get Started with Open Source now 👨‍💻
@@ -69,7 +69,7 @@ Join official discord channel for discussion by clicking [here](discord.gg/jmc97
    <img  width="140" height="140" src="https://media-exp1.licdn.com/dms/image/C560BAQGh8hr-FgbrHw/company-logo_200_200/0/1602422883512?e=2159024400&v=beta&t=s8IX2pN1J2v5SRRbgzVNzxnQ2rWeeMq2Xb__BYW60qE">
 </p>
  
-</br>
+</br
 
 
 We have participated in various open-source programs mentioned below:
