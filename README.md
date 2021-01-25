@@ -8,7 +8,7 @@
 ![Stars](https://img.shields.io/github/stars/akshitagupta15june/Face-X)
 [![License](https://img.shields.io/github/license/akshitagupta15june/Face-X)](https://github.com/akshitagupta15june/lane_detection_opencv/blob/master/LICENSE)
 
-<h3>Join official <a href="discord.gg/jmc97prqjb">Discord Channel</a> for discussion.</h3>
+<h3>Join official <a href="https://discord.com/invite/Jmc97prqjb">Discord Channel</a> for discussion.</h3>
 
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com)
 </div>
