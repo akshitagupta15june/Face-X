@@ -5,9 +5,16 @@ Now , for this project , we have a Kmodel. We need to flash it on the board , bu
 After this we need to install the [MaixPy ide (click to download)](http://dl.sipeed.com/MAIX/MaixPy/ide/). After downloading , load the python file , and then connect the board to the computer , and connect through serial. Then run the script and it should work. We can load the script to the board , and we can use it anywhere with a power supply , no need to connect it to the computer. 
 
 ***Prerequisites*** -
-The board - * [Sipeed M1 Dock](https://roborium.com/sipeed-m1-dock-suit-24-lcd-ov2640?search=sipeed)
+
+
+The board - 
+
+* [Sipeed M1 Dock](https://roborium.com/sipeed-m1-dock-suit-24-lcd-ov2640?search=sipeed)
 * [Sipeed M1w Dock with wifi](https://roborium.com/sipeed-m1w-dock-suit-24-lcd-ov2640?search=sipeed)
+
 Driver - CH340
-<img src="https://roborium.com/image/cache/catalog/Products/2019/SDSMDSKDBRAB%201-771x1000.jpg" >
+
+
+<img src="https://roborium.com/image/cache/catalog/Products/2019/SDSMDSKDBRAB%201-771x1000.jpg" height=400 width=400 align="center" >
 
 For more information , visit the [Maixpy Sipeed website.](https://maixpy.sipeed.com/en/)
