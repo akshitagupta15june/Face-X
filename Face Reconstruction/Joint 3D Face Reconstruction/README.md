@@ -4,6 +4,7 @@
 <img src="Docs/images/prnet.gif">
 </p>
 
+Research Paper Referred : https://arxiv.org/abs/1803.07835
 
 The main features of this model are:
 
