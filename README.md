@@ -90,6 +90,10 @@ We have participated in various open-source programs mentioned below:
 ```
 6. NWOC(NJack Winter of Code)
 ```
+```
+7. Cross Winter of Code(CrossWoC)
+```
+
 
 ## Contributors 🌟 
 
