@@ -72,7 +72,7 @@ Despite a variety of open-source face recognition algorithms available, there wa
 
 We have participated in various open-source programs mentioned below:
 ```
-1. NWOC(NJack Winter of Code)
+1. GirlScript Summer of Code 2021
 ```
 ```
 2. DWOC(Devscript Winter of Code)
@@ -85,6 +85,9 @@ We have participated in various open-source programs mentioned below:
 ```
 ```
 5. UACEIT WINTER OF CODE
+```
+```
+6. NWOC(NJack Winter of Code)
 ```
 
 ## Contributors 🌟 
