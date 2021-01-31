@@ -62,8 +62,9 @@ Despite a variety of open-source face recognition algorithms available, there wa
   <a>
    <img  width="420" height="120"  src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/Cartoonification/gssoc.png">
    <img  width="160" height="160" src="https://njackwinterofcode.github.io/images/nwoc-logo.png">
-   <img align="center" src="https://devscript.tech/woc/img/WOC-logo.png" width="160" height="160"/>
-   <img  width="160" height="160" src="https://media-exp1.licdn.com/dms/image/C560BAQGh8hr-FgbrHw/company-logo_200_200/0/1602422883512?e=2159024400&v=beta&t=s8IX2pN1J2v5SRRbgzVNzxnQ2rWeeMq2Xb__BYW60qE">
+   <img  src="https://devscript.tech/woc/img/WOC-logo.png" width="160" height="160"/>
+   <img  width="160" height="160"  src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/Cartoonification/uaceit.jpeg">
+   <img  width="180" height="180" src="https://media-exp1.licdn.com/dms/image/C560BAQGh8hr-FgbrHw/company-logo_200_200/0/1602422883512?e=2159024400&v=beta&t=s8IX2pN1J2v5SRRbgzVNzxnQ2rWeeMq2Xb__BYW60qE">
 </p>
  
 </br>
