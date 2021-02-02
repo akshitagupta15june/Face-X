@@ -2,10 +2,10 @@
 ### This is a very baisc GUI for cartoonifying iage and save it
 ## How to start
 
-- Fork and Clone the repository using-
-```
-git clone https://github.com/akshitagupta15june/Face-X.git
-```
+
+- Fork the repository
+
+- Git clone your forked repository
 - Create virtual environment-
 ```
 - python -m venv env
