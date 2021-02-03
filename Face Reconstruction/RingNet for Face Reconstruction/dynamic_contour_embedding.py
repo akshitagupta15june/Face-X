@@ -1,17 +1,3 @@
-"""
-Author: Soubhik Sanyal
-Copyright (c) 2019, Soubhik Sanyal
-All rights reserved.
-Max-Planck-Gesellschaft zur Foerderung der Wissenschaften e.V. (MPG) is holder of all proprietary rights on this
-computer program.
-You can only use this computer program if you have closed a license agreement with MPG or you get the right to use
-the computer program from someone who is authorized to grant you that right.
-Any use of the computer program without a valid license is prohibited and liable to prosecution.
-Copyright 2019 Max-Planck-Gesellschaft zur Foerderung der Wissenschaften e.V. (MPG). acting on behalf of its
-Max Planck Institute for Intelligent Systems and the Max Planck Institute for Biological Cybernetics.
-All rights reserved.
-More information about RingNet is available at https://ringnet.is.tue.mpg.de.
-"""
 
 ## A function to load the dynamic contour and the static landmarks on a template mesh
 ## Please cite the updated citaion from https://ringnet.is.tue.mpg.de if you use the dynamic contour for FLAME
