@@ -1,6 +1,7 @@
 <div align="center">
 
-<h1>FACE-X</h1>
+
+<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/logo/Face-X.png" width=250 height=250>
 
 ![Issues](https://img.shields.io/github/issues/akshitagupta15june/Face-X)
 ![Pull Requests](https://img.shields.io/github/issues-pr/akshitagupta15june/Face-X)
