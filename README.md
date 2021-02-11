@@ -59,6 +59,7 @@ You can refer to the following articles on the basics of Git and Github.
 - [Getting started with Git and GitHub](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6)
 
 
+
 ## 💥 How to Contribute in Face-X?
 
 - Take a look at the Existing [Issues](https://github.com/akshitagupta15june/Face-X/issues) or create your own Issues!
@@ -74,7 +75,7 @@ git clone https://github.com/akshitagupta15june/Face-X.git
 - Create a Pull Request which will be reviewed and suggestions would be added to improve it.
 - Add Screenshots to help us know what this enhancement/implementation is all about.
 
-## Open-source Programs ❄
+## Face-X was a part these open source programs❄
 
 <p align="center">
   <a>
