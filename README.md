@@ -22,19 +22,14 @@
 ### Demonstration of different algorithms and operations on faces 
 
 #### [Recognition-Algorithms](https://github.com/akshitagupta15june/Face-X/tree/master/Recognition-Algorithms)
+ 
 
-There are several approaches for recognizing a face. The algorithm can use statistics, try to find a pattern which represents a specific person or use a convolutional neural network. 
+Despite a variety of open-source face recognition algorithms available, there was no ready-made solution to implement. So In this project all kind of algorithms are implemented and even with various operations that can be implemented in a frontal face. The available algorithms processed only high-resolution static shots and have performed sufficiently well.
+
 <div align="center">
 <img src="https://media.giphy.com/media/AXorq76Tg3Vte/giphy.gif" width="20%"><br>
 </div>
-
-The algorithms used for the tests are Eigenfaces, Fisherfacesand local binary patterns histograms which all come from the library OpenCV. Eigenfaces and Fisher faces are used with a Euclidean distance to predict the person. The algorithm which is using a deep convolutional neural network is the project called OpenFace.
-
-This can be used for automatic face detection attendance system in recent technology.
-
-`
-Despite a variety of open-source face recognition algorithms available, there was no ready-made solution to implement. So In this project all kind of algorithms are implemented and even with various operations that can be implemented in a frontal face. The available algorithms processed only high-resolution static shots and performed sufficiently.
-`
+There are several approaches for recognizing a face. The algorithm can use statistics, try to find a pattern which represents a specific person or use a convolutional neural network.
 
 
 ### Requirements 👇
