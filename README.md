@@ -105,7 +105,7 @@ Thanks goes to these wonderful people ✨✨:
 				<br /> <sub><b>akshitagupta15june</b></sub>
 			</a>
 			<br /> <a href="https://github.com/akshitagupta15june"> 
-                👑 Author
+                👑 Admin
             </a>
 		</td>
 		<td align="center">
