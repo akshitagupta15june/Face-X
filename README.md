@@ -36,13 +36,16 @@ There are several approaches for recognizing a face. The algorithm can use stati
 - Python3.6+
 - virtualenv (`pip install virtualenv`)
 
-### Installation 🖥
-- `virtualenvv env`
-- `source venv/bin/activate` (Linux)
-- `venv\Scripts\activate` (Windows)
-- `pip install -r requirements.txt`
-- Create an .env file, copy the content from .env.sample and add your data path. Example: `DATA_PATH = "./foto_reco/"`
 
+### Installation 👇
+
+- Create virtual environment-
+```
+- `python -m venv env`
+- `source env/bin/activate`  (Linux)
+- `env\Scripts\activate`  (Windows)
+- `pip install -r requirements.txt`
+```
 
 
 ## ⭐ How to get started?
@@ -59,11 +62,17 @@ You can refer to the following articles on the basics of Git and Github.
 
 [Start Open Source](https://anush-venkatakrishna.medium.com/part-1-winter-or-summer-take-your-baby-steps-into-opensource-now-7d661235d7ff) an article by [Anush Krishna](https://github.com/anushkrishnav)
 
-## 💥 How to Contribute?
+## 💥 How to Contribute in this Face-X?
 
 - Take a look at the Existing [Issues](https://github.com/akshitagupta15june/Face-X/issues) or create your own Issues!
 - Wait for the Issue to be assigned to you.
-- Fork the Repo and create a Branch for any Issue that you are working upon.
+- Fork the repository
+>click on the uppermost button <img src="https://github.com/Vinamrata1086/Face-X/blob/master/Recognition-Algorithms/Facial%20Recognition%20using%20LBPH/images/fork.png" width=50>
+
+- Clone the repository using-
+```
+git clone https://github.com/akshitagupta15june/Face-X.git
+```
 - Read the [Code of Conduct](https://github.com/akshitagupta15june/Face-X/blob/master/CODE_OF_CONDUCT.md)
 - Create a Pull Request which will be reviewed and suggestions would be added to improve it.
 - Add Screenshots to help us know what this enhancement/implementation is all about.
