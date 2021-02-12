@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright 2016 Michael Sladoje and Mike Schälchli. All Rights Reserved.
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="General">
+        <ch.zhaw.facerecognition.Helpers.SwitchPreference
+        android:title="Camera"
+        android:key="key_front_camera"
+        android:defaultValue="true"
+        android:switchTextOn="Front"
+        android:switchTextOff="Back"/>
+        <ch.zhaw.facerecognition.Helpers.SwitchPreference
+            android:title="Night Portrait Mode"
+            android:key="key_night_portrait"
+            android:defaultValue="false"
+            android:switchTextOn="On"
+            android:switchTextOff="Off"/>
+        <ch.zhaw.facerecognition.Helpers.EditTextPreference
+            android:title="Exposure Compensation (between 0 - 100)"
+            android:key="key_exposure_compensation"
+            android:defaultValue="50"
+            android:numeric="integer"
+            />
+        <ch.zhaw.facerecognition.Helpers.EditTextPreference
+            android:title="Maximum Camera View Width"
+            android:key="key_maximum_camera_view_width"
+            android:defaultValue="320"
+            android:numeric="integer"
+            />
+        <ch.zhaw.facerecognition.Helpers.EditTextPreference
+            android:title="Maximum Camera View Height"
+            android:key="key_maximum_camera_view_height"
+            android:defaultValue="240"
+            android:numeric="integer"
+            />
+        <Preference
+            android:title="Default Settings"
+            android:key="key_default_button"
+            android:summary="Reset all settings to default"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Add Person">
+        <ch.zhaw.facerecognition.Helpers.EditTextPreference
+            android:title="Number of pictures"
+            android:key="key_numberOfPictures"
+            android:defaultValue="20"
+            android:numeric="integer"
+            />
+        <ch.zhaw.facerecognition.Helpers.EditTextPreference
+            android:title="Time between photos (in ms)"
+            android:defaultValue="500"
+            android:numeric="integer"
+            android:key="key_timerDiff"/>
+        <ch.zhaw.facerecognition.Helpers.EditTextPreference
+            android:title="Face size: N (Resize to N x N)"
+            android:defaultValue="160"
+            android:numeric="integer"
+            android:key="key_faceSize"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Face detection">
+        <ch.zhaw.facerecognition.Helpers.SwitchPreference
+            android:title="Method"
+            android:key="key_detection_method"
+            android:defaultValue="true"
+            android:switchTextOn="OpenCV detectMultiScale"
+            android:switchTextOff="Android FaceDetector"/>
+        <ch.zhaw.facerecognition.Helpers.SwitchPreference
+            android:title="Eye Detection"
+            android:key="key_eye_detection"
+            android:defaultValue="true"
+            android:switchTextOn="Enabled"
+            android:switchTextOff="Disabled"/>
+        <ch.zhaw.facerecognition.Helpers.ListPreference
+            android:title="OpenCV face cascade file"
+            android:entries="@array/face_cascade_file"
+            android:entryValues="@array/face_cascade_file"
+            android:key="key_face_cascade_file"
+            android:defaultValue="@string/haarcascade_alt2"/>
+        <ch.zhaw.facerecognition.Helpers.ListPreference
+            android:title="Lefteye cascade file"
+            android:entries="@array/lefteye_cascade_file"
+            android:entryValues="@array/lefteye_cascade_file"
+            android:key="key_lefteye_cascade_file"
+            android:defaultValue="@string/haarcascade_lefteye"/>
+        <ch.zhaw.facerecognition.Helpers.ListPreference
+            android:title="Righteye cascade file"
+            android:entries="@array/righteye_cascade_file"
+            android:entryValues="@array/righteye_cascade_file"
+            android:key="key_righteye_cascade_file"
+            android:defaultValue="@string/haarcascade_righteye"/>
+        <ch.zhaw.facerecognition.Helpers.EditTextPreference
+            android:title="scaleFactor for OpenCV detectmultiscale"
+            android:key="key_scaleFactor"
+            android:defaultValue="1.1"
+            />
+        <ch.zhaw.facerecognition.Helpers.EditTextPreference
+            android:title="minNeighbors for OpenCV detectmultiscale"
+            android:key="key_minNeighbors"
+            android:defaultValue="3"
+            android:numeric="integer"
+            />
+        <ch.zhaw.facerecognition.Helpers.EditTextPreference
+            android:title="flags for OpenCV detectmultiscale"
+            android:key="key_flags"
+            android:defaultValue="2"
+            android:numeric="integer"
+            />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Preprocessing Detection">
+        <ch.zhaw.facerecognition.Helpers.MultiSelectListPreference
+            android:title="Standard Preprocessing"
+            android:entries="@array/detection_standard_pre"
+            android:entryValues="@array/detection_standard_pre"
+            android:key="key_detection_standard_pre"
+            android:defaultValue="@array/detection_standard_pre_default"/>
+        <ch.zhaw.facerecognition.Helpers.MultiSelectListPreference
+            android:title="Brightness Correction"
+            android:entries="@array/brightness"
+            android:entryValues="@array/brightness"
+            android:key="key_detection_brightness"
+            android:defaultValue="@array/empty_array"/>
+        <ch.zhaw.facerecognition.Helpers.MultiSelectListPreference
+            android:title="Contours"
+            android:entries="@array/contours"
+            android:entryValues="@array/contours"
+            android:key="key_detection_contours"
+            android:defaultValue="@array/empty_array"/>
+        <ch.zhaw.facerecognition.Helpers.MultiSelectListPreference
+            android:title="Contrast Adjustment"
+            android:entries="@array/contrast"
+            android:entryValues="@array/contrast"
+            android:key="key_detection_contrast"
+            android:defaultValue="@array/empty_array"/>
+        <ch.zhaw.facerecognition.Helpers.EditTextPreference
+            android:title="gamma (Gamma Correction)"
+            android:defaultValue="@string/gamma"
+            android:numeric="decimal"
+            android:maxLength="4"
+            android:key="key_detection_gamma"/>
+        <ch.zhaw.facerecognition.Helpers.EditTextPreference
+            android:title="sigmas (comma separated - Difference of Gaussians)"
+            android:defaultValue="@string/sigmas"
+            android:key="key_detection_sigmas"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Preprocessing Recognition">
+        <ch.zhaw.facerecognition.Helpers.MultiSelectListPreference
+            android:title="Standard Preprocessing"
+            android:entries="@array/standard_pre"
+            android:entryValues="@array/standard_pre"
+            android:key="key_standard_pre" />
+        <ch.zhaw.facerecognition.Helpers.MultiSelectListPreference
+            android:title="Brightness Correction"
+            android:entries="@array/brightness"
+            android:entryValues="@array/brightness"
+            android:key="key_brightness" />
+        <ch.zhaw.facerecognition.Helpers.MultiSelectListPreference
+            android:title="Contours"
+            android:entries="@array/contours"
+            android:entryValues="@array/contours"
+            android:key="key_contours"
+            android:defaultValue="@array/empty_array"/>
+        <ch.zhaw.facerecognition.Helpers.MultiSelectListPreference
+            android:title="Contrast Adjustment"
+            android:entries="@array/contrast"
+            android:entryValues="@array/contrast"
+            android:key="key_contrast" />
+        <ch.zhaw.facerecognition.Helpers.MultiSelectListPreference
+            android:title="Standard Postprocessing"
+            android:entries="@array/standard_post"
+            android:entryValues="@array/standard_post"
+            android:key="key_standard_post"
+            android:defaultValue="@array/standard_post_default"/>
+        <ch.zhaw.facerecognition.Helpers.EditTextPreference
+            android:title="gamma (Gamma Correction)"
+            android:defaultValue="@string/gamma"
+            android:numeric="decimal"
+            android:maxLength="4"
+            android:key="key_gamma"/>
+        <ch.zhaw.facerecognition.Helpers.EditTextPreference
+            android:title="sigmas (comma separated - Difference of Gaussians)"
+            android:defaultValue="@string/sigmas"
+            android:key="key_sigmas"/>
+        <ch.zhaw.facerecognition.Helpers.EditTextPreference
+            android:title="N (Resize to N x N)"
+            android:defaultValue="160"
+            android:numeric="integer"
+            android:key="key_N"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Recognition Algorithms General">
+        <ch.zhaw.facerecognition.Helpers.ListPreference
+            android:title="Feature extraction and classification method"
+            android:entries="@array/classification_method"
+            android:entryValues="@array/classification_method"
+            android:defaultValue="@string/tensorflow"
+            android:key="key_classification_method"/>
+        <ch.zhaw.facerecognition.Helpers.SwitchPreference
+            android:title="Classification method for TensorFlow or Caffe"
+            android:switchTextOn="@string/svm"
+            android:switchTextOff="@string/knn"
+            android:defaultValue="true"
+            android:key="key_classificationMethodTFCaffe"/>
+        <ch.zhaw.facerecognition.Helpers.EditTextPreference
+            android:title="K (Number of Nearest Neighbor)"
+            android:defaultValue="20"
+            android:numeric="integer"
+            android:maxLength="3"
+            android:key="key_K"/>
+        <ch.zhaw.facerecognition.Helpers.EditTextPreference
+            android:title="PCA Threshold (Eigenfaces)"
+            android:defaultValue="0.98"
+            android:numeric="decimal"
+            android:maxLength="4"
+            android:key="key_pca_threshold"/>
+        <ch.zhaw.facerecognition.Helpers.EditTextPreference
+            android:title="Train Options (LIBSVM)"
+            android:defaultValue="-t 0 "
+            android:key="key_svmTrainOptions"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="TensorFlow">
+        <ch.zhaw.facerecognition.Helpers.EditTextPreference
+            android:title="Input Size"
+            android:defaultValue="160"
+            android:numeric="integer"
+            android:key="key_inputSize"/>
+        <ch.zhaw.facerecognition.Helpers.EditTextPreference
+            android:title="Number of input channels"
+            android:defaultValue="3"
+            android:numeric="integer"
+            android:key="key_inputChannels" />
+        <ch.zhaw.facerecognition.Helpers.EditTextPreference
+            android:title="Image mean"
+            android:defaultValue="128"
+            android:numeric="integer"
+            android:key="key_imageMean" />
+        <ch.zhaw.facerecognition.Helpers.EditTextPreference
+            android:title="Image Std"
+            android:defaultValue="128"
+            android:numeric="integer"
+            android:key="key_imageStd" />
+        <ch.zhaw.facerecognition.Helpers.EditTextPreference
+            android:title="Output size"
+            android:defaultValue="128"
+            android:numeric="integer"
+            android:key="key_outputSize"/>
+        <ch.zhaw.facerecognition.Helpers.EditTextPreference
+            android:title="Input layer"
+            android:defaultValue="input"
+            android:key="key_inputLayer"/>
+        <ch.zhaw.facerecognition.Helpers.EditTextPreference
+            android:title="Output layer"
+            android:defaultValue="embeddings"
+            android:key="key_outputLayer"/>
+        <ch.zhaw.facerecognition.Helpers.EditTextPreference
+            android:title="Model file"
+            android:defaultValue="optimized_facenet.pb"
+            android:key="key_modelFileTensorFlow"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Caffe">
+        <ch.zhaw.facerecognition.Helpers.EditTextPreference
+            android:title="Mean values (comma separated)"
+            android:defaultValue="@string/meanValuesCaffe"
+            android:key="key_meanValuesCaffe"/>
+        <ch.zhaw.facerecognition.Helpers.EditTextPreference
+            android:title="Output layer"
+            android:defaultValue="@string/outputLayerCaffe"
+            android:key="key_layerCaffe"/>
+        <ch.zhaw.facerecognition.Helpers.EditTextPreference
+            android:title="Model file"
+            android:defaultValue="@string/modelFileCaffe"
+            android:key="key_modelFileCaffe"/>
+        <ch.zhaw.facerecognition.Helpers.EditTextPreference
+            android:title="Weights file"
+            android:defaultValue="@string/weightsFileCaffe"
+            android:key="key_weightsFileCaffe"/>
+    </PreferenceCategory>
+</PreferenceScreen>

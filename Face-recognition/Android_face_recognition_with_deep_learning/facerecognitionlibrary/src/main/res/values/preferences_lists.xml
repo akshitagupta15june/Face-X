@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright 2016 Michael Sladoje and Mike Schälchli. All Rights Reserved.
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<resources>
+    <string-array name="detection_standard_pre">
+        <item>@string/grayscale</item>
+    </string-array>
+    <string-array name="detection_standard_pre_default">
+        <item>@string/grayscale</item>
+    </string-array>
+    <string-array name="standard_pre">
+        <item>@string/grayscale</item>
+        <item>@string/eyeAlignment</item>
+    </string-array>
+    <string-array name="brightness">
+        <item>@string/gammaCorrection</item>
+    </string-array>
+    <string-array name="contours">
+        <item>@string/doG</item>
+        <item>@string/masking</item>
+        <item>@string/lbp</item>
+    </string-array>
+    <string-array name="contrast">
+        <item>@string/histogrammEqualization</item>
+    </string-array>
+    <string-array name="standard_post">
+        <item>@string/resize</item>
+    </string-array>
+    <string-array name="standard_post_default">
+        <item>@string/resize</item>
+    </string-array>
+    <string-array name="classification_method">
+        <item>@string/eigenfaces</item>
+        <item>@string/imageReshaping</item>
+        <item>@string/tensorflow</item>
+        <item>@string/caffe</item>
+    </string-array>
+    <string-array name="face_cascade_file">
+        <item>@string/haarcascade_default</item>
+        <item>@string/haarcascade_alt</item>
+        <item>@string/haarcascade_alt2</item>
+        <item>@string/lbpcascade</item>
+        <item>@string/classifier_350kids</item>
+        <item>@string/classifier_200adults_350kids</item>
+    </string-array>
+    <string-array name="lefteye_cascade_file">
+        <item>@string/haarcascade_lefteye</item>
+        <item>@string/haarcascade_eye</item>
+        <item>@string/haarcascade_righteye</item>
+    </string-array>
+    <string-array name="righteye_cascade_file">
+        <item>@string/haarcascade_righteye</item>
+        <item>@string/haarcascade_eye</item>
+        <item>@string/haarcascade_lefteye</item>
+    </string-array>
+    <string-array name="empty_array"/>
+</resources>

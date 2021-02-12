@@ -1,0 +1,17 @@
+.idea/* linguist-vendored
+build/* linguist-vendored
+gradle/* linguist-vendored
+src/main/jniLibs/* linguist-vendored
+jni-build/obj/* linguist-vendored
+jni-build/libs/* linguist-vendored
+jni-build/jni/genfiles/* linguist-vendored
+jni-build/jni/include/* linguist-vendored
+jni-build/jni/libs/* linguist-vendored
+jni-build/jni/libsvm/* linguist-vendored
+openCVLibrary310/* linguist-vendored
+
+CHANGELOG.md linguist-documentation
+LICENSE.txt linguist-documentation
+NOTICE.txt linguist-documentation
+README.md linguist-documentation
+USER MANUAL.md linguist-documentation

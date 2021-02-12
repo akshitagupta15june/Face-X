@@ -1,0 +1,8 @@
+ch.zhaw.facerecognitionlibrary.Helpers
+ch.zhaw.facerecognitionlibrary.PreProcessor
+ch.zhaw.facerecognitionlibrary.PreProcessor.BrightnessCorrection
+ch.zhaw.facerecognitionlibrary.PreProcessor.Contours
+ch.zhaw.facerecognitionlibrary.PreProcessor.ContrastAdjustment
+ch.zhaw.facerecognitionlibrary.PreProcessor.StandardPostprocessing
+ch.zhaw.facerecognitionlibrary.PreProcessor.StandardPreprocessing
+ch.zhaw.facerecognitionlibrary.Recognition
