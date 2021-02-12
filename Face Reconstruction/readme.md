@@ -1,4 +1,9 @@
 ## Facial reconstruction 🎭🎭
+
+<p align="center"> 
+<img src="https://github.com/smriti1313/Face-X/blob/master/Face%20Reconstruction/Joint%203D%20Face%20Reconstruction/Docs/images/prnet.gif">
+</p>
+
 ## Abstract📃:
 - Face as a biometric identification in computer vision is an important medium, in areas such as 
   - video surveillance
