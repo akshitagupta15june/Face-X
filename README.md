@@ -75,7 +75,7 @@ git clone https://github.com/akshitagupta15june/Face-X.git
 - Create a Pull Request which will be reviewed and suggestions would be added to improve it.
 - Add Screenshots to help us know what this enhancement/implementation is all about.
 
-## Face-X was a part these open source programs❄
+## Face-X is a part these open source programs❄
 
 <p align="center">
   <a>
