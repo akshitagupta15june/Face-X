@@ -13,8 +13,8 @@ Caffe is a deep learning framework made with expression, speed, and modularity i
 
 # Output:
 
-![Example 1]()
+![Example 1](outputs/deep_learning_face_detection_example_01.jpg)
 
-![Example 2]()
+![Example 2](outputs/deep_learning_face_detection_example_02.jpg)
 
-![Video]()
+![Video](outputs/deep_learning_face_detection_opencv.gif)
