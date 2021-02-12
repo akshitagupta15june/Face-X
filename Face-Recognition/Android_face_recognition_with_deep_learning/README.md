@@ -1,8 +1,4 @@
 # Android Face Recognition with Deep Learning - Library
-## Acknowledgements
-This library was developed by Michael Sladoje and Mike Schälchli during a bachelor thesis at the Zurich University of Applied Sciences.
-
-Acknowledgements go to the thesis supervisors Dr. Martin Loeser, Dr. Oliver Dürr, Diego Browarnik and all the contributors of our code sources.
 
 Code has been derived from the following sources:
 - OpenCV - https://github.com/opencv/opencv
@@ -53,3 +49,7 @@ There are 3 different usages:
 - make clean (executes ndk-build clean)
 - make (executes ndk-build)
 - make install (copies the libs to the folder /src/main/jniLibs/armeabi-v7a)
+
+## Acknowledgements
+
+This library was developed by Michael Sladoje and Mike Schälchli and to the thesis supervisors Dr. Martin Loeser, Dr. Oliver Dürr, Diego Browarnik.
