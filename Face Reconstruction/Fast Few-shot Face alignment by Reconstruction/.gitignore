@@ -1,0 +1,5 @@
+*.pyc
+*.swp
+*.*~
+models
+config_local.py
