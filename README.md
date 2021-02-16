@@ -91,7 +91,7 @@ git clone https://github.com/akshitagupta15june/Face-X.git
    <img  width="180" height="180" src="https://media-exp1.licdn.com/dms/image/C560BAQGh8hr-FgbrHw/company-logo_200_200/0/1602422883512?e=2159024400&v=beta&t=s8IX2pN1J2v5SRRbgzVNzxnQ2rWeeMq2Xb__BYW60qE">
 </p>
 	
-	</br>
+</br>
 	
 ## Get Started with Open Source programs 👨‍💻
 
