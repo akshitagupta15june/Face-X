@@ -99,7 +99,6 @@ git clone https://github.com/akshitagupta15june/Face-X.git
 </br>
 
 
-</br>
 ## ❤️ Project Admin
 
 <table>
