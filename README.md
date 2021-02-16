@@ -1,13 +1,15 @@
 <div align="center">
 
 
-<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/logo/Face-X.png" width=250 height=250>
+
 
 ![Issues](https://img.shields.io/github/issues/akshitagupta15june/Face-X)
 ![Pull Requests](https://img.shields.io/github/issues-pr/akshitagupta15june/Face-X)
 ![Forks](https://img.shields.io/github/forks/akshitagupta15june/Face-X)
 ![Stars](https://img.shields.io/github/stars/akshitagupta15june/Face-X)
 [![License](https://img.shields.io/github/license/akshitagupta15june/Face-X)](https://github.com/akshitagupta15june/lane_detection_opencv/blob/master/LICENSE)
+
+<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/logo/Face-X.png" width=250 height=250>
 
 <h3>Join official <a href="https://discord.com/invite/Jmc97prqjb">Discord Channel</a> for discussion.</h3>
 
