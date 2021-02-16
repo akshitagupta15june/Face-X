@@ -60,7 +60,7 @@ You can refer to the following articles on the basics of Git and Github.
 - [How to create a Pull Request](https://opensource.com/article/19/7/create-pull-request-github)
 - [Getting started with Git and GitHub](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6)
 
-
+</br>
 
 ## 💥 How to Contribute in Face-X?
 
@@ -77,6 +77,8 @@ git clone https://github.com/akshitagupta15june/Face-X.git
 - Create a Pull Request which will be reviewed and suggestions would be added to improve it.
 - Add Screenshots to help us know what this enhancement/implementation is all about.
 
+</br>
+
 ## Face-X is a part these open source programs❄
 
 <p align="center">
@@ -89,11 +91,15 @@ git clone https://github.com/akshitagupta15june/Face-X.git
    <img  width="180" height="180" src="https://media-exp1.licdn.com/dms/image/C560BAQGh8hr-FgbrHw/company-logo_200_200/0/1602422883512?e=2159024400&v=beta&t=s8IX2pN1J2v5SRRbgzVNzxnQ2rWeeMq2Xb__BYW60qE">
 </p>
 	
+	</br>
+	
 ## Get Started with Open Source programs 👨‍💻
 
 [Start Open Source](https://anush-venkatakrishna.medium.com/part-1-winter-or-summer-take-your-baby-steps-into-opensource-now-7d661235d7ff) an article by [Anush Krishna](https://github.com/anushkrishnav)
 </br>
 
+
+</br>
 ## ❤️ Project Admin
 
 <table>
