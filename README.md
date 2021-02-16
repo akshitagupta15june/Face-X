@@ -94,12 +94,9 @@ git clone https://github.com/akshitagupta15june/Face-X.git
 [Start Open Source](https://anush-venkatakrishna.medium.com/part-1-winter-or-summer-take-your-baby-steps-into-opensource-now-7d661235d7ff) an article by [Anush Krishna](https://github.com/anushkrishnav)
 </br>
 
+## ❤️ Project Admin
 
-## Contributors 🌟 
-
-Thanks goes to these wonderful people ✨✨:
 <table>
-	<!--   ROW 1 -->
 	<tr>
 		<td align="center">
 			<a href="https://github.com/akshitagupta15june">
@@ -107,150 +104,22 @@ Thanks goes to these wonderful people ✨✨:
 				<br /> <sub><b>akshitagupta15june</b></sub>
 			</a>
 			<br /> <a href="https://github.com/akshitagupta15june"> 
-                👑 Admin
-            </a>
-		</td>
-		<td align="center">
-			<a href="https://github.com/Aayush-hub">
-				<img src="https://avatars1.githubusercontent.com/u/65889104?v=4" width="100px" alt="" />
-				<br /> <sub><b>Aayush-hub</b></sub>
-			</a>
-			<br /> <a href="https://github.com/Jayshah6699/datascience-mashup/commits?author=Aayush-hub">
-                💻
-            </a>
-		</td>
-		<td align="center">
-			<a href="https://github.com/Halix267">
-				<img src="https://avatars1.githubusercontent.com/u/63572018?v=4" width="100px" alt="" />
-				<br /> <sub><b>Halix267</b></sub>
-			</a>
-			<br /> <a href="https://github.com/Jayshah6699/datascience-mashup/commits?author=Halix267">
-                💻
-            </a>
-		</td>
-		<td align="center">
-			<a href="https://github.com/smriti1313">
-				<img src="https://avatars1.githubusercontent.com/u/52624997?v=4" width="100px" alt="" />
-				<br /> <sub><b>smriti1313</b></sub>
-			</a>
-			<br /> <a href="https://github.com/Jayshah6699/datascience-mashup/commits?author=smriti1313">
-                💻
-            </a>
-		</td>
-		<td align="center">
-			<a href="https://github.com/SoyabulIslamLincoln">
-				<img src="https://avatars1.githubusercontent.com/u/55865931?v=4" width="100px" alt="" />
-				<br /> <sub><b>SoyabulIslamLincoln</b></sub>
-			</a>
-			<br /> <a href="https://github.com/Jayshah6699/datascience-mashup/commits?author=SoyabulIslamLincoln">
-                💻
-            </a>
-		</td>
-		<td align="center">
-			<a href="https://github.com/ashwani-rathee">
-				<img src="https://avatars3.githubusercontent.com/u/54855463?v=4" width="100px" alt="" />
-				<br /> <sub><b>ashwani-rathee</b></sub>
-			</a>
-			<br /> <a href="https://github.com/Jayshah6699/datascience-mashup/commits?author=ashwani-rathee">
-                💻
-            </a>
-		</td>
-		<td align="center">
-			<a href="https://github.com/KerinPithawala">
-				<img src="https://avatars3.githubusercontent.com/u/46436993?v=4" width="100px" alt="" />
-				<br /> <sub><b>KerinPithawala</b></sub>
-			</a>
-			<br /> <a href="https://github.com/Jayshah6699/datascience-mashup/commits?author=KerinPithawala">
-                💻
-            </a>
-		</td>
-	</tr>
-	<!--   ROW 2 -->
-	<tr>
-		<td align="center">
-			<a href="https://github.com/koolgax99">
-				<img src="https://avatars0.githubusercontent.com/u/55532999?v=4" width="100px" alt="" />
-				<br /> <sub><b>koolgax99</b></sub>
-			</a>
-			<br /> <a href="https://github.com/Jayshah6699/datascience-mashup/commits?author=koolgax99">
-                💻
-            </a>
-		</td>
-		<td align="center">
-			<a href="https://github.com/Sloth-Panda">
-				<img src="https://avatars2.githubusercontent.com/u/70213384?v=4" width="100px" alt="" />
-				<br /> <sub><b>Sloth-Panda</b></sub>
-			</a>
-			<br /> <a href="https://github.com/Jayshah6699/datascience-mashup/commits?author=Sloth-Panda">
-                💻
-            </a>
-		</td>
-		<td align="center">
-			<a href="https://github.com/amandp13">
-				<img src="https://avatars0.githubusercontent.com/u/55224891?v=4" width="100px" alt="" />
-				<br /> <sub><b>amandp13</b></sub>
-			</a>
-			<br /> <a href="https://github.com/Jayshah6699/datascience-mashup/commits?author=amandp13">
-                💻
-            </a>
-		</td>
-		<td align="center">
-			<a href="https://github.com/Bhagyashri2000">
-				<img src="https://avatars1.githubusercontent.com/u/43903254?v=4" width="100px" alt="" />
-				<br /> <sub><b>Bhagyashri2000</b></sub>
-			</a>
-			<br /> <a href="https://github.com/Jayshah6699/datascience-mashup/commits?author=Bhagyashri2000">
-                💻
-            </a>
-		</td>
-		<td align="center">
-			<a href="https://github.com/musavveer">
-				<img src="https://avatars2.githubusercontent.com/u/62888562?v=4" width="100px" alt="" />
-				<br /> <sub><b>musavveer</b></sub>
-			</a>
-			<br /> <a href="https://github.com/Jayshah6699/datascience-mashup/commits?author=musavveer">
-                💻
-            </a>
-		</td>
-		<td align="center">
-			<a href="https://github.com/RaghavModi">
-				<img src="https://avatars1.githubusercontent.com/u/52846588?v=4" width="100px" alt="" />
-				<br /> <sub><b>RaghavModi</b></sub>
-			</a>
-			<br /> <a href="https://github.com/Jayshah6699/datascience-mashup/commits?author=RaghavModi">
-                💻
-            </a>
-		</td>
-		<td align="center">
-			<a href="https://github.com/Karnak123">
-				<img src="https://avatars1.githubusercontent.com/u/39977582?v=4" width="100px" alt="" />
-				<br /> <sub><b>Karnak123</b></sub>
-			</a>
-			<br /> <a href="https://github.com/Jayshah6699/datascience-mashup/commits?author=Karnak123">
-                💻
-            </a>
-		</td>
-	</tr>
-	<!--   ROW 3 -->
-	<tr>
-		<td align="center">
-			<a href="https://github.com/himanshu007-creator">
-				<img src="https://avatars2.githubusercontent.com/u/65963997?v=4" width="100px" alt="" />
-				<br /> <sub><b>himanshu007-creator</b></sub>
-			</a>
-			<br /> <a href="https://github.com/Jayshah6699/datascience-mashup/commits?author=himanshu007-creator">
-                💻
-            </a>
-		</td>
-		<td align="center">
-			<a href="https://github.com/saiharsha-22">
-				<img src="https://avatars1.githubusercontent.com/u/61947484?v=4" width="100px" alt="" />
-				<br /> <sub><b>saiharsha-22</b></sub>
-			</a>
-			<br /> <a href="https://github.com/Jayshah6699/datascience-mashup/commits?author=saiharsha-22">
-                💻
-            </a>
+		👑 Admin
+	    </a>
 		</td>
 	</tr>
 </table>
-</br>
+
+## 🌟 Contributors 
+
+Thanks goes to these wonderful people ✨✨:
+
+<table>
+	<tr>
+		<td>
+			<a href="https://github.com/akshitagupta15june/Face-X/graphs/contributors">
+  				<img src="https://contrib.rocks/image?repo=akshitagupta15june/Face-X" />
+			</a>
+		</td>
+	</tr>
+</table>
