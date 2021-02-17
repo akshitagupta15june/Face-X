@@ -1,10 +1,9 @@
-# Ouick Start
+# Quick Start
 - Clone this repository-
 `git clone https://github.com/akshitagupta15june/Face-X.git`
-- Change Directory
+- Change Directory-
+`cd Facial_Biometric`
 
-  `cd Facial_Biometric`
-- Download shape predictor 68 face landmarks.dat file in same folder.
 - Run file-
 `python library.py`
 
