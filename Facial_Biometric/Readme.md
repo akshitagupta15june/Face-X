@@ -26,6 +26,9 @@
 - Run file-
 `python library.py`
 
+- Input name-
+`Type your name in the input dialogue opened in the terminal`
+
 ## Requirements
 
 - python 3.6+
@@ -46,5 +49,5 @@
 - `pip install opencv-python==4.4.0.44`
 ```
 
-`Note' : dlib is a library written in c++ that used applications like cmake,boost etc.,if you face any error while installing, don't panic and try to install the extensions required.
+`Note' : dlib is a library written in c++ that used applications like cmake,boost etc.,if you face any error while installing dlib, don't panic and try to install the extensions required.
 
