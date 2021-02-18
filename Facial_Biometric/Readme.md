@@ -9,7 +9,7 @@
 
  Some examples of the output of the facial_biometric are shown below.
 
- ![Capture1](Capture.jpg)
+ ![Capture1](Capture1.jpg)
 
 
 ![Capture2](Capture2.jpg)
