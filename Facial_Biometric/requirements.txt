@@ -1,5 +1,0 @@
-numpy==1.19.2
-opencv-contrib-python==4.4.0.44
-opencv-python==4.4.0.44
-sklearn==0.23.2
-dlib==19.21.1
