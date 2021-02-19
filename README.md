@@ -41,14 +41,29 @@ There are several approaches for recognizing a face. The algorithm can use stati
 
 ### Installation 👇
 
-- Create virtual environment-
+1. **Create virtual environment**
+
+```bash
+python -m venv env
+``` 
+
+2. **Linux**
 ```
-- `python -m venv env`
-- `source env/bin/activate`  (Linux)
-- `env\Scripts\activate`  (Windows)
-- `pip install -r requirements.txt`
+source env/bin/activate
 ```
 
+OR
+
+2. **Windows**
+```bash
+env\Scripts\activate
+```
+
+3. **Install**
+
+```bash
+pip install -r requirements.txt
+```
 
 ## ⭐ How to get started with open source?
 
