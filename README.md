@@ -35,7 +35,7 @@ There are several approaches for recognizing a face. The algorithm can use stati
 
 
 ### Requirements 👇
-- Python3.6+
+- Python (3.6+)
 - virtualenv (`pip install virtualenv`)
 
 
