@@ -50,7 +50,7 @@ There are several approaches for recognizing a face. The algorithm can use stati
 ```
 
 
-## ⭐ How to get started?
+## ⭐ How to get started with open source?
 
 You can refer to the following articles on the basics of Git and Github.
 
