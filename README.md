@@ -62,7 +62,7 @@ You can refer to the following articles on the basics of Git and Github.
 
 </br>
 
-## 💥 How to Contribute in Face-X?
+## 💥 How to Contribute to Face-X?
 
 - Take a look at the Existing [Issues](https://github.com/akshitagupta15june/Face-X/issues) or create your own Issues!
 - Wait for the Issue to be assigned to you.
