@@ -52,7 +52,7 @@ python -m venv env
 source env/bin/activate
 ```
 
-OR
+### OR
 
 2. **Windows**
 ```bash
