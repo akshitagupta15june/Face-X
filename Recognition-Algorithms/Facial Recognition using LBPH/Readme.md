@@ -59,8 +59,7 @@ cd Facial Recognition using LBPH
 - Execute -
 ```
 python facial_recognition_part1.py (face images collection)
-python facial_recognition_part2.py (training)
-python facial_recognition_part3.py (final recognition)
+python facial_recognition_part2.py (model training + final recognition)
 ```
 
 Note: Make sure you have haarcascade_frontalface_default.xml file 
