@@ -35,26 +35,41 @@ There are several approaches for recognizing a face. The algorithm can use stati
 
 
 ### Requirements 👇
-- Python3.6+
+- Python (3.6+)
 - virtualenv (`pip install virtualenv`)
 
 
 ### Installation 👇
 
-- Create virtual environment-
+1. **Create virtual environment**
+
+```bash
+python -m venv env
+``` 
+
+2. **Linux**
 ```
-- `python -m venv env`
-- `source env/bin/activate`  (Linux)
-- `env\Scripts\activate`  (Windows)
-- `pip install -r requirements.txt`
+source env/bin/activate
 ```
 
+### OR
 
-## ⭐ How to get started?
+2. **Windows**
+```bash
+env\Scripts\activate
+```
+
+3. **Install**
+
+```bash
+pip install -r requirements.txt
+```
+
+## ⭐ How to get started with open source?
 
 You can refer to the following articles on the basics of Git and Github.
 
-- [Watch this video to get started, if you have no clue about open source](https://youtu.be/SL5KKdmvJ1U)
+- [Watch this video to get started, if you have no clue about open source](https://youtu.be/SYtPC9tHYyQ)
 - [Forking a Repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
 - [Cloning a Repo](https://help.github.com/en/desktop/contributing-to-projects/creating-a-pull-request)
 - [How to create a Pull Request](https://opensource.com/article/19/7/create-pull-request-github)
@@ -62,7 +77,7 @@ You can refer to the following articles on the basics of Git and Github.
 
 </br>
 
-## 💥 How to Contribute in Face-X?
+## 💥 How to Contribute to Face-X?
 
 - Take a look at the Existing [Issues](https://github.com/akshitagupta15june/Face-X/issues) or create your own Issues!
 - Wait for the Issue to be assigned to you.
