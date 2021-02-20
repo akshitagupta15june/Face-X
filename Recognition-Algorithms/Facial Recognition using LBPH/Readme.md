@@ -43,19 +43,28 @@ Three neighborhood examples used to define a texture and calculate a local binar
 ```
 git clone https://github.com/akshitagupta15june/Face-X.git
 ```
-- Create virtual environment-
-```
-- `python -m venv env`
-- `source env/bin/activate`  (Linux)
-- `env\Scripts\activate`  (Windows)
-```
-- Install dependencies-
 
-- Headover to Project Directory- 
-```
-cd Facial Recognition using LBPH
+1. **Create virtual environment**
 
+```bash
+python -m venv env
+``` 
+
+2. **Linux**
 ```
+source env/bin/activate
+```
+
+### OR
+
+2. **Windows**
+```bash
+env\Scripts\activate
+```
+
+- Install dependencies
+
+
 - Execute -
 ```
 python facial_recognition_part1.py (face images collection)
