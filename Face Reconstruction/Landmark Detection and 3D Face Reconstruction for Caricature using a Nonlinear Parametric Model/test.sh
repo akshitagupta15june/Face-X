@@ -1,0 +1,1 @@
+mkdir record && mkdir record/lrecord && mkdir record/vrecord && python train.py --no_train
