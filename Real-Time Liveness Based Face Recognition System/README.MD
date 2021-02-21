@@ -1,4 +1,4 @@
-# Ral time liveness based face recognition system:
+# Real time liveness based face recognition system:
 
 ## About:
 Create a liveness detector capable of spotting fake faces and performing anti-face spoofing in face recognition systems.
@@ -32,9 +32,8 @@ Create a liveness detector capable of spotting fake faces and performing anti-fa
 
 ## Graph:
 
-#### A plot of training a face liveness model using OpenCV, Keras and deep learning
-
 ![](./dataset/others/plot.png)
+#### A plot of training a face liveness model using OpenCV, Keras and deep learning
 
 ## Output:
 
