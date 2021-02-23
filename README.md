@@ -94,7 +94,7 @@ git clone https://github.com/akshitagupta15june/Face-X.git
 
 </br>
 
-## Face-X is a part these open source programs❄
+## Face-X is a part of these open source programs❄
 
 <p align="center">
   <a>
