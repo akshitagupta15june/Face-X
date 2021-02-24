@@ -32,7 +32,7 @@ Despite the availability of a variety of open source face recognition algorithms
 <div align="center">
 <img src="https://media.giphy.com/media/AXorq76Tg3Vte/giphy.gif" width="20%"><br>
 </div>
-There are several approaches for the algorithm to recognize a face. The algorithm can make use of statistics, try to find a pattern which represents a specific person or use a Convolutional Neural Network (CNN).
+There are several approaches for an algorithm to recognize a face. An algorithm can make use of statistics, try to find a pattern which represents a specific person or use a Convolutional Neural Network (CNN).
 
 ### Requirements 👇
 - Python (3.6+)
