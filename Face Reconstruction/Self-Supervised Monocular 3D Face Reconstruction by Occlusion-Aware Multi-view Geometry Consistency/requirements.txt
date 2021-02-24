@@ -1,0 +1,13 @@
+torch==0.4.0
+face-alignment
+h5py==2.10.0
+matplotlib==2.2.4
+numpy==1.16.6
+opencv-python==3.4.2.17
+scikit-image==0.14.5
+scikit-learn==0.20.3
+scipy==1.2.2
+tensorboard==1.13.1
+tensorflow-estimator==1.13.0
+tensorflow-gpu==1.13.1
+trimesh==2.38.40
