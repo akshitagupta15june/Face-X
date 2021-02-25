@@ -15,3 +15,7 @@ Backgroud blurring is most often seen as a feature of portrait mode in phone cam
 
 ### Note:
  This code might show error in VScode. PyCharm and jupyter notebook works fine.
+
+# Output:
+
+![](.\Blurring image across face\output.png)
