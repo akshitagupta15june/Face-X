@@ -18,4 +18,4 @@ Backgroud blurring is most often seen as a feature of portrait mode in phone cam
 
 # Output:
 
-![](.\Blurring image across face\output.png)
+![](https://github.com/smriti1313/Face-X/blob/master/Blurring%20image%20across%20face/output.png)
