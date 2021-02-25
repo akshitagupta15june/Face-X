@@ -20,6 +20,7 @@ Following are the guidelines that will help you to get an issue/problem statemen
 1. On GitHub, navigate [here](https://github.com/akshitagupta15june/Face-X)
 
 2. In the top-right corner of the page, click Fork. 
+
 ![](fork.png)
 
 ## Step 2: Cloning the repo->creating a local copy
