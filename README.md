@@ -26,13 +26,13 @@
 #### [Recognition-Algorithms](https://github.com/akshitagupta15june/Face-X/tree/master/Recognition-Algorithms)
  
 
-Despite a variety of open-source face recognition algorithms available, there was no ready-made solution to implement. So In this project all kind of algorithms are implemented and even with various operations that can be implemented in a frontal face. The available algorithms processed only high-resolution static shots and have performed sufficiently well.
+Despite the availability of a variety of open source face recognition algorithms, there are no ready-made solutions which can be implemented directly. This project demonstrates all kinds of algorithms and various operations that can be implemented on a frontal face. The available algorithms process only high-resolution static shots and perform sufficiently well.
+
 
 <div align="center">
 <img src="https://media.giphy.com/media/AXorq76Tg3Vte/giphy.gif" width="20%"><br>
 </div>
-There are several approaches for recognizing a face. The algorithm can use statistics, try to find a pattern which represents a specific person or use a convolutional neural network.
-
+There are several approaches for an algorithm to recognize a face. An algorithm can make use of statistics, try to find a pattern which represents a specific person or use a Convolutional Neural Network (CNN).
 
 ### Requirements 👇
 - Python (3.6+)
@@ -94,7 +94,7 @@ git clone https://github.com/akshitagupta15june/Face-X.git
 
 </br>
 
-## Face-X is a part these open source programs❄
+## Face-X is a part of these open source programs❄
 
 <p align="center">
   <a>
