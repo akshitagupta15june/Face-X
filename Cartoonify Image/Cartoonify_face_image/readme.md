@@ -12,8 +12,8 @@
 
 ### Original Image
 
-<img src="images/face.jpg" width="70%">
+<img src="images/face.jpg" width="50%">
 
 ### Cartoonified Image
 
-<img src="images/after_face.png" width="70%">
+<img src="images/after_face.png" width="50%">
