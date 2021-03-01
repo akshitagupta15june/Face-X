@@ -8,12 +8,4 @@
 - Read the input image
 - Detecting edges in the image
 - Converting into grayscale & applying the medium blur
-- Cartoonifying the image
-
-### Original Image
-
-<img src="images/face.jpg" width="50%">
-
-### Cartoonified Image
-
-<img src="images/after_face.png" width="50%">
+- Cartoonifying the image 
