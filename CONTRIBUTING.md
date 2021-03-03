@@ -100,8 +100,9 @@ Your Pull Request has been submitted and will be reviewed by the maintainer and 
 You can refer to the following articles on basics of Git and Github and also contact the Project Mentors,
 in case you are stuck:
 
+- [Watch this video to get started, if you have no clue about open source](https://youtu.be/SYtPC9tHYyQ)
 - [Forking a Repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
-- [Cloning a Repo](https://help.github.com/en/desktop/contributing-to-projects/creating-an-issue-or-pull-request)
+- [Cloning a Repo](https://help.github.com/en/desktop/contributing-to-projects/creating-a-pull-request)
 - [How to create a Pull Request](https://opensource.com/article/19/7/create-pull-request-github)
 - [Getting started with Git and GitHub](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6)
 - [Learn GitHub from Scratch](https://lab.github.com/githubtraining/introduction-to-github)
