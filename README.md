@@ -84,10 +84,8 @@ env\Scripts\activate
 ```bash
 pip install -r requirements.txt
 ```
-
+- Have a look at [Contibuting Guidelines](https://github.com/akshitagupta15june/Face-X/blob/master/CONTRIBUTING.md)
 - Read the [Code of Conduct](https://github.com/akshitagupta15june/Face-X/blob/master/CODE_OF_CONDUCT.md)
-- Create a Pull Request which will be reviewed and suggestions would be added to improve it.
-- Add Screenshots to help us know what this enhancement/implementation is all about.
 
 </br>
 
