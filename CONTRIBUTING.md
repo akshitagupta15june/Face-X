@@ -2,7 +2,7 @@
 
 This documentation contains a set of guidelines to help you during the contribution process.
 
-## Submitting Contributions👩‍💻👨‍💻
+## Submitting Contributions👩‍
 
 Below you will find the process and workflow used to review and merge your changes.
 
@@ -80,8 +80,6 @@ git commit -m "message"
 # To push your work to your remote repository
 git push -u origin Branch_Name
 ```
-
-- Here is how your branch will look.
 - Here is how your branch will look.
 ![br](https://github.com/akshitagupta15june/Face-X/blob/master/.github/user/branch.jpeg) 
 
