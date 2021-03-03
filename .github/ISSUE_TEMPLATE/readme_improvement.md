@@ -1,6 +1,6 @@
 ---
 name: Documentation
-about: Suggest an idea for this project
+about: Suggest documentation improvement for this project
 title: Documentation Improvement
 labels: Documentation
 assignees: ''
