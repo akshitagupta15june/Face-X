@@ -34,11 +34,31 @@ Despite the availability of a variety of open source face recognition algorithms
 </div>
 There are several approaches for an algorithm to recognize a face. An algorithm can make use of statistics, try to find a pattern which represents a specific person or use a Convolutional Neural Network (CNN).
 
-### Requirements 👇
-- Python (3.6+)
-- virtualenv (`pip install virtualenv`)
 
 
+## ⭐ How to get started with open source?
+
+You can refer to the following articles on the basics of Git and Github.
+
+- [Watch this video to get started, if you have no clue about open source](https://youtu.be/SYtPC9tHYyQ)
+- [Forking a Repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
+- [Cloning a Repo](https://help.github.com/en/desktop/contributing-to-projects/creating-a-pull-request)
+- [How to create a Pull Request](https://opensource.com/article/19/7/create-pull-request-github)
+- [Getting started with Git and GitHub](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6)
+
+</br>
+
+## 💥 How to Contribute to Face-X?
+
+- Take a look at the Existing [Issues](https://github.com/akshitagupta15june/Face-X/issues) or create your own Issues!
+- Wait for the Issue to be assigned to you.
+- Fork the repository
+>click on the uppermost button <img src="https://github.com/Vinamrata1086/Face-X/blob/master/Recognition-Algorithms/Facial%20Recognition%20using%20LBPH/images/fork.png" width=50>
+
+- Clone the repository using-
+```
+git clone https://github.com/akshitagupta15june/Face-X.git
+```
 ### Installation 👇
 
 1. **Create virtual environment**
@@ -65,29 +85,6 @@ env\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## ⭐ How to get started with open source?
-
-You can refer to the following articles on the basics of Git and Github.
-
-- [Watch this video to get started, if you have no clue about open source](https://youtu.be/SYtPC9tHYyQ)
-- [Forking a Repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
-- [Cloning a Repo](https://help.github.com/en/desktop/contributing-to-projects/creating-a-pull-request)
-- [How to create a Pull Request](https://opensource.com/article/19/7/create-pull-request-github)
-- [Getting started with Git and GitHub](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6)
-
-</br>
-
-## 💥 How to Contribute to Face-X?
-
-- Take a look at the Existing [Issues](https://github.com/akshitagupta15june/Face-X/issues) or create your own Issues!
-- Wait for the Issue to be assigned to you.
-- Fork the repository
->click on the uppermost button <img src="https://github.com/Vinamrata1086/Face-X/blob/master/Recognition-Algorithms/Facial%20Recognition%20using%20LBPH/images/fork.png" width=50>
-
-- Clone the repository using-
-```
-git clone https://github.com/akshitagupta15june/Face-X.git
-```
 - Read the [Code of Conduct](https://github.com/akshitagupta15june/Face-X/blob/master/CODE_OF_CONDUCT.md)
 - Create a Pull Request which will be reviewed and suggestions would be added to improve it.
 - Add Screenshots to help us know what this enhancement/implementation is all about.
