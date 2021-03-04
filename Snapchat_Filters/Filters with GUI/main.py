@@ -187,7 +187,12 @@ def cvloop(run_event, read_camera=0, virtual_camera=0):
                 apply_sprite(
                     image, "./sprites/glasses.png", w, x, y3, incl, ontop=False
                 )
-
+            # spring eyes condition
+            if SPRITES[5]:
+                (x3, y3, _, h3) = get_face_boundbox(shape, 1)
+                apply_sprite(
+                    image, "./sprites/spring_eye.png", w, x, y3, incl, ontop=False
+                )
             # flies condition
             if SPRITES[2]:
                 # to make the "animation" we read each time a different image of that folder
@@ -218,7 +223,7 @@ def cvloop(run_event, read_camera=0, virtual_camera=0):
                         incl,
                         ontop=False,
                     )
-            if SPRITES[5]:
+            if SPRITES[6]:
                 img_name = "image{}.png".format(img_counter)
                 cv2.imwrite(img_name, image)
                 # print("Success")
@@ -278,9 +283,11 @@ btn4.pack(side="top", fill="both", expand="no", padx="5", pady="5")
 btn5 = Button(root, text="Doggy", command=lambda: put_sprite(4))
 btn5.pack(side="top", fill="both", expand="no", padx="5", pady="5")
 
-btn6 = Button(root, text="Capture", command=lambda: put_sprite(5))
+btn6 = Button(root, text="Spring Eye", command=lambda: put_sprite(5))
 btn6.pack(side="top", fill="both", expand="no", padx="5", pady="5")
 
+btn7 = Button(root, text="Capture", command=lambda: put_sprite(6))
+btn7.pack(side="top", fill="both", expand="no", padx="5", pady="5")
 
 # Create the panel where webcam image will be shown
 panelA = Label(root)
@@ -294,8 +301,9 @@ SPRITES = [
     0,
     0,
     0,
+    0,
 ]  # hat, mustache, flies, glasses, doggy -> 1 is visible, 0 is not visible
-BTNS = [btn1, btn2, btn3, btn4, btn5,btn6]
+BTNS = [btn1, btn2, btn3, btn4, btn5,btn6,btn7]
 
 
 # Creates a thread where the magic ocurs
