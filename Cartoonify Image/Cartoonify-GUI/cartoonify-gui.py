@@ -15,6 +15,8 @@ def upload():
 def cartoon(imagepath):
 
     image = cv2.imread(imagepath)
+    # Converting BGR image into a RGB image 
+    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB) 
 
     if image is None:
         print('Choose another file')
