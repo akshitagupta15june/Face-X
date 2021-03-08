@@ -20,10 +20,10 @@ Now that we have found some possible answer to detect the blinking of the eye, w
 ## Detecting the blinking
 
 This is how the lines look like when the eye is open.
-<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Face-Emotions-Recognition/Eye-Blink-Counter/eye_open.jpg" align="centre">
+<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Face-Emotions-Recognition/Eye-Blink-Counter/images/eye_open.jpg" align="centre">
 
 This when the eye is closed.
-<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Face-Emotions-Recognition/Eye-Blink-Counter/eye_closed.jpg" align="centre">
+<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Face-Emotions-Recognition/Eye-Blink-Counter/images/eye_closed.jpg" align="centre">
 
 <h4>What can you notice?</h4>
 
@@ -64,4 +64,4 @@ landmarks = predictor(gray, face)
             cv2.putText(frame, "BLINKING", (50, 150), font, 7, (255, 0, 0))
 ```
 
-<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Face-Emotions-Recognition/Eye-Blink-Counter/working.png" align="centre">
+<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Face-Emotions-Recognition/Eye-Blink-Counter/images/working.png" align="centre">
