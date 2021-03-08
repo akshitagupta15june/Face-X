@@ -92,13 +92,14 @@ pip install -r requirements.txt
 ## Face-X is a part of these open source programs❄
 
 <p align="center">
-  <a>
-   <img  width="420" height="120"  src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/Cartoonification/gssoc.png">
-   <img  width="160" height="160" src="https://njackwinterofcode.github.io/images/nwoc-logo.png">
-   <img  src="https://devscript.tech/woc/img/WOC-logo.png" width="160" height="160"/>
-   <img  width="160" height="160"  src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/Cartoonification/uaceit.jpeg">
-   <img  width="160" height="160"  src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/Cartoonification/cwoc.jpeg">
-   <img  width="180" height="180" src="https://media-exp1.licdn.com/dms/image/C560BAQGh8hr-FgbrHw/company-logo_200_200/0/1602422883512?e=2159024400&v=beta&t=s8IX2pN1J2v5SRRbgzVNzxnQ2rWeeMq2Xb__BYW60qE">
+  
+   [<img  width="420" height="120"  src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/Cartoonification/gssoc.png">](https://gssoc.girlscript.tech/)
+   [<img  width="160" height="160" src="https://njackwinterofcode.github.io/images/nwoc-logo.png">](https://njackwinterofcode.github.io/)
+   [<img  src="https://devscript.tech/woc/img/WOC-logo.png" width="160" height="160"/>](https://devscript.tech/woc/) <br>
+   [<img  width="160" height="160"  src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/Cartoonification/uaceit.jpeg">](https://uaceit.com/)
+   [<img  width="160" height="160"  src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/Cartoonification/cwoc.jpeg">](https://crosswoc.ieeedtu.in/)
+   [<img  width="180" height="180" src="https://media-exp1.licdn.com/dms/image/C560BAQGh8hr-FgbrHw/company-logo_200_200/0/1602422883512?e=2159024400&v=beta&t=s8IX2pN1J2v5SRRbgzVNzxnQ2rWeeMq2Xb__BYW60qE">](https://swoc.tech/)
+   
 </p>
 	
 </br>
