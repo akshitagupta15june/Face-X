@@ -8,3 +8,13 @@ This application lets you swap a face in one image with another face in other im
 ### Example 2
 
 ![face swap sample](https://raw.githubusercontent.com/sudipg4112001/Face-X/master/Face-Swapping/face_swap_1.png)
+
+### Steps for swapping:
+- Take two images(Source and Destination)
+- Find landmarks on the images
+- Triangulation source and destination image
+- Extract and wrap
+- Link the wrapped parts together
+- Replace the face on the destination image
+- Cloning
+### Now, we get the desired image..!!
