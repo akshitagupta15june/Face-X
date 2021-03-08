@@ -134,7 +134,7 @@ Thanks goes to these wonderful people ✨✨:
 	<tr>
 		<td>
 			<a href="https://github.com/akshitagupta15june/Face-X/graphs/contributors">
-  				<img src="https://contrib.rocks/image?repo=akshitagupta15june/Face-X" />
+  				<img src="https://avatars.githubusercontent.com/u/57909583?s=460&u=5eb810c8a5de2b8188e952b51a8b650b5c142dcf&v=4" />
 			</a>
 		</td>
 	</tr>
