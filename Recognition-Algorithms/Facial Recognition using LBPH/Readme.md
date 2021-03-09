@@ -19,7 +19,8 @@ The LBPH algorithm is a part of opencv.
 
     pip install numpy
     pip install opencv-python
-    pip install skimage
+    pip install opencv-contrib-python
+    pip install skimage or pip install scikit-image
 # Images
 
 <p align="center"><img src="https://github.com/Vinamrata1086/Face-X/blob/master/Recognition-Algorithms/Facial%20Recognition%20using%20LBPH/images/pic1.png"><br>
