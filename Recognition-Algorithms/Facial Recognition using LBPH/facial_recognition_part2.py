@@ -20,7 +20,7 @@ model.train(np.asarray(Training_data),np.asarray(Labels))
 print("Model Training Complete")
 
 
-face_classifier = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+face_classifier = cv2.CascadeClassifier('Cascade_Classifiers/haarcascade_frontalface_default.xml')
 
 
 def face_detector(img, size=0.5):
@@ -44,14 +44,19 @@ while True:
         face = cv2.cvtColor(face, cv2.COLOR_BGR2GRAY)
         result = model.predict(face)
 
-        if result[1] < 500:
+        if result[1] < 100:
             confidence = int(100 * (1 - (result[1]) / 300))
             display_string = str(confidence) +'% Confidence it is user'
-        cv2.putText(image, display_string, (100, 120), cv2.FONT_HERSHEY_COMPLEX, 1, (250, 120, 255), 2)
+            cv2.putText(image, display_string, (100, 120), cv2.FONT_HERSHEY_COMPLEX, 1, (250, 120, 255), 2)
 
-        if confidence > 75:
-            cv2.putText(image, "UNLOCKED", (250, 450), cv2.FONT_HERSHEY_COMPLEX, 1, (0, 255, 0), 2)
-            cv2.imshow('Face Cropper', image)
+            if confidence > 75:
+                cv2.putText(image, "UNLOCKED", (250, 450), cv2.FONT_HERSHEY_COMPLEX, 1, (0, 255, 0), 2)            
+                cv2.imshow('Face Cropper', image)
+
+            else:
+                cv2.putText(image, "LOCKED - Please face the camera", (30, 450), cv2.FONT_HERSHEY_COMPLEX, 1, (0, 0, 255), 2)
+                cv2.imshow('Face Cropper', image)
+
         else:
             cv2.putText(image, "LOCKED", (250, 450), cv2.FONT_HERSHEY_COMPLEX, 1, (0, 0, 255), 2)
             cv2.imshow('Face Cropper', image)
