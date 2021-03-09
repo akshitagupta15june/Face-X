@@ -14,8 +14,10 @@ Download haarcascades file from here=> https://github.com/opencv/opencv/blob/mas
 
 ## ScreenShots
 
-<img src="Screenshot 2021-01-15 115306.png" height="250px">
-<img src="Screenshot 2021-01-15 115354.png" height="250px">
+![Screenshot from 2020-12-11 21-34-18](https://user-images.githubusercontent.com/53366877/110513516-533d4300-812c-11eb-9cde-7566de26682f.png)
+
+![Screenshot from 2020-12-11 17-59-00](https://user-images.githubusercontent.com/53366877/110513613-6ea84e00-812c-11eb-86ec-d3fcecf921be.png)
+
 
 
 ## Quick Start
@@ -32,7 +34,7 @@ git clone https://github.com/akshitagupta15june/Face-X.git
 ```
 - Install dependencies-
 ```
-- `pip install -r requirements.txt`
+ pip install -r requirements.txt
 ```
 
 - Headover to Project Directory- 
@@ -41,18 +43,18 @@ cd "Recognition using NasNet"
 ```
 - Create dataset using -
 ```
-- Run create_dataset.py on respective idle(VS Code, PyCharm, Jupiter Notebook, Colab)
+ python create_dataset.py on respective idle(VS Code, PyCharm, Jupiter Notebook, Colab)
 ```
 Note: Dataset is automatically split into train and val folders.
 
 - Train the model -
 ```
-- Run main.py
+ python main.py
 ```
 Note: Make sure all dependencies are installed properly.
 
 - Final-output -
 ```
-- Run output.py
+ python output.py
 ```
 Note: Make sure you have haarcascade_frontalface_default.xml file 
