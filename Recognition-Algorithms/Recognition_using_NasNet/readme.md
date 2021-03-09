@@ -7,7 +7,7 @@ Program is trained for 5 epochs, You can increase the number of epochs and the n
 
 
 ### Dependencies:
-* pytorch version **1.2.0**(get from https://pytorch.org/)
+* pytorch version **1.2.0** (get from https://pytorch.org/)
 
 
 Download haarcascades file from here=> https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml
