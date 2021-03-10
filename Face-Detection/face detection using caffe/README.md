@@ -16,20 +16,24 @@ Caffe is a deep learning framework made with expression, speed, and modularity i
 
 ## Face detection in images
 
-Before moving ahead, first download  `detect_faces.py` , `deploy.prototxt.txt` , `res10_300x300_ssd_iter_140000.caffemodel` and the input image and open up terminal and execute the following command:
+First download  `detect_faces.py` , `deploy.prototxt.txt` , `res10_300x300_ssd_iter_140000.caffemodel` and the input image , then open up terminal and execute the following command:
 
->  *$ python detect_faces.py --image rooster.jpg --prototxt deploy.prototxt.txt --model res10_300x300_ssd_iter_140000.caffemodel*
+  >  *$ python detect_faces.py --image rooster.jpg --prototxt deploy.prototxt.txt --model res10_300x300_ssd_iter_140000.caffemodel*
 
 In this given image face is detected with 74% confidence using OpenCV deep learning face detection. 
 
 ![Example 1](outputs/deep_learning_face_detection_example_01.jpg)
 
-### Image 2:
+In this another example , the OpenCV DNN Face detector finds all  the three faces . Again open the terminal and run the following command:
 
-In this another example the OpenCV DNN Face detector finds all three faces.
+   >  *$ python detect_faces_video.py --prototxt deploy.prototxt.txt  --model res10_300x300_ssd_iter_140000.caffemodel*
 
 ![Example 2](outputs/deep_learning_face_detection_example_02.jpg)
 
 ## Face detection in video and webcam:
+
+Download 'detect_faces_video.py' and run the deep learning OpenCV face detector with a webcam feed is easy with this following command:
+
+   >  *$ python detect_faces_video.py --prototxt deploy.prototxt.txt  --model res10_300x300_ssd_iter_140000.caffemodel*
 
 ![Video](outputs/deep_learning_face_detection_opencv.gif)
