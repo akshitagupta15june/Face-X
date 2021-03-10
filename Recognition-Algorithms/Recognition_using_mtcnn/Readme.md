@@ -1,4 +1,4 @@
-## Ouick Start
+## Quick Start
 - Clone this repository.
 `git clone https://github.com/akshitagupta15june/Face-X.git`
 - Change Directory.
