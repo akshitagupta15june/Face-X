@@ -223,7 +223,7 @@ vs.stop()
 ```
 Display the frame  on the screen until the “q” key is pressed at which point we break  out of the loop and perform cleanup.
 
-## Face detection in video and webcam:
+## Face detection in video and webcam with OpenCV result
 
 Download `detect_faces_video.py` , `deploy.prototxt.txt` , `res10_300x300_ssd_iter_140000.caffemodel` and run the deep learning OpenCV face detector with a webcam feed.
 
