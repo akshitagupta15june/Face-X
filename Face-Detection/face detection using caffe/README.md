@@ -38,10 +38,10 @@ ap.add_argument("-c", "--confidence", type=float, default=0.5,
 args = vars(ap.parse_args())
 ```
 We have three required arguments:
-
-. `--image` : The path to the input image.
-. `--prototxt` : The path to the Caffe prototxt file.
-. `--model` : The path to the pretrained Caffe model.
+- `--image` : The path to the input image.
+- `--prototxt` : The path to the Caffe prototxt file.
+- `--model` : The path to the pretrained Caffe model.
+An optional argument, `--confidence` , can overwrite the default threshold of 0.5 
 
 ## Face detection in images
 
