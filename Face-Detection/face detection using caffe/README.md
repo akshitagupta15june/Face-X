@@ -36,7 +36,7 @@ In this another example , the OpenCV DNN Face detector successfully finds all  t
 
 ## Face detection in video and webcam:
 
-Download  the files and run the deep learning OpenCV face detector with a webcam feed.
+Download `detect_faces_video.py` , `deploy.prototxt.txt` , `res10_300x300_ssd_iter_140000.caffemodel` and run the deep learning OpenCV face detector with a webcam feed.
 
 **Command used:**
 
