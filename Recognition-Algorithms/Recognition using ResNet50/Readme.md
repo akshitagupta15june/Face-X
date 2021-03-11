@@ -55,4 +55,10 @@ Note: Make sure all dependencies are installed properly.
 - Run final_output.py
 ```
 Note: Make sure you have haarcascade_frontalface_default.xml file 
+### Details about Resnet 50
+ResNet is a short name for Residual Network. As the name of the network indicates, the new terminology that this network introduces is residual learning. In a deep convolutional neural network, several layers are stacked and are trained to the task at hand. The network learns several low/mid/high level features at the end of its layers. In residual learning, instead of trying to learn some features, we try to learn some residual. Residual can be simply understood as subtraction of feature learned from input of that layer. ResNet does this using shortcut connections (directly connecting input of nth layer to some (n+x)th layer. It has proved that training this form of networks is easier than training simple deep convolutional neural networks and also the problem of degrading accuracy is resolved.
+<br>
+This is the fundamental concept of ResNet.
+<br>
+ResNet50 is a 50 layer Residual Network. There are other variants like ResNet101 and ResNet152 also.
 
