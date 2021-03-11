@@ -18,11 +18,11 @@
 Original Image:
 
 
-![Capture](images/img.png)
+![Capture](https://github.com/akshitagupta15june/Face-X/blob/master/Virtual_makeover/images/img.png)
 
 
 Makeover Image:
 
 
-![Capture2](images/1.jpg)
-![Capture3](images/2.jpg)
+![Capture2](https://github.com/akshitagupta15june/Face-X/blob/master/Virtual_makeover/images/1.jpg)
+![Capture3](https://github.com/akshitagupta15june/Face-X/blob/master/Virtual_makeover/images/2.jpg)
