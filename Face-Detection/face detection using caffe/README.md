@@ -28,7 +28,7 @@ In this given image , face is detected with 74% confidence using OpenCV deep lea
 
 **Command used:**
 
-   >  *$ python detect_faces_video.py --prototxt deploy.prototxt.txt  --model res10_300x300_ssd_iter_140000.caffemodel*
+   >  *$ python detect_faces.py --image iron_chic.jpg --prototxt deploy.prototxt.txt --model res10_300x300_ssd_iter_140000.caffemodel*
    
 In this another example , the OpenCV DNN Face detector successfully finds all  the three faces.
 
@@ -36,7 +36,7 @@ In this another example , the OpenCV DNN Face detector successfully finds all  t
 
 ## Face detection in video and webcam:
 
-Download all the files and run the deep learning OpenCV face detector with a webcam feed.
+Download  the files and run the deep learning OpenCV face detector with a webcam feed.
 
 **Command used:**
 
