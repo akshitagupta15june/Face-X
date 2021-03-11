@@ -18,7 +18,7 @@ Caffe is a deep learning framework made with expression, speed, and modularity i
 
 Download  `detect_faces.py` , `deploy.prototxt.txt` , `res10_300x300_ssd_iter_140000.caffemodel` and the input image .
 
-**Image 1**
+##### Image 1
 
 **Command used:**
 
@@ -28,7 +28,7 @@ In this given image , face is detected with 74% confidence using OpenCV deep lea
 
 ![Example 1](outputs/deep_learning_face_detection_example_01.jpg)
 
-**Image 2**
+##### Image 2
 
 **Command used:**
 
