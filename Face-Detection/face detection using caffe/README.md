@@ -53,9 +53,9 @@ image = cv2.imread(args["image"])
 (h, w) = image.shape[:2]
 blob = cv2.dnn.blobFromImage(cv2.resize(image, (300, 300)), 1.0,(300, 300), (104.0, 177.0, 123.0))
 ```
-- Load our model using our --prototxt  and --model  file paths. We store the model as net.
+- Load the model using  `--prototxt`  and `--model`  file paths and store the model as net.
 - Then load the image extract the dimensions  and create a blob.
-- The dnn.blobFromImage  takes care of pre-processing which includes setting the blob  dimensions and normalization.
+- The `dnn.blobFromImage`  takes care of pre-processing which includes setting the blob  dimensions and normalization.
 
 Next, apply face detection:
 
@@ -86,17 +86,17 @@ for i in range(0, detections.shape[2]):
 		# probability
 		text = "{:.2f}%".format(confidence * 100)
 		y = startY - 10 if startY - 10 > 10 else startY + 10
-		cv2.rectangle(image, (startX, startY), (endX, endY),
-			(0, 0, 255), 2)
-		cv2.putText(image, text, (startX, y),
-			cv2.FONT_HERSHEY_SIMPLEX, 0.45, (0, 0, 255), 2)
+		cv2.rectangle(image, (startX, startY), (endX, endY),(0, 0, 255), 2)
+		cv2.putText(image, text, (startX, y),cv2.FONT_HERSHEY_SIMPLEX, 0.45, (0, 0, 255), 2)
 # show the output image
 cv2.imshow("Output", image)
 cv2.waitKey(0)
 ```
+We extract the confidence  and compare it to the confidence threshold . We perform this check to filter out weak detections.If the confidence meets the minimum threshold, we proceed to draw a rectangle and along with the probability of the detection.To accomplish this, we first calculate the (x, y)-coordinates of the bounding box ,then build our confidence text  string  which contains the probability of the detection.
+In case the our text  would go off-image (such as when the face detection occurs at the very top of an image), we shift it down by 10 pixels.
+From there we loop back for additional detections following the process again. If no detections  remain, we’re ready to show our output image  on the screen.
 
-
-## Face detection in images
+## Face detection in images with OpenCV result
 
 Download  `detect_faces.py` , `deploy.prototxt.txt` , `res10_300x300_ssd_iter_140000.caffemodel` and the input image .
 
