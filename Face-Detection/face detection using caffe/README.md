@@ -39,7 +39,7 @@ We have three required arguments:
 - `--prototxt` : The path to the Caffe prototxt file.
 - `--model` : The path to the pretrained Caffe model.
 
-An optional argument, `--confidence` , can overwrite the default threshold of 0.5 
+An optional argument, `--confidence` , can overwrite the default threshold of 0.5.
 
 Load the model and create a blob from the image:
 
