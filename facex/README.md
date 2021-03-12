@@ -23,7 +23,9 @@ Similarly we can run,
 
 2) cd `facex` from the command line.
 
-3) open your favourite text editor and run the above commands.
+3) open your favourite text editor and place it inside facex folder. 
+
+4) Run the commands of [example](#Example) section.
 
 ## Current supported algorithms
 
@@ -48,6 +50,6 @@ More algorithms shall be added soon as this is still in an experimental stage.
 6) Add more algorithms.
 
 ## Contributions are welcome
-Feel free to suggest any changes or fixes for the benefit of the package [here]().
+Feel free to suggest any changes or fixes for the benefit of the package [here](https://github.com/akshitagupta15june/Face-X/issues/312)
 
 
