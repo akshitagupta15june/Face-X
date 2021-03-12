@@ -1,0 +1,51 @@
+# Introduction:-
+     Face mask detection had seen significant progress in the domains of Image processing and Computer vision, since the rise of the Covid-19 pandemic. 
+     Many face detection models have been created using several algorithms and  techniques.  
+     The approach in this project uses deep learning, TensorFlow, Keras, and OpenCV to detect face masks.
+     Convolutional Neural Network, Data augmentation are the key to this project.
+
+Concept :- 
+# Open CV
+       OpenCV uses machine learning algorithms to search for faces within a picture.
+       OpenCV is the most popular library for computer vision. Originally written in C/C++, it now provides  bindings for Python.
+   
+     After Installing OpenCV
+         Some useful Command
+           > import cv2
+          > # Read the image
+               image = cv2.imread(imagePath)
+               gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+        > # Detect faces in the image
+              faces = faceCascade.detectMultiScale(
+              gray,
+              scaleFactor=1.1,
+              minNeighbors=5,
+              minSize=(30, 30),
+              flags = cv2.cv.CV_HAAR_SCALE_IMAGE)
+ # Deep Learning 
+ Face detection is a problem in computer vision of locating and localizing one or more faces in a photograph.
+
+ Face mask detection has become a crucial task to help global society purpose using some basic Machine Learning
+ packages like TensorFlow, Keras, OpenCV and Scikit-Learn. 
+ The proposed method detects the face from the image correctly and then identifies if it has a mask on it or not. 
+
+ Incorporated Packages
+ TensorFlow :- 
+   TensorFlow, an interface for expressing machine learning algorithms, 
+   is utilized for implementing ML systems into fabrication over a bunch of areas
+   of computer science, including sentiment analysis, voice recognition, geographic information extraction, 
+   computer vision, text summarization, information retrieval, computational drug discovery and flaw detection to pursue research.
+   In the proposed model, the whole Sequential CNN architecture (consists of several layers) uses TensorFlow at backend. 
+   It is also used to reshape the data (image) in the data processing.
+
+ Keras:- 
+  Keras gives fundamental reflections and building units for creation and transportation of ML arrangements with high iteration velocity.
+  It takes full advantage of the scalability and cross-platform capabilities of TensorFlow.
+  The core data structures of Keras are layers and models [19]. All the layers used in the CNN model are implemented using Keras.
+  Along with the conversion of the class vector to the binary class matrix in data processing, it helps to compile the overall model.
+
+
+
+
+
+
