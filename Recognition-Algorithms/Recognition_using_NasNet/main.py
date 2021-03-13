@@ -47,9 +47,6 @@ dataloader = {
 }
 datasets_size = {x: len(datasets[x]) for x in ["train", "val"]}
 class_names = datasets["train"].classes
-import pdb; pdb.set_trace()
-print(class_names)
-print(len(class_names))
 
 # initialize model
 model = NASNetAMobile(len(class_names)).to(device)
