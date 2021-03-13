@@ -1,6 +1,6 @@
-<h1>Apply Snapchat Devil filter to your live video stream through webcam</h1>
+<h1>Apply Snapchat Devil filter to your live video stream</h1>
 
-####Requirements
+<h3>Requirements</h3>
 <ul>
  <li>Python 3.7.x</li>
  <li>OpenCV</li>
