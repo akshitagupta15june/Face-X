@@ -18,4 +18,4 @@
 </ul>
 
 <h3>Snapshot</h3>
-<img src="/devil_filter/savedPicture.JPG" width="30">
+<img src="//devil_filter/savedPicture.JPG" width="30">
