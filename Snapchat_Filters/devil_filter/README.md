@@ -1,4 +1,4 @@
-![savedPicture](https://user-images.githubusercontent.com/37493874/111033482-72dbb080-8437-11eb-9ce3-41dd0029362b.jpg)
+
 <h1>Apply Snapchat Devil filter to your live video stream</h1>
 
 <h3>Requirements</h3>
@@ -19,4 +19,5 @@
 </ul>
 
 <h3>Snapshot</h3>
+![savedPicture](https://user-images.githubusercontent.com/37493874/111033482-72dbb080-8437-11eb-9ce3-41dd0029362b.jpg)
 <img src="//devil_filter/savedPicture.JPG" width="30">
