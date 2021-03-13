@@ -1,4 +1,4 @@
-##Apply Snapchat Devil filter to your live video stream through webcam
+<h1>Apply Snapchat Devil filter to your live video stream through webcam</h1>
 
 ####Requirements
 <ul>
