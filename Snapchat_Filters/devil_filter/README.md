@@ -15,6 +15,6 @@
   <li>Change directory to 'Snapchat_Filters' then to 'devil_filter' </li>
   <li>Run 'devil.py' </li>
   <li>Press 's' key to take snapshot of your filtered image</li>
-  <li>Then Press 'esc' key to exit window /li>
+  <li>Then Press 'esc' key to exit window </li>
 </ul>
 
