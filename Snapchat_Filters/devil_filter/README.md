@@ -8,9 +8,9 @@
  <li>numpy</li>
 </ul>
 
-####Instructions
+<h3>Instructions</h3>
 <ul>
-  <li>Clone this repository 'git clone https://github.com/akshitagupta15june/Face-X.git'</li>
+  <li>Clone this repository</li>
   <li>Change directory to 'Snapchat_Filters' then to 'devil_filter' </li>
   <li>Run 'devil.py' </li>
   <li>Press 's' key to take snapshot of your filtered image</li>
