@@ -17,5 +17,5 @@
   <li>Then Press 'esc' key to exit window /li>
 </ul>
 
-####Snapshot
-<img src="devil_filter/savedPicture.JPG" width="30">
+<h3>Snapshot</h3>
+<img src="/devil_filter/savedPicture.JPG" width="30">
