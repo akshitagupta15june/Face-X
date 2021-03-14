@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/logo/Face-X.png" width=250 height=250>
+
 
 
 ![Issues](https://img.shields.io/github/issues/akshitagupta15june/Face-X)
@@ -9,18 +9,17 @@
 ![Stars](https://img.shields.io/github/stars/akshitagupta15june/Face-X)
 [![License](https://img.shields.io/github/license/akshitagupta15june/Face-X)](https://github.com/akshitagupta15june/lane_detection_opencv/blob/master/LICENSE)
 
+<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/logo/Face-X.png" width=250 height=250>
+
+<h3>Join official <a href="https://discord.com/invite/Jmc97prqjb">Discord Channel</a> for discussion.</h3>
 
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com)
-
 </div>
 
-</br>
 
 <div align="center">
 <img src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/Cartoonify_face_image/Images/recof.gif" width="390px" height="350px" align='center'>
 </div>
-
-</br>
 
 ### Demonstration of different algorithms and operations on faces 
 
@@ -30,37 +29,12 @@
 Despite the availability of a variety of open source face recognition algorithms, there are no ready-made solutions which can be implemented directly. This project demonstrates all kinds of algorithms and various operations that can be implemented on a frontal face. The available algorithms process only high-resolution static shots and perform sufficiently well.
 
 
-
 <div align="center">
 <img src="https://media.giphy.com/media/AXorq76Tg3Vte/giphy.gif" width="20%"><br>
 </div>
-
 There are several approaches for an algorithm to recognize a face. An algorithm can make use of statistics, try to find a pattern which represents a specific person or use a Convolutional Neural Network (CNN).
 
 
-</br>
-
-## Contents
-
-Our content is divided by different algorithms performed. Please create an issue if you wish to add code that we don't currently have here.
-
- **Do not create folders in your submissions, unless specifically told to do so.**
-
-</br>
-
-## Prerequisites
-
-```
-Any Code Editor (VS Code preferred)
-Python version 3.7 or higher
-Latest version of Git
-```
-
-## Getting Started
-
-Maybe you are a beginner and have thought about getting involved in open source but don’t know where to start.
-
-Here it is:
 
 ## ⭐ How to get started with open source?
 
@@ -85,9 +59,6 @@ You can refer to the following articles on the basics of Git and Github.
 ```
 git clone https://github.com/akshitagupta15june/Face-X.git
 ```
-
-</br>
-
 ### Installation 👇
 
 1. **Create virtual environment**
@@ -113,29 +84,8 @@ env\Scripts\activate
 ```bash
 pip install -r requirements.txt
 ```
-
-</br>
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://github.com/akshitagupta15june/Face-X/blob/master/CONTRIBUTING.md) for details on our guidelines to help you during the contribution and the process for submitting pull requests to us.
-
-</br>
-
-## Code of Conduct
-You can find our Code of Conduct [here](https://github.com/akshitagupta15june/Face-X/blob/master/CODE_OF_CONDUCT.md)
-
-</br>
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md]((https://github.com/akshitagupta15june/lane_detection_opencv/blob/master/LICENSE)) file for details.
-
-</br>
-
-## Discord
-
-<h3>Join official <a href="https://discord.com/invite/Jmc97prqjb">Discord Channel</a> for discussion.</h3>
+- Have a look at [Contibuting Guidelines](https://github.com/akshitagupta15june/Face-X/blob/master/CONTRIBUTING.md)
+- Read the [Code of Conduct](https://github.com/akshitagupta15june/Face-X/blob/master/CODE_OF_CONDUCT.md)
 
 </br>
 
@@ -153,12 +103,12 @@ This project is licensed under the MIT License - see the [LICENSE.md]((https://g
 </p>
 	
 </br>
-
+	
 ## Get Started with Open Source programs 👨‍💻
 
 [Start Open Source](https://anush-venkatakrishna.medium.com/part-1-winter-or-summer-take-your-baby-steps-into-opensource-now-7d661235d7ff) an article by [Anush Krishna](https://github.com/anushkrishnav)
-
 </br>
+
 
 ## ❤️ Project Admin
 
@@ -176,8 +126,6 @@ This project is licensed under the MIT License - see the [LICENSE.md]((https://g
 	</tr>
 </table>
 
-</br>
-
 ## 🌟 Contributors 
 
 Thanks goes to these wonderful people ✨✨:
@@ -192,5 +140,4 @@ Thanks goes to these wonderful people ✨✨:
 	</tr>
 </table>
 
-</br>
 
