@@ -1,86 +1,168 @@
-# FACE-X
+<div align="center">
 
+<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/logo/Face-X.png" width=250 height=250>
+
+
+![Issues](https://img.shields.io/github/issues/akshitagupta15june/Face-X)
+![Pull Requests](https://img.shields.io/github/issues-pr/akshitagupta15june/Face-X)
+![Forks](https://img.shields.io/github/forks/akshitagupta15june/Face-X)
+![Stars](https://img.shields.io/github/stars/akshitagupta15june/Face-X)
+[![License](https://img.shields.io/github/license/akshitagupta15june/Face-X)](https://github.com/akshitagupta15june/lane_detection_opencv/blob/master/LICENSE)
+
+
+[![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com)
+
+</div>
+
+</br>
 
 <div align="center">
-<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/facex.jpeg" width="350px" height="350px" align='center'>
+<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/Cartoonify_face_image/Images/recof.gif" width="390px" height="350px" align='center'>
 </div>
+
+</br>
 
 ### Demonstration of different algorithms and operations on faces 
 
 #### [Recognition-Algorithms](https://github.com/akshitagupta15june/Face-X/tree/master/Recognition-Algorithms)
+ 
 
-There are several approaches for recognizing a face. The algorithm can use statistics, try to find a pattern which represents a specific person or use a convolutional neural network. 
+Despite the availability of a variety of open source face recognition algorithms, there are no ready-made solutions which can be implemented directly. This project demonstrates all kinds of algorithms and various operations that can be implemented on a frontal face. The available algorithms process only high-resolution static shots and perform sufficiently well.
+
+
+
 <div align="center">
 <img src="https://media.giphy.com/media/AXorq76Tg3Vte/giphy.gif" width="20%"><br>
 </div>
 
-The algorithms used for the tests are Eigenfaces, Fisherfacesand local binary patterns histograms which all come from the library OpenCV. Eigenfaces and Fisher faces are used with a Euclidean distance to predict the person. The algorithm which is using a deep convolutional neural network is the project called OpenFace.
-
-This can be used for automatic face detection attendance system in recent technology.
+There are several approaches for an algorithm to recognize a face. An algorithm can make use of statistics, try to find a pattern which represents a specific person or use a Convolutional Neural Network (CNN).
 
 
+</br>
 
-`
-Recognition of faces by different algorithms and frameworks. Despite a variety of open-source face recognition frameworks available, there was 
-no ready-made solution to implement. So In this project all kind of algorithms are implemented and even with various operations that can be implemented
-in a frontal face. The available algorithms processed only high-resolution static shots and performed insufficiently.
-`
+## Contents
 
+Our content is divided by different algorithms performed. Please create an issue if you wish to add code that we don't currently have here.
 
-### Requirements 👇
-- Python3.6+
-- virtualenv (`pip install virtualenv`)
+ **Do not create folders in your submissions, unless specifically told to do so.**
 
-### Installation 🖥
-- `virtualenvv env`
-- `source venv/bin/activate` (Linux)
-- `venv\Scripts\activate` (Windows)
-- `pip install -r requirements.txt`
-- Create an .env file, copy the content from .env.sample and add your data path. Example: `DATA_PATH = "./foto_reco/"`
+</br>
 
-## Channels 📞
-Join official discord channel for discussion by clicking [here](https://discord.gg/d5GfFfy8)
+## Prerequisites
 
+```
+Any Code Editor (VS Code preferred)
+Python version 3.7 or higher
+Latest version of Git
+```
 
-## Get Started with Open Source now 👨‍💻
+## Getting Started
+
+Maybe you are a beginner and have thought about getting involved in open source but don’t know where to start.
+
+Here it is:
+
+## ⭐ How to get started with open source?
+
+You can refer to the following articles on the basics of Git and Github.
+
+- [Watch this video to get started, if you have no clue about open source](https://youtu.be/SYtPC9tHYyQ)
+- [Forking a Repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
+- [Cloning a Repo](https://help.github.com/en/desktop/contributing-to-projects/creating-a-pull-request)
+- [How to create a Pull Request](https://opensource.com/article/19/7/create-pull-request-github)
+- [Getting started with Git and GitHub](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6)
+
+</br>
+
+## 💥 How to Contribute to Face-X?
+
+- Take a look at the Existing [Issues](https://github.com/akshitagupta15june/Face-X/issues) or create your own Issues!
+- Wait for the Issue to be assigned to you.
+- Fork the repository
+>click on the uppermost button <img src="https://github.com/Vinamrata1086/Face-X/blob/master/Recognition-Algorithms/Facial%20Recognition%20using%20LBPH/images/fork.png" width=50>
+
+- Clone the repository using-
+```
+git clone https://github.com/akshitagupta15june/Face-X.git
+```
+
+</br>
+
+### Installation 👇
+
+1. **Create virtual environment**
+
+```bash
+python -m venv env
+``` 
+
+2. **Linux**
+```
+source env/bin/activate
+```
+
+### OR
+
+2. **Windows**
+```bash
+env\Scripts\activate
+```
+
+3. **Install**
+
+```bash
+pip install -r requirements.txt
+```
+
+</br>
+
+## Contributing
+
+Please read [CONTRIBUTING.md](https://github.com/akshitagupta15june/Face-X/blob/master/CONTRIBUTING.md) for details on our guidelines to help you during the contribution and the process for submitting pull requests to us.
+
+</br>
+
+## Code of Conduct
+You can find our Code of Conduct [here](https://github.com/akshitagupta15june/Face-X/blob/master/CODE_OF_CONDUCT.md)
+
+</br>
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md]((https://github.com/akshitagupta15june/lane_detection_opencv/blob/master/LICENSE)) file for details.
+
+</br>
+
+## Discord
+
+<h3>Join official <a href="https://discord.com/invite/Jmc97prqjb">Discord Channel</a> for discussion.</h3>
+
+</br>
+
+## Face-X is a part of these open source programs❄
+
+<p align="center">
+  
+   [<img  width="420" height="120"  src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/Cartoonification/gssoc.png">](https://gssoc.girlscript.tech/)
+   [<img  width="160" height="160" src="https://njackwinterofcode.github.io/images/nwoc-logo.png">](https://njackwinterofcode.github.io/)
+   [<img  src="https://devscript.tech/woc/img/WOC-logo.png" width="160" height="160"/>](https://devscript.tech/woc/) <br>
+   [<img  width="160" height="160"  src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/Cartoonification/uaceit.jpeg">](https://uaceit.com/)
+   [<img  width="160" height="160"  src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/Cartoonification/cwoc.jpeg">](https://crosswoc.ieeedtu.in/)
+   [<img  width="180" height="180" src="https://media-exp1.licdn.com/dms/image/C560BAQGh8hr-FgbrHw/company-logo_200_200/0/1602422883512?e=2159024400&v=beta&t=s8IX2pN1J2v5SRRbgzVNzxnQ2rWeeMq2Xb__BYW60qE">](https://swoc.tech/)
+   
+</p>
+	
+</br>
+
+## Get Started with Open Source programs 👨‍💻
 
 [Start Open Source](https://anush-venkatakrishna.medium.com/part-1-winter-or-summer-take-your-baby-steps-into-opensource-now-7d661235d7ff) an article by [Anush Krishna](https://github.com/anushkrishnav)
 
-
-## Open-source Programs ❄
-
-<p align="center">
-  <a>
-   <img  width="140" height="140" src="https://njackwinterofcode.github.io/images/nwoc-logo.png">
-   <img align="center" src="https://devscript.tech/woc/img/WOC-logo.png" width="140" height="140"/>
-   <img  width="140" height="140" src="https://media-exp1.licdn.com/dms/image/C560BAQGh8hr-FgbrHw/company-logo_200_200/0/1602422883512?e=2159024400&v=beta&t=s8IX2pN1J2v5SRRbgzVNzxnQ2rWeeMq2Xb__BYW60qE">
-</p>
- 
 </br>
 
+## ❤️ Project Admin
 
-We have participated in various open-source programs mentioned below:
-```
-1. NWOC(NJack Winter of Code)
-```
-```
-2. DWOC(Devscript Winter of Code)
-```
-```
-3. SWOC(Script Winter of Code)
-```
-```
-4. DSC IIT KALYANI WINTER OF CODE
-```
-```
-5. UACEIT WINTER OF CODE
-```
-
-## Contributors 🌟 
-
-Thanks goes to these wonderful people ✨✨:
 <table>
-	<!--   ROW 1 -->
 	<tr>
 		<td align="center">
 			<a href="https://github.com/akshitagupta15june">
@@ -88,149 +170,26 @@ Thanks goes to these wonderful people ✨✨:
 				<br /> <sub><b>akshitagupta15june</b></sub>
 			</a>
 			<br /> <a href="https://github.com/akshitagupta15june"> 
-                👑 Author
-            </a>
-		</td>
-		<td align="center">
-			<a href="https://github.com/Aayush-hub">
-				<img src="https://avatars1.githubusercontent.com/u/65889104?v=4" width="100px" alt="" />
-				<br /> <sub><b>Aayush-hub</b></sub>
-			</a>
-			<br /> <a href="https://github.com/Jayshah6699/datascience-mashup/commits?author=Aayush-hub">
-                💻
-            </a>
-		</td>
-		<td align="center">
-			<a href="https://github.com/Halix267">
-				<img src="https://avatars1.githubusercontent.com/u/63572018?v=4" width="100px" alt="" />
-				<br /> <sub><b>Halix267</b></sub>
-			</a>
-			<br /> <a href="https://github.com/Jayshah6699/datascience-mashup/commits?author=Halix267">
-                💻
-            </a>
-		</td>
-		<td align="center">
-			<a href="https://github.com/smriti1313">
-				<img src="https://avatars1.githubusercontent.com/u/52624997?v=4" width="100px" alt="" />
-				<br /> <sub><b>smriti1313</b></sub>
-			</a>
-			<br /> <a href="https://github.com/Jayshah6699/datascience-mashup/commits?author=smriti1313">
-                💻
-            </a>
-		</td>
-		<td align="center">
-			<a href="https://github.com/SoyabulIslamLincoln">
-				<img src="https://avatars1.githubusercontent.com/u/55865931?v=4" width="100px" alt="" />
-				<br /> <sub><b>SoyabulIslamLincoln</b></sub>
-			</a>
-			<br /> <a href="https://github.com/Jayshah6699/datascience-mashup/commits?author=SoyabulIslamLincoln">
-                💻
-            </a>
-		</td>
-		<td align="center">
-			<a href="https://github.com/ashwani-rathee">
-				<img src="https://avatars3.githubusercontent.com/u/54855463?v=4" width="100px" alt="" />
-				<br /> <sub><b>ashwani-rathee</b></sub>
-			</a>
-			<br /> <a href="https://github.com/Jayshah6699/datascience-mashup/commits?author=ashwani-rathee">
-                💻
-            </a>
-		</td>
-		<td align="center">
-			<a href="https://github.com/KerinPithawala">
-				<img src="https://avatars3.githubusercontent.com/u/46436993?v=4" width="100px" alt="" />
-				<br /> <sub><b>KerinPithawala</b></sub>
-			</a>
-			<br /> <a href="https://github.com/Jayshah6699/datascience-mashup/commits?author=KerinPithawala">
-                💻
-            </a>
-		</td>
-	</tr>
-	<!--   ROW 2 -->
-	<tr>
-		<td align="center">
-			<a href="https://github.com/koolgax99">
-				<img src="https://avatars0.githubusercontent.com/u/55532999?v=4" width="100px" alt="" />
-				<br /> <sub><b>koolgax99</b></sub>
-			</a>
-			<br /> <a href="https://github.com/Jayshah6699/datascience-mashup/commits?author=koolgax99">
-                💻
-            </a>
-		</td>
-		<td align="center">
-			<a href="https://github.com/Sloth-Panda">
-				<img src="https://avatars2.githubusercontent.com/u/70213384?v=4" width="100px" alt="" />
-				<br /> <sub><b>Sloth-Panda</b></sub>
-			</a>
-			<br /> <a href="https://github.com/Jayshah6699/datascience-mashup/commits?author=Sloth-Panda">
-                💻
-            </a>
-		</td>
-		<td align="center">
-			<a href="https://github.com/amandp13">
-				<img src="https://avatars0.githubusercontent.com/u/55224891?v=4" width="100px" alt="" />
-				<br /> <sub><b>amandp13</b></sub>
-			</a>
-			<br /> <a href="https://github.com/Jayshah6699/datascience-mashup/commits?author=amandp13">
-                💻
-            </a>
-		</td>
-		<td align="center">
-			<a href="https://github.com/Bhagyashri2000">
-				<img src="https://avatars1.githubusercontent.com/u/43903254?v=4" width="100px" alt="" />
-				<br /> <sub><b>Bhagyashri2000</b></sub>
-			</a>
-			<br /> <a href="https://github.com/Jayshah6699/datascience-mashup/commits?author=Bhagyashri2000">
-                💻
-            </a>
-		</td>
-		<td align="center">
-			<a href="https://github.com/musavveer">
-				<img src="https://avatars2.githubusercontent.com/u/62888562?v=4" width="100px" alt="" />
-				<br /> <sub><b>musavveer</b></sub>
-			</a>
-			<br /> <a href="https://github.com/Jayshah6699/datascience-mashup/commits?author=musavveer">
-                💻
-            </a>
-		</td>
-		<td align="center">
-			<a href="https://github.com/RaghavModi">
-				<img src="https://avatars1.githubusercontent.com/u/52846588?v=4" width="100px" alt="" />
-				<br /> <sub><b>RaghavModi</b></sub>
-			</a>
-			<br /> <a href="https://github.com/Jayshah6699/datascience-mashup/commits?author=RaghavModi">
-                💻
-            </a>
-		</td>
-		<td align="center">
-			<a href="https://github.com/Karnak123">
-				<img src="https://avatars1.githubusercontent.com/u/39977582?v=4" width="100px" alt="" />
-				<br /> <sub><b>Karnak123</b></sub>
-			</a>
-			<br /> <a href="https://github.com/Jayshah6699/datascience-mashup/commits?author=Karnak123">
-                💻
-            </a>
-		</td>
-	</tr>
-	<!--   ROW 3 -->
-	<tr>
-		<td align="center">
-			<a href="https://github.com/himanshu007-creator">
-				<img src="https://avatars2.githubusercontent.com/u/65963997?v=4" width="100px" alt="" />
-				<br /> <sub><b>himanshu007-creator</b></sub>
-			</a>
-			<br /> <a href="https://github.com/Jayshah6699/datascience-mashup/commits?author=himanshu007-creator">
-                💻
-            </a>
-		</td>
-		<td align="center">
-			<a href="https://github.com/saiharsha-22">
-				<img src="https://avatars1.githubusercontent.com/u/61947484?v=4" width="100px" alt="" />
-				<br /> <sub><b>saiharsha-22</b></sub>
-			</a>
-			<br /> <a href="https://github.com/Jayshah6699/datascience-mashup/commits?author=saiharsha-22">
-                💻
-            </a>
+		👑 Admin
+	    </a>
 		</td>
 	</tr>
 </table>
+
+</br>
+
+## 🌟 Contributors 
+
+Thanks goes to these wonderful people ✨✨:
+
+<table>
+	<tr>
+		<td>
+			<a href="https://github.com/akshitagupta15june/Face-X/graphs/contributors">
+  				<img src="https://contrib.rocks/image?repo=akshitagupta15june/Face-X" />
+			</a>
+		</td>
+	</tr>
+</table>
+
+</br>
