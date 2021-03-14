@@ -1,4 +1,4 @@
-### Demonstration of different algorithms and operations on faces
+﻿### Demonstration of different algorithms and operations on faces
 
 There are several approaches for recognizing a face. The algorithm can use statistics, try to find a pattern which represents a specific person or use a convolutional neural network. 
 <div align="center">
@@ -59,4 +59,4 @@ MTCNN | Kaipeng Zhang, Zhanpeng Zhang, Zhifeng Li, Yu Qiao | April,2016 | One of
 ![](https://imgs.developpaper.com/imgs/1527989268-5de6f88a07966_articlex.png)
 
 
-We can see that the models are very new in this world and also can see the quick evolution of them .Face Cecognition with Deep learning has now become **PIECE OF CAKE** with the help of this Benchmark Models. 
+We can see that the models are very new in this world and also can see the quick evolution of them .Face Recognition with Deep learning has now become **PIECE OF CAKE** with the help of this Benchmark Models. 
