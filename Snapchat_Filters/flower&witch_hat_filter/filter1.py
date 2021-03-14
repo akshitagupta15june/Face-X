@@ -1,10 +1,9 @@
 import cv2
 import numpy as np 
+face_cascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
+eye_cascade = cv2.CascadeClassifier("haarcascade_eye.xml")
 
-face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
-
-witch = cv2.imread('witch2.png')
+witch = cv2.imread("witch2.png")
 
 original_witch_h,original_witch_w,witch_channels = witch.shape  #getting shape of witch
 
@@ -83,10 +82,10 @@ while True:   #continue to run until user breaks loop
         break
         
     #display image
-    cv2.imshow('img',img) 
+    cv2.imshow("img",img) 
 
     #if user pressed 'q' break
-    if cv2.waitKey(1) == ord('q'): 
+    if cv2.waitKey(1) == ord("q"): 
         break;
 
 cap.release() #turn off camera 
