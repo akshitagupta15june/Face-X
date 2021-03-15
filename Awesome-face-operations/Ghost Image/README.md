@@ -3,7 +3,7 @@
 Used OpenCv and Numpy to convert an image into ghost image.
 
 ## Steps:
-* Imported the required libraries
+* Imported the required libraries ( Numpy, Matplotlib, Cv2)
 * Read the input image using cv2
 
 ### Methods applied Using Cv2
@@ -11,4 +11,4 @@ Used OpenCv and Numpy to convert an image into ghost image.
 * Used Median Blur
 * Used Adaptive Threshold
 * Used Bitwise Xor
-* Finally coverted the image into ghost image
+* Finally converted the image into ghost image
