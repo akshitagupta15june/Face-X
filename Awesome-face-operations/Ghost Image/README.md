@@ -14,7 +14,11 @@ Used OpenCv and Numpy to convert an image into ghost image.
 * Finally converted the image into ghost image
 
 
-![](Images/Ghost Photo.jpg)
+## Original Image
+<img src="photo.jpg" height="300px" >
+
+## Cartoonified
+<img src="Ghost Photo.jpg" height="300px" >
 
 
-❮img src="Images/Ghost Photo.jpg" ❯
+
