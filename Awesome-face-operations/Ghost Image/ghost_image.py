@@ -2,7 +2,7 @@ from matplotlib import pyplot as plt
 import numpy as np
 import cv2
 
-img = cv2.imread('photo.jpg')
+img = cv2.imread('photo.jpg')   #photo == name of photo 
 #plt.imshow(img)
 #plt.show()
 image = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
@@ -25,8 +25,8 @@ img_edge = cv2.cvtColor(img_edge, cv2.COLOR_GRAY2RGB)
 #plt.imshow(img_edge)
 #plt.show()
 # img_edge = cv2.cvtColor(img_edge, cv2.COLOR_GRAY2RGB)
-array = cv2.bitwise_xor(image, img_edge)
+array = cv2.bitwise_xor(image, img_edge)      #used bitwise xor method 
 plt.figure(figsize= (10,10))
 plt.imshow(array)
 
-plt.show()
+plt.show()  #final filtered photo
