@@ -12,3 +12,9 @@ Used OpenCv and Numpy to convert an image into ghost image.
 * Used Adaptive Threshold
 * Used Bitwise Xor
 * Finally converted the image into ghost image
+
+
+![](Images/Ghost Photo.jpg)
+
+
+❮img src="Images/Ghost Photo.jpg" ❯
