@@ -15,10 +15,10 @@ Used OpenCv and Numpy to convert an image into ghost image.
 
 
 ## Original Image
-<img src="photo.jpg" height="300px" >
+<img src="Images/photo.jpg" height="300px">
 
 ## Ghost Image
-<img src="Ghost Photo.jpg" height="300px" >
+<img src="Images/Ghost Photo.jpg" height="300px">
 
 
 
