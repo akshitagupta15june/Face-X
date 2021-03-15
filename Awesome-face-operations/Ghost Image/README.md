@@ -17,7 +17,7 @@ Used OpenCv and Numpy to convert an image into ghost image.
 ## Original Image
 <img src="photo.jpg" height="300px" >
 
-## Cartoonified
+## Ghost Image
 <img src="Ghost Photo.jpg" height="300px" >
 
 
