@@ -36,7 +36,7 @@
 36) [Utkarsh Chauhan] https://github.com/utkarsh147-del
 37) [Nihar Sanda] https://github.com/koolgax99
 38) [Avishkar] https://github.com/avishkar2001
-39) [Sagnik Mazumder] https://github.com/Karnak123
+39) [Bharath_acchu] https://github.com/bharath-acchu
 40) [Aditya Nikhil] https://github.com/AdityaNikhil
 41) [Yashasvi] https://github.com/kmryashasvi
 42) [Anirudh Sai S B] https://github.com/anirudhsai20
@@ -56,4 +56,3 @@
 56) [Raghav Modi] https://github.com/RaghavModi
 57) [Pankaj Sharma] https://github.com/PankajGit2711
 58) [Anand Kumar] https://github.com/anandxkumar
-59) [Bharath_acchu] https://github.com/bharath-acchu
