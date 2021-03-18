@@ -26,13 +26,13 @@
 #### [Recognition-Algorithms](https://github.com/akshitagupta15june/Face-X/tree/master/Recognition-Algorithms)
  
 
-Despite the availability of a variety of open source face recognition algorithms, there are no ready-made solutions which can be implemented directly. This project demonstrates all kinds of algorithms and various operations that can be implemented on a frontal face. The available algorithms process only high-resolution static shots and perform sufficiently well.
+Despite the availability of a variety of open-source face recognition algorithms, there are no ready-made solutions that can be implemented directly. This project demonstrates all kinds of algorithms and various operations that can be implemented on a frontal face. The available algorithms process only high-resolution static shots and perform sufficiently well.
 
 
 <div align="center">
 <img src="https://media.giphy.com/media/AXorq76Tg3Vte/giphy.gif" width="20%"><br>
 </div>
-There are several approaches for an algorithm to recognize a face. An algorithm can make use of statistics, try to find a pattern which represents a specific person or use a Convolutional Neural Network (CNN).
+There are several approaches for an algorithm to recognize a face. An algorithm can make use of statistics, try to find a pattern that represents a specific person, or use a Convolutional Neural Network (CNN).
 
 
 
