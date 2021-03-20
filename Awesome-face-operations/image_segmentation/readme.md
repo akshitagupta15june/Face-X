@@ -10,7 +10,7 @@ RGB is one of the five major color space models, each of which has many offshoot
 HSV and HSL are descriptions of hue, saturation, and brightness/luminance, which are particularly useful for identifying contrast in images.
  
  <h2>Steps followed for implementation</h2>
- <ul type="1">
+ <ul type="one">
  <li>Converted the image into HSV</li>
 <li>Choosing swatches of desired color , In this, shades of light and dark orange has been taken.</li>
 <li> Applying orange shade mask on to the image</li>
@@ -35,9 +35,22 @@ HSV and HSL are descriptions of hue, saturation, and brightness/luminance, which
  <img src="HSV_IMAGE.PNG">
  </p>
  
+ <p>
  <h2>Segmented images</h2>
  <img src="demo1.PNG">
  <img src="demo2.PNG">
+ </p>
+ 
+ <h2>Instructions to Run</h2>
+ <ul>
+ <li>Colne this repo https://github.com/akshitagupta15june/Face-X.git</li>
+ <li>Change Directory cd Awesome-face-operations</li>
+ <li>Then go to cd image_segmentation</li>
+ <li>Run code file. python image_segmentation1.py</li>
+ </ul>
+ 
+ 
+  
  
 
  
