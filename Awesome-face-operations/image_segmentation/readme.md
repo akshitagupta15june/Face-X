@@ -11,7 +11,7 @@ HSV and HSL are descriptions of hue, saturation, and brightness/luminance, which
  
  
  <h2>Default  image in BGR color space</h2>
- <img src="BGR_IMAGE.png">
+ <img src="BGR_IMAGE.PNG">
  
 
 
