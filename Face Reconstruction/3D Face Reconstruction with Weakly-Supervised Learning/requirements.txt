@@ -47,7 +47,7 @@ termcolor=1.1.0=pypi_0
 tk=8.6.10=he774522_0
 torchvision=0.7.0=py38_cu101
 tqdm=4.52.0=pyhd3deb0d_0
-urllib3=1.26.2=pypi_0
+urllib3>=1.26.4=pypi_0
 vc=14.1=h0510ff6_4
 vs2015_runtime=14.16.27012=hf0eaf9b_3
 wheel=0.35.1=pyhd3eb1b0_0
