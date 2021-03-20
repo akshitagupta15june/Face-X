@@ -9,4 +9,6 @@ Then conver the actual image to grayscale.
 Now apply the median blur to reduce image noise in the grayscale image.
 Create an edge mask from the grayscale image using adaptive thresholding.
 Finally combine the color image produced from step 1 with edge mask produced from step 4.
-https://analyticsindiamag.com/wp-content/uploads/2020/08/432a6b258bfa7df163a88bed81255db6.jpg
+<p align="center">
+  <img src="https://analyticsindiamag.com/wp-content/uploads/2020/08/432a6b258bfa7df163a88bed81255db6.jpg" width="350" title="hover text">
+</p>
