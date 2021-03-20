@@ -70,11 +70,11 @@ It is used to divide the grey-scale value of image by the inverse of blurred ima
 
 ### Results Obtained
 
-![pencil_sketch1.png](attachment:pencil_sketch1.png)
+![pencil_sketch1](https://user-images.githubusercontent.com/58857630/111414428-021de800-8706-11eb-8298-54a0d9ef236b.png)
 
-![pencil_sketch2.png](attachment:pencil_sketch2.png)
+![pencil_sketch2](https://user-images.githubusercontent.com/58857630/111414499-1c57c600-8706-11eb-8ac1-e38e26258aea.png)
 
-![pencil_sketch3.png](attachment:pencil_sketch3.png)
+![pencil_sketch3](https://user-images.githubusercontent.com/58857630/111414546-2ed1ff80-8706-11eb-8653-b98db0231d5c.png)
 
 
 ```python
