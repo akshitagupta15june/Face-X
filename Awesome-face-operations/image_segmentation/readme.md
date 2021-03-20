@@ -9,17 +9,29 @@ The process of partitioning a digital image into multiple segments is defined as
 RGB is one of the five major color space models, each of which has many offshoots. There are so many color spaces because different color spaces are useful for different purposes.
 HSV and HSL are descriptions of hue, saturation, and brightness/luminance, which are particularly useful for identifying contrast in images.
  
+ <h2>Steps followed for implementation</h2>
+ <ul type="1">
+ <li>Converted the image into HSV</li>
+<li>Choosing swatches of desired color , In this, shades of light and dark orange has been taken.</li>
+<li> Applying orange shade mask on to the image</li>
+<li>Adding the second swatches of color, Here shades of white was chosen i.e light and dark shades</li>
+<li>Apply the whte mask onto the image</li>
+<li>Now combine the two masks ,Adding the two masks together results in 1 values wherever there is orange shade or white shade.</li>
+ <li>Clean up the segmentation using a blur </li>
+ </ul>
+
+ 
  
  <h2>Default  image in BGR color space</h2>
  <img src="BGR_IMAGE.PNG">
  
- <h2>Image converted to RGB color soace</h2>
- <img src="RGB_IMAGE.PNG">
+ <h2>Image converted to RGB color space</h2>
+ <img src="RBG_IMAGE.PNG">
  
- <h2>Image converted to GRAY color soace</h2>
+ <h2>Image converted to GRAY color space</h2>
  <img src="GRAY_IMAGE.PNG">
  
- <h2>Image converted to HSV color soace</h2>
+ <h2>Image converted to HSV color space</h2>
  <img src="HSV_IMAGE.PNG">
  
  
