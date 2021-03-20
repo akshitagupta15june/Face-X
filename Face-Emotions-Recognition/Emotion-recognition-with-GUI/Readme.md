@@ -25,23 +25,23 @@ The model was trained for 60 epochs and had a batch size of 64. We were able to 
 
 * Main GUI window without result - 
 <p align="center">
-<img src="" alt="drawing" width="300"/>
+<img src="https://github.com/AM1CODES/Face-X/blob/master/Face-Emotions-Recognition/Emotion-recognition-with-GUI/images/Capture.PNG" alt="drawing" width="450"/>
 </p>
 
 * Some Model results - 
 <p align="center">
-<img src="" alt="drawing" width="300"/>
+<img src="https://github.com/AM1CODES/Face-X/blob/master/Face-Emotions-Recognition/Emotion-recognition-with-GUI/images/Screenshot%20(154).png" alt="drawing" width="450"/>
 </p>
 <p align="center">
-<img src="" alt="drawing" width="300"/>
+<img src="https://github.com/AM1CODES/Face-X/blob/master/Face-Emotions-Recognition/Emotion-recognition-with-GUI/images/Screenshot%20(155).png" alt="drawing" width="450"/>
 </p>
 <p align="center">
-<img src="" alt="drawing" width="300"/>
+<img src="https://github.com/AM1CODES/Face-X/blob/master/Face-Emotions-Recognition/Emotion-recognition-with-GUI/images/Screenshot%20(156).png" alt="drawing" width="450"/>
 </p>
 
 * Main GUI window with result -
 <p align="center">
-<img src="" alt="drawing" width="300"/>
+<img src="https://github.com/AM1CODES/Face-X/blob/master/Face-Emotions-Recognition/Emotion-recognition-with-GUI/images/Capture%20-%202.PNG" alt="drawing" width="450"/>
 </p>
 
 # Model
