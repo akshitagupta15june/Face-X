@@ -36,8 +36,8 @@ HSV and HSL are descriptions of hue, saturation, and brightness/luminance, which
  
  <p>
  <h2>Segmented images</h2>
- <img src="demo1.PNG">
- <img src="demo2.PNG">
+ <img src="images\demo1.PNG">
+ <img src="images\demo2.PNG">
  </p>
  
  <h2>Instructions to Run</h2>
