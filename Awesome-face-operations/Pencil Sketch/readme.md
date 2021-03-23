@@ -1,4 +1,5 @@
 # Pencil Sketch In Python Using OpenCV
+
 ## OpenCV
 
 OpenCV is an open source computer vision and machine learning software library. It is a BSD-licence product thus free for both business and academic purposes.The Library provides more than 2500 algorithms that include machine learning tools for classification and clustering, image processing and vision algorithm, basic algorithms and drawing functions, GUI and I/O functions for images and videos. Some applications of these algorithms include face detection, object recognition, extracting 3D models, image processing, camera calibration, motion analysis etc.
@@ -24,7 +25,7 @@ cv2.IMREAD_GRAYSCALE: It specifies to load an image in grayscale mode. Alternati
 
 cv2.IMREAD_UNCHANGED: It specifies to load an image as such including alpha channel. Alternatively, we can pass integer value -1 for this flag.
 
-#### cvtColor() 
+#### cvtColor()
 
 cv2.cvtColor() method is used to convert an image from one color space to another. There are more than 150 color-space conversion methods available in OpenCV.
 
