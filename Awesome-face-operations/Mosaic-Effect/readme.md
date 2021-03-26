@@ -7,4 +7,5 @@ A photomosaic is an image split into a grid of rectangles, with each replaced by
 - For each tile, fnd the best match from the input images.
 - Create the fnal mosaic by arranging the selected input images in an M×N grid.
 
-### Examples:
+### Example:
+![mosaic sample](https://github.com/sudipg4112001/Face-X/blob/master/Awesome-face-operations/Mosaic-Effect/images%20(1).jpg)
