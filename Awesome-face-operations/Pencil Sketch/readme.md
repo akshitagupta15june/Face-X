@@ -145,19 +145,12 @@ def burnV2(image, mask):
 img_blend = dodgeV2(img_gray, img_blur)
 cv2.imshow("pencil sketch", img_blend)
 ```
+#### Results Obtained
+
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Pencil%20Sketch/Pencil_Image/pencil4.png"/>
 
-###  Libraries Used
 
 
-
-### Results Obtained
-
-![pencil_sketch1](https://user-images.githubusercontent.com/58857630/111414428-021de800-8706-11eb-8298-54a0d9ef236b.png)
-
-![pencil_sketch2](https://user-images.githubusercontent.com/58857630/111414499-1c57c600-8706-11eb-8ac1-e38e26258aea.png)
-
-![pencil_sketch3](https://user-images.githubusercontent.com/58857630/111414546-2ed1ff80-8706-11eb-8653-b98db0231d5c.png)
 
 
 ```python
