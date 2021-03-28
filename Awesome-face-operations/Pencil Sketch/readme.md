@@ -9,7 +9,7 @@ OpenCV is written natively in C/C++. It has C++, C, Python and Java interfaces a
 </p>
 
 <p style="clear:both;">
-<img alt="Layer5 Service Mesh Configuration Management" src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Pencil%20Sketch/Pencil_Image/pencil2.png"  style="margin-right;margin-bottom;" width="45%" align="right"/></a>
+<img alt="Pencil Sketch in OpenCv" src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Pencil%20Sketch/Pencil_Image/pencil2.png"  style="margin-right;margin-bottom;" width="45%" align="right"/></a>
 <h2> Pencil Sketch in OpenCV</h2>
 OpenCV 3 comes with a pencil sketch effect right out of the box. The `cv2.pencilSketch` function uses a domain filter introduced in the 2011 paper Domain transform for edge-aware image and video processing, by Eduardo Gastal and Manuel Oliveira. For customizations, other filters can also be developed.
 <br /><br /><br />
@@ -149,11 +149,16 @@ cv2.imshow("pencil sketch", img_blend)
 
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Pencil%20Sketch/Pencil_Image/pencil4.png"/>
 
-### About Face-x
-
-**Community First**
-
-<p>The <a href="https://github.com/akshitagupta15june/Face-X">Face-X</a> community represents the largest collection of Open-Source projects and their maintainers in the world.</p>
+<p style="clear:both;">
+<h1><a name="contributing"></a><a name="community"></a> <a href="https://github.com/akshitagupta15june/Face-X">Community</a> and <a href="https://github.com/akshitagupta15june/Face-X/blob/master/CONTRIBUTING.md">Contributing</a></h1>
+<p>Please do! Contributions, updates, <a href="https://github.com/akshitagupta15june/Face-X/issues"></a> and <a href=" ">pull requests</a> are welcome. This project is community-built and welcomes collaboration. Contributors are expected to adhere to the <a href="https://gssoc.girlscript.tech/">GOSSC Code of Conduct</a>.
+</p>
+<p>
+Jump into our <a href="https://discord.com/invite/Jmc97prqjb">Discord</a>! Our projects are community-built and welcome collaboration. 👍Be sure to see the <a href="https://github.com/Vi1234sh12/Face-X/blob/master/Readme.md">Face-X Community Welcome Guide</a> for a tour of resources available to you.
+</p>
+<p>
+<i>Not sure where to start?</i> Grab an open issue with the <a href="https://github.com/akshitagupta15june/Face-X/issues">help-wanted label</a>
+</p>
 
 **Open Source First**
 
@@ -162,6 +167,4 @@ cv2.imshow("pencil sketch", img_blend)
 
 
 
-```python
 
-```
