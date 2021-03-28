@@ -3,7 +3,7 @@
 Used OpenCv and Numpy to convert an image into ghost image.
 
 ## Steps:
-* Imported the required libraries ( Numpy, Matplotlib, Cv2)
+* Imported the required libraries ( Numpy, Matplotlib, Os, Cv2)
 * Read the input image using cv2
 
 ### Methods applied Using Cv2
