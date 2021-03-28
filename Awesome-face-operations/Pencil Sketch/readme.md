@@ -149,6 +149,15 @@ cv2.imshow("pencil sketch", img_blend)
 
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Pencil%20Sketch/Pencil_Image/pencil4.png"/>
 
+### About Face-x
+
+**Community First**
+
+<p>The <a href="https://github.com/akshitagupta15june/Face-X">Face-X</a> community represents the largest collection of Open-Source projects and their maintainers in the world.</p>
+
+**Open Source First**
+
+ best practices for managing all aspects of distributed services. Our shared commitment to the open-source spirit push the Face-X community and its projects forward.</p>
 
 
 
