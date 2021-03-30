@@ -15,7 +15,7 @@ for _ in range(num_down):
 # repeatedly apply small bilateral filter instead of
 # applying one large filter
 for _ in range(num_bilateral):
-img_color = cv2.bilateralFilter(img_color, d=9, sigmaColor=9, sigmaSpace=7)
+   img_color = cv2.bilateralFilter(img_color, d=9, sigmaColor=9, sigmaSpace=7)
 
 # upsample image to original size
 for _ in range(num_down):
