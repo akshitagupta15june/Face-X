@@ -15,7 +15,7 @@ from [here](https://github.com/italojs/facial-landmarks-recognition/blob/master/
 - Run code using the cmd ` python detective_filter.py`
 
 ### Screenshot
-<img height="380" src="https://github.com/Defcon27/Face-X/blob/master/Snapchat_Filters/Detective%20Filter/assets/out.jpg">
+<img height="380" src="https://raw.githubusercontent.com/Vi1234sh12/Face-X/4b7e31df8542ecd9331056a9d3c9823b98d9bdcc/Snapchat_Filters/Detective%20Filter/assets/out.jpg">
 
 ### Detail of the Algorithm used in Detective Filter
 We are using Viola Jones algorithm which is named after two computer vision researchers who proposed the method in 2001, Paul Viola and Michael Jones in their paper, “Rapid Object Detection using a Boosted Cascade of Simple Features”. Despite being an outdated framework, Viola-Jones is quite powerful, and its application has proven to be exceptionally notable in real-time face detection. This algorithm is painfully slow to train but can detect faces in real-time with impressive speed.
