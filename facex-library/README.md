@@ -29,16 +29,30 @@ Similarly we can run,
 
 ## Current supported algorithms
 
-1) face_detection(using opencv)
+### OpenCV
+
+1) face_detection
 	method : `facex.face_detect(img_path='your-img.jpg', methods='opencv')`
 
-2) cartoonify(using opencv)
+2) cartoonify
 method : `facex.cartoonify(img_path='your-img.jpg', methods='opencv')`
 
-3) blur background(using opencv)
+3) blur background
 method : `facex.blur_bg(img_path='your-img.jpg', methods='opencv')`
 
-More algorithms shall be added soon as this is still in an experimental stage. 
+4) Ghost image
+method : `facex.ghost_img(img_path='your-img.jpg', methods='opencv')`
+
+5) mosaic
+method : `facex.mosaic(img_path='your-img.jpg', x=219, y=61, w=460-219, h=412-61)`
+Where, (x,y,w,h) are co-ordinates to apply mosaic effect on the image.
+
+6) Sketch
+method : `facex.sketch(img_path='your-img.jpg', methods='opencv')`
+
+### Deep Learning
+
+Deep learning algorithms shall be added soon! (Stay put)
 
 ## Pending Tasks
 
@@ -50,6 +64,6 @@ More algorithms shall be added soon as this is still in an experimental stage.
 6) Add more algorithms.
 
 ## Contributions are welcome
-Feel free to suggest any changes or fixes for the benefit of the package [here](https://github.com/akshitagupta15june/Face-X/issues/312)
+Feel free to suggest any changes or fixes for the benefit of the package [here](https://github.com/akshitagupta15june/Face-X/discussions/323).
 
 
