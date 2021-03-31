@@ -31,24 +31,24 @@ Similarly we can run,
 
 ### OpenCV
 
-1) face_detection
-	method : `facex.face_detect(img_path='your-img.jpg', methods='opencv')`
+1) **face_detection**
+	**method** : `facex.face_detect(img_path='your-img.jpg', methods='opencv')`
 
-2) cartoonify
-method : `facex.cartoonify(img_path='your-img.jpg', methods='opencv')`
+2) **cartoonify**
+**method** : `facex.cartoonify(img_path='your-img.jpg', methods='opencv')`
 
-3) blur background
-method : `facex.blur_bg(img_path='your-img.jpg', methods='opencv')`
+3) **blur background**
+**method** : `facex.blur_bg(img_path='your-img.jpg', methods='opencv')`
 
-4) Ghost image
-method : `facex.ghost_img(img_path='your-img.jpg', methods='opencv')`
+4) **Ghost image**
+**method** : `facex.ghost_img(img_path='your-img.jpg', methods='opencv')`
 
-5) mosaic
-method : `facex.mosaic(img_path='your-img.jpg', x=219, y=61, w=460-219, h=412-61)`
+5) **mosaic**
+**method** : `facex.mosaic(img_path='your-img.jpg', x=219, y=61, w=460-219, h=412-61)`
 Where, (x,y,w,h) are co-ordinates to apply mosaic effect on the image.
 
-6) Sketch
-method : `facex.sketch(img_path='your-img.jpg', methods='opencv')`
+6) **Sketch**
+**method** : `facex.sketch(img_path='your-img.jpg', methods='opencv')`
 
 ### Deep Learning
 
