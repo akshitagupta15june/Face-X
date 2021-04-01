@@ -1,22 +1,23 @@
-# Converting an image into ghost image.
+# Applying "Colorful Sketch Filter" on an image.
 
-Used OpenCv and Numpy to convert an image into ghost image.
+Converting an image into a colorful sketch filtered image using OpenCv, Os, Matplotlib and Numpy.
 
 ## Steps:
-* Imported the required libraries ( Numpy, Matplotlib, Os, Cv2)
-* Read the input image using cv2
+* Firstly imported the required libraries which are Numpy, Os, Matplotlib and Cv2.
+* Read the input path of the image/Real image given using os and finally reading it using cv2
 
-### Methods applied Using Cv2
+## Methods Used
 * Used Bilateral Filter
-* Used Median Blur
-* Used Adaptive Threshold
-* Used Bitwise Xor
-* Finally converted the image into ghost image
+* Followed by Median Blur
+* Followed by Adaptive Threshold
+* And at last used Bitwise or
+* Finally converted the image into colorful sketch filter image
+
 
 
 ## Original Image
-<img src="Images/photo.jpg" height="300px">
+<img src="Images/Photo.jpg" height="300px">
 
 ## Ghost Image
-<img src="Images/Ghost Photo.jpg" height="300px">
+<img src="Images/Colorful Sketch Filtered Photo.jpg" height="300px">
 
