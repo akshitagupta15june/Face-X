@@ -4,7 +4,7 @@ Converting an image into a colorful sketch filtered image using OpenCv, Os, Matp
 
 ## Steps:
 * Firstly imported the required libraries which are Numpy, Os, Matplotlib and Cv2.
-* Read the input path of the image/Real image given using os and finally reading it using cv2
+* Taking path of the image/Real image as input using os and finally reading it using cv2
 
 ## Methods Used
 * Used Bilateral Filter
