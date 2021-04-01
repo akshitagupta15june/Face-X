@@ -18,6 +18,6 @@ Converting an image into a colorful sketch filtered image using OpenCv, Os, Matp
 ## Original Image
 <img src="Images/Photo.jpg" height="300px">
 
-## Ghost Image
+## Colorful Sketch Filtered Image
 <img src="Images/Colorful Sketch Filtered Photo.jpg" height="300px">
 
