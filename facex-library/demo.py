@@ -14,11 +14,11 @@ cv2.imshow("ghost", cv2.resize(image, (600,600)))
 cv2.waitKey()
 
 
-## Face mask detection - Image
+## Face mask detection(Image)
 image = face_mask('face.jpg')
 cv2.imshow("face_mask", cv2.resize(image, (600,600)))
 cv2.waitKey()
 
 
-## Face mask detection - Video
+## Face mask detection(Video)
 # face_mask('your-video.mp4') 
