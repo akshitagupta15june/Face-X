@@ -1,27 +1,30 @@
 ## About
+
 A unified library for **FaceX** to run all the FaceX algorithms using only one line of code. 
 
 ## Example
 ### Running cartoonify using FaceX library
-    import facex 
+    from facex import FaceX 
     import cv2
     
-    img = facex.cartoonify('your-img.jpg', method='opencv')
+    img = FaceX.cartoonify('your-img.jpg', method='opencv')
     cv2.imshow(img)
     cv2.waitkey()
 
 Similarly we can run,
 
-    facex.face_detect('your-img.jpg', method='opencv') #Face detection
-    facex.face_mask('your-img.jpg', method='opencv')   #Face mask detection
+    FaceX.face_detect('your-img.jpg', method='opencv') #Face detection
+    FaceX.face_mask('your-img.jpg', method='opencv')   #Face mask detection
     
     And many more....
 
 ## How to use
 
+You can simply run the `demo.py` file to visualize some examples. Also check the below steps to run your own code,
+
 1) Clone this repo.
 
-2) cd `facex` from the command line.
+2) cd `facex-library` from the command line.
 
 3) open your favourite text editor and place it inside facex folder. 
 
@@ -32,23 +35,23 @@ Similarly we can run,
 ### OpenCV
 
 1) **face_detection**
-	**method** : `facex.face_detect(img_path='your-img.jpg', methods='opencv')`
+	**method** : `FaceX.face_detect(img_path='your-img.jpg', methods='opencv')`
 
 2) **cartoonify**
-**method** : `facex.cartoonify(img_path='your-img.jpg', methods='opencv')`
+**method** : `FaceX.cartoonify(img_path='your-img.jpg', methods='opencv')`
 
 3) **blur background**
-**method** : `facex.blur_bg(img_path='your-img.jpg', methods='opencv')`
+**method** : `FaceX.blur_bg(img_path='your-img.jpg', methods='opencv')`
 
 4) **Ghost image**
-**method** : `facex.ghost_img(img_path='your-img.jpg', methods='opencv')`
+**method** : `FaceX.ghost_img(img_path='your-img.jpg', methods='opencv')`
 
 5) **mosaic**
-**method** : `facex.mosaic(img_path='your-img.jpg', x=219, y=61, w=460-219, h=412-61)`
+**method** : `FaceX.mosaic(img_path='your-img.jpg', x=219, y=61, w=460-219, h=412-61)`
 Where, (x,y,w,h) are co-ordinates to apply mosaic effect on the image.
 
 6) **Sketch**
-**method** : `facex.sketch(img_path='your-img.jpg', methods='opencv')`
+**method** : `FaceX.sketch(img_path='your-img.jpg', methods='opencv')`
 
 ### Deep Learning
 
