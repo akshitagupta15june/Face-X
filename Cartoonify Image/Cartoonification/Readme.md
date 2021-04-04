@@ -10,6 +10,27 @@
 - Form a colour image and mask it with edges.
 - This creates a beautiful cartoon image with edges and lightened colour of the original image.
 
+## How to start
+
+- Fork and Clone the repository using-
+```
+git clone https://github.com/akshitagupta15june/Face-X.git
+```
+- Create virtual environment-
+```
+- python -m venv env
+- source env/bin/activate (Linux)
+- env\Scripts\activate (Windows)
+```
+- Install dependencies
+- Go to project directory
+```
+- cd Cartoonify Image
+```
+- Open Terminal
+```
+python cartoonify_without_GUI.py --image IMAGE_PATH
+```
 ### 1. Detecting and emphasizing edges
 - Convert the original color image into grayscale
 - Using adaptive`thresholding` to detect and `emphasize` the edges in an edge mask. 
@@ -88,30 +109,9 @@ cv2_imshow(img_1)
 - Step 7: Giving a Cartoon Effect
 - Step 8: Result 
 
-## R
+### Results Obtained
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Cartoonify%20Image/Cartoonification/result%20(2).jpg" hight="50%" />
 
-## How to start
-
-- Fork and Clone the repository using-
-```
-git clone https://github.com/akshitagupta15june/Face-X.git
-```
-- Create virtual environment-
-```
-- python -m venv env
-- source env/bin/activate (Linux)
-- env\Scripts\activate (Windows)
-```
-- Install dependencies
-- Go to project directory
-```
-- cd Cartoonify Image
-```
-- Open Terminal
-```
-python cartoonify_without_GUI.py --image IMAGE_PATH
-```
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Cartoonify%20Image/Cartoonification/boy.png" height="400px" align="left"/>
 <p style="clear:both;">
 <h1><a name="contributing"></a><a name="community"></a> <a href="https://github.com/akshitagupta15june/Face-X">Community</a> and <a href="https://github.com/akshitagupta15june/Face-X/blob/master/CONTRIBUTING.md">Contributing</a></h1>
