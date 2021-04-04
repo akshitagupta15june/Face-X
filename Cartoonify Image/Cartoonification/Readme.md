@@ -1,5 +1,5 @@
 # Cartoonify an Image with OpenCV in Python
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Cartoonify%20Image/Cartoonification/preview-removebg.png" height="400px" align="left"/><img src="https://github.com/Vi1234sh12/Face-X/blob/master/Cartoonify%20Image/Cartoonification/abe_toon.png"  height="400px" width="700px" align="top"/>
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Cartoonify%20Image/Cartoonification/preview-removebg.png" height="400px" align="left"/><img src="https://github.com/Vi1234sh12/Face-X/blob/master/Cartoonify%20Image/Cartoonification/abe_toon.png"  height="400px" width="600px" align="top"/>
 
 ## Process of converting an image to a cartoon
 
