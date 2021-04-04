@@ -3,7 +3,7 @@
 A unified library for **FaceX** to run all the FaceX algorithms using only one line of code. 
 
 ## Example
-### Running cartoonify using FaceX library
+#### Running cartoonify using FaceX library
     from facex import FaceX 
     import cv2
     
@@ -26,7 +26,7 @@ You can simply run the `demo.py` file to visualize some examples. Also check the
 
 2) cd `facex-library` from the command line.
 
-3) open your favourite text editor and place it inside facex folder. 
+3) open your favourite text editor and place it inside `facex-library` folder. 
 
 4) Run the commands of [example](#Example) section.
 
@@ -35,27 +35,36 @@ You can simply run the `demo.py` file to visualize some examples. Also check the
 ### OpenCV
 
 1) **face_detection**
-	**method** : `FaceX.face_detect(img_path='your-img.jpg', methods='opencv')`
+	**method** : `facex.face_detect(img_path='your-img.jpg', methods='opencv')`
 
 2) **cartoonify**
-**method** : `FaceX.cartoonify(img_path='your-img.jpg', methods='opencv')`
+**method** : `facex.cartoonify(img_path='your-img.jpg', methods='opencv')`
 
 3) **blur background**
-**method** : `FaceX.blur_bg(img_path='your-img.jpg', methods='opencv')`
+**method** : `facex.blur_bg(img_path='your-img.jpg', methods='opencv')`
 
 4) **Ghost image**
-**method** : `FaceX.ghost_img(img_path='your-img.jpg', methods='opencv')`
+**method** : `facex.ghost_img(img_path='your-img.jpg', methods='opencv')`
 
 5) **mosaic**
-**method** : `FaceX.mosaic(img_path='your-img.jpg', x=219, y=61, w=460-219, h=412-61)`
+**method** : `facex.mosaic(img_path='your-img.jpg', x=219, y=61, w=460-219, h=412-61)`
 Where, (x,y,w,h) are co-ordinates to apply mosaic effect on the image.
 
 6) **Sketch**
-**method** : `FaceX.sketch(img_path='your-img.jpg', methods='opencv')`
+**method** : `facex.sketch(img_path='your-img.jpg', methods='opencv')`
 
 ### Deep Learning
 
-Deep learning algorithms shall be added soon! (Stay put)
+1) **Face Mask Detection**
+
+**method** : 
+
+```
+facex.face_mask(image='your-img.jpg') (for image)
+facex.face_mask(image='your-img.jpg') (for video)
+```
+
+More deep learning algorithms shall be added soon! (Stay put)
 
 ## Pending Tasks
 
