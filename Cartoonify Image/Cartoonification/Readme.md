@@ -12,7 +12,7 @@
 
 ### 1. Detecting and emphasizing edges
 - Convert the original color image into grayscale
-- Using adaptive thresholding to detect and emphasize the edges in an edge mask. 
+- Using adaptive`thresholding` to detect and `emphasize` the edges in an edge mask. 
 - Apply a median blur to reduce image noise.
   - `-->` To produce accurate carton effects, as the first step, we need to understand the difference between a common digital image and a cartoon image.At the first glance we can clearly see two major differences.
    - The first difference is that the colors in the cartoon image are more homogeneous as compared to the normal image.
@@ -38,10 +38,25 @@ cv2_imshow(img)
    - `cv2.ADAPTIVE_THRESH_GAUSSIAN_C` : a threshold value is the weighted sum of neighbourhood values where weights are a gaussian window.
    - `Block Size` – It determents the size of the neighbourhood area.
    - `C `– It is just a constant which is subtracted from the calculated mean (or the weighted mean).
+```
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+edges = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 9, 5)
+```
+```
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+gray_1 = cv2.medianBlur(gray, 5)
+edges = cv2.adaptiveThreshold(gray_1, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 9, 5)
+```
+   - <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Cartoonify%20Image/Cartoonification/filters_tutorial_02.png" align ="right" height="400px"/>
 ### 2. Image filtering
 - Apply a bilateral filter to create homogeneous colors on the image. 
 ### 3. Creating a cartoon effect
 - Use a bitwise operation to combine the processed color image with the edge mask image.
+- Our final step is to combine the previous two: We will use  `cv2.bitwise_and()` the function to mix edges and the color image into a single one
+```
+ cartoon = cv2.bitwise_and(color, color, mask=edges)
+ cv2_imshow(cartoon)
+```
 ### 4. Creating a cartoon effect using color quantization
 
 ## Steps to develop Image Cartoonifier
