@@ -100,17 +100,52 @@ cv2_imshow(img_1)
 ```
 
 ## Steps to develop Image Cartoonifier
+
 - Step 1: Importing the required modules
 - Step 2: Building a File Box to choose a particular file
-- Step 3: How is an image stored?
-- Step 4: Transforming an image to grayscale
-- Step 5: Smoothening a grayscale image
-- Step 6: Retrieving the edges of an image
-- Step 7: Giving a Cartoon Effect
-- Step 8: Result 
+- Step 3: Transforming an image to grayscale
+```
+#converting an image to grayscale
+grayScaleImage = cv2.cvtColor(originalmage, cv2.COLOR_BGR2GRAY)
+ReSized2 = cv2.resize(grayScaleImage, (960, 540))
+#plt.imshow(ReSized2, cmap='gray')
+```
+   - Transforming an image to grayscale
+      - `cvtColor(image, flag)` is a method in cv2 which is used to transform an image into the colour-space mentioned as ‘flag’. Here, our first step is to convert the image           into grayscale. Thus, we use the `BGR2GRAY` flag. This returns the image in grayscale. A grayscale image is stored as `grayScaleImage`.
+       - After each transformation, we resize the resultant image using the resize() method in cv2 and display it using imshow() method. This is done to get more clear insights         into every single transformation step.
+- Step 4: Smoothening a grayscale image
+```
+#applying median blur to smoothen an image
+smoothGrayScale = cv2.medianBlur(grayScaleImage, 5)
+ReSized3 = cv2.resize(smoothGrayScale, (960, 540))
+#plt.imshow(ReSized3, cmap='gray')
+```
+   - Smoothening a grayscale image
+     - To smoothen an image, we simply apply a blur effect. This is done using medianBlur() function. Here, the center pixel is assigned a mean value of all the pixels which fall under the kernel. In turn, creating a blur effect.
+- Step 5: Retrieving the edges of an image
+```
+#retrieving the edges for cartoon effect
+#by using thresholding technique
+getEdge = cv2.adaptiveThreshold(smoothGrayScale, 255, 
+  cv2.ADAPTIVE_THRESH_MEAN_C, 
+  cv2.THRESH_BINARY, 9, 9)
+ReSized4 = cv2.resize(getEdge, (960, 540))
+#plt.imshow(ReSized4, cmap='gray')
+```
+   - Cartoon effect has two specialties:
+     - Highlighted Edges
+     - Smooth color
+     - In this step, we will work on the first specialty. Here, we will try to retrieve the edges and highlight them. This is attained by the adaptive thresholding technique. The threshold value is the mean of the neighborhood pixel values area minus the constant C. C is a constant that is subtracted from the mean or weighted sum of the neighborhood pixels. Thresh_binary is the type of threshold applied, and the remaining parameters determine the block size.
+- Step 6: Giving a Cartoon Effect
+``` 
+#masking edged image with our "BEAUTIFY" image
+cartoonImage = cv2.bitwise_and(colorImage, colorImage, mask=getEdge)
+ReSized6 = cv2.resize(cartoonImage, (960, 540))
+#plt.imshow(ReSized6, cmap='gray')
 
+```
 ### Results Obtained
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Cartoonify%20Image/Cartoonification/result%20(2).jpg" hight="50%" />
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Cartoonify%20Image/Cartoonification/result%20(2).jpg" hight="300px" width="700px"/>
 
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Cartoonify%20Image/Cartoonification/boy.png" height="400px" align="left"/>
 <p style="clear:both;">
