@@ -58,6 +58,25 @@ edges = cv2.adaptiveThreshold(gray_1, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRES
  cv2_imshow(cartoon)
 ```
 ### 4. Creating a cartoon effect using color quantization
+ - Another interesting way to create a cartoon effect is by using the color quantization method. This method will reduce the number of colors in the image and that will create a cartoon-like effect. We will perform color quantization by using the K-means clustering algorithm for displaying output with a limited number of colors. First, we need to define `color_quantization()` function.
+ ```
+ def color_quantization(img, k):
+# Defining input data for clustering
+  data = np.float32(img).reshape((-1, 3))
+# Defining criteria
+  criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 20, 1.0)
+# Applying cv2.kmeans function
+  ret, label, center = cv2.kmeans(data, k, None, criteria, 10, cv2.KMEANS_RANDOM_CENTERS)
+  center = np.uint8(center)
+  result = center[label.flatten()]
+  result = result.reshape(img.shape)
+  return result
+ ```
+ - Different values for K will determine the number of colors in the output picture. So, for our goal, we will reduce the number of colors to 7. Let’s look at our results.
+ ```
+img_1 = color_quantization(img, 7)
+cv2_imshow(img_1)
+```
 
 ## Steps to develop Image Cartoonifier
 - Step 1: Importing the required modules
@@ -69,19 +88,8 @@ edges = cv2.adaptiveThreshold(gray_1, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRES
 - Step 7: Giving a Cartoon Effect
 - Step 8: Result 
 
-### Issue #53 Cartoonifying a face image
-
-In this notebook I tried to cartoonify uploaded image and video captured via webcam. You can use both here . If one's camera is enabled it will 
-run via webcam.
-If it is disabled it will want image path.
-
-
-## Original Image
-<img src="dicaprio.jpg" height="300px" >
-
-## Cartoonified
-<img src="Cartoonified_image.jpg" height="300px" >
-
+## R
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Cartoonify%20Image/Cartoonification/result%20(2).jpg" hight="50%" />
 
 ## How to start
 
@@ -104,7 +112,7 @@ git clone https://github.com/akshitagupta15june/Face-X.git
 ```
 python cartoonify_without_GUI.py --image IMAGE_PATH
 ```
-
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Cartoonify%20Image/Cartoonification/boy.png" height="400px" align="left"/>
 <p style="clear:both;">
 <h1><a name="contributing"></a><a name="community"></a> <a href="https://github.com/akshitagupta15june/Face-X">Community</a> and <a href="https://github.com/akshitagupta15june/Face-X/blob/master/CONTRIBUTING.md">Contributing</a></h1>
 <p>Please do! Contributions, updates, <a href="https://github.com/akshitagupta15june/Face-X/issues"></a> and <a href=" ">pull requests</a> are welcome. This project is community-built and welcomes collaboration. Contributors are expected to adhere to the <a href="https://gssoc.girlscript.tech/">GOSSC Code of Conduct</a>.
