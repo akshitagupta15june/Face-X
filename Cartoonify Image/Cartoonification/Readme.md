@@ -1,5 +1,5 @@
 # Cartoonify an Image with OpenCV in Python
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Cartoonify%20Image/Cartoonification/preview-removebg.png" height="400px" align="left"/><img src="https://github.com/Vi1234sh12/Face-X/blob/master/Cartoonify%20Image/Cartoonification/abe_toon.png"  height="400px" width="600px" align="top"/>
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Cartoonify%20Image/Cartoonification/Assets/preview-removebg.png" height="400px" align="left"/><img src="https://github.com/Vi1234sh12/Face-X/blob/master/Cartoonify%20Image/Cartoonification/Assets/abe_toon.png"  height="400px" width="600px" align="top"/>
 
 ## Process of converting an image to a cartoon
 
@@ -50,7 +50,7 @@ cv2_imshow(img)
 ```
   - The next step is to detect the edges. For that task, we need to choose the most suitable method. Remember, our goal is to detect clear edges. There are several edge detectors that we can pick. Our first choice will be one of the most common detectors, and that is the `Canny edge detector`. But unfortunately, if we apply this detector we will not be able to achieve desirable results. We can proceed with Canny, and yet you can see that there are too many details captured. This can be changed if we play around with Canny’s input parameters (numbers 100 and 200).
   - Although Canny is an excellent edge detector that we can use in many cases in our code we will use a threshold method that gives us more satisfying results. It uses a threshold pixel value to convert a grayscale image into a binary image. For instance, if a pixel value in the original image is above the threshold, it will be assigned to 255. Otherwise, it will be assigned to 0 as we can see in the following image.
-  - <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Cartoonify%20Image/Cartoonification/Threshold.jpg" height="300px" align="right"/>
+  - <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Cartoonify%20Image/Cartoonification/Assets/Threshold.jpg" height="300px" align="right"/>
  
  #### The next step is to apply `cv2.adaptiveThreshold()function`. As the parameters for this function we need to define:
 
@@ -68,7 +68,7 @@ gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 gray_1 = cv2.medianBlur(gray, 5)
 edges = cv2.adaptiveThreshold(gray_1, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 9, 5)
 ```
-   - <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Cartoonify%20Image/Cartoonification/filters_tutorial_02.png" align ="right" height="400px"/>
+   - <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Cartoonify%20Image/Cartoonification/Assets/filters_tutorial_02.png" align ="right" height="400px"/>
 ### 2. Image filtering
 - Apply a bilateral filter to create homogeneous colors on the image. 
 ### 3. Creating a cartoon effect
@@ -148,9 +148,9 @@ ReSized6 = cv2.resize(cartoonImage, (960, 540))
 
 ```
 ### Results Obtained
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Cartoonify%20Image/Cartoonification/result%20(2).jpg" hight="300px" width="700px"/>
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Cartoonify%20Image/Cartoonification/Assets/result%20(2).jpg" hight="300px" width="700px"/>
 
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Cartoonify%20Image/Cartoonification/boy.png" height="400px" align="left"/>
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Cartoonify%20Image/Cartoonification/Assets/boy.png" height="400px" align="left"/>
 <p style="clear:both;">
 <h1><a name="contributing"></a><a name="community"></a> <a href="https://github.com/akshitagupta15june/Face-X">Community</a> and <a href="https://github.com/akshitagupta15june/Face-X/blob/master/CONTRIBUTING.md">Contributing</a></h1>
 <p>Please do! Contributions, updates, <a href="https://github.com/akshitagupta15june/Face-X/issues"></a> and <a href=" ">pull requests</a> are welcome. This project is community-built and welcomes collaboration. Contributors are expected to adhere to the <a href="https://gssoc.girlscript.tech/">GOSSC Code of Conduct</a>.
