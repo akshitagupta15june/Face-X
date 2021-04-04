@@ -1,3 +1,13 @@
+## 🎊What's new 🎊
+
+Added, 
+
+- Face mask detection
+- sketch effect [A-kriti](https://github.com/akshitagupta15june/Face-X/tree/master/Awesome-face-operations/Ghost%20Image)
+- mosiac effect [Sudip Ghosh](https://github.com/AdityaNikhil/Face-X/blob/master/Awesome-face-operations/Mosaic-Effect/Mosaic.py)
+- ghost image [iaditichine](https://github.com/akshitagupta15june/Face-X/blob/master/Awesome-face-operations/Pencil%20Sketch/pencil_sketch_code.py)
+
+
 ## About
 
 A unified library for **FaceX** to run all the FaceX algorithms using only one line of code. 
