@@ -93,7 +93,7 @@ pip install -r requirements.txt
 
 <p align="center">
   
-   [<img  width="420" height="120"  src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/Cartoonification/gssoc.png">](https://gssoc.girlscript.tech/)
+   [<img  width="420" height="120"  src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/Cartoonification/Assets/gssoc.png">](https://gssoc.girlscript.tech/)
    [<img  width="160" height="160" src="https://njackwinterofcode.github.io/images/nwoc-logo.png">](https://njackwinterofcode.github.io/)
    [<img  src="https://devscript.tech/woc/img/WOC-logo.png" width="160" height="160"/>](https://devscript.tech/woc/) <br>
    [<img  width="160" height="160"  src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/Cartoonification/uaceit.jpeg">](https://uaceit.com/)
