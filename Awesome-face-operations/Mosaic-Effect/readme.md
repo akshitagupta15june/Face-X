@@ -37,7 +37,7 @@ Every pixel in an image has a color that can be represented by its red, green, a
 
 
 ### 2.Matching Images
-
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Mosaic-Effect/Mosaic-Images/pyramid.png" align="right"/>
 For each tile in the target image, you need to find a matching image from the images in the input folder specified by the user. To determine whether two images match, use the average RGB values. The closest match is the image with the closest average RGB value.
 
 ### The process of creating a panoramic image consists of the following steps. 
@@ -45,7 +45,8 @@ For each tile in the target image, you need to find a matching image from the im
  -  Detect a set of matching points that is present in both images (overlapping area)
  - Apply the RANSAC method to improve the matching process detection
  - Apply perspective transformation on one image using the other image as a reference frame
- - Stitch images together
+ - Stitch images togethe
+
 
 ### Code Overview : 
 
@@ -74,7 +75,6 @@ while 1:
 
 
 ## Results Obtained
-
 
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Mosaic-Effect/Mosaic-Images/images1.png" height="450px" align="left"/>
 <p style="clear:both;">
