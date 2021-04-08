@@ -32,7 +32,7 @@ Snapchat is a popular messaging app that lets users exchange pictures and videos
 
 
 # Want to contribute your own Snapchat Filter?
- You can refer to CONTRIBUTING.md (`https://github.com/akshitagupta15june/Face-X/blob/master/CONTRIBUTING.md`)
+ You can refer to [CONTRIBUTING.md](`https://github.com/akshitagupta15june/Face-X/blob/master/CONTRIBUTING.md`)
 #### Or follow the below steps - 
 - Fork this repository.
 - Clone the forked repository
