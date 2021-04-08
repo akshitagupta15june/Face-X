@@ -27,7 +27,7 @@ Given the average RGB dataset and the target image, the first thing we have to d
 
 Now let’s look at how to calculate the coordinates for a single tile from this grid. The tile with index (i, j) has a top-left corner coordinate of (i*w, i*j) and a bottom-right corner coordinate of `((i+1)*w, (j+1)*h)`, where w and h stand for the width and height of a tile, respectively. These can be used with the PIL to crop and create a tile from this image.
 
-### Averaging Color Values
+### 1.Averaging Color Values
 
 Every pixel in an image has a color that can be represented by its red, green, and blue values. In this case, you are using 8-bit images, so each of these components has an 8-bit value in the range [0, 255]. Given an image with a total of N pixels, the average RGB is calculated as follows:
 
@@ -36,11 +36,41 @@ Every pixel in an image has a color that can be represented by its red, green, a
 `D_{1, 2}=\sqrt{\left ( r_{1} - r_{2} \right )^{2} + \left ( g_{1} - g_{2} \right )^{2} + \left ( b_{1} - b_{2} \right )^{2}}`
 
 
-### Matching Images
+### 2.Matching Images
 
 For each tile in the target image, you need to find a matching image from the images in the input folder specified by the user. To determine whether two images match, use the average RGB values. The closest match is the image with the closest average RGB value.
-The simplest way to do this is to calculate the distance between the RGB values in a pixel to fnd the best match among the input images. You can use the following distance calculation for 3D points from geometry:
 
+### The process of creating a panoramic image consists of the following steps. 
+ - Detect keypoints and descriptors
+ -  Detect a set of matching points that is present in both images (overlapping area)
+ - Apply the RANSAC method to improve the matching process detection
+ - Apply perspective transformation on one image using the other image as a reference frame
+ - Stitch images together
+
+### Code Overview : 
+
+```
+import cv2
+def do_mosaic (frame, x, y, w, h, neighbor=9):
+  fh, fw=frame.shape [0], frame.shape [1]
+  if (y + h>fh) or (x + w>fw):
+    return
+  for i in range (0, h-neighbor, neighbor):#keypoint 0 minus neightbour to prevent overflow
+    for j in range (0, w-neighbor, neighbor):
+      rect=[j + x, i + y, neighbor, neighbor]
+      color=frame [i + y] [j + x] .tolist () #key point 1 tolist
+      left_up=(rect [0], rect [1])
+      right_down=(rect [0] + neighbor-1, rect [1] + neighbor-1) #keypoint 2 minus one pixel
+      cv2.rectangle (frame, left_up, right_down, color, -1)
+im=cv2.imread ("test.jpg", 1)
+do_mosaic (im, 219, 61, 460-219, 412-61)
+while 1:
+  k=cv2.waitkey (10)
+  if k == 27:
+    break
+  cv2.imshow ("mosaic", im)
+  
+```
 
 
 ## Results Obtained
