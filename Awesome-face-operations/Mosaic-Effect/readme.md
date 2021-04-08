@@ -74,7 +74,8 @@ while 1:
 ```
 
 
-## Results Obtained
+## Results Obtained :
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Mosaic-Effect/Mosaic-Images/mark-zuckerberg.jpg" hight="350px" />
 
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Mosaic-Effect/Mosaic-Images/images1.png" height="450px" align="left"/>
 <p style="clear:both;">
