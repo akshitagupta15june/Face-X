@@ -19,11 +19,12 @@ The problem of image mosaicing is a combination of three problems:
 - Create the fnal mosaic by arranging the selected input images in an M×N grid.
 
 ### Mosaic Image Generator I/O.
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Mosaic-Effect/Mosaic-Images/Mosaic3.png" align="left" height="440px"/>
  a `photographic mosaic`, also known under the term Photomosaic (a `portmanteau` of photo and `mosaic`), is a picture (usually a photograph) that has been divided into `usually equal sized` tiled sections, each of which is replaced with another photograph that matches the target photo. When viewed at low magnifications, the individual pixels appear as the primary image, while close examination reveals that the image is in fact made up of many hundreds or thousands of smaller images. Most of the time they are a computer-created type of montage.
-
+ <br></br>
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Mosaic-Effect/Mosaic-Images/Mosaic3.png" align="left" width="650" height="390px"/>
 There are two kinds of mosaic, depending on how the matching is done. In the simpler kind, each part of the target image is averaged down to a single color. Each of the library images is also reduced to a single color. Each part of the target image is then replaced with one from the library where these colors are as similar as possible. In effect, the target image is reduced in resolution , and then each of the resulting pixels is replaced with an image whose average color matches that pixel.
 
+<br></br>
 ### Generating the Mosaic Image
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Mosaic-Effect/Mosaic-Images/Pixel_Batching.png" height="300" width="650" align="right" />
 Given the average RGB dataset and the target image, the first thing we have to do is generating a list of relevant source image filenames for each of the target image’s pixels.
