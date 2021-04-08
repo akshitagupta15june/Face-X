@@ -25,10 +25,10 @@ The problem of image mosaicing is a combination of three problems:
 There are two kinds of mosaic, depending on how the matching is done. In the simpler kind, each part of the target image is averaged down to a single color. Each of the library images is also reduced to a single color. Each part of the target image is then replaced with one from the library where these colors are as similar as possible. In effect, the target image is reduced in resolution , and then each of the resulting pixels is replaced with an image whose average color matches that pixel.
 
 ### Generating the Mosaic Image
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Mosaic-Effect/Mosaic-Images/Pixel_Batching.png" height="300" width="650" align="right" />
 Given the average RGB dataset and the target image, the first thing we have to do is generating a list of relevant source image filenames for each of the target image’s pixels.
  We can simply measure the RMSE `Root Mean Squared Error` between the RGB vector of each target image’s pixel with the RGB vector from our database. Then, choose the one with the lowest `RMSE` value. 
      There’s also a way to optimize our method when measuring the relevancy of source images and the pixel ‘batch’. We can filter out data points in our average RGB database which has a ‘too different’ RGB value with the pixel `batch` average RGB value.
+     <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Mosaic-Effect/Mosaic-Images/Pixel_Batching.png" height="300" width="650" align="right" />
 
 
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Mosaic-Effect/Mosaic-Images/images1.png" align="left" height="450px" />
