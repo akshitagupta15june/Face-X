@@ -76,7 +76,7 @@ while 1:
 
 ## Results Obtained :
 ### Mark Zuckerberg 
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Mosaic-Effect/Mosaic-Images/mark-zuckerberg.jpg" hight="300px" alt="Mark-Zuckerberg"/>
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Mosaic-Effect/Mosaic-Images/mark-zuckerberg.jpg" hight="65%" alt="Mark-Zuckerberg"/>
 
 
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Mosaic-Effect/Mosaic-Images/images1.png" height="450px" align="left"/>
