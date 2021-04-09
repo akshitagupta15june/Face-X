@@ -27,7 +27,7 @@ In our problem statement, we are dealing with images. We need to use the [**Conv
 
 ### Methodology used:
 ![face mask sample](https://raw.githubusercontent.com/sudipg4112001/Face-X/master/Face-Mask-Detection/Sample-images/Method.jpg)
-#### This is the step-by-step methodology of how this project is created..!!
+#### This is the step-by-step methodology of how this project is created..!!!
 ### Example:
 ![face mask sample](https://raw.githubusercontent.com/sudipg4112001/Face-X/master/Face-Mask-Detection/Sample-images/Sample_image_1.jpg)
 ![face mask sample](https://raw.githubusercontent.com/sudipg4112001/Face-X/master/Face-Mask-Detection/Sample-images/Sample_image_2.jpg)
