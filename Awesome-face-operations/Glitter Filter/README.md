@@ -14,7 +14,7 @@ Converting an image into glitter filter image using OpenCv, Matplotlib and Numpy
 
 
 ## Original Image
-<img src="Images/Photo.jpg" height="300px">
+<img src="Images/Photo.jpg" height="500px">
 
 ## Glitter Filtered Image
-<img src="Images/(Glitter Filtered)Photo.jpg" height="300px">
+<img src="Images/(Glitter Filtered)Photo.jpg" height="500px">
