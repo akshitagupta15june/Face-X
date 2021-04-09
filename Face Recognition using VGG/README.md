@@ -8,7 +8,7 @@ We are trying to predict the name of celebs in a picture provided.
 
 
 To do this, we considered a well-known pre-trained Convolutional Deep Neural Networks, called VGG-FACE.
-<img src"https://github.com/NEERAJAP2001/Face-X/blob/VGG-Face-Detection/Face%20Recognition%20using%20VGG/assets/Dataset.PNG">
+<img src="https://github.com/NEERAJAP2001/Face-X/blob/VGG-Face-Detection/Face%20Recognition%20using%20VGG/assets/Dataset.PNG">
 
 
 ## Facial Recognition Using Pre-Trained VGG-Face + OpenCV
