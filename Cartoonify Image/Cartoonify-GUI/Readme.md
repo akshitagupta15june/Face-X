@@ -23,6 +23,7 @@
 -  pip install opencv-python
 - pip install tkinter
 - pip install easygui
+- pip install pillow
 ```  
 - Open Terminal
 ```
@@ -38,7 +39,7 @@ python cartoonify_GUI.py
 <img src="mq2.jpg" height="300px">
 
 ### GUI Interface
-<img src="GUI.png" height="750px">
+<img src="Updated GUI.png" height="600px">
 
 ### Cartoonified Image 
 <img src="cartoonified.jpg" height="600px">
