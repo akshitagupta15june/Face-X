@@ -1,4 +1,4 @@
-# [Recognition using DWT Alogrithm](https://github.com/Vi1234sh12/Face-X/edit/master/Recognition-Algorithms/Recognition%20using%20DWT%20algorithm/Readme.md)
+# Recognition using DWT Alogrithm
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Recognition%20using%20DWT%20algorithm/Images/C.png" height="440px" align="left"/>
 
 ##  Introduction
@@ -63,7 +63,7 @@ HWT decomposition works on an averaging and differencing process as follows:
  
  It can be seen that the number of decomposition steps is `22 = 4`.
 Given an original image, the Harr wavelet transform method separates high frequency and low frequency bands of the image by high-pass and low-pass filters from the horizontal direction and so does the vertical direction of the image.
- - 1) Two-dimensional Haar wavelet transforms: 
+ -  Two-dimensional Haar wavelet transforms: 
  There are two ways we can use wavelets to transform the pixel values within an image. Each is a generalization to two dimensions of the one-dimensional wavelet transform .To obtain the standard decomposition of an image; we first apply the one-dimensional wavelet transform to each row of pixel values. This operation gives us an average value along with detail coefficients for each row. Next, we treat these transformed rows as if they were themselves an image and apply the one-dimensional transform to each column. The resulting values are all detail coefficients except for a single overall average coefficient. The algorithm below computes the standard decomposition. Figure 3 illustrates each step of its operation.
  
 ```
@@ -147,6 +147,36 @@ plt.show()
 
 ## Result Obtains: 
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Recognition%20using%20DWT%20algorithm/Images/lena2.png" height="400px" width="600px" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Recognition%20using%20DWT%20algorithm/Images/Gorup1.png" height="470px" align="left"/>
