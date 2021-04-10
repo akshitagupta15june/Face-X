@@ -15,3 +15,12 @@ Numpy
   <br>
 Haarcascade classifiers
   </ul>
+  
+<h1>Instruction</h1>
+<ul>
+Clone this repository git clone https://github.com/akshitagupta15june/Face-X.git
+  <br>
+Change Directory to Snapchat_Filters then to mustache and black sunglasses
+   <br>
+Run code using the cmd mustache and black sunglasses.py
+  </ul>
