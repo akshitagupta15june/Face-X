@@ -104,7 +104,8 @@ wavelet is a wavelet where the associated wavelet transform is invertible but no
  - 2. two degrees of freedom;
     the structure of one stage of a twochannel biorthogonal filter bank. For the 9/7 DWT, filters H(z) and G(z) are symmetric FIR filters with nine and seven taps,         respectively. Traditionally, the filters are implemented using convolution. This implementation is non-polyphase, and suffers from inefficient hardware utility and low  throughput. 
 
-
+## Result Obtains: 
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Recognition%20using%20DWT%20algorithm/Images/lena2.png" height="400px" width="600px" />
 
 
 
