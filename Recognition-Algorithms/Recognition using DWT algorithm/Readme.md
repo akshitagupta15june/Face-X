@@ -1,4 +1,4 @@
-# Recognition using DWT Alogrithm
+# [Recognition using DWT Alogrithm](https://github.com/Vi1234sh12/Face-X/edit/master/Recognition-Algorithms/Recognition%20using%20DWT%20algorithm/Readme.md)
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Recognition%20using%20DWT%20algorithm/Images/C.png" height="440px" align="left"/>
 
 ##  Introduction
@@ -147,36 +147,6 @@ plt.show()
 
 ## Result Obtains: 
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Recognition%20using%20DWT%20algorithm/Images/lena2.png" height="400px" width="600px" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Recognition%20using%20DWT%20algorithm/Images/Gorup1.png" height="470px" align="left"/>
