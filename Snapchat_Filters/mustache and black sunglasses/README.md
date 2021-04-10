@@ -8,7 +8,10 @@
 <h1>Requirements: </h1>
 <ul>
 OpenCV
+  <br>
 Python 3.7.x
+  <br>
 Numpy
+  <br>
 Haarcascade classifiers
   </ul>
