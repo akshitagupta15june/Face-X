@@ -113,6 +113,37 @@ DWT are described below:
      For each level from 1 to N, a threshold is selected and hard thresholding is applied to the detail coefficients.
  - Reconstruct : 
      Compute wavelet reconstruction using the original approximation coefficients of level N and the modified detail coefficients of levels from 1 to N.
+     
+## Code Overview: 
+
+```
+import numpy as np
+import matplotlib.pyplot as plt
+
+import pywt
+import pywt.data
+
+
+# Load image
+original = pywt.data.camera()
+
+# Wavelet transform of image, and plot approximation and details
+titles = ['Approximation', ' Horizontal detail',
+          'Vertical detail', 'Diagonal detail']
+coeffs2 = pywt.dwt2(original, 'bior1.3')
+LL, (LH, HL, HH) = coeffs2
+fig = plt.figure(figsize=(12, 3))
+for i, a in enumerate([LL, LH, HL, HH]):
+    ax = fig.add_subplot(1, 4, i + 1)
+    ax.imshow(a, interpolation="nearest", cmap=plt.cm.gray)
+    ax.set_title(titles[i], fontsize=10)
+    ax.set_xticks([])
+    ax.set_yticks([])
+
+fig.tight_layout()
+plt.show()
+
+```
 
 ## Result Obtains: 
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Recognition%20using%20DWT%20algorithm/Images/lena2.png" height="400px" width="600px" />
