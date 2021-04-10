@@ -99,10 +99,20 @@ end procedure
 B. Biorthogonal 9/7
 The family of biorthogonal filters considered here are of lengths 9 and 7 and represent a super-set of the 9/7 pair that is used for face recognition. A biorthogonal
 wavelet is a wavelet where the associated wavelet transform is invertible but not necessarily orthogonal. Designing biorthogonal wavelets allows more degrees of freedom than orthogonal wavelets. One additional degree of freedom is the possibility to construct symmetric wavelet functions biorthogonal filters are the shortest odd length filter pair with the following properties:
- - 1. minimum number of vanishing moments
+ -  minimum number of vanishing moments
     (which is 2 for any linear phase odd length filter);
- - 2. two degrees of freedom;
-    the structure of one stage of a twochannel biorthogonal filter bank. For the 9/7 DWT, filters H(z) and G(z) are symmetric FIR filters with nine and seven taps,         respectively. Traditionally, the filters are implemented using convolution. This implementation is non-polyphase, and suffers from inefficient hardware utility and low  throughput. 
+ -  two degrees of freedom;
+    the structure of one stage of a twochannel biorthogonal filter bank. For the 9/7 DWT, filters H(z) and G(z) are symmetric FIR filters with nine and seven taps,         respectively. Traditionally, the filters are implemented using convolution. This implementation is non-polyphase, and suffers from inefficient hardware utility and low  throughput.
+ <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Recognition%20using%20DWT%20algorithm/Images/oj.png" hight="400px"/>
+ 
+ The steps of the proposed compression algorithm based on
+DWT are described below:
+ -  Decompose : 
+     Choose a wavelet; choose a level N. Compute the wavelet. Decompose the signals at level N.
+ - Threshold detail coefficients :   
+     For each level from 1 to N, a threshold is selected and hard thresholding is applied to the detail coefficients.
+ - Reconstruct : 
+     Compute wavelet reconstruction using the original approximation coefficients of level N and the modified detail coefficients of levels from 1 to N.
 
 ## Result Obtains: 
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Recognition%20using%20DWT%20algorithm/Images/lena2.png" height="400px" width="600px" />
