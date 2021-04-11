@@ -86,8 +86,6 @@ To accomplish this effectively, it is important to put your best performing clas
 
 ### Import OpenCV and load the image into memory:
 
-Import OpenCV and load the image into memory:
-
 ```
 import cv2 as cv
 
