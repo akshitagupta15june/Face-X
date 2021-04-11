@@ -24,7 +24,7 @@ There are many methods of face detector but we focus in this post only one which
 
 Now to draw landmarks on the face of the detected rectangle, we are passing the landmarks values and image to the facePoints. In the below code, we are passing landmarks and image as a parameter to a method called drawPoints which accessing the coordinates(x,y) of the ith landmarks points using the part(i).x and part(i).y. All landmarks points are saved in a numpy array and then pass these points to in-built cv2.polylines method to draw the lines on the face using the startpoint and endpoint parameters.
 
-## What is Face Detection  ?
+## 3.What is Face Detection  ?
 
 Face detection is a type of computer vision technology that is able to identify people’s faces within digital images. This is very easy for humans, but computers need precise instructions. The images might contain many objects that aren’t human faces, like buildings, cars, animals, and so on.
 
@@ -44,7 +44,7 @@ To create a complete project on Face Recognition, we must work on 3 very distinc
 The below block diagram resumes those phases:
 
 
-### How Do Computers “See” Images? 
+## 4.How Do Computers “See” Images? 
 
 The smallest element of an image is called a pixel, or a picture element. It is basically a dot in the picture. An image contains multiple pixels arranged in rows and columns.
 You will often see the number of rows and columns expressed as the image resolution. For example, an Ultra HD TV has the resolution of 3840x2160, meaning it is 3840 pixels wide and 2160 pixels high.
@@ -61,14 +61,13 @@ Example 3x3 image with pixel values and colors
 
 In color images, there are three such matrices representing the red, green, and blue channels.
 
-### Cascading Classifiers
+## 5.Cascading Classifiers
 
 The definition of a cascade is a series of waterfalls coming one after another. A similar concept is used in computer science to solve a complex problem with simple units. The problem here is reducing the number of computations for each image.
 
 When an image subregion enters the cascade, it is evaluated by the first stage. If that stage evaluates the subregion as positive, meaning that it thinks it’s a face, the output of the stage is maybe. If a subregion gets a maybe, it is sent to the next stage of the cascade. If that one gives a positive evaluation, then that’s another maybe, and the image is sent to the third stage:
 
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Facial_Biometric/Images/one_stage.png" height="330px" align="left"/>
-
 
 
 A weak classifier in a cascade
@@ -144,7 +143,7 @@ cv.destroyAllWindows()
 ```
 imshow() displays the image. waitKey() waits for a keystroke. Otherwise, imshow() would display the image and immediately close the window. Passing 0 as the argument tells it to wait indefinitely. Finally, destroyAllWindows() closes the window when you press a key.
 
-## 3.How to get started
+## 6.How to get started
 
 - Clone this repository-
 `git clone https://github.com/akshitagupta15june/Face-X.git`
@@ -179,7 +178,7 @@ imshow() displays the image. waitKey() waits for a keystroke. Otherwise, imshow(
 ```
 Note : dlib is a library written in c++ that used applications like cmake,boost etc.,if you face any error while installing dlib, don't panic and try to install the extensions required.
 ```
-## Code Overview : 
+## 7.Code Overview : 
 ```
 import cv2
 import dlib
@@ -225,7 +224,7 @@ cap.release()
 cv2.destroyAllWindows()
 
 ```
-## Result Obtain: 
+## 8.Result Obtain: 
 
 
 
