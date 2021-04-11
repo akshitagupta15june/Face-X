@@ -1,10 +1,9 @@
 # Snapchat Filter using OpenCV
 
 
-
 ## Description
 
-This repository contains python implmentation of various snapchat like face filters and masks. 
+This repository contains python implmentation of snapchat filters like surgical mask. 
 
 ## Getting Started
 
@@ -18,6 +17,7 @@ This repository contains python implmentation of various snapchat like face filt
 
 
 ### Installing
+
 * Git clone repository: 
 ```
 git clone 
@@ -32,13 +32,15 @@ pip install opencv-python
 ```
 
 
-* To run different filters and masks, run using: 
+* Run using: 
+* 
    * For surgical mask filter
    ![ezgif com-gif-maker (3)](https://user-images.githubusercontent.com/35187768/97100752-0ca2ec80-1654-11eb-8f27-e49c541dfd72.gif)
+   
 ```
 python mask_dlib.py
+```
 
 ## Acknowledgments
-
-Inspiration, code snippets, etc.
 * [Sergio's Youtube tutorial on simple dlib](https://www.youtube.com/watch?v=IJpTe-1cimE&t=1425s)
+
