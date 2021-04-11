@@ -24,6 +24,128 @@ There are many methods of face detector but we focus in this post only one which
 
 Now to draw landmarks on the face of the detected rectangle, we are passing the landmarks values and image to the facePoints. In the below code, we are passing landmarks and image as a parameter to a method called drawPoints which accessing the coordinates(x,y) of the ith landmarks points using the part(i).x and part(i).y. All landmarks points are saved in a numpy array and then pass these points to in-built cv2.polylines method to draw the lines on the face using the startpoint and endpoint parameters.
 
+## What is Face Detection  ?
+
+Face detection is a type of computer vision technology that is able to identify people’s faces within digital images. This is very easy for humans, but computers need precise instructions. The images might contain many objects that aren’t human faces, like buildings, cars, animals, and so on.
+
+It is distinct from other computer vision technologies that involve human faces, like facial recognition, analysis, and tracking : 
+
+- Facial recognition : involves identifying the face in the image as belonging to person X and not person Y. It is often used for biometric purposes, like unlocking your smartphone.
+
+- Facial analysis :  tries to understand something about people from their facial features, like determining their age, gender, or the emotion they are displaying.
+
+- Facial tracking :  is mostly present in video analysis and tries to follow a face and its features (eyes, nose, and lips) from frame to frame. The most popular applications are various filters available in mobile apps like Snapchat.
+
+To create a complete project on Face Recognition, we must work on 3 very distinct phases:
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Facial_Biometric/Images/0_oJIRaoERCUHoyylG_.png" align="right"/>
+- Face Detection and Data Gathering
+- Train the Recognizer
+- Face Recognition
+The below block diagram resumes those phases:
+
+
+### How Do Computers “See” Images? 
+
+The smallest element of an image is called a pixel, or a picture element. It is basically a dot in the picture. An image contains multiple pixels arranged in rows and columns.
+You will often see the number of rows and columns expressed as the image resolution. For example, an Ultra HD TV has the resolution of 3840x2160, meaning it is 3840 pixels wide and 2160 pixels high.
+
+ But a computer does not understand pixels as dots of color. It only understands numbers. To convert colors to numbers, the computer uses various color models. In color images, pixels are often represented in the RGB color model. RGB stands for Red Green Blue. Each pixel is a mix of those three colors. RGB is great at modeling all the colors humans perceive by combining various amounts of red, green, and blue.
+ 
+  Since a computer only understand numbers, every pixel is represented by three numbers, corresponding to the amounts of red, green, and blue present in that pixel. In grayscale (black and white) images, each pixel is a single number, representing the amount of light, or intensity, it carries. In many applications, the range of intensities is from 0 (black) to 255 (white). Everything between 0 and 255 is various shades of gray.
+
+If each grayscale pixel is a number, an image is nothing more than a matrix (or table) of numbers:
+
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Facial_Biometric/Images/face%20(1).png" height="300px" align="right"/>
+
+Example 3x3 image with pixel values and colors
+
+In color images, there are three such matrices representing the red, green, and blue channels.
+
+### Cascading Classifiers
+
+The definition of a cascade is a series of waterfalls coming one after another. A similar concept is used in computer science to solve a complex problem with simple units. The problem here is reducing the number of computations for each image.
+
+To solve it, Viola and Jones turned their strong classifier (consisting of thousands of weak classifiers) into a cascade where each weak classifier represents one stage. The job of the cascade is to quickly discard non-faces and avoid wasting precious time and computations.
+
+When an image subregion enters the cascade, it is evaluated by the first stage. If that stage evaluates the subregion as positive, meaning that it thinks it’s a face, the output of the stage is maybe.
+
+If a subregion gets a maybe, it is sent to the next stage of the cascade. If that one gives a positive evaluation, then that’s another maybe, and the image is sent to the third stage:
+
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Facial_Biometric/Images/one_stage.png" align="left"/>
+
+A weak classifier in a cascade
+
+This process is repeated until the image passes through all stages of the cascade. If all classifiers approve the image, it is finally classified as a human face and is presented to the user as a detection.
+
+If, however, the first stage gives a negative evaluation, then the image is immediately discarded as not containing a human face. If it passes the first stage but fails the second stage, it is discarded as well. Basically, the image can get discarded at any stage of the classifier:
+
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Facial_Biometric/Images/Classifier_cascade.png"/>
+
+A cascade of n classifiers for face detection
+
+This is designed so that non-faces get discarded very quickly, which saves a lot of time and computational resources. Since every classifier represents a feature of a human face, a positive detection basically says, “Yes, this subregion contains all the features of a human face.” But as soon as one feature is missing, it rejects the whole subregion.
+
+To accomplish this effectively, it is important to put your best performing classifiers early in the cascade. In the Viola-Jones algorithm, the eyes and nose bridge classifiers are examples of best performing weak classifiers.
+
+### Import OpenCV and load the image into memory:
+
+Import OpenCV and load the image into memory:
+
+```
+import cv2 as cv
+
+# Read image from your local file system
+original_image = cv.imread('path/to/your-image.jpg')
+
+# Convert color image to grayscale for Viola-Jones
+grayscale_image = cv.cvtColor(original_image, cv.COLOR_BGR2GRAY)
+
+```
+
+Depending on the version, the exact path might vary, but the folder name will be haarcascades, and it will contain multiple files. The one you need is called haarcascade_frontalface_alt.xml.
+
+If for some reason, your installation of OpenCV did not get the pre-trained classifier,
+```
+# Load the classifier and create a cascade object for face detection
+face_cascade = cv.CascadeClassifier('path/to/haarcascade_frontalface_alt.xml')
+```
+The face_cascade object has a method detectMultiScale(), which receives an image as an argument and runs the classifier cascade over the image. The term MultiScale indicates that the algorithm looks at subregions of the image in multiple scales, to detect faces of varying sizes:
+
+`detected_faces = face_cascade.detectMultiScale(grayscale_image)`
+
+The variable detected_faces now contains all the detections for the target image. To visualize the detections, you need to iterate over all detections and draw rectangles over the detected faces.
+
+OpenCV’s rectangle() draws rectangles over images, and it needs to know the pixel coordinates of the top-left and bottom-right corner. The coordinates indicate the row and column of pixels in the image.
+
+Luckily, detections are saved as pixel coordinates. Each detection is defined by its top-left corner coordinates and width and height of the rectangle that encompasses the detected face.
+
+Adding the width to the row and height to the column will give you the bottom-right corner of the image:
+```
+for (column, row, width, height) in detected_faces:
+    cv.rectangle(
+        original_image,
+        (column, row),
+        (column + width, row + height),
+        (0, 255, 0),
+        2
+    )
+ ```
+rectangle() accepts the following arguments:
+
+- The original image
+- The coordinates of the top-left point of the detection
+- The coordinates of the bottom-right point of the detection
+- The color of the rectangle (a tuple that defines the amount of red, green, and blue (0-255))
+- The thickness of the rectangle lines
+
+Finally, you need to display the image:
+```
+cv.imshow('Image', original_image)
+cv.waitKey(0)
+cv.destroyAllWindows()
+```
+imshow() displays the image. waitKey() waits for a keystroke. Otherwise, imshow() would display the image and immediately close the window. Passing 0 as the argument tells it to wait indefinitely. Finally, destroyAllWindows() closes the window when you press a key.
+
 ## 3.How to get started
 
 - Clone this repository-
