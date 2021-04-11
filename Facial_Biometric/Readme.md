@@ -225,7 +225,7 @@ cv2.destroyAllWindows()
 
 ```
 ## 8.Result Obtain: 
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Facial_Biometric/Images/result.jpg" height="450px"/>
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Facial_Biometric/Images/result.jpg" height="400px"/>
 
 
 
