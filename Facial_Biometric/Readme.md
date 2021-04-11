@@ -142,7 +142,8 @@ cv.waitKey(0)
 cv.destroyAllWindows()
 ```
 imshow() displays the image. waitKey() waits for a keystroke. Otherwise, imshow() would display the image and immediately close the window. Passing 0 as the argument tells it to wait indefinitely. Finally, destroyAllWindows() closes the window when you press a key.
-
+ 
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Facial_Biometric/Images/cd.png" height="300px" align="left"/>
 ## 6.How to get started
 
 - Clone this repository-
@@ -165,7 +166,6 @@ imshow() displays the image. waitKey() waits for a keystroke. Otherwise, imshow(
 `Note` : This file takes input video from your webcam and detects the points, So you need an inbuilt or externally connected webcam
 
 ## Installation 
-
 
 - Create virtual environment-
 ```
