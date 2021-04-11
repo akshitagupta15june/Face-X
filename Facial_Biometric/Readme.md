@@ -7,8 +7,8 @@ Face recognition is the technique in which the identity of a human being can be 
 
  This repository detects a human face using Dlib's 68 points model. As the human face is way too complex for a computer to learn, so we have used the 68 points model to ease the process of facial recognition. Facial Biometric uses a two step biometric process for facial recognition. 
  These steps are:
- 1. Facial localization to locate a human face and return 4(x,y)-coordinates that forms a rectangle bounding the face.
- 2. Detecting facial structures using Dlib's 68 points model. 
+ - Facial localization to locate a human face and return `4(x,y)-coordinates` that forms a rectangle bounding the face.
+ - Detecting facial structures using Dlib's 68 points model. 
 
 ## 2.Dlib's 68 points model
 
@@ -17,12 +17,12 @@ Face recognition is the technique in which the identity of a human being can be 
 ###  1.Facial landmark points detection through Dlib's 68 Model:
 
 There are mostly two steps to detect face landmarks in an image which are given below:
-- Face detection: Face detection is the first methods which locate a human face and return a value in x,y,w,h which is a rectangle.
+- Face detection: Face detection is the first methods which locate a human face and return a value in `x,y,w,h` which is a rectangle.
 - Face landmark: After getting the location of a face in an image, then we have to through points inside of that rectangle.
 
 There are many methods of face detector but we focus in this post only one which is Dlib's method. Like, Opencv uses methods LBP cascades and HAAR and Dlib's use methods HOG `(Histogram of Oriented Gradients)`and SVM `(Support Vector Machine)`.
 
-Now to draw landmarks on the face of the detected rectangle, we are passing the landmarks values and image to the facePoints. In the below code, we are passing landmarks and image as a parameter to a method called drawPoints which accessing the coordinates(x,y) of the ith landmarks points using the part(i).x and part(i).y. All landmarks points are saved in a numpy array and then pass these points to in-built cv2.polylines method to draw the lines on the face using the startpoint and endpoint parameters.
+Now to draw landmarks on the face of the detected rectangle, we are passing the landmarks values and image to the facePoints. In the below code, we are passing landmarks and image as a parameter to a method called drawPoints which accessing the coordinates(x,y) of the ith landmarks points using the `part(i).x` and `part(i).y`. All landmarks points are saved in a numpy array and then pass these points to in-built `cv2.polyline` method to draw the lines on the face using the startpoint and endpoint parameters.
 
 ## 3.What is Face Detection  ?
 
@@ -30,11 +30,11 @@ Face detection is a type of computer vision technology that is able to identify 
 
 It is distinct from other computer vision technologies that involve human faces, like facial recognition, analysis, and tracking : 
 
-- Facial recognition : involves identifying the face in the image as belonging to person X and not person Y. It is often used for biometric purposes, like unlocking your smartphone.
+- `Facial recognition` : involves identifying the face in the image as belonging to person X and not person Y. It is often used for biometric purposes, like unlocking your smartphone.
 
-- Facial analysis :  tries to understand something about people from their facial features, like determining their age, gender, or the emotion they are displaying.
+- `Facial analysis` :  tries to understand something about people from their facial features, like determining their age, gender, or the emotion they are displaying.
 
-- Facial tracking :  is mostly present in video analysis and tries to follow a face and its features (eyes, nose, and lips) from frame to frame. The most popular applications are various filters available in mobile apps like Snapchat.
+- `Facial tracking` :  is mostly present in video analysis and tries to follow a face and its features (eyes, nose, and lips) from frame to frame. The most popular applications are various filters available in mobile apps like Snapchat.
 
 To create a complete project on Face Recognition, we must work on 3 very distinct phases:
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Facial_Biometric/Images/0_oJIRaoERCUHoyylG_.png" align="right"/>
@@ -70,7 +70,7 @@ When an image subregion enters the cascade, it is evaluated by the first stage. 
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Facial_Biometric/Images/one_stage.png" height="350px" align="left"/>
 
 
-A weak classifier in a cascade
+### A weak classifier in a cascade : 
 
 This process is repeated until the image passes through all stages of the cascade. If all classifiers approve the image, it is finally classified as a human face and is presented to the user as a detection.
 
@@ -78,7 +78,7 @@ If, however, the first stage gives a negative evaluation, then the image is imme
 
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Facial_Biometric/Images/Classifier_cascade.png"/>
 
-A cascade of n classifiers for face detection
+### A cascade of n classifiers for face detection : 
 
 This is designed so that non-faces get discarded very quickly, which saves a lot of time and computational resources. Since every classifier represents a feature of a human face, a positive detection basically says, “Yes, this subregion contains all the features of a human face.” But as soon as one feature is missing, it rejects the whole subregion.
 
@@ -99,20 +99,20 @@ grayscale_image = cv.cvtColor(original_image, cv.COLOR_BGR2GRAY)
 
 ```
 
-Depending on the version, the exact path might vary, but the folder name will be haarcascades, and it will contain multiple files. The one you need is called haarcascade_frontalface_alt.xml.
+Depending on the version, the exact path might vary, but the folder name will be haarcascades, and it will contain multiple files. The one you need is called `haarcascade_frontalface_alt.xml`.
 
 If for some reason, your installation of OpenCV did not get the pre-trained classifier,
 ```
 # Load the classifier and create a cascade object for face detection
 face_cascade = cv.CascadeClassifier('path/to/haarcascade_frontalface_alt.xml')
 ```
-The face_cascade object has a method detectMultiScale(), which receives an image as an argument and runs the classifier cascade over the image. The term MultiScale indicates that the algorithm looks at subregions of the image in multiple scales, to detect faces of varying sizes:
+The face_cascade object has a method `detectMultiScale()`, which receives an image as an argument and runs the classifier cascade over the image. The term MultiScale indicates that the algorithm looks at subregions of the image in multiple scales, to detect faces of varying sizes:
 
 `detected_faces = face_cascade.detectMultiScale(grayscale_image)`
 
 The variable detected_faces now contains all the detections for the target image. To visualize the detections, you need to iterate over all detections and draw rectangles over the detected faces.
 
-OpenCV’s rectangle() draws rectangles over images, and it needs to know the pixel coordinates of the top-left and bottom-right corner. The coordinates indicate the row and column of pixels in the image.
+OpenCV’s `rectangle()` draws rectangles over images, and it needs to know the pixel coordinates of the top-left and bottom-right corner. The coordinates indicate the row and column of pixels in the image.
 
 Luckily, detections are saved as pixel coordinates. Each detection is defined by its top-left corner coordinates and width and height of the rectangle that encompasses the detected face.
 
@@ -141,7 +141,7 @@ cv.imshow('Image', original_image)
 cv.waitKey(0)
 cv.destroyAllWindows()
 ```
-imshow() displays the image. waitKey() waits for a keystroke. Otherwise, imshow() would display the image and immediately close the window. Passing 0 as the argument tells it to wait indefinitely. Finally, destroyAllWindows() closes the window when you press a key.
+`imshow()` displays the image. `waitKey()` waits for a keystroke. Otherwise, `imshow()` would display the image and immediately close the window. Passing 0 as the argument tells it to wait indefinitely. Finally, `destroyAllWindows()` closes the window when you press a key.
 
 ## 6.How to get started
 - Clone this repository-
