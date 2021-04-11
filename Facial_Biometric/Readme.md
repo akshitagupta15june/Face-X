@@ -1,4 +1,5 @@
 ## Facial Biometric
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Facial_Biometric/Images/Timeattdmain%20(1).png" hight="300px" width="600px" align="left"/>
 
  This repository detects a human face using Dlib's 68 points model. As the human face is way too complex for a computer to learn, so we have used the 68 points model to ease the process of facial recognition. Facial Biometric uses a two step biometric process for facial recognition. 
  These steps are:
