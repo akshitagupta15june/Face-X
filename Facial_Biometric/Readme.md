@@ -65,13 +65,9 @@ In color images, there are three such matrices representing the red, green, and 
 
 The definition of a cascade is a series of waterfalls coming one after another. A similar concept is used in computer science to solve a complex problem with simple units. The problem here is reducing the number of computations for each image.
 
-To solve it, Viola and Jones turned their strong classifier (consisting of thousands of weak classifiers) into a cascade where each weak classifier represents one stage. The job of the cascade is to quickly discard non-faces and avoid wasting precious time and computations.
+When an image subregion enters the cascade, it is evaluated by the first stage. If that stage evaluates the subregion as positive, meaning that it thinks it’s a face, the output of the stage is maybe. If a subregion gets a maybe, it is sent to the next stage of the cascade. If that one gives a positive evaluation, then that’s another maybe, and the image is sent to the third stage:
 
-When an image subregion enters the cascade, it is evaluated by the first stage. If that stage evaluates the subregion as positive, meaning that it thinks it’s a face, the output of the stage is maybe.
-
-If a subregion gets a maybe, it is sent to the next stage of the cascade. If that one gives a positive evaluation, then that’s another maybe, and the image is sent to the third stage:
-
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Facial_Biometric/Images/one_stage.png" height="350px" align="left"/>
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Facial_Biometric/Images/one_stage.png" height="330px" align="left"/>
 
 
 
