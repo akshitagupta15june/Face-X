@@ -56,10 +56,9 @@ Now to draw landmarks on the face of the detected rectangle, we are passing the 
 - `pip install dlib==19.21.1`
 - `pip install opencv-python==4.4.0.44`
 ```
-
-`Note' : dlib is a library written in c++ that used applications like cmake,boost etc.,if you face any error while installing dlib, don't panic and try to install the extensions required.
-
-`
+```
+Note : dlib is a library written in c++ that used applications like cmake,boost etc.,if you face any error while installing dlib, don't panic and try to install the extensions required.
+```
 ## Code Overview : 
 ```
 import cv2
