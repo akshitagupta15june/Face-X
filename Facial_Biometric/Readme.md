@@ -71,7 +71,9 @@ When an image subregion enters the cascade, it is evaluated by the first stage. 
 
 If a subregion gets a maybe, it is sent to the next stage of the cascade. If that one gives a positive evaluation, then that’s another maybe, and the image is sent to the third stage:
 
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Facial_Biometric/Images/one_stage.png" align="left"/>
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Facial_Biometric/Images/one_stage.png" height="350px" align="left"/>
+
+
 
 A weak classifier in a cascade
 
