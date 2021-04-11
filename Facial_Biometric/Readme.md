@@ -142,10 +142,8 @@ cv.waitKey(0)
 cv.destroyAllWindows()
 ```
 imshow() displays the image. waitKey() waits for a keystroke. Otherwise, imshow() would display the image and immediately close the window. Passing 0 as the argument tells it to wait indefinitely. Finally, destroyAllWindows() closes the window when you press a key.
- 
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Facial_Biometric/Images/cd.png" height="300px" align="left"/>
-## 6.How to get started
 
+## 6.How to get started
 - Clone this repository-
 `git clone https://github.com/akshitagupta15june/Face-X.git`
 - Change Directory-
@@ -178,6 +176,8 @@ imshow() displays the image. waitKey() waits for a keystroke. Otherwise, imshow(
 ```
 Note : dlib is a library written in c++ that used applications like cmake,boost etc.,if you face any error while installing dlib, don't panic and try to install the extensions required.
 ```
+
+
 ## 7.Code Overview : 
 ```
 import cv2
