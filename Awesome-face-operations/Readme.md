@@ -154,10 +154,10 @@ Converting an image into a colorful sketch filtered image using OpenCv, Os, Matp
 
 
 #### Original Image
-<img src="Images/Photo.jpg" height="300px">
+<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Awesome-face-operations/Colorful%20Sketch%20Filter/Images/Photo.jpg" height="300px">
 
 #### Colorful Sketch Filtered Image
-<img src="Images/Colorful Sketch Filtered Photo.jpg" height="300px">
+<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Awesome-face-operations/Colorful%20Sketch%20Filter/Images/Colorful%20Sketch%20Filtered%20Photo.jpg" height="300px">
 
 
 ## Face Deblurring
@@ -175,7 +175,7 @@ DataSet: [CelebFaces Attributes Dataset (CelebA)](http://mmlab.ie.cuhk.edu.hk/pr
 
 #### Some samples of generated faces:
 
-<img src="assets/generated_faces.png" width=640 height=160> 
+<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Awesome-face-operations/GAN_Face_Generation/assets/generated_faces.png" width=640 height=160> 
 
 
 ### Face Generation
@@ -216,10 +216,10 @@ The project will be broken down into a series of tasks from loading in data to d
 ## Glitter Filter
 
 ### Original Image
-<img src="Images/Photo.jpg" height="500px">
+<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Awesome-face-operations/Glitter%20Filter/Images/Photo.jpg" height="500px">
 
 ### Glitter Filtered Image
-<img src="Images/(Glitter Filtered)Photo.jpg" height="500px">
+<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Awesome-face-operations/Glitter%20Filter/Images/(Glitter%20Filtered)Photo.jpg" height="500px">
 
 
 ## Image Snitching
