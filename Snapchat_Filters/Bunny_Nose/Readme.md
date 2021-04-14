@@ -32,7 +32,7 @@ the world.
 - The face detection algorithm goes through this code and looks for color patterns that would represent a face.
 - Different parts of the face give away various details. For example, the bridge of the nose is lighter than its surroundings. The eye socket is darker than the forehead, and - - the center of the forehead is lighter than its sides.
 - This could take a lot of time, but Snapchat created a statistical model of a face by manually pointing out different borders of the facial features. When you click your face on the screen, these already predefined points align themselves and look for areas of contrast to know precisely where your lips, jawline, eyes, eyebrows, etc. are. This statistical model looks something like this.
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Snapchat_Filters/Bunny_Nose/Images/face-landmark.png" align="right="/>
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Snapchat_Filters/Bunny_Nose/Images/face-landmark.png" align="right"/>
 Once these points are located, the face is modified in any way that seems suitable.
 
 ## How to setup on Local Environment 
