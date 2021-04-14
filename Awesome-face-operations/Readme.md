@@ -113,6 +113,36 @@ The process of partitioning a digital image into multiple segments is defined as
 ### Segmented images
 ![image](https://user-images.githubusercontent.com/78999467/112638705-a2db7880-8e67-11eb-89f3-87f16f1ed8d2.png)
 
+### Blurring Images Across Face
+
+## Abstract <img src="https://img.icons8.com/color/30/000000/help--v1.png"/>
+
+An image seems more detailed if we can observe all the objects and their shapes accurately in it. For instance, an image with a face looks clear when we can identify eyes, ears, etc very clear. This shape of an object is due to its edges. So in blurring, we simply reduce the edge content and makes the transition from one color to the other very smooth.
+
+Background blurring is most often seen as a feature of portrait mode in phone cameras. Another example is zoom and other online platforms that blur the background and not the face. In this model, we provide you with a small code to try this effect out, especially blurring the face.
+
+
+
+## Requirements 
+
+- Python
+- OpenCV
+
+
+
+## Quick Start 
+
+- Clone the Repository from [Here](https://github.com/akshitagupta15june/Face-X.git)
+- Change the Directory: `cd "Blurring image across face"` or `cd Blurring\ image\ across\ face/`
+- Run  `main.py`
+
+##### Note:  This code might show error in VScode. PyCharm and jupyter notebook work fine.
+
+
+## Result <img src="https://img.icons8.com/color/30/000000/image.png"/>
+
+![](https://github.com/smriti1313/Face-X/blob/master/Blurring%20image%20across%20face/output.png)
+
 
 # More Awesome Face Operations That Can Be Added Here 
 
