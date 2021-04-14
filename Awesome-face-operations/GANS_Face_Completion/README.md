@@ -15,11 +15,11 @@ this model is implemented from this paper [Globally and Locally Consistent Image
 ``` 
 $ python train.py
 ```
-* note : i have trained the model using only **3000** samples of datasets and **200** Epochs  
+* Note : I have trained the model using only **3000** samples of datasets and **200** Epochs  
  so the result looks not very good.
  
  ### Test 
- * to test the model put your photo on test folder. 
+ * To test the model put your photo on test folder. 
  * download completion model from [here](https://drive.google.com/drive/folders/1-ZyFnPw-lVDtdpqfuBQEVd1qeQR4bRox?usp=sharing). 
  * run the test script.
 ``` 
