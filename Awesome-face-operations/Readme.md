@@ -113,9 +113,9 @@ The process of partitioning a digital image into multiple segments is defined as
 ### Segmented images
 ![image](https://user-images.githubusercontent.com/78999467/112638705-a2db7880-8e67-11eb-89f3-87f16f1ed8d2.png)
 
-### Blurring Images Across Face
+## Blurring Images Across Face
 
-## Abstract <img src="https://img.icons8.com/color/30/000000/help--v1.png"/>
+### Abstract 
 
 An image seems more detailed if we can observe all the objects and their shapes accurately in it. For instance, an image with a face looks clear when we can identify eyes, ears, etc very clear. This shape of an object is due to its edges. So in blurring, we simply reduce the edge content and makes the transition from one color to the other very smooth.
 
@@ -123,14 +123,14 @@ Background blurring is most often seen as a feature of portrait mode in phone ca
 
 
 
-## Requirements 
+### Requirements 
 
 - Python
 - OpenCV
 
 
 
-## Quick Start 
+### Quick Start 
 
 - Clone the Repository from [Here](https://github.com/akshitagupta15june/Face-X.git)
 - Change the Directory: `cd "Blurring image across face"` or `cd Blurring\ image\ across\ face/`
@@ -139,9 +139,188 @@ Background blurring is most often seen as a feature of portrait mode in phone ca
 ##### Note:  This code might show error in VScode. PyCharm and jupyter notebook work fine.
 
 
-## Result <img src="https://img.icons8.com/color/30/000000/image.png"/>
+### Result 
 
 ![](https://github.com/smriti1313/Face-X/blob/master/Blurring%20image%20across%20face/output.png)
+
+
+## Colorful Sketch Image
+
+Converting an image into a colorful sketch filtered image using OpenCv, Os, Matplotlib and Numpy.
+
+### Steps:
+* Firstly imported the required libraries which are Numpy, Os, Matplotlib and Cv2.
+* Taking path of the image/Real image as input using os and finally reading it using cv2
+
+
+#### Original Image
+<img src="Images/Photo.jpg" height="300px">
+
+#### Colorful Sketch Filtered Image
+<img src="Images/Colorful Sketch Filtered Photo.jpg" height="300px">
+
+
+## Face Deblurring
+
+#### Original Image
+<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Awesome-face-operations/Face%20Deblurring/Images/Blurry%20Images/000001.png" height="300px">
+
+#### Colorful Sketch Filtered Image
+<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Awesome-face-operations/Face%20Deblurring/Images/Clean%20Images/000001.png" height="300px">
+
+
+## Generating Faces using GANs
+
+DataSet: [CelebFaces Attributes Dataset (CelebA)](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) to train the adversarial networks.
+
+#### Some samples of generated faces:
+
+<img src="assets/generated_faces.png" width=640 height=160> 
+
+
+### Face Generation
+In this project, you'll define and train a DCGAN on a dataset of faces. Your goal is to get a generator network to generate new images of faces that look as realistic as possible!
+
+The project will be broken down into a series of tasks from loading in data to defining and training adversarial networks. At the end of the notebook, you'll be able to visualize the results of your trained Generator to see how it performs; your generated samples should look like fairly realistic faces with small amounts of noise.
+
+
+### To Generate Faces:
+1. Just run the script ```dlnd_face_generation.ipynb```
+
+
+## Gender Classification
+
+### Outputs
+
+![image](https://user-images.githubusercontent.com/63206325/113521952-4bdb4f00-959d-11eb-9af6-36e422919f74.png)
+![image](https://user-images.githubusercontent.com/63206325/113521963-5990d480-959d-11eb-8649-457005a0031e.png)
+![image](https://user-images.githubusercontent.com/63206325/113521969-631a3c80-959d-11eb-80db-53381a3a35af.png)
+![image](https://user-images.githubusercontent.com/63206325/113521972-6c0b0e00-959d-11eb-8a8d-bccc183e879b.png)
+
+
+### Dependencies
+- tensorflow 2.4.1
+- openCV
+- Numpy
+- OS
+- Matplotlib
+
+
+### Running Procedure
+- Clone the Repository 
+- Open your notebook
+- check paths for the test data
+- Enjoy the experience 
+
+
+## Glitter Filter
+
+### Original Image
+<img src="Images/Photo.jpg" height="500px">
+
+### Glitter Filtered Image
+<img src="Images/(Glitter Filtered)Photo.jpg" height="500px">
+
+
+## Image Snitching
+
+### Steps to run:
+- Download the directory.
+- You can use any Editor, Notebook Or IDE's to open the image-stiching.py file.
+- Run the code
+
+### Example:
+![image stiching](https://github.com/sudipg4112001/Face-X/blob/master/Awesome-face-operations/Image-Stiching/Sample-img.jpg)
+
+### Our panorama stitching algorithm consists of four steps:
+
+- Step #1: Detect keypoints (DoG, Harris, etc.) and extract local invariant descriptors (SIFT, SURF, etc.) from the two input images.
+- Step #2: Match the descriptors between the two images.
+- Step #3: Use the RANSAC algorithm to estimate a homography matrix using our matched feature vectors.
+- Step #4: Apply a warping transformation using the homography matrix obtained from Step #3. 
+
+
+## Multiple-Template-Matching
+
+### Intro:
+Template Matching is a method for searching and finding the location of a template image in a larger image. It simply slides the template image over the input image (as in 2D convolution) and compares the template and patch of input image under the template image. Several comparison methods are implemented in OpenCV.
+
+- If input image is of size (WxH) and template image is of size (wxh), output image will have a size of (W-w+1, H-h+1). 
+- Take it as the top-left corner of rectangle and take (w,h) as width and height of the rectangle. That rectangle is your region of template.
+
+Suppose you are searching for an object which has multiple occurances, `cv2.minMaxLoc()` won’t give you all the locations. In that case, we will use thresholding. 
+
+### Example:
+![res_mario](https://user-images.githubusercontent.com/60208804/113759937-47e13580-9733-11eb-9c1c-c2acf373c8e6.jpg)
+
+
+## Real Time Age Prediction
+
+### Outputs
+Real Age = 35
+
+
+![Capture](https://user-images.githubusercontent.com/55057549/112677174-0ff40b80-8e72-11eb-96a6-e846adfb80be.PNG)
+
+Real Age = 85 
+
+![Capture1](https://user-images.githubusercontent.com/55057549/112677632-aaece580-8e72-11eb-9e4b-5f18d2a29aeb.PNG)
+
+### Dependencies
+- tensorflow 2.4.1
+- openCV
+- Numpy
+- OS
+- Matplotlib
+
+### Running Procedure
+- Clone the Repository 
+- Open your notebook
+- check paths for the test data
+- Enjoy the experience 
+
+
+## Style Transfer
+
+### Separating Style and Content
+Style transfer relies on separating the content and style of an image. Given one content image and one style image, the aim is to create a new, target image which should contain the desired content and style components:
+
+* objects and their arrangement are similar to that of the **content image**
+* style, colors, and textures are similar to that of the **style image**
+
+## Example
+
+<img src="https://github.com/KKhushhalR2405/Style-Transfer/blob/master/exp1/blonde.jpg" width="50px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/KKhushhalR2405/Style-Transfer/blob/master/exp1/delaunay.jpg" width="65px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/KKhushhalR2405/Style-Transfer/blob/master/exp1/final_image.png" width="50px">
+
+content&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;style&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;output
+
+
+## Template Detection
+
+Template Matching is a method for searching and finding the location of a template image in a larger image. OpenCV comes with a function `cv2.matchTemplate()` for this purpose. It simply slides the template image over the input image (as in 2D convolution) and compares the template and patch of input image under the template image. Several comparison methods are implemented in OpenCV. (You can check docs for more details). It returns a grayscale image, where each pixel denotes how much does the neighbourhood of that pixel match with template.
+
+### Example:
+
+
+![images](https://user-images.githubusercontent.com/60208804/113617568-1b1a1900-9674-11eb-8957-07e1977c7864.jpg)
+
+
+## Video-BG-Substraction
+
+Background subtraction is a major preprocessing steps in many vision based applications. For example, consider the cases like visitor counter where a static camera takes the number of visitors entering or leaving the room, or a traffic camera extracting information about the vehicles etc. In all these cases, first you need to extract the person or vehicles alone. Technically, you need to extract the moving foreground from static background.
+
+### Algorithm used: BackgroundSubtractorMOG2
+
+One important feature of this algorithm is that it selects the appropriate number of gaussian distribution for each pixel. (Remember, in last case, we took a K gaussian distributions throughout the algorithm). It provides better adaptibility to varying scenes due illumination changes etc.
+
+Here, you have an option of selecting whether shadow to be detected or not. If `detectShadows = True` (which is so by default), it detects and marks shadows, but decreases the speed. Shadows will be marked in gray color.
+
+### Input:
+![resframe](https://user-images.githubusercontent.com/60208804/113537714-106d6e80-95f7-11eb-8590-7d7b12e7760b.jpg)
+
+### Output:
+![resmog](https://user-images.githubusercontent.com/60208804/113537728-195e4000-95f7-11eb-8f3d-edcaf79ddc36.jpg)
+
 
 
 # More Awesome Face Operations That Can Be Added Here 
