@@ -2,16 +2,18 @@
 **Xception is a convolutional neural network architecture that relies solely on depthwise separable convolution layers.**
 
 Implementation of the Xception Model by François Chollet, based on the paper:
+
 [Xception: Deep Learning with Depthwise Separable Convolutions.](https://arxiv.org/abs/1610.02357)
 
 This model uses Xception model for the recognition of the User face using OpenCV and PyTorch.
+
 The program is trained for 5 epochs, you can increase the number of epochs and the number of layers accordingly.
 
 
 ### Dependencies:
 * PyTorch version **1.2.0** (get from https://pytorch.org/)
 
-Download haarcascades file from here=> https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml
+* Download haarcascades file from here=> https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml
 
 ## Quick Start
 
@@ -60,15 +62,21 @@ This architecture slightly outperforms Inception V3 on the ImageNet dataset (whi
 
 ### Contents
 
-1. **output.py**: A file to check for the correctness of the model implementation. It recognises faces and outputs matching or not according to the trained data.
-2. **create_dataset.py**: A script to detect faces by taking users input through the web camera and categorising them into train or val directory.
-3. **main.py**: An example script to train an Xception model on the faces dataset.
-4. **xception.py**: The model implementation file. Also required for preprocessing for inception models.
-5. **__init__.py**: Initialise script by importing everything from xception.py
-6. **Datasets**: A folder containing the faces dataset.
-7. **requirements.txt**: A list of libraries that have to be included for the model to run. 
+1. **requirements.txt**: A list of libraries that have to be included for the model to run. 
 
-## ScreenShots
+2. **output.py**: A file to check for the correctness of the model implementation. It recognises faces and outputs matching (if the face matched the name on which it was trained) or not accordingly as per trained data.
+
+3. **create_dataset.py**: A script to detect faces by taking users input through the web camera and categorising them into train or val directory.
+
+4. **main.py**: An example script to train an Xception model on the faces dataset.
+
+5. **xception.py**: The model implementation file. Also required for preprocessing for inception models.
+
+6. **__init__.py**: Initialise script by importing everything from xception.py
+
+7. **Datasets**: A folder containing the faces dataset.
+
+## Screenshots
 
 ![Screenshot from 2020-12-11 21-34-18](https://user-images.githubusercontent.com/53366877/110513516-533d4300-812c-11eb-9cde-7566de26682f.png)
 
