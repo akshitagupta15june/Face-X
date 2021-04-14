@@ -254,7 +254,7 @@ while True:
 
 
 ## Result Obtain
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Snapchat_Filters/Bunny_Nose/Images/result.jpg" height="400px"/>
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Snapchat_Filters/Bunny_Nose/Images/result.jpg"/>
 
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Snapchat_Filters/Bunny_Nose/Images/Bunny-nose5.png" height="400px" align="left"/>
 <p style="clear:both;">
