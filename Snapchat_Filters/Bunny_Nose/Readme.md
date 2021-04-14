@@ -11,6 +11,12 @@ enhance their lips and eyes, contour their nose, alter their jawline and
 cheekbones, etc. Due to these beauty filters, young women are now seeking
 plastic surgeons to alter their appearance to look just like their filtered photos
 (this trend is called Snapchat dysmorphia)
+ Overall, this study’s findings explain how beauty filters,
+fitspirations, and social media likes affect many young women’s perceptions of
+beauty and body image. By understanding why many young women use these
+beauty filters it can help and encourage companies to create reliable resources
+and campaigns that encourage natural beauty and self-love for women all around
+the world. 
 
 
 
@@ -18,6 +24,16 @@ plastic surgeons to alter their appearance to look just like their filtered phot
 ## History 
 
 
+
+## How does Snapchat recognize a face?
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Snapchat_Filters/Bunny_Nose/Images/Bunny.png" width="480px" align="right"/>
+
+- his large matrix of numbers are codes, and each combination of the number represents a different color.
+- The face detection algorithm goes through this code and looks for color patterns that would represent a face.
+- Different parts of the face give away various details. For example, the bridge of the nose is lighter than its surroundings. The eye socket is darker than the forehead, and - - the center of the forehead is lighter than its sides.
+- This could take a lot of time, but Snapchat created a statistical model of a face by manually pointing out different borders of the facial features. When you click your face on the screen, these already predefined points align themselves and look for areas of contrast to know precisely where your lips, jawline, eyes, eyebrows, etc. are. This statistical model looks something like this.
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Snapchat_Filters/Bunny_Nose/Images/face-landmark.png" align="right="/>
+Once these points are located, the face is modified in any way that seems suitable.
 
 ## How to setup on Local Environment 
 
