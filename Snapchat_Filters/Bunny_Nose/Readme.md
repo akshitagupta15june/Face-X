@@ -46,7 +46,7 @@ Once these points are located, the face is modified in any way that seems suitab
 
 ## 4.How to setup on Local Environment 
 
-## Step 1: Find Faces in a Picture
+### Step 1: Find Faces in a Picture
 Now that we know the basics of how computer vision works, we can begin to build our filter. First, let’s find faces and eyes in a static picture. Begin by installing on your computer and then importing OpenCV (an open-source python package for image processing) into a py file. All image structures in OpenCV are can be converted to and from NumPy arrays so it may be useful to import NumPy as well. Once you’ve installed OpenCV, you should have access to .xml files that contain facial recognition and other image processing algorithms. For this tutorial, we’ll use an algorithm called the Haar Cascade for faces and eyes. If you are having trouble finding the directory where these .xml files are, I suggest a quick file search for “haarcascade”. Once you have found the path to the directory where your Haar Cascades are stored, call CascadeClassifier and pass the path through it:
 
 ```
@@ -74,19 +74,19 @@ we are going to use dlib and OpenCV to detect facial landmarks in an image.
 
 Facial landmarks are used to localize and represent salient regions of the face, such as:
 
-- Eyes
-- Eyebrows
-- Nose
-- Mouth
-- Jawline
-- Facial landmarks have been successfully applied to face alignment, head pose estimation, face swapping, blink detection and much more.
+`1.Eyes`
+`2.Eyebrows`
+`3.Nose`
+`4.Mouth`
+`5.Jawline`
+`6.Facial landmarks have been successfully applied to face alignment, head pose estimation, face swapping, blink detection and much more.`
 
 
 
 
 
 
-## Step 2: Create your image filter
+### Step 2: Create your image filter
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Snapchat_Filters/Bunny_Nose/Images/eyeflow.png" height="450px" align="right"/>
 
 We’ll use OpenCV to get a raw video stream from the webcam. We’ll then resize this raw stream, using the imutils resize function, so we get a decent frame rate for face detection.
@@ -103,7 +103,7 @@ We then create an object to track the n positions our eyes have been. OpenCV’s
 
 Finally, create a mask to build up all the previous places where our eyes where, and then once more, bitwise_and copy our previous eye image into the frame before showing.
 
-## Step 3: Put the model into action
+### Step 3: Put the model into action
 
 Finally, we’ll look at some results of applying facial landmark detection to images.
 
@@ -116,9 +116,9 @@ In the context of facial landmarks, our goal is detect important facial structur
 
 Detecting facial landmarks is therefore a two step process:
 
-- Step #1: Localize the face in the image.
-- Step #2: Detect the key facial structures on the face ROI.
-- Face detection (Step #1) can be achieved in a number of ways.
+- `Step 1`: Localize the face in the image.
+- `Step 2`: Detect the key facial structures on the face ROI.
+- `Face detection` (Step #1) can be achieved in a number of ways.
 
 We could use OpenCV’s built-in Haar cascades.
 
@@ -132,13 +132,13 @@ Given the face region we can then apply Step #2: detecting key facial structures
 
 There are a variety of facial landmark detectors, but all methods essentially try to localize and label the following facial regions:
 
-- Mouth
-- Right eyebrow
-- Left eyebrow
-- Right eye
-- Left eye
-- Nose
-- Jaw
+- `Mouth`
+- `Right eyebrow`
+- `Left eyebrow`
+- `Right eye`
+- `Left eye`
+- `Nose`
+- `Jaw`
 
 We got our model working, so all we gotta do now is use OpenCV to do the following:
 - Get image frames from the webcam
