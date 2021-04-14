@@ -44,28 +44,6 @@ Another way to think of these steps is to imagine a human body. The landmarks id
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Snapchat_Filters/Bunny_Nose/Images/face-landmark.png" height="400px" align="right"/>
 Once these points are located, the face is modified in any way that seems suitable.
 
-## 4.How to setup on Local Environment :
-
-- Fork and Clone the repository using 
-```
-git clone https://github.com/akshitagupta15june/Face-X.git
-```
-- Create virtual environment 
-```
-- python -m venv env
-- source env/bin/activate (Linux)
-- env\Scripts\activate (Windows)
-
-```
-- Go to project directory
-```
-cd  Sanpchat_Filters/Bunny_Nose 
-
-```
-- Run Program
-```
-py Bunny_Nose_Filter.py
-```
 
 ### Step 1: Find Faces in a Picture
 Now that we know the basics of how computer vision works, we can begin to build our filter. First, let’s find faces and eyes in a static picture. Begin by installing on your computer and then importing OpenCV (an open-source python package for image processing) into a py file. All image structures in OpenCV are can be converted to and from NumPy arrays so it may be useful to import NumPy as well. Once you’ve installed OpenCV, you should have access to .xml files that contain facial recognition and other image processing algorithms. For this tutorial, we’ll use an algorithm called the Haar Cascade for faces and eyes. If you are having trouble finding the directory where these .xml files are, I suggest a quick file search for` “haarcascade”`. Once you have found the path to the directory where your Haar Cascades are stored, call CascadeClassifier and pass the path through it:
@@ -178,6 +156,29 @@ Given this training data, an ensemble of regression trees are trained to estimat
 
 The end result is a facial landmark detector that can be used to detect facial landmarks in real-time with high quality predictions.
 
+## 4.How to setup on Local Environment :
+
+- Fork and Clone the repository using 
+```
+git clone https://github.com/akshitagupta15june/Face-X.git
+```
+- Create virtual environment 
+```
+- python -m venv env
+- source env/bin/activate (Linux)
+- env\Scripts\activate (Windows)
+
+```
+- Go to project directory
+```
+cd  Sanpchat_Filters/Bunny_Nose 
+
+```
+- Run Program
+```
+py Bunny_Nose_Filter.py
+```
+
 ## 5.Code Overview 
 
 ```
@@ -254,42 +255,6 @@ while True:
 
 ## Result Obtain
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Snapchat_Filters/Bunny_Nose/Images/result.jpg" height="400px"/>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Snapchat_Filters/Bunny_Nose/Images/Bunny-nose5.png" height="400px" align="left"/>
 <p style="clear:both;">
