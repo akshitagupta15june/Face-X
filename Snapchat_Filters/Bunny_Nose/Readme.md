@@ -10,7 +10,7 @@ beauty filter is a photo-editing tool that allows users to smooth out their skin
 enhance their lips and eyes, contour their nose, alter their jawline and
 cheekbones, etc. Due to these beauty filters, young women are now seeking
 plastic surgeons to alter their appearance to look just like their filtered photos
-(this trend is called Snapchat dysmorphia)
+(this trend is called `Snapchat dysmorphia`)
  Overall, this study’s findings explain how beauty filters,
 fitspirations, and social media likes affect many young women’s perceptions of
 beauty and body image. By understanding why many young women use these
@@ -20,13 +20,13 @@ the world.
 <br><br/>
 ## 2.History 
 
-Face filters are augmented reality effects enabled with face detection technology that overlay virtual objects on the face. Introduced by Snapchat back in 2015 as a fun way to dress-up your selfie, today face filters have become a meaningful tool to improve digital communication and interaction. 
-       Many people use social media apps such as Instagram or Snapchat, which have face filters for people to take and post pictures of themselves. But many people do not realize how these filters are created and the technology behind how they fit people’s faces almost perfectly. The mechanics behind face filters was originally created by a Ukrainian company called Looksery; they used the technology to photoshop faces during video chats. Snapchat bought their algorithm, called the Viola-Jones algorithm, and created the face filters seen in many social media apps today.
+`Face filters` are augmented reality effects enabled with face detection technology that overlay virtual objects on the face. Introduced by Snapchat back in 2015 as a fun way to dress-up your selfie, today face filters have become a meaningful tool to improve digital communication and interaction. 
+       Many people use social media apps such as Instagram or Snapchat, which have face filters for people to take and post pictures of themselves. But many people do not realize how these filters are created and the technology behind how they fit people’s faces almost perfectly. The mechanics behind face filters was originally created by a Ukrainian company called Looksery; they used the technology to photoshop faces during video chats. Snapchat bought their algorithm, called the `Viola-Jones algorithm`, and created the face filters seen in many social media apps today.
 
 Creating face filters is more difficult than you may think, so I’ll break it down into five key steps:
 
 - The first step is face detection. The image is initially viewed in ones and zeros, so the algorithm scans the image, looking specifically for color patterns. This can include finding that the cheek is lighter than the eye or that the nose bridge is lighter than surrounding areas. After detecting these patterns, a face can be distinguished in the camera.
-- The second step is the landmark extraction. Using specific algorithms in a 2D image, facial features such as the chin, nose, forehead, etc are determined.
+- The second step is the `landmark extractio`n. Using specific algorithms in a 2D image, facial features such as the chin, nose, forehead, etc are determined.
 - The third step is face alignment. The coordinates of landmarks on people’s faces are taken to properly fit the filter to a particular face.
 - The fourth step is 3D mesh. Using the 2D image, a 3D model of the user’s face is built to fit the filter animation to a specific face.
 - The last step is face tracking, which approximates and locates the 3D mask in real time. This allows the user to move their face without the filter disappearing or moving to an incorrect location.
@@ -37,17 +37,17 @@ Another way to think of these steps is to imagine a human body. The landmarks id
 ## 3.How does Snapchat recognize a face?
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Snapchat_Filters/Bunny_Nose/Images/Bunny.png" width="480px" align="right"/>
 
-- his large matrix of numbers are codes, and each combination of the number represents a different color.
+- his large `matrix` of numbers are codes, and each combination of the number represents a different color.
 - The face detection algorithm goes through this code and looks for color patterns that would represent a face.
 - Different parts of the face give away various details. For example, the bridge of the nose is lighter than its surroundings. The eye socket is darker than the forehead, and - - the center of the forehead is lighter than its sides.
-- This could take a lot of time, but Snapchat created a statistical model of a face by manually pointing out different borders of the facial features. When you click your face on the screen, these already predefined points align themselves and look for areas of contrast to know precisely where your lips, jawline, eyes, eyebrows, etc. are. This statistical model looks something like this.
+- This could take a lot of time, but Snapchat created a statistical model of a face by manually pointing out different borders of the facial features. When you click your face on the screen, these already predefined points align themselves and look for areas of contrast to know precisely where your lips, jawline, eyes, eyebrows, etc. are. This `statistical model` looks something like this.
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Snapchat_Filters/Bunny_Nose/Images/face-landmark.png" height="400px" align="right"/>
 Once these points are located, the face is modified in any way that seems suitable.
 
 ## 4.How to setup on Local Environment 
 
 ### Step 1: Find Faces in a Picture
-Now that we know the basics of how computer vision works, we can begin to build our filter. First, let’s find faces and eyes in a static picture. Begin by installing on your computer and then importing OpenCV (an open-source python package for image processing) into a py file. All image structures in OpenCV are can be converted to and from NumPy arrays so it may be useful to import NumPy as well. Once you’ve installed OpenCV, you should have access to .xml files that contain facial recognition and other image processing algorithms. For this tutorial, we’ll use an algorithm called the Haar Cascade for faces and eyes. If you are having trouble finding the directory where these .xml files are, I suggest a quick file search for “haarcascade”. Once you have found the path to the directory where your Haar Cascades are stored, call CascadeClassifier and pass the path through it:
+Now that we know the basics of how computer vision works, we can begin to build our filter. First, let’s find faces and eyes in a static picture. Begin by installing on your computer and then importing OpenCV (an open-source python package for image processing) into a py file. All image structures in OpenCV are can be converted to and from NumPy arrays so it may be useful to import NumPy as well. Once you’ve installed OpenCV, you should have access to .xml files that contain facial recognition and other image processing algorithms. For this tutorial, we’ll use an algorithm called the Haar Cascade for faces and eyes. If you are having trouble finding the directory where these .xml files are, I suggest a quick file search for` “haarcascade”`. Once you have found the path to the directory where your Haar Cascades are stored, call CascadeClassifier and pass the path through it:
 
 ```
 import cv2
@@ -60,11 +60,11 @@ path = '/Users/mitchellkrieger/opt/anaconda3/envs/learn-env/share/opencv4/haarca
 face_cascade = cv2.CascadeClassifier(path +'haarcascade_frontalface_default.xml')
 eye_cascade = cv2.CascadeClassifier(path +'haarcascade_eye.xml')
 ```
-Great, now that we’re set up, we can load in the images and look for faces. Note that Haar Cascades and many facial recognition algorithms require images to be in grayscale. So, after loading in the image, convert it to grayscale, and then use the face_cascade to detect faces. After you’ve got the faces, draw a rectangle around it and search within the facial region for eyes. Then draw rectangles around each eye.
+Great, now that we’re set up, we can load in the images and look for faces. Note that Haar Cascades and many facial recognition algorithms require images to be in grayscale. So, after loading in the image, convert it to `grayscale`, and then use the face_cascade to detect faces. After you’ve got the faces, draw a rectangle around it and search within the facial region for eyes. Then draw rectangles around each eye.
 
 The Tools of Face Detection in Python: 
 
-  We’ll use two of the biggest, most exciting image processing libraries available for Python 3, Dlib and OpenCV.
+  We’ll use two of the biggest, most exciting image processing libraries available for` Python 3`, `Dlib` and `OpenCV`.
 
 Installing Dlib is easy enough, thanks to wheels being available for most platforms. Just a simple pip install dlib should be enough to get you up and running.
 
@@ -93,7 +93,7 @@ We’ll use OpenCV to get a raw video stream from the webcam. We’ll then resiz
 
 Once we’ve got a decent frame rate, we’ll convert our webcam image frame to black and white, then pass it to Dlib for face detection.
 
-Dlib’s get_frontal_face_detector returns a set of bounding rectangles for each detected face an image. With this, we can then use a model (in this case, the shape_predictor_68_face_landmarks on Github), and get back a set of 68 points with our face’s orientation.
+Dlib’s get_frontal_face_detector returns a set of bounding rectangles for each detected face an image. With this, we can then use a model (in this case, the` shape_predictor_68_face_landmarks on Github`), and get back a set of 68 points with our face’s orientation.
 
 From the points that match the eyes, we can create a polygon matching their shape in a new channel.
 
@@ -114,7 +114,7 @@ Detecting facial landmarks is a subset of the shape prediction problem. Given an
 
 In the context of facial landmarks, our goal is detect important facial structures on the face using shape prediction methods.
 
-Detecting facial landmarks is therefore a two step process:
+`Detecting facial landmark`s is therefore a two step process:
 
 - `Step 1`: Localize the face in the image.
 - `Step 2`: Detect the key facial structures on the face ROI.
@@ -126,7 +126,7 @@ We might apply a pre-trained HOG + Linear SVM object detector specifically for t
 
 Or we might even use deep learning-based algorithms for face localization.
 
-In either case, the actual algorithm used to detect the face in the image doesn’t matter. Instead, what’s important is that through some method we obtain the face bounding box (i.e., the (x, y)-coordinates of the face in the image).
+In either case, the actual algorithm used to detect the face in the image doesn’t matter. Instead, what’s important is that through some method we obtain the face bounding box (i.e., the `(x, y)-coordinates` of the face in the image).
 
 Given the face region we can then apply Step #2: detecting key facial structures in the face region.
 
@@ -150,7 +150,7 @@ We got our model working, so all we gotta do now is use OpenCV to do the followi
 This method starts by using:
 
 - A training set of labeled facial landmarks on an image. These images are manually labeled, specifying specific (x, y)-coordinates of regions surrounding each facial structure.
-- Priors, of more specifically, the probability on distance between pairs of input pixels.
+- Priors, of more specifically, the `probabilit`y on distance between pairs of input pixels.
 
 Given this training data, an ensemble of regression trees are trained to estimate the facial landmark positions directly from the pixel intensities themselves (i.e., no “feature extraction” is taking place).
 
