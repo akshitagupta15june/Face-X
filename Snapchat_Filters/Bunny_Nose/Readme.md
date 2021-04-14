@@ -131,6 +131,7 @@ In either case, the actual algorithm used to detect the face in the image doesnâ
 Given the face region we can then apply Step #2: detecting key facial structures in the face region.
 
 There are a variety of facial landmark detectors, but all methods essentially try to localize and label the following facial regions:
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Snapchat_Filters/Bunny_Nose/Images/Bunny-nose3.png" height="400px" align="right"/>
 
 - `Mouth`
 - `Right eyebrow`
