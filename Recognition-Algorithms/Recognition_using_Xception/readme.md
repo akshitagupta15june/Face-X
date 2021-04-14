@@ -64,8 +64,9 @@ This architecture slightly outperforms Inception V3 on the ImageNet dataset (whi
 2. **create_dataset.py**: A script to detect faces by taking users input through the web camera and categorising them into train or val directory.
 3. **main.py**: An example script to train an Xception model on the faces dataset.
 4. **xception.py**: The model implementation file. Also required for preprocessing for inception models.
-5. **Datasets**: A folder containing the faces dataset.
-6. **requirements.txt**: A list of libraries that have to be included for the model to run. 
+5. **__init__.py**: Initialise script by importing everything from xception.py
+6. **Datasets**: A folder containing the faces dataset.
+7. **requirements.txt**: A list of libraries that have to be included for the model to run. 
 
 ## ScreenShots
 
