@@ -17,7 +17,7 @@ beauty and body image. By understanding why many young women use these
 beauty filters it can help and encourage companies to create reliable resources
 and campaigns that encourage natural beauty and self-love for women all around
 the world. 
-    
+<br><br/>
 ## 2.History 
 
 Face filters are augmented reality effects enabled with face detection technology that overlay virtual objects on the face. Introduced by Snapchat back in 2015 as a fun way to dress-up your selfie, today face filters have become a meaningful tool to improve digital communication and interaction. 
@@ -41,7 +41,7 @@ Another way to think of these steps is to imagine a human body. The landmarks id
 - The face detection algorithm goes through this code and looks for color patterns that would represent a face.
 - Different parts of the face give away various details. For example, the bridge of the nose is lighter than its surroundings. The eye socket is darker than the forehead, and - - the center of the forehead is lighter than its sides.
 - This could take a lot of time, but Snapchat created a statistical model of a face by manually pointing out different borders of the facial features. When you click your face on the screen, these already predefined points align themselves and look for areas of contrast to know precisely where your lips, jawline, eyes, eyebrows, etc. are. This statistical model looks something like this.
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Snapchat_Filters/Bunny_Nose/Images/face-landmark.png" align="right"/>
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Snapchat_Filters/Bunny_Nose/Images/face-landmark.png" height="400px" align="right"/>
 Once these points are located, the face is modified in any way that seems suitable.
 
 ## 4.How to setup on Local Environment 
@@ -74,12 +74,12 @@ we are going to use dlib and OpenCV to detect facial landmarks in an image.
 
 Facial landmarks are used to localize and represent salient regions of the face, such as:
 
-`1.Eyes`
-`2.Eyebrows`
-`3.Nose`
-`4.Mouth`
-`5.Jawline`
-`6.Facial landmarks have been successfully applied to face alignment, head pose estimation, face swapping, blink detection and much more.`
+- `1.Eyes`
+- `2.Eyebrows`
+- `3.Nose`
+- `4.Mouth`
+- `5.Jawline`
+- `6.Facial landmarks have been successfully applied to face alignment, head pose estimation, face swapping, blink detection and much more.`
 
 
 
