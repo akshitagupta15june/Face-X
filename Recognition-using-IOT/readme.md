@@ -1,6 +1,6 @@
 <p style="text-align:center;" align="center"><a href="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-using-IOT/readme.md"><img align="center" style="margin-bottom:20px;" src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-using-IOT/Images/Untitled1.png"  width="70%" /></a><br /><br /></p>
 
-# Machine Vision Makes the Move to IoT
+# Face Recognition based Authentication System using IoT
 <img align="right" height="460px" src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-using-IOT/Images/aws-header.png">
 
 ## Introduction 
@@ -26,7 +26,7 @@ To help solve the impending bandwidth crunch, designers are investigating smart 
 
 Classic computer vision analysis excels at finding defects or matching patterns once it is tuned with a known data set. In comparison, AI is trainable, and as it gains access to a wider data set it’s able to locate, identify, and segment a wider number of objects or faults. New AI algorithms can be added to a smart frame grabber to perform more sophisticated analysis, with the camera and AI-processed video stream transmitted from the device to existing machine vision software.
 
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-using-IOT/Images/MachineVision.png" height="400px" align="right"/>
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-using-IOT/Images/MachineVision.png" height="380px" align="right"/>
 
 Embedded smart devices enable more sophisticated processing at the sensor level. Key to this has been the introduction of lower-cost, compact embedded boards with processing power required for real-time image analysis. Embedded smart devices are ideal for repeated and automated robotic processes, such as edge detection in a pick-and-place system.
 
@@ -48,6 +48,23 @@ Providing this data is a first step toward machine learning, AI, and eventually 
 ## What is IOT?
 **The Internet of Things (IoT) refers to a system of interrelated, internet-connected objects that are able to collect and transfer data over a wireless network without human intervention.** The Internet of things describes the network of physical objects—“things”—that are embedded with sensors, software, and other technologies for the purpose of connecting and exchanging data with other devices and systems over the Internet.
 
+## How do IoT devices work?
+
+Smartphones do play a large role in the IoT, however, because many IoT devices can be controlled through an app on a smartphone. You can use your smartphone to communicate with your smart thermostat, for example, to deliver the perfect temperature for you by the time you get home from work. Another plus? This can eliminate unneeded heating or cooling while you’re away, potentially saving you money on energy costs.
+
+IoT devices contain sensors and mini-computer processors that act on the data collected by the sensors via machine learning. Essentially, IoT devices are mini computers, connected to the internet, and are vulnerable to malware and hacking.
+
+Machine learning is when computers learn in a similar way to humans — by collecting data from their surroundings — and it is what makes IoT devices smart. This data can help the machine learn your preferences and adjust itself accordingly. Machine learning is a type of artificial intelligence that helps computers learn without having to be programmed by someone.
+
+That doesn’t mean your smart speaker will discuss the key points of last night’s big game with you. But your connected refrigerator may send you an alert on your smartphone that you’re low on eggs and milk because it knows you’re near a supermarket.
+
+## What are the benefits of the IoT?
+
+The Internet of Things is designed to make our lives more convenient. Here are a few examples:
+
+Smart bathroom scales working in tandem with your treadmill, delivering food preparation ideas to your laptop or smartphone, so you stay healthy.
+Security devices monitoring your home, turning lights on and off as you enter and exit rooms, and streaming video so you can check in while you’re away.
+Smart voice assistants placing your usual takeout order on command, making it a breeze to get fresh food delivered to your door.
  
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-using-IOT/Images/IOT-banner2.png" height="400px" align="left"/>
 <p style="clear:both;">
