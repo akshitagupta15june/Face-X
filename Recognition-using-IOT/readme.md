@@ -102,7 +102,9 @@ All over the world, people use the Raspberry Pi to learn programming skills, bui
 
 The Raspberry Pi is a very cheap computer that runs Linux, but it also provides a set of GPIO (general purpose input/output) pins, allowing you to control electronic components for physical computing and explore the `Internet of Things (IoT)`.
 
- 
+###   Face Recognition architecture of  Iot Device (Example Smart Attendance system)
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-using-IOT/Images/Arc.png"/>
+
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-using-IOT/Images/IOT-banner2.png" height="400px" align="left"/>
 <p style="clear:both;">
 <h1><a name="contributing"></a><a name="community"></a> <a href="https://github.com/akshitagupta15june/Face-X">Community</a> and <a href="https://github.com/akshitagupta15june/Face-X/blob/master/CONTRIBUTING.md">Contributing</a></h1>
@@ -114,6 +116,5 @@ Jump into our <a href="https://discord.com/invite/Jmc97prqjb">Discord</a>! Our p
 <p>
 <i>Not sure where to start?</i> Grab an open issue with the <a href="https://github.com/akshitagupta15june/Face-X/issues">help-wanted label</a>
 </p>
-
 **`Open Source First`**
 <p>We build projects to provide learning environments, deployment and operational best practices, performance benchmarks, create documentation, share networking opportunities, and more. Our shared commitment to the open source spirit pushes Face-x projects forward.</p>
