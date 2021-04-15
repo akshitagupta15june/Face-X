@@ -3,7 +3,7 @@
 # Face Recognition based Authentication System using IoT
 <img align="right" height="460px" src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-using-IOT/Images/aws-header.png">
 
-## Introduction 
+## 1.Introduction 
 One of the most hyped technologies in recent years has been the Internet of Things (IoT), a trend that has entered our consumer lives via home monitoring systems, wearable devices, connected cars, and remote health care. These advancements have been, in large part, attributed to two factors: the expansion of networking capabilities and the availability of lower-cost devices. In the vision market, by comparison, these same factors have been key challenges that have instead slowed the adoption of IoT.
 The increasing number of imaging and data devices within an inspection system, combined with more advanced sensor capabilities, poses a growing bandwidth crunch in the vision market. Cost is also a significant barrier for the adoption of IoT, particularly when considering an evolutionary path toward incorporating machine learning in inspection systems.
 
@@ -15,7 +15,7 @@ The proliferation of consumer IoT devices has been significantly aided by the av
 
 In comparison, imaging relies on low-latency, uncompressed data to make a real-time decision. Poor data quality or delivery can translate into costly production halts or secondary inspections — or worse, a product recall that does irreparable brand harm.
 
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-using-IOT/Images/Iot1.png" align="left"/>
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-using-IOT/Images/Iot1.png" height="400px" align="left"/>
 
 Embedded smart devices integrate off-the-shelf sensors and processing platforms to enable compact, lower-power devices that can be more easily networked in IoT applications
 
@@ -32,10 +32,10 @@ Embedded smart devices enable more sophisticated processing at the sensor level.
 
 Like the smart frame grabber, embedded smart devices offer a straightforward path to integrating AI into vision applications. With local and cloud-based processing and the ability to share data between multiple smart devices, AI techniques can help train the computer model to identify objects, defects, and flaws while supporting a migration toward self-learning robotics systems.
 
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-using-IOT/Images/machinedesign1.png" align="left"/>
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-using-IOT/Images/machinedesign1.png" height="300px" align="left"/>
 
 
-## Computer vision and the cloud
+## 2.Computer vision and the cloud
 
 The cloud and having access to a wider data set will play important roles in bringing IoT to the vision market. Traditionally, production data has been limited to a facility. There is now an evolution toward cloud-based data analysis, where a wider data set from a number of global facilities can be used to improve inspection processes.
 
@@ -45,10 +45,12 @@ Inexpensive cloud computing also means algorithms that were once computationally
 
 Providing this data is a first step toward machine learning, AI, and eventually deep learning for vision applications that leverage a deeper set of information to improve processing and analysis. 
 
-## What is IOT?
+## 3.What is IOT?
 **The Internet of Things (IoT) refers to a system of interrelated, internet-connected objects that are able to collect and transfer data over a wireless network without human intervention.** The Internet of things describes the network of physical objects—“things”—that are embedded with sensors, software, and other technologies for the purpose of connecting and exchanging data with other devices and systems over the Internet.
+      
+Because of the rapid growth in the IoT space, there are a number of competing standards, tools, projects, policies, frameworks, and organizations hoping to define how connected devices communicate in the modern era. Open source and open standards will become increasingly important to ensure that devices are able to properly interconnect, as well as for the back end of processing the enormous volumes of big data that all of these devices will generate.
 
-## How do IoT devices work?
+## 4.How do IoT devices work?
 
 Smartphones do play a large role in the IoT, however, because many IoT devices can be controlled through an app on a smartphone. You can use your smartphone to communicate with your smart thermostat, for example, to deliver the perfect temperature for you by the time you get home from work. Another plus? This can eliminate unneeded heating or cooling while you’re away, potentially saving you money on energy costs.
 
@@ -58,7 +60,7 @@ Machine learning is when computers learn in a similar way to humans — by colle
 
 That doesn’t mean your smart speaker will discuss the key points of last night’s big game with you. But your connected refrigerator may send you an alert on your smartphone that you’re low on eggs and milk because it knows you’re near a supermarket.
 
-## What are the benefits of the IoT?
+## 5.What are the benefits of the IoT?
 
 The Internet of Things is designed to make our lives more convenient. Here are a few examples:
 
@@ -67,7 +69,7 @@ Security devices monitoring your home, turning lights on and off as you enter an
 Smart voice assistants placing your usual takeout order on command, making it a breeze to get fresh food delivered to your door.
 
 
-## Iot device related Infromation: 
+## 6.Iot device related Infromation: 
 
 ### 1.Arduino Uno
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-using-IOT/Images/ARDUINO.png" height="300px" align="right"/>
@@ -99,8 +101,6 @@ The Raspberry Pi launched in 2012, and there have been several iterations and va
 All over the world, people use the Raspberry Pi to learn programming skills, build hardware projects, do home automation, implement Kubernetes clusters and Edge computing, and even use them in industrial applications.
 
 The Raspberry Pi is a very cheap computer that runs Linux, but it also provides a set of GPIO (general purpose input/output) pins, allowing you to control electronic components for physical computing and explore the Internet of Things (IoT).
-
-
 
  
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-using-IOT/Images/IOT-banner2.png" height="400px" align="left"/>
