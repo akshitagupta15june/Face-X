@@ -32,8 +32,6 @@ Embedded smart devices enable more sophisticated processing at the sensor level.
 
 Like the smart frame grabber, embedded smart devices offer a straightforward path to integrating AI into vision applications. With local and cloud-based processing and the ability to share data between multiple smart devices, AI techniques can help train the computer model to identify objects, defects, and flaws while supporting a migration toward self-learning robotics systems.
 
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-using-IOT/Images/machinedesign1.png" height="300px" align="left"/>
-
 
 ## 2.Computer vision and the `cloud`
 
@@ -44,7 +42,7 @@ Instead of relying on rules-based programming, vision systems can be trained to 
 Inexpensive cloud computing also means algorithms that were once computationally too expensive because of dedicated infrastructure requirements are now affordable. For applications such as `object recognition`, `detection`, and `classification`, the learning portion of the process that once required vast computing resources can now happen in the cloud versus via a dedicated, owned, and expensive infrastructure. The processing power required for imaging systems to accurately and repeatedly simulate human understanding, learn new processes, and identify and even correct flaws is now within reach for any system designer.
 
 Providing this data is a first step toward machine learning, AI, and eventually deep learning for vision applications that leverage a deeper set of information to improve processing and analysis. 
-
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-using-IOT/Images/machinedesign1.png" height="300px" align="left"/>
 ## 3.What is IOT?
 **The `Internet of Things (IoT) `refers to a system of interrelated, internet-connected objects that are able to collect and transfer data over a wireless network without` human intervention`.** The Internet of things describes the network of physical objects—“things”—that are embedded with sensors, software, and other technologies for the purpose of connecting and exchanging data with other devices and systems over the Internet.
       
