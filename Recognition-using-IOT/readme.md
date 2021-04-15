@@ -1,6 +1,6 @@
 <p style="text-align:center;" align="center"><a href="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-using-IOT/readme.md"><img align="center" style="margin-bottom:20px;" src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-using-IOT/Images/Untitled1.png"  width="70%" /></a><br /><br /></p>
 
-# Recognition-using-IOT
+# Machine Vision Makes the Move to IoT
 <img align="right" height="460px" src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-using-IOT/Images/aws-header.png">
 
 
