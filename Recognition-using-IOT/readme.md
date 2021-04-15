@@ -24,8 +24,6 @@ Traditionally, inspection has relied on a camera or sensor transmitting data bac
 
 To help solve the impending bandwidth crunch, designers are investigating smart devices that process data and make decisions at the edge of the inspection network. These devices can take the form of a smart frame grabber that integrates directly into an existing inspection network or a compact sensor and embedded processing board that bypass a traditional camera.
 
-Classic computer vision analysis excels at finding defects or matching patterns once it is tuned with a known data set. In comparison, AI is trainable, and as it gains access to a wider data set it’s able to locate, identify, and segment a wider number of objects or faults. New AI algorithms can be added to a smart frame grabber to perform more sophisticated analysis, with the `camera` and `AI-processed video strea`m transmitted from the device to existing machine vision software.
-
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-using-IOT/Images/MachineVision.png" height="380px" align="right"/>
 
 Embedded smart devices enable more sophisticated processing at the sensor level. Key to this has been the introduction of lower-cost, compact embedded boards with processing power required for real-time image analysis. Embedded smart devices are ideal for repeated and automated robotic processes, such as edge detection in a pick-and-place system.
