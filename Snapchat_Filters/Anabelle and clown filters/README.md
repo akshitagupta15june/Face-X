@@ -6,7 +6,7 @@ This repository contains python implmentation of clown and annabelle masks.
 
 ## Getting Started
 
-### Dependencies
+### Dependencies 
 
 * Python
 * The program makes use of Dlib-facial feature points
@@ -36,21 +36,20 @@ pip install opencv-python
    * shape_predictor_68_face_landmarks.7z.003
 
 * To run different filters and masks, run using: 
-   * For surgical mask filter
-   ![ezgif com-gif-maker (3)](https://user-images.githubusercontent.com/35187768/97100752-0ca2ec80-1654-11eb-8f27-e49c541dfd72.gif)
-```
-python mask_dlib.py
-```
+
+
+
    * For annabelle face mask
    ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/35187768/97100658-f0528000-1652-11eb-9c32-bd20fbf03424.gif)
 ```
 python annabelle.py
+```
 
    * For Clown Nose filter
    ![clown](https://user-images.githubusercontent.com/35187768/97100605-5be81d80-1652-11eb-84dc-4e3638cf39fa.gif)
 ```
 python clown.py
-
+```
 
 ## Acknowledgments
 
