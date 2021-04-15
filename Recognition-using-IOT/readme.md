@@ -67,15 +67,13 @@ Security devices monitoring your home, turning lights on and off as you enter an
 Smart voice assistants placing your usual takeout order on command, making it a breeze to get fresh food delivered to your door.
 
 
-### Iot device related Infromation: 
+## Iot device related Infromation: 
 
-- 1.Arduino Uno
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-using-IOT/Images/ARDUINO.png" height="400px" align="right"/>
+### 1.Arduino Uno
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-using-IOT/Images/ARDUINO.png" height="300px" align="right"/>
 Arduino Uno is a microcontroller board based on 8-bit ATmega328P microcontroller. Along with ATmega328P, it consists other components such as crystal oscillator, serial communication, voltage regulator, etc. to support the microcontroller. Arduino Uno has 14 digital input/output pins (out of which 6 can be used as PWM outputs), 6 analog input pins, a USB connection, A Power barrel jack, an ICSP header and a reset button.
 
- 
-
-How to use Arduino Board
+- How to use Arduino Board
 The 14 digital input/output pins can be used as input or output pins by using pinMode(), digitalRead() and digitalWrite() functions in arduino programming. Each pin operate at 5V and can provide or receive a maximum of 40mA current, and has an internal pull-up resistor of 20-50 KOhms which are disconnected by default.  Out of these 14 pins, some pins have specific functions as listed below:
 
 Serial Pins 0 (Rx) and 1 (Tx): Rx and Tx pins are used to receive and transmit TTL serial data. They are connected with the corresponding ATmega328P USB to TTL serial chip.
@@ -91,8 +89,8 @@ Arduino Uno has a couple of other pins as explained below:
 AREF: Used to provide reference voltage for analog inputs with analogReference() function.
 Reset Pin: Making this pin LOW, resets the microcontroller
 
-- 2.Raspberry pi
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-using-IOT/Images/MacV.png"/>
+###  2.Raspberry pi
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-using-IOT/Images/MacV.png" align="right"/>
 
 Raspberry Pi is the name of a series of single-board computers made by the Raspberry Pi Foundation, a UK charity that aims to educate people in computing and create easier access to computing education.
 
