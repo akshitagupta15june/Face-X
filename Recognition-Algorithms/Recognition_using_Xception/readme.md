@@ -60,6 +60,17 @@ Xception is a novel deep convolutional neural network architecture inspired by I
 This architecture slightly outperforms Inception V3 on the ImageNet dataset (which Inception V3 was designed for), and significantly outperforms Inception V3 on a larger image classification dataset comprising 350 million images and 17,000 classes. Since the Xception architecture has the same number of parameters as Inception V3, the performance gains are not due to increased capacity but rather to a **more efficient use of model parameters.**
 
 
+Before moving on to learning about Depthwise Seperable Convolution , let us refresh our minds and get a quick idea of what convolution is.
+![Convolution_of_box_signal_with_itself](https://en.wikipedia.org/wiki/Convolution#/media/File:Convolution_of_box_signal_with_itself2.gif)
+
+There are mainly 2 types of seperable convolutions-
+1. Spatial Separable Convolution
+2. Depthwise Seperable Convolution
+To make it short and precise we will only discuss about depthwise seperable convolutions.
+
+### What is Depthwise Seperable Convolutions (Main Principle behind Xception)
+
+
 ### Contents
 
 1. **requirements.txt**: A list of libraries that have to be included for the model to run. 
