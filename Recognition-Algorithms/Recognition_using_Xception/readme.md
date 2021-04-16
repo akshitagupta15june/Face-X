@@ -60,7 +60,7 @@ Note: Make sure you have haarcascade_frontalface_default.xml file
 
 2. **output.py**: A file to check for the correctness of the model implementation. It recognises faces and outputs matching (if the face matched the name on which it was trained) or not accordingly as per trained data.
 
-3. **create_dataset.py**: A script to detect faces by taking users input through the web camera and categorising them into train or val directory.
+3. **create_dataset.py**: A script to detect faces by taking user's input through the web camera and categorising them into the train or val directory.
 
 4. **main.py**: An example script to train an Xception model on the faces dataset.
 
@@ -76,7 +76,7 @@ Xception is a novel deep convolutional neural network architecture inspired by I
 This architecture slightly outperforms Inception V3 on the ImageNet dataset (which Inception V3 was designed for), and significantly outperforms Inception V3 on a larger image classification dataset comprising 350 million images and 17,000 classes. Since the Xception architecture has the same number of parameters as Inception V3, the performance gains are not due to increased capacity but rather to a **more efficient use of model parameters.**
 
 
-Before moving on to learning about Depthwise Seperable Convolution , let us refresh our minds and get a quick idea of what convolution is through this GIF.
+Before moving on to learning about Depthwise Separable Convolution, let us refresh our minds and get a quick idea of what convolution is through this GIF.
 
 ![](Convolution_of_box_signal_with_itself.gif)
 
@@ -86,13 +86,13 @@ There are mainly 2 types of seperable convolutions-
 
 1. Spatial Separable Convolution
 
-2. Depthwise Seperable Convolution
+2. Depthwise Separable Convolution
 
-To make it short and precise we will only discuss about depthwise seperable convolutions.
+To make it short and precise we will only discuss depthwise separable convolutions.
 
-### What is Depthwise Seperable Convolutions (Main Principle behind Xception)
+### What is Depthwise Separable Convolutions (Main Principle behind Xception)
 
-The depthwise separable convolution is so named because it deals not just with the spatial dimensions, but with the depth dimension as well. An input image may only have 3 channels: RGB. But after a few convolutions, an image may have multiple channels. You can image each channel as a particular interpretation of that image; in for example, the “red” channel interprets the “redness” of each pixel, the “blue” channel interprets the “blueness” of each pixel, and the “green” channel interprets the “greenness” of each pixel. An image with 64 channels has 64 different interpretations of that image. So unlike spatial separable convolutions, depthwise separable convolutions work with kernels that cannot be “factored” into two smaller kernels.
+The depthwise separable convolution is so named because it deals not just with the spatial dimensions, but with the depth dimension as well. An input image may only have 3 channels: RGB. But after a few convolutions, an image may have multiple channels. You can image each channel as a particular interpretation of that image; for example, the “red” channel interprets the “redness” of each pixel, the “blue” channel interprets the “blueness” of each pixel, and the “green” channel interprets the “greenness” of each pixel. An image with 64 channels has 64 different interpretations of that image. So unlike spatial separable convolutions, depthwise separable convolutions work with kernels that cannot be “factored” into two smaller kernels.
 
 [How Kernels are iterated](https://www.youtube.com/watch?v=D_VJoaSew7Q)
 
@@ -105,7 +105,7 @@ In the normal convolution, we are transforming the image 256 times. And every tr
 ![Modified Depthwise Separable Convolution in Xception](https://miro.medium.com/max/875/1*J8dborzVBRBupJfvR7YhuA.png)
 
 
-In Xception, the modified depthwise separable convolution, there is NO intermediate ReLU non-linearity. This meant that when modified depthwise separable convolution with different activation units were tested. Xception without any intermediate activation had the highest accuracy compared with the ones using either ELU or ReLU.
+In Xception, the modified depthwise separable convolution, there is NO intermediate ReLU non-linearity. This meant that when modified depthwise separable convolution with different activation units was tested. Xception without any intermediate activation had the highest accuracy compared with the ones using either ELU or ReLU.
 
 ### Overall Architecture of Xception
 ![Overall Architecture of Xception](https://miro.medium.com/max/875/1*hOcAEj9QzqgBXcwUzmEvSg.png)
@@ -114,18 +114,17 @@ Now let us see the program in action
 ## Screenshots
 1) Firstly the input image is preprocessed.
 2) Datasets are loaded and the program iterates through them.
-3) The model with the best match is labeled as best model and trained for further outputs.
+3) The model with the best match is labeled as the best model and trained for further outputs.
 4) The model is then saved.
 
 
 ![Screenshot-1](https://user-images.githubusercontent.com/53366877/110513516-533d4300-812c-11eb-9cde-7566de26682f.png)
 
-In the above screenshot, program was initially trained on the dataset of the the user (Harshit) and therefore it proceeds with the above mentioned steps and matches with the model that returned as the best match. The best weighted model for this case matched user with a string "Harshit" and hence "Face Found: Harshit" was printed on the screen.
+In the above screenshot, the program was initially trained on the dataset of the user (Harshit) and therefore it proceeds with the above-mentioned steps and matches with the model that returned as the best match. The best-weighted model for this case-matched user with a string "Harshit" and hence "Face Found: Harshit" was printed on the screen.
 
 ![Screenshot-2](https://user-images.githubusercontent.com/53366877/110513613-6ea84e00-812c-11eb-86ec-d3fcecf921be.png)
 
-In the above screenshot, there is no face present and therefore the dataset cannot match it with any of the trained models. This in turn returns a string which prints out "No face found" on the monitor of the user.
-
+In the above screenshot, there is no face present and therefore the dataset cannot match it with any of the trained models. This in turn returns a string that prints out "No face found" on the monitor of the user.
 
 ### References
 [A Basic Introduction to Separable Convolutions](https://towardsdatascience.com/a-basic-introduction-to-separable-convolutions-b99ec3102728)
