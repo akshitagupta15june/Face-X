@@ -107,11 +107,21 @@ In the normal convolution, we are transforming the image 256 times. And every tr
 
 In Xception, the modified depthwise separable convolution, there is NO intermediate ReLU non-linearity. This meant that when modified depthwise separable convolution with different activation units were tested. Xception without any intermediate activation had the highest accuracy compared with the ones using either ELU or ReLU.
 
-### Architechture
-![](https://miro.medium.com/max/875/1*hOcAEj9QzqgBXcwUzmEvSg.png)
+### Overall Architecture of Xception
+![Overall Architecture of Xception](https://miro.medium.com/max/875/1*hOcAEj9QzqgBXcwUzmEvSg.png)
 
+Now let us see the program in action
 ## Screenshots
+1) Firstly the input image is preprocessed.
+2) Datasets are loaded and the program iterates through them.
+3) The model with the best match is labeled as best model and trained for further outputs.
+4) The model is then saved.
 
-![Screenshot from 2020-12-11 21-34-18](https://user-images.githubusercontent.com/53366877/110513516-533d4300-812c-11eb-9cde-7566de26682f.png)
 
-![Screenshot from 2020-12-11 17-59-00](https://user-images.githubusercontent.com/53366877/110513613-6ea84e00-812c-11eb-86ec-d3fcecf921be.png)
+![Screenshot-1](https://user-images.githubusercontent.com/53366877/110513516-533d4300-812c-11eb-9cde-7566de26682f.png)
+
+In the above screenshot, program was initially trained on the dataset of the the user (Harshit) and therefore it proceeds with the above mentioned steps and matches with the model that returned as the best match. The best weighted model for this case matched user with a string "Harshit" and hence "Face Found: Harshit" was printed on the screen.
+
+![Screenshot-2](https://user-images.githubusercontent.com/53366877/110513613-6ea84e00-812c-11eb-86ec-d3fcecf921be.png)
+
+In the above screenshot, there is no face present and therefore the dataset cannot match it with any of the trained models. This in turn returns a string which prints out "No face found" on the monitor of the user.
