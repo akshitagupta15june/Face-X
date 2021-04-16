@@ -125,3 +125,11 @@ In the above screenshot, program was initially trained on the dataset of the the
 ![Screenshot-2](https://user-images.githubusercontent.com/53366877/110513613-6ea84e00-812c-11eb-86ec-d3fcecf921be.png)
 
 In the above screenshot, there is no face present and therefore the dataset cannot match it with any of the trained models. This in turn returns a string which prints out "No face found" on the monitor of the user.
+
+
+### References
+[A Basic Introduction to Separable Convolutions](https://towardsdatascience.com/a-basic-introduction-to-separable-convolutions-b99ec3102728)
+
+[Wikipedia - Convolution](https://en.wikipedia.org/wiki/Convolution)
+
+[Review: Xception — With Depthwise Separable Convolution, Better Than Inception-v3 (Image Classification)](https://towardsdatascience.com/review-xception-with-depthwise-separable-convolution-better-than-inception-v3-image-dc967dd42568)
