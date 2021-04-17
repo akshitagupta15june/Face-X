@@ -109,6 +109,38 @@ Traditionally, convolutional networks used some pooling operation to decrease th
 volution with 2k filters and then apply an additional pooling step. This means that the overall computational cost is dominated by the expensive convolution on the larger grid using `2d^2k^2` operations. One possibility would be to switch to pooling with convolution and therefore resulting in `2(d/2)^2*k^2 `reducing the computational cost by a quarter. However, this creates a representational bottlenecks as the overall dimensionality of the representation drops to` ( d/2 )^2k` resulting in less expressive network
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Face%20Recognition%20Using%20Inception%20V3%20model/Images/pas.png" height="350px" align="right"/>
 
+<br></br>
+### 7.Performance on Lower Resolution Input
+
+A typical use-case of vision networks is for the the postclassification of detection, for example in the Multibox [4]
+context. This includes the analysis of a relative small patch
+of the image containing a single object with some context.
+The tasks is to decide whether the center part of the patch
+corresponds to some object and determine the class of the
+object if it does. The challenge is that objects tend to be
+
+The common wisdom is that models employing higher
+resolution receptive fields tend to result in significantly improved recognition performance. However it is important to
+distinguish between the effect of the increased resolution of
+the first layer receptive field and the effects of larger model
+capacitance and computation. If we just change the resolution of the input without further adjustment to the model,
+then we end up using computationally much cheaper models to solve more difficult tasks. Of course, it is natural,
+that these solutions loose out already because of the reduced
+computational effort. In order to make an accurate assessment, the model needs to analyze vague hints in order to
+be able to “hallucinate” the fine details. This is computationally costly. The question remains therefore: how much
+does higher input resolution helps if the computational effort is kept constant. One simple way to ensure constant
+effort is to reduce the strides of the first two layer in the
+case of lower resolution input, or by simply removing the
+first pooling layer of the network
+
+For this purpose we have performed the following three
+experiments:
+-  299 × 299 receptive field with stride 2 and maximum
+pooling after the first layer.
+-  151 × 151 receptive field with stride 1 and maximum
+pooling after the first layer.
+-  79 × 79 receptive field with stride 1 and without pooling after the first layer.
+
 
 
 <br></br>
