@@ -4,9 +4,18 @@
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Face%20Recognition%20Using%20Inception%20V3%20model/Images/facial.png" align="right"/>
 
 ### Introduction 
-
-
-
+Image classification (recognition) is one of the foremost capabilities of deep neural networks. Inception-v3 is one of the most popular convolutional neural network models for recognizing objects in images. Deep learning-powered image recognition is used by doctors to identify cancerous tissue in medical images, self-driving cars to spot road hazards, and Facebook to help users with photo tagging.
+    Inception V3 by Google is the 3rd version in a series of Deep Learning Convolutional Architectures. Inception V3 was trained using a dataset of 1,000 classes (See the list of classes here) from the original ImageNet dataset which was trained with over 1 million training images, the Tensorflow version has 1,001 classes which is due to an additional "background' class not used in the original ImageNet. Inception V3 was trained for the ImageNet Large Visual Recognition Challenge where it was a first runner up
+A high-level diagram of the model is shown below:
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Face%20Recognition%20Using%20Inception%20V3%20model/Images/inceptionv3.png" height="400px" align="center" width="100%"/>
+- https://core.ac.uk/download/pdf/74351939.pdf
+- https://williamkoehrsen.medium.com/facial-recognition-using-googles-convolutional-neural-network-5aa752b4240e
+- https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/44903.pdf
+- https://ijarcce.com/wp-content/uploads/2018/06/IJARCCE-29.pdf
+- https://www.cs.colostate.edu/~dwhite54/InceptionNetworkOverview.pdf
+- file:///C:/Users/VISHAL%20DHANURE/Downloads/applsci-10-01245-v2.pdf
+- https://www.ijrte.org/wp-content/uploads/papers/v8i1S3/A10080681S319.pdf
+#
 
 
 
