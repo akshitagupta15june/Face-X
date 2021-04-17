@@ -11,6 +11,21 @@ A high-level diagram of the model is shown below:
 Convolutional networks are at the core of most stateof-the-art computer vision solutions for a wide variety of tasks. Since 2014 very deep convolutional networks started to become mainstream, yielding substantial gains in various benchmarks. Although increased model size and computational cost tend to translate to immediate quality gains for most tasks (as long as enough labeled data is provided for training), computational efficiency and low parameter
 count are still enabling factors for various use cases such as mobile vision and big-data scenarios. Here we are exploring ways to scale up networks in ways that aim at utilizing the added computation as efficiently as possible by suitably factorized convolutions and aggressive regularization. We benchmark our methods on the ILSVRC 2012 classification challenge validation set demonstrate substantial gains over  the state of the art: 21.2% top-1 and 5.6% top-5 error for single frame evaluation using a network with a computational cost of 5 billion multiply-adds per inference and with using less than 25 million parameters. With an ensemble of 4 models and multi-crop evaluation, we report 3.5% top-5 error and 17.3% top-1 error.
 
+### 2.About The Inception Versions
+There are 4 versions. The first GoogLeNet must be the Inception-v1 [4], but there are numerous typos in Inception-v3 [1] which lead to wrong descriptions about Inception versions. These maybe due to the intense ILSVRC competition at that moment. Consequently, there are many reviews in the internet mixing up between v2 and v3. Some of the reviews even think that v2 and v3 are the same with only some minor different settings.
+Nevertheless, in Inception-v4 [5], Google has a much more clear description about the version issue:
+“The Inception deep convolutional architecture was introduced as GoogLeNet in (Szegedy et al. 2015a), here named Inception-v1. Later the Inception architecture was refined in various ways, first by the introduction of batch normalization (Ioffe and Szegedy 2015) (Inception-v2). Later by additional factorization ideas in the third iteration (Szegedy et al. 2015b) which will be referred to as Inception-v3 in this report.”
+Thus, the BN-Inception / Inception-v2 [6] is talking about batch normalization while Inception-v3 [1] is talking about factorization ideas.
+
+### Architectural Changes in Inception V3:
+
+Inception V3 is similar to and contains all the features of Inception V2 with following changes/additions:
+
+- Use of RMSprop optimizer.
+- Batch Normalization in the fully connected layer of Auxiliary classifier.
+- Use of 7×7 factorized Convolution
+- Label Smoothing Regularization: It is a method to regularize the classifier by estimating the effect of label-dropout during training. It prevents the classifier to predict too confidently a class. The addition of label smoothing gives 0.2% improvement from the error rate.
+
 ### 2.General Design Principles
 - 1.Higher dimensional representations are easier to process locally within a network. Increasing the activations per tile in a convolutional network allows for
 more disentangled features. The resulting networks
@@ -74,14 +89,26 @@ does not work well on early layers, but it gives very good results on medium gri
 m ranges between 12 and 20). On that level, very good results can be achieved by using 1 × 7 convolutions followed
 by 7 × 1 convolutions.
 
+### 5.Auxiliary classifier: 
+introduced the notion of auxiliary classifiers to improve the convergence of very deep networks. The original motivation was to push useful gradients to the lower layers to make them immediately useful and improve the convergence during training by combating the vanishing gradient problem in very deep networks. Also Lee et al[11] argues that auxiliary classifiers promote more stable learning and better convergence. Interestingly, we found that auxiliary classifiers did not result in improved convergence
+early in the training: the training progression of network with and without side head looks virtually identical before both models reach high accuracy. Near the end of training, the network with the auxiliary branches starts to overtake the accuracy of the network without any auxiliary branch and reaches a slightly higher plateau 
 
-- https://core.ac.uk/download/pdf/74351939.pdf
-- https://williamkoehrsen.medium.com/facial-recognition-using-googles-convolutional-neural-network-5aa752b4240e
-- https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/44903.pdf
-- https://ijarcce.com/wp-content/uploads/2018/06/IJARCCE-29.pdf
-- https://www.cs.colostate.edu/~dwhite54/InceptionNetworkOverview.pdf
-- file:///C:/Users/VISHAL%20DHANURE/Downloads/applsci-10-01245-v2.pdf
-- https://www.ijrte.org/wp-content/uploads/papers/v8i1S3/A10080681S319.pdf
+used two side-heads at different stages in the network. The removal of the lower auxiliary branch did not have any adverse effect on the final quality of the network.
+Together with the earlier observation in the previous paragraph, this means that original the hypothesis of  that these branches help evolving the low-level features is most
+likely misplaced. Instead, we argue that the auxiliary classifiers act as regularizer. This is supported by the fact that the main classifier of the network performs better if the side branch is batch-normalized or has a dropout layer. This also gives a weak supporting evidence for the conjecture that batch normalization acts as a regularizer.
+
+
+an auxiliary classifier is a small CNN inserted between layers during training, and the loss incurred is added to the main network loss. In GoogLeNet auxiliary classifiers were used for a deeper network, whereas in Inception v3 an auxiliary classifier acts as a regularizer.
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Face%20Recognition%20Using%20Inception%20V3%20model/Images/pasted.png" height="350px" align="right" />
+
+
+### 6.Grid size reduction:
+
+Traditionally, convolutional networks used some pooling operation to decrease the grid size of the feature maps. In order to avoid a representational bottleneck, before applying maximum or average pooling the activation dimension of the network filters is expanded. For example, starting a d×d grid with k filters, if we would like to arrive at a `d/2 × d/2` grid with 2k filters, we first need to compute a stride-1 con grid size reduction is usually done by pooling operations. However, to combat the bottlenecks of computational cost, a more efficient technique is proposed:
+
+volution with 2k filters and then apply an additional pooling step. This means that the overall computational cost is dominated by the expensive convolution on the larger grid using `2d^2k^2` operations. One possibility would be to switch to pooling with convolution and therefore resulting in `2(d/2)^2*k^2 `reducing the computational cost by a quarter. However, this creates a representational bottlenecks as the overall dimensionality of the representation drops to` ( d/2 )^2k` resulting in less expressive network
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Face%20Recognition%20Using%20Inception%20V3%20model/Images/pas.png" height="350px" align="left"/>
+
 
 
 
