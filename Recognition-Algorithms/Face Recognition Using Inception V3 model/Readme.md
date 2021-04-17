@@ -20,6 +20,17 @@ the classifier or regressor. This defines a clear direction for the information 
 - 3.Spatial aggregation can be done over lower dimensional embeddings without much or any loss in representational power. For example, before performing a more spread out (e.g. 3 × 3) convolution, one can reduce the dimension of the input representation before the spatial aggregation without expecting serious adverse effects
 - 4.Balance the width and depth of the network. Optimal performance of the network can be reached by balancing the number of filters per stage and the depth of the network. Increasing both the width and the depth of the network can contribute to higher quality networks. However, the optimal improvement for a constant amount of computation can be reached if both are increased in parallel. The computational budget should therefore be distributed in a balanced way between the depth and width of the network.
 
+### 3.Factorizing Convolutions with Large Filter Size
+Much of the original gains of the GoogLeNet network [20] arise from a very generous use of dimension reduction. This can be viewed as a special case of factorizing
+convolutions in a computationally efficient manner. Consider for example the case of a 1 × 1 convolutional layer followed by a 3 × 3 convolutional layer. In a vision network, it is expected that the outputs of near-by activations are highly correlated. Therefore, we can expect that their activations can be reduced before aggregation and that this should result in similarly expressive local representations
+
+Mini-network replacing the 5 × 5 convolutions: 
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Face%20Recognition%20Using%20Inception%20V3%20model/Images/remotesensing.png"/>
+
+This means that with suitable factorization, we can end up with more disentangled parameters and therefore with faster training. Also, we can use the computational
+and memory savings to increase the filter-bank sizes of our network while maintaining our ability to train each model replica on a single comput
+
+
 - https://core.ac.uk/download/pdf/74351939.pdf
 - https://williamkoehrsen.medium.com/facial-recognition-using-googles-convolutional-neural-network-5aa752b4240e
 - https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/44903.pdf
