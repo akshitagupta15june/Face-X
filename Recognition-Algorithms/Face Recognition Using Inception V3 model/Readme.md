@@ -70,7 +70,7 @@ Mini-network replacing the `3 × 3 convolution`s. The lower layer of this networ
 
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Face%20Recognition%20Using%20Inception%20V3%20model/Images/10-png.png" align="right"/>
 
-layers. Still we can ask the question whether one should factorize them into smaller, for example 2×2 convolutions. However, it turns out that one can do even better than 2 × 2 by using asymmetric convolutions, e.g. n × 1. For example using a 3 × 1 convolution followed by a 1 × 3 convolution is equivalent to sliding a two layer network with the same receptive field as in a 3 × 3 convolution . Still the two-layer solution is 33% cheaper for the same number of output filters, if the number of input and output filters is equal. By comparison, factorizing a 3 × 3 convolution into a two 2 × 2 convolution represents only a 11% saving of
+ for example 2×2 convolutions. However, it turns out that one can do even better than `2 × 2` by using asymmetric convolutions, e.g. `n × 1`. For example using a 3 × 1 convolution followed by a `1 × 3 convolution` is equivalent to sliding a two layer network with the same receptive field as in a 3 × 3 convolution . Still the two-layer solution is 33% cheaper for the same number of output filters, if the number of input and output filters is equal. By comparison, factorizing a 3 × 3 convolution into a two 2 × 2 convolution represents only a 11% saving of
 computation.
 
 n × 1 convolution and the computational cost saving increases dramatically as n grows . In practice, we have found that employing this factorization
