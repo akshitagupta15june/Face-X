@@ -99,7 +99,7 @@ likely misplaced. Instead, we argue that the auxiliary classifiers act as regula
 
 
 an auxiliary classifier is a small CNN inserted between layers during training, and the loss incurred is added to the main network loss. In GoogLeNet auxiliary classifiers were used for a deeper network, whereas in Inception v3 an auxiliary classifier acts as a regularizer.
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Face%20Recognition%20Using%20Inception%20V3%20model/Images/pasted.png" height="350px" align="right" />
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Face%20Recognition%20Using%20Inception%20V3%20model/Images/pasted.png" width="500px" height="350px" align="right" />
 
 
 ### 6.Grid size reduction:
@@ -107,9 +107,8 @@ an auxiliary classifier is a small CNN inserted between layers during training, 
 Traditionally, convolutional networks used some pooling operation to decrease the grid size of the feature maps. In order to avoid a representational bottleneck, before applying maximum or average pooling the activation dimension of the network filters is expanded. For example, starting a d×d grid with k filters, if we would like to arrive at a `d/2 × d/2` grid with 2k filters, we first need to compute a stride-1 con grid size reduction is usually done by pooling operations. However, to combat the bottlenecks of computational cost, a more efficient technique is proposed:
 
 volution with 2k filters and then apply an additional pooling step. This means that the overall computational cost is dominated by the expensive convolution on the larger grid using `2d^2k^2` operations. One possibility would be to switch to pooling with convolution and therefore resulting in `2(d/2)^2*k^2 `reducing the computational cost by a quarter. However, this creates a representational bottlenecks as the overall dimensionality of the representation drops to` ( d/2 )^2k` resulting in less expressive network
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Face%20Recognition%20Using%20Inception%20V3%20model/Images/pas.png" height="350px" align="right"/>
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Face%20Recognition%20Using%20Inception%20V3%20model/Images/pas.png" height="350px" width="500px" align="right"/>
 
-<br></br>
 ### 7.Performance on Lower Resolution Input
 
 A typical use-case of vision networks is for the the postclassification of detection, for example in the Multibox [4]
@@ -142,8 +141,6 @@ pooling after the first layer.
 -  79 × 79 receptive field with stride 1 and without pooling after the first layer.
 
 
-
-<br></br>
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Face%20Recognition%20Using%20Inception%20V3%20model/Images/community.png" height="400px" align="left"/>
 <p style="clear:both;">
 <h1><a name="contributing"></a><a name="community"></a> <a href="https://github.com/akshitagupta15june/Face-X">Community</a> and <a href="https://github.com/akshitagupta15june/Face-X/blob/master/CONTRIBUTING.md">Contributing</a></h1>
