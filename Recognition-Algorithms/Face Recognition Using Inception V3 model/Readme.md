@@ -17,7 +17,7 @@ Nevertheless, in` Inception-v4` , Google has a much more clear description about
 “The Inception deep convolutional architecture was introduced as`GoogLeNet` in (Szegedy et al. 2015a), here named Inception-v1. Later the Inception architecture was refined in various ways, first by the introduction of batch normalization (Ioffe and Szegedy 2015) (Inception-v2). Later by additional factorization ideas in the third iteration (Szegedy et al. 2015b) which will be referred to as Inception-v3 in this report.”
 Thus, the BN-Inception / Inception-v2  is talking about batch normalization while Inception-v3 [1] is talking about factorization ideas.
 
-### `Architectural Changes in Inception V3`:
+### 3.`Architectural Changes in Inception V3`:
 
 Inception V3 is similar to and contains all the features of Inception V2 with following changes/additions:
 
@@ -26,7 +26,7 @@ Inception V3 is similar to and contains all the features of Inception V2 with fo
 - `Use of 7×7 factorized Convolution`
 - `Label Smoothing Regularization`: It is a method to regularize the classifier by estimating the effect of label-dropout during training. It prevents the classifier to predict too confidently a class. The addition of label smoothing gives 0.2% improvement from the error rate.
 
-### 2.General Design Principles
+### 4.General Design Principles
 - 1.Higher dimensional representations are easier to process locally within a network. Increasing the activations per tile in a convolutional network allows for
 more disentangled features. The resulting networks
 will train faster
@@ -53,7 +53,7 @@ By verification, we mean producing a compelling argument that the system will no
 range of circumstances so the accuracy of model will not be varied.
 
 
-### 3.`Factorizing Convolutions with Large Filter Size`
+### 5.`Factorizing Convolutions with Large Filter Size`
 Much of the original gains of the GoogLeNet network  arise from a very generous use of dimension reduction. This can be viewed as a special case of factorizing
 convolutions in a computationally efficient manner. Consider for example the case of a` 1 × 1` convolutional layer followed by a` 3 × 3 convolutional layer`. In a vision network, it is expected that the outputs of near-by activations are highly correlated. Therefore, we can expect that their activations can be reduced before aggregation and that this should result in similarly expressive local representations
 
@@ -63,7 +63,7 @@ convolutions in a computationally efficient manner. Consider for example the cas
 This means that with suitable factorization, we can end up with more disentangled parameters and therefore with faster training. Also, we can use the computational
 and memory savings to increase the filter-bank sizes of our network while maintaining our ability to train each model replica on a single comput
 
-### 4.Spatial Factorization into `Asymmetric Convolutions`
+### 6.Spatial Factorization into `Asymmetric Convolutions`
 
 The above results suggest that convolutions with filters larger 3 × 3 a might not be generally useful as they can always be reduced into a sequence of 3 × 3 convolutional 
 Mini-network replacing the `3 × 3 convolution`s. The lower layer of this network consists of a 3 × 1 convolution with 3 output units
@@ -77,7 +77,7 @@ n × 1 convolution and the computational cost saving increases dramatically as n
 does not work well on early layers, but it gives very good results on medium grid-sizes `(On m×m feature maps, where m ranges between 12 and 20)`. On that level, very good results can be achieved by using` 1 × 7 convolutions` followed
 by 7 × 1 convolutions.
 
-### 5.`Auxiliary classifier`: 
+### 7.`Auxiliary classifier`: 
 
 introduced the notion of auxiliary classifiers to improve the convergence of very deep networks. The original motivation was to push useful gradients to the lower layers to make them immediately useful and improve the convergence during training by combating the vanishing gradient problem in very deep networks. Also Lee et al argues that auxiliary classifiers promote more stable learning and better convergence. Interestingly, we found that auxiliary classifiers did not result in improved convergence
 early in the training: the training progression of network with and without side head looks virtually identical before both models reach high accuracy. Near the end of training, the network with the auxiliary branches starts to overtake the accuracy of the network without any auxiliary branch and reaches a slightly higher plateau 
@@ -91,14 +91,14 @@ an `auxiliary classifier` is a small CNN inserted between layers during training
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Face%20Recognition%20Using%20Inception%20V3%20model/Images/pasted.png" width="500px" height="350px" align="right" />
 
 
-### 6.Grid size reduction:
+### 8.Grid size reduction:
 
 Traditionally, convolutional networks used some pooling operation to decrease the grid size of the feature maps. In order to avoid a representational bottleneck, before applying maximum or average pooling the activation dimension of the network filters is expanded. For example, starting a d×d grid with k filters, if we would like to arrive at a `d/2 × d/2` grid with 2k filters, we first need to compute a stride-1 con grid size reduction is usually done by pooling operations. However, to combat the bottlenecks of computational cost, a more efficient technique is proposed:
 
 volution with 2k filters and then apply an additional pooling step. This means that the overall computational cost is dominated by the expensive convolution on the larger grid using `2d^2k^2` operations. One possibility would be to switch to pooling with convolution and therefore resulting in `2(d/2)^2*k^2 `reducing the computational cost by a quarter. However, this creates a representational bottlenecks as the overall dimensionality of the representation drops to` ( d/2 )^2k` resulting in less expressive network
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Face%20Recognition%20Using%20Inception%20V3%20model/Images/pas.png" height="350px" width="500px" align="right"/>
 
-### 7.Performance on Lower Resolution Input
+### 9.Performance on Lower Resolution Input
 
 A typical use-case of vision networks is for the the postclassification of detection, for example in the Multibox 
 context. This includes the analysis of a relative small patch
