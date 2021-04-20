@@ -22,7 +22,7 @@
 
 <p style="clear:both;">
 <h2><a href="https://github.com/akshitagupta15june/Face-X/tree/master/Recognition-Algorithms">Recognition-Algorithms</a></h2>
-<a href="https://github.com/akshitagupta15june/Face-X/tree/master/Recognition-Algorithms"><img src="https://github.com/akshitagupta15june/Face-X/blob/master/Recognition-Algorithms/Face%20Recognition%20Using%20Inception%20V3%20model/Images/Unt1.png"
+<a href="https://github.com/akshitagupta15june/Face-X/tree/master/Recognition-Algorithms"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/Assests/logo.png"
 style="margin:10px;" width="125px" 
 alt="Meshery - Service Mesh Management Plane" align="left" /></a>
 <a href="https://meshery.io">Meshery</a> is a multi-service mesh management plane offering lifecycle management of more types of service meshes than any other tool available today. 
