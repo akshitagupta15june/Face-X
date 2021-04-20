@@ -110,7 +110,7 @@ pip install -r requirements.txt
 
 ## Engaging and Collaborating with
 
- <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Assests/und.png"/> <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Assests/Square%20Simple%20(2).png" height="500px" align="right"/>
+ <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Assests/und.png" height="500px"/> <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Assests/Square%20Simple%20(2).png" height="500px" align="right"/>
   
 	
 </br>
