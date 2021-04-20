@@ -18,6 +18,28 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com)
 </div>
 
+# Projects 
+
+<p style="clear:both;">
+<h2><a href="https://github.com/akshitagupta15june/Face-X/tree/master/Recognition-Algorithms">Recognition-Algorithms</a></h2>
+<a href="https://meshery.io"><img src=".github/assets/images/meshery/meshery-logo.svg"
+style="margin:10px;" width="125px" 
+alt="Meshery - Service Mesh Management Plane" align="left" /></a>
+<a href="https://meshery.io">Meshery</a> is a multi-service mesh management plane offering lifecycle management of more types of service meshes than any other tool available today. 
+Meshery facilitates adopting, configuring, operating and managing performance of different service meshes and incorporates the collection and display of metrics from applications running on top of any service mesh. 
+<br /><br /><br />
+</p>
+<br />
+<p style="clear:both;">
+<h2><a href="https://github.com/akshitagupta15june/Face-X/tree/master/Recognition-Algorithms">Recognition-Algorithms</a></h2>
+<a href="https://meshery.io"><img src=".github/assets/images/meshery/meshery-logo.svg"
+style="margin:10px;" width="125px" 
+alt="Meshery - Service Mesh Management Plane" align="left" /></a>
+<a href="https://meshery.io">Meshery</a> is a multi-service mesh management plane offering lifecycle management of more types of service meshes than any other tool available today. 
+Meshery facilitates adopting, configuring, operating and managing performance of different service meshes and incorporates the collection and display of metrics from applications running on top of any service mesh. 
+<br /><br /><br />
+</p>
+
 
 ### Demonstration of different algorithms and operations on faces 
 
