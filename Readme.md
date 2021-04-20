@@ -61,7 +61,7 @@ Meshery facilitates adopting, configuring, operating and managing performance of
 <br />
 <p style="clear:both;">
 <h2><a href="https://github.com/Vi1234sh12/Face-X/tree/master/Face-Mask-Detection">Face-Mask-Detection</a></h2>
-<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Face-Mask-Detection"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/Assests/sp_logo.png"
+<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Face-Mask-Detection"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/Assests/face-mask-logo-template_23-2148746217__3_-removebg-preview.png"
 style="margin:10px;" width="150px" 
 alt="Meshery - Service Mesh Management Plane" align="left" /></a>
 <a href="https://meshery.io">Meshery</a> is a multi-service mesh management plane offering lifecycle management of more types of service meshes than any other tool available today. 
