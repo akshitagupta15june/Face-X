@@ -160,7 +160,7 @@ Thanks goes to these wonderful people ✨✨:
 </table>
 
 
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Assests/qww.png" height="400px" align="left"/>
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Assests/qww.png" height="400px" width="60%" align="left"/>
 <p style="clear:both;">
 <h1><a name="contributing"></a><a name="community"></a> <a href="https://github.com/akshitagupta15june/Face-X">Community</a> and <a href="https://github.com/akshitagupta15june/Face-X/blob/master/CONTRIBUTING.md">Contributing</a></h1>
 <p>Please do! Contributions, updates, <a href="https://github.com/akshitagupta15june/Face-X/issues"></a> and <a href=" ">pull requests</a> are welcome. This project is community-built and welcomes collaboration. Contributors are expected to adhere to the <a href="https://gssoc.girlscript.tech/">GOSSC Code of Conduct</a>.
@@ -171,5 +171,4 @@ Jump into our <a href="https://discord.com/invite/Jmc97prqjb">Discord</a>! Our p
 <p>
 <i>Not sure where to start?</i> Grab an open issue with the <a href="https://github.com/akshitagupta15june/Face-X/issues">help-wanted label</a>
 </p>
-**`Open Source First`**
-<p>We build projects to provide learning environments, deployment and operational best practices, performance benchmarks, create documentation, share networking opportunities, and more. Our shared commitment to the open source spirit pushes Face-x projects forward.</p>
+
