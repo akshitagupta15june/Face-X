@@ -42,7 +42,7 @@ Meshery facilitates adopting, configuring, operating and managing performance of
 <p style="clear:both;">
 <h2><a href="https://github.com/akshitagupta15june/Face-X/tree/master/Facial_Biometric">Facial Biometric</a></h2>
 <a href="https://github.com/akshitagupta15june/Face-X/tree/master/Facial_Biometric"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/Assests/hand.png"
-style="margin:10px;" width="150px" 
+style="margin:10px;" width="145px" 
 alt="Meshery - Service Mesh Management Plane" align="left" /></a>
 <a href="https://meshery.io">Meshery</a> is a multi-service mesh management plane offering lifecycle management of more types of service meshes than any other tool available today. 
 Meshery facilitates adopting, configuring, operating and managing performance of different service meshes and incorporates the collection and display of metrics from applications running on top of any service mesh. 
@@ -50,7 +50,7 @@ Meshery facilitates adopting, configuring, operating and managing performance of
 </p>
 <br />
 <p style="clear:both;">
-<h2><a href="https://github.com/Vi1234sh12/Face-X/tree/master/Snapchat_Filters">Snapchat_Filters</a></h2>
+<h2><a href="https://github.com/Vi1234sh12/Face-X/tree/master/Snapchat_Filters"> Snapchat_Filters</a></h2>
 <a href="https://github.com/Vi1234sh12/Face-X/tree/master/Snapchat_Filters"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/Assests/kis-r.png"
 style="margin:10px;" width="150px" 
 alt="Meshery - Service Mesh Management Plane" align="left" /></a>
