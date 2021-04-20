@@ -19,10 +19,6 @@
 </div>
 
 
-<div align="center">
-<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/Cartoonify_face_image/Images/recof.gif" width="390px" height="350px" align='center'>
-</div>
-
 ### Demonstration of different algorithms and operations on faces 
 
 #### [Recognition-Algorithms](https://github.com/akshitagupta15june/Face-X/tree/master/Recognition-Algorithms)
