@@ -11,7 +11,6 @@ The YOLOv3 (You Only Look Once) is a state-of-the-art, real-time object detectio
 
 ![Imgur](assets/yolo-architecture.png)
 
-Credit: [Ayoosh Kathuria](https://towardsdatascience.com/yolo-v3-object-detection-53fb7d3bfe6b)
 
 ## OpenCV Deep Neural Networks (dnn module)
 
@@ -31,15 +30,6 @@ Development for this project will be isolated in Python virtual environment. Thi
 
 There are many ways to install `virtual environment (virtualenv)`, see the [Python Virtual Environments: A Primer](https://realpython.com/python-virtual-environments-a-primer/) guide for different platforms, but here are a couple:
 
-- For Ubuntu
-```bash
-$ pip install virtualenv
-```
-
-- For Mac
-```bash
-$ pip install --upgrade virtualenv
-```
 
 Create a Python 3.6 virtual environment for this project and activate the virtualenv:
 ```bash
@@ -68,23 +58,11 @@ $ git clone https://github.com/sthanhng/yoloface
 $ python yoloface.py --image samples/outside_000001.jpg --output-dir outputs/
 ```
 
->**video input**
-```bash
-$ python yoloface.py --video samples/subway.mp4 --output-dir outputs/
-```
 
->**webcam**
-```bash
-$ python yoloface.py --src 1 --output-dir outputs/
-```
 
 ## Sample outputs
 
 ![Imgur](assets/outside_000001_yoloface.jpg)
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for more details.
-
-## References
 
