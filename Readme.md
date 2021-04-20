@@ -25,7 +25,7 @@
 <a href="https://github.com/akshitagupta15june/Face-X/tree/master/Recognition-Algorithms"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/Assests/logo.png"
 style="margin:10px;" width="150px" 
 alt="Meshery - Service Mesh Management Plane" align="left" /></a>
-<a href="https://meshery.io">Meshery</a> Recognition of faces by different algorithms and frameworks. Despite a variety of open-source face recognition frameworks available, there was no ready-made solution to implement. So In this project all kind of algorithms are implemented and even with various operations that can be implemented in a frontal face. The available algorithms processed only high-resolution static shots and performed insufficiently.
+<a href="https://github.com/akshitagupta15june/Face-X/tree/master/Recognition-Algorithms">Recognition</a>  of faces by different algorithms and frameworks. Despite a variety of open-source face recognition frameworks available, there was no ready-made solution to implement. So In this project all kind of algorithms are implemented and even with various operations that can be implemented in a frontal face. The available algorithms processed only high-resolution static shots and performed insufficiently.
 <br /><br />
 </p>
 <br />
