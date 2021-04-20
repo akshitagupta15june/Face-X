@@ -110,16 +110,8 @@ pip install -r requirements.txt
 
 ## Engaging and Collaborating with
 
-<p align="center">
+ <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Assests/und.png"/> <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Assests/Square%20Simple%20(2).png" height="500px" align="right"/>
   
-   [<img  width="420" height="120"  src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/Cartoonification/Assets/gssoc.png">](https://gssoc.girlscript.tech/)
-   [<img  width="160" height="160" src="https://njackwinterofcode.github.io/images/nwoc-logo.png">](https://njackwinterofcode.github.io/)
-   [<img  src="https://devscript.tech/woc/img/WOC-logo.png" width="160" height="160"/>](https://devscript.tech/woc/) <br>
-   [<img  width="160" height="160"  src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/Cartoonification/Assets/uaceit.jpeg">](https://uaceit.com/)
-   [<img  width="160" height="160"  src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/Cartoonification/Assets/cwoc.jpeg">](https://crosswoc.ieeedtu.in/)
-   [<img  width="180" height="180" src="https://media-exp1.licdn.com/dms/image/C560BAQGh8hr-FgbrHw/company-logo_200_200/0/1602422883512?e=2159024400&v=beta&t=s8IX2pN1J2v5SRRbgzVNzxnQ2rWeeMq2Xb__BYW60qE">](https://swoc.tech/)
-   
-</p>
 	
 </br>
 	
