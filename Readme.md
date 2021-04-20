@@ -108,7 +108,7 @@ pip install -r requirements.txt
 
 </br>
 
-## Face-X is a part of these open source programs❄
+## Engaging and Collaborating with
 
 <p align="center">
   
