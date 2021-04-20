@@ -50,8 +50,8 @@ Meshery facilitates adopting, configuring, operating and managing performance of
 </p>
 <br />
 <p style="clear:both;">
-<h2><a href="https://github.com/Vi1234sh12/Face-X/tree/master/Recognition-using-IOT">Recognition-using-IOT</a></h2>
-<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Recognition-using-IOT"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/Assests/sp_logo.png"
+<h2><a href="https://github.com/Vi1234sh12/Face-X/tree/master/Snapchat_Filters">Snapchat_Filters</a></h2>
+<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Snapchat_Filters"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/Assests/sp_logo.png"
 style="margin:10px;" width="150px" 
 alt="Meshery - Service Mesh Management Plane" align="left" /></a>
 <a href="https://meshery.io">Meshery</a> is a multi-service mesh management plane offering lifecycle management of more types of service meshes than any other tool available today. 
@@ -60,8 +60,8 @@ Meshery facilitates adopting, configuring, operating and managing performance of
 </p>
 <br />
 <p style="clear:both;">
-<h2><a href="https://github.com/Vi1234sh12/Face-X/tree/master/Recognition-using-IOT">Recognition-using-IOT</a></h2>
-<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Recognition-using-IOT"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/Assests/sp_logo.png"
+<h2><a href="https://github.com/Vi1234sh12/Face-X/tree/master/Face-Mask-Detection">Face-Mask-Detection</a></h2>
+<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Face-Mask-Detection"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/Assests/sp_logo.png"
 style="margin:10px;" width="150px" 
 alt="Meshery - Service Mesh Management Plane" align="left" /></a>
 <a href="https://meshery.io">Meshery</a> is a multi-service mesh management plane offering lifecycle management of more types of service meshes than any other tool available today. 
@@ -70,8 +70,8 @@ Meshery facilitates adopting, configuring, operating and managing performance of
 </p>
 <br />
 <p style="clear:both;">
-<h2><a href="https://github.com/Vi1234sh12/Face-X/tree/master/Recognition-using-IOT">Recognition-using-IOT</a></h2>
-<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Recognition-using-IOT"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/Assests/sp_logo.png"
+<h2><a href="https://github.com/Vi1234sh12/Face-X/tree/master/Awesome-face-operations">Awesome-face-operations</a></h2>
+<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Awesome-face-operations"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/Assests/sp_logo.png"
 style="margin:10px;" width="150px" 
 alt="Meshery - Service Mesh Management Plane" align="left" /></a>
 <a href="https://meshery.io">Meshery</a> is a multi-service mesh management plane offering lifecycle management of more types of service meshes than any other tool available today. 
