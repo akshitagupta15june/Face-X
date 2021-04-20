@@ -1,4 +1,4 @@
-<p style="text-align:center;" align="center"><a href="https://github.com/Vi1234sh12/Face-X/blob/master/Readme.md"><img align="center" style="margin-bottom:20px;" src="https://github.com/Vi1234sh12/Face-X/blob/master/Assests/Offical_logo-Face-x.png"  width="90%" /></a><br /><br /></p>
+<p style="text-align:center;" align="center"><a href="https://github.com/Vi1234sh12/Face-X/blob/master/Readme.md"><img align="center" style="margin-bottom:20px;" src="https://github.com/Vi1234sh12/Face-X/blob/master/Assests/Offical_logo-Face-x.png"  width="70%" /></a><br /><br /></p>
 
 
 
