@@ -41,7 +41,7 @@ alt="Meshery - Service Mesh Management Plane" align="left" /></a>
 <p style="clear:both;">
 <h2><a href="https://github.com/akshitagupta15june/Face-X/tree/master/Facial_Biometric">Facial Biometric</a></h2>
 <a href="https://github.com/akshitagupta15june/Face-X/tree/master/Facial_Biometric"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/Assests/hand.png"
-style="margin:10px;" width="145px" 
+style="margin:10px;" width="125px" 
 alt="Meshery - Service Mesh Management Plane" align="left" /></a>
 <a href="https://github.com/Vi1234sh12/Face-X/tree/master/Facial_Biometric">Facial Biometric</a> technology measures and matches the unique characteristics for the purposes of identification or authentication. Often leveraging a digital or connected camera, facial recognition software can detect faces in images, quantify their features, and then match them against stored templates in a database. 
 <br /><br />
