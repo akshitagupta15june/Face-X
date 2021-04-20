@@ -61,7 +61,7 @@ alt="Meshery - Service Mesh Management Plane" align="left" /></a>
 <a href="https://github.com/Vi1234sh12/Face-X/tree/master/Face-Mask-Detection"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/Assests/face-mask-logo-template_23-2148746217__3_-removebg-preview.png"
 style="margin:10px;" width="150px" 
 alt="Meshery - Service Mesh Management Plane" align="left" /></a>
-<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Face-Mask-Detection">Meshery</a>  
+<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Face-Mask-Detection">Face Mask Detection</a> Platform uses Artificial Network to recognize if a user is not wearing a mask.  The app can be connected to any existing or new IP mask detection cameras to detect people without a mask. App users can also add faces and phone numbers to send them an alert in case they are not wearing a mask. If the camera captures an unrecognized face, a notification can be sent out to the administrator. 
 <br /><br />
 </p>
 <br />
@@ -70,8 +70,7 @@ alt="Meshery - Service Mesh Management Plane" align="left" /></a>
 <a href="https://github.com/Vi1234sh12/Face-X/tree/master/Awesome-face-operations"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/Assests/Asome.png"
 style="margin:10px;" width="145px" 
 alt="Meshery - Service Mesh Management Plane" align="left" /></a>
-<a href="https://meshery.io">Meshery</a> is a multi-service mesh management plane offering lifecycle management of more types of service meshes than any other tool available today. 
-Meshery facilitates adopting, configuring, operating and managing performance of different service meshes and incorporates the collection and display of metrics from applications running on top of any service mesh. 
+<a href="https://github.com/akshitagupta15june/Face-X/tree/master/Awesome-face-operations">Face Operation </a> The process of partitioning a digital image into multiple segments is defined as image segmentation. Segmentation aims to divide an image into regions that can be more representative and easier to analyze.
 <br /><br />
 </p>
 
