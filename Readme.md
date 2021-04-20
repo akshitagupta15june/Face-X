@@ -48,11 +48,11 @@ alt="Meshery - Service Mesh Management Plane" align="left" /></a>
 </p>
 <br />
 <p style="clear:both;">
-<h2><a href="https://github.com/Vi1234sh12/Face-X/tree/master/Snapchat_Filters"> Snapchat_Filters</a></h2>
+<h2><a href="https://github.com/Vi1234sh12/Face-X/tree/master/Snapchat_Filters">Snapchat_Filters</a></h2>
 <a href="https://github.com/Vi1234sh12/Face-X/tree/master/Snapchat_Filters"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/Assests/kis-r.png"
 style="margin:10px;" width="150px" 
 alt="Meshery - Service Mesh Management Plane" align="left" /></a>
-<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Snapchat_Filters">Snapchat filters/a> are certainly an integral part of what makes the social media platform and messaging app Snapchat unique and globally popular. Filters, or added effects, can be applied over images in a variety of ways before being uploaded to one’s social network for others to see. Geofilters allow users to alter a picture of a landscape, such as adding color to sky or turning day to night
+<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Snapchat_Filters">Snapchat filters </a> are certainly an integral part of what makes the social media platform and messaging app Snapchat unique and globally popular. Filters, or added effects, can be applied over images in a variety of ways before being uploaded to one’s social network for others to see. Geofilters allow users to alter a picture of a landscape, such as adding color to sky or turning day to night
 <br /><br />
 </p>
 <br />
