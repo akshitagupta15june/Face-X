@@ -18,8 +18,10 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com)
 </div>
 
+
+
 ## About Face-x 
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Assests/about.png"/>
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Assests/visua.png" align="right"/>
 Face-x is a face detection and recognition GitHub project
 
 Our approach to face detection and recognition is based on FaceNet and InsightFace libraries that use deep neural networks. Face-x  provides a convenient REST API for training algorithms to detect and recognize faces from your collection of images (aka Face Collection). The solution also features a role management system that allows you to easily control who has access to your Face Collection.here are several approaches for an algorithm to recognize a face. An algorithm can make use of statistics, try to find a pattern which represents a specific person or use a Convolutional Neural Network (CNN)
