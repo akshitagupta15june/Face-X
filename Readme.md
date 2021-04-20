@@ -18,7 +18,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com)
 </div>
 
-# Projects 
+# Demonstration of different algorithms and operations on faces
 
 <p style="clear:both;">
 <h2><a href="https://github.com/akshitagupta15june/Face-X/tree/master/Recognition-Algorithms">Recognition-Algorithms</a></h2>
