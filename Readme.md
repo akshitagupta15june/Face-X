@@ -38,6 +38,46 @@ alt="Meshery - Service Mesh Management Plane" align="left" /></a>
 Meshery facilitates adopting, configuring, operating and managing performance of different service meshes and incorporates the collection and display of metrics from applications running on top of any service mesh. 
 <br /><br />
 </p>
+<br />
+<p style="clear:both;">
+<h2><a href="https://github.com/akshitagupta15june/Face-X/tree/master/Facial_Biometric">Facial Biometric</a></h2>
+<a href="https://github.com/akshitagupta15june/Face-X/tree/master/Facial_Biometric"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/Assests/sp_logo.png"
+style="margin:10px;" width="150px" 
+alt="Meshery - Service Mesh Management Plane" align="left" /></a>
+<a href="https://meshery.io">Meshery</a> is a multi-service mesh management plane offering lifecycle management of more types of service meshes than any other tool available today. 
+Meshery facilitates adopting, configuring, operating and managing performance of different service meshes and incorporates the collection and display of metrics from applications running on top of any service mesh. 
+<br /><br />
+</p>
+<br />
+<p style="clear:both;">
+<h2><a href="https://github.com/Vi1234sh12/Face-X/tree/master/Recognition-using-IOT">Recognition-using-IOT</a></h2>
+<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Recognition-using-IOT"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/Assests/sp_logo.png"
+style="margin:10px;" width="150px" 
+alt="Meshery - Service Mesh Management Plane" align="left" /></a>
+<a href="https://meshery.io">Meshery</a> is a multi-service mesh management plane offering lifecycle management of more types of service meshes than any other tool available today. 
+Meshery facilitates adopting, configuring, operating and managing performance of different service meshes and incorporates the collection and display of metrics from applications running on top of any service mesh. 
+<br /><br />
+</p>
+<br />
+<p style="clear:both;">
+<h2><a href="https://github.com/Vi1234sh12/Face-X/tree/master/Recognition-using-IOT">Recognition-using-IOT</a></h2>
+<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Recognition-using-IOT"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/Assests/sp_logo.png"
+style="margin:10px;" width="150px" 
+alt="Meshery - Service Mesh Management Plane" align="left" /></a>
+<a href="https://meshery.io">Meshery</a> is a multi-service mesh management plane offering lifecycle management of more types of service meshes than any other tool available today. 
+Meshery facilitates adopting, configuring, operating and managing performance of different service meshes and incorporates the collection and display of metrics from applications running on top of any service mesh. 
+<br /><br />
+</p>
+<br />
+<p style="clear:both;">
+<h2><a href="https://github.com/Vi1234sh12/Face-X/tree/master/Recognition-using-IOT">Recognition-using-IOT</a></h2>
+<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Recognition-using-IOT"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/Assests/sp_logo.png"
+style="margin:10px;" width="150px" 
+alt="Meshery - Service Mesh Management Plane" align="left" /></a>
+<a href="https://meshery.io">Meshery</a> is a multi-service mesh management plane offering lifecycle management of more types of service meshes than any other tool available today. 
+Meshery facilitates adopting, configuring, operating and managing performance of different service meshes and incorporates the collection and display of metrics from applications running on top of any service mesh. 
+<br /><br />
+</p>
 
 
 ### Demonstration of different algorithms and operations on faces 
