@@ -74,7 +74,7 @@ alt="Meshery - Service Mesh Management Plane" align="left" /></a>
 <a href="https://github.com/Vi1234sh12/Face-X/tree/master/Awesome-face-operations"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/Asome.png"
 style="margin:10px;" width="145px" 
 alt="Meshery - Service Mesh Management Plane" align="left" /></a>
-<a href="https://github.com/akshitagupta15june/Face-X/tree/master/Awesome-face-operations">Face Operation </a> The process of partitioning a digital image into multiple segments is defined as image segmentation. Segmentation aims to divide an image into regions that can be more representative and easier to analyze.
+<a href="https://github.com/akshitagupta15june/Face-X/tree/master/Awesome-face-operations">Face Operation </a>This contains some Awesome Face Operations.
 <br /><br />
 </p>
 <br />
