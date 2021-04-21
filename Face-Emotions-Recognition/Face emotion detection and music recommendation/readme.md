@@ -10,6 +10,16 @@ Segmentation separates image into meaningful reasons. Segmentation of an image i
  The facial image obtained from the face detection stage forms an input to the feature extraction stage. To obtain real time performance and to reduce time complexity, for the intent of expression recognition, only eyes and mouth are considered. The combination of two features is adequate to convey emotions accurately. 
 -  Emotion classification:
  The extracted feature points are processed to obtain the inputs for support vector machine for efficient training. 
+- The dataset we utilized for preparing the model is Million Song Dataset given by Kaggle. Others datasets can also be used. 
+ ### Block Diagrams:
+ 
+ ![Screenshot 2021-04-21 221922](https://user-images.githubusercontent.com/60208804/115591513-ca4f2500-a2ef-11eb-858d-a8e706083df6.png)
+ ![Screenshot 2021-04-21 222423](https://user-images.githubusercontent.com/60208804/115592306-ac35f480-a2f0-11eb-957c-b0a6b8518b29.png)
+ 
+ ### Dependencies:
+ - Mathplotlib
+ - PyTorch
+ - Keras
  
  ### Example:
  ![Screenshot 2021-04-21 195649](https://user-images.githubusercontent.com/60208804/115570597-dfba5400-a2db-11eb-878c-6d8793fdf44a.png)
