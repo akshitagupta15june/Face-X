@@ -142,7 +142,7 @@ pip install -r requirements.txt
 
 ## Engaging and Collaborating with
 
- <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Assests/Untitled%20(2).png"/>
+ <img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/Untitled%20(2).png"/>
   
 	
 </br>
