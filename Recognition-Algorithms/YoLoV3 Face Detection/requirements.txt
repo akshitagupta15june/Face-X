@@ -1,7 +1,0 @@
-numpy
-tensorflow>=1.12.1
-opencv-python
-opencv-contrib-python
-keras
-matplotlib
-pillow
