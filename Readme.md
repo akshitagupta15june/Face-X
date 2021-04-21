@@ -1,7 +1,3 @@
-<p style="text-align:center;" align="center"><a href="https://github.com/Vi1234sh12/Face-X/blob/master/Readme.md"><img align="center" style="margin-bottom:20px;" src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/Offical_logo-Face-x.png"  width="70%" /></a><br /><br /></p>
-
-
-
 <div align="center">
 
 
@@ -13,20 +9,17 @@
 ![Stars](https://img.shields.io/github/stars/akshitagupta15june/Face-X)
 [![License](https://img.shields.io/github/license/akshitagupta15june/Face-X)](https://github.com/akshitagupta15june/lane_detection_opencv/blob/master/LICENSE)
 
+<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/logo/Face-X.png" width=250 height=250>
+
 <h3>Join official <a href="https://discord.com/invite/Jmc97prqjb">Discord Channel</a> for discussion.</h3>
 
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com)
 </div>
 
 
-
-## About Face-x 
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/537-5375273_teamwork-isometric-illustration-clipart-removebg-preview.png"  height="500px" align="right"/>
-Face-x is a face detection and recognition GitHub project
-
-Our approach to face detection and recognition is based on FaceNet and InsightFace libraries that use deep neural networks. Face-x  provides a convenient REST API for training algorithms to detect and recognize faces from your collection of images (aka Face Collection). The solution also features a role management system that allows you to easily control who has access to your Face Collection.here are several approaches for an algorithm to recognize a face. An algorithm can make use of statistics, try to find a pattern which represents a specific person or use a Convolutional Neural Network (CNN)
-
-This project demonstrates all kinds of algorithms and various operations that can be implemented on a frontal face. The available algorithms process only high-resolution static shots and perform sufficiently well.
+<div align="center">
+<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/Cartoonify_face_image/Images/recof.gif" width="390px" height="350px" align='center'>
+</div>
 
 
 ##  Demonstration of different algorithms and operations on faces
