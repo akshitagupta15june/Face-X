@@ -78,7 +78,8 @@ alt="Meshery - Service Mesh Management Plane" align="left" /></a>
 <br /><br />
 </p>
 <br />
-
+<br />
+<br />
 ## ⭐ How to get started with open source?
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/isometric.png" height="390px" align="right"/>
 
