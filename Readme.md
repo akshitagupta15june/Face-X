@@ -34,7 +34,7 @@ alt="Meshery - Service Mesh Management Plane" align="left" /></a>
 </p>
 <br />
 <p style="clear:both;">
-<h2><a href="https://github.com/Vi1234sh12/Face-X/tree/master/Recognition-using-IOT">Recognition-using-IOT</a></h2>
+<h2><a href="https://github.com/Vi1234sh12/Face-X/tree/master/Recognition-using-IOT">Face-Recognition-using-IOT</a></h2>
 <a href="https://github.com/Vi1234sh12/Face-X/tree/master/Recognition-using-IOT"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/sp_logo.png"
 style="margin:10px;" width="150px" 
 alt="Meshery - Service Mesh Management Plane" align="left" /></a>
@@ -74,7 +74,7 @@ alt="Meshery - Service Mesh Management Plane" align="left" /></a>
 <a href="https://github.com/Vi1234sh12/Face-X/tree/master/Awesome-face-operations"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/Asome.png"
 style="margin:10px;" width="145px" 
 alt="Meshery - Service Mesh Management Plane" align="left" /></a>
-<a href="https://github.com/akshitagupta15june/Face-X/tree/master/Awesome-face-operations">Face Operation </a>This contains some Awesome Face Operations.
+<a href="https://github.com/akshitagupta15june/Face-X/tree/master/Awesome-face-operations">Awesome Face Operations</a> that will blow your mind!
 <br /><br />
 </p>
 <br />
