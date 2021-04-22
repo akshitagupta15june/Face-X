@@ -22,6 +22,8 @@ necessary to have signals Xj to consider using ICA: Xj may also be multi-dimensi
 vectors" Si, ICA will expand each signal Xj into a weighted sum of source vectors Si (ICA
 estimates both the source vectors Si and the coefficients of the weighted sum). 
 
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Face%20recognition%20using%20ICA%20(Independent%20Component%20Analysis)/Images/nihms-199383-f0005.jpg" align="right"/>
+
 This view is not far from the PCA expansion: the eigenvectors of PCA are replaced by the independent
 source vectors in ICA. For a review of ICA techniques and properties, see for example [5].
 In our case, we assume that the faces in the learning set, viewed as high-dimensional vectors,
@@ -93,6 +95,7 @@ The number of independent components found by the ICA algorithm corresponds with
 input. In order to have control over the number of independent components extracted by the algorithm, instead
 of performing ICA on the n original images, we performed ICA on a set of m linear combinations of those images,
 
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Face%20recognition%20using%20ICA%20(Independent%20Component%20Analysis)/Images/nihms-199383-f0010.jpg" align="center"/>
 
 The independent basis image representation consisted of the coefficients, b, for the linear combination of
 independent basis images, u, that comprised each face image x.
@@ -201,3 +204,16 @@ extensions
  Basis images for the ICA factorial representation, obtained by training on the first 200 principal
 component coeficients of the face images, oriented in columns of the input. Bases were contained in the columns of
 A= W,'. 
+
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Face%20Recognition%20Using%20Inception%20V3%20model/Images/community.png" height="400px" align="left"/>
+<p style="clear:both;">
+<h1><a name="contributing"></a><a name="community"></a> <a href="https://github.com/akshitagupta15june/Face-X">Community</a> and <a href="https://github.com/akshitagupta15june/Face-X/blob/master/CONTRIBUTING.md">Contributing</a></h1>
+<p>Please do! Contributions, updates, <a href="https://github.com/akshitagupta15june/Face-X/issues"></a> and <a href=" ">pull requests</a> are welcome. This project is community-built and welcomes collaboration. Contributors are expected to adhere to the <a href="https://gssoc.girlscript.tech/">GOSSC Code of Conduct</a>.
+</p>
+<p>
+Jump into our <a href="https://discord.com/invite/Jmc97prqjb">Discord</a>! Our projects are community-built and welcome collaboration. 👍Be sure to see the <a href="https://github.com/akshitagupta15june/Face-X/blob/master/Readme.md">Face-X Community Welcome Guide</a> for a tour of resources available to you.
+</p>
+<p>
+<i>Not sure where to start?</i> Grab an open issue with the <a href="https://github.com/akshitagupta15june/Face-X/issues">help-wanted label</a>
+</p>
+
