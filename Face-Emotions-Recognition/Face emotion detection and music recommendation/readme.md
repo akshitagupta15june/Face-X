@@ -1,5 +1,3 @@
-![download](https://user-images.githubusercontent.com/60208804/115766216-5b440000-a3c5-11eb-8936-6007989e9b08.jpg)
-![download](https://user-images.githubusercontent.com/60208804/115766341-7dd61900-a3c5-11eb-9914-7b82efcdda5c.jpg)
 ### METHODOLOGY:
 -  Image Acquisition:
 The input image to the system can be captured using a web cam or can be acquired from the hard disk. This image undergoes image enhancement, where tone mapping is applied to images with low contrast to restore the original contrast of the image.
@@ -27,7 +25,6 @@ Segmentation separates image into meaningful reasons. Segmentation of an image i
  ![Screenshot 2021-04-21 195649](https://user-images.githubusercontent.com/60208804/115570597-dfba5400-a2db-11eb-878c-6d8793fdf44a.png)
 
 ### Output:
-![download](https://user-images.githubusercontent.com/60208804/115766435-9e05d800-a3c5-11eb-8641-53c9dcb936b4.jpg)
-
+![output](https://github.com/sudipg4112001/Face-X/blob/master/Face-Emotions-Recognition/Face%20emotion%20detection%20and%20music%20recommendation/images/output.jpg)
 
 After this the classified expression acts as an input and is used to select an appropriate playlist from the initially generated playlists and the songs from the playlists are played.
