@@ -34,6 +34,4 @@ from PCA) as feature vectors for the faces. It is expected that, ICA source vect
 independent (instead of PCA eigenvectors being uncorrelated only), they will be closer to
 natural features of images, and thus more able to represent differences between faces.
 
-ICA is an unsupervised learning rule that was derived from the principle of optimal information transfer through
-sigmoidal , neuron Consider the case of a single input, x, and output, y, passed through a nonlinear squashing
-function, g,
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Face%20recognition%20using%20ICA%20(Independent%20Component%20Analysis)/Images/ICA.PNG" height="400px"  />
