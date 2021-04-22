@@ -115,11 +115,31 @@ Under this architecture, the filters (rows of WI) were images, as were the colum
 columns of A formed a new set of basis images for the faces, and the coefficients for reconstructing each face were
 contained in the columns of the ICA outputs, U
 
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Face%20recognition%20using%20ICA%20(Independent%20Component%20Analysis)/Images/nihms-199383-f0006.jpg" align="right"/>
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Face%20recognition%20using%20ICA%20(Independent%20Component%20Analysis)/Images/nihms-199383-f0006.jpg" align="left"/>
 Two architectures for performing ICA on images. Left: Architecture for finding statistically independent
 basis images. Performing source separation on the face images produced independent component images in the rows
 of U. Right: Architecture for finding a factorial code. Performing source separation on the pixels produced a factorial
 code in the columns of the output matrix, U
+
+Image synthesis model for Architecture 2, based on Olshausen & Field (1996) and Bell & Sejnowski
+(1997). Each image in the dataset was considered to be a linear combination of underlying basis images, given by the
+matrix A. The basis images were each associated with a set of independent "causes", given by a vector of coefficients
+in S. The causes were recovered by a matrix of learned filters, WI, which attempts to invert the unknown basis
+functions to produce statistically independent outputs, U.
+
+Architecture 2 is associated with the image synthesis model of Olshausen and Field,16 and was also employed
+by Bell and Sejnowskig for finding image filters that produced statistically independent outputs from natural scenes.
+ Images were considered to be created from a set of basis images in A and a vector of underlying
+statistically independent image causes, in S. The ICA algorithm attempts to invert the basis images by finding a
+set of filters WI that produce statistically independent outputs. This image synthesis model differs from that in
+Figure 2 in that the basis images are the columns of A = WT', and the statistically independent sources, U, are the
+coefficients.
+
+The columns of the ICA output matrix, WIX = U, provided a factorial code for the training images in X. Each
+column of U contained the coefficients of the the basis images in A for reconstructing each image in X .
+The representational code for test images was found by WIXtesti = Utesti, where XteSt was the zero-mean matrix of
+test images, and WI was the weight matrix found by performing ICA on the training images. 
+
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Face%20recognition%20using%20ICA%20(Independent%20Component%20Analysis)/Images/A-basic-ICA-model-for-blind-source-separation.png" align="center"/>
 
 
