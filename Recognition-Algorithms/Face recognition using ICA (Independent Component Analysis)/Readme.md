@@ -153,6 +153,8 @@ second session that occurred up to two years after the first. Examples of the fo
 The two algorithms were trained on a single frontal view of each individual, and tested for recognition under three
 different conditions: same session, different expression; different session, same expression; and different session,
 different expression
+<br />
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Face%20recognition%20using%20ICA%20(Independent%20Component%20Analysis)/Images/nihms-199383-f0009.jpg" align="center"/>
 
 Coordinates for eye and mouth locations were provided with the FERET database. These coordinates were used
 to center the face images, crop and scale them to 60 x 50 pixels based on the area of the triangle defined by the eyes
@@ -176,7 +178,7 @@ for the test images were contained in the rows of Btest = RTest * wil where RT~~
 Face recognition performance was evaluated for the coefficient vectors b by the nearest neighbor algorithm.
 Coefficient vectors in the test set were assigned the class label of the coefficient vector in the training set with the
 most similar angle, as evaluated by the cosine
-
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Face%20recognition%20using%20ICA%20(Independent%20Component%20Analysis)/Images/nihms-199383-f0016.jpg" align="right"/>
 Face recognition performance for the principal component representation was evaluated by an identical procedure,
 using the principal component coefficients contained in the rows of R. Figure 10 gives face recognition performance
 with both the ICA and the PCA based representations. Face recognition performance with the ICA representation
