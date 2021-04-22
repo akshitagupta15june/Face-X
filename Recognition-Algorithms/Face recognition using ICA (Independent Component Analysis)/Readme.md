@@ -77,6 +77,8 @@ matrix. The sources were recovered by a matrix of learned filters, WI, which pro
 outputs, U. This synthesis model is related to that used to perform blind separation on an unknown mixture of
 auditory signals1 and to separate the sources of EEG signals7 and fMRI image
 
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Face%20recognition%20using%20ICA%20(Independent%20Component%20Analysis)/Images/ICA-InfoMax-algorithm-Image-synthesis-model-for-architecture-I.png" align="right" />
+
  Image synthesis model. For finding a set of independent component images, the images in X are
 considered to be a linear combination of statistically independent basis images, S, where A is an unknown mixing
 matrix. The basis images were recovered by a matrix of learned filters, WI, that produced statistically independent
@@ -113,6 +115,7 @@ Under this architecture, the filters (rows of WI) were images, as were the colum
 columns of A formed a new set of basis images for the faces, and the coefficients for reconstructing each face were
 contained in the columns of the ICA outputs, U
 
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Face%20recognition%20using%20ICA%20(Independent%20Component%20Analysis)/Images/nihms-199383-f0006.jpg" align="right"/>
 Two architectures for performing ICA on images. Left: Architecture for finding statistically independent
 basis images. Performing source separation on the face images produced independent component images in the rows
 of U. Right: Architecture for finding a factorial code. Performing source separation on the pixels produced a factorial
