@@ -117,6 +117,7 @@ Two architectures for performing ICA on images. Left: Architecture for finding s
 basis images. Performing source separation on the face images produced independent component images in the rows
 of U. Right: Architecture for finding a factorial code. Performing source separation on the pixels produced a factorial
 code in the columns of the output matrix, U
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Face%20recognition%20using%20ICA%20(Independent%20Component%20Analysis)/Images/A-basic-ICA-model-for-blind-source-separation.png" align="center"/>
 
 
 
