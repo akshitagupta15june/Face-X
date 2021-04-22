@@ -15,8 +15,8 @@ on the mixture, it is possible to recover the original signals from the observat
 algorithmic techniques making this task possible are often called `ICA`, as they factorise the
 observations as a combination of original sources. If the mixing is linear, ICA estimates the
 inverse of the mixing matrix. 
-              The number of observations N (1 ≤ j ≤ N) must be at least equal
-to the number of original signals M (1 ≤ i ≤ M); often it is assumed that N = M. It is not
+              The number of observations` N (1 ≤ j ≤ N)` must be at least equal
+to the number of original signals `M (1 ≤ i ≤ M)`; often it is assumed that `N = M`. It is not
 necessary to have signals Xj to consider using ICA: Xj may also be multi-dimensional data
 (vectors). Assuming that each Xj is an unknown, different combination of original "source
 vectors" Si, ICA will expand each signal Xj into a weighted sum of source vectors Si (ICA
@@ -67,17 +67,18 @@ covariance matrix:
 
 This removes both the first and the second order statistics of the data; both the mean and covariances are set to
 zero and the variances are equalized. The full transform from the zero-mean input was calculated as the product of
-the sphering matrix and the learned matrix, WI = W * Wz. The pre-whitening filter in the ICA algorithm has the
+the sphering matrix and the learned matrix,` WI = W * Wz`. The pre-whitening filter in the ICA algorithm has the
 Mexican-hat shape of retinal ganglion cell receptive fields which remove much of the variability due to lighting.
 
 ## 2. INDEPENDENT COMPONENT REPRESENTATIONS OF FACE IMAGES 
+
 ### 1. Statistically independent basis images
 To find a set of statistically independent basis images for the set of faces, we separated the independent components
-of the face images according to the image synthesis model of Figure 2. The face images in X were assumed to be
+of the face images according to the image synthesis model of  The face images in X were assumed to be
 a linear mixture of an unknown set of statistically independent source images S, where A is an unknown mixing
 matrix. The sources were recovered by a matrix of learned filters, WI, which produced statistically independent
 outputs, U. This synthesis model is related to that used to perform blind separation on an unknown mixture of
-auditory signals1 and to separate the sources of EEG signals7 and fMRI image
+auditory signals1 and to separate the sources of ` EEG signals7` and ` fMRI image`
 
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Face%20recognition%20using%20ICA%20(Independent%20Component%20Analysis)/Images/ICA-InfoMax-algorithm-Image-synthesis-model-for-architecture-I.png" align="right" />
 
@@ -86,7 +87,7 @@ considered to be a linear combination of statistically independent basis images,
 matrix. The basis images were recovered by a matrix of learned filters, WI, that produced statistically independent
 outputs, U.
 The images comprised the rows of the input matrix, X. With the input images in the rows of X, the ICA
-outputs in the rows of WIX = U were also images, and provided a set of independent basis images for the faces
+outputs in the rows of `WIX = U `were also images, and provided a set of independent basis images for the faces
 . These basis images can be considered a set of statistically independent facial features, where the pixel
 values in each feature image were statistically independent from the pixel values in the other feature images. The
 ICA representation consisted of the coefficients for the linear combination of independent basis images in U that
@@ -100,8 +101,8 @@ of performing ICA on the n original images, we performed ICA on a set of m linea
 The independent basis image representation consisted of the coefficients, b, for the linear combination of
 independent basis images, u, that comprised each face image x.
 
-  where m < n. Recall that the image synthesis model assumes that the images in X are a linear combination of a
-set of unknown statistically independent sources. The image synthesis model is unaffected by replacing the original
+  where` m < n`. Recall that the image synthesis model assumes that the images in X are a linear combination of a
+set of unknown `statistically independent sources`. The image synthesis model is unaffected by replacing the original
 images with some other linear combination of the images. 
 
 ### 2.A factorial code 
@@ -119,28 +120,29 @@ columns of A formed a new set of basis images for the faces, and the coefficient
 contained in the columns of the ICA outputs, U
 
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Face%20recognition%20using%20ICA%20(Independent%20Component%20Analysis)/Images/nihms-199383-f0006.jpg" align="left"/>
+
 Two architectures for performing ICA on images. Left: Architecture for finding statistically independent
 basis images. Performing source separation on the face images produced independent component images in the rows
 of U. Right: Architecture for finding a factorial code. Performing source separation on the pixels produced a factorial
 code in the columns of the output matrix, U
 
-Image synthesis model for Architecture 2, based on Olshausen & Field (1996) and Bell & Sejnowski
-(1997). Each image in the dataset was considered to be a linear combination of underlying basis images, given by the
+Image synthesis model for Architecture 2,` based on Olshausen & Field (1996)` and `Bell & Sejnowski
+(1997)`. Each image in the dataset was considered to be a linear combination of underlying basis images, given by the
 matrix A. The basis images were each associated with a set of independent "causes", given by a vector of coefficients
 in S. The causes were recovered by a matrix of learned filters, WI, which attempts to invert the unknown basis
 functions to produce statistically independent outputs, U.
 
-Architecture 2 is associated with the image synthesis model of Olshausen and Field,16 and was also employed
-by Bell and Sejnowskig for finding image filters that produced statistically independent outputs from natural scenes.
+Architecture 2 is associated with the image synthesis `model of Olshausen` and Field,16 and was also employed
+by `Bell and Sejnowskig` for finding image filters that produced statistically independent outputs from natural scenes.
  Images were considered to be created from a set of basis images in A and a vector of underlying
 statistically independent image causes, in S. The ICA algorithm attempts to invert the basis images by finding a
 set of filters WI that produce statistically independent outputs. This image synthesis model differs from that in
-Figure 2 in that the basis images are the columns of A = WT', and the statistically independent sources, U, are the
+Figure 2 in that the basis images are the columns of `A = WT `', and the statistically independent sources, U, are the
 coefficients.
 
-The columns of the ICA output matrix, WIX = U, provided a factorial code for the training images in X. Each
+The columns of the ICA output matrix,` WIX = U `, provided a factorial code for the training images in X. Each
 column of U contained the coefficients of the the basis images in A for reconstructing each image in X .
-The representational code for test images was found by WIXtesti = Utesti, where XteSt was the zero-mean matrix of
+The representational code for test images was found by` WIXtesti = Utesti `, where XteSt was the zero-mean matrix of
 test images, and WI was the weight matrix found by performing ICA on the training images. 
 
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Face%20recognition%20using%20ICA%20(Independent%20Component%20Analysis)/Images/A-basic-ICA-model-for-blind-source-separation.png" align="center"/>
@@ -160,12 +162,14 @@ different expression
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Face%20recognition%20using%20ICA%20(Independent%20Component%20Analysis)/Images/nihms-199383-f0009.jpg" align="center"/>
 
 Coordinates for eye and mouth locations were provided with the FERET database. These coordinates were used
-to center the face images, crop and scale them to 60 x 50 pixels based on the area of the triangle defined by the eyes
+to center the face images, crop and scale them to `60 x 50` pixels based on the area of the triangle defined by the eyes
 and mouth. The luminance was normalized. For the subsequent analyses, the rows of the images were concatenated
-to produce 1 x 3000 dimensional vectors.
+to produce `1 x 3000 ` dimensional vectors.
+
 ### 1. Independent basis architecture
+
 The principal component axes of the Training Set were found by calculating the eigenvectors of the pixelwise covariance matrix over the set of face images. Independent component analysis was then performed on the first 200
-of these eigenvectors, Pzoo. The 1 x 3000 eigenvectors in Pzoo comprised the rows of the 200 x 3000 input matrix
+of these eigenvectors, Pzoo. The 1 x 3000 eigenvectors in Pzoo comprised the rows of the ` 200 x 3000 `input matrix
 X. The input matrix X was sphered according to Equation 2, and the weights, W, were updated according to
 Equation 1 for 1600 iterations. The learning rate was initialized at 0.001 and annealed down to 0.0001. Training
 
@@ -174,10 +178,10 @@ images were contained in the rows of the output matrix U.
 Figure 8 shows a subset of 25 source images. A set of principal component basis images (PCA axes), are shown
 in Figure 9 for comparison. The ICA basis images were more spatially local than the principal component basis
 images. Two factors contribute to the local property of the ICA basis images: The ICA algorithm produces sparse
- output^,^ and secondly, most of the statistical dependencies may be in spatially proximal image locations.
+ output and secondly, most of the statistical dependencies may be in spatially proximal image locations.
 These source images in the rows of U were used as the basis of the ICA representation. The coefficients for the
-zero-mean training images were contained in the rows of B = Rzoo * w;' according to Equation 3, and coefficients
-for the test images were contained in the rows of Btest = RTest * wil where RT~~~ = Test * Pzoo.
+zero-mean training images were contained in the rows of `B = Rzoo * w `;' according to Equation 3, and coefficients
+for the test images were contained in the rows of` Btest = RTest * wil where R = Test * Pzoo`.
 Face recognition performance was evaluated for the coefficient vectors b by the nearest neighbor algorithm.
 Coefficient vectors in the test set were assigned the class label of the coefficient vector in the training set with the
 most similar angle, as evaluated by the cosine
@@ -193,7 +197,7 @@ components did not improve PCA performance, nor did selecting intermediate range
 
 ### 2. Factorial code architecture 
 
-Face recognition performance was evaluated by the nearest neighbor procedure of Section 3.1. Figure 13 compares the face recognition performance using the ICA factorial code representation to the ICA representation using
+Face recognition performance was evaluated by the nearest neighbor procedure of  compares the face recognition performance using the ICA factorial code representation to the ICA representation using
 independent basis images and to the PCA representation, each with 200 coefficients. The two ICA representations
 gave similar recognition performance, and both outperformed the PCA representation. Class discriminability of the
 new ICA coefficients was calculated according to Equation 5. Again, the ICA coefficients had consistently higher
@@ -203,7 +207,7 @@ extensions
 
  Basis images for the ICA factorial representation, obtained by training on the first 200 principal
 component coeficients of the face images, oriented in columns of the input. Bases were contained in the columns of
-A= W,'. 
+`A = W `,'. 
 
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Face%20Recognition%20Using%20Inception%20V3%20model/Images/community.png" height="400px" align="left"/>
 <p style="clear:both;">
