@@ -60,6 +60,7 @@ We employed the logistic transfer function, g(u) = (1 /1 + e^-N), giving y' = (1
 The algorithm includes a "sphering" step prior to learningg The row means are subtracted from the dataset,
 X, and then X is passed through the zero-phase whitening filter, W,, which is twice the inverse square root of the
 covariance matrix:
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Face%20recognition%20using%20ICA%20(Independent%20Component%20Analysis)/Images/ICA2.PNG" height="80px" align="center"/>
 
 This removes both the first and the second order statistics of the data; both the mean and covariances are set to
 zero and the variances are equalized. The full transform from the zero-mean input was calculated as the product of
