@@ -34,4 +34,34 @@ from PCA) as feature vectors for the faces. It is expected that, ICA source vect
 independent (instead of PCA eigenvectors being uncorrelated only), they will be closer to
 natural features of images, and thus more able to represent differences between faces.
 
+    The optimal weight w on x for maximizing information transfer is the one that best matches the probability
+density of x to the slope of the nonlinearity. The optimal w produces the flattest possible output density, which in
+other words, maximizes the entropy of the output.
+
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Face%20recognition%20using%20ICA%20(Independent%20Component%20Analysis)/Images/ICA.PNG" height="400px"  />
+
+Optimal information flow in sigmoidal neurons. The input x is passed through a nonlinear function, g(x).
+The information in the output density  `fy(y)`  depends on matching the mean and variance of f, (x) to the slope and
+threshold of `g(x)`. Right: `fy(y) ` is plotted for different values of the weight, w. The optimal weight, w,,t transmits
+the most information
+
+The optimal weight is found by gradient ascent on the entropy of the output, y with respect to w. When there are
+multiple inputs and outputs, maximizing the joint entropy of the output encourages the individual outputs to move
+towards statistical independence. When the form of the nonlinear transfer function g is the same as the cumulative
+density functions of the underlying independent components (up to a scaling and translation) it can be shown that
+maximizing the mutual information between the `input X`  and the `output Y` also minimizes the mutual information
+between the  `Ui`
+
+The update rule for the weight matrix, W, for multiple inputs and outputs is given by
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-Algorithms/Face%20recognition%20using%20ICA%20(Independent%20Component%20Analysis)/Images/ICA1.PNG" height="100px" align="right"/>
+
+We employed the logistic transfer function, g(u) = (1 /1 + e^-N), giving y' = (1 - 2yi).
+
+The algorithm includes a "sphering" step prior to learningg The row means are subtracted from the dataset,
+X, and then X is passed through the zero-phase whitening filter, W,, which is twice the inverse square root of the
+covariance matrix:
+
+This removes both the first and the second order statistics of the data; both the mean and covariances are set to
+zero and the variances are equalized. The full transform from the zero-mean input was calculated as the product of
+the sphering matrix and the learned matrix, WI = W * Wz. The pre-whitening filter in the ICA algorithm has the
+Mexican-hat shape of retinal ganglion cell receptive fields which remove much of the variability due to lighting.
