@@ -1,4 +1,18 @@
 # Face-Generation
+## Contents :
+
+* Pre-processed Data
+* Create a DataLoader
+* Define the Model
+* Discriminator
+* Generator
+* Initialize the weights of your network
+* Build a complete network
+* Discriminator and Generator Losses
+* Optimizers
+* Training
+* Training Loss
+* Generator samples from the training
 
 
 # Procedure:
