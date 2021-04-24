@@ -1,3 +1,4 @@
+
 # Generating Faces using GANs
 
 DataSet: [CelebFaces Attributes Dataset (CelebA)](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) to train the adversarial networks.
@@ -39,5 +40,4 @@ A GAN is comprised of two adversarial networks, a discriminator and a generator.
 9.Discriminator and Generator Losses
 
 10.Generator samples from training
-
 
