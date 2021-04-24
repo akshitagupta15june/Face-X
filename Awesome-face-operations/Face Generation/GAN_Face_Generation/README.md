@@ -41,4 +41,3 @@ A GAN is comprised of two adversarial networks, a discriminator and a generator.
 
 10.Generator samples from training
 
-
