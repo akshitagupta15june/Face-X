@@ -83,7 +83,7 @@ alt="Meshery - Service Mesh Management Plane" align="left" /></a>
 
 
 ## ⭐ How to get started with open source?
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/isometric.png" height="390px" align="right"/>
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/isometric.png" height="290px" align="right"/>
 
 You can refer to the following articles on the basics of Git and Github.
 
