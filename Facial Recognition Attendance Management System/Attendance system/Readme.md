@@ -69,7 +69,7 @@ The image obtained in the previous step uses the Grid X and Grid Y parameters an
 The training of the algorithm is done.  For finding the image which  is same  as  the input  image,  the two  histograms  are compared  and  the  image  corresponding  to  the  nearest histogram is returned.   Different approaches are used for the calculation of distance between the two histograms. Here we use the Euclidean distance based on the formula
 
 ## ADVANTAGES OF USING LBPH ALGORITHM: 
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Facial%20Recognition%20Attendance%20Management%20System/Attendance%20system/images/images.jpg" align="right"/>
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Facial%20Recognition%20Attendance%20Management%20System/Attendance%20system/images/images.jpg" width="500px" align="right"/>
 
 1. It is one of the simplest algorithms for face recognition.
 2. The local features of the images can be characterized by this algorithm.
