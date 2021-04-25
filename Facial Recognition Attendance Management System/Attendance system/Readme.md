@@ -74,6 +74,34 @@ The training of the algorithm is done.  For finding the image which  is same  as
 3. Using this algorithm, considerable results can be obtained. 
 4. Open CV library is used to implement LBPH algorithm
 
+## DATABASE CREATION: 
+The first step in the Attendance  System is  the creation  of a database of faces that will be used. Different individuals are considered and a camera is used for the detection of faces and the recording of the frontal face. The number of frame to be taken for consideration can be modified for accuracy levels. These images are then stored in the database along with the Registration ID. 
+
+## TRAINING OF FACES:
+The images are saved in gray scale after being recorded by a camera.  The LBPH  recognizer  is employed  to coach  these faces because the coaching sets the resolution and therefore the recognized face resolutions are completely variant. A part of the  image  is  taken  as  the  centre  and  the  neighbours  are thresholded  against it.  If  the  intensity of  the  centre part  is greater or equal than it neighbour then it is denoted as 1 and 0 if not. This will result in binary patterns generally known as LBP code.
+
+Colons can be used to align columns.
+
+| ACE           |  FACE         | Cool  |
+| ------------- |:-------------:| -----:|
+| 1.Confidence factor based on output is 2,000-3,000.  | 	It is 100-400                           |          -                    |
+| 2.Threshold value is 4,000.                          | Threshold value is 400                   | Threshold value is 7.         |
+| 3.Principle of dataset generation is component based | It is component based.                   | It is pixel based.            |
+| 4.Basic principle is PCA.                            | Basic principle is LDA.                  | Basic principle is Histogram. |
+| 5.Background noise is maximum.                       | Background noise is medium.              | Background noise is minimum.  |
+| 6.Efficiency is minimum.                             | Efficiency is greater than Eigen face.   | Efficiency is maximum.        |
+
+## FACE DETECTION:
+The data of the trained faces is stored in .py format. The faces are detected using the Haar cascade frontal face module.
+## FACE RECOGNITION: 
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Facial%20Recognition%20Attendance%20Management%20System/Attendance%20system/images/Flowchart-for-real-time-face-detection-and-recognition.png" height="50%" width="40%" align="right" />
+The data of the trained faces are stored and the detected faces are compared to the IDs of the students and recognized. The recording  of  faces  is  done  in  real  time  to  guarantee  the accuracy of the system. This system is precisely dependant on the camera’s condition.
+
+The training process starts with traversing of the training data directory. Each image  in the training  date is converted into gray scale. A part of the image is taken as center and threshold its neighbours against it. If the intensity of the middle part is more or equal than its neighbour then denote it with 1 and 0 if not. After this the  images are  resized. Then the images  are converted  into  a  numpy  array  which  is  the  central  data structure  of  the  numpy  library. Each  face  in  the image  is detected. Creation of separate lists of each face is done and the faces are appended into them along with their respective IDs. The faces are then trained with their respective IDs.
+
+The input image is read by the camera of the phone. After the image is read it is converted into gray scale. The faces in the image  are  detected  using  the  Haar  Cascade  frontal  face module. Using the LBPH algorithm, the faces in the image are predicted.  After the images are predicted, the recognized faces are shown in a green box along with their names. 
+
+
 ## CODE OVERVIEW
 ```
 import cv2
