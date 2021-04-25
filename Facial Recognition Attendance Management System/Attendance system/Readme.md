@@ -2,7 +2,7 @@
 
 # Facial Recognition Attendance Management System 
 
-## INTRODUCTION
+## 1.INTRODUCTION
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Facial%20Recognition%20Attendance%20Management%20System/Attendance%20system/images/561-r.png" height="400px" align="right"/>
 A facial recognition system is a computer application
 which is capable of identifying or verifying a person from a
@@ -27,10 +27,10 @@ organization are increasing the requirements for lecturers or
 to the organization is increase the complexity of attendance
 monitoring and number of persons present.
 
-## OVERVIEW
+## 2.OVERVIEW
 Face  recognition  being  a  biometric  technique  implies determination if the image of the face of any particular person matches any of the face images that are stored in a database. This difficulty is tough to resolve automatically because of the changes that several factors, like facial expression, aging and even lighting can affect the image. Facial recognition among the various biometric techniques may not be the most authentic but it has various advantages over the others. Face recognition is  natural,  feasible  and  does  not  require  assistance.  The expected system engages the face recognition approach for the automating the attendance procedure of students or employees without their involvement. A web cam is used for capturing the images of students or employees. The faces in the captured images are detected and compared with the images in database and the attendance is marked. 
 
-## IMAGE PROCESSING 
+## 3.IMAGE PROCESSING 
 The facial recognition process can be split into two major stages: processing which occurs before detection involving face detection and alignment and later recognition is done using feature extraction and matching steps.
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Facial%20Recognition%20Attendance%20Management%20System/Attendance%20system/images/FRA4.PNG" align="right"/>
  - `FACE DETECTION `: 
@@ -40,7 +40,7 @@ The facial recognition process can be split into two major stages: processing wh
 -  `FACE RECOGNITION` :
    The last step  after the  representation of  faces is  to identify them.  For  automatic  recognition  we  need  to  build  a  face database. Various images are taken foe      each person and their features are extracted and stored in the database.  Then when an input image is fed the face detection and feature extraction is performed and its        feature to each face class is compared and stored in the database.
    
-## ALGORITHM  
+## 4.ALGORITHM  
 There  are  various  algorithms  used  for  facial  recognition. Some of them are as follows: 
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Facial%20Recognition%20Attendance%20Management%20System/Attendance%20system/images/deep_.png" height="30%" align="right"/>
    1. `Eigen faces`
@@ -58,17 +58,17 @@ This method needs the gray scale pictures for dealing with the training  part.  
 -  ` Grid X: ` The  number  of  cells  along  the  horizontal  direction  is represented as Grid X. With the increase in number of cells the grid becomes finer which results in       increase of dimensional feature vector. 
 -  ` Grid Y`: The number of cells along the vertical direction is represented as  Grid  Y. With  the  increase in  number  of  cells  the grid becomes finer which results in increase of dimensional feature vector.
 
-## ALGORITHM TRAINING: 
+## 5.ALGORITHM TRAINING: 
 For the training purpose of the dataset of the facial images of the  people  to be    recognized along  with  the unique  ID  is required  so  that  the  presented  approach  will  utilize  the provided  information  for  perceiving  an  input  image  and providing the output. Same images require same ID. 
 
-## COMPUTATION OF THE ALGORITHM: 
+## 6.COMPUTATION OF THE ALGORITHM: 
 The intermediate  image with improved facial  characteristics which corresponds to the original image is created in the first step. Based on the parameters provided, sliding window theory is used in order to achieve so. Facial  image  is  converted  into  gray  scale.  A  3x3  pixels window is taken which can also be expressed as a 3x3 matrix which contains the intensity of each pixel (0-255). After this we consider the central value of the matrix which we take as the threshold. This value defines the new values obtained from the 8 neighbours. A new binary value is set for each neighbour of the central value. For the values equal to or greater than the threshold value 1 will be the output otherwise 0 will be  the output. Only binary values will be present in the matrix and the  concatenation is  performed at  each position  to get  new values at each position.  Then the conversion  of this binary value into a decimal value is done which is made the central value of the matrix. It is a pixel of the actual image. As the process is completed, we get a new image which serves as the better characteristics of the original image.
-## EXTRACTION OF HISTOGRAM:
+## 7.EXTRACTION OF HISTOGRAM:
 The image obtained in the previous step uses the Grid X and Grid Y parameters and the image is split into multiple grids. Based on the image the histogram can be extracted as below: 1. The image is in gray scale and each histogram will consist of only 256 positions (0-255) which symbolises the existences of each pixel intensity. 2. After this each histogram is created and a new and bigger histogram is done. Let us suppose that there are 8x8 grids, then there will be 16.384 positions in total in the final histogram. Ultimately the  histogram signifies the features of the actual image. 
-## THE FACE RECOGNITION:
+## 8.THE FACE RECOGNITION:
 The training of the algorithm is done.  For finding the image which  is same  as  the input  image,  the two  histograms  are compared  and  the  image  corresponding  to  the  nearest histogram is returned.   Different approaches are used for the calculation of distance between the two histograms. Here we use the Euclidean distance based on the formula
 
-## ADVANTAGES OF USING LBPH ALGORITHM: 
+## 9.ADVANTAGES OF USING LBPH ALGORITHM: 
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Facial%20Recognition%20Attendance%20Management%20System/Attendance%20system/images/images.jpg" width="500px" align="right"/>
 
 1. It is one of the simplest algorithms for face recognition.
@@ -76,10 +76,10 @@ The training of the algorithm is done.  For finding the image which  is same  as
 3. Using this algorithm, considerable results can be obtained. 
 4. Open CV library is used to implement LBPH algorithm
 
-## DATABASE CREATION: 
+## 10.DATABASE CREATION: 
 The first step in the Attendance  System is  the creation  of a database of faces that will be used. Different individuals are considered and a camera is used for the detection of faces and the recording of the frontal face. The number of frame to be taken for consideration can be modified for accuracy levels. These images are then stored in the database along with the Registration ID. 
 
-## TRAINING OF FACES:
+## 11.TRAINING OF FACES:
 The images are saved in gray scale after being recorded by a camera.  The LBPH  recognizer  is employed  to coach  these faces because the coaching sets the resolution and therefore the recognized face resolutions are completely variant. A part of the  image  is  taken  as  the  centre  and  the  neighbours  are thresholded  against it.  If  the  intensity of  the  centre part  is greater or equal than it neighbour then it is denoted as 1 and 0 if not. This will result in binary patterns generally known as LBP code.
 
 Colons can be used to align columns.
@@ -93,7 +93,7 @@ Colons can be used to align columns.
 | 5.Background noise is maximum.                       | Background noise is medium.              | Background noise is minimum.  |
 | 6.Efficiency is minimum.                             | Efficiency is greater than Eigen face.   | Efficiency is maximum.        |
 
-## FACE DETECTION:
+## 12.FACE DETECTION:
 The data of the trained faces is stored in .py format. The faces are detected using the Haar cascade frontal face module.
 ## FACE RECOGNITION: 
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Facial%20Recognition%20Attendance%20Management%20System/Attendance%20system/images/Flowchart-for-real-time-face-detection-and-recognition.png" height="50%" width="40%" align="right" />
@@ -106,7 +106,7 @@ The input image is read by the camera of the phone. After the image is read it i
 
 
 
-## CODE OVERVIEW
+## 13.CODE OVERVIEW
 ```
 import cv2
 import numpy as np
@@ -192,7 +192,7 @@ while True:
     cv2.waitKey(1)
 
 ```
-## RESULT OBTAIN :
+## 14.RESULT OBTAIN :
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Facial%20Recognition%20Attendance%20Management%20System/Attendance%20system/images/crowd%20(1).png" />
 
 
