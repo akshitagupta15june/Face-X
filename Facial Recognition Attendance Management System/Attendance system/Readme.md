@@ -104,6 +104,8 @@ The training process starts with traversing of the training data directory. Each
 The input image is read by the camera of the phone. After the image is read it is converted into gray scale. The faces in the image  are  detected  using  the  Haar  Cascade  frontal  face module. Using the LBPH algorithm, the faces in the image are predicted.  After the images are predicted, the recognized faces are shown in a green box along with their names. 
 
 
+
+
 ## CODE OVERVIEW
 ```
 import cv2
@@ -190,8 +192,13 @@ while True:
     cv2.waitKey(1)
 
 ```
+## RESULT OBTAIN :
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Facial%20Recognition%20Attendance%20Management%20System/Attendance%20system/images/crowd%20(1).png" />
 
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Facial%20Recognition%20Attendance%20Management%20System/Attendance%20system/images/76d.png" height="400px" align="left"/>
+
+
+
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Facial%20Recognition%20Attendance%20Management%20System/Attendance%20system/images/76d.png" height="500px" align="left"/>
 <p style="clear:both;">
 <h1><a name="contributing"></a><a name="community"></a> <a href="https://github.com/akshitagupta15june/Face-X">Community</a> and <a href="https://github.com/akshitagupta15june/Face-X/blob/master/CONTRIBUTING.md">Contributing</a></h1>
 <p>Please do! Contributions, updates, <a href="https://github.com/akshitagupta15june/Face-X/issues"></a> and <a href=" ">pull requests</a> are welcome. This project is community-built and welcomes collaboration. Contributors are expected to adhere to the <a href="https://gssoc.girlscript.tech/">GOSSC Code of Conduct</a>.
