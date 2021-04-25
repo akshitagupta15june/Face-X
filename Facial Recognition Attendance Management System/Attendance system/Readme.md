@@ -67,7 +67,111 @@ The image obtained in the previous step uses the Grid X and Grid Y parameters an
 The training of the algorithm is done.  For finding the image which  is same  as  the input  image,  the two  histograms  are compared  and  the  image  corresponding  to  the  nearest histogram is returned.   Different approaches are used for the calculation of distance between the two histograms. Here we use the Euclidean distance based on the formula
 
 ## ADVANTAGES OF USING LBPH ALGORITHM: 
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Facial%20Recognition%20Attendance%20Management%20System/Attendance%20system/images/images.jpg" align="right"/>
+
 1. It is one of the simplest algorithms for face recognition.
 2. The local features of the images can be characterized by this algorithm.
 3. Using this algorithm, considerable results can be obtained. 
 4. Open CV library is used to implement LBPH algorithm
+
+## CODE OVERVIEW
+```
+import cv2
+import numpy as np
+import face_recognition
+import os
+from datetime import datetime
+# from PIL import ImageGrab
+
+```
+
+```
+path = 'Images_Attendance'
+images = []
+classNames = []
+myList = os.listdir(path)
+print(myList)
+for cl in myList:
+    curImg = cv2.imread(f'{path}/{cl}')
+    images.append(curImg)
+    classNames.append(os.path.splitext(cl)[0])
+print(classNames)
+ 
+def findEncodings(images):
+    encodeList = []
+    for img in images:
+        img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+        encode = face_recognition.face_encodings(img)[0]
+        encodeList.append(encode)
+    return encodeList
+ 
+def markAttendance(name):
+    with open('Attendance.csv','r+') as f:
+        myDataList = f.readlines()
+        nameList = []
+        for line in myDataList:
+            entry = line.split(',')
+            nameList.append(entry[0])
+        if name not in nameList:
+            now = datetime.now()
+            dtString = now.strftime('%H:%M:%S')
+            f.writelines(f'\n{name},{dtString}')
+            
+``` 
+ 
+```
+#### FOR CAPTURING SCREEN RATHER THAN WEBCAM
+# def captureScreen(bbox=(300,300,690+300,530+300)):
+#     capScr = np.array(ImageGrab.grab(bbox))
+#     capScr = cv2.cvtColor(capScr, cv2.COLOR_RGB2BGR)
+#     return capScr
+ 
+encodeListKnown = findEncodings(images)
+print('Encoding Complete')
+ 
+cap = cv2.VideoCapture(0)
+ 
+while True:
+    success, img = cap.read()
+    #img = captureScreen()
+    imgS = cv2.resize(img,(0,0),None,0.25,0.25)
+    imgS = cv2.cvtColor(imgS, cv2.COLOR_BGR2RGB)
+ 
+    facesCurFrame = face_recognition.face_locations(imgS)
+    encodesCurFrame = face_recognition.face_encodings(imgS,facesCurFrame)
+ 
+    for encodeFace,faceLoc in zip(encodesCurFrame,facesCurFrame):
+        matches = face_recognition.compare_faces(encodeListKnown,encodeFace)
+        faceDis = face_recognition.face_distance(encodeListKnown,encodeFace)
+        #print(faceDis)
+        matchIndex = np.argmin(faceDis)
+ 
+        if matches[matchIndex]:
+            name = classNames[matchIndex].upper()
+            #print(name)
+            y1,x2,y2,x1 = faceLoc
+            y1, x2, y2, x1 = y1*4,x2*4,y2*4,x1*4
+            cv2.rectangle(img,(x1,y1),(x2,y2),(0,255,0),2)
+            cv2.rectangle(img,(x1,y2-35),(x2,y2),(0,255,0),cv2.FILLED)
+            cv2.putText(img,name,(x1+6,y2-6),cv2.FONT_HERSHEY_COMPLEX,1,(255,255,255),2)
+            markAttendance(name)
+ 
+    cv2.imshow('Webcam',img)
+    cv2.waitKey(1)
+
+```
+
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-using-IOT/Images/IOT-banner2.png" height="400px" align="left"/>
+<p style="clear:both;">
+<h1><a name="contributing"></a><a name="community"></a> <a href="https://github.com/akshitagupta15june/Face-X">Community</a> and <a href="https://github.com/akshitagupta15june/Face-X/blob/master/CONTRIBUTING.md">Contributing</a></h1>
+<p>Please do! Contributions, updates, <a href="https://github.com/akshitagupta15june/Face-X/issues"></a> and <a href=" ">pull requests</a> are welcome. This project is community-built and welcomes collaboration. Contributors are expected to adhere to the <a href="https://gssoc.girlscript.tech/">GOSSC Code of Conduct</a>.
+</p>
+<p>
+Jump into our <a href="https://discord.com/invite/Jmc97prqjb">Discord</a>! Our projects are community-built and welcome collaboration. 👍Be sure to see the <a href="https://github.com/akshitagupta15june/Face-X/blob/master/Readme.md">Face-X Community Welcome Guide</a> for a tour of resources available to you.
+</p>
+<p>
+<i>Not sure where to start?</i> Grab an open issue with the <a href="https://github.com/akshitagupta15june/Face-X/issues">help-wanted label</a>
+</p>
+**`Open Source First`**
+<p>We build projects to provide learning environments, deployment and operational best practices, performance benchmarks, create documentation, share networking opportunities, and more. Our shared commitment to the open source spirit pushes Face-x projects forward.</p>
+
