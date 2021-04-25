@@ -32,6 +32,7 @@ Face  recognition  being  a  biometric  technique  implies determination if the 
 
 ## IMAGE PROCESSING 
 The facial recognition process can be split into two major stages: processing which occurs before detection involving face detection and alignment and later recognition is done using feature extraction and matching steps.
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Facial%20Recognition%20Attendance%20Management%20System/Attendance%20system/images/FRA4.PNG" align="right"/>
  - `FACE DETECTION `: 
     The primary function of this step is to conclude whether the human faces emerge in a given image, and what is the location of these faces. The expected outputs of this step     are patches which contain each face in the input image. In order to get a more  robust and  easily designable  face recognition  system Face  alignment  is  performed  to       rationalise  the  scales  and orientation of these patches.
  - `FEATURE EXTRACTION` : 
