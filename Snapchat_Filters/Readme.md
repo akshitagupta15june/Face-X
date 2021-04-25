@@ -6,6 +6,14 @@ Snapchat is a popular messaging app that lets users exchange pictures and videos
 <img align="center" src="_images/Face_filter.gif" width="50%" >
 </p>
 
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/akshitagupta15june/Face-X.git/issues)
+[![Forks](https://img.shields.io/github/forks/akshitagupta15june/Face-X.svg?logo=github)](https://github.com/akshitagupta15june/Face-X.git/network/members)
+[![Stargazers](https://img.shields.io/github/stars/akshitagupta15june/Face-X.svg?logo=github)](https://github.com/akshitagupta15june/Face-X/stargazers)
+[![Issues](https://img.shields.io/github/issues/akshitagupta15june/Face-X.svg?logo=github)](https://github.com/akshitagupta15june/Face-X/issues)
+![GitHub watchers](https://img.shields.io/github/watchers/akshitagupta15june/Face-X)
+![GitHub contributors](https://img.shields.io/github/contributors/akshitagupta15june/Face-X)
+
+
 
 ## Why Use Face Filters ?
 <ul>
@@ -24,7 +32,7 @@ Snapchat is a popular messaging app that lets users exchange pictures and videos
 
 
 # Want to contribute your own Snapchat Filter?
- You can refer to CONTRIBUTING.md (`https://github.com/akshitagupta15june/Face-X/blob/master/CONTRIBUTING.md`)
+ You can refer to [CONTRIBUTING.md](`https://github.com/akshitagupta15june/Face-X/blob/master/CONTRIBUTING.md`)
 #### Or follow the below steps - 
 - Fork this repository.
 - Clone the forked repository

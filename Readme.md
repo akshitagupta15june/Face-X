@@ -21,22 +21,69 @@
 <img src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/Cartoonify_face_image/Images/recof.gif" width="390px" height="350px" align='center'>
 </div>
 
-### Demonstration of different algorithms and operations on faces 
 
-#### [Recognition-Algorithms](https://github.com/akshitagupta15june/Face-X/tree/master/Recognition-Algorithms)
- 
+##  Demonstration of different algorithms and operations on faces
 
-Despite the availability of a variety of open source face recognition algorithms, there are no ready-made solutions which can be implemented directly. This project demonstrates all kinds of algorithms and various operations that can be implemented on a frontal face. The available algorithms process only high-resolution static shots and perform sufficiently well.
-
-
-<div align="center">
-<img src="https://media.giphy.com/media/AXorq76Tg3Vte/giphy.gif" width="20%"><br>
-</div>
-There are several approaches for an algorithm to recognize a face. An algorithm can make use of statistics, try to find a pattern which represents a specific person or use a Convolutional Neural Network (CNN).
+<p style="clear:both;">
+<h2><a href="https://github.com/akshitagupta15june/Face-X/tree/master/Recognition-Algorithms">Recognition-Algorithms</a></h2>
+<a href="https://github.com/akshitagupta15june/Face-X/tree/master/Recognition-Algorithms"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/logo.png"
+style="margin:10px;" width="150px" 
+alt="Meshery - Service Mesh Management Plane" align="left" /></a>
+<a href="https://github.com/akshitagupta15june/Face-X/tree/master/Recognition-Algorithms">Recognition</a>  of faces by different algorithms and frameworks. Despite a variety of open-source face recognition frameworks available, there was no ready-made solution to implement. So In this project all kind of algorithms are implemented and even with various operations that can be implemented in a frontal face. The available algorithms processed only high-resolution static shots and performed insufficiently.
+<br /><br />
+</p>
+<br />
+<p style="clear:both;">
+<h2><a href="https://github.com/Vi1234sh12/Face-X/tree/master/Recognition-using-IOT">Face-Recognition-using-IOT</a></h2>
+<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Recognition-using-IOT"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/sp_logo.png"
+style="margin:10px;" width="150px" 
+alt="Meshery - Service Mesh Management Plane" align="left" /></a>
+<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Recognition-using-IOT">Internet of Things </a> has opened up a new avenue of research in the field of human activity recognition using wearable sensors. It provides an individual's valuable information regarding functional ability and lifestyle. Human activities are monitored automatically to provide personalized support to different individuals.
+<br /><br />
+</p>
+<br />
+<p style="clear:both;">
+<h2><a href="https://github.com/akshitagupta15june/Face-X/tree/master/Facial_Biometric">Facial Biometric</a></h2>
+<a href="https://github.com/akshitagupta15june/Face-X/tree/master/Facial_Biometric"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/hand.png"
+style="margin:10px;" width="125px" 
+alt="Meshery - Service Mesh Management Plane" align="left" /></a>
+<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Facial_Biometric">Facial Biometric</a> technology measures and matches the unique characteristics for the purposes of identification or authentication. Often leveraging a digital or connected camera, facial recognition software can detect faces in images, quantify their features, and then match them against stored templates in a database. 
+<br /><br />
+</p>
+<br />
+<p style="clear:both;">
+<h2><a href="https://github.com/Vi1234sh12/Face-X/tree/master/Snapchat_Filters">Snapchat_Filters</a></h2>
+<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Snapchat_Filters"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/kis-r.png"
+style="margin:10px;" width="150px" 
+alt="Meshery - Service Mesh Management Plane" align="left" /></a>
+<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Snapchat_Filters">Snapchat filters </a> are certainly an integral part of what makes the social media platform and messaging app Snapchat unique and globally popular. Filters, or added effects, can be applied over images in a variety of ways before being uploaded to one’s social network for others to see. Geofilters allow users to alter a picture of a landscape, such as adding color to sky or turning day to night
+<br /><br />
+</p>
+<br />
+<p style="clear:both;">
+<h2><a href="https://github.com/Vi1234sh12/Face-X/tree/master/Face-Mask-Detection">Face-Mask-Detection</a></h2>
+<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Face-Mask-Detection"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/face-mask-logo-template_23-2148746217__3_-removebg-preview.png"
+style="margin:10px;" width="150px" 
+alt="Meshery - Service Mesh Management Plane" align="left" /></a>
+<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Face-Mask-Detection">Face Mask Detection</a> Platform uses Artificial Network to recognize if a user is not wearing a mask.  The app can be connected to any existing or new IP mask detection cameras to detect people without a mask. App users can also add faces and phone numbers to send them an alert in case they are not wearing a mask. If the camera captures an unrecognized face, a notification can be sent out to the administrator. 
+<br /><br />
+</p>
+<br />
+<p style="clear:both;">
+<h2><a href="https://github.com/Vi1234sh12/Face-X/tree/master/Awesome-face-operations">Awesome-face-operations</a></h2>
+<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Awesome-face-operations"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/Asome.png"
+style="margin:10px;" width="145px" 
+alt="Meshery - Service Mesh Management Plane" align="left" /></a>
+<a href="https://github.com/akshitagupta15june/Face-X/tree/master/Awesome-face-operations">Awesome Face Operations</a> that will blow your mind!
+<br /><br />
+</p>
+<br />
+<br />
 
 
 
 ## ⭐ How to get started with open source?
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/isometric.png" height="390px" align="right"/>
 
 You can refer to the following articles on the basics of Git and Github.
 
@@ -89,18 +136,10 @@ pip install -r requirements.txt
 
 </br>
 
-## Face-X is a part of these open source programs❄
+## Engaging and Collaborating with
 
-<p align="center">
+ <img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/Untitled%20(2).png"/>
   
-   [<img  width="420" height="120"  src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/Cartoonification/gssoc.png">](https://gssoc.girlscript.tech/)
-   [<img  width="160" height="160" src="https://njackwinterofcode.github.io/images/nwoc-logo.png">](https://njackwinterofcode.github.io/)
-   [<img  src="https://devscript.tech/woc/img/WOC-logo.png" width="160" height="160"/>](https://devscript.tech/woc/) <br>
-   [<img  width="160" height="160"  src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/Cartoonification/uaceit.jpeg">](https://uaceit.com/)
-   [<img  width="160" height="160"  src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/Cartoonification/cwoc.jpeg">](https://crosswoc.ieeedtu.in/)
-   [<img  width="180" height="180" src="https://media-exp1.licdn.com/dms/image/C560BAQGh8hr-FgbrHw/company-logo_200_200/0/1602422883512?e=2159024400&v=beta&t=s8IX2pN1J2v5SRRbgzVNzxnQ2rWeeMq2Xb__BYW60qE">](https://swoc.tech/)
-   
-</p>
 	
 </br>
 	
@@ -139,3 +178,17 @@ Thanks goes to these wonderful people ✨✨:
 		</td>
 	</tr>
 </table>
+
+
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/qww.png" height="380px" width="50%" align="left"/>
+<p style="clear:both;">
+<h1><a name="contributing"></a><a name="community"></a> <a href="https://github.com/akshitagupta15june/Face-X">Community</a> and <a href="https://github.com/akshitagupta15june/Face-X/blob/master/CONTRIBUTING.md">Contributing</a></h1>
+<p>Please do! Contributions, updates, <a href="https://github.com/akshitagupta15june/Face-X/issues"></a> and <a href=" ">pull requests</a> are welcome. This project is community-built and welcomes collaboration. Contributors are expected to adhere to the <a href="https://github.com/akshitagupta15june/Face-X/blob/master/CODE_OF_CONDUCT.md/">Code of Conduct</a>.
+</p>
+<p>
+Jump into our <a href="https://discord.com/invite/Jmc97prqjb">Discord</a>! Our projects are community-built and welcome collaboration. 👍Be sure to see the <a href="https://github.com/akshitagupta15june/Face-X/blob/master/Readme.md">Face-X Community Welcome Guide</a> for a tour of resources available to you.
+</p>
+<p>
+<i>Not sure where to start?</i> Grab an open issue with the <a href="https://github.com/akshitagupta15june/Face-X/issues">labels</a>
+</p>
+

@@ -1,0 +1,5 @@
+numpy
+Pillow
+tqdm
+opencv-python
+opencv-contrib-python
