@@ -2,7 +2,7 @@
 
 # Facial Recognition Attendance Management System 
 
-# INTRODUCTION
+## INTRODUCTION
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Facial%20Recognition%20Attendance%20Management%20System/Attendance%20system/images/FS.png" height="400px" align="right"/>
 A facial recognition system is a computer application
 which is capable of identifying or verifying a person from a
