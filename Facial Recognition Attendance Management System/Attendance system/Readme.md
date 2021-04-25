@@ -82,7 +82,7 @@ The images are saved in gray scale after being recorded by a camera.  The LBPH  
 
 Colons can be used to align columns.
 
-| ACE           |  FACE         | Cool  |
+| ACE           |  FACE         |     |
 | ------------- |:-------------:| -----:|
 | 1.Confidence factor based on output is 2,000-3,000.  | 	It is 100-400                           |          -                    |
 | 2.Threshold value is 4,000.                          | Threshold value is 400                   | Threshold value is 7.         |
