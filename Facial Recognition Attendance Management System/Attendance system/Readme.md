@@ -41,11 +41,12 @@ The facial recognition process can be split into two major stages: processing wh
    The last step  after the  representation of  faces is  to identify them.  For  automatic  recognition  we  need  to  build  a  face database. Various images are taken foe      each person and their features are extracted and stored in the database.  Then when an input image is fed the face detection and feature extraction is performed and its        feature to each face class is compared and stored in the database.
    
 ## ALGORITHM  
-  There  are  various  algorithms  used  for  facial  recognition. Some of them are as follows: 
+There  are  various  algorithms  used  for  facial  recognition. Some of them are as follows: 
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Facial%20Recognition%20Attendance%20Management%20System/Attendance%20system/images/deep_.png" height="30%" align="right"/>
    1. `Eigen faces`
    2. `Fisher faces`
    3. ` Local binary patterns histograms`
-
+ 
 ### 1. EIGEN FACES 
 This  method is  a statistical  plan. The  characteristic  which influences the images is derived by this algorithm. The whole recognition method will depend on the training database that will be provided. The images from two different classes are not treated individually.
 ### 2. FISHER FACES 
