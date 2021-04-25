@@ -59,6 +59,7 @@ This method needs the gray scale pictures for dealing with the training  part.  
 -  ` Grid Y`: The number of cells along the vertical direction is represented as  Grid  Y. With  the  increase in  number  of  cells  the grid becomes finer which results in increase of dimensional feature vector.
 
 ## 5.ALGORITHM TRAINING: 
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Facial%20Recognition%20Attendance%20Management%20System/Attendance%20system/images/1-s2.0-S2590005619300141-fx1.jpg" align="right"/>
 For the training purpose of the dataset of the facial images of the  people  to be    recognized along  with  the unique  ID  is required  so  that  the  presented  approach  will  utilize  the provided  information  for  perceiving  an  input  image  and providing the output. Same images require same ID. 
 
 ## 6.COMPUTATION OF THE ALGORITHM: 
