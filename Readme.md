@@ -173,7 +173,7 @@ Thanks goes to these wonderful people ✨✨:
 	<tr>
 		<td>
 			<a href="https://github.com/akshitagupta15june/Face-X/graphs/contributors">
-  				<img src="https://contrib.rocks/image?repo=akshitagupta15june/Face-X" />
+  				<img src="https://contrib.rocks/image?repo=akshitagupta15june/Face-X" height="260" />
 			</a>
 		</td>
 	</tr>
