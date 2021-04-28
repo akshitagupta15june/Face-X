@@ -30,6 +30,117 @@ choosing this new approach
 
 
 
+We are going to use Haarcascade and OpenCV to detect faces in a live webcam input stream. Then, we will retrain an inception v3 Artificial Neural Network to classify Male and Female faces. As training data, we are going to scrape some images from Bing Images search. Afterwards, we will use this slow inception v3 model to classify a big dataset of about 15'000 face images automatically, which we will then use to train a much faster Neural Network which will enhance the performance of the live classifier significantly.
+
+
+# Cascade Face Detection
+
+
+
+
+
+
+
+
+
+# Code OverView :
+```
+import tensorflow as tf
+import numpy as np
+import matplotlib.pyplot as plt
+from tensorflow.keras import layers
+import os
+import cv2
+from IPython.display import Image
+from sklearn.model_selection import train_test_split
+
+
+data_augmentation = tf.keras.Sequential([
+  layers.experimental.preprocessing.RandomFlip("horizontal_and_vertical"),
+  layers.experimental.preprocessing.RandomRotation(0.2),
+])
+
+
+path='../input/utkface-new/UTKFace/'
+files=os.listdir(path)
+
+image=cv2.imread(path+files[0])
+image=np.expand_dims(image, 0)
+
+X_data =[]
+for file in files:
+    face = cv2.imread(path +file,cv2.IMREAD_COLOR)
+    face = cv2.cvtColor(face, cv2.COLOR_BGR2RGB)
+    face =cv2.resize(face,(32,32))
+    X_data.append(face)
+X_data=np.array(X_data)
+X_data.shape
+
+
+aug_X=[]
+for image in X_data:
+    image=np.expand_dims(image, 0)
+    for i in range(3):                   #the number of iteration here is adjustabe according to your dataset and the model
+        aug_image=data_augmentation(image)
+     aug_X.append(aug_image)
+
+
+data=os.listdir("../input/utkface-new/UTKFace/")
+y=[i.split("_")[1] for i in data ]
+y=np.array(y,dtype=int)
+y=np.repeat(y, 3)
+
+X=np.squeeze(aug_X)
+
+X_train,X_valid,Y_train,Y_valid=train_test_split(X,y,test_size=0.33)
+print(X_train.shape,"\t", X_valid.shape,"\t", Y_train.shape,"\t",Y_valid.shape)
+
+def model_gen():
+    model=tf.keras.Sequential()
+    model.add(layers.Conv2D(32,2,activation='relu',input_shape=(32, 32, 3)))
+    model.add(layers.Conv2D(32,4,activation='relu'))
+    model.add(layers.MaxPooling2D(2))
+    model.add(layers.Dropout(0.3))
+    model.add(layers.Conv2D(64,2,activation='relu'))
+    model.add(layers.Conv2D(64,4,activation='relu'))
+    model.add(layers.MaxPooling2D(2))
+    model.add(layers.Dropout(0.3))
+    model.add(layers.Conv2D(84,2,activation='relu'))
+    model.add(layers.Dropout(0.3))
+    model.add(layers.Flatten())
+    model.add(layers.Dense(32,activation='relu'))
+    model.add(layers.Dense(32,activation='relu'))
+    model.add(layers.Dense(32,activation='relu'))
+    model.add(layers.Dense(1,activation='sigmoid',name='Gender_Out'))
+    model.compile(optimizer='Adamax',loss=['binary_crossentropy'],
+                  metrics=['accuracy'])
+    tf.keras.utils.plot_model(model, 'model.png',show_shapes=True)
+
+    return model
+
+model=model_gen()
+Image('model.png')
+
+model.summary()
+
+callbacks = [
+    tf.keras.callbacks.EarlyStopping(patience=75, monitor='val_loss',restore_best_weights=True) ]
+    
+history=model.fit(X_train, Y_train, epochs=90,batch_size=240,
+          validation_data=(X_valid,Y_valid),callbacks=callbacks, shuffle=True)
+ 
+model.evaluate(X_valid,Y_valid)
+
+for p_id in range(600 , 800 , 10):
+    plt.imshow(X_valid[p_id])
+    plt.show()
+    print(Y_valid[p_id])
+    #print(y_valid[0][p_id],y_valid[1][p_id])
+    print(model.predict(np.expand_dims(X_valid[p_id],axis=0))[0][0])
+    #np.expand_dims(X_valid[p_id],axis=0)
+
+```
+
 
 ### Dataset
 ![logoWall2](https://user-images.githubusercontent.com/55057549/112679952-7169a980-8e75-11eb-8e64-e83997864119.jpg)
