@@ -28,27 +28,7 @@ should have personal data of the subjects in the images.
 Hence we require new algorithms and tools to cope up with this problem. These above reasons are responsible for
 choosing this new approach
 
-# Gender Detection
 
-
-#### Table of contents
-
-- Introduction
-- Dataset
-- Implementation
-- Outputs
-- Running procedure
-- Dependencies
-
-
-### Introduction
-
-In these modern days, gender recognition from facial image has been a crucial topic. To solve 
-such delicate problem several handy approaches are being studied in Computer Vision. However, 
-most of these approaches hardly achieve high accuracy and precision. Lighting, illumination, 
-proper face area detection, noise, ethnicity and various facial expressions hinder the correctness 
-of the research. Therefore, we propose a simple gender recognition system from facial image 
-where we first detect faces from a scene using Haar Feature Based Cascade Classifier then introducing it to the model architecture. The face detection goal is achieved by OpenCV.
 
 
 ### Dataset
