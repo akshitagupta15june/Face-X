@@ -4,7 +4,7 @@
 
 
 # Introduction
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Gender_Classification/Assets/intersex%20teens-01.png" height="60%"  width="50%"  align="right"/>
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Gender_Classification/Assets/intersex%20teens-01.png" height="70%"  width="60%"  align="right"/>
 In these modern days, gender recognition from facial image has been a crucial topic. To solve 
 such delicate problem several handy approaches are being studied in Computer Vision. However, 
 most of these approaches hardly achieve high accuracy and precision. Lighting, illumination, 
@@ -13,6 +13,20 @@ of the research. Therefore, we propose a simple gender recognition system from f
 where we first detect faces from a scene using Haar Feature Based Cascade Classifier then introducing it to the model architecture. The face detection goal is achieved by OpenCV.
 
 
+Automatic gender recognition has now pertinent to an extension of its usage in various software and hardware, particularly because of the growth of online social networking websites and social media. However the performance of already exist system with the physical world face pictures, images are somewhat not excellent, particularly in comparison with the result of task related to face recognition. Within this paper, we have explored that by doing learn and classification method and with the utilization of Deep Convolutional Neural Networks (D-CNN) technique, a satisfied growth in performance can be achieved on such gender classification tasks that is a reason why we decided to propose an efficient convolutional network VGGnet architecture which can be used in extreme case when the amount of training data used to learn D-CNN based on VGGNet architecture is limited. We examine our related work on the current unfiltered image of the face for gender recognition and display it to dramatics outplay current advance updated methods
+
+# Problem Identification & Definition
+Gender classification has gained importance in recent times due to increasing influence and rise of social media
+platforms.
+However, accuracy of previous algorithms on the images is still not sufficient enough Which can match the performance
+made in the field of face recognition.
+Still this problem is a tricky problem which needs to be resolved . The main difficulty is that the
+Nature as well as the abundancy of data which is required to train the type of systems. While general classification projects
+have access to millions of images which is very helpful in training but for  gender classification specifically we have
+lesser number of images maybe in the range of thousands. The main reason behind this is that in order to have labels we
+should have personal data of the subjects in the images.
+Hence we require new algorithms and tools to cope up with this problem. These above reasons are responsible for
+choosing this new approach
 
 # Gender Detection
 
