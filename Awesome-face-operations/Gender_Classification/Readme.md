@@ -3,6 +3,17 @@
 
 
 
+# Introduction
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Gender_Classification/Assets/intersex%20teens-01.png" height="60%"  width="50%"  align="right"/>
+In these modern days, gender recognition from facial image has been a crucial topic. To solve 
+such delicate problem several handy approaches are being studied in Computer Vision. However, 
+most of these approaches hardly achieve high accuracy and precision. Lighting, illumination, 
+proper face area detection, noise, ethnicity and various facial expressions hinder the correctness 
+of the research. Therefore, we propose a simple gender recognition system from facial image 
+where we first detect faces from a scene using Haar Feature Based Cascade Classifier then introducing it to the model architecture. The face detection goal is achieved by OpenCV.
+
+
+
 # Gender Detection
 
 
