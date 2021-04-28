@@ -111,6 +111,24 @@ Aligning the images using different methods like Geometrical transformation, Poi
 
 After following all the above steps we get the registered image.
 
+# Distorted Image
+
+<img src="images/dist_img1.jpg" />
+
+</br>
+</br>
+
+# Reference Image
+
+<img src="images/reference_img.jpg" />
+
+</br>
+</br>
+
+# Registered Image
+
+<img src="images/reg_img.JPG" />
+
     
 
 
