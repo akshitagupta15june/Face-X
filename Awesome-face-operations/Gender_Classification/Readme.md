@@ -33,13 +33,107 @@ choosing this new approach
 We are going to use Haarcascade and OpenCV to detect faces in a live webcam input stream. Then, we will retrain an inception v3 Artificial Neural Network to classify Male and Female faces. As training data, we are going to scrape some images from Bing Images search. Afterwards, we will use this slow inception v3 model to classify a big dataset of about 15'000 face images automatically, which we will then use to train a much faster Neural Network which will enhance the performance of the live classifier significantly.
 
 
+
+# Deep convolutional neural networks : 
+ In contrast to modern Deep Convolutional Neural Networks (D-CNN) like VGGNet, LeNet-5 network architecture
+was comparatively moderate because of the limited number of computational resources such as time, memory, processing power,
+and the various algorithmic challenges for training the huge networks. Yet much potential exists in Deep Convolutional Neural
+Networks (D-CNN) architectures (a neural network with the huge number of neuron layers), recently they have become vogue,
+because of an unexpected rise in both the computational power with the usage of Graphical Processing Units(GPU), and the
+amount of dataset that is easily available on the Internet or prepares by a researcher in order to do practically. One of the biggest
+examples used in the physical world with the use of Deep Convolution Neural Network(D-CNN) is for image classification,
+Recognition on various facial database of million number of raw unfiltered face image like LFW
+<img  src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Gender_Classification/Assets/492682_1_En_10_Fig1_HTML.png"/>
+
+Deep CNN(D-CNN) is using in this area also including Articulated pose estimation, Body configuration parsing, face parsing, Face
+recognition, object detection, path detection, plant disease estimation through the image of plant leaves, age and expression recognition
+through the face of human being, facial key-point detection, speech recognition.
+
+
+# Composition of Deep Convolutional and Subsample layer : 
+
+The number of layers involves the work of Deep Convolution Neural Network (D-CNN) is scaled down by the convolutional
+layer and a subsample layer in a single layer. This concept was popularized by Simard, which was after known by Mamalet and
+Garcia.In this task, we change back to back sub-sample layers and convolutional the single convolutional layer using two strides.
+A pattern on an image can be extracted by the following expression:
+where pi
+(t-e) and pj
+(t) are the input and output pattern map respectively, F() is function i.e known by activation
+function which we have used in our work,mef
+(t) is the convolutional kernel weight j
+(t) represents bias denotes total
+number of input feature mapping, sq
+(t)q represents horizontal convolution step size, sp
+(t)p represents vertical
+convolution step size, and Rq
+(t) and Rp
+(t) are width and height of convolutional kernels, respectively. where M(te)and A(t-e) and height and width of input feature mapping
+
+A(t) = (A(t-e) - Rp
+(t))/sp
+(t) + 1 (2)
+M(t) = (M(t-e)- Rq
+(t))/sq
+(t) + 1 (3)
+figure:5 depicts how CNN work with an image for Gender Recognition and give final unique output on the basis
+of internal processing of pixels, patterns of image
+
+
+# Gender classification. 
+A detailed  of gender classification methods can be found in  and more recently
+in . Here we quickly survey relevant methods.
+One of the early methods for gender classification 
+used a neural network trained on a small set of near-frontal
+face images. In  the combined 3D structure of the
+head (obtained using a laser scanner) and image intensities were used for classifying gender. SVM classifiers
+were used by , applied directly to image intensities.
+Rather than using SVM, used AdaBoost for the same
+purpose, here again, applied to image intensities. Finally,
+viewpoint-invariant age and gender classification was presented by.
+More recently,used the Webers Local texture Descriptor  for gender recognition, demonstrating nearperfect performance on the FERET benchmark .
+In , intensity, shape and texture features were used with
+mutual information, again obtaining near-perfect results on
+the FERET benchmark.
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Gender_Classification/Assets/nltk-2.png" align="right" height="70%" width="70%"/>
+
+The basic classification task has a number of interesting variants. For example, in multi-class classification, each instance may be assigned multiple labels; in open-class classification, the set of labels is not defined in advance; and in sequence classification, a list of inputs are jointly classified.
+A classifier is called supervised if it is built based on training corpora containing the correct label for each input. The framework used by supervised classification
+
+
+
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Gender_Classification/Assets/cnn_illustration_a.png" align="right"/>
+Illustration of our CNN architecture. The network contains three convolutional layers, each followed by a rectified linear
+operation and pooling layer. The first two layers also follow normalization using local response normalization [28]. The first Convolutional
+Layer contains 96 filters of 7×7 pixels, the second Convolutional Layer contains 256 filters of 5×5 pixels, The third and final Convolutional
+Layer contains 384 filters of 3 × 3 pixels. Finally, two fully-connected layers are added, each containing 512 neurons. See Figure 3 for a
+detailed schematic view and the text for more information.
+
+
 # Cascade Face Detection
 
+Object Detection using Haar feature-based cascade classifiers is an effective object detection method proposed by Paul Viola and Michael Jones in their paper, “Rapid Object Detection using a Boosted Cascade of Simple Features” in 2001. It is a machine learning based approach where a cascade function is trained from a lot of positive and negative images. It is then used to detect objects in other images.
 
+Here we will work with face detection. Initially, the algorithm needs a lot of positive images (images of faces) and negative images (images without faces) to train the classifier. Then we need to extract features from it. For this, haar features shown in below image are used. They are just like our convolutional kernel. Each feature is a single value obtained by subtracting sum of pixels under white rectangle from sum of pixels under black rectangle.
 
+# Configuring your development environment
+To follow this guide, you need to have the OpenCV library installed on your system
 
+```
+OpenCV Face detection with Haar cascades
+$ pip install opencv-contrib-python
+```
 
-
+# Training and testing :
+he weights that we have used as a part of all layers are introduced with stochastic esteems from a mean Gaussian
+with value zero and a standard deviation around 0.01.We don’t utilize pre-prepared profound Convolutional Neural
+Network models for introducing the system; this system framework is trained, from a root, without utilizing any information outward of the pictures and the names accessible by the benchmark. This is again, should be contrasted
+and profound Convolutional Neural Network(CNN) executions utilized for confronting acknowledgment with
+gender, age, facial articulation, where a huge number of pictures are utilized for preparing.
+We have used specific network architecture as well as the dataset. We are going to use a combination of
+LogSoftMax + NLL-Loss in PyTorch to train the network.
+Next, we load the pre-trained VGG-Face model and dataset. We have also initialized our network architecture, loss
+module and certain other training parameters such as the number of epochs to train and the batch size. At first, we
+fix the seed of the various random number generators that our code required to use
 
 
 
