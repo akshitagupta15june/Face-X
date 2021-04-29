@@ -245,12 +245,24 @@ link to download dataset: https://www.kaggle.com/jangedoo/utkface-new
 ### Implementation
 
 - #####   Model Architecture
- ![model](https://user-images.githubusercontent.com/63206325/113521830-4af5ed80-959c-11eb-9822-ecc8475f27cc.png)
+ <img src="https://user-images.githubusercontent.com/63206325/113521830-4af5ed80-959c-11eb-9822-ecc8475f27cc.png" height="50%" width="50%" align="right"/>
 
 - #####   Data Augmentation
   Data augmentation can be used to address both the requirements, the diversity of the training data, and the amount of data. Besides these two, augmented data can also be used to address the class imbalance problem in classification tasks.In order to increase the model ability to detect the gender from different point of views , we decided to use the data augmentation concept.
 
-![image](https://user-images.githubusercontent.com/63206325/113521861-809ad680-959c-11eb-9e64-3de5b544dba6.png)
+### Network architecture
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Gender_Classification/Assets/Gender-classification-network-architecture.png" align="right"/>
+Images are scaled again to 256 x 256 size image and a then perform cropping operation on the image of size 227
+x 227 which is passed into the network. The three consecutive convolutional layers are then described as
+The following fully connected layers are then described as follow:
+The first step is, FC layer that gets the output from the third convolutional layer and which exhibit neurons equal to
+512 and superseded by an activation function Rectified Linear Unit(Relu) and a dropout layer.
+The second step is, FC layer that gets the 512-dimensional output from the first FC layer and same procedure follow
+like in the first layer.
+The third step is, absolutely affiliated fully connected layer which maps to the final classes for gender
+classification.At last, the output obtained from last one absolutely fully connected layer is forward to a soft-max
+layer function then it assigns a probability for each label in gender detection.The anticipation is fabricated by using
+the label that is having high probability from the rest of the test image used in gender recognition
 
 
 
