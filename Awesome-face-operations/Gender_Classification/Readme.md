@@ -122,6 +122,18 @@ To follow this guide, you need to have the OpenCV library installed on your syst
 OpenCV Face detection with Haar cascades
 $ pip install opencv-contrib-python
 ```
+#### Dependencies
+- tensorflow 2.4.1
+- openCV
+- Numpy
+- OS
+- Matplotlib
+
+#### Running Procedure
+- Clone the Repository 
+- Open your notebook
+- check paths for the test data
+- Enjoy the experience
 
 # Training and testing :
 he weights that we have used as a part of all layers are introduced with stochastic esteems from a mean Gaussian
@@ -134,7 +146,6 @@ LogSoftMax + NLL-Loss in PyTorch to train the network.
 Next, we load the pre-trained VGG-Face model and dataset. We have also initialized our network architecture, loss
 module and certain other training parameters such as the number of epochs to train and the batch size. At first, we
 fix the seed of the various random number generators that our code required to use
-
 
 
 # Code OverView :
@@ -268,21 +279,6 @@ the label that is having high probability from the rest of the test image used i
 ![image](https://user-images.githubusercontent.com/63206325/113521972-6c0b0e00-959d-11eb-8a8d-bccc183e879b.png)
 
 
-
-
-### Dependencies
-- tensorflow 2.4.1
-- openCV
-- Numpy
-- OS
-- Matplotlib
-
-
-### Running Procedure
-- Clone the Repository 
-- Open your notebook
-- check paths for the test data
-- Enjoy the experience 
 
 
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Gender_Classification/Assets/Title-rpng.png" height="300px" align="left"/>
