@@ -25,8 +25,6 @@ should have personal data of the subjects in the images.
 Hence we require new algorithms and tools to cope up with this problem. These above reasons are responsible for
 choosing this new approach
 
-
-
 We are going to use Haarcascade and OpenCV to detect faces in a live webcam input stream. Then, we will retrain an inception v3 Artificial Neural Network to classify Male and Female faces. As training data, we are going to scrape some images from Bing Images search. Afterwards, we will use this slow inception v3 model to classify a big dataset of about 15'000 face images automatically, which we will then use to train a much faster Neural Network which will enhance the performance of the live classifier significantly.
 
 
@@ -40,8 +38,9 @@ because of an unexpected rise in both the computational power with the usage of 
 amount of dataset that is easily available on the Internet or prepares by a researcher in order to do practically. One of the biggest
 examples used in the physical world with the use of Deep Convolution Neural Network(D-CNN) is for image classification,
 Recognition on various facial database of million number of raw unfiltered face image like LFW
+<br/>
 <img  src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Gender_Classification/Assets/492682_1_En_10_Fig1_HTML.png"/>
-
+<br/>
 Deep CNN(D-CNN) is using in this area also including Articulated pose estimation, Body configuration parsing, face parsing, Face
 recognition, object detection, path detection, plant disease estimation through the image of plant leaves, age and expression recognition
 through the face of human being, facial key-point detection, speech recognition.
