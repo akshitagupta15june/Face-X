@@ -1,9 +1,9 @@
 <p style="text-align:center;" align="center"><a href="https://github.com/Vi1234sh12/Face-X/blob/master/Readme.md"><img align="center" style="margin-bottom:20px;" src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Gender_Classification/Assets/Untitled%20(3).png"  width="100%" /></a><br /><br /></p>
 
-# Introduction
+## 1.Introduction
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Gender_Classification/Assets/intersex%20teens-01.png" height="70%"  width="60%"  align="right"/>
 In these modern days, gender recognition from facial image has been a crucial topic. To solve 
-such delicate problem several handy approaches are being studied in `Computer Vision`. However, 
+such delicate problem several handy approaches are being studied in Computer Vision. However, 
 most of these approaches hardly achieve high accuracy and precision. Lighting, illumination, 
 proper face area detection, noise, ethnicity and various facial expressions hinder the correctness 
 of the research. Therefore, we propose a simple gender recognition system from facial image 
@@ -12,7 +12,7 @@ where we first detect faces from a scene using Haar Feature Based `Cascade Class
 
 Automatic gender recognition has now pertinent to an extension of its usage in various software and hardware, particularly because of the growth of online social networking websites and social media. However the performance of already exist system with the physical world face pictures, images are somewhat not excellent, particularly in comparison with the result of task related to face recognition. Within this paper, we have explored that by doing learn and classification method and with the utilization of `Deep Convolutional Neural Networks (D-CNN) technique`, a satisfied growth in performance can be achieved on such gender classification tasks that is a reason why we decided to propose an efficient convolutional network VGGnet architecture which can be used in extreme case when the amount of training data used to learn D-CNN based on VGGNet architecture is limited. We examine our related work on the current unfiltered image of the face for `gender recognition` and display it to dramatics outplay current advance updated methods
 
-# Problem Identification & Definition
+## 2.Problem Identification & Definition
 `Gender classificatio` has gained importance in recent times due to increasing influence and rise of social media
 platforms.
 However, accuracy of previous algorithms on the images is still not sufficient enough Which can match the performance
@@ -31,7 +31,7 @@ We are going to use Haarcascade and OpenCV to detect faces in a live webcam inpu
 
 
 
-# Deep convolutional neural networks : 
+## 3.Deep convolutional neural networks : 
  In contrast to modern Deep Convolutional Neural Networks (D-CNN) like VGGNet, LeNet-5 network architecture
 was comparatively moderate because of the limited number of computational resources such as time, memory, processing power,
 and the various algorithmic challenges for training the huge networks. Yet much potential exists in` Deep Convolutional Neural
@@ -47,7 +47,7 @@ recognition, object detection, path detection, plant disease estimation through 
 through the face of human being, facial key-point detection, speech recognition.
 
 
-# Composition of Deep Convolutional and Subsample layer : 
+## 4.Composition of Deep Convolutional and Subsample layer : 
 
 The number of layers involves the work of Deep Convolution Neural Network (D-CNN) is scaled down by the convolutional
 layer and a subsample layer in a single layer. This concept was popularized by Simard, which was after known by Mamalet and
@@ -76,7 +76,7 @@ figure:5 depicts how CNN work with an image for Gender Recognition and give fina
 of internal processing of pixels, patterns of image
 
 
-# Gender classification. 
+## 5.Gender classification. 
 A detailed  of gender classification methods can be found in  and more recently
 in . Here we quickly survey relevant methods.
 One of the early methods for `gender classification `
@@ -105,7 +105,7 @@ Layer contains 96 filters of` 7×7 pixels`, the second Convolutional Layer conta
 Layer contains 384 filters of 3 × 3 pixels. Finally, two fully-connected layers are added, each containing 512 neurons.
 
 
-# `Cascade Face Detection`
+## 6. Cascade Face Detection
 
 Object Detection using Haar feature-based cascade classifiers is an effective object detection method proposed by `Paul Viola` and `Michael Jones `in their paper, “Rapid Object Detection using a `Boosted Cascade of Simple Features`” in 2001. It is a machine learning based approach where a cascade function is trained from a lot of positive and negative images. It is then used to detect objects in other images.
 
@@ -131,7 +131,7 @@ $ pip install opencv-contrib-python
 - `check paths for the test data`
 - `Enjoy the experience`
 
-# `Training and testing` :
+## 7.Training and testing :
 The weights that we have used as a part of all layers are introduced with stochastic esteems from a mean Gaussian
 with value zero and a standard deviation around 0.01.We don’t utilize pre-prepared profound Convolutional Neural
 Network models for introducing the system; this system framework is trained, from a root, without utilizing any information outward of the pictures and the names accessible by the benchmark. This is again, should be contrasted
@@ -144,7 +144,7 @@ module and certain other training parameters such as the number of epochs to tra
 fix the seed of the various random number generators that our code required to use
 
 
-# Code OverView :
+## 8.Code OverView :
 ```
 import tensorflow as tf
 import numpy as np
@@ -242,16 +242,15 @@ for p_id in range(600 , 800 , 10):
 
 ```
 
-
-### Dataset
+## 9.Dataset : 
 UTKFace dataset is a large-scale face dataset with long age span (range from 0 to 116 years old). The dataset consists of over 20,000 face images with annotations of age, gender, and ethnicity. The images cover large variation in pose, facial expression, illumination, occlusion, resolution, etc. This dataset could be used on a variety of tasks, e.g., face detection, age estimation, age progression/regression, landmark localization.
 
 `link to download dataset: https://www.kaggle.com/jangedoo/utkface-new`
 
-###   Data Augmentation
+## 10.Data Augmentation : 
   Data augmentation can be used to address both the requirements, the diversity of the training data, and the amount of data. Besides these two, augmented data can also be used to address the class imbalance problem in classification tasks.In order to increase the model ability to detect the gender from different point of views , we decided to use the data augmentation concept.
 
-### Network architecture
+## 11.Network architecture : 
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Gender_Classification/Assets/Gender-classification-network-architecture.png" align="right"/>
 Images are scaled again to 256 x 256 size image and a then perform cropping operation on the image of size 227
 x 227 which is passed into the network. The three consecutive convolutional layers are then described as
@@ -267,7 +266,7 @@ the label that is having high probability from the rest of the test image used i
 
 
 
-### Outputs
+## 12.Outputs:
 
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Gender_Classification/Assets/faces_gender.jpg"/>
 
