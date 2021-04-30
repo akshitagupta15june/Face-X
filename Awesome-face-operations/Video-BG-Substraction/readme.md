@@ -58,6 +58,8 @@ the model. Our experiments indicate that the proposed method
 improves the BGS results in our quantitative and qualitative
 evaluations on the benchmark dataset
 
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Video-BG-Substraction/Assets/magic-clipper.png" align="right"/>
+
 ## 3.Methodology:
 `synthesise` images of different illumination with both local and global changes, and
 then combine them as a unified augmentation method that
@@ -364,8 +366,7 @@ One important feature of this algorithm is that it selects the appropriate numbe
 
 Here, you have an option of selecting whether shadow to be detected or not. If `detectShadows = True` (which is so by default), it detects and marks shadows, but decreases the speed. Shadows will be marked in gray color.
 
-### Input:
-![resframe](https://user-images.githubusercontent.com/60208804/113537714-106d6e80-95f7-11eb-8590-7d7b12e7760b.jpg)
+## 8.OutPut 
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Video-BG-Substraction/Assets/design-graphics-background-remover-logo-and-more.jpg" align="left"/>
 
-### Output:
-![resmog](https://user-images.githubusercontent.com/60208804/113537728-195e4000-95f7-11eb-8f3d-edcaf79ddc36.jpg)
+
