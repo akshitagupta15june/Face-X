@@ -178,28 +178,27 @@ by our camera hardware. The observation at pixel i at
 time t can then be written as:
 IC = (Y, U, V )
 
-#### 3.Texture Model: 
+#### 3.Texture Model
 In our implementation, we used the texture information available in the image in our algorithm by including and considering the surrounding neighbors of the
-pixel. This can be obtained several ways. In our implementation, we have decided to take the image gradient of the Y component in the x and y directions.
-The gradient is then denoted as follows:
-IG = GY = (Gx, Gy)
-=
-q
-G2
-x + G2
+  pixel. This can be obtained several ways. In our implementation, we have decided to take the image gradient of the Y component in the x and y directions.
+  The gradient is then denoted as follows:
+  IG = GY = (Gx, Gy)
+ =
+ q
+ G2
+ x + G2
 
+ 
 This is obtained using a Sobel operator. The Sobel
 operator combines Gaussian smoothing and differentiation so the result is more robust to noise. We have
 decided to use the following Sobel filter after experimenting with several other filters.
-
-
-
+```
 1 2 1
 2 0 2
 1 2 1
-
-
-
+
+```
+
 
 the behavior of the camera sensor to
 the neighboring pixel and the effect of the surrounding
