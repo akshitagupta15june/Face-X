@@ -41,7 +41,7 @@ the same scene
 
 Background subtraction is a major preprocessing steps in many vision based applications. For example, consider the cases like visitor counter where a static camera takes the number of visitors entering or leaving the room, or a traffic camera extracting information about the vehicles etc. In all these cases, first you need to extract the person or vehicles alone. Technically, you need to extract the moving foreground from static background.
 
-# 2.OverCome this Challenges : 
+## 2.OverCome this Challenges : 
 To overcome this challenge, we propose a new data augmentation technique by synthesising the light-based effects of
 different degrees of brightness. Such effects include shadows
 and halos of different size, placed in random locations of the
@@ -57,13 +57,13 @@ the model. Our experiments indicate that the proposed method
 improves the BGS results in our quantitative and qualitative
 evaluations on the benchmark dataset
 
-### METHODOLOGY :
+## 3.METHODOLOGY :
 synthesise images of
 different illumination with both local and global changes, and
 then combine them as a unified augmentation method that
 covers all scenarios simultaneously.
 
-### 1.Local Changes
+#### 1.Local Changes
 To synthesize local changes of illumination, we generate
 the synthetic images by locally altering the illumination of
 the input image, therefore creating either a ”lamp-post” light
@@ -116,7 +116,7 @@ subtraction operation creates shadows. The application of the
 aforementioned local masks are depicted in . It can
 be seen that the final light source effect looks realistic
 
-### 2.Global changes
+#### 2.Global changes
 global illumination changes can occur. For
 example, a lightning during a storm may instantly increase
 the brightness, and once the rain is over the global illumination will change again. In order to model such illumination
@@ -129,7 +129,7 @@ where I, z and ± are as previously defined. In this case the
 illumination noise z needs to be slightly diminished, since the
 whole image is affected.
 
-### 3.Combined changes
+#### 3.Combined changes
 To capture both local and global illumination changes in
 the scene, we combine equation 4 and equation 5 into the
 following:
@@ -142,7 +142,7 @@ different synthetic images can be generated from a single
 frame. Therefore, given a small video, we can generate enough
 unique synthetic images to train a very deep network.
 
-### 4. Illumination-invariant Deep Network
+#### 4.Illumination-invariant Deep Network
 the synthetic images to train multiple deep
 learning networks for BGS and evaluate their performances.
 Due to the use of images with synthetic illumination changes,
@@ -153,9 +153,9 @@ once the spatial size has been restored, we add a final 3x3
 convolutional layer, followed by a sigmoid layer to convert
 the output of the model to a foreground probability map
 
-### Background Subtraction
+## 4.Background Subtraction
 
-Preprocessing: 
+#### 1.Preprocessing: 
 we firstly use simple temporal and spacial smoothing to reduce camera noise. Smoothing
 can also be used to remove transient environmental
 noise. Then to ensure real-time capabilities, we have
@@ -169,7 +169,7 @@ space, is becoming more popular these days. In the
 case of a mismatch, some time will be spent on converting the output data from the driver of the camera
 to the required input data type for the algorithm
 
-Color Model:
+#### 2.Color Model:
 The input to our algorithm is a time series of spatially registered and time-synchronized color images
 obtained by a static camera in the YUV color space.
 This allows us to separate the luminance and chroma
@@ -178,7 +178,7 @@ by our camera hardware. The observation at pixel i at
 time t can then be written as:
 IC = (Y, U, V )
 
-Texture Model: 
+#### 3.Texture Model: 
 In our implementation, we used the texture information available in the image in our algorithm by including and considering the surrounding neighbors of the
 pixel. This can be obtained several ways. In our implementation, we have decided to take the image gradient of the Y component in the x and y directions.
 The gradient is then denoted as follows:
@@ -206,7 +206,7 @@ the neighboring pixel and the effect of the surrounding
 pixels for any given pixel. Notice that the edges of the
 red, blue and green color zones are not uniform.
 
-Shadow Model : 
+#### 4.Shadow Model : 
 At this point, we still have a major inconvenience in
 the model. Shadows are not translated as being part of
 the background and we definitely do not want them to
@@ -220,7 +220,7 @@ IS = (YS, U, V )
 where YS = Y ± ∆Y . This is in fact not a disadvantage. Since the Y component is only sensible to
 illumination changes, it is in fact redundant for foreground or background object discrimination.
 
-####   Learning Vector Model : 
+#### 5.Learning Vector Model : 
 We can now form the final vectors which we are going
 to observe at pixel level. They are given as follows:
 B1 = (GY , U, V )
@@ -231,11 +231,10 @@ where B1 is the object background model which combines the color and texture inf
 luminance that is incorporated in B2 which is the
 shadow background model and B3 is taken as a safety
 
-
-
-## Development of Background Subtraction Algorithm
+## 5.Development of Background Subtraction Algorithm
 During run-time, the reference image is subtracted from the current image to obtain a mask which will highlight all foreground objects. Once the mask is obtained, the background model can be updated. There a four major steps in the background subtraction algorithm. These are detailed in
 the following subsections
+
 #### 1.Background Learning :
 for each incoming frame, at pixel level, we store the number of samples n, the sum of the observed vector a, b, c grouped as U and the sum of
 the cross-product of the observed vector d, e and f grouped as V .
@@ -247,7 +246,7 @@ and is required for initialization. From our experiments, about 100 frames is ne
 learn the variations in the background. This corresponds to about 2 to 4 seconds of initialization using
 our camera
 
-Parameter Estimation :
+#### 2.Parameter Estimation :
 At the end of the learning phase, the required variables
 for the Gaussian models need to be calculated. They
 are given as follows:
@@ -292,7 +291,7 @@ These variables are calculated in a very efficient
 manner such that real-time compatibility is always
 maintained. In our implementation this stage is referred to the Gaussian distribution parameter estimation stage.
 
-Foreground Detection : 
+## 6.Foreground Detection : 
 Foreground detection compares the input video frame
 with the background reference image and identifies
 candidate foreground pixels from the input frame. The
@@ -325,7 +324,7 @@ T × C
 Bj
 × (Bj − µj )
 
-# Model Update
+#### 1.Model Update
 µt =
 Ut
 nt
@@ -356,7 +355,7 @@ recursive update is preferred. The will allow us to obtain the new values of the
 old ones. From the general expression for the mean
 vector and the correlated Gaussian distributions,
 
-Data Validation:
+## 7.Data Validation:
 We define data validation as the process of improving
 the candidate foreground mask based on information
 obtained from outside the background model. Inaccuracies in threshold levels, signal noise and uncertainty in the background model can sometimes lead
