@@ -260,10 +260,10 @@ During run-time, the reference image is subtracted from the current image to obt
 the following subsections
 
 #### 1.Background Learning :
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Video-BG-Substraction/Assets/fig1.PNG" align="right"/>
+
 for each incoming frame, at pixel level, we store the number of samples n, the sum of the observed vector a, b, c grouped as U and the sum of
 the cross-product of the observed vector d, e and f grouped as V .
-
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Video-BG-Substraction/Assets/fig1.PNG" align="right"/>
 
 This stage will be defined as the learning phase
 and is required for initialization. From our experiments, about 100 frames is necessary to sufficiently
@@ -288,7 +288,7 @@ most commonly used approach for foreground detection is to check whether the inp
 estimate. In the MoG method, we can do this by expanding the characterizing equation for each Gaussian
 distribution.
 
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Video-BG-Substraction/Assets/fig3.PNG" align="right"/>
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Video-BG-Substraction/Assets/fig3.PNG" align="left"/>
 
 where j = 1, 2, 3. To compute this probability, it is
 not entirely necessary to evaluate the whole expression. The first term is a constant and the remaining term is popularly known as the Mahalanobis Distance (MD). Hence, the decision making process is
