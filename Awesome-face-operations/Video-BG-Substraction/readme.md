@@ -256,12 +256,11 @@ luminance that is incorporated in B2 which is the
 shadow background model and B3 is taken as a safety
 
 ## 5.Development of Background Subtraction Algorithm
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Video-BG-Substraction/Assets/fig1.PNG" align="right"/>
 During run-time, the reference image is subtracted from the current image to obtain a mask which will highlight all foreground objects. Once the mask is obtained, the background model can be updated. There a four major steps in the background subtraction algorithm. These are detailed in
 the following subsections
 
 #### 1.Background Learning :
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Video-BG-Substraction/Assets/fig1.PNG" align="right"/>
-
 for each incoming frame, at pixel level, we store the number of samples n, the sum of the observed vector a, b, c grouped as U and the sum of
 the cross-product of the observed vector d, e and f grouped as V .
 
