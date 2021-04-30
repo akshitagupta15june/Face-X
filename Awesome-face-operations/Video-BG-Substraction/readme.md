@@ -326,7 +326,6 @@ the candidate foreground mask based on information
 obtained from outside the background model. Inaccuracies in threshold levels, signal noise and uncertainty in the background model can sometimes lead
 to pixels easily mistaken as true foreground objects
 and typically results in small false-positive or falsenegative regions distributed randomly across the candidate mask. The most common approach is to combine morphological filtering and connected component grouping to eliminate these regions. Applying morphological filtering on foreground masks eliminates isolated foreground pixels and merges nearby disconnected foreground regions.
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Video-BG-Substraction/Assets/fig6.PNG" align="right"/>
 
 Opening and closing are two important operators
 that are both derived from the fundamental operations
@@ -346,6 +345,7 @@ added advantage of using this filter is to remove any
 unconnected pixel that does not belong to the object.
 The size of the mask is determined empirically from
 our experiments.
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Video-BG-Substraction/Assets/fig6.PNG" align="right"/>
 
 applying an opening and closing filter to We apply a 5 × 5 closing mask after applying the
 opening filter. The effect of applying both operators
