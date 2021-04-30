@@ -360,11 +360,11 @@ themselves often used in combination to achieve more
 subtle results. It is very clear that applying morphological opening and closing filters has a positive effect
 on the process of extracting object from the scene by
 removing the noise from the subtracted foreground.
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Video-BG-Substraction/Assets/Image-after-applying-erosion-and-dilation-filter_Q320.jpg"/>
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Video-BG-Substraction/Assets/Image-after-applying-erosion-and-dilation-filter_Q320.jpg" />
 
 ## 8.OutPut 
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Video-BG-Substraction/Assets/1_TM1FcHfV1QzlmMM2SKI9SQ.png" align="left"/>
-<br /><br />
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Video-BG-Substraction/Assets/1_TM1FcHfV1QzlmMM2SKI9SQ.png"  align="left"/>
+
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Video-BG-Substraction/Assets/Iot.png" height="380px" width="50%" align="left"/>
 <p style="clear:both;">
 <h1><a name="contributing"></a><a name="community"></a> <a href="https://github.com/akshitagupta15june/Face-X">Community</a> and <a href="https://github.com/akshitagupta15june/Face-X/blob/master/CONTRIBUTING.md">Contributing</a></h1>
