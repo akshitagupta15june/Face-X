@@ -361,13 +361,6 @@ on the process of extracting object from the scene by
 removing the noise from the subtracted foreground.
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Video-BG-Substraction/Assets/Image-after-applying-erosion-and-dilation-filter_Q320.jpg"/>
 
-
-### Algorithm used: BackgroundSubtractorMOG2
-
-One important feature of this algorithm is that it selects the appropriate number of gaussian distribution for each pixel. (Remember, in last case, we took a K gaussian distributions throughout the algorithm). It provides better adaptibility to varying scenes due illumination changes etc.
-
-Here, you have an option of selecting whether shadow to be detected or not. If `detectShadows = True` (which is so by default), it detects and marks shadows, but decreases the speed. Shadows will be marked in gray color.
-
 ## 8.OutPut 
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Video-BG-Substraction/Assets/1_TM1FcHfV1QzlmMM2SKI9SQ.png" align="left"/>
 <br /><br />
