@@ -198,6 +198,7 @@ IC = (Y, U, V )
 `
 
 #### 3.Texture Model
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Video-BG-Substraction/Assets/Figure5_1-1024x690.jpg" height="50%" width="50%" align="left"/>
 In our implementation, we used the texture information available in the image in our algorithm by including and considering the surrounding neighbors of the
 pixel. This can be obtained several ways. In our implementation, we have decided to take the image gradient of the `Y component in the x and y directions`.
 The gradient is then denoted as follows:
