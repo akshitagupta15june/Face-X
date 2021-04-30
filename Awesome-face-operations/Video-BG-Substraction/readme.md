@@ -155,6 +155,244 @@ the output of the model to a foreground probability map
 
 ### Background Subtraction
 
+Preprocessing: 
+we firstly use simple temporal and spacial smoothing to reduce camera noise. Smoothing
+can also be used to remove transient environmental
+noise. Then to ensure real-time capabilities, we have
+to decide on the frame-size and frame-rate which are
+the determining factors of the data processing rate.
+Another key issue in preprocessing is the data format
+used by the particular background subtraction algorithm. Most of the algorithms handle only luminance
+intensity, which is one scalar value per each pixel.
+However, color image, in either RGB or YUV color
+space, is becoming more popular these days. In the
+case of a mismatch, some time will be spent on converting the output data from the driver of the camera
+to the required input data type for the algorithm
+
+Color Model:
+The input to our algorithm is a time series of spatially registered and time-synchronized color images
+obtained by a static camera in the YUV color space.
+This allows us to separate the luminance and chroma
+components which has been decoded in a 4:2:0 ratio
+by our camera hardware. The observation at pixel i at
+time t can then be written as:
+IC = (Y, U, V )
+
+Texture Model: 
+In our implementation, we used the texture information available in the image in our algorithm by including and considering the surrounding neighbors of the
+pixel. This can be obtained several ways. In our implementation, we have decided to take the image gradient of the Y component in the x and y directions.
+The gradient is then denoted as follows:
+IG = GY = (Gx, Gy)
+=
+q
+G2
+x + G2
+
+This is obtained using a Sobel operator. The Sobel
+operator combines Gaussian smoothing and differentiation so the result is more robust to noise. We have
+decided to use the following Sobel filter after experimenting with several other filters.
+
+
+
+1 2 1
+2 0 2
+1 2 1
+
+
+
+
+the behavior of the camera sensor to
+the neighboring pixel and the effect of the surrounding
+pixels for any given pixel. Notice that the edges of the
+red, blue and green color zones are not uniform.
+
+Shadow Model : 
+At this point, we still have a major inconvenience in
+the model. Shadows are not translated as being part of
+the background and we definitely do not want them to
+be considered as an object of interest. To remedy this,
+we have chosen to classify shadows as regions in the
+image that differ in Y but U,V rest unchanged. The
+shadow vector Is is then given as follows:
+
+IS = (YS, U, V )
+
+where YS = Y ± ∆Y . This is in fact not a disadvantage. Since the Y component is only sensible to
+illumination changes, it is in fact redundant for foreground or background object discrimination.
+
+####   Learning Vector Model : 
+We can now form the final vectors which we are going
+to observe at pixel level. They are given as follows:
+B1 = (GY , U, V )
+B2 = (YS)
+B3 = (U, V )
+
+where B1 is the object background model which combines the color and texture information but ignores
+luminance that is incorporated in B2 which is the
+shadow background model and B3 is taken as a safety
+
+
+
+## Development of Background Subtraction Algorithm
+During run-time, the reference image is subtracted from the current image to obtain a mask which will highlight all foreground objects. Once the mask is obtained, the background model can be updated. There a four major steps in the background subtraction algorithm. These are detailed in
+the following subsections
+#### 1.Background Learning :
+for each incoming frame, at pixel level, we store the number of samples n, the sum of the observed vector a, b, c grouped as U and the sum of
+the cross-product of the observed vector d, e and f grouped as V .
+
+<img src=""/>
+
+This stage will be defined as the learning phase
+and is required for initialization. From our experiments, about 100 frames is necessary to sufficiently
+learn the variations in the background. This corresponds to about 2 to 4 seconds of initialization using
+our camera
+
+Parameter Estimation :
+At the end of the learning phase, the required variables
+for the Gaussian models need to be calculated. They
+are given as follows:
+µ1 =
+a
+n
+, µ2 =
+b
+n
+, µ3 =
+c
+n
+CB1 =
+1
+n
+(d) −
+1
+n2
+(a × a
+T
+)
+CB2 =
+1
+n
+(e) −
+1
+n2
+(b × b
+T
+)
+CB3 =
+1
+n
+(f) −
+1
+n2
+(c × c
+T
+)
+
+These variables are calculated in a very efficient
+manner such that real-time compatibility is always
+maintained. In our implementation this stage is referred to the Gaussian distribution parameter estimation stage.
+
+Foreground Detection : 
+Foreground detection compares the input video frame
+with the background reference image and identifies
+candidate foreground pixels from the input frame. The
+most commonly used approach for foreground detection is to check whether the input pixel is significantly different from the corresponding background
+estimate. In the MoG method, we can do this by expanding the characterizing equation for each Gaussian
+distribution.
+P(Bj ) = f( Bj , µj , CBj
+)
+= ( 2π
+n
+2 ×
+q
+|CBj
+| )
+−1
+× exp { (Bj − µj )
+T
+× C
+−1
+Bj
+× (Bj − µj ) }
+
+where j = 1, 2, 3. To compute this probability, it is
+not entirely necessary to evaluate the whole expression. The first term is a constant and the remaining term is popularly known as the Mahalanobis Distance (MD). Hence, the decision making process is
+streamed down to the following three categories,
+
+MDj = (Bj − µj )
+T × C
+−1
+Bj
+× (Bj − µj )
+
+# Model Update
+µt =
+Ut
+nt
+Ct =
+1
+nt−1 + 1
+×
+nhVt−1 + (Bt × B
+T
+t
+)
+i
+−
+h
+(Ut−1 + Bt) × (U
+T
+t−1 + BT
+t
+)
+nt−1 + 1
+io
+
+In order to fully capture the changing dynamic environment, the background model has to be updated. In
+the proposed algorithm, we need to update the mean
+vector, the covariance matrix and its inverse. In order
+to avoid recalculating all the coefficients altogether, a
+recursive update is preferred. The will allow us to obtain the new values of the model parameters from the
+old ones. From the general expression for the mean
+vector and the correlated Gaussian distributions,
+
+Data Validation:
+We define data validation as the process of improving
+the candidate foreground mask based on information
+obtained from outside the background model. Inaccuracies in threshold levels, signal noise and uncertainty in the background model can sometimes lead
+to pixels easily mistaken as true foreground objects
+and typically results in small false-positive or falsenegative regions distributed randomly across the candidate mask. The most common approach is to combine morphological filtering and connected component grouping to eliminate these regions. Applying morphological filtering on foreground masks eliminates isolated foreground pixels and merges nearby disconnected foreground regions.
+<img src=""/>
+
+Opening and closing are two important operators
+that are both derived from the fundamental operations
+of erosion and dilation. These operators are normally
+applied to binary images. The basic effect of an opening is somewhat like erosion in that it tends to remove
+some of the foreground (bright) pixels from the edges
+of regions of foreground pixels. However, it is less
+destructive than erosion in general.
+
+the result after applying the opening (erosion) filter to
+ which eliminates the foreground pixels in the
+scene that is misjudged by the background subtraction
+algorithm or due to improper thresholding. We use a
+5 × 5 mask to eliminate this foreground noise that is
+not part of the scene or the object of interest. Another
+added advantage of using this filter is to remove any
+unconnected pixel that does not belong to the object.
+The size of the mask is determined empirically from
+our experiments.
+
+applying an opening and closing filter to We apply a 5 × 5 closing mask after applying the
+opening filter. The effect of applying both operators
+is to preserve background regions that have a similar shape to the structuring element, or that can completely contain the structuring element, while eliminating all other regions of background pixels. The advantage of this is that the foreground pixels which are
+misjudged as background pixels make the object to
+look as if it is not connected. Opening and closing are
+themselves often used in combination to achieve more
+subtle results. It is very clear that applying morphological opening and closing filters has a positive effect
+on the process of extracting object from the scene by
+removing the noise from the subtracted foreground.
+
 
 ### Algorithm used: BackgroundSubtractorMOG2
 
