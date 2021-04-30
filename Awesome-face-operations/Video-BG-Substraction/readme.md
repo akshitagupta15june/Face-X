@@ -371,7 +371,7 @@ Here, you have an option of selecting whether shadow to be detected or not. If `
 ## 8.OutPut 
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Video-BG-Substraction/Assets/1_TM1FcHfV1QzlmMM2SKI9SQ.png" align="left"/>
 
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/qww.png" height="380px" width="50%" align="left"/>
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Video-BG-Substraction/Assets/volunteer-icon.png" height="380px" width="50%" align="left"/>
 <p style="clear:both;">
 <h1><a name="contributing"></a><a name="community"></a> <a href="https://github.com/akshitagupta15june/Face-X">Community</a> and <a href="https://github.com/akshitagupta15june/Face-X/blob/master/CONTRIBUTING.md">Contributing</a></h1>
 <p>Please do! Contributions, updates, <a href="https://github.com/akshitagupta15june/Face-X/issues"></a> and <a href=" ">pull requests</a> are welcome. This project is community-built and welcomes collaboration. Contributors are expected to adhere to the <a href="https://gssoc.girlscript.tech/">GOSSC Code of Conduct</a>.
