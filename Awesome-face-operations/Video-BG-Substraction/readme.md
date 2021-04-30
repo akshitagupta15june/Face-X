@@ -1,7 +1,7 @@
 <p style="text-align:center;" align="center"><a href="https://github.com/Vi1234sh12/Face-X/blob/master/Readme.md"><img align="center" style="margin-bottom:20px;" src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Video-BG-Substraction/Assets/Untitled%20(5).png"  width="90%" /></a><br /><br /></p>
 
 # 1.Introduction
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Video-BG-Substraction/Assets/magic-clipper.png" align="right"/>
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Video-BG-Substraction/Assets/remove_image_background.jpg" height="50%" width="50%" align="right"/>
 Background subtraction (BGS) has been an active research
 area in the past decades. The main task is to differentiate the
 foreground (i.e. moving objects) from the background (i.e. the
