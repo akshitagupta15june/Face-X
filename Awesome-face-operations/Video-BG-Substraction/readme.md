@@ -310,7 +310,7 @@ vector and the correlated Gaussian distributions,
 
 we can then obtain a simplified expression for the updated mean vector and the updated inverse covariance
 matrix
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Video-BG-Substraction/Assets/fig5.PNG" align="right"/>
+
 
 The updating of covariances matrices and the mean
 values are only done to pixels which were assigned as
@@ -318,7 +318,7 @@ background (BG). Once the covariances matrices are
 updated, the respective thresholds are also updated.
 The updated inverse covariance matrices are used in
 subsequent decision making process.
-
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Video-BG-Substraction/Assets/fig5.PNG" align="left"/>
 ## 7.Data Validation:
 We define data validation as the process of improving
 the candidate foreground mask based on information
