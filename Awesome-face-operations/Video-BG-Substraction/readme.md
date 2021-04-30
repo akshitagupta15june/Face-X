@@ -263,7 +263,7 @@ the following subsections
 for each incoming frame, at pixel level, we store the number of samples n, the sum of the observed vector a, b, c grouped as U and the sum of
 the cross-product of the observed vector d, e and f grouped as V .
 
-<img src=""/>
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Video-BG-Substraction/Assets/fig1.PNG" align="right"/>
 
 This stage will be defined as the learning phase
 and is required for initialization. From our experiments, about 100 frames is necessary to sufficiently
@@ -275,7 +275,7 @@ At the end of the learning phase, the required variables
 for the Gaussian models need to be calculated. They
 are given as follows:
 
-<img src=""/>
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Video-BG-Substraction/Assets/fig2.PNG" align="right"/>
 These variables are calculated in a very efficient
 manner such that real-time compatibility is always
 maintained. In our implementation this stage is referred to the Gaussian distribution parameter estimation stage.
@@ -288,7 +288,7 @@ most commonly used approach for foreground detection is to check whether the inp
 estimate. In the MoG method, we can do this by expanding the characterizing equation for each Gaussian
 distribution.
 
-<img src=""/>
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Video-BG-Substraction/Assets/fig3.PNG" align="right"/>
 
 where j = 1, 2, 3. To compute this probability, it is
 not entirely necessary to evaluate the whole expression. The first term is a constant and the remaining term is popularly known as the Mahalanobis Distance (MD). Hence, the decision making process is
@@ -299,7 +299,7 @@ MDj = (Bj − µj )^T × C^−1*Bj × (Bj − µj )
 ```
 
 #### 1.Model Update
-<img src=""/>
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Video-BG-Substraction/Assets/fig4.PNG" align="right"/>
 
 In order to fully capture the changing dynamic environment, the background model has to be updated. In
 the proposed algorithm, we need to update the mean
@@ -309,13 +309,24 @@ recursive update is preferred. The will allow us to obtain the new values of the
 old ones. From the general expression for the mean
 vector and the correlated Gaussian distributions,
 
+we can then obtain a simplified expression for the updated mean vector and the updated inverse covariance
+matrix
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Video-BG-Substraction/Assets/fig5.PNG" align="right"/>
+
+The updating of covariances matrices and the mean
+values are only done to pixels which were assigned as
+background (BG). Once the covariances matrices are
+updated, the respective thresholds are also updated.
+The updated inverse covariance matrices are used in
+subsequent decision making process.
+
 ## 7.Data Validation:
 We define data validation as the process of improving
 the candidate foreground mask based on information
 obtained from outside the background model. Inaccuracies in threshold levels, signal noise and uncertainty in the background model can sometimes lead
 to pixels easily mistaken as true foreground objects
 and typically results in small false-positive or falsenegative regions distributed randomly across the candidate mask. The most common approach is to combine morphological filtering and connected component grouping to eliminate these regions. Applying morphological filtering on foreground masks eliminates isolated foreground pixels and merges nearby disconnected foreground regions.
-<img src=""/>
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/Awesome-face-operations/Video-BG-Substraction/Assets/fig6.PNG" align="right"/>
 
 Opening and closing are two important operators
 that are both derived from the fundamental operations
