@@ -180,14 +180,15 @@ IC = (Y, U, V )
 
 #### 3.Texture Model
 In our implementation, we used the texture information available in the image in our algorithm by including and considering the surrounding neighbors of the
-  pixel. This can be obtained several ways. In our implementation, we have decided to take the image gradient of the Y component in the x and y directions.
-  The gradient is then denoted as follows:
-  IG = GY = (Gx, Gy)
- =
- q
- G2
- x + G2
+pixel. This can be obtained several ways. In our implementation, we have decided to take the image gradient of the Y component in the x and y directions.
+The gradient is then denoted as follows:
 
+
+```
+IG = GY = (Gx, Gy)
+        =  (G^2 x + G^2y)^2
+        
+ ```
  
 This is obtained using a Sobel operator. The Sobel
 operator combines Gaussian smoothing and differentiation so the result is more robust to noise. We have
