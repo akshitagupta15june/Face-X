@@ -9,7 +9,7 @@ import evaluate
 
 def parse_args():
     parse = argparse.ArgumentParser()
-    parse.add_argument('--img-path', default='abcd.jpg')
+    parse.add_argument('--img-path', default='Makeover1_Original.jpg')
     return parse.parse_args()
 
 def sharpen(img):
