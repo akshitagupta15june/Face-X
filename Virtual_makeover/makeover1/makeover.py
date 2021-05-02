@@ -9,7 +9,7 @@ import evaluate
 
 def parse_args():
     parse = argparse.ArgumentParser()
-    parse.add_argument('--img-path', default='Makeover1_Original.jpg')
+    parse.add_argument('--img-path', default='Makeover1_Original.png')
     return parse.parse_args()
 
 def sharpen(img):
@@ -54,11 +54,6 @@ def hair(image, parsing, part=17, color=[230, 50, 20]):
 
 
 if __name__ == '__main__':
-    # 1 face
-    # 11 teeth
-    # 12 upper lip
-    # 13 lower lip
-    # 17 hair
 
     args = parse_args()
 
@@ -73,7 +68,6 @@ if __name__ == '__main__':
 
     image = cv2.imread(image_path)
     image = cv2.resize(image, (1024, 1024))
-    # image = imutils.resize(image, width=1024, height=1024)
     ori = image.copy()
     parsing = evaluate(image_path, cp)
     parsing = cv2.resize(parsing, image.shape[0:2], interpolation=cv2.INTER_NEAREST)
