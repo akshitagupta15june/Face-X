@@ -29,10 +29,11 @@ $vid.py
 $cartoonize.py
 ```
 ## Original Image
-![The input Image to cartoonize.py]()
+![original2](https://user-images.githubusercontent.com/65017645/117474063-3b413e80-af78-11eb-8e60-a981f37e2de7.jpg)
+
 
 ## Cartoon Output
-![The Output Image of cartoonize.py]()
+![cartoon](https://user-images.githubusercontent.com/65017645/117474086-41cfb600-af78-11eb-90ec-50cb99d011f3.jpg)
 
 ## Built With
 * [python](https://www.python.org/) - The software used
