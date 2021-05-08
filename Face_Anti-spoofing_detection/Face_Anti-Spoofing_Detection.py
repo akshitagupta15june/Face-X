@@ -1,5 +1,3 @@
-# !pip install Pillow
-
 import os
 from PIL import Image
 import numpy as np
@@ -15,8 +13,6 @@ from keras.preprocessing.image import ImageDataGenerator
 
 from scipy.ndimage import imread
 from scipy.misc import imresize, imsave
-
-# !unzip dataset.zip
 
 IMG_SIZE = 24
 
