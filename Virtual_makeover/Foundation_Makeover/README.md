@@ -1,5 +1,5 @@
 # Foundation Makeover
-- Added Contour Points which gives blusing contour to mostly of the Lower face.
+- Added Contour Points which adds blusing foundation to mostly of the Lower face.
 - Used Skin Detection Mask to avoid interference with hair.
 
 
