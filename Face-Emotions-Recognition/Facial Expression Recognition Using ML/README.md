@@ -27,7 +27,7 @@
 * Facial Landmark Detection - Extracting information about facial features from the detected faces. 
 * Facial Expression And Emotion Classification - Classifying the obtained information into expression interpretative categories such as smile or frown or emotion categories such as happy, anger, disgust etc.  
 
-## Approach
+## Approach:
 
 ### Data Cleaning
 
@@ -58,10 +58,13 @@
     * Convolutional Neural Network (3 convolutional layers and 2 fully connected layers with pooling layers)
 
 ## Results : 
+<img width="424" alt="result" src="https://user-images.githubusercontent.com/65017645/118226287-4dedd300-b4a4-11eb-95e2-cdeb433f0b8d.png">
+<img width="1220" alt="8" src="https://user-images.githubusercontent.com/65017645/118226304-58a86800-b4a4-11eb-9c73-3a5105296a07.png">
+<img width="1174" alt="9" src="https://user-images.githubusercontent.com/65017645/118226309-5c3bef00-b4a4-11eb-9e29-c533581cd3aa.png">
+<img width="997" alt="10" src="https://user-images.githubusercontent.com/65017645/118226316-5f36df80-b4a4-11eb-8934-9e82f28ff41d.png">
 
-![1](.images/1.png)
 
-![2](.images/2.png)
+
 
 
 ## Download Model : 
