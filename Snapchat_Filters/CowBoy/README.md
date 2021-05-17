@@ -10,14 +10,10 @@ Used OpenCV in python to demonstrate snapchat filters.
 
 ## Results
 
-Input
 
 
-![image][]
+
+![image](https://github.com/ranjan-panda/Face-X/blob/patch-cowboy/Snapchat_Filters/CowBoy/output.jpg)
 
 
-Output
-
-
-![image][]
 
