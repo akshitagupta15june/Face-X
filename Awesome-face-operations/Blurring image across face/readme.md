@@ -6,7 +6,10 @@
 
 ## Abstract <img src="https://img.icons8.com/color/30/000000/help--v1.png"/>
 
-An image seems more detailed if we can observe all the objects and their shapes accurately in it. For instance, an image with a face looks clear when we can identify eyes, ears, etc very clear. This shape of an object is due to its edges. So in blurring, we simply reduce the edge content and makes the transition from one color to the other very smooth.
+Blur Face makes it fast and simple to anonymize faces in your photos.
+When processing an image, we are often interested in identifying objects represented within it so that we can perform some further analysis of these objects e.g. by counting them, measuring their sizes, etc. An important concept associated with the identification of objects in an image is that of edges: the lines that represent a transition from one group of similar pixels in the image to another different group. One example of an edge is the pixels that represent the boundaries of an object in an image, where the background of the image ends and the object begins.
+
+When we blur an image, we make the color transition from one side of an edge in the image to another smooth rather than sudden. The effect is to average out rapid changes in pixel intensity. The blur, or smoothing, of an image removes “outlier” pixels that may be noise in the image. Blurring is an example of applying a low-pass filter to an image. In computer vision, the term “low-pass filter” applies to removing noise from an image while leaving the majority of the image intact. A blur is a very common operation we need to perform before other tasks such as edge detection. There are several different blurring functions in the skimage.filters module, so we will focus on just one here, the Gaussian blur.
 
 Background blurring is most often seen as a feature of portrait mode in phone cameras. Another example is zoom and other online platforms that blur the background and not the face. In this model, we provide you with a small code to try this effect out, especially blurring the face.
 
