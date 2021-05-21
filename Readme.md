@@ -29,7 +29,7 @@
 <a href="https://github.com/akshitagupta15june/Face-X/tree/master/Recognition-Algorithms"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/logo.png"
 style="margin:10px;" width="150px" 
 alt="Meshery - Service Mesh Management Plane" align="left" /></a>
-<a href="https://github.com/akshitagupta15june/Face-X/tree/master/Recognition-Algorithms">Recognition</a>  of faces by different algorithms and frameworks. Despite a variety of open-source face recognition frameworks available, there was no ready-made solution to implement. So In this project all kind of algorithms are implemented and even with various operations that can be implemented in a frontal face. The available algorithms processed only high-resolution static shots and performed insufficiently.
+<a href="https://github.com/akshitagupta15june/Face-X/tree/master/Recognition-Algorithms">Recognition </ a> of faces by different algorithms and frameworks. Despite a variety of open-source face recognition frameworks available, there was no ready-made solution to implement. So In this project all kinds of algorithms are implemented and even with various operations that can be implemented in a frontal face. The available algorithms processed only high-resolution static shots and performed insufficiently.
 <br /><br />
 </p>
 <br />
@@ -38,7 +38,7 @@ alt="Meshery - Service Mesh Management Plane" align="left" /></a>
 <a href="https://github.com/Vi1234sh12/Face-X/tree/master/Recognition-using-IOT"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/sp_logo.png"
 style="margin:10px;" width="150px" 
 alt="Meshery - Service Mesh Management Plane" align="left" /></a>
-<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Recognition-using-IOT">Internet of Things </a> has opened up a new avenue of research in the field of human activity recognition using wearable sensors. It provides an individual's valuable information regarding functional ability and lifestyle. Human activities are monitored automatically to provide personalized support to different individuals.
+<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Recognition-using-IOT">Internet of Things </ a> has opened up a new avenue of research in the field of human activity recognition using wearable sensors. It provides an individual's valuable information regarding functional ability and lifestyle. Human activities are monitored automatically to provide personalized support to different individuals.
 <br /><br />
 </p>
 <br />
@@ -47,7 +47,7 @@ alt="Meshery - Service Mesh Management Plane" align="left" /></a>
 <a href="https://github.com/akshitagupta15june/Face-X/tree/master/Facial_Biometric"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/hand.png"
 style="margin:10px;" width="125px" 
 alt="Meshery - Service Mesh Management Plane" align="left" /></a>
-<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Facial_Biometric">Facial Biometric</a> technology measures and matches the unique characteristics for the purposes of identification or authentication. Often leveraging a digital or connected camera, facial recognition software can detect faces in images, quantify their features, and then match them against stored templates in a database. 
+<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Facial_Biometric">Facial Biometric </ a> technology measures and matches the unique characteristics for the purposes of identification or authentication. Often leveraging a digital or connected camera, facial recognition software can detect faces in images, quantify their features, and then match them against stored templates in a database. 
 <br /><br />
 </p>
 <br />
@@ -56,7 +56,7 @@ alt="Meshery - Service Mesh Management Plane" align="left" /></a>
 <a href="https://github.com/Vi1234sh12/Face-X/tree/master/Snapchat_Filters"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/kis-r.png"
 style="margin:10px;" width="150px" 
 alt="Meshery - Service Mesh Management Plane" align="left" /></a>
-<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Snapchat_Filters">Snapchat filters </a> are certainly an integral part of what makes the social media platform and messaging app Snapchat unique and globally popular. Filters, or added effects, can be applied over images in a variety of ways before being uploaded to one’s social network for others to see. Geofilters allow users to alter a picture of a landscape, such as adding color to sky or turning day to night
+<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Snapchat_Filters">Snapchat filters </ a> are certainly an integral part of what makes the social media platform and messaging app Snapchat unique and globally popular. Filters, or added effects, can be applied over images in a variety of ways before being uploaded to one’s social network for others to see. Geofilters allow users to alter a picture of a landscape, such as adding color to sky or turning day to night
 <br /><br />
 </p>
 <br />
@@ -65,7 +65,7 @@ alt="Meshery - Service Mesh Management Plane" align="left" /></a>
 <a href="https://github.com/Vi1234sh12/Face-X/tree/master/Face-Mask-Detection"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/face-mask-logo-template_23-2148746217__3_-removebg-preview.png"
 style="margin:10px;" width="150px" 
 alt="Meshery - Service Mesh Management Plane" align="left" /></a>
-<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Face-Mask-Detection">Face Mask Detection</a> Platform uses Artificial Network to recognize if a user is not wearing a mask.  The app can be connected to any existing or new IP mask detection cameras to detect people without a mask. App users can also add faces and phone numbers to send them an alert in case they are not wearing a mask. If the camera captures an unrecognized face, a notification can be sent out to the administrator. 
+<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Face-Mask-Detection">Face Mask Detection </ a> Platform uses Artificial Network to recognize if a user is not wearing a mask.  The app can be connected to any existing or new IP mask detection cameras to detect people without a mask. App users can also add faces and phone numbers to send them an alert in case they are not wearing a mask. If the camera captures an unrecognized face, a notification can be sent out to the administrator. 
 <br /><br />
 </p>
 <br />
@@ -74,7 +74,7 @@ alt="Meshery - Service Mesh Management Plane" align="left" /></a>
 <a href="https://github.com/Vi1234sh12/Face-X/tree/master/Awesome-face-operations"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/Asome.png"
 style="margin:10px;" width="145px" 
 alt="Meshery - Service Mesh Management Plane" align="left" /></a>
-<a href="https://github.com/akshitagupta15june/Face-X/tree/master/Awesome-face-operations">Awesome Face Operations</a> that will blow your mind!
+<a href="https://github.com/akshitagupta15june/Face-X/tree/master/Awesome-face-operations">Awesome Face Operations </ a> that will blow your mind!
 <br /><br />
 </p>
 <br />
@@ -131,7 +131,7 @@ env\Scripts\activate
 ```bash
 pip install -r requirements.txt
 ```
-- Have a look at [Contibuting Guidelines](https://github.com/akshitagupta15june/Face-X/blob/master/CONTRIBUTING.md)
+- Have a look at [Contributing Guidelines](https://github.com/akshitagupta15june/Face-X/blob/master/CONTRIBUTING.md)
 - Read the [Code of Conduct](https://github.com/akshitagupta15june/Face-X/blob/master/CODE_OF_CONDUCT.md)
 
 </br>
@@ -183,7 +183,7 @@ Thanks goes to these wonderful people ✨✨:
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/qww.png" height="380px" width="50%" align="left"/>
 <p style="clear:both;">
 <h1><a name="contributing"></a><a name="community"></a> <a href="https://github.com/akshitagupta15june/Face-X">Community</a> and <a href="https://github.com/akshitagupta15june/Face-X/blob/master/CONTRIBUTING.md">Contributing</a></h1>
-<p>Please do! Contributions, updates, <a href="https://github.com/akshitagupta15june/Face-X/issues"></a> and <a href=" ">pull requests</a> are welcome. This project is community-built and welcomes collaboration. Contributors are expected to adhere to the <a href="https://github.com/akshitagupta15june/Face-X/blob/master/CODE_OF_CONDUCT.md/">Code of Conduct</a>.
+<p>Please do! Contributions, updates, <a href="https://github.com/akshitagupta15june/Face-X/issues"></a> <a href=``https://github.com/akshitagupta15june/Face-X/issues"></a> <a href=``https://github.com/akshitagupta15june/Face-X/issues"></a> <a href=``https://github.com/akshitagupta15june/Face-X/issues"></a> <a href=``https://github.com/akshitagupta15june/Face-X/issues"></a> <a href=``https://github.com/akshitagupta15june/Face-X/issues"></a> <a href=``https://github.com/akshitagupta15june/Face-X/issues"></a> <a href=``https://github.com/akshitagupta15june/Face-X/issues"></a> and <a href=" ">pull requests</a> are welcome. This project is community-built and welcomes collaboration. Contributors are expected to adhere to the <a href="https://github.com/akshitagupta15june/Face-X/blob/master/CODE_OF_CONDUCT.md/"><a href=``https://github.com/akshitagupta15june/Face-X/blob/master/CODE_OF_CONDUCT.md/"><a href=``https://github.com/akshitagupta15june/Face-X/blob/master/CODE_OF_CONDUCT.md/"><a href=``https://github.com/akshitagupta15june/Face-X/blob/master/CODE_OF_CONDUCT.md/">Code of Conduct</a>.
 </p>
 <p>
 Jump into our <a href="https://discord.com/invite/Jmc97prqjb">Discord</a>! Our projects are community-built and welcome collaboration. 👍Be sure to see the <a href="https://github.com/akshitagupta15june/Face-X/blob/master/Readme.md">Face-X Community Welcome Guide</a> for a tour of resources available to you.
@@ -191,4 +191,6 @@ Jump into our <a href="https://discord.com/invite/Jmc97prqjb">Discord</a>! Our p
 <p>
 <i>Not sure where to start?</i> Grab an open issue with the <a href="https://github.com/akshitagupta15june/Face-X/issues">labels</a>
 </p>
+
+
 
