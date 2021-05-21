@@ -4,7 +4,7 @@ Load an image file into a numpy array - while automatically rotating the image b
 
 ![image](https://user-images.githubusercontent.com/67019423/119190463-04504a00-ba9b-11eb-80cb-483a0e4eea8e.png)
 
-| no_elif  | elif |
+| no_exif  | exif |
 | ------------- | ------------- |
 | ![no_elif](https://user-images.githubusercontent.com/67019423/119191159-e9caa080-ba9b-11eb-8c0d-51deabb53c9b.PNG) | ![elif](https://user-images.githubusercontent.com/67019423/119191231-f949e980-ba9b-11eb-893b-65c812c03d0b.PNG) |
 
