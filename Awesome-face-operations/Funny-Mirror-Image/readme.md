@@ -2,5 +2,5 @@
 <H1 Funny Mirror Image Implementation </H1>
 <p>
 <img src="dora.png"/>
-  <img src="FunnyImage.PNG"/>
-  </p>
+  <img src="FunnyImage.PNG" height=100/>
+ </p>
