@@ -6,8 +6,7 @@
 * Python
 * The program makes use of Dlib-facial feature points
 * OpenCV
-* Tkinter
-* Shape predictor 68 face landmark points Model
+
 
 
 ### Installing
