@@ -33,3 +33,11 @@ To run :
 - `saved.png`               <--- static image of Saved by the Bell Cast used for testing
 - `witch.png`               <--- filter image to be placed on faces
 - `witch.gif`               <--- gif of screen recording of `halloween_masks_vid.py`
+
+
+
+
+Result :
+
+![Result](https://user-images.githubusercontent.com/65017645/119252256-ce10e880-bbc8-11eb-9518-6ef039b3eb0f.png)
+
