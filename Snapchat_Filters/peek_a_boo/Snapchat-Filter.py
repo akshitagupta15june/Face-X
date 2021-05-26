@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 
 
-image = 'style-6.png'
+image = './Assets/style-6.png'
 
 
 face_cascade = cv2.CascadeClassifier("./Dataset/haarcascade_frontalface_alt.xml")
@@ -39,16 +39,16 @@ for face in faces:
                 if glasses[i,j][3] != 0:
                     rol_color[ey + i, ex + j] = glasses[i,j]
 
-    # nose = nosecascade.detectMultiScale(rol_gray, 1.3, 7)
-    # for (nx, ny, nw, nh) in nose:
+    nose = nosecascade.detectMultiScale(rol_gray, 1.3, 7)
+    for (nx, ny, nw, nh) in nose:
 
-    #     mustache = cv2.resize(mustache, (nw+10,nh))
+        mustache = cv2.resize(mustache, (nw+10,nh))
 
-    #     mw, mh, mc = mustache.shape
-    #     for i in range(0,mw):
-    #         for j in range(0, mh):
-    #             if mustache[i,j][3] != 0:
-    #                 rol_color[ny+int(nh/2.0)+i, nx+j+3] = mustache[i,j]
+        mw, mh, mc = mustache.shape
+        for i in range(0,mw):
+            for j in range(0, mh):
+                if mustache[i,j][3] != 0:
+                    rol_color[ny+int(nh/2.0)+i, nx+j+3] = mustache[i,j]
 
 frame = cv2.cvtColor(frame, cv2.COLOR_BGRA2BGR)
 
