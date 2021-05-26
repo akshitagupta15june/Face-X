@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 
 
-image = './Assets/abcd.jpg'
+image = 'abcd.jpg'
 
 
 face_cascade = cv2.CascadeClassifier("./Dataset/haarcascade_frontalface_alt.xml")
