@@ -62,7 +62,7 @@ frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 fig = plt.figure()
 fig.set_figheight(30)
 fig.set_figwidth(15)
-plt.title("Pirates Filter")
+plt.title("Jewellery Filter")
 plt.imshow(frame)
 
 plt.show()
