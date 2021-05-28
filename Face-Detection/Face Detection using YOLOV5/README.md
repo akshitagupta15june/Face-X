@@ -1,4 +1,4 @@
-# yolov5_Face
+# yolov5
 * The dataset used for training the yolov5 is from roboflow.ai<br/>
 
 ## Installation
@@ -23,4 +23,4 @@ $ python detect.py --weights last_mask_yolov5s_results.pt --conf 0.4 --source 0 
 ```
 
 ## Output Results from open source images
-![test5_out](https://user-images.githubusercontent.com/41751718/88254674-a8c6fb80-ccd3-11ea-8c09-54a7e39274f3.jpg)
+![merkel_putin_trump](https://user-images.githubusercontent.com/65017645/119926902-ebadcb80-bf95-11eb-8c5d-94f65b3c9ea7.jpg)
