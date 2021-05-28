@@ -1,0 +1,5 @@
+classes=2
+valid=/mydrive/valid.txt
+names=/mydrive/obj.names
+backup=/mydrive/backup/
+train=/mydrive/train.txt
