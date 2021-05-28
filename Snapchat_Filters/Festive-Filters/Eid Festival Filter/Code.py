@@ -32,5 +32,5 @@ height = (background.height - frontImage.height) // 2
 background.paste(frontImage, (width, height), frontImage)
   
 # Save this image
-background.save("Diwali Filtered Image.png", format="png")
+background.save("Eid Filtered Image.png", format="png")
 background.show()
