@@ -8,7 +8,7 @@ img.save('resized_image.jpg')
 
 filename1 =  'resized_image.jpg'
 
-filename=input("Enter the path of the given diwali image here:")  #ex -> r'C:\Users\xyz\images\holi.jpg'  
+filename=input("Enter the path of the given diwali image here:")  #ex -> r'C:\Users\xyz\images\diwali.jpg'  
 
 
 
