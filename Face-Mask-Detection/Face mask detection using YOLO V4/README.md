@@ -16,7 +16,7 @@ It detects human faces with mask or no mask  even in crowd in real time with liv
 ## Quick-Start
 **Step 1:**
 ```
-git clone 
+git clone Repo
 ```
 Then, Download weights. https://bit.ly/yolov4_mask_weights 
 
@@ -32,4 +32,6 @@ python mask-detector-image.py -y yolov4-mask-detector -u 1
 
 
 Output :
+![1_output](https://user-images.githubusercontent.com/65017645/119980533-09048900-bfda-11eb-9d32-bacaa82bf106.jpg)
+
 
