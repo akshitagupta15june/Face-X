@@ -5,5 +5,7 @@
 - Plot scatter and density plots.
 - Plot column distribution matrix 
 
+*** Dataset contains pixels of images.
+
 Conclusion:
 The face of animes are detected, then it's recommended according to the frequency in the plots while data visualisation.
