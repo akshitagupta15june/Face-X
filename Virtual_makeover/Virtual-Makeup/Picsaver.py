@@ -20,6 +20,6 @@ while True:
         print("Success")
         img_counter += 1
 
-cam.release()
+cap.release()
 
 cv2.destroyAllWindows()
