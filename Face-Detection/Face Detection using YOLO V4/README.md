@@ -1,4 +1,4 @@
-# YoloV4 Face detetction
+# YoloV4 Face detection
 The goal of YOLO is to divide the image into a grid of multiple cells, and then for each cell predict the probability of having an object using anchor boxes. The output is vector with bounding box coordinates and probability classes. Post-processing techniques such as non-maxima suppression (NMS) are also used.
 
 
