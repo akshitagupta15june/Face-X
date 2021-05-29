@@ -7,7 +7,7 @@ img.save('resized_image.jpg')
 
 filename1 =  'resized_image.jpg'
 
-filename=input("Independence day.png") 
+filename=input("Independence Day.png") 
 
 # Open Front Image
 frontImage = Image.open(filename)
