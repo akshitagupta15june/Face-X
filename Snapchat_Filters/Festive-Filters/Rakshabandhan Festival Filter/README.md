@@ -1,4 +1,4 @@
-# Applying "Rakshabandhan Filter Image" on an image.
+# Applying "Rakshabandhan Festival Filter" on an image.
 
 Converting an image into a Rakshabandhan festival filtered image using Image from PIP library in python.
 
