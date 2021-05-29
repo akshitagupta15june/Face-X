@@ -16,6 +16,6 @@ Converting an image into a Janmashtami festival filtered image using Image from 
 ## Original Image
 <img src="Images/Image.jpg" height="300px">
 
-## Christmas Festival Filtered Image
+## Janmashtami Festival Filtered Image
 <img src="Images/Janmashtami Festival Filtered Image.png" height="300px">
 
