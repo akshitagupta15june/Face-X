@@ -26,7 +26,7 @@ To run the program, simply type the following command :
 pip install requirements.txt
 ```
 ```
-python detect_face_features.py --image image_path/image_file_name
+python facial_feature_detection_dlib.py --image image_path/image_file_name
 ```
 
 # SAMPLE INPUT
