@@ -22,9 +22,9 @@ def convert_shape_to_array(face_feature, dtype="int"):
 
     # initializing
     x_y = np.zeros((68, 2), dtype=dtype)
-    # Converting each facial indexes to x, y coordinates by looping
-
     for index in range(0, 68):
+        # Converting each facial indexes to x, y coordinates by looping
+
         x_y[index] = (face_feature.part(index).x, face_feature.part(index).y)
     return x_y
 
@@ -36,9 +36,7 @@ def highlight_features(image, feature, colors=None, alpha=0.75):
 
     # different colours for different landmarks if colours is None
     if colors is None:
-        colors = [(158, 163, 32), (230, 159, 23), (19, 199, 109), 
-                  (180, 42, 220), (168, 100, 168), (79, 76, 240),
-                  (163, 38, 32),  (158, 163, 32)]
+        colors = [(158, 163, 32), (230, 159, 23), (19, 199, 109), (180, 42, 220), (168, 100, 168), (79, 76, 240), (163, 38, 32),  (158, 163, 32)]
 
     # Looping to find jawline because jawline is non enclosed facial region
 
@@ -95,5 +93,7 @@ face_detec = facial_landmarks(grayscale_img, 1)
 for (landmrk_ind, face_detec) in enumerate(face_detec):
     # obtaining face region landmarks and converting coordinates (x, y) to array
     output_img = highlight_features(input_image, convert_shape_to_array(face_feature_landmarks(grayscale_img, face_detec)))
+
+    # display image
     cv2.imshow("Face Features", output_img)
     cv2.waitKey(0)

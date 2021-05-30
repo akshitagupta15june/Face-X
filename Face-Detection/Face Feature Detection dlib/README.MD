@@ -31,11 +31,11 @@ python detect_face_features.py --image image_path/image_file_name
 
 # SAMPLE INPUT
 
-![Alt](images/image_1.jpg)
+![Alt](images/inp_img2.jpg)
 
 # SAMPLE OUTPUT
 
-![Alt](images/image_2.jpg)
+![Alt](images/out_img2.jpg)
 
 
 
