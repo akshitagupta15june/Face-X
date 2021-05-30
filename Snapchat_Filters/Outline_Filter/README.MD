@@ -1,6 +1,6 @@
 # Outline Filter
 
-Implementing Outline filter using opnenCV
+Implementing Outline filter using OpenCV
 
 # WORKING
 
