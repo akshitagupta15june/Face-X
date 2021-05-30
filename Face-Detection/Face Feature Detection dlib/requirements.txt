@@ -1,0 +1,13 @@
+anaconda-client==1.6.3
+anaconda-navigator==1.6.3
+anaconda-project==0.6.0
+args==0.1.0
+attrs==17.2.0
+cmake==0.7.1
+conda==4.3.22
+Cython==0.25.2
+dlib==19.4.0
+numpy==1.13.1
+numpydoc==0.6.0
+opencv-python==3.2.0+contrib
+Pillow==4.2.0
