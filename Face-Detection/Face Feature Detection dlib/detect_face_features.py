@@ -37,8 +37,8 @@ def highlight_features(image, feature, colors=None, alpha=0.75):
     # different colours for different landmarks if colours is None
     if colors is None:
         colors = [(158, 163, 32), (230, 159, 23), (19, 199, 109), 
-                  (180, 42, 220), (158, 163, 32), (79, 76, 240),
-                  (163, 38, 32),  (168, 100, 168)]
+                  (180, 42, 220), (168, 100, 168), (79, 76, 240),
+                  (163, 38, 32),  (158, 163, 32)]
 
     # Looping to find jawline because jawline is non enclosed facial region
 
