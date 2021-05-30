@@ -5,6 +5,5 @@ Train Set: 816 images
 
 Test Set: 196 images
 
-[
-![face_recognition_mask_by_viktoriia_miroshnikovadreamstime com_](https://user-images.githubusercontent.com/66672932/95468112-d00c9b00-099b-11eb-8784-6a41b1ed19e5.jpg)
-](url)
+![Mask](https://user-images.githubusercontent.com/65017645/120110792-b15a4f00-c18c-11eb-8507-57ee74269f73.png)
+
