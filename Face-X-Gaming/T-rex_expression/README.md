@@ -4,6 +4,10 @@
 
 ![image](https://user-images.githubusercontent.com/67019423/120097033-0aee5980-c14c-11eb-815d-f460fac9ca99.png)
 
+- So all we need to do is programmatically press those buttons, we can easily do that by utilizing the pyautogui library which will allow us to control our keyboard with python.
+
+`pip install PyAutoGUI`
+
 ## Outline:
 - Step 1: Real-time Face Detection
 - Step 2: Find the landmarks for the detected face
@@ -12,6 +16,14 @@
 - Step 5: Perform Calibration
 - Step 6: Keyboard Automation with PyautoGUI
 - Step 7: Build the Final Application
+
+## Lets start by importing the required libraries
+- `import cv2`
+- `import numpy as np`
+- `import matplotlib.pyplot as plt`
+- `from math import hypot`
+- `import pyautogui`
+- `import dlib`
 
 ## Landmark Detection
 ![image](https://user-images.githubusercontent.com/67019423/120097056-1fcaed00-c14c-11eb-8ed9-3c838a72c688.png)
