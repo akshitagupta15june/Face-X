@@ -8,6 +8,13 @@
 
 `pip install PyAutoGUI`
 
+## Requirements
+- pyautogui==0.9.52
+- matplotlib==3.3.2
+- numpy==1.19.2
+- opencv-python==4.5.1
+- dlib==19.21.1
+
 ## Outline:
 - Step 1: Real-time Face Detection
 - Step 2: Find the landmarks for the detected face
