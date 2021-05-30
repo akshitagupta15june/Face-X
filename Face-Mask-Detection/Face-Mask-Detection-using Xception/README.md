@@ -41,9 +41,6 @@ Implementation details for classification architecture:
 - ***Loss function***: Sparse categorical cross entropy
 - ***Criterion for evaluation***: F1-score
 
-### Model for Face Detection: RetinaNet Face
-Face Detection is the technique of identifying human faces in digital images. While inherently a backbone to other applications, detecting a face is in fact impacted a lot in cluttered scenes, and examples of the same kind of problem can be thought of in a crowded setting, the use-case for which our mask detection algorithm is being built. For this reason, having tried various techniques from classical Computer Vision domain to using deep learning techniques, I needed to prioritize the mAP metric of detected faces in a crowded setting. Having said that, I tried techniques for face detection such as Haar cascading and MT-CNN which did not achieve a high recall. Finally, I sided with a pre-trained RetinaNet Face model, using focal loss which is able to handle the foreground-background class imbalance (an issue with one stage detectors which makes performance of single shot detectors inferior to two stage detectors for object detection) in the detected classes pretty well.
-
 #### ***Improving the precision and recall***
 I was able to improve the precision and recall of my model by a high margin in the following ways:
 1. Resizing the cropped face before providing as input to the classification model.
