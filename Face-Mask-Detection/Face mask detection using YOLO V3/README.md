@@ -1,5 +1,5 @@
 
-## System Overview
+## System Overview : 
 
 It detects human faces with mask or no mask  even in crowd in real time with live count status and notifies user (officer) if danger.
 
@@ -16,9 +16,8 @@ It detects human faces with mask or no mask  even in crowd in real time with liv
 ## Quick-Start
 **Step 1:**
 ```
-git clone 
+git clone Repo
 ```
-Then, Download weights. https://bit.ly/yolov4_mask_weights 
 
 **Step 2: Install requirements.**
 ```
@@ -27,9 +26,11 @@ pip install imutils
 ```
 **Step 3: Run yolov4 on webcam**
 ```
-python mask-detector-image.py -y yolov4-mask-detector -u 1
+python mask-detector-image.py
 ```
 
 
 Output :
+![1_output](https://user-images.githubusercontent.com/65017645/120090937-fc8c4780-c123-11eb-8593-60f1e06bf498.jpg)
+
 
