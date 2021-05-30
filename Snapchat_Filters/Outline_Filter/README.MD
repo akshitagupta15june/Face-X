@@ -1,4 +1,4 @@
-# Outline Filter
+# OUTLINE FILTER
 
 Implementing Outline filter using OpenCV
 
