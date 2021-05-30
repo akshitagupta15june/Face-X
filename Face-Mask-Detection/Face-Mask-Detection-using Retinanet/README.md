@@ -30,16 +30,6 @@ As discussed earlier, the mask detection model can be said to be a combination o
 For the purpose of classification, we use transfer learning with an Xception model trained on the ImageNet dataset with a modified final fully connected layer. While using the face detection model, several different approaches were tried upon based on existing literature, and the one which worked the best was a RetinaNet Face pre-trained model which gave the highest measures of recall while experimenting on different use-cases and testing images of people in a crowded setting.
 The models and implementation details for them have been discussed in an objective manner as part of this section, and while providing an insight on the approach used (and why it was chosen in the first place), we delve into our final mask detection model which was built using a combination of the classification and face detection models as were briefly described above.
 
-### Model for Classification: Xception
-A classification problem is, using available training data with defined features and class labels, building a function which can, with high levels of certainty categorize a new unseen set of data into one of the classes. Having only a limited amount of data available for training the classifier, I was inclined to use transfer learning for the purpose of our task of classifying an input image into the categories of whether the subject is wearing a mask or not. The transfer learning technique is probably one of the most revolutionary ideas to have come out in the past few years, and can be thought of reusing a pre-trained model, which is trained on another set of input images, which in our case would be the use of Xception model trained on the ImageNet database.
-<br>
-Implementation details for classification architecture:
-- ***Batch Size***: 32
-- ***Epochs***: 2
-- ***Learning rate***: 1e-4 (with decay of 1e-4 / epoch)
-- ***Gradient Descent Optimizer***: Adam
-- ***Loss function***: Sparse categorical cross entropy
-- ***Criterion for evaluation***: F1-score
 
 ### Model for Face Detection: RetinaNet Face
 Face Detection is the technique of identifying human faces in digital images. While inherently a backbone to other applications, detecting a face is in fact impacted a lot in cluttered scenes, and examples of the same kind of problem can be thought of in a crowded setting, the use-case for which our mask detection algorithm is being built. For this reason, having tried various techniques from classical Computer Vision domain to using deep learning techniques, I needed to prioritize the mAP metric of detected faces in a crowded setting. Having said that, I tried techniques for face detection such as Haar cascading and MT-CNN which did not achieve a high recall. Finally, I sided with a pre-trained RetinaNet Face model, using focal loss which is able to handle the foreground-background class imbalance (an issue with one stage detectors which makes performance of single shot detectors inferior to two stage detectors for object detection) in the detected classes pretty well.
@@ -63,9 +53,7 @@ On any given test image of a crowd based setting of people, our final mask detec
 ![Crowded_Scenario 1](https://github.com/TanyaChutani/Face-Mask-Detection-Tf2.0/blob/master/Results/Test%20Images/test_img1.png/)
 ![Crowded_Scenario 2](https://github.com/TanyaChutani/Face-Mask-Detection-Tf2.0/blob/master/Results/Test%20Images/test_img2.png/)
 ![Crowded_Scenario 3](https://github.com/TanyaChutani/Face-Mask-Detection-Tf2.0/blob/master/Results/Test%20Images/test_img3.png/)
-![Crowded_Scenario 4](https://github.com/TanyaChutani/Face-Mask-Detection-Tf2.0/blob/master/Results/Test%20Images/test_img4.png/)
-![Crowded_Scenario 5](https://github.com/TanyaChutani/Face-Mask-Detection-Tf2.0/blob/master/Results/Test%20Images/test_img5.png/)
-![Crowded_Scenario 5](https://github.com/TanyaChutani/Face-Mask-Detection-Tf2.0/blob/master/Results/Test%20Images/test_img6.png/)
+
 
 <br>
 
