@@ -42,3 +42,6 @@ python3 train.py --net-type MobileNetV2 --data-dir data/64x64_dataset --epochs 2
 ## Output :
 ![evaluation](https://user-images.githubusercontent.com/65017645/120110276-722afe80-c18a-11eb-8189-837d122a3c00.png)
 
+![8](https://user-images.githubusercontent.com/65017645/120110323-a2729d00-c18a-11eb-8ea2-5bff0036ad40.jpg)
+
+
