@@ -45,7 +45,4 @@ please follow below step to make detection.
     7) when you run this file it will start you webcam and on screen you can see the output.
     
 
-Thank you.  
-Ashish  
-linkedin : https://www.linkedin.com/in/ashishbarvaliya/  
-resume :https://drive.google.com/drive/u/0/folders/1UHBqfC4jcmNYe7L8YK0_Y9kpuXLBkNta  
+
