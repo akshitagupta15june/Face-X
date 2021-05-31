@@ -2,7 +2,8 @@
 
 A convolutional network for face detection. This work is based on "Multi-view Face Detection Using Deep Convolutional Neural Networks" by Farfade et al., although some implementation details differ.
 
-![Faces Screenshot](./images/faces.png)
+![faces](https://user-images.githubusercontent.com/65017645/120172105-56723780-c220-11eb-8d41-9cf6db09a629.png)
+
 
 Following scripts are provided:
 
