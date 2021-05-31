@@ -1,8 +1,6 @@
 import cv2
 from PIL import Image
 import numpy as np
-import matplotlib.pyplot as plt
-
 save = True
 
 def show(image):
@@ -23,6 +21,7 @@ def show(image):
 
     #apply filter onto background image
     for (x,y,w,h) in faces:
+       
         cv2.rectangle(image, (y, x), ((y + h), (x + w+70)), (0,0,255), 2)
         #resize the filter size
         fMask = fMask.resize((w+20,h-70))

@@ -14,3 +14,6 @@ applied which gives three outputs- coordinates, landmarks on
 face and confidence level of bounding boxes. After every 
 stage a non max suppression method is used to remove 
 bounding boxes with low confidence.
+
+![outside_000001_yoloface](https://user-images.githubusercontent.com/65017645/120110101-dc8f6f00-c189-11eb-8331-1c32d4a5d442.jpg)
+
