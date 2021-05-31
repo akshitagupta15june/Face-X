@@ -1,10 +1,10 @@
 Requirements 
-python3
-pip install opencv-python
-pip install opencv-contrib-python
-pip install numpy
-pip install Pillow
-pip install sqlite3
+* python3
+* pip install opencv-python
+* pip install opencv-contrib-python
+* pip install numpy
+* pip install Pillow
+* pip install sqlite3
 
 
 #1. run faces.py 
@@ -18,3 +18,7 @@ pip install sqlite3
 #3. run detector.py 
 
 	it will detect you
+	
+	
+
+
