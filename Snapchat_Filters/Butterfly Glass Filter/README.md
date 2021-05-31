@@ -9,12 +9,12 @@ Converting an image into a Butterfly Glass filtered image using Cv2 and Matplotl
 ## Methods Used
 * Used a python fuction which use cv2 to fix the glass placing on the image
 * And applying it on the given image
-* Finally converted the image into Pirates filter image
+* Finally converted the image into Butterfly Glass filter image
 
 
 ## Original Image
 <img src="Images/Image.jpg" height="300px">
 
-## Pirates Filtered Image
+## Butterfly Glass Filtered Image
 <img src="Images/Butterfly Glass Filtered Image.png" height="300px">
 
