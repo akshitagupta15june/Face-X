@@ -6,8 +6,9 @@ The centres of two eyes are found, which are points 68 and 69 in shape predictor
 
 # STEPS
 
-![Mask](./eye lens/mask.png)
+![Mask](https://github.com/ras-29/Face-X/blob/master/Virtual_makeover/eye_lens/outputs/mask.png)
+![Mask(colored)](https://github.com/ras-29/Face-X/blob/master/Virtual_makeover/eye_lens/outputs/mask(colored).png)
 
 # OUTPUTS
-
+![Output](https://github.com/ras-29/Face-X/blob/master/Virtual_makeover/eye_lens/outputs/Screenshot%20(607).png)
 
