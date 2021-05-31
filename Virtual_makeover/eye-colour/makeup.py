@@ -31,10 +31,4 @@ for face_landmarks in face_landmarks_list:
     d.line(face_landmarks['left_eye'] + [face_landmarks['left_eye'][0]], fill=(0, 0, 0, 0), width=6)
     d.line(face_landmarks['right_eye'] + [face_landmarks['right_eye'][0]], fill=(0, 0, 0, 0), width=6)
 
-    # d.polygon(face_landmarks['chin'], fill=(0,0,0,70))
-    # d.line(face_landmarks['chin'], fill=(0, 0, 0, 64), width=20)
-
-    # d.polygon(face_landmarks['nose_tip'], fill=(0,0,0,0))
-    # d.line(face_landmarks['nose_tip'], fill=(0, 0, 0, 64), width=8)
-
     pil_image.show()
