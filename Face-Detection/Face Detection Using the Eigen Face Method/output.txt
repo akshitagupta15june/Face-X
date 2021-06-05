@@ -1,0 +1,419 @@
+Eigen values:
+[  4.07889586e+08   1.93736702e+08  -3.05036435e-08   1.32113404e+08
+   4.55012084e+07   1.05599222e+08   8.22495667e+07   6.67942164e+07]
+
+PCA Coefficents for Test Images:
+
+
+PCA Coeffivents for subject01.centerlight.jpg :
+[ -4.19265944e+07   9.33435765e+06   4.97426790e-09  -1.96894052e+07
+   3.51175100e+06   2.33364673e+07  -4.53879945e+06  -2.45326164e+06]
+
+
+
+PCA Coeffivents for subject01.happy.jpg :
+[ -2.84226819e+07   6.21657618e+07   5.84770206e-09  -5.58402336e+07
+   1.39551196e+07   2.39919521e+07  -1.56038461e+07  -4.88745009e+05]
+
+
+
+PCA Coeffivents for subject01.normal.jpg :
+[ -7.58393182e+07   9.86591897e+07   8.92059302e-09  -7.35308451e+07
+   2.03390545e+07   2.09059360e+07  -1.34689494e+07   4.95663886e+06]
+
+
+
+PCA Coeffivents for subject02.normal.jpg :
+[  8.55914694e+07  -5.32769258e+07  -5.69868670e-09  -4.35819945e+04
+  -1.02912808e+07   7.27564771e+07  -2.36191334e+07  -2.56112293e+07]
+
+
+
+PCA Coeffivents for subject03.normal.jpg :
+[  6.79094869e+07   2.86096157e+07   2.00918010e-08  -2.11976451e+07
+  -9.00930120e+06  -6.14469992e+07   3.38368115e+06  -4.32998677e+07]
+
+
+
+PCA Coeffivents for subject07.centerlight.jpg :
+[  5.94280720e+06   1.09073119e+07  -2.93655309e-08   6.44391875e+07
+  -4.06118038e+06  -1.88646091e+06  -1.60012838e+07   1.25351205e+07]
+
+
+
+PCA Coeffivents for subject07.happy.jpg :
+[  1.03893380e+08  -9.15597753e+06  -1.88353249e-08   2.31395182e+07
+   9.78874352e+05  -3.10262255e+06  -4.00701970e+06   6.01476791e+06]
+
+
+
+PCA Coeffivents for subject07.normal.jpg :
+[  1.59365384e+08  -5.98976188e+07  -2.57703407e-08   3.62392288e+07
+   2.39421030e+07  -2.99666082e+07  -3.11659201e+07   1.50158366e+07]
+
+
+
+PCA Coeffivents for subject10.normal.jpg :
+[ -2.57010807e+07   5.31036358e+07  -5.08184474e-08   7.67395071e+07
+   1.13657321e+07   2.13665227e+07   4.79155988e+07  -8.39149947e+06]
+
+
+
+PCA Coeffivents for subject11.centerlight.jpg :
+[ -1.84458324e+08  -1.27514264e+08   4.30947028e-08  -3.94098492e+06
+  -4.82546087e+06   6.57524499e+06  -1.18073793e+07  -4.07760603e+06]
+
+
+
+PCA Coeffivents for subject11.happy.jpg :
+[ -2.91280480e+08  -1.07981032e+08   5.34113925e-08  -8.07984970e+06
+  -3.16856693e+06  -8.84253231e+06  -2.77433359e+06   1.23549801e+06]
+
+
+
+PCA Coeffivents for subject11.normal.jpg :
+[ -3.09965508e+08  -1.01569225e+08   5.30136190e-08  -7.23282904e+06
+   3.43527729e+05  -1.38164759e+07   4.01893283e+06   6.69097274e+05]
+
+
+
+PCA Coeffivents for subject12.normal.jpg :
+[ -8.48151488e+07   2.39983394e+07  -7.94939199e-09   9.24693940e+06
+   1.09479841e+06   3.03539436e+07  -1.06420075e+07   1.14064585e+07]
+
+
+
+PCA Coeffivents for subject14.happy.jpg :
+[ -3.72003742e+07   7.23552596e+07  -1.15433914e-08   2.01072900e+07
+  -1.10391535e+07  -1.16749219e+07  -3.12504845e+07   1.93984877e+07]
+
+
+
+PCA Coeffivents for subject14.normal.jpg :
+[ -5.48035678e+07   7.56177219e+07  -1.44194261e-08   4.07897743e+07
+  -2.52009615e+07  -9.97235825e+06  -2.99136079e+07   2.68289508e+07]
+
+
+
+PCA Coeffivents for subject14.sad.jpg :
+[ -3.09557722e+07   6.21419290e+07  -1.61496412e-08   4.11282105e+07
+  -1.89530184e+07  -9.12193903e+06  -3.02355547e+07   1.57609187e+07]
+
+
+
+PCA Coeffivents for subject15.normal.jpg :
+[  1.53443135e+08  -4.12463935e+07   1.46808878e-08  -5.17636090e+07
+  -1.14888738e+07   1.73505791e+05   4.28493981e+07   2.98320729e+07]
+
+
+
+PCA Coeffivents for apple1_gray.jpg :
+[ -2.40683176e+07   2.33966524e+07   1.42829988e-08  -5.18978138e+07
+   1.54361939e+07  -2.59415798e+06  -3.62456870e+07   1.56605404e+07]
+
+
+
+PCA Coefficents for Training Images:
+
+
+PCA Coeffivents for subject01.normal :
+[ -7.58393182e+07   9.86591897e+07   8.92059302e-09  -7.35308451e+07
+   2.03390545e+07   2.09059360e+07  -1.34689494e+07   4.95663886e+06]
+
+
+
+PCA Coeffivents for subject02.normal :
+[  8.55914694e+07  -5.32769258e+07  -5.69868670e-09  -4.35819945e+04
+  -1.02912808e+07   7.27564771e+07  -2.36191334e+07  -2.56112293e+07]
+
+
+
+PCA Coeffivents for subject03.normal :
+[  6.79094869e+07   2.86096157e+07   2.00918010e-08  -2.11976451e+07
+  -9.00930120e+06  -6.14469992e+07   3.38368115e+06  -4.32998677e+07]
+
+
+
+PCA Coeffivents for subject07.normal :
+[  1.59365384e+08  -5.98976188e+07  -2.57703407e-08   3.62392288e+07
+   2.39421030e+07  -2.99666082e+07  -3.11659201e+07   1.50158366e+07]
+
+
+
+PCA Coeffivents for subject10.normal :
+[ -2.57010807e+07   5.31036358e+07  -5.08184474e-08   7.67395071e+07
+   1.13657321e+07   2.13665227e+07   4.79155988e+07  -8.39149947e+06]
+
+
+
+PCA Coeffivents for subject11.normal :
+[ -3.09965508e+08  -1.01569225e+08   5.30136190e-08  -7.23282904e+06
+   3.43527729e+05  -1.38164759e+07   4.01893283e+06   6.69097274e+05]
+
+
+
+PCA Coeffivents for subject14.normal :
+[ -5.48035678e+07   7.56177219e+07  -1.44194261e-08   4.07897743e+07
+  -2.52009615e+07  -9.97235825e+06  -2.99136079e+07   2.68289508e+07]
+
+
+
+PCA Coeffivents for subject15.normal :
+[  1.53443135e+08  -4.12463935e+07   1.46808878e-08  -5.17636090e+07
+  -1.14888738e+07   1.73505791e+05   4.28493981e+07   2.98320729e+07]
+
+
+
+Test Face: subject01.centerlight.jpg
+Training Face			 Distance
+_______________________________________________
+subject01.normal 		 111586822.418
+subject02.normal 		 155242389.34
+subject03.normal 		 146676511.366
+subject07.normal 		 229591657.824
+subject10.normal 		 119707328.133
+subject11.normal 		 292870266.507
+subject14.normal 		 107945627.816
+subject15.normal 		 214023418.315
+Unknown Face
+
+Test Face: subject01.happy.jpg
+Training Face			 Distance
+_______________________________________________
+subject01.normal 		 63067848.625
+subject02.normal 		 181936137.178
+subject03.normal 		 147059539.161
+subject07.normal 		 249271519.075
+subject10.normal 		 147572653.644
+subject11.normal 		 332324142.182
+subject14.normal 		 117694790.263
+subject15.normal 		 222118699.969
+Identity of Face: subject01.normal
+
+Test Face: subject01.normal.jpg
+Training Face			 Distance
+_______________________________________________
+subject01.normal 		 0.0
+subject02.normal 		 243328948.302
+subject03.normal 		 196380903.102
+subject07.normal 		 309073374.025
+subject10.normal 		 176627569.523
+subject11.normal 		 318169127.804
+subject14.normal 		 133487089.229
+subject15.normal 		 279018318.621
+Identity of Face: subject01.normal
+
+Test Face: subject02.normal.jpg
+Training Face			 Distance
+_______________________________________________
+subject01.normal 		 243328948.302
+subject02.normal 		 0.0
+subject03.normal 		 162849037.561
+subject07.normal 		 142247445.345
+subject10.normal 		 195249043.536
+subject11.normal 		 409770237.603
+subject14.normal 		 218741654.313
+subject15.normal 		 142074947.716
+Identity of Face: subject02.normal
+
+Test Face: subject03.normal.jpg
+Training Face			 Distance
+_______________________________________________
+subject01.normal 		 196380903.102
+subject02.normal 		 162849037.561
+subject03.normal 		 0.0
+subject07.normal 		 161764991.664
+subject10.normal 		 171550250.39
+subject11.normal 		 405241747.8
+subject14.normal 		 173347238.682
+subject15.normal 		 154399493.307
+Identity of Face: subject03.normal
+
+Test Face: subject07.centerlight.jpg
+Training Face			 Distance
+_______________________________________________
+subject01.normal 		 186019216.483
+subject02.normal 		 147462236.853
+subject03.normal 		 136206359.704
+subject07.normal 		 176510231.04
+subject10.normal 		 90747702.0619
+subject11.normal 		 343932044.681
+subject14.normal 		 96679844.911
+subject15.normal 		 204454021.453
+Unknown Face
+
+Test Face: subject07.happy.jpg
+Training Face			 Distance
+_______________________________________________
+subject01.normal 		 233055760.24
+subject02.normal 		 100426750.645
+subject03.normal 		 103330781.054
+subject07.normal 		 88831686.4948
+subject10.normal 		 164784911.904
+subject11.normal 		 425382239.24
+subject14.normal 		 185795025.334
+subject15.normal 		 109655903.294
+Unknown Face
+
+Test Face: subject07.normal.jpg
+Training Face			 Distance
+_______________________________________________
+subject01.normal 		 309073374.025
+subject02.normal 		 142247445.345
+subject03.normal 		 161764991.664
+subject07.normal 		 0.0
+subject10.normal 		 241359064.247
+subject11.normal 		 475562142.495
+subject14.normal 		 259247726.572
+subject15.normal 		 126447654.975
+Identity of Face: subject07.normal
+
+Test Face: subject10.normal.jpg
+Training Face			 Distance
+_______________________________________________
+subject01.normal 		 176627569.523
+subject02.normal 		 195249043.536
+subject03.normal 		 171550250.39
+subject07.normal 		 241359064.247
+subject10.normal 		 1.75721591936e-08
+subject11.normal 		 339337083.098
+subject14.normal 		 110739948.506
+subject15.normal 		 244879181.662
+Identity of Face: subject10.normal
+
+Test Face: subject11.centerlight.jpg
+Training Face			 Distance
+_______________________________________________
+subject01.normal 		 262141694.81
+subject02.normal 		 288905361.763
+subject03.normal 		 307856548.306
+subject07.normal 		 356796012.795
+subject10.normal 		 261538544.375
+subject11.normal 		 130964036.022
+subject14.normal 		 249090014.327
+subject15.normal 		 357951333.858
+Unknown Face
+
+Test Face: subject11.happy.jpg
+Training Face			 Distance
+_______________________________________________
+subject01.normal 		 308163446.499
+subject02.normal 		 391093302.164
+subject03.normal 		 390729034.105
+subject07.normal 		 457750024.724
+subject10.normal 		 327812434.44
+subject11.normal 		 21783094.3634
+subject14.normal 		 306425098.006
+subject15.normal 		 455182031.455
+Identity of Face: subject11.normal
+
+Test Face: subject11.normal.jpg
+Training Face			 Distance
+_______________________________________________
+subject01.normal 		 318169127.804
+subject02.normal 		 409770237.603
+subject03.normal 		 405241747.8
+subject07.normal 		 475562142.495
+subject10.normal 		 339337083.098
+subject11.normal 		 0.0
+subject14.normal 		 318295544.793
+subject15.normal 		 472295896.835
+Identity of Face: subject11.normal
+
+Test Face: subject12.normal.jpg
+Training Face			 Distance
+_______________________________________________
+subject01.normal 		 114088420.684
+subject02.normal 		 196373441.628
+subject03.normal 		 189715468.363
+subject07.normal 		 268302208.33
+subject10.normal 		 113596022.111
+subject11.normal 		 262703834.786
+subject14.normal 		 86528212.3859
+subject15.normal 		 262709370.184
+Unknown Face
+
+Test Face: subject14.happy.jpg
+Training Face			 Distance
+_______________________________________________
+subject01.normal 		 116291957.183
+subject02.normal 		 201198094.2
+subject03.normal 		 149264366.459
+subject07.normal 		 240762641.378
+subject10.normal 		 111100562.015
+subject11.normal 		 327302460.046
+subject14.normal 		 31760601.2445
+subject15.normal 		 245267097.181
+Identity of Face: subject14.normal
+
+Test Face: subject14.normal.jpg
+Training Face			 Distance
+_______________________________________________
+subject01.normal 		 133487089.229
+subject02.normal 		 218741654.313
+subject03.normal 		 173347238.682
+subject07.normal 		 259247726.572
+subject10.normal 		 110739948.506
+subject11.normal 		 318295544.793
+subject14.normal 		 0.0
+subject15.normal 		 266804184.747
+Identity of Face: subject14.normal
+
+Test Face: subject14.sad.jpg
+Training Face			 Distance
+_______________________________________________
+subject01.normal 		 139061618.925
+subject02.normal 		 192702933.17
+subject03.normal 		 149125741.228
+subject07.normal 		 231118169.491
+subject10.normal 		 99585049.0715
+subject11.normal 		 329821305.091
+subject14.normal 		 30212478.884
+subject15.normal 		 242904340.548
+Identity of Face: subject14.normal
+
+Test Face: subject15.normal.jpg
+Training Face			 Distance
+_______________________________________________
+subject01.normal 		 279018318.621
+subject02.normal 		 142074947.716
+subject03.normal 		 154399493.307
+subject07.normal 		 126447654.975
+subject10.normal 		 244879181.662
+subject11.normal 		 472295896.835
+subject14.normal 		 266804184.747
+subject15.normal 		 0.0
+Identity of Face: subject15.normal
+
+Test Face: apple1_gray.jpg
+Training Face			 Distance
+_______________________________________________
+subject01.normal 		 100111536.845
+subject02.normal 		 169692008.721
+subject03.normal 		 136153029.877
+subject07.normal 		 221814828.114
+subject10.normal 		 160265519.129
+subject11.normal 		 318666513.742
+subject14.normal 		 118883680.688
+subject15.normal 		 207071343.061
+Unknown Face
+Test Face		Distance From Face Space			 Face classification
+____________________________________________________________________________________
+subject01.centerlight.jpg 			 919384207567.0 			 Face
+subject01.happy.jpg 			 1.25692444563e+12 			 Face
+subject01.normal.jpg 			 2.24223723292e+12 			 Face
+subject02.normal.jpg 			 2.04733298992e+12 			 Face
+subject03.normal.jpg 			 1.62098227758e+12 			 Face
+subject07.centerlight.jpg 			 786590036066.0 			 Face
+subject07.happy.jpg 			 2.12001640569e+12 			 Face
+subject07.normal.jpg 			 3.38285996539e+12 			 Face
+subject10.normal.jpg 			 1.35698318544e+12 			 Face
+subject11.centerlight.jpg 			 4.12901713851e+12 			 Face
+subject11.happy.jpg 			 6.07323129639e+12 			 Face
+subject11.normal.jpg 			 6.42001150109e+12 			 Face
+subject12.normal.jpg 			 1.78113074959e+12 			 Face
+subject14.happy.jpg 			 1.325723679e+12 			 Face
+subject14.normal.jpg 			 1.64734611424e+12 			 Face
+subject14.sad.jpg 			 1.21630209062e+12 			 Face
+subject15.normal.jpg 			 3.2409469577e+12 			 Face
+apple1_gray.jpg 			 913322117087.0 			 Face
