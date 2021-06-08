@@ -1,4 +1,4 @@
-# Face-detection-with-Deep-Learning
+# Face Detection using MTCNN
 
 A number of deep learning methods have been developeed and demonstrated for face detection.
 
@@ -20,7 +20,7 @@ The network uses a cascade structure with three networks :
 
 ### Pictorial representation of above working
 
-![mtcnn working](https://github.com/kuluruvineeth/Face-X/blob/master/Face-Detection/Face%20Detection%20using%20MTCNN/mtcnn.webp)
+<img src="https://github.com/kuluruvineeth/Face-X/blob/issue887/Face-Detection/Face%20Detection%20using%20MTCNN/mtcnn.webp" height="700">
 
 ## How to setup MTCNN ?
 
@@ -28,15 +28,13 @@ The network uses a cascade structure with three networks :
 
 ## Photograps I used
 
-![pic1](https://github.com/kuluruvineeth/Face-X/blob/master/Face-Detection/Face%20Detection%20using%20MTCNN/test1.jpg)
-![pic2](https://github.com/kuluruvineeth/Face-X/blob/master/Face-Detection/Face%20Detection%20using%20MTCNN/test1.jpg)
-![pic3](https://github.com/kuluruvineeth/Face-X/blob/master/Face-Detection/Face%20Detection%20using%20MTCNN/test2.jpg)
+<img src="https://github.com/kuluruvineeth/Face-X/blob/issue887/Face-Detection/Face%20Detection%20using%20MTCNN/test1.jpg" width="400" height="300">   <img src="https://github.com/kuluruvineeth/Face-X/blob/issue887/Face-Detection/Face%20Detection%20using%20MTCNN/test2.jpg" width="400" height="300">
 
 ## Resultant Photographs
 
-![res1](https://github.com/kuluruvineeth/Face-X/blob/master/Face-Detection/Face%20Detection%20using%20MTCNN/res1.png)
-![res2](https://github.com/kuluruvineeth/Face-X/blob/master/Face-Detection/Face%20Detection%20using%20MTCNN/res1.1.png)
-![res3](https://github.com/kuluruvineeth/Face-X/blob/master/Face-Detection/Face%20Detection%20using%20MTCNN/res2.png)
+
+<img src="https://github.com/kuluruvineeth/Face-X/blob/issue887/Face-Detection/Face%20Detection%20using%20MTCNN/res1.png" width="400" height="300"> <img src="https://github.com/kuluruvineeth/Face-X/blob/issue887/Face-Detection/Face%20Detection%20using%20MTCNN/res1.1.png" width="400" height="300"> <img src="https://github.com/kuluruvineeth/Face-X/blob/issue887/Face-Detection/Face%20Detection%20using%20MTCNN/res2.png">
+
 
 ## Conclusion
 
