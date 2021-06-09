@@ -1,19 +1,42 @@
-MTCNN is based on “Joint face detection and 
-alignment using multi-task cascaded convolutional networks”, it presents a method for facial 
-detection and alignment in pictures. It consists of 3-part
-CNN which can recognize landmarks on faces such as nose, 
-forehead, eyes etc. There are 3 stages to mtcnn. In the first 
-one the image is resized to create a pyramid of images so 
-detection for every size can be done then it is passed through 
-a neural network known as P Net which gives coordinates of 
-face and bounding box as output. In the second stage faces 
-which are only partly visible are dealt with a R net is used to 
-give bounding boxes as output. The result from P net and R 
-net is mostly similar. In the third and final stage an O net is 
-applied which gives three outputs- coordinates, landmarks on 
-face and confidence level of bounding boxes. After every 
-stage a non max suppression method is used to remove 
-bounding boxes with low confidence.
+# Face Detection using MTCNN
 
-![outside_000001_yoloface](https://user-images.githubusercontent.com/65017645/120110101-dc8f6f00-c189-11eb-8331-1c32d4a5d442.jpg)
+A number of deep learning methods have been developeed and demonstrated for face detection.
 
+Perhaps one of the more popular approaches is called the _"Multi-Task Cascaded Convolutional Neural Network"_ **(MTCNN)** described by [Kaipeng Zhang](https://kpzhang93.github.io/) in the 2016 paper titled "[Joint Face Detection and Alignment Using Multitask Cascaded Convolutional Networks](https://arxiv.org/abs/1604.02878)"
+
+## Why MTCNN Popular?
+
+- Because it achieved then state-of-the-art results on a range of benchmark datasets.
+- Because it is capable of also recognizing other facial features such as eyes,nose and mouth,called landmark detection.
+
+## Working of MTCNN
+
+The network uses a cascade structure with three networks :
+
+1. **Image Pyramid** - First the image is rescaled to a range of different sizes
+2. **Proposal Network** - This first model proposes candidate facial regions.
+3. **Refine Network** - This second model filters the bounding boxes.
+4. **Output Network** - This third model proposes facial landmarks.
+
+### Pictorial representation of above working
+
+<img src="https://github.com/kuluruvineeth/Face-X/blob/issue887/Face-Detection/Face%20Detection%20using%20MTCNN/mtcnn.webp" height="700">
+
+## How to setup MTCNN ?
+
+- [mtcnn setup](https://pypi.org/project/mtcnn/)
+
+## Photograps I used
+
+<img src="https://github.com/kuluruvineeth/Face-X/blob/issue887/Face-Detection/Face%20Detection%20using%20MTCNN/test1.jpg" width="400" height="300">   <img src="https://github.com/kuluruvineeth/Face-X/blob/issue887/Face-Detection/Face%20Detection%20using%20MTCNN/test2.jpg" width="400" height="300">
+
+## Resultant Photographs
+
+
+<img src="https://github.com/kuluruvineeth/Face-X/blob/issue887/Face-Detection/Face%20Detection%20using%20MTCNN/res1.png" width="400" height="300"> <img src="https://github.com/kuluruvineeth/Face-X/blob/issue887/Face-Detection/Face%20Detection%20using%20MTCNN/res1.1.png" width="400" height="300"> <img src="https://github.com/kuluruvineeth/Face-X/blob/issue887/Face-Detection/Face%20Detection%20using%20MTCNN/res2.png">
+
+
+## Conclusion
+
+- Face detection is a computer vision problem for identifying and localizing faces in images
+- State-of-the-art face detection can be achieved using a **Multi-task Cascade CNN** via the MTCNN library
