@@ -1,0 +1,122 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #e17055;
+  color: #fff;
+}
+
+.container {
+  height: 100vh;
+  width: 85vw;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-row {
+  align-self: baseline;
+}
+
+#imageContainer {
+  position: relative;
+  max-width: 40rem;
+  margin: auto;
+}
+
+.image[src] {
+  height: 100%;
+  width: 100%;
+  border: 0.5rem solid #000000;
+  border-radius: 0.5rem;
+  box-shadow: 1rem 1.1rem 1.1rem rgba(0, 0, 0, 0.32);
+}
+
+.image:not([src]) {
+  display: block;
+  width: 25rem;
+  height: 25rem;
+  visibility: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+.image:not([src])::after {
+  content: '+';
+  text-indent: 1rem;
+  display: flex;
+  position: absolute;
+  color: #666;
+  z-index: 90;
+  height: 25rem;
+  width: 25rem;
+  font-size: 15rem;
+  background-color: #dfe6e9;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: 0.6rem 0.8rem 0.7rem 0rem rgba(0, 0, 0, 0.32);
+  visibility: visible;
+}
+
+.face-box {
+  position: absolute;
+  display: inline-block;
+  min-width: 2.5rem;
+  min-height: 2.5rem;
+  border: 0.3rem solid rgb(241, 21, 21);
+}
+
+.btn {
+  font-size: 1.6rem;
+  padding: 0.8rem 1.6rem;
+  border: 1px solid #f2f2f2;
+  border-radius: 0.6rem;
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  background-color: #17a598;
+  color: #f2f2f2;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 6px 9px 17px rgba(0, 0, 0, 0.3);
+}
+.btn:active {
+  transform: translateY(0.3rem);
+  box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.3);
+}
+
+#not-supported-area {
+  display: none;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#not-supported-area > * {
+  color: inherit;
+}
