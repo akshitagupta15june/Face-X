@@ -16,6 +16,10 @@ Clone the repository and open `index.html` with any browser say chrome.
 ## Prerequisities
 Chrome, Nothing more
 
+## Output screenshots
+
+<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Face-Detection/Face-Detection-using-Chrome-API/Images/htmlfile.png">
+
 ## Author
 
 **Piyush**
