@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Face Detection</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="not-supported-area" class="row"></div>
+        <div class="row">
+            <div id="imageContainer" class="images">
+                <img id="targetImg" class="image" alt="." />
+            </div>
+        </div>
+        <div class="row input-row">
+            <div class="upload-wapper">
+                <button class="btn" id="fileUploadBtn">Give a Try</button>
+                <input class="hidden" type="file" accept="image/*" id="imageInput">
+            </div>
+        </div>
+    </div>
+    <script src="./js/face-detection.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
