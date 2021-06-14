@@ -1,19 +1,19 @@
 <div align="center">
 
-
-
-
-![Issues](https://img.shields.io/github/issues/akshitagupta15june/Face-X)
-![Pull Requests](https://img.shields.io/github/issues-pr/akshitagupta15june/Face-X)
-![Forks](https://img.shields.io/github/forks/akshitagupta15june/Face-X)
-![Stars](https://img.shields.io/github/stars/akshitagupta15june/Face-X)
-[![License](https://img.shields.io/github/license/akshitagupta15june/Face-X)](https://github.com/akshitagupta15june/lane_detection_opencv/blob/master/LICENSE)
+<a href="https://github.com/akshitagupta15june/Face-X/issues"><img src="https://img.shields.io/github/issues/akshitagupta15june/Face-X"></a>
+<a href="https://github.com/akshitagupta15june/Face-X/pulls"><img src="https://img.shields.io/github/issues-pr/akshitagupta15june/Face-X"></a>
+<a href="https://github.com/akshitagupta15june/Face-X/network/members"><img src="https://img.shields.io/github/forks/akshitagupta15june/Face-X"></a>
+<a href="https://github.com/akshitagupta15june/Face-X/stargazers"><img src="https://img.shields.io/github/stars/akshitagupta15june/Face-X"></a>
+<a href="https://github.com/akshitagupta15june/Face-X/blob/master/LICENSE"><img src="https://img.shields.io/github/license/akshitagupta15june/Face-X"></a>
 
 <img src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify%20Image/logo/Face-X.png" width=250 height=250>
 
 <h3>Join official <a href="https://discord.com/invite/Jmc97prqjb">Discord Channel</a> for discussion.</h3>
 
-[![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://github.com/akshitagupta15june/Face-X) 
+[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://www.python.org/) 
+[![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://github.com/akshitagupta15june/Face-X)
+
 </div>
 
 
