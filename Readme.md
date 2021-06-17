@@ -101,7 +101,7 @@ You can refer to the following articles on the basics of Git and Github.
 - Wait for the Issue to be assigned to you.
 - Fork the repository
 >click on the uppermost button <img src="https://github.com/Vinamrata1086/Face-X/blob/master/Recognition-Algorithms/Facial%20Recognition%20using%20LBPH/images/fork.png" width=50>
-**2.**  Clone your forked copy of the project.
+- Clone your forked copy of the project.
 
 ```
 git clone --depth 1 https://github.com/<your_user_name>/Face-X.git
