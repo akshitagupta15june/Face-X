@@ -166,12 +166,6 @@ pip install -r requirements.txt
 	</tr>
 </table>
 
-## 🌟 Contributors 
-
-Thanks goes to these wonderful people ✨✨:
-
-![10](https://contributors-img.web.app/image?repo=akshitagupta15june/Face-X)
-
 
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/qww.png" height="380px" width="50%" align="left"/>
 <p style="clear:both;">
