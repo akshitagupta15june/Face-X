@@ -168,10 +168,10 @@ pip install -r requirements.txt
 
 ## Our valuable Contributors👩‍💻👨‍💻
 <a href="https://github.com/akshitagupta15june/Face-X/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=akshitagupta15june/Face-X" />
+  <img src="https://contrib.rocks/image?repo=akshitagupta15june/Face-X" /> height="250" width="50%
 </a>
 
-<img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/qww.png" height="150" width="250" align="left"/>
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/qww.png" height="350" width="50%" align="left"/>
 <p style="clear:both;">
 <h1><a name="contributing"></a><a name="community"></a> <a href="https://github.com/akshitagupta15june/Face-X">Community</a> and <a href="https://github.com/akshitagupta15june/Face-X/blob/master/CONTRIBUTING.md">Contributing</a></h1>
 <p>Please do! Contributions, updates, <a href="https://github.com/akshitagupta15june/Face-X/issues"></a> <a href=``https://github.com/akshitagupta15june/Face-X/issues"></a> <a href=``https://github.com/akshitagupta15june/Face-X/issues"></a> <a href=``https://github.com/akshitagupta15june/Face-X/issues"></a> <a href=``https://github.com/akshitagupta15june/Face-X/issues"></a> <a href=``https://github.com/akshitagupta15june/Face-X/issues"></a> <a href=``https://github.com/akshitagupta15june/Face-X/issues"></a> <a href=``https://github.com/akshitagupta15june/Face-X/issues"></a> and <a href=" ">pull requests</a> are welcome. This project is community-built and welcomes collaboration. Contributors are expected to adhere to the <a href="https://github.com/akshitagupta15june/Face-X/blob/master/CODE_OF_CONDUCT.md/"><a href=``https://github.com/akshitagupta15june/Face-X/blob/master/CODE_OF_CONDUCT.md/"><a href=``https://github.com/akshitagupta15june/Face-X/blob/master/CODE_OF_CONDUCT.md/"><a href=``https://github.com/akshitagupta15june/Face-X/blob/master/CODE_OF_CONDUCT.md/">Code of Conduct</a>.
