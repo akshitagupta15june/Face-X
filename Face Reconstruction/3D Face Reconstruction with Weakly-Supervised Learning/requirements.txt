@@ -35,7 +35,7 @@ python=3.8.5=h5fd99cc_1
 python_abi=3.8=1_cp38
 pytorch=1.6.0=py3.8_cuda101_cudnn7_0
 pytorch3d=0.3.0=pypi_0
-pywin32=300=pypi_0
+pywin32>=301
 PyYAML>=5.4=pypi_0
 requests=2.25.0=pypi_0
 scipy=1.5.2=py38h14eb087_0
