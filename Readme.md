@@ -168,7 +168,7 @@ pip install -r requirements.txt
 
 ## Our valuable Contributors👩‍💻👨‍💻
 <a href="https://github.com/akshitagupta15june/Face-X/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=akshitagupta15june/Face-X" height="400" width="750" /> </a>
+  <img src="https://contrib.rocks/image?repo=akshitagupta15june/Face-X" height="450" width="750" /> </a>
 
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/qww.png" height="350" width="50%" align="left"/>
 <p style="clear:both;">
