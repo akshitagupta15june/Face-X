@@ -1,0 +1,155 @@
+@startuml{facemark_lbf.png}
+class Algorithm
+class Facemark
+
+class FacemarkLBF{
+    +static Ptr<FacemarkLBF> create(parameters);
+    +virtual ~FacemarkLBF();
+}
+
+class FacemarkLBF.BBox{
+    +BBox();
+    +~BBox();
+    +BBox(double x, double y, double w, double h);
+    +Mat project(const cv::Mat &shape) const;
+    +Mat reproject(const cv::Mat &shape) const;
+
+    double x, y;
+    double x_center, y_center;
+    double x_scale, y_scale;
+    double width, height;
+}
+
+class FacemarkLBF.Params{
+    +Params();
+    +void read()
+    +void write()
+
+    double shape_offset;
+    String cascade_face;
+    bool verbose;
+    int n_landmarks;
+    int initShape_n;
+    int stages_n;
+    int tree_n;
+    int tree_depth;
+    double bagging_overlap;
+
+    string model_path;
+    vector<int> feats_m;
+    vector<double> radius_m;
+    vector<int> pupils[2];
+    Rect detectROI;
+
+}
+
+FacemarkLBF +-- FacemarkLBF.Params
+FacemarkLBF +-- FacemarkLBF.BBox
+
+Algorithm <|-- Facemark : virtual inheritance
+Facemark <|-- FacemarkLBF
+FacemarkLBF <|-- FacemarkLBFImpl
+
+class FacemarkLBFImpl{
+    +FacemarkLBFImpl(parameters);
+
+    +void read();
+    +void write() const;
+
+    +void loadModel(filename);
+
+    +bool setFaceDetector(user_defined_func);
+    +bool getFaces(image, faces, extra_params);
+
+    #bool fit()
+    #bool fitImpl()
+    #bool addTrainingSample()
+    #void training()
+    #Rect getBBox()
+    #bool prepareTrainingData()
+    #bool data_augmentation()
+    #Mat getMeanShape()
+    #bool configFaceDetector()
+    #bool defaultFaceDetector()
+    #bool fit()
+
+    CascadeClassifier face_cascade;
+    bool(*faceDetector)(input , output, extra_params);
+    bool isSetDetector;
+    Params params;
+    vector<vector<Point2f> > data_facemarks
+    vector<Mat> data_faces
+    vector<BBox> data_boxes
+    vector<Mat> data_shapes
+    #bool isModelTrained
+    #Regressor regressor
+}
+
+class FacemarkLBFImpl.LBF{
+    +void calcSimilarityTransform()
+    +vector<Mat> getDeltaShapes()
+    +double calcVariance()
+    +double calcMeanError()
+}
+class FacemarkLBFImpl.LBF.RandomTree{
+    +RandomTree()
+    +~RandomTree()
+    +void initTree()
+    +void train()
+    +void splitNode()
+    +void read()
+    +void write
+
+    int depth, nodes_n, landmark_id
+    Mat_<double> feats_m
+    vector<int> thresholds
+    vector<int> params_feats_m
+    vector<double> params_radius_m
+}
+
+class FacemarkLBFImpl.LBF.RandomForest{
+    +RandomForest()
+    +~RandomForest()
+    +void initForest()
+    +void train()
+    +void read()
+    +void write()
+    +Mat generateLBF
+
+    bool verbose
+    int landmark_n
+    int trees_n
+    int tree_depth
+    double overlap_ratio
+    vector<vector<RandomTree> > random_trees
+    vector<int> feats_m
+    vector<double> radius_m
+}
+class FacemarkLBFImpl.LBF.Regressor{
+    +Regressor()
+    +~Regressor()
+
+    +void initRegressor()
+    +void trainRegressor()
+    +void globalRegressionTrain()
+    +Mat globalRegressionPredict()
+    +Mat predict()
+
+    +void write();
+    +void read();
+
+    int stages_n;
+    int landmark_n;
+    Mat mean_shape;
+    vector<RandomForest> random_forests;
+    vector<Mat> gl_regression_weights;
+}
+
+FacemarkLBFImpl +-- FacemarkLBFImpl.LBF
+FacemarkLBFImpl.LBF <|-- FacemarkLBFImpl.LBF.RandomTree
+FacemarkLBFImpl.LBF <|-- FacemarkLBFImpl.LBF.RandomForest
+FacemarkLBFImpl.LBF <|-- FacemarkLBFImpl.LBF.Regressor
+FacemarkLBFImpl +-- FacemarkLBFImpl.LBF.RandomTree
+FacemarkLBFImpl +-- FacemarkLBFImpl.LBF.RandomForest
+FacemarkLBFImpl +-- FacemarkLBFImpl.LBF.Regressor
+@enduml

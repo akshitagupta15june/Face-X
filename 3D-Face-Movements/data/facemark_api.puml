@@ -1,0 +1,52 @@
+@startuml{facemark_api.png}
+
+package "Facemark API package" #DDDDDD {
+    class Algorithm
+
+    class Facemark{
+
+        +virtual void read( const FileNode& fn )=0;
+        +virtual void write( FileStorage& fs ) const=0;
+
+        +virtual bool addTrainingSample(InputArray image, InputArray landmarks)=0;
+        +virtual void training()=0;
+        +virtual void loadModel(String model)=0;
+        +virtual bool fit( InputArray image,InputArray faces, InputOutputArray landmarks,void * config = 0)=0;
+
+        +virtual bool setFaceDetector(bool(*f)(InputArray , OutputArray, void * ))=0;
+        +virtual bool getFaces( InputArray image , OutputArray faces, void * extra_params=0)=0;
+    }
+    'class Facemark
+    'note right: Facemark is the general interface for each specialized algorithm
+
+
+    class FacemarkAAM{
+        +virtual void getParams(Model & params) = 0;
+        +static Ptr<FacemarkAAM> create(parameters);
+        +virtual ~FacemarkAAM();
+    }
+
+    class FacemarkLBF{
+        +static Ptr<FacemarkLBF> create(parameters);
+        +virtual ~FacemarkLBF();
+    }
+
+
+    Algorithm <|-- Facemark : virtual inheritance
+    Facemark <|-- FacemarkAAM
+    Facemark <|-- FacemarkLBF
+
+    note "Single instance of the Facemark" as N1
+    FacemarkAAM .. N1
+    FacemarkLBF .. N1
+
+    class FacemarkAAMImpl
+
+    class FacemarkLBFImpl
+
+    FacemarkAAM <|-- FacemarkAAMImpl
+    FacemarkLBF <|-- FacemarkLBFImpl
+
+}
+
+@enduml
