@@ -1,0 +1,2 @@
+rootProject.name='Suave Keys QR Generator'
+include ':app'
