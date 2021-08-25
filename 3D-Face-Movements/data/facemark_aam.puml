@@ -1,0 +1,92 @@
+@startuml{facemark_aam.png}
+class Algorithm
+class Facemark
+
+class FacemarkAAM{
+    +virtual void getParams(Model & params) = 0;
+    +static Ptr<FacemarkAAM> create(parameters);
+    +virtual ~FacemarkAAM();
+}
+
+class FacemarkAAM.Config{
+    +Config()
+    +read()
+    +write()
+
+    string model_path
+    int m,n
+    bool verbose
+}
+class FacemarkAAM.Params{
+    +Params()
+
+    Mat R
+    Point2f t
+    float scale
+}
+class FacemarkAAM.Model{
+    int npts
+    vector<int> scales
+    vector<Vec3i> triangles
+    vector<Texture> textures
+    vector<Point2f> s0
+    Mat S,Q
+}
+class FacemarkAAM.Model.Texture{
+    Rect resolution
+    Mat A,A0,AA,AA0
+    vector<vector> > textureIdx
+    vector<Point2f> base_shape
+    vector<int> ind1
+    vector<int> ind2
+}
+FacemarkAAM +-- FacemarkAAM.Config
+FacemarkAAM +-- FacemarkAAM.Params
+FacemarkAAM +-- FacemarkAAM.Model
+FacemarkAAM.Model +-- FacemarkAAM.Model.Texture
+
+class FacemarkAAMImpl{
+    +FacemarkAAMImpl();
+
+    +void read( );
+    +void write( );
+    +void loadModel(modelFile);
+    +setFaceDetector();
+    +getFaces();
+
+    #bool fit(image, faces, landmarks, extra_params);
+    #bool fitImpl(image, face, landmarks, R,t,s)
+    #bool addTrainingSample(InputArray image, InputArray landmarks);
+    #void training();
+    #Mat procrustes();
+    #void calcMeanShape();
+    #void procrustesAnalysis();
+    #Mat linearize();
+    #void getProjection();
+    #void calcSimilarityEig();
+    #Mat orthonormal();
+    #void delaunay();
+    #Mat createMask();
+    #Mat createTextureBase();
+    #Mat warpImage();
+    #Mat getFeature();
+    #void createMaskMapping();
+    #void warpUpdate();
+    #Mat computeWarpParts();
+    #void image_jacobian();
+    #void gradient();
+    #void createWarpJacobian();
+
+    vector<Mat> images
+    vector<vector<Point2f> > facePoints
+    Params params
+    Model AAM
+    bool isSetDetector
+    bool(*faceDetector)(InputArray , OutputArray, void *)
+
+}
+
+Algorithm <|-- Facemark : virtual inheritance
+Facemark <|-- FacemarkAAM
+FacemarkAAM <|-- FacemarkAAMImpl
+@enduml
