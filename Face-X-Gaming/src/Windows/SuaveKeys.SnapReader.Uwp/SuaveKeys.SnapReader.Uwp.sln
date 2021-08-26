@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuaveKeys.SnapReader.Uwp", "SuaveKeys.SnapReader.Uwp\SuaveKeys.SnapReader.Uwp.csproj", "{EE131D18-C107-45CF-AEAE-C63B0DB154CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE131D18-C107-45CF-AEAE-C63B0DB154CB}.Debug|ARM.ActiveCfg = Debug|ARM
+		{EE131D18-C107-45CF-AEAE-C63B0DB154CB}.Debug|ARM.Build.0 = Debug|ARM
+		{EE131D18-C107-45CF-AEAE-C63B0DB154CB}.Debug|ARM.Deploy.0 = Debug|ARM
+		{EE131D18-C107-45CF-AEAE-C63B0DB154CB}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{EE131D18-C107-45CF-AEAE-C63B0DB154CB}.Debug|ARM64.Build.0 = Debug|ARM64
+		{EE131D18-C107-45CF-AEAE-C63B0DB154CB}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{EE131D18-C107-45CF-AEAE-C63B0DB154CB}.Debug|x64.ActiveCfg = Debug|x64
+		{EE131D18-C107-45CF-AEAE-C63B0DB154CB}.Debug|x64.Build.0 = Debug|x64
+		{EE131D18-C107-45CF-AEAE-C63B0DB154CB}.Debug|x64.Deploy.0 = Debug|x64
+		{EE131D18-C107-45CF-AEAE-C63B0DB154CB}.Debug|x86.ActiveCfg = Debug|x86
+		{EE131D18-C107-45CF-AEAE-C63B0DB154CB}.Debug|x86.Build.0 = Debug|x86
+		{EE131D18-C107-45CF-AEAE-C63B0DB154CB}.Debug|x86.Deploy.0 = Debug|x86
+		{EE131D18-C107-45CF-AEAE-C63B0DB154CB}.Release|ARM.ActiveCfg = Release|ARM
+		{EE131D18-C107-45CF-AEAE-C63B0DB154CB}.Release|ARM.Build.0 = Release|ARM
+		{EE131D18-C107-45CF-AEAE-C63B0DB154CB}.Release|ARM.Deploy.0 = Release|ARM
+		{EE131D18-C107-45CF-AEAE-C63B0DB154CB}.Release|ARM64.ActiveCfg = Release|ARM64
+		{EE131D18-C107-45CF-AEAE-C63B0DB154CB}.Release|ARM64.Build.0 = Release|ARM64
+		{EE131D18-C107-45CF-AEAE-C63B0DB154CB}.Release|ARM64.Deploy.0 = Release|ARM64
+		{EE131D18-C107-45CF-AEAE-C63B0DB154CB}.Release|x64.ActiveCfg = Release|x64
+		{EE131D18-C107-45CF-AEAE-C63B0DB154CB}.Release|x64.Build.0 = Release|x64
+		{EE131D18-C107-45CF-AEAE-C63B0DB154CB}.Release|x64.Deploy.0 = Release|x64
+		{EE131D18-C107-45CF-AEAE-C63B0DB154CB}.Release|x86.ActiveCfg = Release|x86
+		{EE131D18-C107-45CF-AEAE-C63B0DB154CB}.Release|x86.Build.0 = Release|x86
+		{EE131D18-C107-45CF-AEAE-C63B0DB154CB}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {488ADBBB-16B4-41C4-BE95-77296F62F7CA}
+	EndGlobalSection
+EndGlobal
