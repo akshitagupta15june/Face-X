@@ -8,7 +8,7 @@ mkl-service==2.3.0
 numpy==1.18.1
 olefile==0.46
 opencv-python==4.2.0.34
-Pillow==7.1.2
+Pillow==8.3.2
 pycodestyle==2.5.0
 pyflakes==2.1.1
 scipy==1.4.1
