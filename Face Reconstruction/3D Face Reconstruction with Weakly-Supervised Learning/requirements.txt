@@ -28,7 +28,7 @@ numpy-base=1.19.2=py38ha3acd2a_0
 olefile=0.46=py_0
 openssl=1.1.1h=he774522_0
 Pillow>=8.1.1=py38h4fa10fc_0
-pip=20.2.4=py38haa95532_0
+pip>=21.1=py38haa95532_0
 pipreqs=0.4.10=pypi_0
 portalocker=2.0.0=pypi_0
 python=3.8.5=h5fd99cc_1
