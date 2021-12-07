@@ -12,7 +12,7 @@ Applying filter on an image using python 3.6 and its opencv library
 
 
 ## Input image
-![](Christmas+Halloween-filter/WIN_20211207_13_35_00_Pro.jpg)
+![](Face-X/Snapchat_Filters/Christmas+Halloween-filter/Happy(christmas+halloween).JPG)
 
 ## Happy Halloween and happy Christmas 
 ![](Christmas+Halloween-filter/Happy(christmas+halloween).JPG)
