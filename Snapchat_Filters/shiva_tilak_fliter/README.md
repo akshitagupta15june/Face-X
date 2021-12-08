@@ -1,9 +1,12 @@
-#Shiva Tilak Snapchat Fliter
+# Shiva Tilak Snapchat Fliter
 
-#Requirements:
+# Requirements:
 OpenCV
+
 Python 3.7.x
+
 Numpy
+
 Haarcascade classifiers
 
 Original Photo
