@@ -1,20 +1,20 @@
 # Face Biometric using OpenCV
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Facial_Biometric/Images/Timeattdmain%20(1).png" hight="300px" width="600px" align="left"/>
 
-## 1.Introduction
+## 1. Introduction
 
-Face recognition is the technique in which the identity of a human being can be identified using ones individual face. Such kind of systems can be used in photos, videos, or in real time machines. The objective of this article is to provide a simpler and easy method in machine technology. With the help of such a technology one can easily detect the face by the help of dataset in similar matching appearance of a person. The method in which with the help of python and OpenCV in deep learning is the most efficient way to detect the face of the person. This method is useful in many fields such as the military, for security, schools, colleges and universities, airlines, banking, online web applications, gaming etc. this system uses powerful python algorithm through which the detection and recognition of face is very easy and efficien
+Face recognition is the technique in which the identity of a human being can be identified using ones individual face. Such kind of systems can be used in photos, videos, or in real time machines. The objective of this article is to provide a simpler and easy method in machine technology. With the help of such a technology one can easily detect the face by the help of dataset in similar matching appearance of a person. The method in which with the help of python and OpenCV in deep learning is the most efficient way to detect the face of the person. This method is useful in many fields such as the military, for security, schools, colleges and universities, airlines, banking, online web applications, gaming etc. this system uses powerful python algorithm through which the detection and recognition of face is very easy and efficient.
 
  This repository detects a human face using Dlib's 68 points model. As the human face is way too complex for a computer to learn, so we have used the 68 points model to ease the process of facial recognition. Facial Biometric uses a two step biometric process for facial recognition. 
  These steps are:
  - Facial localization to locate a human face and return `4(x,y)-coordinates` that forms a rectangle bounding the face.
  - Detecting facial structures using Dlib's 68 points model. 
 
-## 2.Dlib's 68 points model
+## 2. Dlib's 68 points model
 
  The below image is an example of Dlib's 68 points model. This pre-trained facial landmark detector inside the Dlib's library is used to estimate the location of 68(x,y)-coordinates that maps to the different facial structures. 
 
-###  1.Facial landmark points detection through Dlib's 68 Model:
+###  1. Facial landmark points detection through Dlib's 68 Model:
 
 There are mostly two steps to detect face landmarks in an image which are given below:
 - Face detection: Face detection is the first methods which locate a human face and return a value in `x,y,w,h` which is a rectangle.
