@@ -48,7 +48,7 @@ nbformat==5.0.7
 nest-asyncio==1.4.0
 networkx==2.5
 notebook==6.4.1
-numpy==1.18.5
+numpy==1.21.0
 oauthlib==3.1.0
 opencv-python==4.4.0.42
 opt-einsum==3.3.0
