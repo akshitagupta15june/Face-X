@@ -1,4 +1,4 @@
-numpy==1.19.2
+numpy==1.21.0
 opencv-contrib-python==4.4.0.44
 opencv-python==4.4.0.44
 python-dotenv==0.14.0
