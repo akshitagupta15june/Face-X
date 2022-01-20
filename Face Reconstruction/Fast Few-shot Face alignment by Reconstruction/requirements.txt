@@ -1,5 +1,5 @@
 ConfigArgParse==1.2
-numpy==1.17.4
+numpy==1.21.0
 opencv-python==4.2.0.32
 pandas==0.23.3
 Pillow>=8.1.1
