@@ -2,10 +2,10 @@ torch==0.4.0
 face-alignment
 h5py==2.10.0
 matplotlib==2.2.4
-numpy==1.21.0
+numpy==1.22.0
 opencv-python==4.2.0.32
 scikit-image==0.14.5
-scikit-learn==0.20.3
+scikit-learn==0.24.2
 scipy==1.2.2
 tensorboard==1.13.1
 tensorflow-estimator==1.13.0
