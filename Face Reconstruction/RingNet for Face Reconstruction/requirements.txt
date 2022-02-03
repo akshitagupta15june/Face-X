@@ -9,3 +9,5 @@ tensorflow-gpu>=2.4.0
 ipdb
 pyrender==0.1.30
 trimesh==3.2.17
+ipython>=7.16.3 # not directly required, pinned by Snyk to avoid a vulnerability
+pygments>=2.7.4 # not directly required, pinned by Snyk to avoid a vulnerability
