@@ -49,4 +49,4 @@ The final step is to combine all the pieces:
 
 ## Credits:
 
-To read a more detailed version of this for better understanding, read[PyImageSearch](https://www.pyimagesearch.com/2019/03/11/liveness-detection-with-opencv/)
+To read a more detailed version of this for better understanding, read [PyImageSearch](https://www.pyimagesearch.com/2019/03/11/liveness-detection-with-opencv/)
