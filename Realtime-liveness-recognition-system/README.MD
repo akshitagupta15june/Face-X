@@ -1,8 +1,26 @@
 # Real time liveness based face recognition system:
 
-## About:
+## Task:
 Create a liveness detector capable of spotting fake faces and performing anti-face spoofing in face recognition systems.
 
+## What is liveness detection and why do we need it?
+Facial recognition software are gaining popularity and are increasing being implemented in various software and applications. <br>  
+However, face recognition systems are easily fooled by “spoofing” and “non-real” faces. Hence comes the need for a system to determine whether the face is real or not. <br>
+
+**Q. How would you go about spotting these “fake” versus “real/legitimate” faces? How could you apply anti-face spoofing algorithms into your facial recognition applications?**
+<br>The answer is to apply liveness detection with OpenCV which is exactly what I’ll be covering today.
+
+There are a number of approaches to liveness detection, including:
+- Texture analysis
+- Frequency analysis
+- Variable focusing analysis
+- Heuristic-based algorithms
+- Optical Flow algorithms
+- 3D face shape
+- Combinations of the above
+A full review of liveness detection algorithms can be found in Chakraborty and Das’ 2014 paper, [An Overview of Face liveness Detection](https://arxiv.org/pdf/1405.2227.pdf)
+
+<u>Here we’ll be treating liveness detection as a binary classification problem.</u>
 ## Workflow:
 
 1. Build the image dataset itself.
