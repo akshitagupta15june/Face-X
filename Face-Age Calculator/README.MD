@@ -13,7 +13,9 @@ Using an image to predict age has many uncertainties or variables so to speak, l
 Or maybe the person looks quite old despite being young and vice versa. So in conclusion accuracy of age calculation would be very less in real world case if treated it as a regression problem.
 <br>
 So instead we create age ranges like 0-20 , 25-30 etc and try to classify our image into one of these categories and we find that it is much more accurate and useful in real world scenario.
+
 ## Workflow
+
 ![](assets/workflow.png)
 
 ## What does each script do?
