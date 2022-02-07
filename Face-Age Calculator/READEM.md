@@ -23,5 +23,10 @@ In the Models directory we have some various types of file, their uses are descr
 - **proto file** : basically  PROTOTXT files are used to create .CAFFEMODEL files.<br><br>
 _<u>Note: Caffe is a deep learning framework, originally developed at University of California, Berkeley. It is open source, under a BSD license. It is written in C++, with a Python interface.</u>_
 
-## Result/Working : 
-
+## Result/Working :
+#### Output On an Image: 
+#### Output On Webcam - Live Feed : 
+<video width="320" height="240" controls>
+  <source src="images/2022-02-07 21-40-16.mp4" type="video/mp4">
+</video> <br>
+### Output
