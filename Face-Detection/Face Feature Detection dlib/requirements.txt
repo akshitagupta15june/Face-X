@@ -7,7 +7,7 @@ cmake==0.7.1
 conda==4.3.22
 Cython==0.25.2
 dlib==19.4.0
-numpy==1.21.0
+numpy==1.22.2
 numpydoc==0.6.0
 opencv-python==4.2.0.32
-Pillow==9.0.0
+Pillow==9.0.1
