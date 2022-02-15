@@ -23,7 +23,7 @@ oauthlib==3.1.0
 opencv-python==4.3.0.36
 opt-einsum==3.3.0
 Pillow==9.0.0
-protobuf==3.12.2
+protobuf==3.15.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pyparsing==2.4.7
@@ -37,7 +37,7 @@ six==1.15.0
 sklearn==0.0
 tensorboard==2.2.2
 tensorboard-plugin-wit==1.7.0
-tensorflow==2.5.2
+tensorflow==2.5.3
 tensorflow-estimator==2.2.0
 termcolor==1.1.0
 threadpoolctl==2.1.0
