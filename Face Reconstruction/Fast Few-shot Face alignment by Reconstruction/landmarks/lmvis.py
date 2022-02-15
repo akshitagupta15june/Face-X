@@ -70,7 +70,7 @@ def visualize_batch(images, landmarks, X_recon, X_lm_hm, lm_preds_max,
         show_landmark_heatmaps(pred_heatmaps, gt_heatmaps, nimgs, f=1)
         lm_confs = to_numpy(X_lm_hm).reshape(X_lm_hm.shape[0], X_lm_hm.shape[1], -1).max(axis=2)
 
-    # resize images for display and scale landmarks accordingly
+    # resize assets for display and scale landmarks accordingly
     lm_preds_max = lm_preds_max[:nimgs] * f
     if lm_preds_cnn is not None:
         lm_preds_cnn = lm_preds_cnn[:nimgs] * f
@@ -86,7 +86,7 @@ def visualize_batch(images, landmarks, X_recon, X_lm_hm, lm_preds_max,
     recon_images = vis.to_disp_images(X_recon[:nimgs], denorm=True)
     disp_X_recon = [cv2.resize(im, None, fx=f, fy=f, interpolation=cv2.INTER_NEAREST) for im in recon_images.copy()]
 
-    # overlay landmarks on input images
+    # overlay landmarks on input assets
     if pred_heatmaps is not None and overlay_heatmaps_input:
         disp_images = [vis.overlay_heatmap(disp_images[i], pred_heatmaps[i]) for i in range(len(pred_heatmaps))]
     if pred_heatmaps is not None and overlay_heatmaps_recon:
@@ -94,7 +94,7 @@ def visualize_batch(images, landmarks, X_recon, X_lm_hm, lm_preds_max,
 
 
     #
-    # Show input images
+    # Show input assets
     #
     disp_images = vis.add_landmarks_to_images(disp_images, lm_gt[:nimgs], color=gt_color)
     disp_images = vis.add_landmarks_to_images(disp_images, lm_preds_max[:nimgs], lm_errs=nme_per_lm,
@@ -257,7 +257,7 @@ def visualize_batch_CVPR(images, landmarks, X_recon, X_lm_hm, lm_preds, show_rec
         show_landmark_heatmaps(pred_heatmaps, gt_heatmaps, nimgs, f=1)
         lm_confs = to_numpy(X_lm_hm).reshape(X_lm_hm.shape[0], X_lm_hm.shape[1], -1).max(axis=2)
 
-    # resize images for display and scale landmarks accordingly
+    # resize assets for display and scale landmarks accordingly
     lm_preds = lm_preds[:nimgs] * f
 
     rows = []
@@ -276,7 +276,7 @@ def visualize_batch_CVPR(images, landmarks, X_recon, X_lm_hm, lm_preds, show_rec
     disp_X_recon = [cv2.resize(im, None, fx=f, fy=f, interpolation=cv2.INTER_NEAREST) for im in recon_images.copy()]
     rows.append(vis.make_grid(disp_X_recon, nCols=nimgs))
 
-    # overlay landmarks on images
+    # overlay landmarks on assets
     disp_X_recon_hm = [cv2.resize(im, None, fx=f, fy=f, interpolation=cv2.INTER_NEAREST) for im in recon_images.copy()]
     disp_X_recon_hm = [vis.overlay_heatmap(disp_X_recon_hm[i], pred_heatmaps[i], heatmap_opacity) for i in range(len(pred_heatmaps))]
     rows.append(vis.make_grid(disp_X_recon_hm, nCols=nimgs))
@@ -293,7 +293,7 @@ def visualize_batch_CVPR(images, landmarks, X_recon, X_lm_hm, lm_preds, show_rec
         disp_X_recon_gt = vis.add_landmarks_to_images(disp_X_recon_gt, lm_gt, color=gt_color, radius=radius)
         rows.append(vis.make_grid(disp_X_recon_gt, nCols=nimgs))
 
-    # input images with prediction (and ground truth)
+    # input assets with prediction (and ground truth)
     disp_images_pred = vis.to_disp_images(images[:nimgs], denorm=True)
     disp_images_pred = [cv2.resize(im, None, fx=f, fy=f, interpolation=cv2.INTER_NEAREST) for im in disp_images_pred]
     # disp_images_pred = vis.add_landmarks_to_images(disp_images_pred, lm_gt, color=gt_color, radius=radius)

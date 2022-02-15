@@ -5,13 +5,13 @@ face = cv2.CascadeClassifier(cv2.haarcascades+'haarcascade_frontalface_default.x
 
 
 
-filename=input("Enter your image path here:")  #ex -> r'C:\Users\xyz\images\p1.jpg' 
+filename=input("Enter your image path here:")  #ex -> r'C:\Users\xyz\assets\p1.jpg'
 img=cv2.imread(filename)
 gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 fl=face.detectMultiScale(gray,1.09,9)
 ey=face.detectMultiScale(gray,1.09,9)
-mantika_png=input("Enter the given fore head jewellery image path here:")  #ex -> r'C:\Users\xyz\images\fore_head_jewellery.jpg'  
-earing_png=input("Enter the given earing jewellery image path here:")  #ex -> r'C:\Users\xyz\images\earing.jpg' 
+mantika_png=input("Enter the given fore head jewellery image path here:")  #ex -> r'C:\Users\xyz\assets\fore_head_jewellery.jpg'
+earing_png=input("Enter the given earing jewellery image path here:")  #ex -> r'C:\Users\xyz\assets\earing.jpg'
 mantika=cv2.imread(mantika_png)
 earing=cv2.imread(earing_png)
 

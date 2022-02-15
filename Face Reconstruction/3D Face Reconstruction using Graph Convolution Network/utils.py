@@ -67,7 +67,7 @@ def load_image_bin(start_idx, img_file, image_len, img_size):
 
   images = np.fromstring(im_str, dtype=np.float32).reshape((img_size, img_size, 4))
   # landmarks = np.fromstring(lm_str, dtype=np.float32).reshape((51, 2))
-  # return images, landmarks
+  # return assets, landmarks
   return images
 
 
@@ -352,7 +352,7 @@ def img_denormalize(image):
     mult = np.reshape([127.5, 127.5, 127.5, 255], shape).astype(np.float32)
     output = (images + plus) * mult
     # output = np.concatenate(
-    #     [(images[..., :3] + 1) * 127.5, images[..., 3:] * 255.0], axis=-1)
+    #     [(assets[..., :3] + 1) * 127.5, assets[..., 3:] * 255.0], axis=-1)
   else:
     output = (images + 1) * 127.5
   return np.clip(output, 0, 255).astype(np.uint8)

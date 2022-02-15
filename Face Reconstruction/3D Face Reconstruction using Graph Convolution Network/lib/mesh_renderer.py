@@ -173,14 +173,14 @@ def tone_mapper(image, gamma):
 
   Args:
     image: 4-D float32 tensor with shape [batch_size, image_height,
-        image_width, channel_count]. The batch of images to tone map.
+        image_width, channel_count]. The batch of assets to tone map.
     gamma: 0-D float32 nonnegative tensor. Values of gamma below one compress
         relative contrast in the image, and values above one increase it. A
         value of 1 is equivalent to scaling the image to have a maximum value
         of 1.
   Returns:
     4-D float32 tensor with shape [batch_size, image_height, image_width,
-    channel_count]. Contains the gamma-corrected images, clipped to the range
+    channel_count]. Contains the gamma-corrected assets, clipped to the range
     [0, 1].
   """
   batch_size = image.shape[0].value
@@ -246,7 +246,7 @@ def mesh_renderer(vertices,
     shininess_coefficients: a 0D-2D float32 tensor with maximum shape
        [batch_size, vertex_count]. The phong shininess coefficient of each
        vertex. A 0D tensor or float gives a constant shininess coefficient
-       across all batches and images. A 1D tensor must have shape [batch_size],
+       across all batches and assets. A 1D tensor must have shape [batch_size],
        and a single shininess coefficient per image is used.
     ambient_color: a 2D tensor with shape [batch_size, 3]. The RGB ambient
         color, which is added to each pixel in the scene. If None, it is

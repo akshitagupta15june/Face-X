@@ -38,7 +38,7 @@ neutral_test = 0
 
 df = pd.read_csv('./fer2013.csv')
 mat = np.zeros((48,48),dtype=np.uint8)
-print("Saving images...")
+print("Saving assets...")
 
 # read the csv file line by line
 for i in tqdm(range(len(df))):

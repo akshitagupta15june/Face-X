@@ -29,7 +29,7 @@ def apply_mask(face: np.array, mask: np.array) -> np.array:
 
 
 def main():
-    args = argparse.ArgumentParser('Dog Mask for single images')
+    args = argparse.ArgumentParser('Dog Mask for single assets')
     args.add_argument('--mask', default='assets/dog.png')
     args = args.parse_args()
 

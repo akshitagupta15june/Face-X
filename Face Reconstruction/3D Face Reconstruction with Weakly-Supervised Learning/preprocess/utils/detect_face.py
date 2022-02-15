@@ -17,7 +17,7 @@ def detect_face(imgs, minsize, pnet, rnet, onet, threshold, factor, device):
         if not isinstance(imgs, (list, tuple)):
             imgs = [imgs]
         if any(img.size != imgs[0].size for img in imgs):
-            raise Exception("MTCNN batch processing only compatible with equal-dimension images.")
+            raise Exception("MTCNN batch processing only compatible with equal-dimension assets.")
         imgs = np.stack([np.uint8(img) for img in imgs])
 
     imgs = torch.as_tensor(imgs, device=device)

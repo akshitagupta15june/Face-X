@@ -9,7 +9,7 @@ import numpy as np
 from glob import glob
 import matplotlib.pyplot as plt
 
-# re-size all the images to this
+# re-size all the assets to this
 IMAGE_SIZE = [224, 224]
 
 train_path = '/home/akshita/Desktop/Face_reco/user/Train'

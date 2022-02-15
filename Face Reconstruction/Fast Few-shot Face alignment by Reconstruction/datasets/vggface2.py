@@ -35,13 +35,13 @@ class VggFace2(facedataset.FaceDataset):
 
         self.min_face_height = min_face_height
 
-        # shuffle images since dataset is sorted by identities
+        # shuffle assets since dataset is sorted by identities
         import sklearn.utils
         self.annotations = sklearn.utils.shuffle(self.annotations)
 
         print("Removing faces with height <= {:.2f}px...".format(self.min_face_height))
         self.annotations = self.annotations[self.annotations.H > self.min_face_height]
-        print("Number of images: {}".format(len(self)))
+        print("Number of assets: {}".format(len(self)))
         print("Number of identities: {}".format(self.annotations.ID.nunique()))
 
 
@@ -110,7 +110,7 @@ cfg.register_dataset(VggFace2)
 
 
 def extract_features(split, st=None, nd=None):
-    """ Extract facial features (landmarks, pose,...) from images """
+    """ Extract facial features (landmarks, pose,...) from assets """
     import glob
     assert(split in ['train', 'test'])
     person_dirs = sorted(glob.glob(os.path.join(VGGFACE2_ROOT, split, 'imgs', '*')))[st:nd]

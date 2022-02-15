@@ -39,9 +39,9 @@ INIT_LR = 1e-4
 BS = 8
 EPOCHS = 50
 
-# grab the list of images in our dataset directory, then initialize
-# the list of data (i.e., images) and class images
-print("[INFO] loading images...")
+# grab the list of assets in our dataset directory, then initialize
+# the list of data (i.e., assets) and class assets
+print("[INFO] loading assets...")
 imagePaths = list(paths.list_images(args["dataset"]))
 data = []
 labels = []

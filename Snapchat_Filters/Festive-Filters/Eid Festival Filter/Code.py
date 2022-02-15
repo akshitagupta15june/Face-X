@@ -1,13 +1,13 @@
 from PIL import Image
 
-img_path=input("Enter your image path here:")  #ex -> r'C:\Users\xyz\images\p1.jpg' 
+img_path=input("Enter your image path here:")  #ex -> r'C:\Users\xyz\assets\p1.jpg'
 img = Image.open(img_path)  
 img = img.resize((900, 900), Image.ANTIALIAS)
 img.save('resized_image.jpg')
 
 filename1 =  'resized_image.jpg'
 
-filename=input("Enter the background filtered given image path here:")  #ex -> r'C:\Users\xyz\images\eid.jpg'  
+filename=input("Enter the background filtered given image path here:")  #ex -> r'C:\Users\xyz\assets\eid.jpg'
 
 # Open Front Image
 frontImage = Image.open(filename)

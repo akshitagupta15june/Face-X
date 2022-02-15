@@ -166,7 +166,7 @@ class MGC_TRAIN(object):
         self.gpmm_pixel_loss = dict_loss_common['render_loss']
         self.gpmm_id_loss = dict_loss_common['id_loss']
 
-        # visual landmark on the rendered images/shade/render loss error map
+        # visual landmark on the rendered assets/shade/render loss error map
         #self.gpmm_pose_tar, self.gpmm_pose_src = parse_seq(dict_intermedate_common['pred_6dof_pose'])
         self.lm2d_tar, self.lm2d_src = parse_seq(dict_intermedate_common['pred_lm2d'])
         self.gpmm_render_tar, self.gpmm_render_src = parse_seq(dict_intermedate_common['3dmm_render'])
@@ -208,10 +208,10 @@ class MGC_TRAIN(object):
 
     def build_decoderCommon(self, list_coeff_all, list_image, list_skin=None, list_lm2d_gt=None, flag_sgl_mul=None):
         """
-        A common mapping function from images to intermediate result
+        A common mapping function from assets to intermediate result
         :param gpmm_frustrum:
         :param list_image:
-            1.can be single image or multi images
+            1.can be single image or multi assets
             2.shape: [bs, h, w, c]
         :param list_lm2d_gt:
         :return:

@@ -196,7 +196,7 @@ y_pred = prediction(clf, X_test_lda)
 # printing report
 report(y_test, y_pred, t_names, n_classes)
 
-# print images
+# print assets
 prediction_titles = [titles(y_pred, y_test, t_names, i) for i in range(y_pred.shape[0])]
 
 plot_images(X_test, prediction_titles, height, width)

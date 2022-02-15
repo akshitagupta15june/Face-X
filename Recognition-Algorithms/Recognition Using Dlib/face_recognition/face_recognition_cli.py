@@ -95,7 +95,7 @@ def process_images_in_process_pool(images_to_check, known_names, known_face_enco
 @click.command()
 @click.argument('known_people_folder')
 @click.argument('image_to_check')
-@click.option('--cpus', default=1, help='number of CPU cores to use in parallel (can speed up processing lots of images). -1 means "use all in system"')
+@click.option('--cpus', default=1, help='number of CPU cores to use in parallel (can speed up processing lots of assets). -1 means "use all in system"')
 @click.option('--tolerance', default=0.6, help='Tolerance for face comparisons. Default is 0.6. Lower this if you get multiple matches for the same person.')
 @click.option('--show-distance', default=False, type=bool, help='Output face distance. Useful for tweaking tolerance setting.')
 def main(known_people_folder, image_to_check, cpus, tolerance, show_distance):

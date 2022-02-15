@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 face = cv2.CascadeClassifier(cv2.haarcascades+'haarcascade_frontalface_default.xml')
 
 
-filename=input("Enter image path here:")  #r'C:\Users\xyz\OneDrive\Desktop\images\photo.JPG'
+filename=input("Enter image path here:")  #r'C:\Users\xyz\OneDrive\Desktop\assets\photo.JPG'
 img=cv2.imread(filename)
 gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 fl=face.detectMultiScale(gray,1.09,9)

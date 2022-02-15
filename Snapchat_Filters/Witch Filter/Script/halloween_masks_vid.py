@@ -7,7 +7,7 @@ path = '/Users/mitchellkrieger/opt/anaconda3/envs/learn-env/share/opencv4/haarca
 face_cascade = cv2.CascadeClassifier(path +'haarcascade_frontalface_default.xml')
 eye_cascade = cv2.CascadeClassifier(path +'haarcascade_eye.xml')
 
-#read images
+#read assets
 witch = cv2.imread('witch.png')
 
 #get shape of witch

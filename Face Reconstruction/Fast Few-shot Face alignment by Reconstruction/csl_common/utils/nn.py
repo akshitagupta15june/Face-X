@@ -115,9 +115,9 @@ class Batch:
             # plt.show()
 
             # if cfg.WITH_FACE_MASK:
-            #     mask = self.face_masks.unsqueeze(1).expand_as(self.images).float()
+            #     mask = self.face_masks.unsqueeze(1).expand_as(self.assets).float()
             #     mask /= mask.max()
-            #     self.images *= mask
+            #     self.assets *= mask
 
         self.lm_heatmaps = None
 

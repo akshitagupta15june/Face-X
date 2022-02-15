@@ -74,7 +74,7 @@ def facenet_align(list_image, list_lm, std_lm, img_height, img_width):
         #
         with tf.device('/cpu:0'):
             trans_mat = lm2d_trans(std_lm, lm2d_align)
-            # image_warp = transform(images, trans_mat)
+            # image_warp = transform(assets, trans_mat)
             flat_transforms = tf.contrib.image.matrices_to_flat_transforms(trans_mat)
             image_warp = tf.contrib.image.transform(images_pad, flat_transforms, interpolation='BILINEAR',
                                    output_shape=[img_height, img_width])

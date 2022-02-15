@@ -196,12 +196,12 @@ def cvloop(run_event, read_camera=0, virtual_camera=0):
             # flies condition
             if SPRITES[2]:
                 # to make the "animation" we read each time a different image of that folder
-                # the images are placed in the correct order to give the animation impresion
+                # the assets are placed in the correct order to give the animation impresion
                 apply_sprite(image, dir_ + flies[i], w, x, y, incl)
                 i += 1
                 i = (
                     0 if i >= len(flies) else i
-                )  # when done with all images of that folder, begin again
+                )  # when done with all assets of that folder, begin again
 
             # doggy condition
             (x0, y0, w0, h0) = get_face_boundbox(shape, 6)  # bound box of mouth

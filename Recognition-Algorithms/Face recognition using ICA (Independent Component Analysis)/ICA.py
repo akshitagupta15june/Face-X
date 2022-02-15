@@ -28,7 +28,7 @@ y_pred = prediction(clf, X_test_ica)
 print_report(y_test, y_pred, target_names, n_classes)
 
 
-# printing images
+# printing assets
 prediction_titles = [title(y_pred, y_test, target_names, i)
                      for i in range(y_pred.shape[0])]
 

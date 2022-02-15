@@ -68,7 +68,7 @@ def encoder_resnet50(images, num_classes, is_training=True, reuse=None):
 
     Args:
         preprocessed_inputs: A float32 tensor with shape [batch_size,
-            height, width, num_channels] representing a batch of images.
+            height, width, num_channels] representing a batch of assets.
 
     Returns:
         prediction_dict: A dictionary holding prediction tensors to be

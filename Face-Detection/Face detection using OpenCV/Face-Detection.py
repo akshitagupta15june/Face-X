@@ -22,13 +22,13 @@ haar_face_cascade = cv2.CascadeClassifier('data/haarcascade_frontalface_alt.xml'
 #load test iamge
 test1 = cv2.imread('data/test1.jpg')
 
-#convert the test image to gray image as opencv face detector expects gray images
+#convert the test image to gray image as opencv face detector expects gray assets
 gray_img = cv2.cvtColor(test1, cv2.COLOR_BGR2GRAY)
 plt.imshow(gray_img, cmap='gray')
 
 # In[4]:
 
-#let's detect multiscale (some images may be closer to camera than others) images
+#let's detect multiscale (some assets may be closer to camera than others) assets
 faces = haar_face_cascade.detectMultiScale(gray_img, scaleFactor=1.1, minNeighbors=5);
 
 #print the number of faces found
@@ -49,10 +49,10 @@ plt.imshow(convertToRGB(test1))
 
 def detect_faces(f_cascade, colored_img, scaleFactor = 1.1):
     img_copy = np.copy(colored_img)
-    #convert the test image to gray image as opencv face detector expects gray images
+    #convert the test image to gray image as opencv face detector expects gray assets
     gray = cv2.cvtColor(img_copy, cv2.COLOR_BGR2GRAY)
     
-    #let's detect multiscale (some images may be closer to camera than others) images
+    #let's detect multiscale (some assets may be closer to camera than others) assets
     faces = f_cascade.detectMultiScale(gray, scaleFactor=scaleFactor, minNeighbors=5);
     
     #go over list of faces and draw them as rectangles on original colored img
@@ -127,7 +127,7 @@ plt.imshow(convertToRGB(faces_detected_img))
 
 # ## Haar and LBP Results Analysis
 
-# We will run both `Haar` and `LBP` on test images to see accuracy and time delay of each.
+# We will run both `Haar` and `LBP` on test assets to see accuracy and time delay of each.
 
 # In[13]:
 

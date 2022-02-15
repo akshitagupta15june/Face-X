@@ -45,7 +45,7 @@ class W300(facedataset.FaceDataset):
 
         super().__init__(root=root,
                          cache_root=cache_root,
-                         fullsize_img_dir=os.path.join(root, 'images'),
+                         fullsize_img_dir=os.path.join(root, 'assets'),
                          train=train,
                          test_split=test_split,
                          crop_source=crop_source,

@@ -421,8 +421,8 @@ def detect_face(img, minsize, pnet, rnet, onet, threshold, factor):
 
 
 def bulk_detect_face(images, detection_window_size_ratio, pnet, rnet, onet, threshold, factor):
-    """Detects faces in a list of images
-    images: list containing input images
+    """Detects faces in a list of assets
+    assets: list containing input assets
     detection_window_size_ratio: ratio of minimum face size to smallest image dimension
     pnet, rnet, onet: caffemodel
     threshold: threshold=[th1 th2 th3], th1-3 are three steps's threshold [0-1]
@@ -458,7 +458,7 @@ def bulk_detect_face(images, detection_window_size_ratio, pnet, rnet, onet, thre
 
     images_obj_per_resolution = {}
 
-    # TODO: use some type of rounding to number module 8 to increase probability that pyramid images will have the same resolution across input images
+    # TODO: use some type of rounding to number module 8 to increase probability that pyramid assets will have the same resolution across input assets
 
     for index, scales in enumerate(all_scales):
         h = images[index].shape[0]

@@ -29,13 +29,13 @@ def create_bin():
 
 
 def read_bin():
-  # images = open('data/CelebA_RGBA.bin', 'rb')
+  # assets = open('data/CelebA_RGBA.bin', 'rb')
   # landmarks = open('data/CelebA_Landmark.bin', 'rb')
-  # image_array = np.fromstring(images, dtype=np.float32).reshape(
+  # image_array = np.fromstring(assets, dtype=np.float32).reshape(
   #     (-1, 224, 224, 4))
   # landmark_array = np.fromstring(landmarks, dtype=np.float32).reshape(
   #     (-1, 51, 2))
-  # print(len(images), len(landmarks))
+  # print(len(assets), len(landmarks))
   batch_size = 4
   with open('data/CelebA_RGBA.bin', 'rb') as im_f, open('data/CelebA_Landmark.bin', 'rb') as lm_f:
     for batch in range(128 // batch_size):

@@ -134,21 +134,21 @@ def main(args):
                             print('Unable to align "%s"' % image_path)
                             text_file.write('%s\n' % (output_filename))
                             
-    print('Total number of images: %d' % nrof_images_total)
-    print('Number of successfully aligned images: %d' % nrof_successfully_aligned)
+    print('Total number of assets: %d' % nrof_images_total)
+    print('Number of successfully aligned assets: %d' % nrof_successfully_aligned)
             
 
 def parse_arguments(argv):
     parser = argparse.ArgumentParser()
     
-    parser.add_argument('input_dir', type=str, help='Directory with unaligned images.')
+    parser.add_argument('input_dir', type=str, help='Directory with unaligned assets.')
     parser.add_argument('output_dir', type=str, help='Directory with aligned face thumbnails.')
     parser.add_argument('--image_size', type=int,
         help='Image size (height, width) in pixels.', default=182)
     parser.add_argument('--margin', type=int,
         help='Margin for the crop around the bounding box (height, width) in pixels.', default=44)
     parser.add_argument('--random_order', 
-        help='Shuffles the order of images to enable alignment using multiple processes.', action='store_true')
+        help='Shuffles the order of assets to enable alignment using multiple processes.', action='store_true')
     parser.add_argument('--gpu_memory_fraction', type=float,
         help='Upper bound on the amount of GPU memory that will be used by the process.', default=1.0)
     parser.add_argument('--detect_multiple_faces', type=bool,

@@ -2,7 +2,7 @@
 ## Demo of RingNet.
 ## Note that RingNet requires a loose crop of the face in the image.
 ## Sample usage:
-## Run the following command to generate check the RingNet predictions on loosely cropped face images
+## Run the following command to generate check the RingNet predictions on loosely cropped face assets
 # python -m demo --img_path *.jpg --out_folder ./RingNet_output
 ## To output the meshes run the following command
 # python -m demo --img_path *.jpg --out_folder ./RingNet_output --save_obj_file=True
@@ -106,7 +106,7 @@ def main(config, template_mesh):
     input_img, proc_param, img = preprocess_image(config.img_path)
     vertices, flame_parameters = model.predict(np.expand_dims(input_img, axis=0), get_parameters=True)
     cams = flame_parameters[0][:3]
-    visualize(img, proc_param, vertices[0], cams, img_name=config.out_folder + '/images/' + config.img_path.split('/')[-1][:-4])
+    visualize(img, proc_param, vertices[0], cams, img_name=config.out_folder + '/assets/' + config.img_path.split('/')[-1][:-4])
 
     if config.save_obj_file:
         if not os.path.exists(config.out_folder + '/mesh'):
@@ -155,7 +155,7 @@ if __name__ == '__main__':
     if not os.path.exists(config.out_folder):
         os.makedirs(config.out_folder)
 
-    if not os.path.exists(config.out_folder + '/images'):
-        os.mkdir(config.out_folder + '/images')
+    if not os.path.exists(config.out_folder + '/assets'):
+        os.mkdir(config.out_folder + '/assets')
 
     main(config, template_mesh)

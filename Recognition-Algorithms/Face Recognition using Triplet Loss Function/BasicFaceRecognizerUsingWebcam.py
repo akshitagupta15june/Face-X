@@ -290,7 +290,7 @@ for name in weights:
 
 
 # ## About <font color=blue>image_to_embedding</font> function        
-# When the model is loaded with pre trained weights, then we can create the **128 dimensional embedding vectors** for all the face images stored in the "images" folder. **"image_to_embedding"** function pass an image to the Inception network to generate the embedding vector.
+# When the model is loaded with pre trained weights, then we can create the **128 dimensional embedding vectors** for all the face assets stored in the "assets" folder. **"image_to_embedding"** function pass an image to the Inception network to generate the embedding vector.
 
 # In[4]:
 
@@ -306,7 +306,7 @@ def image_to_embedding(image, model):
 
 
 # ## About <font color=blue>recognize_face</font> function
-# This function calculate similarity between the captured image and the images that are already been stored. It passes the image to the trained neural network to generate its embedding vector. Which is then compared with all the embedding vectors of the images stored by calculating L2 Euclidean distance. 
+# This function calculate similarity between the captured image and the assets that are already been stored. It passes the image to the trained neural network to generate its embedding vector. Which is then compared with all the embedding vectors of the assets stored by calculating L2 Euclidean distance.
 # 
 # If the minimum L2 distance between two embeddings is less than a threshpld (here I have taken the threashhold as .68 (which can be adjusted) then we have a match.
 
@@ -341,7 +341,7 @@ def recognize_face(face_image, input_embeddings, model):
 
 
 # ## About <font color=blue>create_input_image_embeddings</font> function
-# This function generates 128 dimensional image ebeddings of all the images stored in the "images" directory by feed forwarding the images to a trained neural network. It creates a dictionary with key as the name of the face and value as embedding
+# This function generates 128 dimensional image ebeddings of all the assets stored in the "assets" directory by feed forwarding the assets to a trained neural network. It creates a dictionary with key as the name of the face and value as embedding
 # 
 # 
 # ## About <font color=blue>recognize_faces_in_cam</font> function
@@ -355,7 +355,7 @@ import glob
 def create_input_image_embeddings():
     input_embeddings = {}
 
-    for file in glob.glob("images/*"):
+    for file in glob.glob("assets/*"):
         person_name = os.path.splitext(os.path.basename(file))[0]
         image_file = cv2.imread(file, 1)
         input_embeddings[person_name] = image_to_embedding(image_file, model)
@@ -412,7 +412,7 @@ def recognize_faces_in_cam(input_embeddings):
 
 
 # ## Capturing the face image
-# Following code captures 10 face images of the person. They all are stored in **"images"** folder with the name User_1 to User_10. Select a good captured image from the set of 10 images. Rename it with the name of person and delete rest of them. This image will be used for recognizing the the identity of the person using one shot learning.
+# Following code captures 10 face assets of the person. They all are stored in **"assets"** folder with the name User_1 to User_10. Select a good captured image from the set of 10 assets. Rename it with the name of person and delete rest of them. This image will be used for recognizing the the identity of the person using one shot learning.
 
 # In[7]:
 
@@ -434,7 +434,7 @@ while(True):
         cv2.rectangle(img, (x1,y1), (x2,y2), (255,255,255), 2)     
         count += 1
         # Save the captured image into the datasets folder
-        cv2.imwrite("images/User_" + str(count) + ".jpg", img[y1:y2,x1:x2])
+        cv2.imwrite("assets/User_" + str(count) + ".jpg", img[y1:y2,x1:x2])
         cv2.imshow('image', img)
     k = cv2.waitKey(200) & 0xff # Press 'ESC' for exiting video
     if k == 27:

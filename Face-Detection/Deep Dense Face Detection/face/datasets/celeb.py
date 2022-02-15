@@ -73,7 +73,7 @@ class DatasetBuilder:
 
             face.download.Downloader(url, path).download()
 
-        # Extract images
+        # Extract assets
         subprocess.call(["7z", "x", paths[0], "-o" + self.data_directory])
 
         # Delete image archives

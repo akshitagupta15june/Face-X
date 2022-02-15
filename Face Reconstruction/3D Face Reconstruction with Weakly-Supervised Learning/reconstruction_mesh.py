@@ -352,7 +352,7 @@ def estimate_intrinsic(landmarks_2d, transform_params, z_buffer, face_shape, fac
     # estimate intrinsic parameters
 
     def re_convert(landmarks_2d, trans_params, origin_size=_need_const.origin_size, target_size=_need_const.target_size):
-        # convert landmarks to un_cropped images
+        # convert landmarks to un_cropped assets
         w = (origin_size * trans_params[2]).astype(np.int32)
         h = (origin_size * trans_params[2]).astype(np.int32)
         landmarks_2d[:, :, 1] = target_size - 1 - landmarks_2d[:, :, 1]
@@ -388,7 +388,7 @@ def estimate_intrinsic(landmarks_2d, transform_params, z_buffer, face_shape, fac
         py = k[3, 0]
         return fx, px, fy, py
 
-    # convert landmarks to un_cropped images
+    # convert landmarks to un_cropped assets
     landmarks_2d = re_convert(landmarks_2d, transform_params)
     landmarks_2d[:, :, 1] = _need_const.origin_size - 1.0 - landmarks_2d[:, :, 1]
     landmarks_2d[:, :, :2] = landmarks_2d[:, :, :2] * (_need_const.camera_pos - z_buffer[:, :, :])

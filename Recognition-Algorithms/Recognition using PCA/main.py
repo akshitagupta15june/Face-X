@@ -7,9 +7,9 @@ import matplotlib.pyplot as plt
 
 lfw_people = fetch_lfw_people(min_faces_per_person=70, resize=0.4)
 
-image_data = lfw_people.images #3D matrix (images as 2D vectors)
+image_data = lfw_people.images #3D matrix (assets as 2D vectors)
 no_of_sample, height, width = lfw_people.images.shape
-data = lfw_people.data #images as 1D arrays (flattened data)
+data = lfw_people.data #assets as 1D arrays (flattened data)
 labels = lfw_people.target #categories
 target_labels = lfw_people.target_names #category names
 
@@ -22,8 +22,8 @@ print 'these are the label', labels
 print 'target labels', target_labels
 
 
-'''Seeing image dimensions and number of images'''
-print 'number of images', no_of_sample
+'''Seeing image dimensions and number of assets'''
+print 'number of assets', no_of_sample
 print 'image height and width', height, width
 
 

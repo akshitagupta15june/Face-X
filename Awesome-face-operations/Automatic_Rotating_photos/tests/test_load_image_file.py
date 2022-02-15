@@ -7,13 +7,13 @@ import image_to_numpy
 class TestLoadImageFile(unittest.TestCase):
 
     # def test_jpeg_rotation(self):
-    #     # Make sure all Portrait test images are auto-rotated correctly
+    #     # Make sure all Portrait test assets are auto-rotated correctly
     #     for i in range(9):
     #         img_jpg = load_image_file(f"Portrait_{i}.jpg") 
     #         ref_img = np.load(f"Portrait_{i}.jpg.npy")
     #         self.assertTrue(np.array_equal(ref_img, img_jpg))
 
-    #     # Make sure all Landscape test images are auto-rotated correctly
+    #     # Make sure all Landscape test assets are auto-rotated correctly
     #     for i in range(9):
     #         img_jpg = load_image_file(f"Landscape_{i}.jpg")
     #         ref_img = np.load(f"Landscape_{i}.jpg.npy")

@@ -255,7 +255,7 @@ with torch.no_grad():
         correct += (predicted == target).sum().item()
         
 
-print('Accuracy of the network on the 10000 test images: %d %%' % (
+print('Accuracy of the network on the 10000 test assets: %d %%' % (
     100 * correct / total))
 
 """## Function For Drawing Bar Graph Using Network Output"""

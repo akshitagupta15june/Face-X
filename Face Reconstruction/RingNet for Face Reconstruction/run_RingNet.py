@@ -45,7 +45,7 @@ class RingNet_inference(object):
 
     def predict(self, images, get_parameters=False):
         """
-        images: batch_size, img_size, img_size, 3 # Here for inference the batch size is always set to 1
+        assets: batch_size, img_size, img_size, 3 # Here for inference the batch size is always set to 1
         Preprocessed to range [-1, 1]
         """
         results = self.predict_dict(images)
@@ -57,7 +57,7 @@ class RingNet_inference(object):
 
     def predict_dict(self, images):
         """
-        Runs the model with images.
+        Runs the model with assets.
         """
         images_ip = self.graph.get_tensor_by_name(u'input_images_1:0')
         params = self.graph.get_tensor_by_name(u'add_2:0')

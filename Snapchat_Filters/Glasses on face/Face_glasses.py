@@ -95,7 +95,7 @@ while True:
         #glass_trans = int(-.8 * (eye_center - y))
 
 
-        # resize glasses to width of face and blend images
+        # resize glasses to width of face and blend assets
         face_width = w - x
 
         # resize_glasses

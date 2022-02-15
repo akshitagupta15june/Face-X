@@ -258,7 +258,7 @@ class AAEUnsupervisedTraining(AAETraining):
 
         with torch.set_grad_enabled(self.args.train_decoder):
 
-            # reconstruct images
+            # reconstruct assets
             X_recon = self.saae.P(z_sample)
 
             #######################

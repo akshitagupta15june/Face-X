@@ -22,7 +22,7 @@ slope,intercept=loaded_vars['a'],loaded_vars['b']
 
 
 os.system('cls')
-print("\n\n\nKeep the images in './test/' directory.")
+print("\n\n\nKeep the assets in './test/' directory.")
 input("Press ENTER when you're ready.")
 
 

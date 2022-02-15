@@ -11,7 +11,7 @@ model_path='../model/facenet_keras.h5'
 
 choice=int(input("""Choose one:
         1. Have faces already.
-        2. Want to detect faces from pictures in './data/images/'\n"""))
+        2. Want to detect faces from pictures in './data/assets/'\n"""))
 if choice==2:
     detect_faces()
     print("\n\n\nFaces saved in './data/faces/'\n\n\n")

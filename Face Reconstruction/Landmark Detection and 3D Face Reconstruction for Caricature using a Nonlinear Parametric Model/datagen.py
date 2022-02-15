@@ -65,7 +65,7 @@ def clip_rot_flip_face(image, landmarks, scale, alpha):
 
 class TrainSet(data.Dataset):
     """
-        construct trainset, including images, landmarks, and vertices of ground-truth meshes
+        construct trainset, including assets, landmarks, and vertices of ground-truth meshes
     """
     def __init__(self, image_path, landmark_path, vertex_path, landmark_num=68, vertex_num=6144):
         """
@@ -120,7 +120,7 @@ class TrainSet(data.Dataset):
 class TestSet(data.Dataset):
     """
         construct test set,
-        including images, landmarks for calculating errors
+        including assets, landmarks for calculating errors
         and 'lrecord', 'vrecord' for recording estimated landmarks and vertices of recovered meshes.
     """
     def __init__(self, image_path, landmark_path, lrecord_path, vrecord_path):

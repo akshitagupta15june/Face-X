@@ -160,7 +160,7 @@ def mesh_renderer_camera(vertices, triangles, normals, diffuse_colors,
     shininess_coefficients: a 0D-2D float32 tensor with maximum shape
        [batch_size, vertex_count]. The phong shininess coefficient of each
        vertex. A 0D tensor or float gives a constant shininess coefficient
-       across all batches and images. A 1D tensor must have shape [batch_size],
+       across all batches and assets. A 1D tensor must have shape [batch_size],
        and a single shininess coefficient per image is used.
     ambient_color: a 2D tensor with shape [batch_size, 3]. The RGB ambient
         color, which is added to each pixel in the scene. If None, it is
@@ -435,7 +435,7 @@ def mesh_rendererOrtho_camera(vertices, triangles, normals, diffuse_colors,
     shininess_coefficients: a 0D-2D float32 tensor with maximum shape
        [batch_size, vertex_count]. The phong shininess coefficient of each
        vertex. A 0D tensor or float gives a constant shininess coefficient
-       across all batches and images. A 1D tensor must have shape [batch_size],
+       across all batches and assets. A 1D tensor must have shape [batch_size],
        and a single shininess coefficient per image is used.
     ambient_color: a 2D tensor with shape [batch_size, 3]. The RGB ambient
         color, which is added to each pixel in the scene. If None, it is

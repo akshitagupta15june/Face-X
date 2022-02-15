@@ -24,7 +24,7 @@ def recon():
     device = 'cuda:0' if torch.cuda.is_available() else 'cpu:0'
     bfm = BFM(r'BFM/BFM_model_front.mat', device)
 
-    # read standard landmarks for preprocessing images
+    # read standard landmarks for preprocessing assets
     lm3D = bfm.load_lm3d()
 
     model = resnet50_use().to(device)
@@ -35,7 +35,7 @@ def recon():
         param.requires_grad = False
 
     for file in img_list:
-        # load images and corresponding 5 facial landmarks
+        # load assets and corresponding 5 facial landmarks
         img, lm = load_img(file, file.replace('jpg', 'txt'))
 
         # preprocess input image
@@ -71,8 +71,8 @@ def recon():
         from PIL import Image
         images = np.uint8(images[:, :, :3] * 255.0)
         # init_img = np.array(img)
-        # init_img[images != 0] = 0
-        # images += init_img
+        # init_img[assets != 0] = 0
+        # assets += init_img
         img = Image.fromarray(images)
         img.save(file.replace(image_path, save_path).replace('jpg', 'png'))
 

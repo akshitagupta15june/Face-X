@@ -19,14 +19,14 @@ from constants import ENCODINGS_PATH
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--dataset", required=True,
-	help="path to input directory of faces + images")
+	help="path to input directory of faces + assets")
 ap.add_argument("-e", "--encodings", required=True,
 	help="path to serialized database of facial encodings")
 ap.add_argument("-d", "--detection_method", type=str, default="cnn",
 	help="face detection model to use: either `hog` or `cnn`")
 args = vars(ap.parse_args())
 
-# grab the paths to the input images in our dataset, then initialize
+# grab the paths to the input assets in our dataset, then initialize
 # out data list (which we'll soon populate)
 print("[INFO] quantifying faces...")
 imagePaths = list(paths.list_images(args["dataset"]))
@@ -65,4 +65,4 @@ print("[INFO] serializing encodings...")
 f = open(args["encodings"], "wb")
 f.write(pickle.dumps(data))
 f.close()
-print("Encodings of images saved in {}".format(ENCODINGS_PATH))
+print("Encodings of assets saved in {}".format(ENCODINGS_PATH))

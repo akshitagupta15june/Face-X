@@ -26,7 +26,7 @@ flags = tf.app.flags
 flags.DEFINE_string("dataset_dir", "", "Dataset directory")
 flags.DEFINE_string("dataset_loader", "", "data_loader_semi_unsupervised_skin")
 flags.DEFINE_string("dataset_name_list", "train", "train train_debug")
-flags.DEFINE_boolean("flag_shuffle", True, "source images (seq_length-1)")
+flags.DEFINE_boolean("flag_shuffle", True, "source assets (seq_length-1)")
 flags.DEFINE_string("checkpoint_dir", "../default_checkpoints/", "Directory name to save the checkpoints")
 
 # continue training
@@ -38,7 +38,7 @@ flags.DEFINE_integer("batch_size", 1, "The size of of a sample batch")
 flags.DEFINE_integer("img_height", 224, "Image height")
 flags.DEFINE_integer("img_width", 224, "Image width")
 flags.DEFINE_integer("seq_length", 3, "Sequence length for each example")
-flags.DEFINE_integer("num_source", 2, "source images (seq_length-1)")
+flags.DEFINE_integer("num_source", 2, "source assets (seq_length-1)")
 
 # save
 flags.DEFINE_integer("min_steps", 200000, "Maximum number of training iterations")

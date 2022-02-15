@@ -189,7 +189,7 @@ def process_img(img, lm, t, s, target_size=224.):
 
 
 def Preprocess(img, lm, lm3D):
-    # resize and crop input images before sending to the R-Net
+    # resize and crop input assets before sending to the R-Net
     w0, h0 = img.size
 
     # change from image plane coordinates to 3D sapce coordinates(X-Y plane)
@@ -209,7 +209,7 @@ def Preprocess(img, lm, lm3D):
 
 
 def load_img(img_path, lm_path):
-    # load input images and corresponding 5 landmarks
+    # load input assets and corresponding 5 landmarks
     image = Image.open(img_path)
     lm = np.loadtxt(lm_path)
     return image, lm

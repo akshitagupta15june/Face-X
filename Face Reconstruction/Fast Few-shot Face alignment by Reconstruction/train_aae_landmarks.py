@@ -273,7 +273,7 @@ class AAELandmarkTraining(AAETraining):
                 lm_gt = to_numpy(batch.landmarks)
                 nmes = lmutils.calc_landmark_nme(lm_gt, lm_preds_max, ocular_norm=self.args.ocular_norm,
                                                  image_size=self.args.input_size)
-                # nccs = lmutils.calc_landmark_ncc(batch.images, X_recon, lm_gt)
+                # nccs = lmutils.calc_landmark_ncc(batch.assets, X_recon, lm_gt)
                 iter_stats.update({'nmes': nmes})
 
         if train_lmhead:

@@ -46,7 +46,7 @@ class ImageDataset(tdv.VisionDataset):
             self.output_size = image_size
 
         if roi_margin is None:
-            # crop size equals input diagonal, so images can be fully rotated
+            # crop size equals input diagonal, so assets can be fully rotated
             self.roi_size = geometry.get_diagonal(image_size)
             self.margin = self.roi_size - self.image_size
         else:
@@ -117,7 +117,7 @@ class ImageDataset(tdv.VisionDataset):
             else:
                 selected_rows = self.annotations[k] == v
             self.annotations = self.annotations[selected_rows]
-        print("  Number of images: {}".format(len(self.annotations)))
+        print("  Number of assets: {}".format(len(self.annotations)))
 
     def _select_index_range(self):
         st,nd = 0, None

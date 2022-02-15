@@ -73,14 +73,14 @@ class AffectNet(facedataset.FaceDataset):
             print("Applying exclude filter to labels: {}".format(label_dict_exclude))
             for k, v in label_dict_exclude.items():
                 self.annotations = self.annotations[self.annotations[k] != v]
-        print("  Number of images: {}".format(len(self.annotations)))
+        print("  Number of assets: {}".format(len(self.annotations)))
 
 
     def rebalance_classes(self, max_images_per_class=MAX_IMAGES_PER_EXPRESSION):
         if max_images_per_class is not None and self.train:
             self._load_annotations(self.split)
             # balance class sized if neccessary
-            print('Limiting number of images to {} per class...'.format(max_images_per_class))
+            print('Limiting number of assets to {} per class...'.format(max_images_per_class))
             # self._annotations = self._annotations.groupby('expression').head(5000)
             from sklearn.utils import shuffle
             self.annotations['cls_idx'] = self.annotations.groupby('expression').cumcount()

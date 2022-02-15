@@ -30,7 +30,7 @@ def save_image(image_obj,filename):
     grayLevelImage.save(filename+".png")
     
 
-#Load Training images
+#Load Training assets
 training_images_list = ["subject01.normal", "subject02.normal", "subject03.normal", 
                    "subject07.normal", "subject10.normal", "subject11.normal", 
                    "subject14.normal", "subject15.normal"]
@@ -96,7 +96,7 @@ print(L_eig_vals)
 eigen_face_space_t= np.transpose(eigen_face_space)
 projected_training_faces = np.dot(eigen_face_space_t,adjusted_training_faces)
 
-#Load test images
+#Load test assets
 from os import listdir
 from os.path import isfile, join
 testImagesList = ['subject01.centerlight.jpg','subject01.happy.jpg',
@@ -126,8 +126,8 @@ for i in range(0,eigen_face_space.shape[1]):
     save_image(image_obj,"Eigen Faces/eigenface{}".format(i))
 
 
-#Recognition of test images in training images
-# 1. Subtract mean face from the test images
+#Recognition of test assets in training assets
+# 1. Subtract mean face from the test assets
 adjusted_test_faces = subtract_mean_from_each_face(mean_face, test_faces)
 
 
@@ -161,7 +161,7 @@ for i in range(0,projected_training_faces.shape[1]):
 reconstructed_test_faces = np.dot(eigen_face_space,projected_test_faces)
 
 
-# Save reconstructed test images
+# Save reconstructed test assets
 for i in range(0,reconstructed_test_faces.shape[1]):
     x=reconstructed_test_faces[:,i]
     image_obj = x.reshape(test_images_matrices[0].shape)
@@ -169,7 +169,7 @@ for i in range(0,reconstructed_test_faces.shape[1]):
 
 
 from numpy import  linalg as LA
-# Compute distance between input face and training images in the face space
+# Compute distance between input face and training assets in the face space
 temp_projected_test_faces = projected_test_faces.T
 temp_projected_training_faces = projected_training_faces.T
 min_distance_list=[]

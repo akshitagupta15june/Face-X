@@ -36,7 +36,7 @@ def draw_results(X_resized, X_recon, levels_z=None, landmarks=None, landmarks_pr
     text_thickness = 2
 
     #
-    # Visualise resized input images and reconstructed images
+    # Visualise resized input assets and reconstructed assets
     #
     if landmarks is not None:
         disp_X = vis.add_landmarks_to_images(disp_X, landmarks, draw_wireframe=False, landmarks_to_draw=lmcfg.LANDMARKS_19)

@@ -1,6 +1,6 @@
 from PIL import Image
 
-img_path=input("Enter your image path here:")  #ex -> r'C:\Users\xyz\images\p1.jpg' 
+img_path=input("Enter your image path here:")  #ex -> r'C:\Users\xyz\assets\p1.jpg'
 img = Image.open(img_path)  
 img = img.resize((900, 900), Image.ANTIALIAS)
 img.save('resized_image.jpg')

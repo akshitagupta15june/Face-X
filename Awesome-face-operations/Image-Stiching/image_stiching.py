@@ -36,14 +36,14 @@ Original file is located at
           'for stitching materials under affine transformation, such as scans.' % modes)
  parser.add_argument('--output', default = 'result.jpg',
      help = 'Resulting image. The default is `result.jpg`.')
- parser.add_argument('img', nargs='+', help = 'input images')
+ parser.add_argument('img', nargs='+', help = 'input assets')
  
  __doc__ += '\n' + parser.format_help()
  
  def main():
      args = parser.parse_args()
  
-     # read input images
+     # read input assets
      imgs = []
      for img_name in args.img:
          img = cv.imread(cv.samples.findFile(img_name))
@@ -56,7 +56,7 @@ Original file is located at
      status, pano = stitcher.stitch(imgs)
  
      if status != cv.Stitcher_OK:
-         print("Can't stitch images, error code = %d" % status)
+         print("Can't stitch assets, error code = %d" % status)
          sys.exit(-1)
  
      cv.imwrite(args.output, pano)

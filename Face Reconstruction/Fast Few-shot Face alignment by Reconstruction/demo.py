@@ -59,7 +59,7 @@ def test_crop(net, input_image, gt_landmarks, bb_for_crop=None, lms_for_crop=Non
     images = nn.atleast4d(item['image']).cuda()
     X_recon, lms, X_lm_hm = detect_in_crop(net, images)
 
-    # lmvis.visualize_batch(images, landmarks, X_recon, X_lm_hm, lms, wait=0, clean=True)
+    # lmvis.visualize_batch(assets, landmarks, X_recon, X_lm_hm, lms, wait=0, clean=True)
     lmvis.visualize_batch_CVPR(images, landmarks, X_recon, X_lm_hm, lms, wait=0,
                                horizontal=True, show_recon=True, radius=2, draw_wireframes=True)
 

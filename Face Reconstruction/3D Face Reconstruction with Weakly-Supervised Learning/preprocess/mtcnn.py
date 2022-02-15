@@ -160,10 +160,10 @@ class ONet(nn.Module):
 class MTCNN(nn.Module):
     """MTCNN face detection module.
 
-    This class loads pretrained P-, R-, and O-nets and returns images cropped to include the face
-    only, given raw input images of one of the following types:
-        - PIL image or list of PIL images
-        - numpy.ndarray (uint8) representing either a single image (3D) or a batch of images (4D).
+    This class loads pretrained P-, R-, and O-nets and returns assets cropped to include the face
+    only, given raw input assets of one of the following types:
+        - PIL image or list of PIL assets
+        - numpy.ndarray (uint8) representing either a single image (3D) or a batch of assets (4D).
     Cropped faces can optionally be saved to file
     also.
 
@@ -177,7 +177,7 @@ class MTCNN(nn.Module):
         min_face_size {int} -- Minimum face size to search for. (default: {20})
         thresholds {list} -- MTCNN face detection thresholds (default: {[0.6, 0.7, 0.7]})
         factor {float} -- Factor used to create a scaling pyramid of face sizes. (default: {0.709})
-        post_process {bool} -- Whether or not to post process images tensors before returning.
+        post_process {bool} -- Whether or not to post process assets tensors before returning.
             (default: {True})
         select_largest {bool} -- If True, if multiple faces are detected, the largest is returned.
             If False, the face with the highest detection probability is returned.
@@ -226,7 +226,7 @@ class MTCNN(nn.Module):
             save_path {str} -- An optional save path for the cropped image. Note that when
                 self.post_process=True, although the returned tensor is post processed, the saved
                 face image is not, so it is a true representation of the face in the input image.
-                If `img` is a list of images, `save_path` should be a list of equal length.
+                If `img` is a list of assets, `save_path` should be a list of equal length.
                 (default: {None})
             return_prob {bool} -- Whether or not to return the detection probability.
                 (default: {False})
@@ -236,7 +236,7 @@ class MTCNN(nn.Module):
                 with dimensions 3 x image_size x image_size. Optionally, the probability that a
                 face was detected. If self.keep_all is True, n detected faces are returned in an
                 n x 3 x image_size x image_size tensor with an optional list of detection
-                probabilities. If `img` is a list of images, the item(s) returned have an extra 
+                probabilities. If `img` is a list of assets, the item(s) returned have an extra
                 dimension (batch) as the first dimension.
 
         Example:
@@ -329,7 +329,7 @@ class MTCNN(nn.Module):
         followed by the extract_face() function.
 
         Arguments:
-            img {PIL.Image, np.ndarray, or list} -- A PIL image or a list of PIL images.
+            img {PIL.Image, np.ndarray, or list} -- A PIL image or a list of PIL assets.
 
         Keyword Arguments:
             landmarks {bool} -- Whether to return facial landmarks in addition to bounding boxes.
@@ -340,7 +340,7 @@ class MTCNN(nn.Module):
                 Nx4 array of bounding boxes and a length N list of detection probabilities.
                 Returned boxes will be sorted in descending order by detection probability if
                 self.select_largest=False, otherwise the largest face will be returned first.
-                If `img` is a list of images, the items returned have an extra dimension
+                If `img` is a list of assets, the items returned have an extra dimension
                 (batch) as the first dimension. Optionally, a third item, the facial landmarks,
                 are returned if `landmarks=True`.
 

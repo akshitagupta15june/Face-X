@@ -15,14 +15,14 @@ class TrainOptions():
         if_train_parser.add_argument('--train', dest='if_train', action='store_true') # train mode
         if_train_parser.add_argument('--no_train', dest='if_train', action='store_false') # test mode
         parser.set_defaults(if_train=True)
-        parser.add_argument('--train_image_path', type=str, default="exp/train_images.txt", help='train images path')
+        parser.add_argument('--train_image_path', type=str, default="exp/train_images.txt", help='train assets path')
         parser.add_argument('--train_landmark_path', type=str, default="exp/train_landmarks.txt",
                             help='train landmarks path')
         parser.add_argument('--train_vertex_path', type=str, default="exp/train_vertex.txt",
                             help='train vertex path')
         parser.add_argument('--batch_size', type=int, default=32, help='train batch size')
         parser.add_argument('--num_workers', type=int, default=6, help='threads for loading data')
-        parser.add_argument('--test_image_path', type=str, default="exp/test_images.txt", help='test images path')
+        parser.add_argument('--test_image_path', type=str, default="exp/test_images.txt", help='test assets path')
         parser.add_argument('--test_landmark_path', type=str, default="exp/test_landmarks.txt",
                             help='test landmarks path')
         parser.add_argument('--test_lrecord_path', type=str, default="exp/test_lrecord.txt",

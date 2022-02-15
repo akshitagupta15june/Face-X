@@ -15,7 +15,7 @@ config_file = os.path.abspath("../log/logging.conf")
 logging.config.fileConfig(config_file, disable_existing_loggers=False)
 logger = logging.getLogger(__file__)
 
-# Drawn images will be saved in this directory
+# Drawn assets will be saved in this directory
 DST_DIR = "results"
 if not os.path.exists(DST_DIR):
     logger.info(f"Creating {DST_DIR} directory")
@@ -75,7 +75,7 @@ def test_mtcnn(base_dir, thresholds):
                 break
             results[th].append(recall)
 
-        # log every n images
+        # log every n assets
         if (i + 1) % 10 == 0:
             logger.info(f"Processed {i + 1} images")
 

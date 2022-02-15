@@ -14,7 +14,7 @@ recognizer = cv2.face.LBPHFaceRecognizer_create()
 # Using prebuilt frontal face training model, for face detection
 detector = cv2.CascadeClassifier("haarcascade_frontalface_default.xml");
 
-# Create method to get the images and label data
+# Create method to get the assets and label data
 def getImagesAndLabels(path):
 
     # Get all file path
@@ -39,7 +39,7 @@ def getImagesAndLabels(path):
         id = int(os.path.split(imagePath)[-1].split(".")[1])
         print(id)
 
-        # Get the face from the training images
+        # Get the face from the training assets
         faces = detector.detectMultiScale(img_numpy)
 
         # Loop for each face, append to their respective ID

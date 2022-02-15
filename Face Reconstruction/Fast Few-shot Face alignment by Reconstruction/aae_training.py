@@ -182,7 +182,7 @@ class AAETraining(object):
     def _create_weighted_sampler(dataset):
         def _calc_weights_for_profile_faces():
             bbox_aspect_ratios = dataset.widths / dataset.heights
-            print('Num. profile images: ', np.count_nonzero(bbox_aspect_ratios < 0.65))
+            print('Num. profile assets: ', np.count_nonzero(bbox_aspect_ratios < 0.65))
             _weights = np.ones_like(bbox_aspect_ratios, dtype=np.float32)
             _weights[bbox_aspect_ratios < 0.65] = 10
             return _weights
@@ -290,14 +290,14 @@ class AAETraining(object):
     def update_gan(self, X_target, X_recon, z_sample, train=True, with_gen_loss=False, w_gen=0.25, X_gen=None):
         stats = {}
         if with_gen_loss:
-            # Generate images by interpolating between reals
+            # Generate assets by interpolating between reals
             # z_noise = self.enc_rand(len(z_sample), z_sample.shape[1]).to(device)
             # dist = np.random.random(1)[0]
             # z_random = z_sample + (z_noise - z_sample) * dist
             # X_gen = self.saae.P(z_random)[:, :3]
             # z_sample = z_sample.detach()
             # z_noise = self.enc_rand(len(z_sample), z_sample.shape[1]).to(device)
-            # Generate some random images
+            # Generate some random assets
             rand_ids = sklearn.utils.shuffle(range(len(z_sample)))
             z_noise = z_sample[rand_ids]
             gamma = 1.0
@@ -381,7 +381,7 @@ class AAETraining(object):
             disp_real_noise = self.generate_images(z_real_noise)
             rows.append(vis.make_grid(disp_real_noise, nCols=nimgs))
         disp_rows = vis.make_grid(rows, nCols=1, normalize=False)
-        cv2.imshow("random images", cv2.cvtColor(disp_rows, cv2.COLOR_RGB2BGR))
+        cv2.imshow("random assets", cv2.cvtColor(disp_rows, cv2.COLOR_RGB2BGR))
         cv2.waitKey(wait)
 
 
@@ -420,10 +420,10 @@ class AAETraining(object):
         if print_stats:
             # lm_ssim_errs = None
             # if batch.landmarks is not None:
-            #     lm_recon_errs = lmutils.calc_landmark_recon_error(batch.images[:nimgs], X_recon[:nimgs], batch.landmarks[:nimgs], reduction='none')
+            #     lm_recon_errs = lmutils.calc_landmark_recon_error(batch.assets[:nimgs], X_recon[:nimgs], batch.landmarks[:nimgs], reduction='none')
             #     disp_X_recon = vis.add_error_to_images(disp_X_recon, lm_recon_errs, size=text_size_errors, loc='bm',
             #                                            format_string='({:>3.1f})', vmin=0, vmax=10)
-            #     lm_ssim_errs = lmutils.calc_landmark_ssim_error(batch.images[:nimgs], X_recon[:nimgs], batch.landmarks[:nimgs])
+            #     lm_ssim_errs = lmutils.calc_landmark_ssim_error(batch.assets[:nimgs], X_recon[:nimgs], batch.landmarks[:nimgs])
             #     disp_X_recon = vis.add_error_to_images(disp_X_recon, lm_ssim_errs.mean(axis=1), size=text_size_errors, loc='bm-1',
             #                                            format_string='({:>3.2f})', vmin=0.2, vmax=0.8)
 
@@ -470,7 +470,7 @@ class AAETraining(object):
 
     def reconstruct_fixed_samples(self):
         out_dir = os.path.join(cfg.REPORT_DIR, 'reconstructions', self.session_name)
-        # reconstruct some fixed images from training and validation set (if available)
+        # reconstruct some fixed assets from training and validation set (if available)
         for phase, b in self.fixed_batch.items():
             b = self.fixed_batch[phase]
             f = 1 if  b.images.shape[-1] < 512 else 0.5
@@ -523,15 +523,15 @@ def add_arguments(parser, defaults=None):
 
     # data
     parser.add_argument('--use-cache', type=bool_str, default=True, help='use cached crops')
-    parser.add_argument('--train-count', default=None, type=int, help='number of training images per dataset')
+    parser.add_argument('--train-count', default=None, type=int, help='number of training assets per dataset')
     parser.add_argument('--train-count-multi', default=None, type=int,
-                        help='number of total training images for training using multiple datasets')
-    parser.add_argument('--st', default=None, type=int, help='skip first n training images')
-    parser.add_argument('--val-count',  default=None, type=int, help='number of test images')
+                        help='number of total training assets for training using multiple datasets')
+    parser.add_argument('--st', default=None, type=int, help='skip first n training assets')
+    parser.add_argument('--val-count',  default=None, type=int, help='number of test assets')
     parser.add_argument('--daug', type=int, default=0, help='level of data augmentation for training')
     parser.add_argument('--align', type=bool_str, default=False, help='rotate crop so eyes are horizontal')
-    parser.add_argument('--occ', type=bool_str, default=False, help='add occlusions to target images')
-    parser.add_argument('--crop-source', type=str, default='bb_ground_truth', help='crop images using bounding boxes or landmarks')
+    parser.add_argument('--occ', type=bool_str, default=False, help='add occlusions to target assets')
+    parser.add_argument('--crop-source', type=str, default='bb_ground_truth', help='crop assets using bounding boxes or landmarks')
     parser.add_argument('-j', '--workers', default=6, type=int, metavar='N', help='number of data loading workers (default: 6)')
 
     # visualization

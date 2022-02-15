@@ -51,7 +51,7 @@ result = cv2.drawMatches(image, train_keypoints, test_gray, test_keypoints, matc
 # Display the best matching points
 cv2.imshow('result',result)
 
-# Print total number of matching points between the training and query images
+# Print total number of matching points between the training and query assets
 print("\nNumber of Matching Keypoints Between The input image and test image: ", len(matches))
 cv2.waitKey(0)
 cv2.destroyAllWindows()

@@ -150,7 +150,7 @@ def init():
     model = load_pretrained_model()
 
 
-    print("[LOG] Collecting images ...")
+    print("[LOG] Collecting assets ...")
     images = []
     for direc, _, files in tqdm(os.walk(dataset)):
         for file in files:
@@ -333,7 +333,7 @@ def detect_and_display(model, video_capture, face_detector, open_eyes_detector, 
 
 (model, face_detector, open_eyes_detector,left_eye_detector,right_eye_detector, images) = init()
 
-# data = process_and_encode(images)
+# data = process_and_encode(assets)
 data = np.load('encodings.npy',allow_pickle='TRUE').item()
 
 

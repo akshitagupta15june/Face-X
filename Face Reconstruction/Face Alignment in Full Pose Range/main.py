@@ -180,7 +180,7 @@ def main(args):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='3DDFA inference pipeline')
     parser.add_argument('-f', '--files', nargs='+',
-                        help='image files paths fed into network, single or multiple images')
+                        help='image files paths fed into network, single or multiple assets')
     parser.add_argument('-m', '--mode', default='cpu', type=str, help='gpu or cpu mode')
     parser.add_argument('--show_flg', default='true', type=str2bool, help='whether show the visualization result')
     parser.add_argument('--bbox_init', default='one', type=str,

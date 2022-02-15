@@ -8,7 +8,7 @@ from torchvision.transforms import functional as F
 
 
 class CenterCrop(object):
-    """Like tf.CenterCrop, but works works on numpy arrays instead of PIL images."""
+    """Like tf.CenterCrop, but works works on numpy arrays instead of PIL assets."""
 
     def __init__(self, size):
         if isinstance(size, numbers.Number):
@@ -42,7 +42,7 @@ class CenterCrop(object):
 class RandomRotation(object):
     """Rotate the image by angle.
 
-    Like tf.RandomRotation, but works works on numpy arrays instead of PIL images.
+    Like tf.RandomRotation, but works works on numpy arrays instead of PIL assets.
 
     """
 
@@ -110,7 +110,7 @@ class Rescale(object):
 
         img = cv2.resize(image, dsize=(new_h, new_w))
 
-        # h and w are swapped for landmarks because for images,
+        # h and w are swapped for landmarks because for assets,
         # x and y axes are axis 1 and 0 respectively
         if landmarks is not None:
             landmarks = landmarks * [new_w / w, new_h / h]

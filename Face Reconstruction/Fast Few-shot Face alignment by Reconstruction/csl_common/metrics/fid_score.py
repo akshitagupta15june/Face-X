@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """Calculates the Frechet Inception Distance (FID) to evalulate GANs
 
-The FID metric calculates the distance between two distributions of images.
+The FID metric calculates the distance between two distributions of assets.
 Typically, we have summary statistics (mean & covariance matrix) of one
 of these distributions, while the 2nd distribution is given by a GAN.
 
 When run as a stand-alone program, it compares the distribution of
-images that are stored as PNG/JPEG at a specified location with a
+assets that are stored as PNG/JPEG at a specified location with a
 distribution given by summary statistics (in pickle format).
 
 The FID is calculated by assuming that X_1 and X_2 are the activations of
@@ -48,7 +48,7 @@ from metrics.inception import InceptionV3
 
 parser = ArgumentParser(formatter_class=ArgumentDefaultsHelpFormatter)
 parser.add_argument('path', type=str, nargs=2,
-                    help=('Path to the generated images or '
+                    help=('Path to the generated assets or '
                           'to .npz statistic files'))
 parser.add_argument('--batch-size', type=int, default=64,
                     help='Batch size to use')
@@ -62,13 +62,13 @@ parser.add_argument('-c', '--gpu', default='', type=str,
 
 def get_activations(images, model, batch_size=64, dims=2048,
                     cuda=False, verbose=False):
-    """Calculates the activations of the pool_3 layer for all images.
+    """Calculates the activations of the pool_3 layer for all assets.
 
     Params:
-    -- images      : Numpy array of dimension (n_images, 3, hi, wi). The values
+    -- assets      : Numpy array of dimension (n_images, 3, hi, wi). The values
                      must lie between 0 and 1.
     -- model       : Instance of inception model
-    -- batch_size  : the images numpy array is split into batches with
+    -- batch_size  : the assets numpy array is split into batches with
                      batch size batch_size. A reasonable batch size depends
                      on the hardware.
     -- dims        : Dimensionality of features returned by Inception
@@ -76,7 +76,7 @@ def get_activations(images, model, batch_size=64, dims=2048,
     -- verbose     : If set to True and parameter out_step is given, the number
                      of calculated batches is reported.
     Returns:
-    -- A numpy array of dimension (num images, dims) that contains the
+    -- A numpy array of dimension (num assets, dims) that contains the
        activations of the given tensor when feeding inception with the
        query tensor.
     """
@@ -181,10 +181,10 @@ def calculate_activation_statistics(images, model, batch_size=64,
                                     dims=2048, cuda=False, verbose=False):
     """Calculation of the statistics used by the FID.
     Params:
-    -- images      : Numpy array of dimension (n_images, 3, hi, wi). The values
+    -- assets      : Numpy array of dimension (n_images, 3, hi, wi). The values
                      must lie between 0 and 1.
     -- model       : Instance of inception model
-    -- batch_size  : The images numpy array is split into batches with
+    -- batch_size  : The assets numpy array is split into batches with
                      batch size batch_size. A reasonable batch size
                      depends on the hardware.
     -- dims        : Dimensionality of features returned by Inception
@@ -214,10 +214,10 @@ def _compute_statistics_of_path(path, model, batch_size, dims, cuda):
 
         imgs = np.array([imread(str(fn)).astype(np.float32) for fn in files])
 
-        # Bring images to shape (B, 3, H, W)
+        # Bring assets to shape (B, 3, H, W)
         imgs = imgs.transpose((0, 3, 1, 2))
 
-        # Rescale images to be between 0 and 1
+        # Rescale assets to be between 0 and 1
         imgs /= 255
 
         m, s = calculate_activation_statistics(imgs, model, batch_size,

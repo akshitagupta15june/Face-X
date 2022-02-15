@@ -17,7 +17,7 @@ crop_size = 64
 # Size of inputs models are trained on
 image_shape = (crop_size, crop_size, 3)
 
-# Stride to be used to sample crops from images
+# Stride to be used to sample crops from assets
 stride = 8
 
 

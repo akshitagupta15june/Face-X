@@ -131,7 +131,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Joint 3D Face Reconstruction and Dense Alignment with Position Map Regression Network')
 
     parser.add_argument('-i', '--inputDir', default='TestImages/', type=str,
-                        help='path to the input directory, where input images are stored.')
+                        help='path to the input directory, where input assets are stored.')
     parser.add_argument('-o', '--outputDir', default='TestImages/results', type=str,
                         help='path to the output directory, where results(obj,txt files) will be stored.')
     parser.add_argument('--gpu', default='0', type=str,

@@ -75,7 +75,7 @@ def makeMorphs(theDuration,theFrameRate,theImage1,theImage2,theList1,theList2,th
     p = Popen(['ffmpeg', '-y', '-f', 'image2pipe', '-r', str(theFrameRate),'-s',str(size[1])+'x'+str(size[0]), '-i', '-', '-c:v', 'libx264', '-crf', '25','-vf','scale=trunc(iw/2)*2:trunc(ih/2)*2','-pix_fmt','yuv420p', theResult], stdin=PIPE)
     for j in range(0,totalImages):
         
-        # Read images
+        # Read assets
         img1 = theImage1
         img2 = theImage2
 

@@ -14,7 +14,7 @@ def getImagesAndLabels(path):
     faceSamples=[]
     #create empty ID list
     Ids=[]
-    #now looping through all the image paths and loading the Ids and the images
+    #now looping through all the image paths and loading the Ids and the assets
     for imagePath in imagePaths:
         #loading the image and converting it to gray scale
         pilImage=Image.open(imagePath).convert('L')

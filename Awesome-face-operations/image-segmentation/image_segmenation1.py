@@ -23,7 +23,7 @@ img_emma = cv2.imread(img_path+'/'+image_list[0])
 plt.imshow(img_emma)
 plt.show()
 
-#By default opencv reads any images in BGR format,
+#By default opencv reads any assets in BGR format,
 #converting from BGR to RGB color space
 
 img_rgb = cv2.cvtColor(img_emma, cv2.COLOR_BGR2RGB)
@@ -124,7 +124,7 @@ blur = cv2.GaussianBlur(final_result, (7, 7), 0)
 plt.imshow(blur)
 plt.show()
 
-#Applying segmenattion on list of images
+#Applying segmenattion on list of assets
 emma_images = []
 for images in image_list[:5]:
    friend = cv2.cvtColor(cv2.imread(img_path +'/'+ images), cv2.COLOR_BGR2RGB)
