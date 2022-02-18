@@ -9,5 +9,5 @@ scikit-learn==0.24.2
 scipy==1.2.2
 tensorboard==1.13.1
 tensorflow-estimator==1.13.0
-tensorflow-gpu==2.5.2
+tensorflow-gpu==2.5.3
 trimesh==2.38.40
