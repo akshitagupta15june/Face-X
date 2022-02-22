@@ -115,14 +115,15 @@ git clone --depth 1 https://github.com/<your_user_name>/Face-X.git
 python -m venv env
 ``` 
 
-2. **Linux**
+2. 
+**Linux**
 ```
 source env/bin/activate
 ```
 
 ### OR
 
-2. **Windows**
+ **Windows**
 ```bash
 env\Scripts\activate
 ```
