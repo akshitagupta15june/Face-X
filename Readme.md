@@ -35,10 +35,10 @@ alt="Meshery - Service Mesh Management Plane" align="left" /></a>
 <br />
 <p style="clear:both;">
 <h2><a href="https://github.com/Vi1234sh12/Face-X/tree/master/Recognition-using-IOT">Face-Recognition-using-IOT</a></h2>
+<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Recognition-using-IOT">Internet of Things </ a> has opened up a new avenue of research in the field of human activity recognition using wearable sensors. It provides an individual's valuable information regarding functional ability and lifestyle. Human activities are monitored automatically to provide personalized support to different individuals.
 <a href="https://github.com/Vi1234sh12/Face-X/tree/master/Recognition-using-IOT"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/sp_logo.png"
 style="margin:10px;" width="150px" 
 alt="Meshery - Service Mesh Management Plane" align="left" /></a>
-<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Recognition-using-IOT">Internet of Things </ a> has opened up a new avenue of research in the field of human activity recognition using wearable sensors. It provides an individual's valuable information regarding functional ability and lifestyle. Human activities are monitored automatically to provide personalized support to different individuals.
 <br /><br />
 </p>
 <br />
