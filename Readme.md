@@ -74,7 +74,9 @@ alt="Meshery - Service Mesh Management Plane" align="left" /></a>
 <a href="https://github.com/Vi1234sh12/Face-X/tree/master/Awesome-face-operations"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/Asome.png"
 style="margin:10px;" width="145px" 
 alt="Meshery - Service Mesh Management Plane" align="left" /></a>
-<a href="https://github.com/akshitagupta15june/Face-X/tree/master/Awesome-face-operations">Awesome Face Operations </ a> that will blow your mind!
+<a href="https://github.com/akshitagupta15june/Face-X/tree/master/Awesome-face-operations">Awesome Face Operations </ a> includes Face Morphing which is taking two faces as input and returning morph from the first image to second. Converting an image into a ghost image which is done using OpenCV and Numpy. Pencil Sketch In Python Using OpenCV. Image Segmentation Using Color space and Opencv. Addition of a blurring effect over an image. All this along with different classifications like age, gender and many more.
+
+
 <br /><br />
 </p>
 <br />
