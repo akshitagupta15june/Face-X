@@ -14,5 +14,5 @@
 - Displaying the modified frame
 
 Screenshot of Filter application:
-![facemarks points](/nosess.PNG)
+![facemarks points](https://github.com/WhiteWolf47/Face-X/blob/master/Snapchat_Filters/Bullnose_filter/nosess.PNG)
 
