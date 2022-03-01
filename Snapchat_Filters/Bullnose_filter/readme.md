@@ -6,7 +6,7 @@
 - Math
 - Itertools
 
-## How it's Done:
+## How It's Done:
 - Creating facemesh and drwaingspec instance/object.
 - Mediapipe detects 468 facial landmarks, I used the nose landmarks.
 - Creating the bullnose mask and removing nose area.
