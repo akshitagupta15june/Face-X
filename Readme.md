@@ -37,7 +37,7 @@ alt="Meshery - Service Mesh Management Plane" align="left" /></a>
 <h2><a href="https://github.com/Vi1234sh12/Face-X/tree/master/Recognition-using-IOT">Face-Recognition-using-IOT</a></h2>
 <a href="https://github.com/Vi1234sh12/Face-X/tree/master/Recognition-using-IOT"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/sp_logo.png"
 style="margin:10px;" width="150px" 
-alt="Meshery - Service Mesh Management Plane" align="left" /></a>
+alt="Meshery - Service Mesh Management Plane" align="right" /></a>
 <a href="https://github.com/Vi1234sh12/Face-X/tree/master/Recognition-using-IOT">Internet of Things </ a> has opened up a new avenue of research in the field of human activity recognition using wearable sensors. It provides an individual's valuable information regarding functional ability and lifestyle. Human activities are monitored automatically to provide personalized support to different individuals.
 <br /><br />
 </p>
@@ -55,7 +55,7 @@ alt="Meshery - Service Mesh Management Plane" align="left" /></a>
 <h2><a href="https://github.com/Vi1234sh12/Face-X/tree/master/Snapchat_Filters">Snapchat_Filters</a></h2>
 <a href="https://github.com/Vi1234sh12/Face-X/tree/master/Snapchat_Filters"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/kis-r.png"
 style="margin:10px;" width="150px" 
-alt="Meshery - Service Mesh Management Plane" align="left" /></a>
+alt="Meshery - Service Mesh Management Plane" align="right" /></a>
 <a href="https://github.com/Vi1234sh12/Face-X/tree/master/Snapchat_Filters">Snapchat filters </ a> are certainly an integral part of what makes the social media platform and messaging app Snapchat unique and globally popular. Filters, or added effects, can be applied over images in a variety of ways before being uploaded to one’s social network for others to see. Geofilters allow users to alter a picture of a landscape, such as adding color to sky or turning day to night
 <br /><br />
 </p>
@@ -73,7 +73,7 @@ alt="Meshery - Service Mesh Management Plane" align="left" /></a>
 <h2><a href="https://github.com/Vi1234sh12/Face-X/tree/master/Awesome-face-operations">Awesome-face-operations</a></h2>
 <a href="https://github.com/Vi1234sh12/Face-X/tree/master/Awesome-face-operations"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/Asome.png"
 style="margin:10px;" width="145px" 
-alt="Meshery - Service Mesh Management Plane" align="left" /></a>
+alt="Meshery - Service Mesh Management Plane" align="right" /></a>
 <a href="https://github.com/akshitagupta15june/Face-X/tree/master/Awesome-face-operations">Awesome Face Operations </ a> includes Face Morphing which is taking two faces as input and returning morph from the first image to second. Converting an image into a ghost image which is done using OpenCV and Numpy. Pencil Sketch In Python Using OpenCV. Image Segmentation Using Color space and Opencv. Addition of a blurring effect over an image. All this along with different classifications like age, gender and many more.
 
 
