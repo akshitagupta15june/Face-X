@@ -1,5 +1,5 @@
 numpy==1.21.0
 opencv-contrib-python==4.5.5.62
 opencv-python==4.5.5.62
-python-dotenv==0.14.0
-sklearn==0.23.2
+python-dotenv==0.19.2
+sklearn==0.0
