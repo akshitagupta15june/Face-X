@@ -3,7 +3,7 @@ import numpy as np
 import cv2
 
 
-def rect_to__bb(rect):
+def rect_to_bb(rect):
     """
     Takes a bounding predicted by dlib and convert it to
     the format (x, y, w, h) as we would do normally on
