@@ -4,7 +4,7 @@
 
 1. Images given as input shall be centered.
 2. Image snippets of faces shall be rotated and their eyes should lie on a horizontal line.
-
+   
 ## Approach
 
 To localize the faces in the image we are applying a pre-trained HOG + Linear SVM object detector specifically for the task of face detection. The user can even use any deep-learning based algorithms for face localisation.
@@ -47,10 +47,8 @@ except:
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 ```
 
+
+## Outputs
+<img src="./outputs/output.gif">
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
