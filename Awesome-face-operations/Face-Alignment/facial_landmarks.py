@@ -1,7 +1,7 @@
 import argparse
 import dlib
 import cv2
-from helpers import resize, rect_to_bb, shape_to_np 
+from facealigner.helpers import rect_to_bb, shape_to_np 
 
 ap = argparse.ArgumentParser()
 ap.add_argument('-p', '--shape-predictor', required=True, help="path to facial landmark predictor")

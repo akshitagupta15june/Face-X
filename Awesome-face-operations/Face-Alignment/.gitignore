@@ -153,6 +153,5 @@ cython_debug/
 .vscode/
 
 # temporary
-predictor
 images
 .DS_Store
