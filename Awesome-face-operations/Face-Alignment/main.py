@@ -3,6 +3,9 @@ from facealigner.helpers import rect_to_bb, resize
 import dlib
 import argparse
 import cv2
+import sys
+import traceback
+
 
 ap = argparse.ArgumentParser()
 ap.add_argument('-p', '--shape-predictor', required=True, help='path to facial landmark predictor')
@@ -12,12 +15,20 @@ args = vars(ap.parse_args())
 # initialize dlib's face detector (HOG-based) and then create
 # the facial landmark predictor and the face aligner
 detector = dlib.get_frontal_face_detector()
-predictor = dlib.shape_predictor(args["shape_predictor"])
+try:
+	predictor = dlib.shape_predictor(args["shape_predictor"])
+except:
+	traceback.print_exc()
+	sys.exit()
 fa = FaceAligner(predictor, desiredFaceWidth=256)
 
 # load the input image, resize it, and convert it to grayscale
 image = cv2.imread(args["image"])
-image = resize(image, width=800)
+try:
+	image = resize(image, width=800)
+except:
+	traceback.print_exc()
+	sys.exit()
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
 

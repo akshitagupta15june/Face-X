@@ -40,7 +40,7 @@ matrix = sk_norm
 PCA
 '''
 cov_matrix = matrix.T.dot(matrix)/(matrix.shape[0]) #finding the covaraince matrix
-values, vectors = np.linalg.eig(cov_matrix) #Fiding the eigen vector space
+values, vectors = np.linalg.eigh(cov_matrix) #Fiding the eigen vector space
 
 red_dim = 1000
 eigen_faces = vectors[:, :red_dim]
