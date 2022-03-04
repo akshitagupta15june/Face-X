@@ -3,16 +3,22 @@
 ![image](https://user-images.githubusercontent.com/78999467/112627758-1bd3d380-8e5a-11eb-9c41-39a98e11c1c1.png)
 
 # Face Morphing
-This is a tool that creates a morphing effect. It takes two facial images as input and returns morphing from the first image to the second.
-### Example:
-![image](https://user-images.githubusercontent.com/78999467/112639582-87bd3880-8e68-11eb-8506-5a3800aef529.png)
+This is a tool which creates a morphing effect. It takes two facial images as input and returns morphing from the first image to the second.
+A user can input two images containing human faces(Image I1 and Image I2). The corresponding features points between the two images are generated using Dlib's Facial Landmark Detection. The triangular mesh for each intermediate shape is calculated with Delaunay Triangulation. The intermediate images for each frame are obtained by Warpping the two input images towards the intermediate shape and performing cross-dissolve. The output is a fluid transformation video transitioning from I1 to I2. The goal of this tool is that the transition should be smooth and the intermediate frames should be as realistic as possible.
 
-### Steps:
-```diff
-- Find point-to-point correspondences between the two images.
-- Find the Delaunay Triangulation for the average of these points.
-- Using these corresponding triangles in both initial and final images, perform Warping and Alpha Blending and obtain intermediate images. 
+# Example:
+![face morph](https://github.com/sudipg4112001/Face-X/blob/master/Awesome-face-operations/Face-Morphing/Images/images.jpg)
+
+## Steps:
+- Provide two images in Images folder
+- Generating a morphing animation video sequence
 ```
+python3 code/__init__.py --img1 images/aligned_images/jennie.png --img2 images/aligned_images/rih.png --output output.mp4
+```
+- Run Face_Morpher.py above on your aligned face images with arg --img1 and --img2
+
+
+
 
 # Converting an image into a ghost image.
 
