@@ -88,7 +88,7 @@ The operations are broken down into a series of tasks from loading in data to de
 DataSet: [CelebFaces Attributes Dataset (CelebA)](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) to train the adversarial networks.
 
 ### Some samples of generated faces:
-<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Awesome-face-operations/GAN_Face_Generation/assets/generated_faces.png" alt="drawing" width="300" height="300"/>
+<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Awesome-face-operations/GAN_Face_Generation/assets/generated_faces.png" width="300" height="300"/>
 
 ### To Generate Faces:
 1. Just run the script ```dlnd_face_generation.ipynb```
