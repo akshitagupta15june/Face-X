@@ -62,16 +62,6 @@ Background blurring is most often seen as a feature of portrait mode in phone ca
 <img src="https://github.com/smriti1313/Face-X/blob/master/Blurring%20image%20across%20face/output.png" alt="drawing" width="500" height="300"/>
 
 
-# Colorful Sketch Image
-Converting an image into a colorful sketch filtered image using OpenCv, Os, Matplotlib and Numpy. Firstly, the required libraries which are Numpy, Os, Matplotlib and Cv2 are imported. Then the path of the image/Real image is used as input and read using cv2.
-
-### Original Image
-<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Awesome-face-operations/Colorful%20Sketch%20Filter/Images/Photo.jpg" width="500"/>
-
-### Colorful Sketch Filtered Image
-<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Awesome-face-operations/Colorful%20Sketch%20Filter/Images/Colorful%20Sketch%20Filtered%20Photo.jpg"  width="500"/>
-
-
 # Face Deblurring
 Face deblurring operation is the task of estimating a clear image from its degraded blur image and recovering the sharp contents and textures. The aim of face deblurring is to restore clear images with more explicit structure and facial details. The face deblurring problem has attracted considerable attention due to its wide range of applications.
 
@@ -88,7 +78,7 @@ The operations are broken down into a series of tasks from loading in data to de
 DataSet: [CelebFaces Attributes Dataset (CelebA)](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) to train the adversarial networks.
 
 ### Some samples of generated faces:
-<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Awesome-face-operations/GAN_Face_Generation/assets/generated_faces.png" width="300" height="300"/>
+<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Awesome-face-operations/Face%20Generation/GAN_Face_Generation/assets/generated_faces.png"/>
 
 ### To Generate Faces:
 1. Just run the script ```dlnd_face_generation.ipynb```
@@ -108,11 +98,10 @@ it is a simple gender recognition system from facial image where we first detect
 
 
 # Glitter Filter
-### Original Image
-<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Awesome-face-operations/Glitter%20Filter/Images/Photo.jpg" alt="drawing" width="500"/>
+Converting an image into a glitter cartoon filtered image using OpenCv, Os, Matplotlib and Numpy. Uses Bilateral Filter followed by Median Blur followed by Adaptive Threshold, followed by Bitwise "or" between original image and image_rgb and at last used Bitwise "and" between image_edge and output of the above "bitwise or image" finally converted the image into "Glitter Cartoon Filtered" image
 
-### Glitter Filtered Image
-<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Awesome-face-operations/Glitter%20Filter/Images/(Glitter%20Filtered)Photo.jpg" alt="drawing" width="500"/>
+### Example:
+<img src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify-Image/Glitter%20Cartoon%20Filter/Images/Final_Output.jpg" alt="drawing" width="500" height="300"/>
 
 
 ## Image Stitching
