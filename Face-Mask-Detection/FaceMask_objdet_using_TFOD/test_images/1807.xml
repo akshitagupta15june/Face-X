@@ -1,0 +1,26 @@
+<annotation>
+	<folder>datra</folder>
+	<filename>1807.jpg</filename>
+	<path>C:\Users\anura\Desktop\datra\1807.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1968</width>
+		<height>1968</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>no_mask</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>799</xmin>
+			<ymin>780</ymin>
+			<xmax>1787</xmax>
+			<ymax>1447</ymax>
+		</bndbox>
+	</object>
+</annotation>
