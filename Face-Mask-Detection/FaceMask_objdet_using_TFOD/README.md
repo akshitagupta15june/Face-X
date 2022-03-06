@@ -20,8 +20,8 @@
 3. Load the trained model from ckpt-10 as shown i step-9 and run the cells
 
 ## Detection Examples
-![alt text](pr21.png)
+![facemarks points](https://github.com/WhiteWolf47/Face-X/blob/master/Face-Mask-Detection/FaceMask_objdet_using_TFOD/pr21.PNG)
 
-![alt text](pr22.png)
+![facemarks points](https://github.com/WhiteWolf47/Face-X/blob/master/Face-Mask-Detection/FaceMask_objdet_using_TFOD/pr22.PNG)
 
-![alt text](pr23.png)
+![facemarks points](https://github.com/WhiteWolf47/Face-X/blob/master/Face-Mask-Detection/FaceMask_objdet_using_TFOD/pr23.PNG)
