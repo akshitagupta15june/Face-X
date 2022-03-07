@@ -109,7 +109,7 @@ You can refer to the following articles on the basics of Git and Github.
 git clone --depth 1 https://github.com/<your_user_name>/Face-X.git
 ```
 
-### Installation 👇
+### Installation Procedure 👇
 
 1. **Create virtual environment**
 
