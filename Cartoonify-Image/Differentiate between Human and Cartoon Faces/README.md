@@ -6,4 +6,10 @@ This difference (i.e. taking its mean value) will give the level of change cause
 
 Smoothing/Cartoonifying is done with bilateral filtering.
 
-As for subtracting the cartoonyfied image from the original, I have done it with the Hue channel of the HSV images. This means I have first converted both images from BGR to HSV and then subtracted.
+<p align="center">
+  <img src="https://github.com/shireenchand/Face-X/blob/cartoon/Cartoonify-Image/Differentiate%20between%20Human%20and%20Cartoon%20Faces/Media/image.webp?raw=true" width="400" title="hover text">
+  <img src="https://github.com/shireenchand/Face-X/blob/cartoon/Cartoonify-Image/Differentiate%20between%20Human%20and%20Cartoon%20Faces/Media/new.jpeg?raw=true" width="400" alt="accessibility text">
+</p>
+
+
+As for subtracting the cartoonyfied image from the original, it is done with the Hue channel of the HSV images. This means, first the images are converted from BGR to HSV and then subtracted.
