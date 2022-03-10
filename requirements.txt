@@ -1,5 +1,14 @@
-numpy==1.21.0
-opencv-contrib-python==4.5.5.62
-opencv-python==4.5.5.62
-python-dotenv==0.19.2
-sklearn==0.0
+Pre-Requisites for Face-X Model are:
+(1) Python (Intermediate level)
+(2) Image Classification Techniques (OpenCV)
+(3) Machine Learning Algorithms
+(4) Deep Learning Knowledge
+
+Required Libraries for Face-X Working Model are as follows:
+(1) NumPy
+(2) Pandas 
+(3) Matplotlib 
+(4) Seaborn
+(5) Scikit-Learn
+(6) OpenCV
+(7) Tensorflow 
