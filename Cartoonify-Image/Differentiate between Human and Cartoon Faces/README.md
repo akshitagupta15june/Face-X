@@ -13,3 +13,78 @@ Smoothing/Cartoonifying is done with bilateral filtering.
 
 
 As for subtracting the cartoonyfied image from the original, it is done with the Hue channel of the HSV images. This means, first the images are converted from BGR to HSV and then subtracted.
+
+## Dependencies
+
+- OpenCV - This is used to perform different operations like blurring on the given image.
+- Numpy - This is used for calculating the mean of subtraction.
+
+## Setup
+
+- Fork the repository - Creates a copy of this project in your github.
+
+- Clone the repository to your local machine using 
+```
+git clone https://github.com/akshitagupta15june/Face-X.git
+```
+- Use a virtual environment to keep the all dependencies in a separate enviroment for example - conda, virtualenv, pipenv, etc.
+
+- Navigate to the Cartoonify Image Folder using
+```
+cd Cartoonify Image
+```
+  
+- Install the dependencies either by using the below pip commands or by using the requirements.txt file given.
+
+- By using pip commands
+```
+pip install numpy
+```
+```
+pip install opencv-python
+```
+
+- By using requirements.txt
+```
+pip install -r requirements.txt
+```
+
+- Run the cartoon.py script using
+```
+python3 cartoon.py
+```
+
+## Want to Contribute?
+
+- Follow the steps for Setup
+
+- Make a new branch
+```
+git branch < YOUR_USERNAME >
+```
+
+- Switch to Development Branch
+```
+git checkout < YOURUSERNAME >
+```
+
+- Make a folder and add your code file and a readme file with screenshots.
+
+- Add your files or changes to staging area
+```
+git add.
+```
+
+- Commit Message
+```
+git commit -m "Enter message"
+```
+
+- Push your code
+```
+git push
+```
+
+- Make Pull request with the Master branch of akshitagupta15june/Face-X repo.
+
+- Wait for reviewers to review your PR
