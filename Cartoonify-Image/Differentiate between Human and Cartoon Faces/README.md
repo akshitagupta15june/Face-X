@@ -7,12 +7,17 @@ This difference (i.e. taking its mean value) will give the level of change cause
 Smoothing/Cartoonifying is done with bilateral filtering.
 
 <p align="center">
-  <img src="https://github.com/shireenchand/Face-X/blob/cartoon/Cartoonify-Image/Differentiate%20between%20Human%20and%20Cartoon%20Faces/Media/image.webp?raw=true" width="400" title="hover text">
-  <img src="https://github.com/shireenchand/Face-X/blob/cartoon/Cartoonify-Image/Differentiate%20between%20Human%20and%20Cartoon%20Faces/Media/new.jpeg?raw=true" width="400" alt="accessibility text">
+  <img src="https://github.com/shireenchand/Face-X/blob/cartoon/Cartoonify-Image/Differentiate%20between%20Human%20and%20Cartoon%20Faces/Media/image.webp?raw=true" width="400" title="Original Image">
+  <img src="https://github.com/shireenchand/Face-X/blob/cartoon/Cartoonify-Image/Differentiate%20between%20Human%20and%20Cartoon%20Faces/Media/new.jpeg?raw=true" width="400" alt="accessibility text" title="Smoothed Image">
 </p>
 
 
 As for subtracting the cartoonyfied image from the original, it is done with the Hue channel of the HSV images. This means, first the images are converted from BGR to HSV and then subtracted.
+
+<p align="center">
+  <img src="https://github.com/shireenchand/Face-X/blob/cartoon/Cartoonify-Image/Differentiate%20between%20Human%20and%20Cartoon%20Faces/Media/img_hsv.jpeg" width="400" title="HSV of Original Image">
+  <img src="https://github.com/shireenchand/Face-X/blob/cartoon/Cartoonify-Image/Differentiate%20between%20Human%20and%20Cartoon%20Faces/Media/blurred_hsv.jpeg" width="400" alt="accessibility text" title="HSV of Smoothed Image">
+</p>
 
 ## Dependencies
 
@@ -29,9 +34,9 @@ git clone https://github.com/akshitagupta15june/Face-X.git
 ```
 - Use a virtual environment to keep the all dependencies in a separate enviroment for example - conda, virtualenv, pipenv, etc.
 
-- Navigate to the Cartoonify Image Folder using
+- Navigate to the Differentiate between Human and Cartoon Faces inside Cartoonify Image Folder using
 ```
-cd Cartoonify Image
+cd Cartoonify-Image/Differentiate\ between\ Human\ and\ Cartoon\ Faces
 ```
   
 - Install the dependencies either by using the below pip commands or by using the requirements.txt file given.
