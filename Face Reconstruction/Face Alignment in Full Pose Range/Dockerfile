@@ -1,4 +1,4 @@
-FROM python:3.9.10-slim-bullseye
+FROM python:slim-bullseye
 
 RUN apt-get -y update
 RUN apt-get install -y --fix-missing \
