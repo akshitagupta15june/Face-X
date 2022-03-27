@@ -1,1 +1,7 @@
-This app recognises a face in video whose absolute paths are given as input.
+About:
+Inputs are absolute paths of a image and video.
+Image is face of person which has to be found in the video.
+While video is playing, a box is formed around known faces.
+When the given image is found in video, a message box appears indicating the same.
+
+Python dependencies mentioned in requirement.txt have to installed.
