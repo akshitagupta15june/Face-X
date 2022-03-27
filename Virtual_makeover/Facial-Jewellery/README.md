@@ -14,11 +14,17 @@ This directory contains the python notebooks for facial jewellery!
 #### 4. Apply jewellary image on identified locations on face
 
 # Nose Stud
+#### Input : 
 ![Virtual Jewel-Input](../Facial-Jewellery/Virtual-NoseStud/input.png?raw=true "Input")
+
+#### Output :
 ![Virtual Jewel-Nose-Stud](../Facial-Jewellery/Virtual-NoseStud/output.png?raw=true "Output")
 
 # Forehead Dot
+#### Input : 
 ![Virtual Jewel-Input](../Facial-Jewellery/Virtual-ForeheadDot/input.png?raw=true "Input")
+
+#### Output : 
 ![Virtual Jewel-Forehead-Dot](../Facial-Jewellery/Virtual-ForeheadDot/output.png?raw=true "Output")
 
 ## Wanna contribute your own Virtual Facial Jewellery⁉
