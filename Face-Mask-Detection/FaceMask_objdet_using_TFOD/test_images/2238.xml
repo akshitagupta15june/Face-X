@@ -1,0 +1,26 @@
+<annotation>
+	<folder>datra</folder>
+	<filename>2238.png</filename>
+	<path>C:\Users\anura\Desktop\datra\2238.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>938</width>
+		<height>743</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>no_mask</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>408</xmin>
+			<ymin>236</ymin>
+			<xmax>486</xmax>
+			<ymax>276</ymax>
+		</bndbox>
+	</object>
+</annotation>
