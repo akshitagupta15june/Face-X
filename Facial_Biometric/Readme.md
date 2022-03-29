@@ -16,6 +16,8 @@ These steps are:
 
 The below image is an example of Dlib's 68 points model. This pre-trained facial landmark detector inside the Dlib's library is used to estimate the location of 68(x,y)-coordinates that maps to the different facial structures.
 
+<img src="./Images/dlib_model.png" height="300px" width="600px" align="left"/>
+
 ### 1. Facial landmark points detection through Dlib's 68 Model:
 
 There are mostly two steps to detect face landmarks in an image which are given below:
@@ -40,12 +42,13 @@ It is distinct from other computer vision technologies that involve human faces,
 - `Facial tracking` : is mostly present in video analysis and tries to follow a face and its features (eyes, nose, and lips) from frame to frame. The most popular applications are various filters available in mobile apps like Snapchat.
 
 To create a complete project on Face Recognition, we must work on 3 very distinct phases:
-<img src="./Images/phases.png" align="right"/>
 
 - Face Detection and Data Gathering
 - Train the Recognizer
 - Face Recognition
   The below block diagram resumes those phases:
+
+<img src="./Images/phases.png" align="right"/>
 
 ## 4.How Do Computers “See” Images?
 
