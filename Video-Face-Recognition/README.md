@@ -30,3 +30,11 @@ To train a face recognition model with deep learning, each input batch of data i
   · The positive image - this image also contains a face of person A  
   · The negative image - does not have the same identity, and could belong to person B, C, or even Y  
   
+The point is that the anchor and positive image both belong to the same person/face while the negative image does not contain the same face.
+The neural network computes the 128-d embeddings for each face and then tweaks the weights of the network such that:
+  · The 128-d embeddings of the anchor and positive image lie closer together
+  · While at the same time, pushing the embeddings for the negative image father away
+
+
+## Training a Support Vector Machine (SVM) on top of the embeddings
+
