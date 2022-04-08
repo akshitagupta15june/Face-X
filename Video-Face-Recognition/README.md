@@ -80,3 +80,9 @@ Finally, an input video and input photos of a person are taken along with their 
 <p align="center">
   <img src="https://github.com/shireenchand/Face-X/blob/face_rec/Video-Face-Recognition/Media/meida4.gif" width="400">
 </p>
+
+## Demo
+
+<p align="center">
+  <img src="https://github.com/shireenchand/Face-X/blob/face_rec/Video-Face-Recognition/Media/meida4.gif" width="400">
+</p>
