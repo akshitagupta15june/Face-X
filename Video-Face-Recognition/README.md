@@ -69,5 +69,5 @@ In this application we use the "Linear" kernel of SVC(Support Vector Classifier)
 Finally, an input video and input photos of a person are taken along with their name. Once confirmed, the video is displayed with boxes around the input face's face in the video.
 
 <p align="center">
-  <img src="https://github.com/shireenchand/Face-X/blob/face_rec/Video-Face-Recognition/Media/media4.gif" width="400">
+  <img src="https://github.com/shireenchand/Face-X/blob/face_rec/Video-Face-Recognition/Media/meida4.gif" width="400">
 </p>
