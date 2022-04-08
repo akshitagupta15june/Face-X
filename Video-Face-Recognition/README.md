@@ -53,6 +53,11 @@ The neural network computes the 128-d embeddings for each face and then tweaks t
 
 Support vector machines (SVMs) are a set of supervised learning methods used for classification, regression and outliers detection.
 
+<p align="center">
+  <img src="https://github.com/shireenchand/Face-X/blob/face_rec/Video-Face-Recognition/Media/media6.jpg" width="400">
+</p>
+
+
 ### The advantages of support vector machines are:
 
   · Effective in high dimensional spaces.  
