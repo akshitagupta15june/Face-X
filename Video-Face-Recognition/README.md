@@ -1,6 +1,6 @@
 # Video Face Recognition
 
-What if you could know whether a person is present in a video or not without seeing the video. That is exactly what's done here.
+What if you could know whether a person is present in a video or not, without seeing the video. That is exactly what's done here.
 
 The only libraries used here are OpenCV and Sci-Kit Learn. Streamlit is used to make a GUI.
 
@@ -38,3 +38,23 @@ The neural network computes the 128-d embeddings for each face and then tweaks t
 
 ## Training a Support Vector Machine (SVM) on top of the embeddings
 
+Support vector machines (SVMs) are a set of supervised learning methods used for classification, regression and outliers detection.
+
+### The advantages of support vector machines are:
+
+  · Effective in high dimensional spaces.  
+  · Still effective in cases where number of dimensions is greater than the number of samples.  
+  · Uses a subset of training points in the decision function (called support vectors), so it is also memory efficient.  
+  · Versatile: different Kernel functions can be specified for the decision function. Common kernels are provided, but it is also possible to specify custom kernels.  
+  
+### The disadvantages of support vector machines include:
+
+  · If the number of features is much greater than the number of samples, avoid over-fitting in choosing Kernel functions and regularization term is crucial.  
+  · SVMs do not directly provide probability estimates, these are calculated using an expensive five-fold cross-validation.  
+
+In this application we use the "Linear" kernel of SVC(Support Vector Classifier)
+
+
+## Recognize faces in the video stream
+
+Finally, an input video and input photos of a person are taken along with their name. Once confirmed, the video is displayed with boxes around the input face's face in the video.
