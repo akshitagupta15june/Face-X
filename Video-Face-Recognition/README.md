@@ -30,6 +30,10 @@ OpenCV’s deep learning face detector is based on the Single Shot Detector (SSD
 
 ## Computing 128-d face embeddings to quantify a face
 
+<p align="center">
+  <img src="https://github.com/shireenchand/Face-X/blob/face_rec/Video-Face-Recognition/Media/media5.jpg" width="400">
+</p>
+
 The model responsible for actually quantifying each face in an image is from the OpenFace project, a Python and Torch implementation of face recognition with deep learning. It is called FaceNet.
 
 The FaceNet deep learning model computes a 128-d embedding that quantifies the face itself.
