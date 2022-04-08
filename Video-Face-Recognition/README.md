@@ -2,6 +2,10 @@
 
 What if you could know whether a person is present in a video or not, without seeing the video. That is exactly what's done here.
 
+<p align="center">
+  <img src="https://github.com/shireenchand/Face-X/blob/face_rec/Video-Face-Recognition/Media/media3.gif" width="400">
+</p>
+
 The only libraries used here are OpenCV and Sci-Kit Learn. Streamlit is used to make a GUI.
 
 This task is acheived by the following steps:
