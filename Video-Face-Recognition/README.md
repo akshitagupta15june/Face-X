@@ -14,6 +14,11 @@ This task is acheived by the following steps:
 3. Train a Support Vector Machine (SVM) on top of the embeddings
 4. Recognize faces in the video stream
 
+<p align="center">
+  <img src="https://github.com/shireenchand/Face-X/blob/face_rec/Video-Face-Recognition/Media/media1.jpeg" width="400" height="300">
+  <img src="https://github.com/shireenchand/Face-X/blob/face_rec/Video-Face-Recognition/Media/media2.jpeg" width="400" height="300">
+</p>
+
 ## Detect Faces
 
 The OpenCv hidden face detector is used to detect faces. There are 2 files used for this - 
