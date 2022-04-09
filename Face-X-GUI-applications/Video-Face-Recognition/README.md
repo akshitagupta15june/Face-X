@@ -3,7 +3,7 @@
 What if you could know whether a person is present in a video or not, without seeing the video. That is exactly what's done here.
 
 <p align="center">
-  <img src="https://github.com/shireenchand/Face-X/blob/face_rec/Video-Face-Recognition/Media/media3.gif" width="400">
+  <img src="https://github.com/shireenchand/Face-X/blob/face_rec/Face-X-GUI-applications/Video-Face-Recognition/Media/media3.gif" width="400">
 </p>
 
 The only libraries used here are OpenCV and Sci-Kit Learn. Streamlit is used to make a GUI.
@@ -15,8 +15,8 @@ This task is acheived by the following steps:
 4. Recognize faces in the video stream
 
 <p align="center">
-  <img src="https://github.com/shireenchand/Face-X/blob/face_rec/Video-Face-Recognition/Media/media1.jpeg" width="400" height="300">
-  <img src="https://github.com/shireenchand/Face-X/blob/face_rec/Video-Face-Recognition/Media/media2.jpeg" width="400" height="300">
+  <img src="https://github.com/shireenchand/Face-X/blob/face_rec/Face-X-GUI-applications/Video-Face-Recognition/Media/media1.jpeg" width="400" height="300">
+  <img src="https://github.com/shireenchand/Face-X/blob/face_rec/Face-X-GUI-applications/Video-Face-Recognition/Media/media2.jpeg" width="400" height="300">
 </p>
 
 ## Detect Faces
@@ -31,7 +31,7 @@ OpenCV’s deep learning face detector is based on the Single Shot Detector (SSD
 ## Computing 128-d face embeddings to quantify a face
 
 <p align="center">
-  <img src="https://github.com/shireenchand/Face-X/blob/face_rec/Video-Face-Recognition/Media/media5.jpg" width="400">
+  <img src="https://github.com/shireenchand/Face-X/blob/face_rec/Face-X-GUI-applications/Video-Face-Recognition/Media/media5.jpg" width="400">
 </p>
 
 The model responsible for actually quantifying each face in an image is from the OpenFace project, a Python and Torch implementation of face recognition with deep learning. It is called FaceNet.
@@ -54,7 +54,7 @@ The neural network computes the 128-d embeddings for each face and then tweaks t
 Support vector machines (SVMs) are a set of supervised learning methods used for classification, regression and outliers detection.
 
 <p align="center">
-  <img src="https://github.com/shireenchand/Face-X/blob/face_rec/Video-Face-Recognition/Media/media6.jpg" width="400">
+  <img src="https://github.com/shireenchand/Face-X/blob/face_rec/Face-X-GUI-applications/Video-Face-Recognition/Media/media6.jpg" width="400">
 </p>
 
 
@@ -78,7 +78,7 @@ In this application we use the "Linear" kernel of SVC(Support Vector Classifier)
 Finally, an input video and input photos of a person are taken along with their name. Once confirmed, the video is displayed with boxes around the input face's face in the video.
 
 <p align="center">
-  <img src="https://github.com/shireenchand/Face-X/blob/face_rec/Video-Face-Recognition/Media/meida4.gif" width="400">
+  <img src="https://github.com/shireenchand/Face-X/blob/face_rec/Face-X-GUI-applications/Video-Face-Recognition/Media/meida4.gif" width="400">
 </p>
 
 ## Demo
@@ -86,7 +86,7 @@ Finally, an input video and input photos of a person are taken along with their 
 Here is a demo on how the scripts work
 
 <p align="center">
-  <img src="https://github.com/shireenchand/Face-X/blob/face_rec/Video-Face-Recognition/Media/demo.gif" width="800">
+  <img src="https://github.com/shireenchand/Face-X/blob/face_rec/Face-X-GUI-applications/Video-Face-Recognition/Media/demo.gif" width="800">
 </p>
 
 
