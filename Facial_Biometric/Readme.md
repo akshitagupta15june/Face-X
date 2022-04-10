@@ -43,14 +43,19 @@ Face recognition systems use computer algorithms to pick out specific, distincti
   Face recognition systems vary in their ability to identify people under challenging conditions such as poor lighting, low quality image resolution, and suboptimal angle of view (such as in a photograph taken from above looking down on an unknown person).
 When it comes to errors, there are two key concepts to understand: 
   A “false negative” is when the face recognition system fails to match a person’s face to an image that is, in fact, contained in a database. In other words, the system will erroneously return zero results in response to a query.
-  A “false positive” is when the face recognition system does match a person’s face to an image in a database, but that match is actually incorrect. This is when a police officer submits an image of “Joe,” but the system erroneously tells the officer that the photo is of “Jack.” 
+  A “false positive” is when the face recognition system does match a person’s face to an image in a database, but that match is actually incorrect. This is when a police officer submits an image of “X” but the system erroneously tells the officer that the photo is of “Y” 
   When researching a face recognition system, it is important to look closely at the “false positive” rate and the “false negative” rate, since there is almost always a trade-off. For example, if you are using face recognition to unlock your phone, it is better if the system fails to identify you a few times (false negative) than it is for the system to misidentify other people as you and lets those people unlock your phone (false positive). If the result of misidentification is that an innocent person goes to jail (like a misidentification in a mugshot database), then the system should be designed to have as few false positives as possible. <a href="https://learnopencv.com/face-detection-opencv-dlib-and-deep-learning-c-python/">read more</a>
 
  
 
 
 
-- `Facial analysis` : tries to understand something about people from their facial features, like determining their age, gender, or the emotion they are displaying.
+- `Facial analysis` : tries to understand something about people from their facial features, like determining their age, gender, or the emotion they are displaying.It ia an intersection between computer vision, Machine Learning and Image processing fields that aims to extract any kind of information from human face except his/her identity such as emotion, engagement, vitals measurement, demographics information age and gender 
+How do you analyze facial features?
+Facial expressions can be collected and analyzed in three different ways:
+# By tracking of facial electromyographic activity (fEMG)
+# live observation and manual coding of facial activity.
+# automatic facial expression analysis using computer-vision.
 
 - `Facial tracking` : is mostly present in video analysis and tries to follow a face and its features (eyes, nose, and lips) from frame to frame. The most popular applications are various filters available in mobile apps like Snapchat.
 
