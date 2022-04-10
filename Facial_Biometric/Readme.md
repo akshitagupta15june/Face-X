@@ -36,7 +36,7 @@ Face detection is a type of computer vision technology that is able to identify 
 It is distinct from other computer vision technologies that involve human faces, like facial recognition, analysis, and tracking :
 
 - `Facial recognition` : involves identifying the face in the image as belonging to person X and not person Y. It is often used for biometric purposes, like unlocking your smartphone.Given a small example of facial recognition how it actually being works.
-<img src="https://user-images.githubusercontent.com/58718316/162599387-b3b3a2d5-83ea-404e-87d5-2a1601b96ed5.png" width="50" height="60" align="right"/>)
+<img src="https://user-images.githubusercontent.com/58718316/162599387-b3b3a2d5-83ea-404e-87d5-2a1601b96ed5.png" width="200" height="300" align="right"/>)
 
 
 - `Facial analysis` : tries to understand something about people from their facial features, like determining their age, gender, or the emotion they are displaying.
