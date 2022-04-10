@@ -58,8 +58,8 @@ Facial expressions can be collected and analyzed in three different ways:
 1. By tracking of facial electromyographic activity (FEMG)
 2. live observation and manual coding of facial activity.
 3. automatic facial expression analysis using computer-vision.
-   <a href="https://learnopencv.com/age-gender-classification-using-opencv-deep-learning-c-python/">read more</a>
-   <a href="https://recfaces.com/articles/emotion-recognition">facial analysis</a>
+  <p><a href="https://learnopencv.com/age-gender-classification-using-opencv-deep-learning-c-python/">read more</a></p>
+  <p><a href="https://recfaces.com/articles/emotion-recognition">facial analysis</a></p>
 
 - `Facial tracking` : is mostly present in video analysis and tries to follow a face and its features (eyes, nose, and lips) from frame to frame. The most popular applications are various filters available in mobile apps like Snapchat.
 
