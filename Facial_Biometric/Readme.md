@@ -52,7 +52,7 @@ When it comes to errors, there are two key concepts to understand:
 
 - `Facial analysis` : tries to understand something about people from their facial features, like determining their age, gender, or the emotion they are displaying.It ia an intersection between computer vision, Machine Learning and Image processing fields that aims to extract any kind of information from human face except his/her identity such as emotion, engagement, vitals measurement, demographics information age and gender.
 
-<img src="https://user-images.githubusercontent.com/58718316/162600643-912fc988-073f-4d25-9252-4a2f11ae8864.jpeg" height="300px" width="400px" align="right"/>
+<img src="https://user-images.githubusercontent.com/58718316/162600643-912fc988-073f-4d25-9252-4a2f11ae8864.jpeg" height="300px" width="400px" align="centre"/>
 Facial expressions can be collected and analyzed in three different ways:
 
 1. By tracking of facial electromyographic activity (FEMG)
