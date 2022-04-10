@@ -22,8 +22,11 @@ The below image is an example of Dlib's 68 points model. This pre-trained facial
 
 There are mostly two steps to detect face landmarks in an image which are given below:
 
-- Face detection: Face detection is the first methods which locate a human face and return a value in `x,y,w,h` which is a rectangle.
+- Face detection: Face detection is the first methods which locate a human face and return a value in `x,y,w,h` which is a rectangle. 
+<a href="https://learnopencv.com/face-detection-opencv-dlib-and-deep-learning-c-python/">Read more</a>
 - Face landmark: After getting the location of a face in an image, then we have to through points inside of that rectangle.
+<a href="https://learnopencv.com/facial-landmark-detection/">Read more</a>
+
 
 There are many methods of face detector but we focus in this post only one which is Dlib's method. Like, Opencv uses methods LBP cascades and HAAR and Dlib's use methods HOG `(Histogram of Oriented Gradients)`and SVM `(Support Vector Machine)`.
 
