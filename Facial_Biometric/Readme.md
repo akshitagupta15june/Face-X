@@ -44,7 +44,7 @@ Face recognition systems use computer algorithms to pick out specific, distincti
 When it comes to errors, there are two key concepts to understand: 
   A “false negative” is when the face recognition system fails to match a person’s face to an image that is, in fact, contained in a database. In other words, the system will erroneously return zero results in response to a query.
   A “false positive” is when the face recognition system does match a person’s face to an image in a database, but that match is actually incorrect. This is when a police officer submits an image of “X” but the system erroneously tells the officer that the photo is of “Y” 
-  When researching a face recognition system, it is important to look closely at the “false positive” rate and the “false negative” rate, since there is almost always a trade-off. For example, if you are using face recognition to unlock your phone, it is better if the system fails to identify you a few times (false negative) than it is for the system to misidentify other people as you and lets those people unlock your phone (false positive). If the result of misidentification is that an innocent person goes to jail (like a misidentification in a mugshot database), then the system should be designed to have as few false positives as possible. <a href="https://learnopencv.com/face-detection-opencv-dlib-and-deep-learning-c-python/">read more</a>
+  When researching a face recognition system, it is important to look closely at the “false positive” rate and the “false negative” rate, since there is almost always a trade-off. For example, if you are using face recognition to unlock your phone, it is better if the system fails to identify you a few times (false negative) than it is for the system to misidentify other people as you and lets those people unlock your phone (false positive). If the result of misidentification is that an innocent person goes to jail (like a misidentification in a mugshot database), then the system should be designed to have as few false positives as possible. <a href="https://learnopencv.com/face-detection-opencv-dlib-and-deep-learning-c-python/">Read more</a>
 
  
 
@@ -69,7 +69,7 @@ To create a complete project on Face Recognition, we must work on 3 very distinc
 - Face Recognition
   The below block diagram resumes those phases:
   
-    <p><a href="https://learnopencv.com/create-snapchat-instagram-filters-using-mediapipe/">read more</a></p>
+    <p><a href="https://learnopencv.com/create-snapchat-instagram-filters-using-mediapipe/">Read more</a></p>
 
 <img src="./Images/phases.png" align="right"/>
 
@@ -111,6 +111,8 @@ If, however, the first stage gives a negative evaluation, then the image is imme
 This is designed so that non-faces get discarded very quickly, which saves a lot of time and computational resources. Since every classifier represents a feature of a human face, a positive detection basically says, “Yes, this subregion contains all the features of a human face.” But as soon as one feature is missing, it rejects the whole subregion.
 
 To accomplish this effectively, it is important to put your best performing classifiers early in the cascade. In the Viola-Jones algorithm, the eyes and nose bridge classifiers are examples of best performing weak classifiers.
+
+<p><a href="https://docs.opencv.org/3.4/dc/d88/tutorial_traincascade.html">Read more</a></p>
 
 ### Import OpenCV and load the image into memory:
 
