@@ -63,14 +63,13 @@ Facial expressions can be collected and analyzed in three different ways:
 
 - `Facial tracking` : is mostly present in video analysis and tries to follow a face and its features (eyes, nose, and lips) from frame to frame. The most popular applications are various filters available in mobile apps like Snapchat.
 
-
-
-
 To create a complete project on Face Recognition, we must work on 3 very distinct phases:
 - Face Detection and Data Gathering
 - Train the Recognizer
 - Face Recognition
   The below block diagram resumes those phases:
+  
+    <p><a href="https://learnopencv.com/create-snapchat-instagram-filters-using-mediapipe/">read more</a></p>
 
 <img src="./Images/phases.png" align="right"/>
 
