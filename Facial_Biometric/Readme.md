@@ -22,8 +22,11 @@ The below image is an example of Dlib's 68 points model. This pre-trained facial
 
 There are mostly two steps to detect face landmarks in an image which are given below:
 
-- Face detection: Face detection is the first methods which locate a human face and return a value in `x,y,w,h` which is a rectangle.
+- Face detection: Face detection is the first methods which locate a human face and return a value in `x,y,w,h` which is a rectangle. 
+<a href="https://learnopencv.com/face-detection-opencv-dlib-and-deep-learning-c-python/">Read more</a>
 - Face landmark: After getting the location of a face in an image, then we have to through points inside of that rectangle.
+<a href="https://learnopencv.com/facial-landmark-detection/">Read more</a>
+
 
 There are many methods of face detector but we focus in this post only one which is Dlib's method. Like, Opencv uses methods LBP cascades and HAAR and Dlib's use methods HOG `(Histogram of Oriented Gradients)`and SVM `(Support Vector Machine)`.
 
@@ -35,18 +38,41 @@ Face detection is a type of computer vision technology that is able to identify 
 
 It is distinct from other computer vision technologies that involve human faces, like facial recognition, analysis, and tracking :
 
-- `Facial recognition` : involves identifying the face in the image as belonging to person X and not person Y. It is often used for biometric purposes, like unlocking your smartphone.
+- `Facial recognition` : involves identifying the face in the image as belonging to person X and not person Y. It is often used for biometric purposes, like unlocking your smartphone.Given a small example of facial recognition how it actually being works.
+<img src="https://user-images.githubusercontent.com/58718316/162599387-b3b3a2d5-83ea-404e-87d5-2a1601b96ed5.png" width="500px" height="500px" align="left"/>
 
-- `Facial analysis` : tries to understand something about people from their facial features, like determining their age, gender, or the emotion they are displaying.
+Face recognition systems use computer algorithms to pick out specific, distinctive details about a person’s face. These details, such as distance between the eyes or shape of the chin, are then converted into a mathematical representation and compared to data on other faces collected in a face recognition database. The data about a particular face is often called a face template and is distinct from a photograph because it’s designed to only include certain details that can be used to distinguish one face from another. 
+  Some face recognition systems, instead of positively identifying an unknown person, are designed to calculate a probability match score between the unknown person and specific face templates stored in the database. These systems will offer up several potential matches, ranked in order of likelihood of correct identification, instead of just returning a single result. 
+  Face recognition systems vary in their ability to identify people under challenging conditions such as poor lighting, low quality image resolution, and suboptimal angle of view (such as in a photograph taken from above looking down on an unknown person).
+When it comes to errors, there are two key concepts to understand: 
+  A “false negative” is when the face recognition system fails to match a person’s face to an image that is, in fact, contained in a database. In other words, the system will erroneously return zero results in response to a query.
+  A “false positive” is when the face recognition system does match a person’s face to an image in a database, but that match is actually incorrect. This is when a police officer submits an image of “X” but the system erroneously tells the officer that the photo is of “Y” 
+  When researching a face recognition system, it is important to look closely at the “false positive” rate and the “false negative” rate, since there is almost always a trade-off. For example, if you are using face recognition to unlock your phone, it is better if the system fails to identify you a few times (false negative) than it is for the system to misidentify other people as you and lets those people unlock your phone (false positive). If the result of misidentification is that an innocent person goes to jail (like a misidentification in a mugshot database), then the system should be designed to have as few false positives as possible. <a href="https://learnopencv.com/face-detection-opencv-dlib-and-deep-learning-c-python/">Read more</a>
+
+ 
+
+
+
+- `Facial analysis` : tries to understand something about people from their facial features, like determining their age, gender, or the emotion they are displaying.It ia an intersection between computer vision, Machine Learning and Image processing fields that aims to extract any kind of information from human face except his/her identity such as emotion, engagement, vitals measurement, demographics information age and gender.
+
+<img src="https://user-images.githubusercontent.com/58718316/162600643-912fc988-073f-4d25-9252-4a2f11ae8864.jpeg" height="300px" width="400px" align="right"/>
+Facial expressions can be collected and analyzed in three different ways:
+
+1. By tracking of facial electromyographic activity (FEMG)
+2. live observation and manual coding of facial activity.
+3. automatic facial expression analysis using computer-vision.
+  <p><a href="https://learnopencv.com/age-gender-classification-using-opencv-deep-learning-c-python/">read more</a></p>
+  <p><a href="https://recfaces.com/articles/emotion-recognition">facial analysis</a></p>
 
 - `Facial tracking` : is mostly present in video analysis and tries to follow a face and its features (eyes, nose, and lips) from frame to frame. The most popular applications are various filters available in mobile apps like Snapchat.
 
 To create a complete project on Face Recognition, we must work on 3 very distinct phases:
-
 - Face Detection and Data Gathering
 - Train the Recognizer
 - Face Recognition
   The below block diagram resumes those phases:
+  
+    <p><a href="https://learnopencv.com/create-snapchat-instagram-filters-using-mediapipe/">Read more</a></p>
 
 <img src="./Images/phases.png" align="right"/>
 
@@ -88,6 +114,8 @@ If, however, the first stage gives a negative evaluation, then the image is imme
 This is designed so that non-faces get discarded very quickly, which saves a lot of time and computational resources. Since every classifier represents a feature of a human face, a positive detection basically says, “Yes, this subregion contains all the features of a human face.” But as soon as one feature is missing, it rejects the whole subregion.
 
 To accomplish this effectively, it is important to put your best performing classifiers early in the cascade. In the Viola-Jones algorithm, the eyes and nose bridge classifiers are examples of best performing weak classifiers.
+
+<p><a href="https://docs.opencv.org/3.4/dc/d88/tutorial_traincascade.html">Read more</a></p>
 
 ### Import OpenCV and load the image into memory:
 
