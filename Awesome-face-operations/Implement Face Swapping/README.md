@@ -1,7 +1,10 @@
 # Implementing FaceSwap using OpenCV
   Here we basically use two images source image and destination image.
-  <p><a><img src="https://user-images.githubusercontent.com/58718316/163699615-e0ba6b5d-9302-4342-8968-531b81c38d93.jpg" height=300 width= 400></a></p>
-  <a><img src="https://user-images.githubusercontent.com/58718316/163699618-6b5d2cb1-9c66-4006-b58c-64801041b21b.jpg" height=300 width= 400></a>
+  
+   Source               | Destination
+ :--------------------: |:--------------------:
+ **<img src="https://user-images.githubusercontent.com/58718316/163699615-e0ba6b5d-9302-4342-8968-531b81c38d93.jpg" height=300 width= 400>** | **<img src="https://user-images.githubusercontent.com/58718316/163699618-6b5d2cb1-9c66-4006-b58c-64801041b21b.jpg" height=300 width= 400>**|
+
 
   
 ## Using FaceSwap Step by Step:
