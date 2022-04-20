@@ -66,4 +66,6 @@
 66) [Devanshi Mishra]https://github.com/devanshi-code
 67) [Hemanth Raj] https://github.com/hemanthraj2001
 68) [Yagyesh Bobde] https://github.com/yagyesh-bobde
-69) [Aditya Das] https://github.com/ADITYADAS1999
+69) [Anurag Bhandari] https://github.com/WhiteWolf47
+70) [Shrey Khandelwal] https://github.com/HawkingRadiation42
+
