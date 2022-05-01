@@ -23,7 +23,7 @@ def pencil_sketch(image):
 
 
 # Reading the image
-image = cv2.imread("/Users/shireen/Desktop/gssoc/face1.jpeg")
+image = cv2.imread("girl.png")
 sketched_image = pencil_sketch(image)
 
 cv2.imshow("img",sketched_image)
