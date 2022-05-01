@@ -5,19 +5,6 @@ canvas.height = window.innerHeight;
 
 //particle array to store randomised particle
 let particleArray;
-//get mouse cursor postion
-// let mouse = {
-//     x: null,
-//     y: null,
-//     radius: (canvas.height/80)*(canvas.width/80)
-// };
-//every time mouse position changes get access to it
-// window.addEventListener('mousemove',
-//     function(e) {
-//         mouse.x = e.x;
-//         mouse.y = e.y;
-//     }
-// );
 
 //create particle so that every time we call it we get a randomised particle
 class Particle {
@@ -48,26 +35,6 @@ class Particle {
             this.directionY = -this.directionY;
         }
 
-        // check if currect mouse position overlaps with current mouse position, i.e, collision detection
-        // let opacityvalue = 1;
-        // let dx = mouse.x - this.x;
-        // let dy = mouse.y - this.y;
-        // let dis = Math.sqrt(dx*dx + dy*dy);
-        // if(dis < mouse.radius+this.size) {
-        //     if(mouse.x < this.size && this.x < canvas.width - this.size * 10) {
-        //         this.x += 10;
-        //     }
-        //     if(mouse.x > this.x && this.x > this.size * 10) {
-        //         this.x -= 10;
-        //     }
-        //     if(mouse.y < this.y && this.y < canvas.height - this.size * 10) {
-        //         this.y += 10;
-        //     }
-        //     if(mouse.y > this.y && this.y > this.size * 10) {
-        //         this.y -= 10;
-        //     }
-        // }
-        //move particles which are not colliding in a direction
         this.x += this.directionX;
         this.y += this.directionY;
         //draw it
@@ -111,24 +78,6 @@ function connectPossible() {
     }
 }
 
-function sunray() {
-    let opacityvalue = 1;
-    for(let i=0;i<particleArray.length;i++) {
-        let dx = mouse.x-particleArray[i].x;
-        let dy = mouse.y-particleArray[i].y;
-        let distance = Math.sqrt(dx*dx+dy*dy);
-        if(distance < mouse.radius+particleArray[i].size) {
-            let opacityvalue = 1-(distance/20000);
-            ctx.strokeStyle = 'rgba(0,0,0,'+opacityvalue+')';
-            ctx.linewidth = 1;
-            ctx.beginPath();
-            ctx.moveTo(particleArray[i].x,particleArray[i].y);
-            ctx.lineTo(mouse.x,mouse.y);
-            ctx.stroke();
-        }
-    }
-}
-
 //windown resize and canve donot streach
 window.addEventListener('resize', 
     function() {
@@ -147,18 +96,8 @@ function animate() {
     for(let i=0; i<particleArray.length; i++) {
         particleArray[i].update();
     }
-    // sunray();
-    //sunray();
     connectPossible();
 }
-
-//mouse out event
-// window.addEventListener('mouseout',
-//     function() {
-//         mouse.x = undefined;
-//         mouse.y = undefined;
-//     }
-// )
 
 getParticles();
 animate();
