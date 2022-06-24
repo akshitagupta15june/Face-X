@@ -1,4 +1,4 @@
 opencv-python==4.5.2
 dlib==19.22.0
-numpy==1.21.0
+numpy==1.22.0
 scipy==1.1.0
