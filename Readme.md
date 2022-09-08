@@ -8,7 +8,8 @@
 
 <img src="https://github.com/akshitagupta15june/Face-X/blob/master/Cartoonify-Image/logo/Face-X.png" width=250 height=250>
 
-<h3>Join official <a href="https://discord.com/invite/Jmc97prqjb">Discord Channel</a> for discussion.</h3>
+<h3>Join official <a href="https://discord.com/invite/Jmc97prqjb">Discord Channel</a> for discussion</h3>
+<h2>Watch this <a href="https://youtu.be/VK-IaRY9szg">Video</a> to know about Face-X</h2>
 
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://github.com/akshitagupta15june/Face-X) 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://www.python.org/) 
