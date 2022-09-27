@@ -142,7 +142,7 @@ pip install -r requirements.txt
 
 ## Engaging and Collaborating with
 
- <img src="https://github.com/ArshErgon/Face-X/blob/hacktober/.github/Assests/eng_and_coll.png"/>
+ <img src=".github/Assests/eng_and_coll.png">
 	
 </br>
 	
