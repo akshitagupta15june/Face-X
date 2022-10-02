@@ -9,7 +9,6 @@ def rescaleFrame(frame,scale = 0.75):
 img = cv.imread("cast2.jpg")
 img = rescaleFrame(img,0.3)
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
-
 haar_cascade = cv.CascadeClassifier("haar_face.xml")
 faces_rect = haar_cascade.detectMultiScale(gray, scaleFactor= 1.1, minNeighbors = 6)
 for (x,y,w,h) in faces_rect:
