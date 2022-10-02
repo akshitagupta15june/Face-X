@@ -66,5 +66,27 @@ Just remember to save the file before running the script again. (Remember ```CTR
 
 I would like to share some of my own results:
 
+![Screenshot 1](https://user-images.githubusercontent.com/74321084/193473953-e21d3e67-619d-4f26-b31e-4638ea66edac.PNG)
 
+```cast.jpg``` with ```minNeighbors=6```
 
+  
+  
+![Screenshot 2](https://user-images.githubusercontent.com/74321084/193473995-ebb23944-89c0-4513-b13f-6c2dd7b38a12.PNG)
+  
+```lady.jpg``` with ```minNeighbors=6```
+  
+
+![Screenshot 3](https://user-images.githubusercontent.com/74321084/193474107-f666935a-8c13-43ba-a8c1-68c23d725fbd.PNG)
+```lady.jpg``` with ```minNeighbors=26```
+  
+  
+![Screenshot 4](https://user-images.githubusercontent.com/74321084/193474128-7cd3ce16-869e-4da3-97e0-288beba540d2.PNG)
+```cast2.jpg``` with ```minNeighbors=6```
+  
+  
+  
+  
+  
+  
+Feel Free to contribute and play with the project.
