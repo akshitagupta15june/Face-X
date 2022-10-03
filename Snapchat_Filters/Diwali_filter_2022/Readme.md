@@ -2,7 +2,7 @@
 <h2> Converting a live video into a diwali festival filtered video using OpenCV in python.</h2>
 
 - Backgrounnd enchancement for Diwali pics
-- also added a sun glasses filter to look making with the background
+- also added a sun glasses filter to look good with the background
 - used python libraries and opencv for this project (listed in requirements.txt)
 - used a video as input and converted it into a diwali festival filtered video
 
