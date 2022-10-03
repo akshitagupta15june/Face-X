@@ -25,6 +25,7 @@
 ` python main.py`
 
 # Screenshots
-![Capture](Diwali_filter_2022\images\out1.png)
-
-![Capture1](Diwali_filter_2022\images\out2.png)
+Output1
+![out1](https://user-images.githubusercontent.com/75840118/193510458-81f83606-6ee1-40e8-a455-00023d656f22.png)
+Output2
+![out2](https://user-images.githubusercontent.com/75840118/193510470-a75d0a83-954d-4534-b929-c7d501d32717.png)
