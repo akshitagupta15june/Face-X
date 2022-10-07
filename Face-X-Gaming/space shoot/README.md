@@ -1,5 +1,5 @@
-# space-soldier-controller-nose
-An adaptation of the SPACE SOLDIER game that can be controlled with facial movements, having the tip of the nose as a pivot.
+# space-shooter-controller-nose
+A Space Shooter game that can be controlled with facial movements, having the tip of the nose as a pivot.
  
 # dependencies:
 
