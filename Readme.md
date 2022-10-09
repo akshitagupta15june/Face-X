@@ -142,7 +142,7 @@ pip install -r requirements.txt
 </br>
 
 ## Engaging and Collaborating with
-![Dsign-removebg](https://user-images.githubusercontent.com/75840118/194744571-36bde357-0e31-4d1f-a205-97e4eb07f5b2.png)
+![Dsign-removebg](https://user-images.githubusercontent.com/75840118/194744571-36bde357-0e31-4d1f-a205-97e4eb07f5b2.png) 
 
 	
 </br>
