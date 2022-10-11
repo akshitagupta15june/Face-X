@@ -142,9 +142,12 @@ pip install -r requirements.txt
 </br>
 
 ## Engaging and Collaborating with
+![Dsign-removebg](https://user-images.githubusercontent.com/75840118/194744571-36bde357-0e31-4d1f-a205-97e4eb07f5b2.png) 
 
+	
+</br>
+=======
   ![Dsign-removebg](https://user-images.githubusercontent.com/75840118/194744808-4e647b91-1dc8-4e58-b43a-4b35a7f50e0c.png)
-
 	
 ## Get Started with Open Source programs 👨‍💻
 
