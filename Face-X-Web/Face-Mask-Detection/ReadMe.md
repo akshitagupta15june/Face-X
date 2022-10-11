@@ -15,5 +15,7 @@ I have Made a Website for Fask mask Detection.
 - JavaScript
 - Bootstrap
 
-Preview of Website:
+### Preview of Website:
+
+[Preview.webm](https://user-images.githubusercontent.com/75840118/195080387-6e6f6d2e-e59f-48bb-90a1-383186bc03ea.webm)
 
