@@ -216,8 +216,8 @@ face_cascade = cv.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 
 # Particles minimum and maximum vertical speeds
-particle_min_speed_y = -8
-particle_max_speed_y = -12
+particle_min_speed_y = -12
+particle_max_speed_y = -8
 # Size variations
 particle_sizes = [0.1, 0.15, 0.2]
 # Limit of particles on the screen
@@ -265,7 +265,7 @@ while True:
 					# Check if randomized values are not out of the boundaries
 					if pos[0] + int(size * 100) < frame.shape[1] and pos[1] + int(size * 100) < frame.shape[0]: 
 						# Add particle to blender
-						blender.add_image(HeartParticle(pos, 0, random.randint(particle_max_speed_y, particle_min_speed_y), size, faces[i][1]))
+						blender.add_image(HeartParticle(pos, 0, random.randint(particle_min_speed_y, particle_max_speed_y), size, faces[i][1]))
 
 		# Reset blender
 		blender.reset()
