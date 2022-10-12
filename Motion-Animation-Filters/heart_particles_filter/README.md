@@ -13,8 +13,8 @@ $ python3 main.py
 
 P.S. All code is documented in main.py
 
+Heart Particles Filter Output:
 
 
-Heart Particles Filter Output
 ![](output.png)
 
