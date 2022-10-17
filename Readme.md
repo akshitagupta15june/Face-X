@@ -146,7 +146,7 @@ pip install -r requirements.txt
 
 	
 </br>
-=======
+
   
 	
 ## Get Started with Open Source programs 👨‍💻
