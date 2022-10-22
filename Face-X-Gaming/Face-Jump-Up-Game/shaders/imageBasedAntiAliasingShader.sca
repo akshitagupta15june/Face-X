@@ -1,0 +1,70 @@
+#import <utils>
+
+const float kEdgeThresholdMin = 0.04;
+
+const float kEdgeSharpnessRangeMin = 1.0;
+const float kEdgeSharpnessRangeMax = 8.0;
+const float kEdgeThresholdRangeMin = 0.075;
+const float kEdgeThresholdRangeMax = 0.4;
+
+float fxaaLuma(vec4 c) {
+  return dot(c.rgb, vec3(0.2989, 0.5870, 0.1140));
+}
+
+vec2 calcDir(float lumaNw, float lumaNe, float lumaSw, float lumaSe) {
+  float dirSwMinusNe = lumaSw - lumaNe;
+  float dirSeMinusNw = lumaSe - lumaNw;
+  float x = dirSwMinusNe + dirSeMinusNw;
+  float y = dirSwMinusNe - dirSeMinusNw;
+  return std::safeNormalize(vec2(x, y));
+}
+
+vec4 fxaa(vec2 uv, std::Texture2d tex, float edgeSharpness, float edgeThreshold) {
+  vec2 offset = vec2(1.0) / tex.size;
+  float lumaNw = fxaaLuma(tex.sample(uv + vec2(-offset.x, -offset.y)));
+  float lumaNe = fxaaLuma(tex.sample(uv + vec2(+offset.x, -offset.y)));
+  float lumaSw = fxaaLuma(tex.sample(uv + vec2(-offset.x, +offset.y)));
+  float lumaSe = fxaaLuma(tex.sample(uv + vec2(+offset.x, +offset.y)));
+
+  vec4 colorM = tex.sample(uv);
+  float lumaM = fxaaLuma(colorM);
+  float lumaMax = max(max(lumaNe, lumaSe), max(lumaNw, lumaSw));
+  float lumaMaxM = max(lumaMax, lumaM);
+  float lumaMin = min(min(lumaNe, lumaSe), min(lumaNw, lumaSw));
+  float lumaMinM = min(lumaMin, lumaM);
+  float lumaMaxScaledClamped = max(kEdgeThresholdMin, lumaMax * edgeThreshold);
+  float lumaRangeM = lumaMaxM - lumaMinM;
+  vec4 res = colorM;
+
+  if (lumaRangeM >= lumaMaxScaledClamped) {
+    vec2 dir1 = calcDir(lumaNw, lumaNe, lumaSw, lumaSe);
+    float dirAbsMinTimesC = max(0.00001, min(abs(dir1.x), abs(dir1.y)) * edgeSharpness );
+    vec2 dir2 = clamp(dir1.xy / dirAbsMinTimesC, -2.0, 2.0) * 2.0;
+    vec4 colorN1 = tex.sample(uv - dir1 * offset);
+    vec4 colorP1 = tex.sample(uv + dir1 * offset);
+    vec4 colorN2 = tex.sample(uv - dir2 * offset);
+    vec4 colorP2 = tex.sample(uv + dir2 * offset);
+    res = (colorN1 + colorP1 + colorN2 + colorP2) * 0.25;
+
+    float lumaRes = fxaaLuma(res);
+    if (lumaRes < lumaMin || lumaRes > lumaMax) {
+        res = (colorN1 + colorP1) * 0.5;
+    }
+  }
+  return res;
+}
+
+// A SparkSL implementation of Fast Approximate Anti-Aliasing (FXAA).
+// This is entry point of the shader.
+//
+// @param[default=0.5, min=0.0, max=1.0] EdgeSharpness Edge Sharpness
+// @param[default=0.5, min=0.0, max=1.0] EdgeThreshold Edge Threshold
+// @return texture
+function<vec4(vec2)> main(std::Texture2d Texture, float EdgeSharpness, float EdgeThreshold) {
+  return [](vec2 uv) {
+      return fxaa(
+          uv, Texture,
+          mix(kEdgeSharpnessRangeMin, kEdgeSharpnessRangeMax, EdgeSharpness),
+          mix(kEdgeThresholdRangeMin, kEdgeThresholdRangeMax, EdgeThreshold));
+  };
+}
