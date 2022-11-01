@@ -54,7 +54,7 @@ while True:
             landmarks = predictor(gray, face)
             frame = filter(frame, landmarks)
 
-        cv2.imshow('Iron man Filter', frame)
+        cv2.imshow('Pumpkin Filter', frame)
 
     if cv2.waitKey(1) & 0xFF == 27:
         break
