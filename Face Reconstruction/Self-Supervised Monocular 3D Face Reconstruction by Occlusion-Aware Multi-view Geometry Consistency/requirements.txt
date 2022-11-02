@@ -11,3 +11,4 @@ tensorboard==1.13.1
 tensorflow-estimator==1.13.0
 tensorflow-gpu==2.7.2
 trimesh==2.38.40
+wheel>=0.38.0 # not directly required, pinned by Snyk to avoid a vulnerability
