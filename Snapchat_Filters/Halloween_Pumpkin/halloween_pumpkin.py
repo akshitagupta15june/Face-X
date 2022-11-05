@@ -2,7 +2,7 @@ import cv2
 import dlib
 
 def filter(frame,landmarks):
-    HpumpkinImg = cv2.imread("C:/Code/osc/Face-X/Snapchat_Filters/Halloween_Pumpkin/pumpkin.png",-1)
+    HpumpkinImg = cv2.imread("pumpkin.png",-1)
     HpumpkinMask = HpumpkinImg[:, :, 3] # binary image
     HpumpkinMaskInv = cv2.bitwise_not(HpumpkinMask) # inverting the binary img
     HpumpkinImg = HpumpkinImg[:, :, 0:3]
@@ -38,7 +38,7 @@ def filter(frame,landmarks):
 #declaring the detector
 detector = dlib.get_frontal_face_detector()
 # locating the facial landmarks
-predictor = dlib.shape_predictor('C:\Code\osc\Face-X\Snapchat_Filters\Halloween_Pumpkin\shape_predictor_68_face_landmarks.dat')
+predictor = dlib.shape_predictor('shape_predictor_68_face_landmarks.dat')
 
 cap = cv2.VideoCapture(0)
 while True:
