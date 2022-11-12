@@ -1,6 +1,7 @@
 ## Blur Filter 
 
-The Blur filters soften a selection or an image and are useful for retouching. They smooth transitions by averaging the color values of pixels.
+Blur can be used to give the effect of narrower depth of field so that some objects in the image stay in the focus and others are blurred.
+
 
 * A sample output is mentioned below : 
 
