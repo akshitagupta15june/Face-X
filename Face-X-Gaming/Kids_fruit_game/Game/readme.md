@@ -10,6 +10,5 @@
 * FaceMeshDetector
 * Also, look after that mediapipe is properly installed. (If error occurs, try downgrading python version)
 
-# SAMPLE OUTPUT 
 
 
