@@ -10,6 +10,15 @@
 * FaceMeshDetector
 * Also, look after that mediapipe is properly installed. (If error occurs, try downgrading python version)
 
+# HOW TO RUN THE PROJECT
+You can directly run from the editor you can use the Command prompt. 
+* Download the project and extract the files. 
+Follow the below commands to run in the terminal or cmd.
+
+* cd Kids_fruit_game 
+* cd game
+* python game.py
+
 # SAMPLE OUTPUT 
 
 ![game1](https://user-images.githubusercontent.com/69035013/203071752-5871c308-2995-40fd-8cb2-a9675f22e012.JPG)
