@@ -10,4 +10,4 @@ dlib==19.4.0
 numpy==1.22.2
 numpydoc==0.6.0
 opencv-python==4.2.0.32
-Pillow==9.0.1
+Pillow==9.3.0
