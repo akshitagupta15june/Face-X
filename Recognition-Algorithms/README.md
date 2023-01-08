@@ -18,11 +18,20 @@ This can be used for automatic face detection attendance system in recent techno
 - virtualenv (`pip install virtualenv`)
 
 ### Installation 🖥
-
-- `virtualenvv env`
-- `source venv/bin/activate` (Linux)
-- `venv\Scripts\activate` (Windows)
-- `pip install -r requirements.txt`
+```
+virtualenv venv
+```
+for Linux:
+```
+source venv/bin/activate
+```
+for windows:
+```
+venv\Scripts\activate
+```
+```
+pip install -r requirements.txt
+```
 - Create an .env file, copy the content from .env.sample and add your data path. Example: `DATA_PATH = "./foto_reco/"`
 
 ## Comparative Study of the Algorithms used here :
