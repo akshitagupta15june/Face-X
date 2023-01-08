@@ -1,0 +1,44 @@
+
+{% extends "base.html" %} 
+{% block title %} AI Labs Simulator {% endblock title %} 
+{% block body %}
+<div class="container" style="width: auto;height:auto;">
+  <br><br>
+  <br><br>
+  <br><br>
+  <form class="form-horizontal" action="/submit" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+      <h1 class="bg-primary">Image Classfication Simulation</h1>
+      <br><br>
+      <label class="control-label col-sm-2" for="pwd">Upload Your Image :</label>
+      <br><br>
+      <div class="col-sm-10">          
+        <input type="file" class="form-control" placeholder="Hours Studied"  name="my_image" id="pwd">
+      </div>
+      <br><br>
+    </div>
+
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-success">Submit</button>
+      </div>
+    </div>
+    <br>
+  </form>
+
+	{% if prediction %}
+  <img src="{{img_path}}" height="400px" width="400px">
+	<h2> Prediction   : <i> {{prediction}} </i></h2>
+
+	{% endif %}
+
+</div>
+{% endblock body %}
+
+
+
+
+
+
+
+
