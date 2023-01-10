@@ -8,7 +8,6 @@ import numpy as np
 from PIL import Image as im
 app = Flask(__name__)
 
-
 # routes
 @app.route("/")
 def main():
@@ -25,9 +24,11 @@ def get_output():
     if request.method == 'POST':
         img = request.files['file']
 
-        img_path = "static/" + img.filename
+        img_path = "static\\" + img.filename
         img.save(img_path)
         image = face_mask(img_path)
+        cv2.imwrite(img_path, image)
+        p = "No Mask Detected" if np.sum(image) == 0 else "Mask Detected"
 
     return render_template("simulator.html", prediction=p, img_path=img_path)
 

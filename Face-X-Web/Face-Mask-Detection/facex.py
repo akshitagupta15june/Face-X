@@ -11,9 +11,6 @@ class InvalidFile(Exception):
                                                                                                                        
 def cartoonify(img_path, method='opencv'):
 
-	# Code by : Sagnik Mukherjee
-	# Link : https://github.com/akshitagupta15june/Face-X/tree/master/Cartoonify%20Image
-
 	if(os.path.isfile(img_path)):
 
 		try:
@@ -317,14 +314,14 @@ def face_mask(image):
 				# determine the class label and color we'll use to draw
 						# the bounding box and text
 						label = "Mask" if mask > withoutMask else "No Mask"
-						color = (0, 255, 0) if label == "Mask" else (0, 0, 255)
+						color = (255, 255, 0) if label == "Mask" else (0, 255, 255)
 						# include the probability in the label
 						label = "{}: {:.2f}%".format(label, max(mask, withoutMask) * 100)
 						# display the label and bounding box rectangle on the output
 						# frame
 						cv2.putText(image, label, (startX, startY - 10),
-							cv2.FONT_HERSHEY_SIMPLEX, 0.45, color, 2)
-						cv2.rectangle(image, (startX, startY), (endX, endY), color, 2)
+							cv2.FONT_HERSHEY_SIMPLEX, 0.45, color, 3)
+						cv2.rectangle(image, (startX, startY), (endX, endY), color, 10)
 
 					return image
 
