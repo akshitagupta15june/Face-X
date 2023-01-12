@@ -1,0 +1,25 @@
+.d-none {
+    margin-bottom: 205px;
+    color: black;
+    font-size: 50px;
+    font-family: fantasy;
+  }
+
+  .carousel-control-next {
+    right: 0;
+    background-color: black;
+    opacity: 0.5;
+    margin: 0;
+    width: 8%;
+  }
+
+  .carousel-control-prev {
+    left: 0;
+    background-color: black;
+    opacity: 0.5;
+    width: 8%;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    background-color: black;
+  }

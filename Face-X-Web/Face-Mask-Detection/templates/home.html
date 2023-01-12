@@ -1,0 +1,91 @@
+{% extends "base.html" %} 
+{% block title %} Face Mask Simulator {% endblock title %} 
+{% block body %}
+<!-- <h1>Hello, world!</h1> -->
+<!-- Carousel -->
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{{url_for('static',filename='/slide1.jpg')}}" style="height: 40rem;opacity:0.7;" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Welcome To Face-X</h5>
+                <p>Face Detection using Artificial Intelligence</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="{{url_for('static',filename='/slide2.jpg')}}" style="height: 40rem;background-position: center;opacity:0.7;" class="d-block w-100"
+                alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Fask Mask Detection</h5>
+                <p>Here We have focus on Face Mask detection using some Deep learning or Machine learning Methods </p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<br><br><br>
+<!-- Card -->
+<!-- add background image in a container -->
+<div class="container">
+    <div class="row">
+        <div class="card">
+            <!-- <h5 class="card-header">Featured</h5> -->
+            <div class="card-body">
+                <h3 class="card-title">Introduction</h3>
+                <p class="card-text">Face mask detection had seen significant progress in the domains of Image
+                    processing and
+                    Computer vision, since the rise of the Covid-19 pandemic. Many face detection models have been
+                    created using
+                    several algorithms and techniques.
+                    <br>The approach in this project uses deep learning, pytorch, numPy, and matplotlib to detect face
+                    masks and
+                    calculate the accuracy of this model.
+                    <br>Convolutional Neural Network, Data augmentation are the key to this project.<br>
+                <h3>Dependencies:</h3>
+                <ul>
+                    <li>opendatasets</li>
+                    <li>os</li>
+                    <li>torch</li>
+                    <li>torchvision</li>
+                    <li>numPy</li>
+                    <li>matplotlib</li>
+                </ul>
+                Dataset Used:<br>
+                We'll use the COVID Face Mask Detection Dataset dataset from Kaggle. This dataset contains about 1006
+                equally
+                distributed images of 2 distinct types, namely Mask and Non-Mask.</p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+
+            </div>
+            <center>
+                <div class="col-sm-4">
+                    <div class="card" style="width: 18rem;">
+                        <!-- <img src="card3.jpg" class="card-img-top" alt="..."> -->
+                        <div class="card-body">
+                            <h5 class="card-title">Face-Mask Simulator</h5>
+                            <p class="card-text">Want to see how our model works !!!!</p>
+                            <a href="/templates/simulator" class="btn btn-primary">Lets Go</a>
+                        </div>
+                    </div>
+                </div>
+            </center>
+            <br>
+        </div>
+    </div>
+</div>
+<br><br><br>
+{% endblock body %}
