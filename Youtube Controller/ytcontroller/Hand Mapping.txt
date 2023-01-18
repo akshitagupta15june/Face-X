@@ -1,6 +1,0 @@
-Rock Sign-FullScreen
-Smile-Forward
-Victory Sign-Rewind
-Thumbs Up-Volume Up
-Thumbs Down-Volume Down
-Okay Sign-Play/Pause

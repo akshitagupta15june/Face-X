@@ -1,92 +1,88 @@
-import cv2
 import numpy as np
-import mediapipe as mp
+import cv2
 import pyautogui as pagui
 import time as time
-from tensorflow import keras
-
-def multiple_clicker(key1, key2):
-    pagui.keyDown(key1)
-    pagui.press(key2)
-    pagui.keyUp(key1)
 
 def clicker(key):
     pagui.keyDown(key)
     time.sleep(1)
     pagui.keyUp(key)
-
-def ytcontrol():
-
-    mpHands = mp.solutions.hands
-    hands = mpHands.Hands(max_num_hands=1, min_detection_confidence=0.7)
-    mpDraw = mp.solutions.drawing_utils
-
-    model=keras.models.load_model("Youtube Controller\ytcontroller\mp_hand_gesture")
-
-    f = open('Youtube Controller\ytcontroller\gesture.names', 'r')
-    classNames = f.read().split('\n')
-    f.close()
-
-    cap = cv2.VideoCapture(0)
-    while True:
-        _, frame = cap.read()
-
-        x, y, c = frame.shape
-
-        frame = cv2.flip(frame, 1)
-        framergb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-        result = hands.process(framergb)
+    
+def detectWink(frame, location, ROI, cascade):
+    eyes = cascade.detectMultiScale(
+        ROI, 1.15, 3, 0|cv2.CASCADE_SCALE_IMAGE, (10, 20)) 
+    for e in eyes:
+        e[0] += location[0]
+        e[1] += location[1]
+        x, y, w, h = e[0], e[1], e[2], e[3]
         
-        className = ''
+        cv2.rectangle(frame, (x,y), (x+w,y+h), (0, 0, 255), 2)
+    if len(eyes)==1:
+        clicker('space')
+    return len(eyes) == 1    # number of eyes is one
 
-        if result.multi_hand_landmarks:
-            landmarks = []
-            for handslms in result.multi_hand_landmarks:
-                for lm in handslms.landmark:
-                    lmx = int(lm.x * x)
-                    lmy = int(lm.y * y)
+def detect(frame, faceCascade, eyesCascade):
+    gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
-                    landmarks.append([lmx, lmy])
+    clahe = cv2.createCLAHE(clipLimit=2, tileGridSize=(18, 18))
+    gray_frame = clahe.apply(gray_frame)
+    gray_frame = cv2.bilateralFilter(gray_frame, 5, 15, 15)
 
-                mpDraw.draw_landmarks(frame, handslms, mpHands.HAND_CONNECTIONS)
-                prediction = model.predict([landmarks])
-                classID = np.argmax(prediction)
-                className = classNames[classID]
+    # # possible frame pre-processing:
+    # gray_frame = cv2.equalizeHist(gray_frame)
+    # gray_frame = cv2.medianBlur(gray_frame, 5)
 
-  
-        cv2.putText(frame, className, (10, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,255), 2, cv2.LINE_AA)
+    scaleFactor = 1.05 # range is from 1 to ..
+    minNeighbors = 2   # range is from 0 to ..
+    flag = 0|cv2.CASCADE_SCALE_IMAGE # either 0(faster) or 0|cv2.CASCADE_SCALE_IMAGE(more accurate)
+    minSize = (30,30) # range is from (0,0) to ..
+    faces = faceCascade.detectMultiScale(
+        gray_frame, 
+        scaleFactor, 
+        minNeighbors, 
+        flag, 
+        minSize)
 
-        cv2.imshow("Output is :", frame) 
+    detected = 0
+    for f in faces:
+        x, y, w, h = f[0], f[1], f[2], f[3]
+        faceROI = gray_frame[y:y+h, x:x+w]
+        if detectWink(frame, (x, y), faceROI, eyesCascade):
+            detected += 1
+            cv2.rectangle(frame, (x,y), (x+w,y+h), (255, 0, 0), 2)
+        else:
+            cv2.rectangle(frame, (x,y), (x+w,y+h), (0, 255, 0), 2)
+    return detected
 
-        if cv2.waitKey(1) == ord('q'):
-            break
-        print(className)
-        checkGesture(className)
+def runonVideo(face_cascade, eyes_cascade):
+    videocapture = cv2.VideoCapture(0)
+    if not videocapture.isOpened():
+        print("Can't open default video camera!")
+        exit()
 
-    cap.release()
+    windowName = "Live Video"
+    showlive = True
+    while(showlive):
+        ret, frame = videocapture.read()
 
+        if not ret:
+            print("Can't capture frame")
+            exit()
+
+        detect(frame, face_cascade, eyes_cascade)
+        cv2.imshow(windowName, frame)
+        if cv2.waitKey(30) >= 0:
+            showlive = False
+    
+    # outside the while loop
+    videocapture.release()
     cv2.destroyAllWindows()
 
-def checkGesture(hd): 
 
-    if hd=='rock':
-        #fullscreen
-        clicker('f')
-    elif hd=='thumbs up':
-        #volume up
-        clicker('up')
-    elif hd=='thumbs down':
-        #volume down
-        clicker('down')
-    elif hd=='smile' or hd=='call me':
-        #forward
-        clicker('right')
-    elif hd=='peace':
-        #reverse
-        clicker('left')
-    elif hd=='okay':
-        #pause/play
-        clicker('space')
-    return
-
-ytcontrol()
+if __name__ == "__main__":
+    # load pretrained cascades
+    face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades
+                                      + 'haarcascade_frontalface_default.xml')
+    eye_cascade = cv2.CascadeClassifier(cv2.data.haarcascades
+                                      + 'haarcascade_eye.xml')
+    runonVideo(face_cascade, eye_cascade)

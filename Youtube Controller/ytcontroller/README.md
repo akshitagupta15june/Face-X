@@ -2,7 +2,7 @@
 A youtube video controller made using opencv and pyautogui to navigate through video using hand gestures
 
 
-This is a  real-time controller for youtube
+This is a real-time controller for youtube
 
 
 ## Getting Started
@@ -31,9 +31,4 @@ This is a  real-time controller for youtube
 
 ## Gesture Images
 
-![Rock Sign - FullScreen](./Gestures%20Image/Rock.jpg)
-![Smile - Forward](./Gestures%20Image/Smile.jpg)
-![Victory - Rewind](./Gestures%20Image/Peace.jpg)
-![Thumbs Up - Volume Up](./Gestures%20Image/ThumbsUp.jpg)
-![Thumbs Down - Volume Down](./Gestures%20Image/ThumbsDown.jpg)
-![Okay Sign - Play/Pause](./Gestures%20Image/Okay.jpg)
+Blink a eye to Play or Pause the Youtube Video
