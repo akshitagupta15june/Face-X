@@ -71,8 +71,8 @@ def runonVideo(face_cascade, eyes_cascade):
 
         detect(frame, face_cascade, eyes_cascade)
         cv2.imshow(windowName, frame)
-        if cv2.waitKey(30) >= 0:
-            showlive = False
+        if cv2.waitKey(1) == ord('q'):
+            showlive = False 
     
     # outside the while loop
     videocapture.release()

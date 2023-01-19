@@ -32,3 +32,4 @@ This is a real-time controller for youtube
 ## Gesture Images
 
 Blink a eye to Play or Pause the Youtube Video
+[Output](./Images/Output.png)
