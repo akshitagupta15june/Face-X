@@ -1,6 +1,6 @@
 certifi==2022.12.7
 flake8==3.7.9
-future==0.18.2
+future==0.18.3
 mccabe==0.6.1
 mkl-fft==1.0.15
 mkl-random==1.1.0
