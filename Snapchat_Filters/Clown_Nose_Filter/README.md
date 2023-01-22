@@ -16,7 +16,7 @@
     
     Output
     
-    <img src="https://github.com/nerdlab53/Face-X/blob/nerdlab53-patch-2/Snapchat_Filters/Clown_Nose_Filter/clowmn_nomse.png">
+    <img src="https://github.com/akshitagupta15june/Face-X/blob/master/Snapchat_Filters/Clown_Nose_Filter/clown-out.png">
 
 
 
