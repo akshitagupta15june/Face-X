@@ -14,7 +14,7 @@
     * opencv_python==4.6.0.66
     
     
-    Output
+* Output
     
     <img src="https://github.com/akshitagupta15june/Face-X/blob/master/Snapchat_Filters/Clown_Nose_Filter/clown-out.png">
 
