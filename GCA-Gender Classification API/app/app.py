@@ -17,7 +17,7 @@ app.register_blueprint(blueprint, url_prefix="/api")
 
 class AppConfig:
     PORT = 3001
-    DEBUG = True
+    DEBUG = False
     
     
 @app.route('/', methods=["GET"])

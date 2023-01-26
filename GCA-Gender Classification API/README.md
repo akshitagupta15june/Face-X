@@ -14,7 +14,7 @@ This is a simple `REST` and `GraphQL` api that is served to classify gender on a
 To get started and start using `GCA` first you need to clone this repository by running the following command:
 
 ```shell
-git clone
+git clone https://github.com/akshitagupta15june/Face-X
 ```
 
 You then need to navigate to the `GCA` folder by running the following command:
@@ -429,7 +429,7 @@ curl http://localhost:3001/graphql -F operations='{"query":"mutation ClassifyGen
 Testing this `API` using postman is somehow different. You need to follow the following steps in sending the request with to the server.
 
 1. Change the request method to `POST` at `http://127.0.0.1:3001/graphql`
-2. Click on `form-data`
+2. Under `Body` tab select `form-data`
 3. On the `operation` key enter the following:
 
 ```shell

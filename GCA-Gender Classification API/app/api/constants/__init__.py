@@ -1,2 +1,2 @@
 
-allowed_extensions = ['.jpg', '.jpeg', '.png', '.webp']
+allowed_extensions = ['.jpg', '.JPG', '.png' ,'.PNG' ,'.jpeg' ,'.JPEG']
