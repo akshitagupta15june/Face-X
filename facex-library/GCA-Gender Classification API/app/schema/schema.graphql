@@ -1,0 +1,44 @@
+schema {
+  query: Query
+  mutation: Mutation
+}
+
+scalar Upload
+
+input GenderInput {
+  image: Upload!
+}
+
+type Error {
+  field: String!
+  message: String!
+}
+type Predicted {
+  label: Int!
+  probability: Float!
+  className: String!
+}
+type Prediction {
+  predictions: [Predicted!]!
+  topPrediction: Predicted!
+}
+type GenderPredictionResponse {
+  ok: Boolean!
+  error: Error
+  prediction: Prediction
+}
+
+type MetaResponse {
+  programmer: String!
+  main: String!
+  description: String!
+  language: String!
+  libraries: [String!]!
+}
+type Query {
+  meta: MetaResponse!
+}
+
+type Mutation {
+  classifyGender(input: GenderInput!): GenderPredictionResponse!
+}
