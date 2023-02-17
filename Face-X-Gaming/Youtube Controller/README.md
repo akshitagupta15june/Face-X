@@ -1,13 +1,31 @@
-# Youtube Video Controller 
-A youtube video controller made using opencv and pyautogui to navigate through video using hand gestures
-This is a real-time controller for youtube
+**YOUTUBE CONTROLLER**  
 
-This is a Python script for a real-time video-based wink detector. It uses the OpenCV library to detect faces and eyes, and the PyAutoGUI library to simulate a key press when a wink is detected (in this case, the space bar).
-The program continuously captures frames from the default video camera and processes each frame to detect winks. If a single wink is detected, the program simulates a key press. The program stops when the user presses 'q' on the keyboard.
+A real-time controller for youtube
 
 
+**DESCRIPTION**
 
-## Getting Started
++ The purpose of this Python script is to identify winks and hand gestures in a real-time live video. 
++ It makes use of the pyautogui package to simulate a key press (space bar in this case) when it detects a wink or a hand gesture.
++ The OpenCV library is used to recognise faces and eyes in each frame that is taken. 
++ Every frame is examined by the script, which continuously runs, to look for winks.
++ When a wink is detected the press of a spacebar is simulated which plays or pauses a video
++ You can use your keyboard to end the programme by pressing the key "q".
+
+**What You Can Do**
+
+You can pause or play a youtube video just by blinking your eyes.
+
+It works with your hands also,you can open and close your hands to pause or play the video
+
+**Libraries Required**
+
++ OpenCV
++ Numpy
++ pyautogui
++ time module
+
+## How to use the script
 
 * Clone this repository.
 ```bash
@@ -26,15 +44,12 @@ The program continuously captures frames from the default video camera and proce
 ```bash
   python YoutubeController.py
 ```
-## Author
 
-[Mihir Panchal](https://www.github.com/MihirRajeshPanchal)
+## Demostration
+Here I have used my hand to control the video
 
+![Snapshot_1](https://user-images.githubusercontent.com/114090255/219082705-06a802c6-d744-46a0-b449-6e0b8690aab1.PNG)
 
-## Gesture Images
+**[Mihir Panchal](https://www.github.com/MihirRajeshPanchal)**
 
-Blink a eye to Play or Pause the Youtube Video
-[Output](./Images/Output.png)
-
-## Youtuve Link
-https://www.youtube.com/watch?v=0w8FaiKP5h8
+**[B C Samrudh](https://www.github.com/bcsamrudh)**
