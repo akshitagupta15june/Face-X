@@ -12,6 +12,7 @@ I have Made a Flappy Bird Game with Python and Pygame.
 #### Frontend
 - Python
 #### Backend:
+install following libraries in python
 - PyGame
 - OpenCV
 - MediaPipe
@@ -26,7 +27,9 @@ I have Made a Flappy Bird Game with Python and Pygame.
   ` python main.py`
  
 
-### Preview of Website:
+### Preview of Game:
+![Screenshot (242)](https://user-images.githubusercontent.com/75840118/221097100-c57fc87a-6096-4928-a698-896fa919ac99.png)
+![Screenshot (241)](https://user-images.githubusercontent.com/75840118/221097122-fbcb30ad-bead-4bac-ab02-b49708241036.png)
 
 
 ## ❤️ Project Contributor
