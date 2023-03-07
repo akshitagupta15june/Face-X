@@ -83,6 +83,10 @@ alt="Meshery - Service Mesh Management Plane" align="right" /></a>
 <br />
 <br />
 
+<br>
+
+<p align="right">(<a href="#top">Back to top</a>)</p>
+
 
 
 ## ⭐ How to get started with open source?
@@ -108,6 +112,7 @@ You can refer to the following articles on the basics of Git and Github.
 
 ```
 git clone --depth 1 https://github.com/<your_user_name>/Face-X.git
+
 ```
 
 ### Installation 👇
@@ -147,7 +152,11 @@ pip install -r requirements.txt
 	
 </br>
 
-  
+  <br>
+
+<p align="right">(<a href="#top">Back to top</a>)</p>
+
+
 	
 ## Get Started with Open Source programs 👨‍💻
 
@@ -187,6 +196,62 @@ Jump into our <a href="https://discord.com/invite/Jmc97prqjb">Discord</a>! Our p
 
 </p>
 
+
+
+
+<br>
+
+<p align="right">(<a href="#top">Back to top</a>)</p>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+ 
+<br>
+ <h2 align="center">Code of Conduct</h2>
+
+To maintain a safe and inclusive space for everyone to learn and grow, contributors are advised to follow the [Code of Conduct](./CODE_OF_CONDUCT.md). 
+ 
+<p align="right">(<a href="#top">Back to top</a>)</p>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+
+
+<h2 align="center">Feedback</h2>
+
+If you have any feedback or suggestions please reach out to Project - Maintainer.  
+* [Akshita Gupta](https://github.com/akshitagupta15june) 
+
+
+Or you can create a  <a href="https://github.com/akshitagupta15june/Face-X/issues">issue</a> and mention there , which new features or extension can make this Project more good.
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+
+<br>
+  
+<br>
+
+<p align="right">(<a href="#top">Back to top</a>)</p>
+
+<hr>
+
+<div align="center">
+
+### Show some ❤️ by starring this awesome Repository!
+
+</div>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+<hr>
+
+<h3 align="center"> 
+
+ ‼️ For [JWOC'23](https://jwoc.tech/) program Admin and Mentor rights of Chrome-Extension are given to [AKSHITA GUPTA](https://github.com/akshitagupta15june) ‼️
+
+</h3>
+  
+  
+<div id="Bottom"></div>
 
 
 
