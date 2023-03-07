@@ -211,7 +211,7 @@ Jump into our <a href="https://discord.com/invite/Jmc97prqjb">Discord</a>! Our p
 
 To maintain a safe and inclusive space for everyone to learn and grow, contributors are advised to follow the [Code of Conduct](./CODE_OF_CONDUCT.md). 
  
-<p align="right">(<a href="#top">Back to top</a>)</p>
+
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
 
@@ -246,7 +246,7 @@ Or you can create a  <a href="https://github.com/akshitagupta15june/Face-X/issue
 
 <h3 align="center"> 
 
- ‼️ For [JWOC'23](https://jwoc.tech/) program Admin and Mentor rights of Chrome-Extension are given to [AKSHITA GUPTA](https://github.com/akshitagupta15june) ‼️
+ ‼️ For [JWOC'23](https://jwoc.tech/) program Admin and Mentor rights of Face-X are given to [AKSHITA GUPTA](https://github.com/akshitagupta15june) ‼️
 
 </h3>
   
