@@ -1,7 +1,7 @@
 # Cartoonify Image 
 Currently many of us wants to have our photo to be cartoonify, and we try to use the professional cartoonizer application available in market and most of them are not freeware. In order to have basic cartoonifying effects, we just need the bilateral filter, some edge detection mechanism and some filters. 
 
-The bilateral filter is use to reduce the color palettle, which is the most important task for cartoonifying the image and have a look like cartoon.And then comes the edge detection to produce the bold silhouettes.
+The bilateral filter is use to reduce the color palette, which is the most important task for cartoonifying the image and have a look like cartoon.And then comes the edge detection to produce the bold silhouettes.
 
 <p align="center">
   <img src="logo\original.jpeg" width="250" title="hover text">
@@ -15,7 +15,7 @@ The Dependencies used are:
 - Opencv :It provides the tool for applying computer vison techniques on the image.
 - Numpy :Images are stored and processed as numbers, These are taken as arrays.
 
-## How to create a Cortoonify Image?
+## How to create a Cartoonify Image?
 - Cartoonify Images can be created using the opencv library.
 - OpenCV (Open Source Computer Vision Library) is an open source computer vision and machine learning software library. It is mainly aimed at real-time computer vision and image processing. It is used to perform different operations on images which transform them using different techniques. Majorly supports all lannguages like Python, C++,Android, Java, etc.
 - In Opencv there are various functions like bilateral filters, median blur, adaptive thresholding which help in cartoonify the image.
@@ -25,7 +25,7 @@ The Dependencies used are:
 - Now applying the bilateral filter to reduce the color palette of the image.
 - Covert the actual image to grayscale.
 - Apply the median blur to reduce the image noise in the grayscale image.
-- reate an edge mask from the grayscale image using adaptive thresholding.
+- Create an edge mask from the grayscale image using adaptive thresholding.
 - Finally combine the color image produced from step 1 with edge mask produced from step 4.
 
 
