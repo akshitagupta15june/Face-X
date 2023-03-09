@@ -20,7 +20,7 @@
     left: 0%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top,#000,rgb(15, 34, 104),#000)
+    background: linear-gradient(to top,#2d0618,rgb(102, 9, 79),#130e11)
 }
 
 ::-webkit-scrollbar {
@@ -31,7 +31,7 @@
     margin: 3rem;
 }
 .videoupload {
-    border: 3px solid lightgray;
+    border: 3px solid rgb(232, 10, 136);
     border-style: dashed;
     border-radius: 10px;
     width: 100%;
@@ -43,7 +43,7 @@
 }
 
 .videoupload i {
-    color: grey;
+    color: rgb(228, 24, 201);
     font-size: 10rem;
     animation: updown 3s infinite;
     /* animation-duration: 1s;
@@ -52,7 +52,7 @@
 }
 
 .videoupload p {
-    color: grey;
+    color: rgb(214, 48, 200);
     padding: 2%;
     font-size: large;
     text-align: justify;
@@ -70,17 +70,17 @@ button {
     margin: 2%;
     width: 10rem;
     height: 2rem;
-    background-color: #48858F;
+    background-color: #c63baf;
     border-radius: 20px;
-    color: #fff;
+    color: #dc28dcf1;
     border: none;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(105, 19, 19, 0.918) 0px 3px 8px;
     font-size: large;
 }
 
 button:hover {
-    background-color: #d0ebfd;
-    color: #000;
-    box-shadow: rgba(0, 0, 0, 0.44) 0px 5px 8px;
+    background-color: #cc2087ef;
+    color: #9ce29b;
+    box-shadow: rgba(232, 10, 10, 0.944) 0px 5px 8px;
     cursor: pointer;
 }
