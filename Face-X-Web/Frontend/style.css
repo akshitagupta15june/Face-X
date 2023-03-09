@@ -31,7 +31,7 @@
     margin: 3rem;
 }
 .videoupload {
-    border: 3px solid rgb(236, 166, 235);
+    border: 3px solid rgb(188, 17, 186);
     border-style: dashed;
     border-radius: 10px;
     width: 100%;
@@ -70,16 +70,16 @@ button {
     margin: 2%;
     width: 10rem;
     height: 2rem;
-    background-color: #21aedd;
+    background-color: #31dd21;
     border-radius: 20px;
-    color: #fff;
+    color: #eaddaf;
     border: none;
     box-shadow: rgba(48, 44, 44, 0.24) 0px 3px 8px;
     font-size: large;
 }
 
 button:hover {
-    background-color: #d0ebfd;
+    background-color: #edf18f;
     color: #000;
     box-shadow: rgba(0, 0, 0, 0.44) 0px 5px 8px;
     cursor: pointer;
