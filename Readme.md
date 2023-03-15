@@ -243,12 +243,7 @@ Or you can create a  <a href="https://github.com/akshitagupta15june/Face-X/issue
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
 <hr>
 
-<h3 align="center"> 
 
- ‼️ For [JWOC'23](https://jwoc.tech/) program Admin and Mentor rights of Face-X are given to [AKSHITA GUPTA](https://github.com/akshitagupta15june) ‼️
-
-</h3>
-  
   
 <div id="Bottom"></div>
 
