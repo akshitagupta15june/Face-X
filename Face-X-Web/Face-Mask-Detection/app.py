@@ -1,52 +1,34 @@
-# Author Name: Sarthak Kapaliya
-# Date: 1/11/2023
-# Description: This file contains the flask app and the routes for the web app. 
-
-from facex import face_mask
+from flask import Flask, render_template, request
 import cv2
 import numpy as np
-import os
-import flask
-from flask import Flask, render_template, request
-import numpy as np
-from PIL import Image as im
+from tensorflow.keras.models import load_model
+
 app = Flask(__name__)
+model = load_model('path/to/model.h5')
 
-# routes
-@app.route("/")
-def main():
-    return render_template("home.html")
+def detect_emotion(img):    
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    img = cv2.resize(img, (48, 48))
+    img = np.reshape(img, (1, 48, 48, 1))
+    img = img / 255.0
+    predictions = model.predict(img)
+    labels = ['Angry', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral']
+    label_index = np.argmax(predictions)
+    label = labels[label_index]
+    return label
 
+@app.route('/')
+def home():
+    return render_template('home.html')
 
-@app.route("/templates/simulator", methods=['GET', 'POST'])
-def index():
-    return render_template("simulator.html")
-
-
-@app.route("/submit", methods=['GET', 'POST'])
-def get_output():
-    """
-    Desc: A POST request is generated using the form in simulator.html.
-    The image is saved in the static folder and the mask is detected on the face. 
-    Finally we render all the prediction and mask detection on the face on the webpage.
-
-    input: We take image path
-
-    output: We store it and detect the mask on the face. 
-    The mask detection is shown on the webpage.
-    A Result is shown on the webpage.
-    """
+@app.route('/detect', methods=['GET', 'POST'])
+def detect():
     if request.method == 'POST':
-        img = request.files['file']
-        img_path = "static\\" + img.filename
-        img.save(img_path)
-        image = face_mask(img_path)
-        cv2.imwrite(img_path, image)
-        p = "No Mask Detected" if np.sum(image) == 0 else "Mask Detected"  
-
-
-    return render_template("simulator.html", prediction=p, img_path=img_path)
-
+        file = request.files['image']
+        img = cv2.imdecode(np.fromstring(file.read(), np.uint8), cv2.IMREAD_UNCHANGED)
+        label = detect_emotion(img)
+        return render_template('result.html', label=label)
+    return render_template('detect.html')
 
 if __name__ == '__main__':
-    app.run(port=90,debug=True)
+    app.run(debug=True)
