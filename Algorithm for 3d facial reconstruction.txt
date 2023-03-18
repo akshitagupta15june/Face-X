@@ -1,0 +1,14 @@
+1.Structure from Motion (SfM):
+Structure from Motion (SfM) is a photogrammetric method used to estimate 3D structure from 2D images. It assumes that the scene has a static camera and a rigid object. SfM estimates the camera parameters, 3D points, and the structure of the scene. It works by first detecting and matching features across multiple images, and then using these correspondences to estimate the camera parameters and 3D points. The algorithm then refines these estimates iteratively to improve the accuracy of the 3D model. SfM is widely used for 3D reconstruction of objects, including faces.
+
+2.Multi-view Stereo (MVS):
+Multi-view Stereo (MVS) is a computer vision technique that reconstructs a 3D model from a sequence of 2D images. MVS focuses on the depth estimation of the scene, particularly the geometry of complex surfaces. It works by first computing a depth map for each image using stereo matching techniques, and then combining the depth maps to obtain a dense 3D point cloud. MVS is particularly useful for 3D reconstruction of objects with complex shapes, such as faces.
+
+3.Shape-from-Shading (SfS):
+Shape-from-Shading (SfS) is an image-based method used to reconstruct the 3D shape of an object from its shading information. It assumes that the surface of the object is smooth and continuous, and the lighting conditions are known. SfS works by first estimating the surface normal at each point of the object from the image gradients, and then using these normals to compute the depth map. SfS is less accurate than other methods, but it can be useful when other information, such as stereo correspondences or multiple views, is not available.
+
+4.Photometric Stereo (PS):
+Photometric Stereo (PS) is an imaging technique that estimates the surface normal at each point of the object using multiple images taken under different lighting conditions. It works by first estimating the surface albedo (reflectance) and then computing the surface normal by solving a set of linear equations. PS can provide highly accurate 3D reconstructions of objects, including faces, but it requires multiple images taken under different lighting conditions, which can be difficult to obtain in practice.
+
+5.3D Morphable Model (3DMM):
+3D Morphable Model (3DMM) is a statistical model of the face that captures the variations in shape and texture across a population. It is built from a database of 3D scans of faces and can be used to generate a 3D model of a face from a single 2D image. 3DMM works by first estimating the face parameters that best match the input image using a statistical model, and then using these parameters to generate a 3D model of the face. 3DMM is widely used in facial analysis, recognition, and reconstruction.
