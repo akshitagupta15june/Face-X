@@ -73,3 +73,4 @@
 73) [Pankaj] https://github.com/spiderxp3
 74) [Nakul Singh] https://github.com/nerdy-nakul
 75) [Crispen Gari] https://github.com/CrispenGari
+76) [Jai Tyagi] https://github.com/Jai132
