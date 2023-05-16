@@ -94,7 +94,7 @@ terminado==0.8.3
 testpath==0.4.4
 threadpoolctl==2.1.0
 tifffile==2020.9.3
-tornado==6.0.4
+tornado==6.3.2
 traitlets==5.0.4
 urllib3==1.26.5
 wcwidth==0.2.5
