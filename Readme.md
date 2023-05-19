@@ -23,7 +23,7 @@
 </div>
 
 <div align="center">
-##  Demonstration of different algorithms and operations on faces
+<h3>Demonstration of different algorithms and operations on faces</h3>
 
 Face-X is a comprehensive repository of algorithms and operations related to facial recognition, which includes a range of functionalities from facial filters, image processing, face mask detection, and facial attendance systems to animated emotions and facial cartoonification. It encompasses all the possible operations that can be performed on the frontal human face, making it a versatile platform for facial-related tasks.
 </div>
