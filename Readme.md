@@ -231,7 +231,7 @@ Or you can create a  <a href="https://github.com/akshitagupta15june/Face-X/issue
   
 <br>
 
-<p align="right">(<a href="#top">Back to top</a>)</p>
+<p align="right">(<a href="#top">BACK TO TOP 🔝</a>)</p>
 
 <hr>
 
