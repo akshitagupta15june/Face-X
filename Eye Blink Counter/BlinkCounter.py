@@ -21,6 +21,13 @@ while True:
         for id in idList:
             cv2.circle(img,face[id],3,(99,86,232),cv2.FILLED)
 
+        leftUp = face[159]
+        leftDown = face[23]
+        leftLeft = face[130]
+        leftRight = face[243]
+        lengthHor,_ = detector.findDistance(leftUp,leftDown)
+        print(lengthHor)
+
     img = cv2.resize(img, (640, 360))
     cv2.imshow("Image",img)
     cv2.waitKey(1)
