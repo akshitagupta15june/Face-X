@@ -13,6 +13,7 @@ plotY = LivePlot(640,360,[20,50], invert=True)
 
 idList = [22, 23, 24, 26, 110, 157, 158, 159, 160, 161, 130, 243]
 ratioList = []
+blinkCounter = 0
 
 while True:
 
@@ -41,8 +42,13 @@ while True:
         ratioList.append(ratio)
         if len(ratioList)>3:
             ratioList.pop(0)
-            
         ratioAvg = sum(ratioList)/len(ratioList)
+
+        if ratioAvg<35:
+            blinkCounter += 1
+
+        cvzone.putTextRect(img,f'Blink Count: {blinkCounter}',(50,100))
+
         imgPlot = plotY.update(ratioAvg)
         img = cv2.resize(img, (640, 360))
         imgStack = cvzone.stackImages([img,imgPlot],2,1)
