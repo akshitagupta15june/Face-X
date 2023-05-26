@@ -14,6 +14,7 @@ plotY = LivePlot(640,360,[20,50], invert=True)
 idList = [22, 23, 24, 26, 110, 157, 158, 159, 160, 161, 130, 243]
 ratioList = []
 blinkCounter = 0
+counter = 0
 
 while True:
 
@@ -44,8 +45,13 @@ while True:
             ratioList.pop(0)
         ratioAvg = sum(ratioList)/len(ratioList)
 
-        if ratioAvg<35:
+        if ratioAvg<35 and counter == 0:
             blinkCounter += 1
+            counter = 1
+        if counter != 0:
+            counter += 1
+            if counter > 10:
+                cocunter = 0
 
         cvzone.putTextRect(img,f'Blink Count: {blinkCounter}',(50,100))
 
