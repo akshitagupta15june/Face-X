@@ -12,6 +12,7 @@ plotY = LivePlot(640,360,[20,50])
 
 
 idList = [22, 23, 24, 26, 110, 157, 158, 159, 160, 161, 130, 243]
+ratioList = []
 
 while True:
 
@@ -37,8 +38,12 @@ while True:
         cv2.line(img, leftLeft, leftRight, (251,238,106), 1)
  
         ratio = ((lengthVer/lengthHor)*100)
-
-        imgPlot = plotY.update(ratio)
+        ratioList.append(ratio)
+        if len(ratioList)>3:
+            ratioList.pop(0)
+            
+        ratioAvg = sum(ratioList)/len(ratioList)
+        imgPlot = plotY.update(ratioAvg)
         img = cv2.resize(img, (640, 360))
         imgStack = cvzone.stackImages([img,imgPlot],2,1)
 
