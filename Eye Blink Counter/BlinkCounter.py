@@ -51,7 +51,7 @@ while True:
         if counter != 0:
             counter += 1
             if counter > 10:
-                cocunter = 0
+                counter = 0
 
         cvzone.putTextRect(img,f'Blink Count: {blinkCounter}',(50,100))
 
