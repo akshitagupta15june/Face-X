@@ -31,7 +31,7 @@ while True:
         leftLeft = face[130]
         leftRight = face[243]
         lengthVer, _ = detector.findDistance(leftUp,leftDown)
-        lengthHor, _ = detector.findDistance(leftLeft,LeftRight)
+        lengthHor, _ = detector.findDistance(leftLeft,leftRight)
 
         cv2.line(img, leftUp, leftDown, (251,238,106), 1)
         cv2.line(img, leftLeft, leftRight, (251,238,106), 1)
@@ -39,8 +39,8 @@ while True:
         ratio = ((lengthVer/lengthHor)*100)
 
         imgPlot = plotY.update(ratio)
-        cv2.imshow("ImagePlot",imgPlot)
+        img = cv2.resize(img, (640, 360))
+        imgStack = cvzone.stackImages([img,imgPlot],2,1)
 
-    img = cv2.resize(img, (640, 360))
-    cv2.imshow("Image",img)
+    cv2.imshow("Image",imgStack)
     cv2.waitKey(25)
