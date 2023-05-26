@@ -8,7 +8,7 @@ cap = cv2.VideoCapture('Video.mp4')
 # For detecting the blink using webcam comment the above line and uncomment the below line.
 #cap = cv2.VideoCapture(2)  x
 detector = FaceMeshDetector(maxFaces = 1)
-plotY = LivePlot(640,360,[20,50])
+plotY = LivePlot(640,360,[20,50], invert=True)
 
 
 idList = [22, 23, 24, 26, 110, 157, 158, 159, 160, 161, 130, 243]
