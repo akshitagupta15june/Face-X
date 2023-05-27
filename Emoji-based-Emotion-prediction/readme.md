@@ -12,7 +12,7 @@ This project uses emoji photos to predict their sentiments. To achieve the inten
 ## Dataset Details
 The data collection contains 168 different categories of images. They are classified as smiling, sad, or angry. A directory data contains three directories with the class label's name. These labels include the images that correspond to them.
 
-## Algorithm
+## Working
 * The dependencies are imported.
 * The data generators are setup for training and validation data.
 * The *ImageDataGenerator* is configured with various data augmentation techniques such as rotation, width and height shift, and horizontal flip. It divides the data into subsets for training and validation.
