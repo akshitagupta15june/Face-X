@@ -1,7 +1,7 @@
 # Emoji-based-Emotion-prediction
 
 ## Description
-This project uses emoji photos to predict their sentiments. To achieve the intended outcomes, transfer learning was employed to train the *MobileNetV2* model.
+This project uses emoji photos to predict their sentiments. To achieve the intended outcome, transfer learning was employed to train the *MobileNetV2* model.
 
 ## Dependencies
 1. python3.8 or greater version
@@ -10,7 +10,7 @@ This project uses emoji photos to predict their sentiments. To achieve the inten
 4. matplotlib
 
 ## Dataset Details
-The data collection contained 168 different categories of images. They were classified as smiling, sad, or angry. A directory data contains three directories with the class label's name. These labels include the images that correspond to them.
+The data collection contains 168 different categories of images. They are classified as smiling, sad, or angry. A directory data contains three directories with the class label's name. These labels include the images that correspond to them.
 
 ## Algorithm
 * The dependencies are imported.
