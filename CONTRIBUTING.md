@@ -2,99 +2,68 @@
 
 This documentation contains a set of guidelines to help you during the contribution process.
 
-## Submitting Contributions👩‍
+## Submitting Contributions👩‍📈
 
 Below you will find the process and workflow used to review and merge your changes.
 
-### Step 0 : Find an issue
+1. Find/Create an issue
 
 - Take a look at the Existing Issues or create your **own** Issues!
 - Wait for the Issue to be assigned to you after which you can start working on it.
 - Note : Every change in this project should/must have an associated issue.
 
-![script](https://github.com/akshitagupta15june/Face-X/blob/master/.github/user/issue.jpeg)
 
-### Step 1 : Fork the Project
+2. Fork the repository by clicking on the ["Fork"](https://github.com/akshitagupta15june/Face-X/fork) button at the top right corner of the page.
 
-- Fork this Repository. This will create a Local Copy of this Repository on your Github Profile.
-Keep a reference to the original project in `upstream` remote.  
 
+3. Once you are in your fork the url should look something like
+`https://github.com/<YOUR-USERNAME>/Face-X/`
+
+4. Go to preferred folder in your computer and paste the following command (Only one of it if you don't have ssh setup then go with HTTP command)
+- For HTTP
+ ```
+   git clone https://github.com/<YOUR-USERNAME>/Face-X.git
+ ```
+- For SSH
+ ```bash
+   git clone git@github.com:<YOUR-USERNAME>/Face-X.git
+ ```
+
+5. Now enter the folder by running the following command
 ```bash
-git clone https://github.com/<your-username>/<repo-name>  
-cd <repo-name>  
-git remote add upstream https://github.com/<upstream-owner>/<repo-name>  
-```  
-![script1](https://github.com/akshitagupta15june/Face-X/blob/master/.github/user/fork.jpeg)  
-
-
-- If you have already forked the project, update your copy before working.
-
-```bash
-git remote update
-git checkout <branch-name>
-git rebase upstream/<branch-name>
-```  
-
-
-
-### Step 2 : Branch
-
-Create a new branch. Use its name to identify the issue your addressing.
-
-```bash
-# It will create a new branch with name Branch_Name and switch to that branch 
-git checkout -b branch_name
+cd Face-X
 ```
 
-### Step 3 : Work on the issue assigned
+5. Now you are in the `Face-X` folder
 
-- Work on the issue(s) assigned to you.
-- Add all the files/folders needed.
-- After you've made changes or made your contribution to the project add changes to the branch you've just created by:
-
-```bash  
-# To add all new files to branch Branch_Name  
-git add .  
-
-# To add only a few files to Branch_Name
-git add <some files>
-```
-
-### Step 4 : Commit
-
-- To commit give a descriptive message for the convenience of reviewer by:
-
+6. Now do ahead and create a new branch and move to the branch
 ```bash
-# This message get associated with all files you have changed  
-git commit -m "message"  
+git checkout -b fix-issue-<ISSUE-NUMBER>
 ```
+
+7.  Make your changes to the codebase. Test your changes to make sure they work as expected.
+
+8. After done you can now push this changes. for doing that follow the following command chain
+   - `git status` (Shows the changed files)
+   - `git add .` (Will add all the files to staging area)
+   - `git commit -m "feat/docs/fix: :emoji-name: <EXPLAIN-YOUR_CHANGES>"`
+   - `git push origin fix-issue-<ISSUE-NUMBER>`
 
 - **NOTE**: A PR should have only one commit. Multiple commits should be squashed.
 
-### Step 5 : Work Remotely
+9.  Create a Pull Request:
+- Go to your forked GitHub repository and navigate to the Pull Request section.
+- Click on the pop-up that says "Pull Request" to be redirected to the pull request page.
+- Fill in the form template of the pull request, adding a title and description that explain your contribution.
+- Include screenshots if they help clarify the enhancement/implementation/bug/documentation.
+- Click on **Submit** to create the pull request*
 
-- Now you are ready to your work to the remote repository.
-- When your work is ready and complies with the project conventions, upload your changes to your fork:
+10. Hurrey! You just did your contribution to this project 🎉
 
-```bash  
-# To push your work to your remote repository
-git push -u origin Branch_Name
-```
-- Here is how your branch will look.
-![br](https://github.com/akshitagupta15june/Face-X/blob/master/.github/user/branch.jpeg) 
+11. Wait for your pull request to be reviewed and merged.
 
-### Step 6 : Pull Request
+>NOTE: Please make sure to follow the [Code of conduct](https://github.com/akshitagupta15june/Face-X/blob/master/CODE_OF_CONDUCT.md) while contributing.
 
-- Go to your repository in browser and click on compare and pull requests.
-Then add a title and description to your pull request that explains your contribution.  
-<img src="https://github.com/akshitagupta15june/Face-X/blob/master/.github/user/compare.jpeg">
-
-
-- Create a Pull Request which will be reviewed and suggestions would be added to improve it.
-- Add Screenshots to help us know what this enhancement/implementation is all about.
-
-
-<img src="https://github.com/akshitagupta15june/Face-X/blob/master/.github/user/comment.jpeg">
 
 ## Alternatively, using GitHub Desktop: 
 1. Open GitHub Desktop and log in to your GitHub account.
@@ -114,6 +83,7 @@ Then add a title and description to your pull request that explains your contrib
 8. Once you're satisfied with your pull request, click the "Create pull request" button to submit it.
 
 **Note:** In order to create a pull request, you must have a fork of the original repository in your GitHub account and you must have made the changes in that forked repository.
+
 
 ## Your Pull Request has been submitted and will be reviewed by the maintainer and merged.
 
