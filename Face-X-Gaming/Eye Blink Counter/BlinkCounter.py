@@ -6,7 +6,7 @@ from cvzone.PlotModule import LivePlot
 
 cap = cv2.VideoCapture('Video.mp4')
 # For detecting the blink using webcam comment the above line and uncomment the below line.
-#cap = cv2.VideoCapture(2)  x
+#cap = cv2.VideoCapture(2)
 detector = FaceMeshDetector(maxFaces = 1)
 plotY = LivePlot(640,360,[20,50], invert=True)
 
