@@ -24,9 +24,9 @@
 
 <div align="center">
 <h3>Demonstration of different algorithms and operations on faces</h3>
-
-Face-X is a comprehensive repository of algorithms and operations related to facial recognition, which includes a range of functionalities from facial filters, image processing, face mask detection, and facial attendance systems to animated emotions and facial cartoonification. It encompasses all the possible operations that can be performed on the frontal human face, making it a versatile platform for facial-related tasks.
 </div>
+Face-X is a comprehensive repository of algorithms and operations related to facial recognition, which includes a range of functionalities from facial filters, image processing, face mask detection, and facial attendance systems to animated emotions and facial cartoonification. It encompasses all the possible operations that can be performed on the frontal human face, making it a versatile platform for facial-related tasks.
+
 <p style="clear:both;">
 <h2><a href="https://github.com/akshitagupta15june/Face-X/tree/master/Recognition-Algorithms">Recognition-Algorithms</a></h2>
 <a href="https://github.com/akshitagupta15june/Face-X/tree/master/Recognition-Algorithms"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/logo.png"
