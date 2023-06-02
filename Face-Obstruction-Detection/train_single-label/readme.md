@@ -1,1 +1,1 @@
-Multi-class single-label
+Single-label
