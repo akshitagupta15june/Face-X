@@ -53,13 +53,13 @@ The definition of obstruction classes was a critical process that involved caref
 
 - **Glasses:** This class includes images where the subjects are wearing glasses. This does not distinguish between prescription glasses, reading glasses, or any other specific types of glasses.
 
-- **Hand:** Images where the subject's hand or someone else's hand is obstructing the face are included in this category. This class is irrespective of the reason for the hand's presence, be it for posing, accidentally, or intentionally covering the face.
+- **Hand:** Images where the subject's hand or someone else's hand is obstructing the face are included in this category. This class is irrespective of the reason for the hand's presence, posing, accidentally, or intentionally covering the face.
 
-- **Mask:** This class includes images where the subjects are wearing any form of facial mask. This ranges from medical masks to different styles of masks used for health or fashion purposes. Religious or cultural masks are specifically excluded from this class to avoid potential misclassification or disrespect.
+- **Mask:** This class primarily includes images where the subjects are wearing masks typically associated with health protection, such as medical masks or masks that attach behind the ears. Masks used for fashion purposes are also included if they bear similarity to these health-related masks in form and function. However, religious or cultural masks are intentionally excluded from this class to avoid potential misclassification or disrespect.
 
-- **None:** The 'none' class includes images where there is no visible obstruction to the face. These images serve as a 'control group' against which the model can learn to distinguish instances of obstruction.
+- **None:** The 'none' class includes images where there is no visible obstruction to the face. These images serve as a 'control group' against which the model can learn to distinguish between different instances of obstruction.
 
-- **Other:** The 'other' class acts as a catch-all category for obstructions that don't fit into the other classes. This includes but is not limited to objects, clothing items, or unconventional items that might obstruct the face.
+- **Other:** The 'other' class acts as an all-for category for obstructions that don't fit into the other classes. This includes but is not limited to objects, clothing items, or unconventional items that might obstruct the face.
 
 - **Sunglasses:** This class is specifically for images where subjects are wearing sunglasses. Despite being a type of glasses, sunglasses were given a separate class due to their distinct visual characteristics and the different contexts in which they are worn.
 
