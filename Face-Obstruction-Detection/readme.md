@@ -34,8 +34,11 @@ The multi-label model is capable of identifying multiple obstruction categories 
 ## Dataset
 
 The dataset for the multi-class single-label model contains 19163 images and is accessible [here](https://www.kaggle.com/datasets/janwidziski/face-obstructions).
+
 The dataset for the multi-class multi-label model, which includes 11870 images, can be found [here](https://www.kaggle.com/datasets/janwidziski/face-obstructions-multilabel).
-The discrepancy in the number of images between the two datasets is a result of a deliberate attempt to mitigate class size disparities for the multi-class model. However, it is important to note that the complexity and intensity of the multi-label problem require a larger, more balanced dataset. The relatively smaller size of the multi-label dataset may have contributed to the lower performance of the multi-label model. This indicates potential areas for improvement, suggesting the need for further data collection and curation efforts to optimize the model's performance.
+
+The discrepancy in the number of images between the two datasets is a result of a deliberate attempt to mitigate class size disparities for the multi-class model. However, it is important to note that the complexity and intensity of the multi-label problem require a larger, more balanced dataset. The relatively smaller size of the multi-label dataset may have contributed to the lower performance of the multi-label model. 
+This indicates potential areas for improvement, suggesting the need for further data collection and curation efforts to optimize the model's performance.
 
 ## Bias Mitigation
 
