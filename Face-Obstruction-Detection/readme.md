@@ -27,7 +27,7 @@ The multi-label model is capable of identifying multiple obstruction categories 
 | i00002.png | 1 | 0 | 0 | 0 | 0 | 0 |
 | i00003.jpg | 1 | 0 | 0 | 0 | 0 | 0 |
 | i00004.png | 1 | 0 | 0 | 0 | 0 | 0 |
-| i00004.png | 1 | 1 | 0 | 0 | 0 | 0 |
+| i00005.png | 1 | 1 | 0 | 0 | 0 | 0 |
 
 ![Multi-label Model](https://github.com/Ultr0x/Face-X/assets/50329232/846884bf-9179-47af-b4ba-f52198e37311)
 
