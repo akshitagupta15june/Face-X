@@ -9,4 +9,4 @@ This is a face obstruction neural network based on VGG16. The netowrk has 6 clas
 - sunglasses
 
 ## Dataset
-The data is available here:https://www.kaggle.com/datasets/janwidziski/face-obstructions
+The data is available here: https://www.kaggle.com/datasets/janwidziski/face-obstructions
