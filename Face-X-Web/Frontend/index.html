@@ -17,18 +17,25 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg bg-light">
+  <!-- Navbar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">  <!-- fixed-top is optional -->
     <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <a class="navbar-brand" href="index.html">Face-X</a>
+
+      <button class="navbar-toggler collapsed d-flex d-lg-none justify-content-around flex-column " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="togoogle">
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Face-X</a>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page"
-              href="https://github.com/akshitagupta15june/Face-X">Github</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/akshitagupta15june/Face-X">Github</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="upload.html">Upload</a>
@@ -37,7 +44,13 @@
       </div>
     </div>
   </nav>
-  <!-- <div class="main"> -->
+
+
+  <!-- Navbar-End -->
+
+
+
+  <div class="main">
   <section>
     <canvas id="canva"></canvas>
     <script src="script.js"></script>
@@ -117,7 +130,6 @@
                   send them an alert in case they are not wearing a mask. If the camera captures an unrecognized face, a
                   notification can be sent out to the administrator.</p>
 
-
                 <li>
                   <h3><a href="https://github.com/akshitagupta15june/Face-X/tree/master/Awesome-face-operations">Awesome-face-operations</a></h3>
                 </li>
@@ -135,6 +147,9 @@
       </div>
     </div>
   </div>
+  </div>
 </body>
 
 </html>
+
+

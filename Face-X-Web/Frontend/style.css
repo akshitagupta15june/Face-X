@@ -1,7 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root{
+    
+    --deafault-theme :#000000;
+    --special-font-style : 'Lato', sans-serif;
+    --heading-fs-bold : 'Montserrat', sans-serif;
+    --darktheme-f-clr : #fff;
+    --btn-clr : #2B76D8;
+    
 }
 
 #canva1 {
@@ -27,11 +42,8 @@
     display: none;
 }
 
-.main-wrapper {
-    margin: 3rem;
-}
 .videoupload {
-    border: 3px solid lightgray;
+    border: 3px solid #2B76D8;
     border-style: dashed;
     border-radius: 10px;
     width: 100%;
@@ -65,22 +77,242 @@
     100% { transform: translateY(0); }
 }
 
-button {
+.btns{
     float: right;
-    margin: 2%;
-    width: 10rem;
-    height: 2rem;
-    background-color: #48858F;
-    border-radius: 20px;
-    color: #fff;
+    margin: 1.5% 1%;
+    background-color: var(--btn-clr);
+    padding: 1% 4%;
     border: none;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    font-size: large;
+    box-shadow: 0 0px 3px 0.5px #3b3b3b;
+    border-radius: 30px;
+    font-family: var(--heading-fs-bold);
+    font-weight: 400;
 }
 
-button:hover {
-    background-color: #d0ebfd;
+.btns:hover {
+    background-color: #83c4ef;
     color: #000;
     box-shadow: rgba(0, 0, 0, 0.44) 0px 5px 8px;
     cursor: pointer;
 }
+
+
+.main,.overlay{
+    background-color: var(--deafault-theme);
+}
+
+.overlay {
+    margin-top: -8px;
+    padding-top: 5%;
+    color: #fff;
+}
+
+/* Navbar Styling */
+
+/* Toggler bar animation */
+
+.navbar-toggler{
+    /* Sizing and positioning the box of toogler button */
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: 8px;
+    right: 5px;
+}
+
+#togoogle,
+#togoogle:focus,
+#togoogle:active,
+.navbar-toggler-icon:focus{
+    /* This is for to erase outside border  and shadow when clicked which is deafaulted by bootstrap */
+    outline: none;
+    box-shadow: none;
+    border: 0px;
+    position: relative;
+}
+
+.navbar-toggler span{
+    /* to clear the if there is a default margin and padding for the lines inside */
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon{
+    /* The lines inside the toogler button */
+    display: block;
+    height:3px;
+    width:100%; /*means 100% width of the box size of toogler */
+    background: #1C9D9D;
+    border-radius: 1px;
+    opacity: 1;
+    left:0;
+    transition: .4s ease-in-out; /*Transition speed of animation turning into cross mark */
+    position:absolute;
+}
+
+.middle-bar{
+    margin-top: 0px;
+}
+
+       /* when navigation is clicked */
+.navbar-toggler .top-bar{
+    top: inherit;
+    transform: rotate(135deg);
+}
+.navbar-toggler .middle-bar{
+    opacity: 0;
+    top: inherit;
+    filter: alpha(opacity=0); /*it will smoothly turns the opacity from 1 to 0 with animation */
+}
+.navbar-toggler .bottom-bar{
+    top: inherit;
+    transform: rotate(-135deg);
+}
+
+/* state when navbar will regain its original form by cliking cross */
+.navbar-toggler.collapsed .top-bar{
+    position: absolute;
+    top:0;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar{
+    position: absolute;
+    top:10px;
+    opacity:1;
+    filter:alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar{
+    position: absolute;
+    top:20px;
+    transform: rotate(0deg);
+}
+
+.navbar-custom{
+    background-color: #000000;
+    padding-block: 5px;
+}
+
+.navbar-custom .navbar-brand{
+    font-family: var(--heading-fs-bold);
+    font-size: 2.3rem;
+}
+
+.navbar-custom .nav-link{
+    font-family: var(--special-font-style);
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+
+a.navbar-brand {
+    margin-left: 5%;
+}
+
+div#navbarNav {
+    padding-inline-end: 8%;
+}
+
+a.nav-link {
+    margin-inline: 10px;
+}
+
+.navbar .container-fluid {
+    padding-bottom: 5px;
+}
+
+@media (width < 992px){
+    ul.navbar-nav.ms-auto {
+        text-align: right;
+    }
+}
+/* End of navbar styling */
+
+
+/* Upload Page Styles */
+
+.upload{
+    background-color: var(--deafault-theme);
+    color: var(--darktheme-f-clr);
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 65% auto;
+}
+
+.upload .img{
+    display: flex;
+    justify-content: space-around;
+}
+
+.upload .face{
+    padding: 6.5%;
+}
+
+.upload .info{
+    font-size: 1.8rem;
+}
+
+.upload .content {
+    padding: 8.5%;
+    display: grid;
+    align-content:stretch;
+}
+
+.upload-file{
+    padding: 5.5% 8%;
+    width: 100%;
+}
+
+@media (width < 1340px){
+    
+    .upload .face {
+        height: 55vh;
+        width: min-content;
+    }
+
+    .upload .info {
+        font-size: 1.45rem;
+    }
+
+}
+
+@media (width < 1040px){
+    .upload .face {
+       height: 45vh;
+       width: 100%;
+    }
+
+    div#navbarNav {
+        padding-inline-end: 0;
+    }
+}
+
+@media (width < 850px){
+
+    div#navbarNav {
+        padding-inline-end: 0;
+    }
+
+    .upload .face {
+        display: none;
+        visibility: hidden;
+    }
+
+    .main-grid {
+        display: grid;
+        grid-template-columns: 100% auto;
+    }
+
+    .upload .content {
+        text-align: left;
+        padding: 8.5%;
+        grid-auto-flow:dense;
+    }
+
+}
+/* End of Upload page style */
+
+
+
