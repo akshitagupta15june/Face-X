@@ -14,7 +14,7 @@
 
 ## Output screenshot
 
-![Image](https://freeimage.host/i/H4ofjTP)
+[Image](https://freeimage.host/i/H4ofjTP)
 
 ## Author
 [Atharva Raut](https://github.com/Atharvaraut19)
