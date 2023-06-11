@@ -36,7 +36,7 @@ cd Face-X
 
 5. Now you are in the `Face-X` folder
 
-6. Now do ahead and create a new branch and move to the branch
+6. Now go ahead and create a new branch, then switch to that branch.
 ```bash
 git checkout -b fix-issue-<ISSUE-NUMBER>
 ```
@@ -63,6 +63,20 @@ git checkout -b fix-issue-<ISSUE-NUMBER>
 11. Wait for your pull request to be reviewed and merged.
 
 >NOTE: Please make sure to follow the [Code of conduct](https://github.com/akshitagupta15june/Face-X/blob/master/CODE_OF_CONDUCT.md) while contributing.
+
+
+## Alternatively, using GitHub Codespaces:
+
+1. Follow steps 1 to 3 above, to fork the repository.
+2. Navigate to the forked repository i.e. `https://github.com/<YOUR-USERNAME>/Face-X/` 
+3. Click **Code**, then click **Create codespace on master**.
+
+    <img src='https://github.com/akshitagupta15june/Face-X/tree/master/.github/user/codespace_initial.jpeg' style="max-width: 50%; height: auto;">
+
+4. A new codespace will be created. 
+5. Follow steps 6 to 9 above using the terminal in the codespace. Instead of step 9 you can also directly create a PR through codespace by going to the **Source Control view** in **Activity Bar**.
+     
+     <img src='https://github.com/akshitagupta15june/Face-X/tree/master/.github/user/codespace_PR.jpeg' style="max-width: 50%; height: auto;">
 
 
 ## Alternatively, using GitHub Desktop: 
