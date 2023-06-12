@@ -4,9 +4,7 @@
 #### Requirements
 
 -opencv_python==4.6.0.66
-- Download Face Landmark Detection Model (shape_predictor_68_face_landmarks.dat file)
-  from [here](https://github.com/italojs/facial-landmarks-recognition/blob/master/shape_predictor_68_face_landmarks.dat).
-  
+
  #### Instruction
 
 - Clone this repository ` git clone https://github.com/akshitagupta15june/Face-X.git`
