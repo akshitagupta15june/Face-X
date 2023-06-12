@@ -5,7 +5,6 @@
 
 - Python 3.7.x
 - OpenCV
-- Imutils
 - Dlib library
 - Download Face Landmark Detection Model (shape_predictor_68_face_landmarks.dat file)
   from [here](https://github.com/italojs/facial-landmarks-recognition/blob/master/shape_predictor_68_face_landmarks.dat).
