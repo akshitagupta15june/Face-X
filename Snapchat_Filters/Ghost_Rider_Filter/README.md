@@ -63,7 +63,7 @@ Note: Ensure that your system has a webcam connected and properly configured.
 
 ## Output screenshot
 
-[Image](https://freeimage.host/i/H6In10G)
+![Ghost_Rider](https://github.com/Codingpanda252/Face-X/assets/129882142/49f58457-adba-4e81-adf0-546d0f88b919)
 
 ## Author
 [Subhasish Panda](https://github.com/Codingpanda252)
