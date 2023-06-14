@@ -63,7 +63,8 @@ Note: Ensure that your system has a webcam connected and properly configured.
 
 ## Output screenshot
 
-[Image](https://freeimage.host/i/H6YPNOG)
+![Funny_Shrek](https://github.com/Codingpanda252/Face-X/assets/129882142/ef852da4-ce11-4155-8d4a-73eb3dbd33e7)
+
 
 ## Author
 [Subhasish Panda](https://github.com/Codingpanda252)
