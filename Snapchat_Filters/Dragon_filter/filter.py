@@ -34,15 +34,7 @@ mp_drawing_styles = mp.solutions.drawing_styles
 def detectFacialLandmarks(image, face_mesh, display = True):
     '''
     This function performs facial landmarks detection on an image.
-    Args:
-        image:     The input image of person(s) whose facial landmarks needs to be detected.
-        face_mesh: The face landmarks detection function required to perform the landmarks detection.
-        display:   A boolean value that is if set to true the function displays the original input image, 
-                   and the output image with the face landmarks drawn and returns nothing.
-    Returns:
-        output_image: A copy of input image with face landmarks drawn.
-        results:      The output of the facial landmarks detection on the input image.
-    '''
+   '''
     
     # Perform the facial landmarks detection on the image, after converting it into RGB format.
     results = face_mesh.process(image[:,:,::-1])
@@ -87,15 +79,6 @@ def detectFacialLandmarks(image, face_mesh, display = True):
 def getSize(image, face_landmarks, INDEXES):
     '''
     This function calculate the height and width of a face part utilizing its landmarks.
-    Args:
-        image:          The image of person(s) whose face part size is to be calculated.
-        face_landmarks: The detected face landmarks of the person whose face part size is to 
-                        be calculated.
-        INDEXES:        The indexes of the face part landmarks, whose size is to be calculated.
-    Returns:
-        width:     The calculated width of the face part of the face whose landmarks were passed.
-        height:    The calculated height of the face part of the face whose landmarks were passed.
-        landmarks: An array of landmarks of the face part whose size is calculated.
     '''
     
     # Retrieve the height and width of the image.
@@ -127,17 +110,6 @@ def isOpen(image, face_mesh_results, face_part, threshold=5, display=True):
     '''
     This function checks whether the an eye or mouth of the person(s) is open, 
     utilizing its facial landmarks.
-    Args:
-        image:             The image of person(s) whose an eye or mouth is to be checked.
-        face_mesh_results: The output of the facial landmarks detection on the image.
-        face_part:         The name of the face part that is required to check.
-        threshold:         The threshold value used to check the isOpen condition.
-        display:           A boolean value that is if set to true the function displays 
-                           the output image and returns nothing.
-    Returns:
-        output_image: The image of the person with the face part is opened  or not status written.
-        status:       A dictionary containing isOpen statuses of the face part of all the 
-                      detected faces.  
     '''
     
     # Retrieve the height and width of the image.
@@ -239,16 +211,6 @@ def isOpen(image, face_mesh_results, face_part, threshold=5, display=True):
 def overlay(image, filter_img, face_landmarks, face_part, INDEXES, display=True):
     '''
     This function will overlay a filter image over a face part of a person in the image/frame.
-    Args:
-        image:          The image of a person on which the filter image will be overlayed.
-        filter_img:     The filter image that is needed to be overlayed on the image of the person.
-        face_landmarks: The facial landmarks of the person in the image.
-        face_part:      The name of the face part on which the filter image will be overlayed.
-        INDEXES:        The indexes of landmarks of the face part.
-        display:        A boolean value that is if set to true the function displays 
-                        the annotated image and returns nothing.
-    Returns:
-        annotated_image: The image with the overlayed filter on the top of the specified face part.
     '''
     
     # Create a copy of the image to overlay filter image on.
@@ -303,8 +265,6 @@ def overlay(image, filter_img, face_landmarks, face_part, INDEXES, display=True)
         resultant_image = cv2.bitwise_and(ROI, ROI, mask=filter_img_mask)
 
         # Add the resultant image and the resized filter image.
-        # This will update the pixel values of the resultant image at the indexes where 
-        # pixel values are zero, to the pixel values of the filter image.
         resultant_image = cv2.add(resultant_image, resized_filter_img)
 
         # Update the image's region of interest with resultant image.
@@ -425,7 +385,6 @@ while camera_video.isOpened():
     # Check if 'ESC' is pressed and break the loop.
     if(k == 27):
         break
-
-# Release the VideoCapture Object and close the windows.                  
+                 
 camera_video.release()
 cv2.destroyAllWindows()
