@@ -61,7 +61,8 @@ To run this project, you need the following requirements:
 
 ## Demo
 
-https://github.com/Atharvaraut19/Catch-The-Eatable/assets/99032908/f4e3ede9-0b4e-426d-b765-c50bfe35b021
+https://github.com/Atharvaraut19/Face-X/assets/99032908/db916544-ca8c-4177-a409-40c8a7f04e90
+
 
 
 
