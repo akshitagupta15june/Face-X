@@ -1,6 +1,0 @@
-#opencv-python 
-   pip install opencv
-
-#mediapipe
-    pip install mediapipe 
-
