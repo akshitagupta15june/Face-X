@@ -19,5 +19,6 @@ Three Fully-Connected (FC) layers follow a stack of convolutional layers: the fi
 <br>
 
 <h1>CONFUSION MATRIX</h1>
+![](confusion matrix.png)
 <h1>ACCURACY MATRIX</h1>
 <h2>LOSS CURVE</h1>
