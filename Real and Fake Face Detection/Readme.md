@@ -3,8 +3,7 @@
 <h3>
 <u>Real and Fake Face Detection</u></h3>
 <br>
-<h1>GOAL</h1>
-<br>
+
 <h1>DATASET</h1>
 <br>
 The Dataset is taken from Kaggle.It comprises of two folders named Real and Fake having 700 Fake and 589 Real Images of Human Face.Moreover, the fake faces collected in this dataset are generated using the StyleGAN2, which present a harder challenge to classify them correctly even for the human eye. The real human faces in this dataset are gathered so that we have a fair representation of different features(Age, Sex, Makeup, Ethnicity, etc…) that may be encountered in a production setup.
