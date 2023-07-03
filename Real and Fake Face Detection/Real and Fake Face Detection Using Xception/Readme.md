@@ -1,5 +1,6 @@
 <h1>Xception Algorithm</h1>
 <br>
+
 ![Modified Deptthwise Separable Convolution in Xception](https://github.com/kanishkakataria/Images/assets/85161519/84790e95-81e7-495e-9ba8-f96d7391330c)
 <br>
 Xception is a deep convolutional neural network architecture that involves Depthwise Separable Convolutions. It was developed by Google researchers. Google presented an interpretation of Inception modules in convolutional neural networks as being an intermediate step in-between regular convolution and the depthwise separable convolution operation (a depthwise convolution followed by a pointwise convolution). In this light, a depthwise separable convolution can be understood as an Inception module with a maximally large number of towers. This observation leads them to propose a novel deep convolutional neural network architecture inspired by Inception, where Inception modules have been replaced with depthwise separable convolutions.<br>
@@ -13,8 +14,11 @@ The modified depthwise separable convolution is the pointwise convolution follow
 
 
 <h1>CONFUSION MATRIX</h1>
+
 ![confusion matrix_Xception](https://github.com/kanishkakataria/Images/assets/85161519/4c9b6600-9a20-4a09-8f50-356b524315e5)<br>
 <h1>ACCURACY CURVE</h1>
+
 ![Acc_curve](https://github.com/kanishkakataria/Images/assets/85161519/4b43ac5e-d89e-4941-acd8-e67c37175e09)<br>
 <h1>LOSS CURVE</h2>
+
 ![loss_Curve](https://github.com/kanishkakataria/Images/assets/85161519/7a5d1c76-1118-4881-8b0b-aeec9bec6e33)
