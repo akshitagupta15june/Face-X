@@ -1,5 +1,6 @@
 <h1>VGG16</h1>
 <br>
+![model architecture](https://github.com/kanishkakataria/Images/assets/85161519/e8c87859-695f-448e-bb54-1bb78a6c3744)<br>
 A convolutional neural network is also known as a ConvNet, which is a kind of artificial neural network. A convolutional neural network has an input layer, an output layer, and various hidden layers. VGG16 is a type of CNN (Convolutional Neural Network) that is considered to be one of the best computer vision models to date. The creators of this model evaluated the networks and increased the depth using an architecture with very small (3 × 3) convolution filters, which showed a significant improvement on the prior-art configurations. They pushed the depth to 16–19 weight layers making it approx — 138 trainable parameters.
 
 <h1>USAGE</h1>
@@ -19,6 +20,8 @@ Three Fully-Connected (FC) layers follow a stack of convolutional layers: the fi
 <br>
 
 <h1>CONFUSION MATRIX</h1>
-![](Real and Fake Face Detection/Real and Fake Face Detection Using VGG16/confusion matrix.png)
+![confusion matrix](https://github.com/kanishkakataria/Images/assets/85161519/e0202a79-53d4-4a9e-96cc-f7f65dfc0cb9)<br>
 <h1>ACCURACY MATRIX</h1>
+![acc_curve](https://github.com/kanishkakataria/Images/assets/85161519/cb763b6a-d816-4231-aa14-b238c5980690)<br>
 <h2>LOSS CURVE</h1>
+![loss_curve](https://github.com/kanishkakataria/Images/assets/85161519/5ccd3909-70c7-4008-bf9a-ec9413d8066a)

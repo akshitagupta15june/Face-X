@@ -1,5 +1,6 @@
 <h1>INCEPTIONV3</h1>
 <br>
+![model architecture](https://github.com/kanishkakataria/Images/assets/85161519/e697b22d-0fa8-42b9-a5ba-2fe482bad7fb)<br>
 The Inception V3 is a deep learning model based on Convolutional Neural Networks, which is used for image classification. The inception V3 is a superior version of the basic model Inception V1 which was introduced as GoogLeNet in 2014. As the name suggests it was developed by a team at Google.
 <br>
 The inception v3 model was released in the year 2015, it has a total of 42 layers and a lower error rate than its predecessors. Let's look at what are the different optimizations that make the inception V3 model better.
@@ -24,5 +25,9 @@ The inception V3 is just the advanced and optimized version of the inception V1 
 <br>
 
 <h1>CONFUSION MATRIX</h1>
+![confusion matrix](https://github.com/kanishkakataria/Images/assets/85161519/8e60f902-17fa-4e84-99e7-e778f21b3446)<br>
 <h1>ACCURACY CURVE</h1>
+![acc_curve](https://github.com/kanishkakataria/Images/assets/85161519/e1a3e08a-8e78-40bc-8076-066b0e170f38)
+<br>
 <h1>LOSS CURVE</h1>
+![loss_curve](https://github.com/kanishkakataria/Images/assets/85161519/f5925ea7-87cb-4e00-9d4a-b65e10eef5e6)

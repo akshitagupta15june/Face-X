@@ -1,5 +1,6 @@
 <h1>MobilenetV2</h1>
 <br>
+![mobilenet conv blocks](https://github.com/kanishkakataria/Images/assets/85161519/142333e3-efcf-4386-8bfd-eede3aa842d2)<br>
 Depthwise Separable Convolution is introduced which dramatically reduce the complexity cost and model size of the network, which is suitable to Mobile devices, or any devices with low computational power. In MobileNetV2, a better module is introduced with inverted residual structure. Non-linearities in narrow layers are removed this time. With MobileNetV2 as backbone for feature extraction, state-of-the-art performances are also achieved for object detection and semantic segmentation. 
 
 <br>
@@ -13,5 +14,8 @@ Depthwise Separable Convolution is introduced which dramatically reduce the comp
 </ol>
 
 <h1>Confusion Matrix</h1>
+![confusion matrix](https://github.com/kanishkakataria/Images/assets/85161519/d55ce591-3733-4281-bfdc-b246e0fe8d0a)<br>
 <h1>Accuracy Curve</h1>
+![acc_curve](https://github.com/kanishkakataria/Images/assets/85161519/308d7b80-bd5e-4c02-afaf-4132516b6992)<br>
 <h1>Loss Curve</h1>
+![loss_curve](https://github.com/kanishkakataria/Images/assets/85161519/0b6ce9aa-8251-489a-a0bf-6f088fb566c3)
