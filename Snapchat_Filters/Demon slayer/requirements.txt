@@ -1,0 +1,6 @@
+
+python -->  Python 3.9.7
+
+opencv -->  OpenCV 4.5.3
+
+dlib --> dlib 19.22.1
