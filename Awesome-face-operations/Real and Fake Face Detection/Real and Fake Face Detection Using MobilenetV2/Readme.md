@@ -14,12 +14,12 @@ Depthwise Separable Convolution is introduced which dramatically reduce the comp
 <li>The third layer is another 1×1 convolution but without any non-linearity. It is claimed that if ReLU is used again, the deep networks only have the power of a linear classifier on the non-zero volume part of the output domain.</li>
 </ol>
 
-<h1>Confusion Matrix</h1>
+<h2>Confusion Matrix</h2>
 
 ![confusion matrix](https://github.com/kanishkakataria/Images/assets/85161519/d55ce591-3733-4281-bfdc-b246e0fe8d0a)<br>
-<h1>Accuracy Curve</h1>
+<h2>Accuracy Curve</h2>
 
 ![acc_curve](https://github.com/kanishkakataria/Images/assets/85161519/308d7b80-bd5e-4c02-afaf-4132516b6992)<br>
-<h1>Loss Curve</h1>
+<h2>Loss Curve</h2>
 
 ![loss_curve](https://github.com/kanishkakataria/Images/assets/85161519/0b6ce9aa-8251-489a-a0bf-6f088fb566c3)

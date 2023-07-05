@@ -13,12 +13,12 @@ The modified depthwise separable convolution is the pointwise convolution follow
 2. The Presence/Absence of Non-Linearity: In the original Inception Module, there is non-linearity after first operation. In Xception, the modified depthwise separable convolution, there is NO intermediate ReLU non-linearity.
 
 
-<h1>CONFUSION MATRIX</h1>
+<h2>CONFUSION MATRIX</h2>
 
 ![confusion matrix_Xception](https://github.com/kanishkakataria/Images/assets/85161519/4c9b6600-9a20-4a09-8f50-356b524315e5)<br>
-<h1>ACCURACY CURVE</h1>
+<h2>ACCURACY CURVE</h2>
 
 ![Acc_curve](https://github.com/kanishkakataria/Images/assets/85161519/4b43ac5e-d89e-4941-acd8-e67c37175e09)<br>
-<h1>LOSS CURVE</h2>
+<h2>LOSS CURVE</h2>
 
 ![loss_Curve](https://github.com/kanishkakataria/Images/assets/85161519/7a5d1c76-1118-4881-8b0b-aeec9bec6e33)

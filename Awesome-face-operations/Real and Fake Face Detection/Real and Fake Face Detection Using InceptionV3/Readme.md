@@ -25,13 +25,13 @@ The inception V3 is just the advanced and optimized version of the inception V1 
 </ol>
 <br>
 
-<h1>CONFUSION MATRIX</h1>
+<h2>CONFUSION MATRIX</h2>
 
 ![confusion matrix](https://github.com/kanishkakataria/Images/assets/85161519/8e60f902-17fa-4e84-99e7-e778f21b3446)<br>
-<h1>ACCURACY CURVE</h1>
+<h2>ACCURACY CURVE</h2>
 
 ![acc_curve](https://github.com/kanishkakataria/Images/assets/85161519/e1a3e08a-8e78-40bc-8076-066b0e170f38)
 <br>
-<h1>LOSS CURVE</h1>
+<h2>LOSS CURVE</h2>
 
 ![loss_curve](https://github.com/kanishkakataria/Images/assets/85161519/f5925ea7-87cb-4e00-9d4a-b65e10eef5e6)

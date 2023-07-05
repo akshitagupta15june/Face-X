@@ -24,7 +24,8 @@ The following libraries are essential :-
 <li>Scikit-learn - Simple and efficient tools for data mining and data analysis. It features various classification, regression and clustering algorithms including support vector machines, random forests, gradient boosting, k-means.
 </li>
 <br>
-<h1>SET UP<h1>
+
+<h1>SET UP</h1>
 <br>
 The code is done on google colab notebooks which can be runned directly.Installations of necessary libraries and API mentioned in the Requirements Section are compulsory for the execution of the code.
 The dataset needs to be downloaded from the below given link and the path for the same needs to be changed according to the location where the dataset gets downloaded on your machine.<br>
@@ -86,13 +87,13 @@ Depthwise Separable Convolution is introduced which dramatically reduce the comp
 <li>The third layer is another 1×1 convolution but without any non-linearity. It is claimed that if ReLU is used again, the deep networks only have the power of a linear classifier on the non-zero volume part of the output domain.</li>
 </ol>
 
-<h1>Confusion Matrix</h1>
+<h2>Confusion Matrix</h2>
 
 ![confusion matrix](https://github.com/kanishkakataria/Images/assets/85161519/d55ce591-3733-4281-bfdc-b246e0fe8d0a)<br>
-<h1>Accuracy Curve</h1>
+<h2>Accuracy Curve</h2>
 
 ![acc_curve](https://github.com/kanishkakataria/Images/assets/85161519/308d7b80-bd5e-4c02-afaf-4132516b6992)<br>
-<h1>Loss Curve</h1>
+<h2>Loss Curve</h2>
 
 ![loss_curve](https://github.com/kanishkakataria/Images/assets/85161519/0b6ce9aa-8251-489a-a0bf-6f088fb566c3)
 <br>
@@ -120,10 +121,10 @@ Three Fully-Connected (FC) layers follow a stack of convolutional layers: the fi
 </ol>
 <br>
 
-<h1>CONFUSION MATRIX</h1>
+<h2>CONFUSION MATRIX</h2>
 
 ![confusion matrix](https://github.com/kanishkakataria/Images/assets/85161519/e0202a79-53d4-4a9e-96cc-f7f65dfc0cb9)<br>
-<h1>ACCURACY MATRIX</h1>
+<h2>ACCURACY CURVE</h2>
 
 ![acc_curve](https://github.com/kanishkakataria/Images/assets/85161519/cb763b6a-d816-4231-aa14-b238c5980690)<br>
 <h2>LOSS CURVE</h1>
@@ -157,17 +158,17 @@ The inception V3 is just the advanced and optimized version of the inception V1 
 </ol>
 <br>
 
-<h1>CONFUSION MATRIX</h1>
+<h2>CONFUSION MATRIX</h2>
 
 ![confusion matrix](https://github.com/kanishkakataria/Images/assets/85161519/8e60f902-17fa-4e84-99e7-e778f21b3446)<br>
-<h1>ACCURACY CURVE</h1>
+<h2>ACCURACY CURVE</h2>
 
 ![acc_curve](https://github.com/kanishkakataria/Images/assets/85161519/e1a3e08a-8e78-40bc-8076-066b0e170f38)
 <br>
-<h1>LOSS CURVE</h1>
+<h2>LOSS CURVE</h2>
 
 ![loss_curve](https://github.com/kanishkakataria/Images/assets/85161519/f5925ea7-87cb-4e00-9d4a-b65e10eef5e6)<br>
-<h1>XCEPTION MODEL</h1>
+<h2>XCEPTION MODEL</h2>
 <br>
 
 ![Modified Deptthwise Separable Convolution in Xception](https://github.com/kanishkakataria/Images/assets/85161519/84790e95-81e7-495e-9ba8-f96d7391330c)
@@ -182,13 +183,13 @@ The modified depthwise separable convolution is the pointwise convolution follow
 2. The Presence/Absence of Non-Linearity: In the original Inception Module, there is non-linearity after first operation. In Xception, the modified depthwise separable convolution, there is NO intermediate ReLU non-linearity.
 
 
-<h1>CONFUSION MATRIX</h1>
+<h2>CONFUSION MATRIX</h2>
 
 ![confusion matrix_Xception](https://github.com/kanishkakataria/Images/assets/85161519/4c9b6600-9a20-4a09-8f50-356b524315e5)<br>
-<h1>ACCURACY CURVE</h1>
+<h2>ACCURACY CURVE</h2>
 
 ![Acc_curve](https://github.com/kanishkakataria/Images/assets/85161519/4b43ac5e-d89e-4941-acd8-e67c37175e09)<br>
-<h1>LOSS CURVE</h2>
+<h2>LOSS CURVE</h2>
 
 ![loss_Curve](https://github.com/kanishkakataria/Images/assets/85161519/7a5d1c76-1118-4881-8b0b-aeec9bec6e33)
 <br>
@@ -209,7 +210,7 @@ To avoid overfitting,dropout layers was used.The number of layers,train test spl
 
 VGG16 model is found to be the best as it is not overfitting and generalises the data well comparatively.
 
-<h1>REFERENCES<h1>
+<h1>REFERENCES</h1>
 <ol>
 <li>St, S., Ayoobkhan, M. U. A., Kumar, K., V., Bacanin, N., Bacanin, N., Štěpán, H., & Pavel, T. (2022, February 22). Deep learning model for deep fake face recognition and detection. PeerJ. https://doi.org/10.7717/peerj-cs.881</li>
 <li>Kvlkeerthi. (2019). Starter: Real and Fake Face Detection b7a8f32c-f. Kaggle. https://www.kaggle.com/code/kvlkeerthi250299/starter-real-and-fake-face-detection-b7a8f32c-f</li>
@@ -217,7 +218,7 @@ VGG16 model is found to be the best as it is not overfitting and generalises the
 <li>Salman, F. M. (2022). Classification of Real and Fake Human Faces Using Deep Learning. https://philpapers.org/rec/SALCOR-3</li>
 <li>IRJMETS - International Research Journal of Modernization in Engineering Technology and Science. (n.d.). IRJMETS. IRJMETS International Research Journal of Modernization in Engineering Technology and Science. https://www.irjmets.com/uploadedfiles/paper/volume3/issue_3_march_2021/7290/1628083311</li>
 </ol>
-
+<br>
 <h1>CONTRIBUTOR</h1>
 
 NAME - KANISHKA KATARIA
