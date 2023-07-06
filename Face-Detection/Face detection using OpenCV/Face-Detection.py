@@ -97,8 +97,19 @@ faces_detected_img = detect_faces(haar_face_cascade, test2, scaleFactor=1.2)
 #conver image to RGB and show image
 plt.imshow(convertToRGB(faces_detected_img))
 
-
 # In[11]:
+
+#Testing the function on a picture with sunglasses to check if the Haar Classifier still detects it accurately
+#load another image
+test2 = cv2.imread('data/test7.jpg')
+
+#call our function to detect faces
+faces_detected_img = detect_faces(haar_face_cascade, test2, scaleFactor=1.2)
+
+#conver image to RGB and show image
+plt.imshow(convertToRGB(faces_detected_img))
+
+# In[12]:
 
 #load cascade classifier training file for lbpcascade
 lbp_face_cascade = cv2.CascadeClassifier('data/lbpcascade_frontalface.xml')
@@ -114,7 +125,7 @@ plt.imshow(convertToRGB(faces_detected_img))
 
 # Let's try it on another test image. 
 
-# In[12]:
+# In[13]:
 
 #load test image
 test2 = cv2.imread('data/test3.jpg')
@@ -124,12 +135,22 @@ faces_detected_img = detect_faces(lbp_face_cascade, test2)
 #conver image to RGB and show image
 plt.imshow(convertToRGB(faces_detected_img))
 
+# In[14]:
+
+#loading the same image in the LBP classifier to see if it detects the face.
+#load test image
+test2 = cv2.imread('/data/test7.jpg')
+#call our function to detect faces
+faces_detected_img = detect_faces(lbp_face_cascade, test2)
+
+#conver image to RGB and show image
+plt.imshow(convertToRGB(faces_detected_img))
 
 # ## Haar and LBP Results Analysis
 
 # We will run both `Haar` and `LBP` on test images to see accuracy and time delay of each.
 
-# In[13]:
+# In[15]:
 
 #load cascade classifier training file for haarcascade
 haar_face_cascade = cv2.CascadeClassifier('data/haarcascade_frontalface_alt.xml')
@@ -140,7 +161,8 @@ lbp_face_cascade = cv2.CascadeClassifier('data/lbpcascade_frontalface.xml')
 test1 = cv2.imread('data/test5.jpg')
 #load test image2
 test2 = cv2.imread('data/test6.jpg')
-
+#load test image3
+test3 = cv2.imread('data/test7.jpg')
 
 # ### Test-1
 
@@ -223,4 +245,45 @@ ax1.imshow(convertToRGB(haar_detected_img))
 #show LBP image
 ax2.set_title('LBP Detection time: ' + str(round(dt2, 3)) + ' secs')
 ax2.imshow(convertToRGB(lbp_detected_img))
+
+# ### Test-3
+
+# In[18]:
+
+# ------------HAAR-----------
+# note time before detection
+t1 = time.time()
+
+# call our function to detect faces
+haar_detected_img = detect_faces(haar_face_cascade, test3)
+
+# note time after detection
+t2 = time.time()
+# calculate time difference
+dt1 = t2 - t1
+# print the time difference
+
+# ------------LBP-----------
+# note time before detection
+t1 = time.time()
+
+lbp_detected_img = detect_faces(lbp_face_cascade, test3)
+
+# note time after detection
+t2 = time.time()
+# calculate time difference
+dt2 = t2 - t1
+# print the time difference
+
+# create a figure of 2 plots (one for Haar and one for LBP)
+f, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 5))
+
+# show Haar image
+ax1.set_title('Haar Detection time: ' + str(round(dt1, 3)) + ' secs')
+ax1.imshow(convertToRGB(haar_detected_img))
+
+# show LBP image
+ax2.set_title('LBP Detection time: ' + str(round(dt2, 3)) + ' secs')
+ax2.imshow(convertToRGB(lbp_detected_img))
+
  
