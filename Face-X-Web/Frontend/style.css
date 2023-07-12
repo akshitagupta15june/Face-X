@@ -11,11 +11,12 @@
 
 :root{
     
-    --deafault-theme :#000000;
+    --default-theme :#000000;
     --special-font-style : 'Lato', sans-serif;
     --heading-fs-bold : 'Montserrat', sans-serif;
     --darktheme-f-clr : #fff;
-    --btn-clr : #2B76D8;
+    /* edit in btn clr */
+    --btn-clr : #091540;        
     
 }
 
@@ -80,25 +81,30 @@
 .btns{
     float: right;
     margin: 1.5% 1%;
+    /* edit in color */
+    color: white;       
     background-color: var(--btn-clr);
-    padding: 1% 4%;
+    /* edit in paading */
+    padding: 5% 4%;
     border: none;
     box-shadow: 0 0px 3px 0.5px #3b3b3b;
-    border-radius: 30px;
+    border-radius: 5px;
     font-family: var(--heading-fs-bold);
     font-weight: 400;
 }
 
 .btns:hover {
-    background-color: #83c4ef;
-    color: #000;
+    /* edit in bg-col */
+    background-color: #000000;
+    color: white;
+    font-weight: 800;
     box-shadow: rgba(0, 0, 0, 0.44) 0px 5px 8px;
     cursor: pointer;
 }
 
 
 .main,.overlay{
-    background-color: var(--deafault-theme);
+    background-color: var(--default-theme);
 }
 
 .overlay {
@@ -232,7 +238,7 @@ a.nav-link {
 /* Upload Page Styles */
 
 .upload{
-    background-color: var(--deafault-theme);
+    background-color: var(--default-theme);
     color: var(--darktheme-f-clr);
 }
 
@@ -313,6 +319,5 @@ a.nav-link {
 
 }
 /* End of Upload page style */
-
 
 
