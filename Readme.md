@@ -170,6 +170,12 @@ pip install -r requirements.txt
 </table>
 
 ## Our valuable Contributors👩‍💻👨‍💻
+
+<p>
+  <img src="https://api.vaunt.dev/v1/github/entities/akshitagupta15june/repositories/Face-X/contributors?format=svg&limit=100" width="600" height"250" />
+</p>
+          
+
 <a href="https://github.com/akshitagupta15june/Face-X/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=akshitagupta15june/Face-X" height="450" width="750" /> </a>
 

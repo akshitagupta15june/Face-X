@@ -1,155 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Face-X</title>
+        
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"
+        ></script>
+        <!-- Akhil's Css -->
+        <link rel="stylesheet" href="styles2.css" />
+        <link rel="stylesheet" href="style.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Face-X</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
-</head>
+    </head>
 
-<body>
+  <body>
+    <!-- Navbar -->
 
-  <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <!-- fixed-top is optional -->
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Face-X</a>
 
-  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">  <!-- fixed-top is optional -->
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Face-X</a>
+                <button
+                    class="navbar-toggler collapsed d-flex d-lg-none justify-content-around flex-column"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    id="togoogle"
+                >
+                    <span class="toggler-icon top-bar"></span>
+                    <span class="toggler-icon middle-bar"></span>
+                    <span class="toggler-icon bottom-bar"></span>
+                </button>
 
-      <button class="navbar-toggler collapsed d-flex d-lg-none justify-content-around flex-column " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="togoogle">
-          <span class="toggler-icon top-bar"></span>
-          <span class="toggler-icon middle-bar"></span>
-          <span class="toggler-icon bottom-bar"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://github.com/akshitagupta15june/Face-X">Github</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="upload.html">Upload</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
-  <!-- Navbar-End -->
-
-
-
-  <div class="main">
-  <section>
-    <canvas id="canva"></canvas>
-    <script src="script.js"></script>
-  </section>
-  <section>
-    <canvas id="canva1"></canvas>
-    <script src="script1.js"></script>
-  </section>
-
-  <div class="bg-img">
-    <div class="overlay">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="content">
-              <h1>Face-X</h1>
-              <p>Face-X is a web application that can be used to detect faces in images and videos. It can also be
-                used to detect emotions in faces. It can also be used to detect faces in images and videos. It can
-                also be used to detect emotions in faces.</p>
-              Curently This website is where you can upload image and video and get details related to face recognition
-              models
-              <!-- responsive button -->
-              <div class="btn">
-                <a href="upload.html" class="btn btn-primary">Go To </a>
-              </div>
-              <h2>Demonstration of different algorithms and operations on faces</h2>
-              <!-- responsive list -->
-              <ul class="list">
-                <li>
-                  <h3><a href="https://github.com/akshitagupta15june/Face-X/tree/master/Recognition-Algorithms">Recognition-Algorithms </a></h3>
-                </li>
-                <p>
-                  Meshery - Service Mesh Management PlaneRecognition of faces by different algorithms and frameworks.
-                  Despite a variety of open-source face recognition frameworks available, there was no ready-made
-                  solution to implement. So In this project, all kinds of algorithms are implemented and even with
-                  various operations can be implemented in a frontal face. The available algorithms processed only
-                  high-resolution static shots and have performed sufficiently.
-                </p>
-
-                <li>
-                  <h3><a href="https://github.com/Vi1234sh12/Face-X/tree/master/Recognition-using-IOT">Face-Recognition-using-IOT</a></h3>
-                </li>
-                Meshery - Service Mesh Management PlaneInternet of Things has opened up a new avenue of research in
-                the field of human activity recognition using wearable sensors. It provides an individual's valuable
-                information regarding functional ability and lifestyle. Human activities are monitored automatically
-                to provide personalized support to different individuals.
-
-
-                <li>
-                  <h3><a href="https://github.com/akshitagupta15june/Face-X/tree/master/Facial_Biometric">Facial Biometric</a></h3>
-                </li>
-                <p>
-                  Meshery - Service Mesh Management PlaneFacial Biometric technology measures and matches the unique
-                  characteristics for the purposes of identification or authentication. Often leveraging a digital or
-                  connected camera, facial recognition software can detect faces in images, quantify their features, and
-                  then match them against stored templates in a database.</p>
-
-
-                <li>
-                  <h3><a href="https://github.com/Vi1234sh12/Face-X/tree/master/Snapchat_Filters">Snapchat_Filters</a></h3>
-                </li>
-                <p>
-                  Meshery - Service Mesh Management PlaneSnapchat filters are certainly an integral part of what makes
-                  the social media platform and messaging app Snapchat unique and globally popular. Filters, or added
-                  effects, can be applied over images in a variety of ways before being uploaded to one’s social network
-                  for others to see. Geofilters allow users to alter a picture of a landscape, such as adding color to
-                  sky or turning day to night</p>
-
-
-                <li>
-                  <h3><a href="https://github.com/Vi1234sh12/Face-X/tree/master/Face-Mask-Detection">Face-Mask-Detection</a></h3>
-                </li>
-                <p>
-                  Meshery - Service Mesh Management PlaneFace Mask Detection Platform uses Artificial Network to
-                  recognize if a user is not wearing a mask. The app can be connected to any existing or new IP mask
-                  detection cameras to detect people without a mask. App users can also add faces and phone numbers to
-                  send them an alert in case they are not wearing a mask. If the camera captures an unrecognized face, a
-                  notification can be sent out to the administrator.</p>
-
-                <li>
-                  <h3><a href="https://github.com/akshitagupta15june/Face-X/tree/master/Awesome-face-operations">Awesome-face-operations</a></h3>
-                </li>
-                <p>
-                  Meshery - Service Mesh Management PlaneAwesome Face Operations includes Face Morphing which is taking
-                  two faces as input and returning morph from the first image to second. Converting an image into a
-                  ghost image which is done using OpenCV and Numpy. Pencil Sketch In Python Using OpenCV. Image
-                  Segmentation Using Color space and Opencv. Addition of a blurring effect over an image. All this along
-                  with different classifications like age, gender and many more.</p>
-              </ul>
-
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                aria-current="page"
+                                href="index.html"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="https://github.com/akshitagupta15june/Face-X"
+                                >Github</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="upload.html">Upload</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+      </nav>
+
+      <!-- Navbar-End -->
+
+      <!-- Main classs starts -->
+  <div class="main">
+    <section>
+      <canvas id="canva"></canvas>
+        <script src="script.js"></script>
+     </section>
+    <section>
+      <canvas id="canva1"></canvas>
+      <script src="script1.js"></script>
+    </section>
+
+    <div class="container1">
+      <p>Face-X is a <strong> versatile </strong> web application that offers powerful features for <strong> face detection </strong> and <strong> emotion recognition </strong>. With just a few clicks, you can easily upload your images and videos and obtain valuable insights from <strong>state-of-the-art face recognition models</strong>. Whether you need to identify faces in <strong>images</strong> or <strong>videos</strong> or analyze the emotions expressed by individuals, Face-X has got you covered.</p>
+      <p> It provides a <strong>seamless</strong> and<strong>user-friendly</strong> experience, making it convenient to obtain<strong> accurate</strong> and<strong> timely</strong> information about the faces in your media content.</p>
+         <div class="btn">
+           <a href="upload.html" class="glow-on-hover">Unleash the Power of FACE-X</a>
           </div>
+
+
+      </div>
+      <!-- Header End's -->
+
+      <!-- Main Box -->
+
+      <div class="main-box">
+        <div class="box-above ">
+            <div class="part">
+                <h3><a href="" >Recognition-Algorithms </a></h3>
+                <p>In this project, we aim to enhance face recognition capabilities through the implementation of diverse algorithms and frameworks. While numerous open-source face recognition frameworks exist, a comprehensive ready-made solution was not readily available. Consequently, we have taken the initiative to develop and incorporate various algorithms that enable frontal face operations. Unlike existing algorithms that primarily process high-resolution static shots, our implemented algorithms have proven to be highly effective.</p>
+            </div> <br>
+            <div class="part">
+                <h3><a href="https://github.com/Vi1234sh12/Face-X/tree/master/Recognition-using-IOT">Face-Recognition-using-IOT</a></h3>
+                <p>The emergence of the Internet of Things (IoT) has revolutionized the realm of human activity recognition through the utilization of wearable sensors. This technological advancement offers valuable insights into an individual's functional abilities and lifestyle. By automatically monitoring human activities, personalized support can be provided to cater to the unique needs of diverse individuals.</p>
+            </div> <br>
+            <div class="part">
+                <h3><a href="https://github.com/akshitagupta15june/Face-X/tree/master/Facial_Biometric"> </a> </h3>
+                <p> Facial biometric technology serves the crucial purpose of measuring and comparing distinctive facial characteristics for identification or authentication purposes. By harnessing digital or connected cameras, facial recognition software can effectively detect faces within images, analyze and quantify their specific features, and subsequently compare them to pre-existing templates stored in a database. This powerful technology enables accurate and efficient identification and authentication processes, bolstering security and streamlining various applications across industries.</p>
+            </div> <br>
+            <div class="part">
+                <h3><a href="https://github.com/Vi1234sh12/Face-X/tree/master/Snapchat_Filters">Snapchat_Filters</a></h3>
+                <p>Snapchat filters undeniably play a pivotal role in distinguishing the social media platform and messaging app Snapchat, contributing to its widespread popularity worldwide. These filters, also known as augmented reality effects, offer users the ability to apply captivating enhancements to their images before sharing them with their social network. Geofilters, in particular, grant users the power to transform landscape pictures by adding vibrant colors to the sky or transforming daytime scenes into captivating nighttime vistas. This innovative feature empowers users to unleash their creativity and bring a touch of magic to their shared moments, further enhancing the immersive and engaging Snapchat experience.</p>
+            </div> <br>
+            <div class="part">
+                <h3><a href="https://github.com/Vi1234sh12/Face-X/tree/master/Face-Mask-Detection">Face-Mask-Detection</a></h3>
+                <p>Face Mask Detection employs the power of Artificial Neural Networks to discern whether a user is wearing a mask or not. This innovative technology seamlessly integrates with existing or newly installed IP mask detection cameras, enabling the identification of individuals without masks. App users can conveniently add faces and phone numbers to receive alerts in case of non-compliance. Additionally, if the camera captures an unrecognized face, a prompt notification can be dispatched to the administrator. This comprehensive system ensures heightened safety and adherence to mask-wearing protocols, offering a reliable solution for enforcing mask usage in diverse settings.</p>
+            </div> <br>
+            <div class="part">
+                <h3><a href="https://github.com/akshitagupta15june/Face-X/tree/master/Awesome-face-operations">Awesome-face-operations</a></h3>
+                <p>Awesome Face Operations encompass a range of captivating features, including Face Morphing, which seamlessly transforms two input faces into a gradual morph from the first image to the second. Another intriguing capability involves the conversion of an image into a ghostly rendition, achieved through the powerful combination of OpenCV and Numpy. Python, coupled with OpenCV, enables the creation of mesmerizing pencil sketches. Furthermore, Image Segmentation can be achieved using Color space techniques in conjunction with OpenCV. Adding a captivating blurring effect to an image is also among the remarkable functionalities offered. Additionally, the system includes diverse classifications such as age, gender, and many more, providing a comprehensive suite of cutting-edge facial analysis tools.</p>
+            </div>
         </div>
       </div>
-    </div>
-  </div>
-  </div>
-</body>
+      <!-- Main Box ends -->
+</div>
 
+
+<footer>
+    &#169 Face-x 
+</footer>
+  </body>
 </html>
-
-

@@ -1,0 +1,193 @@
+/* Radhe Radhe _/\_
+Adding in index.html 
+Contributor :- Akhil Agrawal
+Github :-swastik-akhil*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@300&family=Rajdhani&display=swap');
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+}
+
+.container1{
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    padding: 20% 3%;
+    position: relative;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 18%, rgba(10,22,67,1) 50%, rgba(0,0,0,1) 82%);
+}
+
+.container2 {
+    background-image: url(Images/h-heyerlein-ndja2LJ4IcM-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    color: white;
+    padding: 10% 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.links{
+    text-decoration: none;
+    color: white;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3vh;
+    font-weight: 200;
+    color: #fff;
+}
+
+h2 {
+    font-family: 'Rajdhani', sans-serif;
+    text-align: left;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+  }
+
+
+/* || Styling Boxes */
+ 
+.main-box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.box-above{
+    margin: 50px;
+    margin-bottom: 20px !important;
+    height: max-content;
+    width: 90%;
+    padding: 2rem;
+    box-shadow: 0 0 15px white;
+    border-radius: 10px;
+}
+
+.main-box .box-above .part p{
+    color: rgb(0, 0, 0) !important;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600 !important;
+}
+
+.main-box .box-above .part h3 a{
+    color: rgb(255, 255, 255) !important;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800 !important;
+    animation: wobble;
+}
+
+.box-above {
+    background: linear-gradient(329deg, #f0ff42, #82cd47, #ff1e1e, #31e1f7);
+    background-size: 800% 800%;
+    -webkit-animation: AnimationName 18s ease infinite;
+    -moz-animation: AnimationName 18s ease infinite;
+    -o-animation: AnimationName 18s ease infinite;
+    animation: AnimationName 18s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:20% 0%}
+    50%{background-position:81% 100%}
+    100%{background-position:20% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:20% 0%}
+    50%{background-position:81% 100%}
+    100%{background-position:20% 0%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:20% 0%}
+    50%{background-position:81% 100%}
+    100%{background-position:20% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:20% 0%}
+    50%{background-position:81% 100%}
+    100%{background-position:20% 0%}
+}
+  
+/* || Box Styling ends here */
+
+
+/* || Glowing btn styling */
+.container1 a{
+    text-decoration: none;
+}
+.glow-on-hover {
+    width: 220px;       
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 5px;
+    padding:2px 2px ;
+    /* border: 2px; */
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 5px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/* || Glowing btn styling ends here */
+
+/*
+html{
+    scroll-behavior: smooth;
+} */
