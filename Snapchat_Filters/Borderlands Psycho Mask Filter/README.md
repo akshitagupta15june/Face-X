@@ -7,8 +7,9 @@ filter, and bright orange designs
 This is a  real-time filter that adds the Psycho mask 
 filter to faces on a live feed using facial detection.
 ## Sample
+![output](https://github.com/Inferno2211/Face-X/assets/87509158/0bf7788d-80d2-4aaf-828b-83b3c3d021b9)
 
-![sample](output.png)
+
 
 ## Getting Started
 
@@ -18,7 +19,7 @@ filter to faces on a live feed using facial detection.
 ```
 * Navigate to the required directory.
 ```bash
-  cd Snapchat_Filters\Borderlands Psycho Mask Filter
+   cd Snapchat_Filters/Borderlands\ Psycho\ Mask\ Filter/
 ```
 * Install the Python dependencies.
 
