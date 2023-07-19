@@ -1,10 +1,15 @@
 import cv2
+import mediapipe as mp
+import numpy as np
+from cv2 import stylization
+
+#Start video capture from webcam
+cap = cv2.VideoCapture(0)
 
 def cartoonify(frame):
-    #Converting image to grayscale
     grayScale = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     
-    #Applying median blur to smoothen the image
+    #Applying median blur to smoothen an image
     smoothGrayScale = cv2.medianBlur(grayScale, 5)
     
     #Getting edges for cartoon effect
@@ -18,16 +23,11 @@ def cartoonify(frame):
     #Masking with edges
     finalImage = cv2.bitwise_and(colorImage, colorImage, mask=getEdge)
     
-    #Using stylization to enhance the effect
     styleImage = cv2.stylization(finalImage, sigma_s=150, sigma_r=0.3)
     
-    #Blending both the images to get the final image
     finalImage = cv2.addWeighted(frame, 0.4, styleImage, 0.6, 0)
     
     return finalImage
-
-#Start video capture from webcam
-cap = cv2.VideoCapture(0)
 
 while True:
     ret, frame = cap.read()
@@ -41,4 +41,5 @@ while True:
 
 #Release the video capture and close all windows
 cap.release()
+cv2.waitKey(0)
 cv2.destroyAllWindows()

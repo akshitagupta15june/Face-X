@@ -7,7 +7,7 @@ This is a  real-time filter that creates a cartoon like effect
 on everything in the camera feed
 ## Sample
 
-![sample](output.png)
+![sample](https://github-production-user-asset-6210df.s3.amazonaws.com/87509158/254546199-1cefed5a-8994-47fa-8985-a25eff85c99a.png)
 
 ## Getting Started
 
