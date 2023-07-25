@@ -1,4 +1,4 @@
-certifi==2022.12.7
+certifi==2023.7.22
 flake8==3.7.9
 future==0.18.3
 mccabe==0.6.1
