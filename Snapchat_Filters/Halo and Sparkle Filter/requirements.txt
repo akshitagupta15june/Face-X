@@ -1,0 +1,4 @@
+dlib==19.24.0
+numpy==1.24.3
+opencv-python==4.7.0.72
+imageio==2.31.1
