@@ -6,6 +6,10 @@ which is the average color of the pixels in that polygon
 
 This is a  real-time filter that creates a mosaic like effect
 on everything in the camera feed
+
+Note: The number of points is user defined.
+The filter may lag on higher number of points
+You can save the image instead of displaying it in that case
 ## Sample
 
 ![sample](output.jpg)
