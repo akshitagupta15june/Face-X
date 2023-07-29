@@ -31,7 +31,7 @@ Overall, the implementation uses image processing techniques and blending operat
 
 ## Output screenshot
 
-[Image](https://freeimage.host/i/HZRvtGj)
+![Astronaut_filter](https://github.com/Codingpanda252/Face-X/assets/129882142/e6ea1135-3864-477b-a433-f03545d34c40)
 
 ## Author
 [Subhasish Panda](https://github.com/Codingpanda252)
