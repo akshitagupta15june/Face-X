@@ -1,4 +1,4 @@
 numpy == 1.22.0
 opencv-python == 4.5.1.48
-scipy == 1.6.1
+scipy == 1.10.0
 shape_predictor_68_face_landmarks.dat
