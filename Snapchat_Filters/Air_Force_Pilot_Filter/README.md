@@ -65,7 +65,10 @@ Enjoy the Fighter Pilot Cockpit Mask and Sky Background experience! Feel free to
 
 ## Output screenshot
 
-[Image](https://freeimage.host/i/H6YPNOG)
+![Air Force Pilot Filter](https://github.com/Codingpanda252/Face-X/assets/129882142/63170ad1-8ea6-462a-aef5-b316128fa32d)
+
+![Air Force Pilot Filter](https://github.com/Codingpanda252/Face-X/assets/129882142/8ff339cd-b247-41eb-9834-ce1ea53bd767)
+
 
 ## Author
 [Subhasish Panda](https://github.com/Codingpanda252)
