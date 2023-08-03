@@ -1,0 +1,4 @@
+pip install opencv-python==4.5.3
+pip install mediapipe==0.8.6
+pip install numpy==1.19.5
+pip install imageio==2.9.0
