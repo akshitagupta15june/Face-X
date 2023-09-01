@@ -46,7 +46,7 @@ tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.0
 tensorflow==2.11.1
 tensorflow-estimator==2.11.0
-tensorflow-intel==2.11.0
+tensorflow-intel==2.12.0
 tensorflow-io-gcs-filesystem==0.30.0
 termcolor==1.1.0
 typing_extensions==4.0.0
