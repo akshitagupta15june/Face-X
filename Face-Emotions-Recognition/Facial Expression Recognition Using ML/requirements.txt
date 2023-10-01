@@ -50,7 +50,7 @@ networkx==2.6
 notebook==6.4.12
 numpy==1.22.2
 oauthlib==3.1.0
-opencv-python==4.4.0.42
+opencv-python==4.8.1.78.42
 opt-einsum==3.3.0
 packaging==20.4
 pandas==1.1.2
