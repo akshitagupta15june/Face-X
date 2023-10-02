@@ -1,5 +1,5 @@
 numpy==1.22.2
-opencv-python==4.2.0.32
+opencv-python==4.8.1.78.32
 tensorflow==2.11.1
 setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
 wheel>=0.38.0 # not directly required, pinned by Snyk to avoid a vulnerability
