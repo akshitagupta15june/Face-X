@@ -2,7 +2,7 @@
 * The dataset used for training the yolov8 model is from universe.roboflow.com<br/>
 
 ## Output result from testing dataset
-![output_img](https://github.com/samtholathrobin/Face-X/blob/master/Face-Mask-Detection/Face%20mask%20detection%20using%20YOLO%20V8/Model/model_output.jpeg))
+![output_img](https://github.com/samtholathrobin/Face-X/blob/master/Face-Mask-Detection/Face%20mask%20detection%20using%20YOLO%20V8/Model/model_output.jpeg)
 ## Installation
 1) Download and install yolov8
 ```
@@ -11,7 +11,6 @@ pip install ultralytics
 ```
 2) Run inference 
 For running inference you required trained weights which is obtained from my repo cloned as yolov5_FaceMask<br/>
-
 ```
 $ python detect.py --weights last_mask_yolov5s_results.pt --conf 0.4 --source 0  # webcam
                                                                               file.jpg  # image 
@@ -26,6 +25,6 @@ The dataset contains 149 Images which is very less for yolo architecture. So dur
 To get more accuracy the training dataset needs to increase.<br/>
 
 ## Output Results from open source images
-![test5_out](https://user-images.githubusercontent.com/41751718/88254674-a8c6fb80-ccd3-11ea-8c09-54a7e39274f3.jpg)
-![test4_out](https://user-images.githubusercontent.com/41751718/88254682-acf31900-ccd3-11ea-83b6-73659db53aa0.png)
-![test3_out](https://user-images.githubusercontent.com/41751718/88254685-af557300-ccd3-11ea-9d2e-413c06820e5e.jpg)
+![test5_out](https://github.com/samtholathrobin/Face-X/blob/master/Face-Mask-Detection/Face%20mask%20detection%20using%20YOLO%20V8/Model/masktest.jpeg)
+![test4_out](https://github.com/samtholathrobin/Face-X/blob/master/Face-Mask-Detection/Face%20mask%20detection%20using%20YOLO%20V8/Model/masktest2.jpeg)
+![test3_out](https://github.com/samtholathrobin/Face-X/blob/master/Face-Mask-Detection/Face%20mask%20detection%20using%20YOLO%20V8/Model/mask_surgeon.jpeg)
