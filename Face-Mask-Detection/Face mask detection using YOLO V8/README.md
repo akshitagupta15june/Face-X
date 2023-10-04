@@ -25,6 +25,5 @@ The dataset contains 149 Images which is very less for yolo architecture. So dur
 To get more accuracy the training dataset needs to increase.<br/>
 
 ## Output Results from open source images
-![test5_out](https://github.com/samtholathrobin/Face-X/blob/master/Face-Mask-Detection/Face%20mask%20detection%20using%20YOLO%20V8/Model/masktest.jpeg)
-![test4_out](https://github.com/samtholathrobin/Face-X/blob/master/Face-Mask-Detection/Face%20mask%20detection%20using%20YOLO%20V8/Model/masktest2.jpeg)
-![test3_out](https://github.com/samtholathrobin/Face-X/blob/master/Face-Mask-Detection/Face%20mask%20detection%20using%20YOLO%20V8/Model/mask_surgeon.jpeg)
+![test5_out](https://github.com/samtholathrobin/Face-X/blob/master/Face-Mask-Detection/Face%20mask%20detection%20using%20YOLO%20V8/Model/masktestout.jpeg)
+![test4_out](https://github.com/samtholathrobin/Face-X/blob/master/Face-Mask-Detection/Face%20mask%20detection%20using%20YOLO%20V8/Model/masktest2out.jpeg)
