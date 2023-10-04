@@ -1,5 +1,5 @@
-# yolov8_FaceMask
-* The dataset used for training the yolov5 is from roboflow.ai<br/>
+# yolov8 FaceMask 
+* The dataset used for training the yolov8 model is from universe.roboflow.com<br/>
 
 ## Output result from testing dataset
 ![output_img](https://user-images.githubusercontent.com/41751718/88246529-6cd26d00-ccb8-11ea-8dc5-d6393c0b54cc.png)
