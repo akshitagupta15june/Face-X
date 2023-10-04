@@ -2,7 +2,7 @@
 * The dataset used for training the yolov8 model is from universe.roboflow.com<br/>
 
 ## Output result from testing dataset
-![output_img]([https://user-images.githubusercontent.com/41751718/88246529-6cd26d00-ccb8-11ea-8dc5-d6393c0b54cc.png](https://github.com/samtholathrobin/Face-X/blob/master/Face-Mask-Detection/Face%20mask%20detection%20using%20YOLO%20V8/Model/model_output.jpeg))
+![output_img](https://github.com/samtholathrobin/Face-X/blob/master/Face-Mask-Detection/Face%20mask%20detection%20using%20YOLO%20V8/Model/model_output.jpeg))
 ## Installation
 1) Download and install yolov8
 ```
