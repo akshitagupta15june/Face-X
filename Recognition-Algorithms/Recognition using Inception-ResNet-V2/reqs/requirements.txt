@@ -1,7 +1,7 @@
 matplotlib==3.5.1
 numpy==1.22.3
 pandas==1.4.2
-Pillow==9.3.0
+Pillow==10.0.1
 prefetch_generator==1.0.1
 torch==1.13.1
 torchvision==0.12.0
