@@ -22,7 +22,7 @@ numpy==1.22.0
 oauthlib==3.1.0
 opencv-python==4.3.0.36
 opt-einsum==3.3.0
-Pillow==9.3.0
+Pillow==10.0.1
 protobuf==3.18.3
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
@@ -41,7 +41,7 @@ tensorflow==2.11.1
 tensorflow-estimator==2.2.0
 termcolor==1.1.0
 threadpoolctl==2.1.0
-urllib3==1.26.5
+urllib3==1.26.17
 Werkzeug==2.2.3
 wrapt==1.12.1
 zipp==3.1.0
