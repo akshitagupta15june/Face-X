@@ -50,7 +50,7 @@ tensorflow-intel==2.12.0
 tensorflow-io-gcs-filesystem==0.30.0
 termcolor==1.1.0
 typing_extensions==4.0.0
-urllib3==1.26.7
+urllib3==1.26.17
 uuid==1.30
 Werkzeug==2.2.3
 wrapt==1.13.3
