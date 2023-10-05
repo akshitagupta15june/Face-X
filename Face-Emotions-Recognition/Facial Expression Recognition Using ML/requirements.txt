@@ -58,7 +58,7 @@ pandocfilters==1.4.2
 parso==0.7.1
 pexpect==4.8.0
 pickleshare==0.7.5
-Pillow==9.4.0
+Pillow==10.0.1
 prometheus-client==0.8.0
 prompt-toolkit==3.0.7
 protobuf==3.18.3
@@ -96,7 +96,7 @@ threadpoolctl==2.1.0
 tifffile==2020.9.3
 tornado==6.3.3
 traitlets==5.0.4
-urllib3==1.26.5
+urllib3==1.26.17
 wcwidth==0.2.5
 webencodings==0.5.1
 Werkzeug==2.2.3
