@@ -58,7 +58,7 @@ git checkout -b fix-issue-<ISSUE-NUMBER>
 - Include screenshots if they help clarify the enhancement/implementation/bug/documentation.
 - Click on **Submit** to create the pull request*
 
-10. Hurrey! You just did your contribution to this project 🎉
+10. Hurray! You just did your contribution to this project 🎉
 
 11. Wait for your pull request to be reviewed and merged.
 
