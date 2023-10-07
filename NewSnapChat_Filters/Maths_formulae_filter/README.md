@@ -10,7 +10,7 @@
 
 - Run the script as follows
 ```
-    $ python magazine.py
+    $ python math.py
 ```
 
 ## Output screenshot
