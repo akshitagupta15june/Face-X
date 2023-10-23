@@ -64,7 +64,7 @@ Security devices monitoring your home, turning lights on and off as you enter an
 Smart voice assistants placing your usual takeout order on command, making it a breeze to get fresh food delivered to your door.
 
 
-## 6.Iot device related Infromation: 
+## 6.Iot device related Information: 
 
 ### 1.`Arduino Uno`
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/Recognition-using-IOT/Images/ARDUINO.png" height="300px" align="right"/>
