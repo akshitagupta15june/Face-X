@@ -23,7 +23,7 @@ Face Verification - [`Demo`]
 
 Verification function under the deepface interface offers to verify face pairs as same person or different persons. You should pass face pairs as array instead of calling verify function in a for loop for the best practice. This will speed the function up dramatically and reduce the allocated memory.
 
-this is the sample code we can use to verify diiferent faces
+this is the sample code we can use to verify different faces
 ```
 from deepface import DeepFace
 result  = DeepFace.verify("img1.jpg", "img2.jpg")
