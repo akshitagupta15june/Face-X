@@ -213,7 +213,7 @@ To maintain a safe and inclusive space for everyone to learn and grow, contribut
 <h2 align="center">Feedback</h2>
 
 If you have any feedback or suggestions please reach out to Project - Maintainer.  
-* [Akshita Gupta](https://github.com/akshitagupta15june) 
+* [Akshita Gupta](https://github.com/akshitagupta15june) <h3>Join official <a href="https://discord.com/invite/Jmc97prqjb">Discord Channel</a> for discussion</h3>
 
 
 Or you can create a  <a href="https://github.com/akshitagupta15june/Face-X/issues">issue</a> and mention there , which new features or extension can make this Project more good.
