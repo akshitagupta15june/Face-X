@@ -172,7 +172,7 @@ pip install -r requirements.txt
 ## Our valuable Contributors👩‍💻👨‍💻
 
 <p>
-  <img src="https://api.vaunt.dev/v1/github/entities/akshitagupta15june/repositories/Face-X/contributors?format=svg&limit=70" width="600" height"250" />
+  <img src="https://api.vaunt.dev/v1/github/entities/akshitagupta15june/repositories/Face-X/contributors?format=svg&limit=54" width="600" height"250" />
 </p>
           
 
