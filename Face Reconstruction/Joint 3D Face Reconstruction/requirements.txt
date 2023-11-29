@@ -2,5 +2,5 @@ numpy>=1.14.3
 scikit-image
 scipy
 tensorflow
-pillow>=9.0.1 # not directly required, pinned by Snyk to avoid a vulnerability
+pillow>=10.0.0 # not directly required, pinned by Snyk to avoid a vulnerability
 wheel>=0.38.0 # not directly required, pinned by Snyk to avoid a vulnerability
