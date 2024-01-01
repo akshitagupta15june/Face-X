@@ -60,7 +60,7 @@ pexpect==4.8.0
 pickleshare==0.7.5
 Pillow==10.0.1
 prometheus-client==0.8.0
-prompt-toolkit==3.0.7
+prompt-toolkit==3.0.13
 protobuf==3.18.3
 ptyprocess==0.6.0
 pyasn1==0.4.8
