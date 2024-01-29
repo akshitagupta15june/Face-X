@@ -50,7 +50,7 @@ networkx==2.6
 notebook==6.4.12
 numpy==1.22.2
 oauthlib==3.1.0
-opencv-python==4.4.0.42
+opencv-python==4.8.1.78
 opt-einsum==3.3.0
 packaging==20.4
 pandas==1.1.2
@@ -60,7 +60,7 @@ pexpect==4.8.0
 pickleshare==0.7.5
 Pillow==10.2.0
 prometheus-client==0.8.0
-prompt-toolkit==3.0.7
+prompt-toolkit==3.0.13
 protobuf==3.18.3
 ptyprocess==0.6.0
 pyasn1==0.4.8
