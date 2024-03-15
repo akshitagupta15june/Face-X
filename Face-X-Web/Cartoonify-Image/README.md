@@ -66,6 +66,10 @@ python app.py
 
 ![Line](https://user-images.githubusercontent.com/85225156/171937799-8fc9e255-9889-4642-9c92-6df85fb86e82.gif)
 
+### :zap: Output Screenshot 
+
+![screenshot](./static/images/Screenshot.png)
+
 ### :zap: Preview of Website 
 
 ![recording](https://github.com/akshitagupta15june/Face-X/assets/114330097/f488def2-05b1-48f5-9872-4933f86da98a)
