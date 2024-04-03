@@ -85,17 +85,17 @@ streamlit run app.py
 <table>
   <tr>
     <td><img src="./images/sample_0.jpg" alt="0" style="width:300px;"></td>
-    <td><img src="./images/output_image_0.jpg" alt="0" style="width:300px;"></td>
+    <td><img src="./images/output_image_0.png" alt="0" style="width:300px;"></td>
     <td><img src="./images/clear_0.jpg" alt="0" style="width:300px;"></td>
   </tr>
   <tr>
     <td><img src="./images/sample_169.jpg" alt="169" style="width:300px;"></td>
-    <td><img src="./images/output_image_169.jpg" alt="169" style="width:300px;"></td>
+    <td><img src="./images/output_image_169.png" alt="169" style="width:300px;"></td>
     <td><img src="./images/clear_169.jpg" alt="169" style="width:300px;"></td>
   </tr>
   <tr>
     <td><img src="./images/sample_1004.jpg" alt="1004" style="width:300px;"></td>
-    <td><img src="./images/output_image_1004.jpg" alt="1004" style="width:300px;"></td>
+    <td><img src="./images/output_image_1004.png" alt="1004" style="width:300px;"></td>
     <td><img src="./images/clear_1004.jpg" alt="1004" style="width:300px;"></td>
   </tr>
 </table>
