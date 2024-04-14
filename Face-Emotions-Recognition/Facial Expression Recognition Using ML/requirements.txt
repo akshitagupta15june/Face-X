@@ -20,7 +20,7 @@ google-auth-oauthlib==0.4.1
 google-pasta==0.2.0
 grpcio==1.53.2
 h5py==2.10.0
-idna==2.10
+idna==3.7
 imageio==2.9.0
 ipykernel==5.3.4
 ipython==8.10.0
