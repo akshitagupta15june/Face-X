@@ -35,7 +35,7 @@ jupyter-client==6.1.7
 jupyter-console==6.2.0
 jupyter-core==4.11.2
 jupyterlab-pygments==0.1.1
-Keras==2.6.0rc3
+Keras==2.13.1rc0
 Keras-Preprocessing==1.1.2
 kiwisolver==1.2.0
 Markdown==3.2.2
