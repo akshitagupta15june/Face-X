@@ -1,0 +1,10 @@
+streamlit
+h5py==3.10.0
+keras==3.1.1
+numpy==1.26.4
+opencv-python==4.9.0.80
+pandas==2.2.1
+pillow==10.2.0
+requests==2.31.0
+streamlit==1.32.2
+tensorflow==2.16.1
