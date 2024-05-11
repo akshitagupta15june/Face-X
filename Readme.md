@@ -41,7 +41,7 @@ Recognition of faces by different algorithms and frameworks. Despite a variety o
 <a href="https://github.com/Vi1234sh12/Face-X/tree/master/Recognition-using-IOT"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/sp_logo.png"
 style="margin:10px;" width="150px" 
 alt="Meshery - Service Mesh Management Plane" align="right" /></a>
-<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Recognition-using-IOT">Internet of Things </a> has opened up a new avenue of research in the field of human activity recognition using wearable sensors. It provides an individual's valuable information regarding functional ability and lifestyle. Human activities are monitored automatically to provide personalized support to different individuals.
+<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Recognition-using-IOT">Internet of Things </a> has opened up a new avenue of research in the field of human activity recognition using wearable sensors. It provides an individual with valuable information regarding functional ability and lifestyle. Human activities are monitored automatically to provide personalized support to different individuals.
 <br />
 </p>
 
@@ -50,7 +50,7 @@ alt="Meshery - Service Mesh Management Plane" align="right" /></a>
 <a href="https://github.com/akshitagupta15june/Face-X/tree/master/Facial_Biometric"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/hand.png"
 style="margin:10px;" width="125px" 
 alt="Meshery - Service Mesh Management Plane" align="left" /></a>
-<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Facial_Biometric">Facial Biometric </a> technology measures and matches the unique characteristics for the purposes of identification or authentication. Often leveraging a digital or connected camera, facial recognition software can detect faces in images, quantify their features, and then match them against stored templates in a database. 
+<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Facial_Biometric">Facial Biometric </a> technology measures and matches the unique characteristics for identification or authentication. Often leveraging a digital or connected camera, facial recognition software can detect faces in images, quantify their features, and then match them against stored templates in a database. 
 <br />
 </p>
 
@@ -59,7 +59,7 @@ alt="Meshery - Service Mesh Management Plane" align="left" /></a>
 <a href="https://github.com/Vi1234sh12/Face-X/tree/master/Snapchat_Filters"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/kis-r.png"
 style="margin:10px;" width="150px" 
 alt="Meshery - Service Mesh Management Plane" align="right" /></a>
-<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Snapchat_Filters">Snapchat filters </a> are certainly an integral part of what makes the social media platform and messaging app Snapchat unique and globally popular. Filters, or added effects, can be applied over images in a variety of ways before being uploaded to one’s social network for others to see. Geofilters allow users to alter a picture of a landscape, such as adding color to sky or turning day to night
+<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Snapchat_Filters">Snapchat filters </a> are certainly an integral part of what makes the social media platform and messaging app Snapchat unique and globally popular. Filters, or added effects, can be applied over images in a variety of ways before being uploaded to one’s social network for others to see. Geofilters allow users to alter a picture of a landscape, such as adding color to the sky or turning day to night
 <br />
 </p>
 
@@ -68,7 +68,7 @@ alt="Meshery - Service Mesh Management Plane" align="right" /></a>
 <a href="https://github.com/Vi1234sh12/Face-X/tree/master/Face-Mask-Detection"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/face-mask-logo-template_23-2148746217__3_-removebg-preview.png"
 style="margin:10px;" width="150px" 
 alt="Meshery - Service Mesh Management Plane" align="left" /></a>
-<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Face-Mask-Detection">Face Mask Detection </a> Platform uses Artificial Network to recognize if a user is not wearing a mask.  The app can be connected to any existing or new IP mask detection cameras to detect people without a mask. App users can also add faces and phone numbers to send them an alert in case they are not wearing a mask. If the camera captures an unrecognized face, a notification can be sent out to the administrator. 
+<a href="https://github.com/Vi1234sh12/Face-X/tree/master/Face-Mask-Detection">Face Mask Detection </a> Platform uses an Artificial Network to recognize if a user is not wearing a mask.  The app can be connected to any existing or new IP mask detection cameras to detect people without a mask. App users can also add faces and phone numbers to send them an alert in case they are not wearing a mask. If the camera captures an unrecognized face, a notification can be sent out to the administrator. 
 <br />
 </p>
 
@@ -77,7 +77,7 @@ alt="Meshery - Service Mesh Management Plane" align="left" /></a>
 <a href="https://github.com/Vi1234sh12/Face-X/tree/master/Awesome-face-operations"><img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/Asome.png"
 style="margin:10px;" width="145px" 
 alt="Meshery - Service Mesh Management Plane" align="right" /></a>
-<a href="https://github.com/akshitagupta15june/Face-X/tree/master/Awesome-face-operations">Awesome Face Operations </a> includes Face Morphing which is taking two faces as input and returning morph from the first image to second. Converting an image into a ghost image which is done using OpenCV and Numpy. Pencil Sketch In Python Using OpenCV. Image Segmentation Using Color space and Opencv. Addition of a blurring effect over an image. All this along with different classifications like age, gender and many more.
+<a href="https://github.com/akshitagupta15june/Face-X/tree/master/Awesome-face-operations">Awesome Face Operations </a> includes Face Morphing which is taking two faces as input and returning morph from the first image to the second. Converting an image into a ghost image which is done using OpenCV and Numpy. Pencil Sketch In Python Using OpenCV. Image Segmentation Using Color Space and Opencv. Addition of a blurring effect over an image. All this along with different classifications like age, gender, and many more.
 </p>
 <br />
 
@@ -147,7 +147,7 @@ pip install -r requirements.txt
 
 
 	
-## Get Started with Open Source programs 👨‍💻
+## Get Started with Open Source Programs 👨‍💻
 
 [Start Open Source](https://anush-venkatakrishna.medium.com/part-1-winter-or-summer-take-your-baby-steps-into-opensource-now-7d661235d7ff) an article by [Anush Krishna](https://github.com/anushkrishnav)
 </br>
@@ -216,7 +216,7 @@ If you have any feedback or suggestions please reach out to Project - Maintainer
 * [Akshita Gupta](https://github.com/akshitagupta15june) <h3>Join official <a href="https://discord.com/invite/Jmc97prqjb">Discord Channel</a> for discussion</h3>
 
 
-Or you can create a  <a href="https://github.com/akshitagupta15june/Face-X/issues">issue</a> and mention there , which new features or extension can make this Project more good.
+Or you can create a  <a href="https://github.com/akshitagupta15june/Face-X/issues">issue</a> and mention there, which new features or extensions can make this Project more good.
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
 
