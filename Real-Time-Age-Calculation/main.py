@@ -1,6 +1,7 @@
 import cv2
-import math
+import logging
 import argparse
+#import math
 
 
 def highlightFace(net, frame, conf_threshold=0.7):
@@ -8,7 +9,9 @@ def highlightFace(net, frame, conf_threshold=0.7):
     This function detects faces on the image using the 'net' passed (if any) and returns the detection output
     as well as the cordinates of the faces detected
     '''
-
+    # adding logging to better the debugging process 
+    logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+    
     frameOpencvDnn=frame.copy()
     #--------saving the image dimensions as height and width-------#
     frameHeight = frameOpencvDnn.shape[0]
@@ -33,10 +36,7 @@ def highlightFace(net, frame, conf_threshold=0.7):
         confidence=detections[0,0,i,2]
         if confidence>conf_threshold:
             # TopLeftX,TopLeftY, BottomRightX, BottomRightY = inference_results[0, 0, i, 3:7] --> gives co-ordinates bounding boxes for resized small image
-            x1=int(detections[0,0,i,3]*frameWidth)
-            y1=int(detections[0,0,i,4]*frameHeight)
-            x2=int(detections[0,0,i,5]*frameWidth)
-            y2=int(detections[0,0,i,6]*frameHeight)
+            x1, x2, y1, y2= map(int, detections[0,0,i, 3:7]*frame.shape[1,3])
             # box = detections[0, 0, i, 3:7] * np.array([frameWidth, frameHeight, frameWidth, frameHeight])
             # faceBoxes.append(box.astype("int"))
             faceBoxes.append([x1,y1,x2,y2])
@@ -49,7 +49,6 @@ def highlightFace(net, frame, conf_threshold=0.7):
 #-------Creating and Parsing through the argument passed on the terminal-------------#
 parser=argparse.ArgumentParser()
 parser.add_argument('--image')
-
 args=parser.parse_args()
 
 #-----------Model File Paths----------------#
@@ -78,30 +77,32 @@ padding=20
 while cv2.waitKey(1)<0:
     hasFrame,frame=video.read()
     if not hasFrame:
-        cv2.waitKey()
+        logging.info('Video capture failed or ended.')
         break
 
     #----------------Face Detection-----------------#
     resultImg,faceBoxes=highlightFace(faceNet,frame)
     if not faceBoxes:
-        print('No face detected')
+        logging.info('No face detected')
         break
 
     for faceBox in faceBoxes:
         #-------Crop out the face from the image---------#
         face=frame[faceBox[1]:faceBox[3],faceBox[0]:faceBox[2]] #img[y1:y2 , x1:x2]
 
-        #------Gender prediction---------#
+        #------Gender and Age prediction---------#
+
+        #Simultaneously predicting age and gender by passing one blob => reducing computations
         blob=cv2.dnn.blobFromImage(face, 1.0, (227,227), MODEL_MEAN_VALUES, swapRB=False)
+        
         genderNet.setInput(blob)
-        genderPreds=genderNet.forward()
-        gender=genderList[genderPreds[0].argmax()]
-        print(f'Gender: {gender}')
-        #-------Age Prediction---------#
         ageNet.setInput(blob)
+        
+        genderPreds=genderNet.forward()
         agePreds=ageNet.forward()
+        
+        gender=genderList[genderPreds[0].argmax()]
         age=ageList[agePreds[0].argmax()]
-        print(f'Age: {age[1:-1]} years')
 
         cv2.putText(resultImg, f'{gender}, {age}', (faceBox[0], faceBox[1]-10), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0,255,255), 2, cv2.LINE_AA)
 
