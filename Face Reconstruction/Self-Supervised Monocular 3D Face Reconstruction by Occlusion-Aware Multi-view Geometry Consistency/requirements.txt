@@ -1,4 +1,4 @@
-torch==1.13.1
+torch==2.2.0
 face-alignment
 h5py==2.10.0
 matplotlib==2.2.4
