@@ -1,0 +1,12 @@
+names:
+- face
+nc: 1
+roboflow:
+  license: CC BY 4.0
+  project: face-detect-i4e0c
+  url: https://universe.roboflow.com/yolo-ccdgk/face-detect-i4e0c/dataset/4
+  version: 4
+  workspace: yolo-ccdgk
+test: /content/Yolov8FaceDetection/datasets/face-detect-4/test/images
+train: /content/Yolov8FaceDetection/datasets/face-detect-4/train/images
+val: /content/Yolov8FaceDetection/datasets/face-detect-4/valid/images
