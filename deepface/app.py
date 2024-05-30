@@ -17,6 +17,6 @@ print(results)
 
 #Face Attribute Analysis
 attributes=DeepFace.analyze("img2") #Reurns the age, gender, race and emotion of the person in the image.
-
+print(attributes)
 
 #<-----------For MORE INFORMATION VISIT DEEPFACE LIBRARY ITSELF------------------->
