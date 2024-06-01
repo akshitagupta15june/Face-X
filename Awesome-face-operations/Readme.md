@@ -33,7 +33,7 @@ OpenCV 3 comes with a pencil sketch effect right out of the box. The cv2.pencilS
 <img src="https://user-images.githubusercontent.com/78999467/112639322-3a40cb80-8e68-11eb-8a6e-266b923b038e.png" alt="drawing" width="300" height="300"/>
 
 
-# Image Segmentation Using Color space and Opencv</h1>
+# Image Segmentation Using Color space and OpenCV
 The process of partitioning a digital image into multiple segments is defined as image segmentation. Segmentation aims to divide an image into regions that can be more representative and easier to analyze.
 The image is first converted into HSV. Then, swatches of the desired color are chosen and a mask of the chosen color is applied to the image. Next, swatches of the second color are chosen and a mask of the chosen color is applied to the image. Next the two masks are combined and the segmentation is cleaned up using a blur.
 
@@ -190,7 +190,7 @@ One important feature of this algorithm is that it selects the appropriate numbe
 ### Face Application
 
 ---
-## Piplines
+## Pipelines
 
 - [seetaface/SeetaFaceEngine](https://github.com/seetaface/SeetaFaceEngine)
 ---
