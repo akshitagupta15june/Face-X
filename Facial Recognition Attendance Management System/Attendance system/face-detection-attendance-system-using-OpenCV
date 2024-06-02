@@ -1,76 +1,108 @@
 import cv2
-import numpy as np
 import face_recognition
+import datetime
 import os
-from datetime import datetime
-# from PIL import ImageGrab
- 
-path = 'Images_Attendance'
-images = []
-classNames = []
-myList = os.listdir(path)
-print(myList)
-for cl in myList:
-    curImg = cv2.imread(f'{path}/{cl}')
-    images.append(curImg)
-    classNames.append(os.path.splitext(cl)[0])
-print(classNames)
- 
-def findEncodings(images):
-    encodeList = []
-    for img in images:
-        img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-        encode = face_recognition.face_encodings(img)[0]
-        encodeList.append(encode)
-    return encodeList
- 
-def markAttendance(name):
-    with open('Attendance.csv','r+') as f:
-        myDataList = f.readlines()
-        nameList = []
-        for line in myDataList:
-            entry = line.split(',')
-            nameList.append(entry[0])
-        if name not in nameList:
-            now = datetime.now()
-            dtString = now.strftime('%H:%M:%S')
-            f.writelines(f'\n{name},{dtString}')
- 
-#### FOR CAPTURING SCREEN RATHER THAN WEBCAM
-# def captureScreen(bbox=(300,300,690+300,530+300)):
-#     capScr = np.array(ImageGrab.grab(bbox))
-#     capScr = cv2.cvtColor(capScr, cv2.COLOR_RGB2BGR)
-#     return capScr
- 
-encodeListKnown = findEncodings(images)
-print('Encoding Complete')
- 
-cap = cv2.VideoCapture(0)
- 
+import sqlite3
+
+# --- Configuration ---
+DATA_PATH = "data"  # Directory to store face encodings and attendance data
+ATTENDANCE_FILE = "attendance.csv"  # File to store attendance records
+CASCADE_PATH = "haarcascade_frontalface_default.xml"  # Path to Haar Cascade classifier
+KNOWN_FACES_DIR = os.path.join(DATA_PATH, "known_faces")  # Directory for known face images
+DATABASE_NAME = "attendance.db"  # Name of the SQLite database
+
+# --- Initialize variables ---
+face_cascade = cv2.CascadeClassifier(CASCADE_PATH)
+known_face_encodings = []
+known_face_names = []
+
+# --- Database functions ---
+def create_database():
+    """Creates the attendance database if it doesn't exist."""
+    conn = sqlite3.connect(DATABASE_NAME)
+    cursor = conn.cursor()
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS attendance (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            name TEXT,
+            timestamp DATETIME
+        )
+    """)
+    conn.commit()
+    conn.close()
+
+def add_attendance(name):
+    """Adds attendance record to the database."""
+    conn = sqlite3.connect(DATABASE_NAME)
+    cursor = conn.cursor()
+    now = datetime.datetime.now()
+    cursor.execute("INSERT INTO attendance (name, timestamp) VALUES (?, ?)", (name, now))
+    conn.commit()
+    conn.close()
+    print(f"Attendance marked for {name} at {now}")
+
+def get_attendance_records():
+    """Retrieves all attendance records from the database."""
+    conn = sqlite3.connect(DATABASE_NAME)
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM attendance")
+    records = cursor.fetchall()
+    conn.close()
+    return records
+
+# --- Other functions ---
+def load_known_faces():
+    """Loads face encodings and names from the 'known_faces' directory."""
+    for filename in os.listdir(KNOWN_FACES_DIR):
+        if filename.endswith(".jpg") or filename.endswith(".png"):
+            face_image = face_recognition.load_image_file(os.path.join(KNOWN_FACES_DIR, filename))
+            face_encoding = face_recognition.face_encodings(face_image)[0]
+            name = filename.split(".")[0]
+            known_face_encodings.append(face_encoding)
+            known_face_names.append(name)
+
+def recognize_faces(frame):
+    """Detects and recognizes faces in a frame."""
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    faces = face_cascade.detectMultiScale(gray, 1.3, 5)
+
+    for (x, y, w, h) in faces:
+        face_image = frame[y:y+h, x:x+w]
+        face_encodings = face_recognition.face_encodings(face_image)
+
+        if len(face_encodings) > 0:
+            face_encoding = face_encodings[0]
+            matches = face_recognition.compare_faces(known_face_encodings, face_encoding)
+
+            face_distances = face_recognition.face_distance(known_face_encodings, face_encoding)
+            best_match_index = np.argmin(face_distances)
+            if matches[best_match_index]:
+                name = known_face_names[best_match_index]
+                cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
+                cv2.putText(frame, name, (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+                add_attendance(name)
+            else:
+                cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 0, 255), 2)
+                cv2.putText(frame, "Unknown", (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
+        else:
+            cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 0, 255), 2)
+            cv2.putText(frame, "No face detected", (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
+
+    return frame
+
+# --- Main program ---
+create_database()
+load_known_faces()
+
+cap = cv2.VideoCapture(0) # Use 0 for the default webcam
+
 while True:
-    success, img = cap.read()
-    #img = captureScreen()
-    imgS = cv2.resize(img,(0,0),None,0.25,0.25)
-    imgS = cv2.cvtColor(imgS, cv2.COLOR_BGR2RGB)
- 
-    facesCurFrame = face_recognition.face_locations(imgS)
-    encodesCurFrame = face_recognition.face_encodings(imgS,facesCurFrame)
- 
-    for encodeFace,faceLoc in zip(encodesCurFrame,facesCurFrame):
-        matches = face_recognition.compare_faces(encodeListKnown,encodeFace)
-        faceDis = face_recognition.face_distance(encodeListKnown,encodeFace)
-        #print(faceDis)
-        matchIndex = np.argmin(faceDis)
- 
-        if matches[matchIndex]:
-            name = classNames[matchIndex].upper()
-            #print(name)
-            y1,x2,y2,x1 = faceLoc
-            y1, x2, y2, x1 = y1*4,x2*4,y2*4,x1*4
-            cv2.rectangle(img,(x1,y1),(x2,y2),(0,255,0),2)
-            cv2.rectangle(img,(x1,y2-35),(x2,y2),(0,255,0),cv2.FILLED)
-            cv2.putText(img,name,(x1+6,y2-6),cv2.FONT_HERSHEY_COMPLEX,1,(255,255,255),2)
-            markAttendance(name)
- 
-    cv2.imshow('Webcam',img)
-    cv2.waitKey(1)
+    ret, frame = cap.read()
+    frame = recognize_faces(frame)
+    cv2.imshow('Attendance System', frame)
+
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+
+cap.release()
+cv2.destroyAllWindows()
