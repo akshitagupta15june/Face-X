@@ -124,14 +124,47 @@ source env/bin/activate
 ```bash
 env\Scripts\activate
 ```
+3. **Cloning Repository**
+```
+git clone https://github.com/akshitagupta15june/Face-X.git
+```
 
-3. **Install**
+4. **Install**
+Go into Face-X directory
+```
+cd Face-X
+```
 
+Install dependencies required to properly run
 ```bash
 pip install -r requirements.txt
 ```
 - Have a look at [Contributing Guidelines](https://github.com/akshitagupta15june/Face-X/blob/master/CONTRIBUTING.md)
 - Read the [Code of Conduct](https://github.com/akshitagupta15june/Face-X/blob/master/CODE_OF_CONDUCT.md)
+
+</br>
+
+## How to Run Demo Face-X library
+This demonstration uses the cartoonify feature that reads an image and makes a cartoon of the image.
+0. **Installation**
+Ensure that you have followed the above installation steps and are in your virtual environment.
+
+1. **Go into Face-x library directory**
+```
+cd facex-library
+```
+
+2. **Install imutils and matplotlib module**
+you may have to specify your python version number and replace the *
+```
+python* -m pip install imutils matplotlib
+```
+3. **Run Demo file**
+```
+python* demo.py
+```
+4. **Result**
+An example image that shows the visuals of some features of Face-X should appear.
 
 </br>
 
