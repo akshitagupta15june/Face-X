@@ -136,7 +136,7 @@ pip install -r requirements.txt
 </br>
 
 ## Engaging and Collaborating with
-![Dsign-removebg](https://user-images.githubusercontent.com/75840118/194744571-36bde357-0e31-4d1f-a205-97e4eb07f5b2.png) 
+![Dsign-removebg](https://github-production-user-asset-6210df.s3.amazonaws.com/100352419/337229526-aea8571c-a499-42bb-9cd7-1147a2845c66.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240606%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240606T103713Z&X-Amz-Expires=300&X-Amz-Signature=584ab4e2327bb9910786acfdbfdb20a02c47fae9bd3167cc38e892b97000f7a7&X-Amz-SignedHeaders=host&actor_id=100352419&key_id=0&repo_id=277549433) 
 
 	
 </br>
