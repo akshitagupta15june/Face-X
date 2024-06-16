@@ -49,3 +49,7 @@ streamlit run app.py
 - Streamlit
 - OpenCV
 - Machine Learning (Deep Learning models)
+
+![Screenshot 2024-06-16 191205](https://github.com/Pranshu-jais/Face-X/assets/150207373/1dfdb938-8f38-415e-b800-abce2828b571)
+
+
