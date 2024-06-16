@@ -1,0 +1,82 @@
+[2024-06-15 19:57:53,224: INFO: 01_generate_img_pkl]: >>>>> stage_01 started
+[2024-06-15 19:57:53,224: INFO: all_utils]: Directory is created at artifacts\pickle_format_data
+[2024-06-15 19:57:53,224: ERROR: 01_generate_img_pkl]: [WinError 3] The system cannot find the path specified: 'data'
+Traceback (most recent call last):
+  File "src/01_generate_img_pkl.py", line 61, in <module>
+    generate_data_pickle_file(config_path = parsed_args.config, params_path= parsed_args.params)
+  File "src/01_generate_img_pkl.py", line 40, in generate_data_pickle_file
+    actors = os.listdir(data_path)
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'data'
+[2024-06-15 19:58:18,253: INFO: 02_feature_extractor]: >>>>> stage_02 started
+[2024-06-15 19:58:18,253: ERROR: 02_feature_extractor]: [Errno 2] No such file or directory: 'artifacts\\pickle_format_data\\img_PICKLE_file.pkl'
+Traceback (most recent call last):
+  File "src/02_feature_extractor.py", line 86, in <module>
+    feature_extractor(config_path = parsed_args.config, params_path= parsed_args.params)
+  File "src/02_feature_extractor.py", line 51, in feature_extractor
+    filenames = pickle.load(open(img_pickle_file,'rb'))
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\pickle_format_data\\img_PICKLE_file.pkl'
+[2024-06-15 20:57:19,099: INFO: 01_generate_img_pkl]: >>>>> stage_01 started
+[2024-06-15 20:57:19,104: INFO: all_utils]: Directory is created at artifacts\pickle_format_data
+[2024-06-15 20:57:19,104: ERROR: 01_generate_img_pkl]: [WinError 3] The system cannot find the path specified: 'data'
+Traceback (most recent call last):
+  File "src/01_generate_img_pkl.py", line 61, in <module>
+    generate_data_pickle_file(config_path = parsed_args.config, params_path= parsed_args.params)
+  File "src/01_generate_img_pkl.py", line 40, in generate_data_pickle_file
+    actors = os.listdir(data_path)
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'data'
+[2024-06-15 20:57:21,375: INFO: 02_feature_extractor]: >>>>> stage_02 started
+[2024-06-15 20:57:21,375: ERROR: 02_feature_extractor]: [Errno 2] No such file or directory: 'artifacts\\pickle_format_data\\img_PICKLE_file.pkl'
+Traceback (most recent call last):
+  File "src/02_feature_extractor.py", line 86, in <module>
+    feature_extractor(config_path = parsed_args.config, params_path= parsed_args.params)
+  File "src/02_feature_extractor.py", line 51, in feature_extractor
+    filenames = pickle.load(open(img_pickle_file,'rb'))
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\pickle_format_data\\img_PICKLE_file.pkl'
+[2024-06-15 21:04:09,800: INFO: 01_generate_img_pkl]: >>>>> stage_01 started
+[2024-06-15 21:04:09,808: INFO: all_utils]: Directory is created at artifacts\pickle_format_data
+[2024-06-15 21:04:09,808: ERROR: 01_generate_img_pkl]: [WinError 3] The system cannot find the path specified: 'data'
+Traceback (most recent call last):
+  File "c:\Users\ayush\OneDrive\Desktop\Which-Bollywood-Celebrity-You-look-like-main\src\01_generate_img_pkl.py", line 61, in <module>
+    generate_data_pickle_file(config_path = parsed_args.config, params_path= parsed_args.params)
+  File "c:\Users\ayush\OneDrive\Desktop\Which-Bollywood-Celebrity-You-look-like-main\src\01_generate_img_pkl.py", line 40, in generate_data_pickle_file
+    actors = os.listdir(data_path)
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'data'
+[2024-06-15 21:05:15,947: INFO: 01_generate_img_pkl]: >>>>> stage_01 started
+[2024-06-15 21:05:15,947: INFO: all_utils]: Directory is created at artifacts\pickle_format_data
+[2024-06-15 21:05:15,947: ERROR: 01_generate_img_pkl]: [WinError 3] The system cannot find the path specified: 'data'
+Traceback (most recent call last):
+  File "c:\Users\ayush\OneDrive\Desktop\Which-Bollywood-Celebrity-You-look-like-main\src\01_generate_img_pkl.py", line 61, in <module>
+    generate_data_pickle_file(config_path = parsed_args.config, params_path= parsed_args.params)
+  File "c:\Users\ayush\OneDrive\Desktop\Which-Bollywood-Celebrity-You-look-like-main\src\01_generate_img_pkl.py", line 40, in generate_data_pickle_file
+    actors = os.listdir(data_path)
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'data'
+[2024-06-15 21:48:01,480: INFO: 01_generate_img_pkl]: >>>>> stage_01 started
+[2024-06-15 21:48:01,480: INFO: all_utils]: Directory is created at artifacts\pickle_format_data
+[2024-06-15 21:48:01,559: INFO: 01_generate_img_pkl]: Total actress are: 100
+[2024-06-15 21:48:01,559: INFO: 01_generate_img_pkl]: Total actress images: 8664
+[2024-06-15 21:48:01,559: INFO: 01_generate_img_pkl]: stage_01 completed!>>>>>
+[2024-06-15 21:48:02,932: INFO: 02_feature_extractor]: >>>>> stage_02 started
+[2024-06-15 21:48:05,278: INFO: all_utils]: Directory is created at artifacts\extracted_features
+[2024-06-15 22:00:35,524: INFO: 02_feature_extractor]: stage_02 completed!>>>>>
+[2024-06-15 22:01:36,047: INFO: 01_generate_img_pkl]: >>>>> stage_01 started
+[2024-06-15 22:01:36,047: INFO: all_utils]: Directory is created at artifacts\pickle_format_data
+[2024-06-15 22:01:36,141: INFO: 01_generate_img_pkl]: Total actress are: 100
+[2024-06-15 22:01:36,141: INFO: 01_generate_img_pkl]: Total actress images: 8664
+[2024-06-15 22:01:36,141: INFO: 01_generate_img_pkl]: stage_01 completed!>>>>>
+[2024-06-15 22:01:37,618: INFO: 02_feature_extractor]: >>>>> stage_02 started
+[2024-06-15 22:01:39,895: INFO: all_utils]: Directory is created at artifacts\extracted_features
+[2024-06-16 18:25:51,058: INFO: 01_generate_img_pkl]: >>>>> stage_01 started
+[2024-06-16 18:25:51,058: INFO: all_utils]: Directory is created at artifacts\pickle_format_data
+[2024-06-16 18:25:51,215: INFO: 01_generate_img_pkl]: Total actress are: 100
+[2024-06-16 18:25:51,215: INFO: 01_generate_img_pkl]: Total actress images: 8664
+[2024-06-16 18:25:51,231: INFO: 01_generate_img_pkl]: stage_01 completed!>>>>>
+[2024-06-16 18:25:53,670: INFO: 02_feature_extractor]: >>>>> stage_02 started
+[2024-06-16 18:25:56,680: INFO: all_utils]: Directory is created at artifacts\extracted_features
+[2024-06-16 18:36:36,902: INFO: 01_generate_img_pkl]: >>>>> stage_01 started
+[2024-06-16 18:36:36,902: INFO: all_utils]: Directory is created at artifacts\pickle_format_data
+[2024-06-16 18:36:37,043: INFO: 01_generate_img_pkl]: Total actress are: 100
+[2024-06-16 18:36:37,043: INFO: 01_generate_img_pkl]: Total actress images: 8664
+[2024-06-16 18:36:37,043: INFO: 01_generate_img_pkl]: stage_01 completed!>>>>>
+[2024-06-16 18:36:39,115: INFO: 02_feature_extractor]: >>>>> stage_02 started
+[2024-06-16 18:36:41,837: INFO: all_utils]: Directory is created at artifacts\extracted_features
+[2024-06-16 18:56:57,952: INFO: 02_feature_extractor]: stage_02 completed!>>>>>
