@@ -8,7 +8,6 @@ setup(
     version="0.0.1"
     long_description=long_description,
     long_description_content_type="text/markdown",
-    author_email="entbappy73@gmail.com",
     packages=["src"],
     python_requires=">=3.7",
     install_requires=[
