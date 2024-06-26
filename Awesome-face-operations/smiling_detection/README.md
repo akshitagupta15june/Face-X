@@ -7,7 +7,7 @@ This project trains a neural network to detect smiling faces in images.
 1. Dataset Preparation:
    - Organize your dataset with images of smiling faces in the `dataset/smile` folder and non-smiling faces in the `dataset/non_smile` folder.
    - Ensure test images are in a separate folder, without subfolders.
-   you can download images from zip file.
+   you can download images from https://www.kaggle.com/datasets/chazzer/smiling-or-not-face-data.
 
 2. Training the Model:
    - Run `train_model.py` to load, preprocess, and train a Convolutional Neural Network (CNN) on the dataset.
