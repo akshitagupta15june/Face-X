@@ -7,7 +7,7 @@ attrs==20.2.0
 backcall==0.2.0
 bleach==3.3.0
 cachetools==4.1.1
-certifi==2023.7.22
+certifi==2024.7.4
 cffi==1.14.2
 chardet==3.0.4
 cycler==0.10.0
@@ -96,7 +96,7 @@ threadpoolctl==2.1.0
 tifffile==2020.9.3
 tornado==6.4.1
 traitlets==5.0.4
-urllib3==1.26.18
+urllib3==1.26.19
 wcwidth==0.2.5
 webencodings==0.5.1
 Werkzeug==3.0.1
