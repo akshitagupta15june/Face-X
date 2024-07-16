@@ -12,7 +12,7 @@ tensorflow-estimator==1.13.0
 tensorflow-gpu==2.12.0
 trimesh==2.38.40
 wheel>=0.38.0 # not directly required, pinned by Snyk to avoid a vulnerability
-setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
+setuptools>=70.0.0 # not directly required, pinned by Snyk to avoid a vulnerability
 networkx>=2.6 # not directly required, pinned by Snyk to avoid a vulnerability
 pillow>=10.0.0 # not directly required, pinned by Snyk to avoid a vulnerability
 werkzeug>=3.0.1 # not directly required, pinned by Snyk to avoid a vulnerability
