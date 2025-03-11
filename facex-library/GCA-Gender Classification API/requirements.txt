@@ -21,7 +21,7 @@ idna==3.3
 importlib-metadata==4.8.2
 itsdangerous==2.0.1
 Jinja2==3.0.3
-keras==2.11.0
+keras==3.9.0
 Keras-Preprocessing==1.1.2
 libclang==15.0.6.1
 Markdown==3.3.6
