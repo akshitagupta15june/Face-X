@@ -8,7 +8,7 @@ charset-normalizer==2.0.8
 click==8.0.3
 colorama==0.4.4
 Flask==2.3.2
-Flask-Cors==3.0.10
+Flask-Cors==4.0.2
 flatbuffers==2.0
 gast==0.4.0
 google-auth==2.3.3
