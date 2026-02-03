@@ -43,7 +43,7 @@ MarkupSafe==1.1.1
 matplotlib==3.3.1
 mistune==2.0.3
 nbclient==0.5.0
-nbconvert==6.5.1
+nbconvert==7.17.0
 nbformat==5.0.7
 nest-asyncio==1.4.0
 networkx==2.6
@@ -61,7 +61,7 @@ pickleshare==0.7.5
 Pillow==10.3.0
 prometheus-client==0.8.0
 prompt-toolkit==3.0.13
-protobuf==3.18.3
+protobuf==6.33.5
 ptyprocess==0.6.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
