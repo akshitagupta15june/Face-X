@@ -17,3 +17,4 @@ networkx>=2.6 # not directly required, pinned by Snyk to avoid a vulnerability
 pillow>=10.0.0 # not directly required, pinned by Snyk to avoid a vulnerability
 werkzeug>=3.0.1 # not directly required, pinned by Snyk to avoid a vulnerability
 grpcio>=1.53.2 # not directly required, pinned by Snyk to avoid a vulnerability
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
