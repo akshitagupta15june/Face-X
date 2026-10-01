@@ -12,6 +12,30 @@ import imutils
 import time
 import cv2
 import os
+import threading
+import platform
+
+# audio alert configuration
+last_beep_time = 0.0
+BEEP_COOLDOWN = 2.0  # seconds between audio alerts
+
+def trigger_beep():
+	"""Play an audio beep alert in a separate thread to prevent freezing the video stream."""
+	def _play():
+		try:
+			sys_name = platform.system()
+			if sys_name == "Windows":
+				import winsound
+				winsound.Beep(1000, 400)
+			elif sys_name == "Darwin":  # macOS
+				os.system('osascript -e "beep" &')
+			else:  # Linux / Unix
+				print("\a", end="", flush=True)
+		except Exception:
+			pass
+
+	threading.Thread(target=_play, daemon=True).start()
+
 
 def detect_and_predict_mask(frame, faceNet, maskNet):
 	# grab the dimensions of the frame and then construct a blob
@@ -84,6 +108,10 @@ ap.add_argument("-m", "--model", type=str,
 	help="path to trained face mask detector model")
 ap.add_argument("-c", "--confidence", type=float, default=0.5,
 	help="minimum probability to filter weak detections")
+ap.add_argument("-s", "--sound", action="store_true", default=True,
+	help="enable audio beep alert when person without mask is detected (default: True)")
+ap.add_argument("--no-sound", dest="sound", action="store_false",
+	help="disable audio beep alert")
 args = vars(ap.parse_args())
 
 # load our serialized face detector model from disk
@@ -113,6 +141,8 @@ while True:
 	# face mask or not
 	(locs, preds) = detect_and_predict_mask(frame, faceNet, maskNet)
 
+	has_no_mask = False
+
 	# loop over the detected face locations and their corresponding
 	# locations
 	for (box, pred) in zip(locs, preds):
@@ -125,6 +155,9 @@ while True:
 		label = "Mask" if mask > withoutMask else "No Mask"
 		color = (0, 255, 0) if label == "Mask" else (0, 0, 255)
 
+		if label == "No Mask":
+			has_no_mask = True
+
 		# include the probability in the label
 		label = "{}: {:.2f}%".format(label, max(mask, withoutMask) * 100)
 
@@ -133,6 +166,13 @@ while True:
 		cv2.putText(frame, label, (startX, startY - 10),
 			cv2.FONT_HERSHEY_SIMPLEX, 0.45, color, 2)
 		cv2.rectangle(frame, (startX, startY), (endX, endY), color, 2)
+
+	# trigger audio beep alert if someone without a mask is detected
+	if args["sound"] and has_no_mask:
+		current_time = time.time()
+		if current_time - last_beep_time >= BEEP_COOLDOWN:
+			last_beep_time = current_time
+			trigger_beep()
 
 	# show the output frame
 	cv2.imshow("Frame", frame)
