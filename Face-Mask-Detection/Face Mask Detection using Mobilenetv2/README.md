@@ -44,4 +44,18 @@ python3 train.py --net-type MobileNetV2 --data-dir data/64x64_dataset --epochs 2
 
 ![8](https://user-images.githubusercontent.com/65017645/120110323-a2729d00-c18a-11eb-8ea2-5bff0036ad40.jpg)
 
+## Real-Time Webcam Detection with Audio Alert
+
+Run real-time mask detection from your webcam:
+```bash
+python detect_mask_from_webcam.py
+```
+
+- When a person **without a mask** is detected, an audible beep alert is automatically triggered in a non-blocking background thread.
+- A 2.0-second cooldown is enforced to prevent sound distortion.
+- To disable audio alerts, pass the `--no-sound` flag:
+  ```bash
+  python detect_mask_from_webcam.py --no-sound
+  ```
+
 
